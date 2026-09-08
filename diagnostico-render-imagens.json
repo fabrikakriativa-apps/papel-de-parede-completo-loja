@@ -1,0 +1,62 @@
+{
+  "arquivo": "index.html",
+  "data_excluido_da_varredura": true,
+  "ocorrencias": 11,
+  "resultados": [
+    {
+      "padrao": "\\.src\\s*=",
+      "posicao": 4636,
+      "trecho": "necedor)} · ${e(x.colecao)}</div><div class=\"type\">${e(x.tipo)}</div><div class=\"measure\">${e(x.medida)}</div><div class=\"price\">${e(x.preco)}</div></div></article>`).join('');grid.querySelectorAll('.pic[data-z]').forEach(x=>x.onclick=()=>{if(x.dataset.z){mimg.src=x.dataset.z;modal.classList.add('open')}})}vf.onchange=()=>{cols();render()};cf.onchange=render;cof.onchange=render;q.oninput=render;modal.onclick=x=>{if(x.target===modal||x.target.classList.contains('close')){modal.classList.remove('open');mimg.src=''}};document.onkeydown=x=>{if(x.key==='Escape'){modal.classList.remove('open');mimg.src=''}};[...new Set(DATA.map(x=>x.fornecedor))].sort().forEach(v=>vf.add(new Option("
+    },
+    {
+      "padrao": "\\.src\\s*=",
+      "posicao": 4886,
+      "trecho": "et.z){mimg.src=x.dataset.z;modal.classList.add('open')}})}vf.onchange=()=>{cols();render()};cf.onchange=render;cof.onchange=render;q.oninput=render;modal.onclick=x=>{if(x.target===modal||x.target.classList.contains('close')){modal.classList.remove('open');mimg.src=''}};document.onkeydown=x=>{if(x.key==='Escape'){modal.classList.remove('open');mimg.src=''}};[...new Set(DATA.map(x=>x.fornecedor))].sort().forEach(v=>vf.add(new Option(v,v)));cols();render();</script></body></html>"
+    },
+    {
+      "padrao": "\\.src\\s*=",
+      "posicao": 4975,
+      "trecho": ")};cf.onchange=render;cof.onchange=render;q.oninput=render;modal.onclick=x=>{if(x.target===modal||x.target.classList.contains('close')){modal.classList.remove('open');mimg.src=''}};document.onkeydown=x=>{if(x.key==='Escape'){modal.classList.remove('open');mimg.src=''}};[...new Set(DATA.map(x=>x.fornecedor))].sort().forEach(v=>vf.add(new Option(v,v)));cols();render();</script></body></html>"
+    },
+    {
+      "padrao": "innerHTML",
+      "posicao": 3526,
+      "trecho": ".querySelector('#count'),modal=document.querySelector('#modal'),mimg=document.querySelector('#mimg');function e(s){return String(s??'').replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":'&#039;'}[c]))}function cols(){let o=cf.value;cf.innerHTML='<option value=\"\">Todas as coleções</option>';[...new Set(DATA.filter(x=>!vf.value||x.fornecedor===vf.value).map(x=>x.colecao))].sort().forEach(v=>cf.add(new Option(v,v)));if([...cf.options].some(x=>x.value===o))cf.value=o}function render(){let t=q.value.toLowerCase().trim(),v=vf.value,c=cf.value,co=cof.value,a=DATA.filter(x=>(!t||x.search.includes(t))&&(!v||x.fornecedor===v)&&(!c||x.colecao===c)&&(!co||(Array.isArr"
+    },
+    {
+      "padrao": "innerHTML",
+      "posicao": 4034,
+      "trecho": "(){let t=q.value.toLowerCase().trim(),v=vf.value,c=cf.value,co=cof.value,a=DATA.filter(x=>(!t||x.search.includes(t))&&(!v||x.fornecedor===v)&&(!c||x.colecao===c)&&(!co||(Array.isArray(x.cor)?x.cor:[x.cor]).includes(co)));cnt.textContent=a.length+' itens';grid.innerHTML=a.map(x=>`<article class=\"card\"><div class=\"pic\" data-z=\"${e(x.zoom||'')}\">${x.card?`<img referrerpolicy=\"no-referrer\" loading=\"lazy\" decoding=\"async\" src=\"${e(x.card)}\" alt=\"${e(x.ref)}\">`:'Imagem indisponível'}</div><div class=\"meta\"><div class=\"fk\">${e(x.codigo)}</div><div class=\"ref\">${e(x.ref)}</div><div class=\"col\">${e(x.fornecedor)} · ${e(x.colecao)}</div><div class=\"type\">${e(x.tipo)}</div><div class=\"measur"
+    },
+    {
+      "padrao": "\\.card\\b",
+      "posicao": 894,
+      "trecho": "border:1px solid #ccc;border-radius:8px;background:#fff;width:100%}.wrap{max-width:1400px;margin:18px auto;padding:0 14px}.count{font-size:13px;color:#666;margin-bottom:12px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}.card{background:#fff;border:1px solid #e2e2e2;border-radius:12px;overflow:hidden}.pic{aspect-ratio:1/1;background:#eee;overflow:hidden;cursor:zoom-in}.pic img{width:100%;height:100%;object-fit:cover;display:block}.meta{padding:11px}.fk{font-size:11px;color:#777}.ref{font-size:17px;font-weight:800}.col,.type,.measure{font-size:12px;margin-top:5px}.type,.measure{color:#555}.price{font-size:15px;font-weight:800;margin-top:8"
+    },
+    {
+      "padrao": "\\.card\\b",
+      "posicao": 4122,
+      "trecho": "=>(!t||x.search.includes(t))&&(!v||x.fornecedor===v)&&(!c||x.colecao===c)&&(!co||(Array.isArray(x.cor)?x.cor:[x.cor]).includes(co)));cnt.textContent=a.length+' itens';grid.innerHTML=a.map(x=>`<article class=\"card\"><div class=\"pic\" data-z=\"${e(x.zoom||'')}\">${x.card?`<img referrerpolicy=\"no-referrer\" loading=\"lazy\" decoding=\"async\" src=\"${e(x.card)}\" alt=\"${e(x.ref)}\">`:'Imagem indisponível'}</div><div class=\"meta\"><div class=\"fk\">${e(x.codigo)}</div><div class=\"ref\">${e(x.ref)}</div><div class=\"col\">${e(x.fornecedor)} · ${e(x.colecao)}</div><div class=\"type\">${e(x.tipo)}</div><div class=\"measure\">${e(x.medida)}</div><div class=\"price\">${e(x.preco)}</div></div></article>`).join"
+    },
+    {
+      "padrao": "\\.card\\b",
+      "posicao": 4205,
+      "trecho": "rray.isArray(x.cor)?x.cor:[x.cor]).includes(co)));cnt.textContent=a.length+' itens';grid.innerHTML=a.map(x=>`<article class=\"card\"><div class=\"pic\" data-z=\"${e(x.zoom||'')}\">${x.card?`<img referrerpolicy=\"no-referrer\" loading=\"lazy\" decoding=\"async\" src=\"${e(x.card)}\" alt=\"${e(x.ref)}\">`:'Imagem indisponível'}</div><div class=\"meta\"><div class=\"fk\">${e(x.codigo)}</div><div class=\"ref\">${e(x.ref)}</div><div class=\"col\">${e(x.fornecedor)} · ${e(x.colecao)}</div><div class=\"type\">${e(x.tipo)}</div><div class=\"measure\">${e(x.medida)}</div><div class=\"price\">${e(x.preco)}</div></div></article>`).join('');grid.querySelectorAll('.pic[data-z]').forEach(x=>x.onclick=()=>{if(x.dataset.z"
+    },
+    {
+      "padrao": "\\.zoom\\b",
+      "posicao": 4106,
+      "trecho": ",a=DATA.filter(x=>(!t||x.search.includes(t))&&(!v||x.fornecedor===v)&&(!c||x.colecao===c)&&(!co||(Array.isArray(x.cor)?x.cor:[x.cor]).includes(co)));cnt.textContent=a.length+' itens';grid.innerHTML=a.map(x=>`<article class=\"card\"><div class=\"pic\" data-z=\"${e(x.zoom||'')}\">${x.card?`<img referrerpolicy=\"no-referrer\" loading=\"lazy\" decoding=\"async\" src=\"${e(x.card)}\" alt=\"${e(x.ref)}\">`:'Imagem indisponível'}</div><div class=\"meta\"><div class=\"fk\">${e(x.codigo)}</div><div class=\"ref\">${e(x.ref)}</div><div class=\"col\">${e(x.fornecedor)} · ${e(x.colecao)}</div><div class=\"type\">${e(x.tipo)}</div><div class=\"measure\">${e(x.medida)}</div><div class=\"price\">${e(x.preco)}</div></div><"
+    },
+    {
+      "padrao": "<img\\b",
+      "posicao": 2931,
+      "trecho": "on><option>Dourado / Metalizado</option><option>Multicolorido</option></select></div></div></header><main class=\"wrap\"><div id=\"count\" class=\"count\"></div><section id=\"grid\" class=\"grid\"></section></main><div id=\"modal\" class=\"modal\"><div class=\"close\">×</div><img referrerpolicy=\"no-referrer\" id=\"mimg\"></div><script>let DATA=[DATA_REMOVIDO_DO_DIAGNOSTICO];const q=document.querySelector('#q'),vf=document.querySelector('#vendor'),cf=document.querySelector('#collection'),cof=document.querySelector('#color'),sf=document.querySelector('#style'),grid=document.querySelector('#grid'),cnt=document.querySelector('#count'),modal=document.querySelector('#modal'),mimg=document.querySelect"
+    },
+    {
+      "padrao": "<img\\b",
+      "posicao": 4129,
+      "trecho": "x.search.includes(t))&&(!v||x.fornecedor===v)&&(!c||x.colecao===c)&&(!co||(Array.isArray(x.cor)?x.cor:[x.cor]).includes(co)));cnt.textContent=a.length+' itens';grid.innerHTML=a.map(x=>`<article class=\"card\"><div class=\"pic\" data-z=\"${e(x.zoom||'')}\">${x.card?`<img referrerpolicy=\"no-referrer\" loading=\"lazy\" decoding=\"async\" src=\"${e(x.card)}\" alt=\"${e(x.ref)}\">`:'Imagem indisponível'}</div><div class=\"meta\"><div class=\"fk\">${e(x.codigo)}</div><div class=\"ref\">${e(x.ref)}</div><div class=\"col\">${e(x.fornecedor)} · ${e(x.colecao)}</div><div class=\"type\">${e(x.tipo)}</div><div class=\"measure\">${e(x.medida)}</div><div class=\"price\">${e(x.preco)}</div></div></article>`).join('');g"
+    }
+  ]
+}
