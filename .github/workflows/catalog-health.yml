@@ -1,0 +1,43 @@
+name: Catalog health
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'scripts/catalog_inventory.py'
+      - 'scripts/optimize_catalog_html.py'
+      - '.github/workflows/catalog-health.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout catalog
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Add safe lazy image loading
+        run: python scripts/optimize_catalog_html.py
+
+      - name: Inventory current published catalog
+        run: python scripts/catalog_inventory.py
+
+      - name: Commit health fixes and reports
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html auditoria-performance.json auditoria-catalogo-atual.json
+          if git diff --cached --quiet; then
+            echo "Catalog already healthy"
+          else
+            git commit -m "Optimize catalog loading and refresh current inventory"
+            git push
+          fi
