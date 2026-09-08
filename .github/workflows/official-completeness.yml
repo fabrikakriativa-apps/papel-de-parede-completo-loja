@@ -16,12 +16,17 @@ permissions:
 jobs:
   audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Checkout catalog
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Install browser for protected official pages
+        run: |
+          python -m pip install --quiet playwright
+          python -m playwright install chromium --with-deps
 
       - name: Audit Home Finish against official collections
         run: python scripts/audit_homefinish_official.py
