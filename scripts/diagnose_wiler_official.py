@@ -10,12 +10,13 @@ ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "diagnostico-wiler-oficial.json"
 BASE = "https://www.wiler.com.br/"
 
+# Coleções que existem no DATA publicado hoje.
 CANDIDATES = {
-    "Harmony III": ["harmony-iii-5", "harmony-iii", "colecao/harmony-iii"],
-    "Nickal": ["nickal", "colecao/nickal", "nickal-5"],
-    "Pure Nature": ["pure-nature", "colecao/pure-nature", "pure-nature-5"],
-    "Pure Nature II": ["pure-nature-ii", "colecao/pure-nature-ii", "pure-nature-ii-5"],
-    "Wallstreet": ["wallstreet", "wall-street", "colecao/wallstreet", "wallstreet-5"],
+    "Bambine": ["bambine", "colecao/bambine", "papel-de-parede/bambine"],
+    "Tacto": ["tacto", "colecao/tacto", "papel-de-parede/tacto"],
+    "Texture II": ["texture-ii", "colecao/texture-ii", "papel-de-parede/texture-ii"],
+    "Texture III": ["texture-iii", "colecao/texture-iii", "papel-de-parede/texture-iii"],
+    "Tramas": ["tramas", "colecao/tramas", "papel-de-parede/tramas"],
 }
 
 
@@ -55,11 +56,7 @@ def get(url: str) -> dict:
 
 
 def main() -> None:
-    tasks = []
-    for collection, slugs in CANDIDATES.items():
-        for slug in slugs:
-            tasks.append((collection, BASE + slug))
-
+    tasks = [(collection, BASE + slug) for collection, slugs in CANDIDATES.items() for slug in slugs]
     grouped = {collection: [] for collection in CANDIDATES}
     with ThreadPoolExecutor(max_workers=10) as pool:
         futures = {pool.submit(get, url): (collection, url) for collection, url in tasks}
@@ -78,8 +75,9 @@ def main() -> None:
 
     REPORT.write_text(json.dumps({
         "fonte": "site oficial Wiler",
+        "colecoes_catalogo_atual": list(CANDIDATES),
         "resultado": out,
-        "criterio": "Sondagem concorrente de rotas públicas oficiais para localizar a fonte adequada de cada coleção. Não altera o catálogo.",
+        "criterio": "Sondagem concorrente de rotas públicas oficiais correspondentes às coleções que existem no DATA atual. Não altera o catálogo.",
     }, ensure_ascii=False, indent=2), encoding="utf-8")
     print("Diagnóstico Wiler concluído")
 
