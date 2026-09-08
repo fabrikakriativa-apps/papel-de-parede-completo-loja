@@ -1,0 +1,196 @@
+{
+  "itens_catalogo": 1206,
+  "fornecedores": {
+    "Home Finish": 619,
+    "Kantai": 331,
+    "Wiler": 256
+  },
+  "total_fornecedores": 3,
+  "total_colecoes": 22,
+  "imagens_card_locais": 1178,
+  "imagens_card_externas": 28,
+  "imagens_card_locais_faltantes": 0,
+  "cards_locais_faltantes": [],
+  "codigos_duplicados": [],
+  "colecoes_com_refs_duplicadas": 0,
+  "total_refs_duplicadas": 0,
+  "colecoes": [
+    {
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "itens": 35,
+      "referencias_unicas": 35,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Home Finish",
+      "colecao": "Biomas",
+      "itens": 46,
+      "referencias_unicas": 46,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Home Finish",
+      "colecao": "Bosque da Imaginação",
+      "itens": 40,
+      "referencias_unicas": 40,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Home Finish",
+      "colecao": "Botânica",
+      "itens": 24,
+      "referencias_unicas": 24,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Home Finish",
+      "colecao": "Doce Estilo",
+      "itens": 72,
+      "referencias_unicas": 72,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Home Finish",
+      "colecao": "Era Uma Vez",
+      "itens": 51,
+      "referencias_unicas": 51,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Home Finish",
+      "colecao": "Flora",
+      "itens": 55,
+      "referencias_unicas": 55,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Home Finish",
+      "colecao": "HF Texture III",
+      "itens": 27,
+      "referencias_unicas": 27,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Home Finish",
+      "colecao": "Memórias de Infância",
+      "itens": 39,
+      "referencias_unicas": 39,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Home Finish",
+      "colecao": "Natureza Lúdica",
+      "itens": 40,
+      "referencias_unicas": 40,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Home Finish",
+      "colecao": "Passeio no Campo",
+      "itens": 60,
+      "referencias_unicas": 60,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Home Finish",
+      "colecao": "Provence",
+      "itens": 64,
+      "referencias_unicas": 64,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Home Finish",
+      "colecao": "Tartan",
+      "itens": 66,
+      "referencias_unicas": 66,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Kantai",
+      "colecao": "Aditare 3",
+      "itens": 81,
+      "referencias_unicas": 81,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Kantai",
+      "colecao": "Criativo 3",
+      "itens": 89,
+      "referencias_unicas": 89,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Kantai",
+      "colecao": "Poet Chart 5",
+      "itens": 78,
+      "referencias_unicas": 78,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Kantai",
+      "colecao": "Space IX",
+      "itens": 83,
+      "referencias_unicas": 83,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Wiler",
+      "colecao": "Bambine",
+      "itens": 50,
+      "referencias_unicas": 50,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Wiler",
+      "colecao": "Tacto",
+      "itens": 41,
+      "referencias_unicas": 41,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Wiler",
+      "colecao": "Texture II",
+      "itens": 52,
+      "referencias_unicas": 52,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Wiler",
+      "colecao": "Texture III",
+      "itens": 51,
+      "referencias_unicas": 51,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Wiler",
+      "colecao": "Tramas",
+      "itens": 62,
+      "referencias_unicas": 62,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    }
+  ],
+  "criterio": "Inventário do DATA atualmente publicado. Não usa a biblioteca-base como fonte de completude; serve para registrar o estado real do catálogo antes da comparação com fontes oficiais."
+}

@@ -1,0 +1,10 @@
+{
+  "itens_catalogo_preservados": 1206,
+  "data_inalterado_byte_a_byte": true,
+  "tags_img_encontradas": 2,
+  "tags_img_com_src": 1,
+  "tags_img_modificadas_nesta_execucao": 0,
+  "tags_img_com_loading": 1,
+  "tags_img_com_decoding": 1,
+  "criterio": "Adiciona loading=lazy e decoding=async a tags img com src sem alterar o bloco DATA. A execução aborta se qualquer byte do DATA mudar."
+}
