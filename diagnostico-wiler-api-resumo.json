@@ -1,0 +1,194 @@
+{
+  "fonte": "diagnostico-wiler-vtex.json",
+  "hosts_observados": {
+    "willerk.vtexassets.com": 91,
+    "www.wiler.com.br": 7,
+    "af-origin.vtex.com": 4,
+    "io.vtex.com.br": 2,
+    "activity-flow.vtex.com": 1,
+    "sp.vtex.com": 1,
+    "service.smarthint.co": 1,
+    "rc.vtex.com": 1,
+    "static.smarthint.co": 1,
+    "recs.smarthint.co": 1
+  },
+  "operacoes_busca_vtex_detectadas": [
+    "QueryFacetsV2",
+    "QueryProductSearchV3",
+    "QueryProducts",
+    "QuerySearchMetadataV2"
+  ],
+  "total_urls_unicas": 110,
+  "candidatos_dados": [
+    {
+      "url": "https://af-origin.vtex.com/api/activity-flow/user-session",
+      "host": "af-origin.vtex.com",
+      "path": "/api/activity-flow/user-session",
+      "query": "",
+      "status": 200,
+      "content_type": "application/json",
+      "json_preview": null
+    },
+    {
+      "url": "https://af-origin.vtex.com/api/activity-flow/page-views",
+      "host": "af-origin.vtex.com",
+      "path": "/api/activity-flow/page-views",
+      "query": "",
+      "status": 200,
+      "content_type": "application/json",
+      "json_preview": null
+    },
+    {
+      "url": "https://sp.vtex.com/event-api/v1/willerk/event",
+      "host": "sp.vtex.com",
+      "path": "/event-api/v1/willerk/event",
+      "query": "",
+      "status": 204,
+      "content_type": "",
+      "json_preview": null
+    },
+    {
+      "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%2245f96384d08e38286c228af857e832b77f9b0a776b4c5ce9bf96e9cd10cdea49%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
+      "host": "www.wiler.com.br",
+      "path": "/_v/public/graphql/v1",
+      "query": "workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%2245f96384d08e38286c228af857e832b77f9b0a776b4c5ce9bf96e9cd10cdea49%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json_preview": {
+        "data": {
+          "iOSIcons": []
+        }
+      }
+    },
+    {
+      "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%221407f44d1dcefcbb1bb02d6324943beca7b02bbb22fcb7d4b5b744f6bdb7e1ab%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
+      "host": "www.wiler.com.br",
+      "path": "/_v/public/graphql/v1",
+      "query": "workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%221407f44d1dcefcbb1bb02d6324943beca7b02bbb22fcb7d4b5b744f6bdb7e1ab%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json_preview": {
+        "data": {
+          "splashes": []
+        }
+      }
+    },
+    {
+      "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%222edd7e66d602ced132258924511dded7167ec69067cb827d6a8fefd5be7d3554%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
+      "host": "www.wiler.com.br",
+      "path": "/_v/public/graphql/v1",
+      "query": "workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%222edd7e66d602ced132258924511dded7167ec69067cb827d6a8fefd5be7d3554%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json_preview": {
+        "data": {
+          "pwaSettings": {
+            "__typename": "PWASettings"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%2236f57d74b4ad859ff109e725c396702a6c5b604ee144401defcd68a4fe341abd%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
+      "host": "www.wiler.com.br",
+      "path": "/_v/public/graphql/v1",
+      "query": "workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%2236f57d74b4ad859ff109e725c396702a6c5b604ee144401defcd68a4fe341abd%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json_preview": {
+        "data": {
+          "manifest": null
+        }
+      }
+    },
+    {
+      "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=long&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=getSettings&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22f2987c393ccdfa868ecf95f735d0a6135d9cb58fcd7603c8c94d29fa301ecb3d%22%2C%22sender%22%3A%22vtex.structured-data%400.x%22%2C%22provider%22%3A%22vtex.apps-graphql%403.x%22%7D%7D",
+      "host": "www.wiler.com.br",
+      "path": "/_v/public/graphql/v1",
+      "query": "workspace=master&maxAge=long&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=getSettings&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22f2987c393ccdfa868ecf95f735d0a6135d9cb58fcd7603c8c94d29fa301ecb3d%22%2C%22sender%22%3A%22vtex.structured-data%400.x%22%2C%22provider%22%3A%22vtex.apps-graphql%403.x%22%7D%7D",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json_preview": {
+        "data": {
+          "publicSettingsForApp": {
+            "__typename": "GenericResponse"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=installedApp&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22ec242d8fc2dca51162eb59b3c55b818fa5fec4a04b2529b9c9c48c6b21ddeb7d%22%2C%22sender%22%3A%22vtex.checkout-resources%400.x%22%2C%22provider%22%3A%22vtex.apps-graphql%403.x%22%7D%2C%22variables%22%3A%22eyJzbHVnIjoidnRleC5jaGVja291dCJ9%22%7D",
+      "host": "www.wiler.com.br",
+      "path": "/_v/public/graphql/v1",
+      "query": "workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=installedApp&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22ec242d8fc2dca51162eb59b3c55b818fa5fec4a04b2529b9c9c48c6b21ddeb7d%22%2C%22sender%22%3A%22vtex.checkout-resources%400.x%22%2C%22provider%22%3A%22vtex.apps-graphql%403.x%22%7D%2C%22variables%22%3A%22eyJzbHVnIjoidnRleC5jaGVja291dCJ9%22%7D",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json_preview": {
+        "data": {
+          "installedApp": {
+            "__typename": "InstalledApp"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://af-origin.vtex.com/api/activity-flow/impression",
+      "host": "af-origin.vtex.com",
+      "path": "/api/activity-flow/impression",
+      "query": "",
+      "status": 200,
+      "content_type": "application/json",
+      "json_preview": null
+    },
+    {
+      "url": "https://rc.vtex.com/v8",
+      "host": "rc.vtex.com",
+      "path": "/v8",
+      "query": "",
+      "status": 200,
+      "content_type": "application/json",
+      "json_preview": null
+    },
+    {
+      "url": "https://www.wiler.com.br/_v/private/graphql/v1?workspace=master&maxAge=long&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0",
+      "host": "www.wiler.com.br",
+      "path": "/_v/private/graphql/v1",
+      "query": "workspace=master&maxAge=long&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json_preview": {
+        "data": {
+          "orderForm": {
+            "id": "7ed7ff11b3d345e5b64e72781264bdba",
+            "items": [],
+            "userProfileId": null,
+            "totalizers": [],
+            "clientPreferencesData": {
+              "__typename": "ClientPreferencesData"
+            },
+            "__typename": "OrderForm"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://af-origin.vtex.com/api/activity-flow/web-vitals",
+      "host": "af-origin.vtex.com",
+      "path": "/api/activity-flow/web-vitals",
+      "query": "",
+      "status": 200,
+      "content_type": "application/json",
+      "json_preview": null
+    },
+    {
+      "url": "https://recs.smarthint.co/box/GetInitialData?callback=jQuery341029803414377951853_1788903112271&key=SH-658457&pageType=search&searchTest=false&recommendationEnabled=false&recommendationLocalDisable=false&bannersEnabled=false&bannersLocalDisable=false&currentUrl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Fwiler-k%3Fmap%3Dcategory-1%252Cbrand&_=1788903112273",
+      "host": "recs.smarthint.co",
+      "path": "/box/GetInitialData",
+      "query": "callback=jQuery341029803414377951853_1788903112271&key=SH-658457&pageType=search&searchTest=false&recommendationEnabled=false&recommendationLocalDisable=false&bannersEnabled=false&bannersLocalDisable=false&currentUrl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Fwiler-k%3Fmap%3Dcategory-1%252Cbrand&_=1788903112273",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "json_preview": null
+    }
+  ],
+  "criterio": "Remove assets estáticos e mantém apenas chamadas/hosts com sinais de API, busca, catálogo, GraphQL ou JSON."
+}

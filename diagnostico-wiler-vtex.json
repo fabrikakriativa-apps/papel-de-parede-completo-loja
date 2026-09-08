@@ -19,6 +19,11 @@
         "content_type": "text/css"
       },
       {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/react@0.0.0-experimental-94c0244ba/umd/react.production.min.js?async=2&workspace=master",
+        "status": 200,
+        "content_type": "text/javascript; charset=utf-8"
+      },
+      {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/vtex-render-session@1.9.2/dist/index.min.js?async=2&workspace=master",
         "status": 200,
         "content_type": "text/javascript; charset=utf-8"
@@ -34,17 +39,12 @@
         "content_type": "text/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/react@0.0.0-experimental-94c0244ba/umd/react.production.min.js?async=2&workspace=master",
-        "status": 200,
-        "content_type": "text/javascript; charset=utf-8"
-      },
-      {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/react-dom@0.0.0-experimental-94c0244ba/umd/react-dom-server.browser.production.min.js?async=2&workspace=master",
         "status": 200,
         "content_type": "text/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/history@4.7.2/umd/history.min.js?async=2&workspace=master",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/react-dom@0.0.0-experimental-94c0244ba/umd/react-dom.production.min.js?async=2&workspace=master",
         "status": 200,
         "content_type": "text/javascript; charset=utf-8"
       },
@@ -54,12 +54,17 @@
         "content_type": "text/javascript; charset=utf-8"
       },
       {
-        "url": "https://io.vtex.com.br/rc/rc.js",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/fg-loadcss@2.1.0/dist/cssrelpreload.min.js?async=2&workspace=master",
         "status": 200,
-        "content_type": "application/javascript"
+        "content_type": "text/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/react-dom@0.0.0-experimental-94c0244ba/umd/react-dom.production.min.js?async=2&workspace=master",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.render-runtime@8.136.2/public/react/index.min.js?async=2&workspace=master",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/lazysizes@5.3.2/lazysizes.min.js?async=2&workspace=master",
         "status": 200,
         "content_type": "text/javascript; charset=utf-8"
       },
@@ -69,27 +74,12 @@
         "content_type": "text/javascript; charset=utf-8"
       },
       {
-        "url": "https://activity-flow.vtex.com/af/af.js",
-        "status": 200,
-        "content_type": "text/javascript"
-      },
-      {
-        "url": "https://io.vtex.com.br/v3/polyfill.min.js?version=3.89.4&features=Object.values,Object.entries,Object.assign,Array.from,Array.prototype.findIndex,Array.prototype.fill,Array.prototype.find,Array.prototype.flatMap,Array.prototype.includes,String.prototype.startsWith,String.prototype.endsWith,String.prototype.includes,String.prototype.repeat,Symbol,fetch,Promise,Map,WeakMap,Number.isInteger,Number.isNaN,Number.EPSILON,Set,Function.name,URL,IntersectionObserver,Intl.~locale.pt-BR&flags=gated",
-        "status": 200,
-        "content_type": "text/javascript; charset=UTF-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/lazysizes@5.3.2/lazysizes.min.js?async=2&workspace=master",
-        "status": 200,
-        "content_type": "text/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/fg-loadcss@2.1.0/dist/cssrelpreload.min.js?async=2&workspace=master",
-        "status": 200,
-        "content_type": "text/javascript; charset=utf-8"
-      },
-      {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/lazysizes@5.3.2/plugins/unveilhooks/ls.unveilhooks.min.js?async=2&workspace=master",
+        "status": 200,
+        "content_type": "text/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/history@4.7.2/umd/history.min.js?async=2&workspace=master",
         "status": 200,
         "content_type": "text/javascript; charset=utf-8"
       },
@@ -104,16 +94,6 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.render-runtime@8.136.2/public/react/index.min.js?async=2&workspace=master",
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-66029495c8199193203d1052c1a62a00ac06a095.min.js?v=1&files=vtex.render-runtime@8.136.2,LayoutContainer&files=vtex.device-detector@0.2.6,common,useDevice,withDevice&files=vtex.css-handles@0.4.4,common,useCssHandles,applyModifiers&files=vtex.styleguide@9.146.16,common,0,Button,ButtonWithIcon,19,ToastContext,IconArrowBack,IconClose,ToastProvider,Spinner,Checkbox,1,Input&async=2&workspace=master",
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-1164569a1916393d90612559a3c273f75d4539e2.min.js?v=1&files=vtex.session-client@1.0.4,useRenderSession&files=vtex.search-page-context@0.2.0,SearchPageContext&files=vtex.css-handles@1.0.1,common,0,useCssHandles,applyModifiers,createCssHandlesContext,useCustomClasses&files=willerk.store-components@0.0.15,common,MyAccountInputRules,CanonicalWithoutPage&files=vtex.visibility-layout@0.2.1,Experimental__VisibilityLayout&files=vtex.on-view@1.0.0,common,useOnView&files=vtex.modal-layout@0.14.2,common,ModalContext&files=vtex.react-vtexid@4.70.0,common,AuthServiceLazy,AuthStateLazy,RecaptchaProvider,getAbsReturnUrl&async=2&workspace=master",
         "status": 200,
         "content_type": "application/javascript; charset=utf-8"
@@ -124,27 +104,7 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-fae5404f8be467eeddce6294053cef3f234177dd.min.js?v=1&files=vtex.pixel-manager@1.9.0,0,PixelContext,usePixel,usePixelEventCallback&files=vtex.structured-data@0.17.0,common,0,ProductList,SearchBreadcrumb&files=vtex.checkout-resources@0.50.1,common,0,MutationAddToCart,4,MutationSetManualPrice,5,MutationUpdateItems,MutationClearOrderFormMessages,6,QueryOrderForm,Utils&files=vtex.checkout-splunk@0.1.1,useSplunk&files=vtex.session-client@1.0.4,common&async=2&workspace=master",
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.render-runtime@8.136.2/public/react/common.min.js?async=2&workspace=master",
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-4527ea244734daa5e5259c5d7f610cb4e7d71d0f.min.js?v=1&files=vtex.react-vtexid@4.70.0,1,2,0,useGetPhoneNumberByEmail,useLogInWithAccessKey,useLogInWithPassword,useLogOut,useRedirectAfterLogin,useSendAccessCode,useSendAccessKey,useSetPassword,useStartLoginAttempt,validations&files=vtex.address-form@4.29.3,common,AddressRules,0,1,2,5,3,helpers&async=2&workspace=master",
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-75d33359d05ddf30ac481cb878794229ea1a2927.min.js?v=1&files=vtex.product-context@0.10.1,common,ProductContextProvider,useProduct,useProductDispatch,ProductDispatchContext,ProductContext&files=vtex.product-group-context@0.2.0,ProductGroupContext&files=vtex.responsive-values@0.4.2,common,useResponsiveValues,useResponsiveValue&files=vtex.responsive-layout@0.1.4,common,ResponsiveLayoutDesktop&files=vtex.store-icons@0.19.4,common,IconSearch,IconCaret,IconGrid,IconInlineGrid,IconSingleGrid,Icon,IconExpand,IconPause&async=2&workspace=master",
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-15114a514c52f057dcd49bde536ef774f63a1d34.min.js?v=1&files=vtex.native-types@0.10.1,IOMessageWithMarkers&files=vtex.store-resources@0.105.0,common,QueryFacetsV2,QueryProductSearchV3,QuerySearchMetadataV2,0,MutationAddToCart,1,MutationUpdateItems,MutationUpdateOrderFormCheckin,MutationUpdateOrderFormProfile,MutationUpdateOrderFormShipping,OrderFormContext,PWAContext,3,QueryOrderForm,QueryItemsWithSimulation,8,QueryProducts&files=vtex.product-list-context@0.4.1,common,ProductListContext&async=2&workspace=master",
         "status": 200,
         "content_type": "application/javascript; charset=utf-8"
       },
@@ -154,17 +114,22 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-fae5404f8be467eeddce6294053cef3f234177dd.min.js?v=1&files=vtex.pixel-manager@1.9.0,0,PixelContext,usePixel,usePixelEventCallback&files=vtex.structured-data@0.17.0,common,0,ProductList,SearchBreadcrumb&files=vtex.checkout-resources@0.50.1,common,0,MutationAddToCart,4,MutationSetManualPrice,5,MutationUpdateItems,MutationClearOrderFormMessages,6,QueryOrderForm,Utils&files=vtex.checkout-splunk@0.1.1,useSplunk&files=vtex.session-client@1.0.4,common&async=2&workspace=master",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-4527ea244734daa5e5259c5d7f610cb4e7d71d0f.min.js?v=1&files=vtex.react-vtexid@4.70.0,1,2,0,useGetPhoneNumberByEmail,useLogInWithAccessKey,useLogInWithPassword,useLogOut,useRedirectAfterLogin,useSendAccessCode,useSendAccessKey,useSetPassword,useStartLoginAttempt,validations&files=vtex.address-form@4.29.3,common,AddressRules,0,1,2,5,3,helpers&async=2&workspace=master",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-1e810ae5a5c9d1f7e023d43cad14b1e77360a4b3.min.js?v=1&files=vtex.product-list-context@0.4.1,useProductImpression&files=vtex.order-manager@0.12.0,common,0,OrderForm,OrderQueue&files=vtex.list-context@0.2.0,common,ListContextProvider,useListContext,ListRenderer&files=vtex.format-currency@0.4.1,common,formatCurrency,FormattedCurrency&files=willerk.product-quantity@1.9.2,common,0,ProductSummaryQuantity&files=vtex.condition-layout@2.8.1,common,ConditionLayoutProduct&files=vtex.wish-list@1.19.1,common,AddProductBtn&files=vtex.product-summary-context@0.13.0,common,ProductSummaryContext&async=2&workspace=master",
         "status": 200,
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-70dda7043dcffd83b9a5fda5ea7ae5946996e373.min.js?v=1&files=vtex.product-highlights@2.3.2,ProductHighlightText&files=vtex.order-items@0.14.0,common,0,OrderItems&files=vtex.slider-layout@0.24.10,common,SliderLayout&files=vtex.store-image@0.24.0,common,Image,0,ImageList&files=yourviews.yourviewsreviews@1.28.9,common,0,3,1,2,RatingInline&files=vtex.product-price@1.33.0,common,ListPrice,SellingPrice,Savings&files=willerk.minicart@2.67.4,common&async=2&workspace=master",
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-efacd8a2d832fbf9ce37f81ba132f542869bad78.min.js?v=1&files=willerk.minicart@2.67.4,Minicart&files=maeztraio.list-context-rich-text@0.0.1,RichTextList&files=vtex.delivery-promise-components@1.5.1,common,0,2,1,3,5,DeliveryPromiseContext,4,PickupModalPresentational,6,PostalCodeModal&files=vtex.shipping-option-components@1.12.0,common,0,1,ShippingOptionContext&files=vtex.store-components@3.178.5,common,Container,Image,10&async=2&workspace=master",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.render-runtime@8.136.2/public/react/common.min.js?async=2&workspace=master",
         "status": 200,
         "content_type": "application/javascript; charset=utf-8"
       },
@@ -174,7 +139,17 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-b8ece7df2319ef28206dd8f921ee60f5c5e17a6e.min.js?v=1&files=vtex.store@2.147.2,0,SearchWrapper,StoreWrapper,DefaultChallenge&async=2&workspace=master",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-15114a514c52f057dcd49bde536ef774f63a1d34.min.js?v=1&files=vtex.native-types@0.10.1,IOMessageWithMarkers&files=vtex.store-resources@0.105.0,common,QueryFacetsV2,QueryProductSearchV3,QuerySearchMetadataV2,0,MutationAddToCart,1,MutationUpdateItems,MutationUpdateOrderFormCheckin,MutationUpdateOrderFormProfile,MutationUpdateOrderFormShipping,OrderFormContext,PWAContext,3,QueryOrderForm,QueryItemsWithSimulation,8,QueryProducts&files=vtex.product-list-context@0.4.1,common,ProductListContext&async=2&workspace=master",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://activity-flow.vtex.com/af/af.js",
+        "status": 200,
+        "content_type": "text/javascript"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-efacd8a2d832fbf9ce37f81ba132f542869bad78.min.js?v=1&files=willerk.minicart@2.67.4,Minicart&files=maeztraio.list-context-rich-text@0.0.1,RichTextList&files=vtex.delivery-promise-components@1.5.1,common,0,2,1,3,5,DeliveryPromiseContext,4,PickupModalPresentational,6,PostalCodeModal&files=vtex.shipping-option-components@1.12.0,common,0,1,ShippingOptionContext&files=vtex.store-components@3.178.5,common,Container,Image,10&async=2&workspace=master",
         "status": 200,
         "content_type": "application/javascript; charset=utf-8"
       },
@@ -189,19 +164,39 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-3decef01741d68c3e08b44bbcaa03c5555f90820.min.js?v=1&files=vtex.render-runtime@8.136.2,ExtensionContainer&files=vtex.admin-pages@4.59.2,common,6,18,HighlightOverlay&files=vtex.request-capture@2.3.0,index&files=vtex.sae-analytics@2.17.0,common,index&files=vtex.google-tag-manager@3.5.4,index&files=maeztraio.trustvox-integration@1.0.1,common,index&files=willerk.store-components@0.0.15,index&files=vtex.store-components@3.178.5,BackToTopButton&async=2&workspace=master",
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-8b7c5b60514a13c9dedc079aa0c62812e8bec136.min.js?v=1&files=vtex.search-result@3.150.2,SearchTitleFlexible,6,7,13,10,FilterNavigatorFlexible,SidebarCloseButton,SearchContent,FetchMore,12,TotalProductsFlexible,OrderByFlexible,15,8,16,14,Gallery,NotFoundSearch&files=vtex.store@2.147.2,common,1,SearchContext&async=2&workspace=master",
         "status": 200,
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/yourviews.yourviewsreviews@1.28.9/public/react/52a37115b1d8d5d6ae0b0e373e692c9d.ttf",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-66029495c8199193203d1052c1a62a00ac06a095.min.js?v=1&files=vtex.render-runtime@8.136.2,LayoutContainer&files=vtex.device-detector@0.2.6,common,useDevice,withDevice&files=vtex.css-handles@0.4.4,common,useCssHandles,applyModifiers&files=vtex.styleguide@9.146.16,common,0,Button,ButtonWithIcon,19,ToastContext,IconArrowBack,IconClose,ToastProvider,Spinner,Checkbox,1,Input&async=2&workspace=master",
         "status": 200,
-        "content_type": "font/ttf"
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-3decef01741d68c3e08b44bbcaa03c5555f90820.min.js?v=1&files=vtex.render-runtime@8.136.2,ExtensionContainer&files=vtex.admin-pages@4.59.2,common,6,18,HighlightOverlay&files=vtex.request-capture@2.3.0,index&files=vtex.sae-analytics@2.17.0,common,index&files=vtex.google-tag-manager@3.5.4,index&files=maeztraio.trustvox-integration@1.0.1,common,index&files=willerk.store-components@0.0.15,index&files=vtex.store-components@3.178.5,BackToTopButton&async=2&workspace=master",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-b8ece7df2319ef28206dd8f921ee60f5c5e17a6e.min.js?v=1&files=vtex.store@2.147.2,0,SearchWrapper,StoreWrapper,DefaultChallenge&async=2&workspace=master",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-70dda7043dcffd83b9a5fda5ea7ae5946996e373.min.js?v=1&files=vtex.product-highlights@2.3.2,ProductHighlightText&files=vtex.order-items@0.14.0,common,0,OrderItems&files=vtex.slider-layout@0.24.10,common,SliderLayout&files=vtex.store-image@0.24.0,common,Image,0,ImageList&files=yourviews.yourviewsreviews@1.28.9,common,0,3,1,2,RatingInline&files=vtex.product-price@1.33.0,common,ListPrice,SellingPrice,Savings&files=willerk.minicart@2.67.4,common&async=2&workspace=master",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://io.vtex.com.br/rc/rc.js",
+        "status": 200,
+        "content_type": "application/javascript"
+      },
+      {
+        "url": "https://io.vtex.com.br/v3/polyfill.min.js?version=3.89.4&features=Object.values,Object.entries,Object.assign,Array.from,Array.prototype.findIndex,Array.prototype.fill,Array.prototype.find,Array.prototype.flatMap,Array.prototype.includes,String.prototype.startsWith,String.prototype.endsWith,String.prototype.includes,String.prototype.repeat,Symbol,fetch,Promise,Map,WeakMap,Number.isInteger,Number.isNaN,Number.EPSILON,Set,Function.name,URL,IntersectionObserver,Intl.~locale.pt-BR&flags=gated",
+        "status": 200,
+        "content_type": "text/javascript; charset=UTF-8"
       },
       {
         "url": "https://af-origin.vtex.com/api/activity-flow/user-session",
@@ -210,22 +205,20 @@
         "json_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
       },
       {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/yourviews.yourviewsreviews@1.28.9/public/react/52a37115b1d8d5d6ae0b0e373e692c9d.ttf",
+        "status": 200,
+        "content_type": "font/ttf"
+      },
+      {
         "url": "https://af-origin.vtex.com/api/activity-flow/page-views",
         "status": 200,
         "content_type": "application/json",
         "json_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
       },
       {
-        "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%222edd7e66d602ced132258924511dded7167ec69067cb827d6a8fefd5be7d3554%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
-        "status": 200,
-        "content_type": "application/json; charset=utf-8",
-        "json_preview": {
-          "data": {
-            "pwaSettings": {
-              "__typename": "PWASettings"
-            }
-          }
-        }
+        "url": "https://sp.vtex.com/event-api/v1/willerk/event",
+        "status": 204,
+        "content_type": ""
       },
       {
         "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%2245f96384d08e38286c228af857e832b77f9b0a776b4c5ce9bf96e9cd10cdea49%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
@@ -234,16 +227,6 @@
         "json_preview": {
           "data": {
             "iOSIcons": []
-          }
-        }
-      },
-      {
-        "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%2236f57d74b4ad859ff109e725c396702a6c5b604ee144401defcd68a4fe341abd%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
-        "status": 200,
-        "content_type": "application/json; charset=utf-8",
-        "json_preview": {
-          "data": {
-            "manifest": null
           }
         }
       },
@@ -258,6 +241,28 @@
         }
       },
       {
+        "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%222edd7e66d602ced132258924511dded7167ec69067cb827d6a8fefd5be7d3554%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
+        "status": 200,
+        "content_type": "application/json; charset=utf-8",
+        "json_preview": {
+          "data": {
+            "pwaSettings": {
+              "__typename": "PWASettings"
+            }
+          }
+        }
+      },
+      {
+        "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%2236f57d74b4ad859ff109e725c396702a6c5b604ee144401defcd68a4fe341abd%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
+        "status": 200,
+        "content_type": "application/json; charset=utf-8",
+        "json_preview": {
+          "data": {
+            "manifest": null
+          }
+        }
+      },
+      {
         "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=long&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=getSettings&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22f2987c393ccdfa868ecf95f735d0a6135d9cb58fcd7603c8c94d29fa301ecb3d%22%2C%22sender%22%3A%22vtex.structured-data%400.x%22%2C%22provider%22%3A%22vtex.apps-graphql%403.x%22%7D%7D",
         "status": 200,
         "content_type": "application/json; charset=utf-8",
@@ -268,11 +273,6 @@
             }
           }
         }
-      },
-      {
-        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/566a9052-128d-499d-9692-68acb1d26266___af56f1cc83ce44a60a504b858d552c67.jpg",
-        "status": 200,
-        "content_type": "image/webp"
       },
       {
         "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/20d210c8-9bd9-4ce4-bdc3-b5edcaa68d85___03dcb685699ebb51b74c1e0cef332853.jpg",
@@ -290,6 +290,11 @@
             }
           }
         }
+      },
+      {
+        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/566a9052-128d-499d-9692-68acb1d26266___af56f1cc83ce44a60a504b858d552c67.jpg",
+        "status": 200,
+        "content_type": "image/webp"
       },
       {
         "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/de37d6e9-6646-477f-846b-7e1bd0489783___3ae9820979f176025fd87b4dd8fabfe9.jpg",
@@ -317,17 +322,12 @@
         "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/1.0.1/svg/whatsapp-icon-header___6718eb4df7cab5c1a58d4cef690122d4.svg",
-        "status": 200,
-        "content_type": "image/svg+xml"
-      },
-      {
         "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/ad26331a-c76c-415a-a297-34851ba9a274___5a112bad5820ca3b05ca90bb20d7aae5.webp",
         "status": 200,
         "content_type": "application/octet-stream"
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.88/svg/mobile-user___abc2a7bad6e997a62aecdc3a7b0348aa.svg",
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/1.0.1/svg/whatsapp-icon-header___6718eb4df7cab5c1a58d4cef690122d4.svg",
         "status": 200,
         "content_type": "image/svg+xml"
       },
@@ -337,17 +337,7 @@
         "content_type": "image/svg+xml"
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.88/svg/arrow-right-topbar___ae8eb5e7f272a21a0f260e273488e42a.svg",
-        "status": 200,
-        "content_type": "image/svg+xml"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.88/img/icon-search-header___b4735f0ebeaf7b4cbd3371a684a48c08.png",
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.88/svg/arrow-left-topbar___720b94649461ececdcd02d35eee5733f.svg",
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.88/svg/mobile-user___abc2a7bad6e997a62aecdc3a7b0348aa.svg",
         "status": 200,
         "content_type": "image/svg+xml"
       },
@@ -357,9 +347,29 @@
         "content_type": "image/svg+xml"
       },
       {
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.88/img/icon-search-header___b4735f0ebeaf7b4cbd3371a684a48c08.png",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
         "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.88/svg/u_heart-favoritos___506b2edd78fbff6a5260fbeb1cb9f570.svg",
         "status": 200,
         "content_type": "image/svg+xml"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.88/svg/arrow-right-topbar___ae8eb5e7f272a21a0f260e273488e42a.svg",
+        "status": 200,
+        "content_type": "image/svg+xml"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.88/svg/arrow-left-topbar___720b94649461ececdcd02d35eee5733f.svg",
+        "status": 200,
+        "content_type": "image/svg+xml"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-icons@0.19.4/public/react/IconAssistantSales.min.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
       },
       {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-resources@0.105.0/public/react/QuerySession.min.js",
@@ -372,24 +382,14 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-icons@0.19.4/public/react/IconAssistantSales.min.js",
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://sp.vtex.com/event-api/v1/willerk/event",
-        "status": 204,
-        "content_type": ""
-      },
-      {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-drawer@0.18.1/public/react/0.min.js",
         "status": 200,
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/cc35adea-989f-4c11-b187-3f8a23c6fe0c___bc4174e0e7979e96383b2e831ee6586c.png",
+        "url": "https://service.smarthint.co/Scripts/i/Vtex.IO.min.js",
         "status": 200,
-        "content_type": "image/webp"
+        "content_type": "application/javascript"
       },
       {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-footer@2.27.0/public/react/common.min.js",
@@ -407,12 +407,12 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-newsletter@1.3.0/public/react/common.min.js",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-newsletter@1.3.0/public/react/Newsletter.min.js",
         "status": 200,
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-newsletter@1.3.0/public/react/Newsletter.min.js",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-newsletter@1.3.0/public/react/common.min.js",
         "status": 200,
         "content_type": "application/javascript; charset=utf-8"
       },
@@ -422,7 +422,22 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-newsletter@1.3.0/public/react/FormEmailInput.min.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-newsletter@1.3.0/public/react/FormNameInput.min.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/willerk.better-store-media@0.0.1/public/react/MediaList.min.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.sandbox@0.5.1/public/react/common.min.js",
         "status": 200,
         "content_type": "application/javascript; charset=utf-8"
       },
@@ -437,12 +452,7 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/willerk.better-store-media@0.0.1/public/react/MediaList.min.js",
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-newsletter@1.3.0/public/react/FormEmailInput.min.js",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.sandbox@0.5.1/public/react/Sandbox.min.js",
         "status": 200,
         "content_type": "application/javascript; charset=utf-8"
       },
@@ -452,22 +462,18 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.sandbox@0.5.1/public/react/common.min.js",
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.sandbox@0.5.1/public/react/Sandbox.min.js",
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/02a2935f-b7b2-472d-bf5e-74a94c2c45aa___c671a7df3291d5899b3c0a5f24b953c6.png",
+        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/cc35adea-989f-4c11-b187-3f8a23c6fe0c___bc4174e0e7979e96383b2e831ee6586c.png",
         "status": 200,
         "content_type": "image/webp"
       },
       {
         "url": "https://af-origin.vtex.com/api/activity-flow/impression",
+        "status": 200,
+        "content_type": "application/json",
+        "json_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "url": "https://rc.vtex.com/v8",
         "status": 200,
         "content_type": "application/json",
         "json_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
@@ -479,7 +485,7 @@
         "json_preview": {
           "data": {
             "orderForm": {
-              "id": "87e6d167d5384023a15d24f9d9d443f5",
+              "id": "7ed7ff11b3d345e5b64e72781264bdba",
               "items": [],
               "userProfileId": null,
               "totalizers": [],
@@ -492,22 +498,7 @@
         }
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/svg/facebook-footer___8dd64ee50d050c9b92e217948eaf554e.svg",
-        "status": 200,
-        "content_type": "image/svg+xml"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/svg/instagram-footer___85aed151e7961925497a95f13181877c.svg",
-        "status": 200,
-        "content_type": "image/svg+xml"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/433ab6a0-84a6-4598-9a50-c68b09981041___f44b936d2542b7de471629397df99d07.png",
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/ae57cdd3-636c-4141-a816-ba6d87b26df5___8b025c224332c8c17b01b41fab96fceb.png",
+        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/02a2935f-b7b2-472d-bf5e-74a94c2c45aa___c671a7df3291d5899b3c0a5f24b953c6.png",
         "status": 200,
         "content_type": "image/webp"
       },
@@ -517,9 +508,19 @@
         "content_type": "image/png"
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/Elo___4f27a0d238bd437a622bd066dd28f87c.png",
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/svg/instagram-footer___85aed151e7961925497a95f13181877c.svg",
+        "status": 200,
+        "content_type": "image/svg+xml"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/ae57cdd3-636c-4141-a816-ba6d87b26df5___8b025c224332c8c17b01b41fab96fceb.png",
         "status": 200,
         "content_type": "image/webp"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/svg/facebook-footer___8dd64ee50d050c9b92e217948eaf554e.svg",
+        "status": 200,
+        "content_type": "image/svg+xml"
       },
       {
         "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/MasterCard___128e87af078279ad142466256ff97428.png",
@@ -532,17 +533,7 @@
         "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/Visa___073d9b743799cbfc80674f90fc846d7d.png",
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/Maestro___7848a2a0b53cd7ca6666db72266a5e92.png",
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/Boleto___481076af307b18831dc87f7d862a9dc1.png",
+        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/433ab6a0-84a6-4598-9a50-c68b09981041___f44b936d2542b7de471629397df99d07.png",
         "status": 200,
         "content_type": "image/webp"
       },
@@ -552,12 +543,27 @@
         "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/1.0.2/img/selo-2___3a1a119996419bbd73aaae09a42efa31.png",
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/Maestro___7848a2a0b53cd7ca6666db72266a5e92.png",
         "status": 200,
         "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/1.0.2/img/selo-1___4fd922a7fcf0064dd22937a1e0938923.png",
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/Elo___4f27a0d238bd437a622bd066dd28f87c.png",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/Visa___073d9b743799cbfc80674f90fc846d7d.png",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/Boleto___481076af307b18831dc87f7d862a9dc1.png",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/1.0.2/img/selo-2___3a1a119996419bbd73aaae09a42efa31.png",
         "status": 200,
         "content_type": "image/webp"
       },
@@ -567,12 +573,17 @@
         "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/1.0.2/img/selo-4___1cdcd5ab360309b93af362e79caf7167.png",
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/1.0.2/img/selo-1___4fd922a7fcf0064dd22937a1e0938923.png",
         "status": 200,
         "content_type": "image/webp"
       },
       {
         "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/1.0.2/img/selo-3___283394c92d76be343f70d84f65c33dd3.png",
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/1.0.2/img/selo-4___1cdcd5ab360309b93af362e79caf7167.png",
         "status": 200,
         "content_type": "image/webp"
       },
@@ -585,17 +596,6 @@
         "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.88/img/Footer-newsletter___190e13f2f27da7f601c579740a6f3563.png",
         "status": 200,
         "content_type": "image/webp"
-      },
-      {
-        "url": "https://rc.vtex.com/v8",
-        "status": 200,
-        "content_type": "application/json",
-        "json_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-      },
-      {
-        "url": "https://service.smarthint.co/Scripts/i/Vtex.IO.min.js",
-        "status": 200,
-        "content_type": "application/javascript"
       },
       {
         "url": "https://af-origin.vtex.com/api/activity-flow/web-vitals",
@@ -612,6 +612,11 @@
         "url": "https://static.smarthint.co/Scripts/i/Vtex.IO.Full.min.js?v=1",
         "status": 200,
         "content_type": "text/javascript"
+      },
+      {
+        "url": "https://recs.smarthint.co/box/GetInitialData?callback=jQuery341029803414377951853_1788903112271&key=SH-658457&pageType=search&searchTest=false&recommendationEnabled=false&recommendationLocalDisable=false&bannersEnabled=false&bannersLocalDisable=false&currentUrl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Fwiler-k%3Fmap%3Dcategory-1%252Cbrand&_=1788903112273",
+        "status": 200,
+        "content_type": "text/plain; charset=utf-8"
       }
     ]
   }
