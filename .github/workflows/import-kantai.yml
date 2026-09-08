@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/import-kantai.yml'
       - 'scripts/import_kantai.py'
+      - 'scripts/import_kantai_v2.py'
 
 permissions:
   contents: write
@@ -37,7 +38,7 @@ jobs:
           python -m playwright install --with-deps chromium
 
       - name: Importar e validar Kantai
-        run: python scripts/import_kantai.py
+        run: python scripts/import_kantai_v2.py
 
       - name: Verificar diff
         run: git diff --check
