@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/audit_homefinish_official.py'
+      - 'scripts/diagnose_wiler_official.py'
       - 'scripts/audit_wiler_official.py'
       - '.github/workflows/official-completeness.yml'
   workflow_dispatch:
@@ -25,12 +26,15 @@ jobs:
       - name: Audit Home Finish against official collections
         run: python scripts/audit_homefinish_official.py
 
+      - name: Diagnose Wiler official collection sources
+        run: python scripts/diagnose_wiler_official.py
+
       - name: Commit official audit reports
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add auditoria-homefinish-oficial.json
+          git add auditoria-homefinish-oficial.json diagnostico-wiler-oficial.json
           if git diff --cached --quiet; then
             echo "Official audit unchanged"
           else
