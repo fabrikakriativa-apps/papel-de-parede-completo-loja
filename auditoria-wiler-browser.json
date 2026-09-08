@@ -1,0 +1,424 @@
+{
+  "fonte": "Wiler — vitrine oficial pública em navegador real",
+  "dominio_oficial": "https://www.wiler.com.br/",
+  "criterio": "Percorre a paginação renderizada das cinco coleções. A vitrine ativa é usada para detectar referências ativas faltantes no catálogo. Referências do catálogo ausentes na vitrine não são removidas automaticamente.",
+  "colecoes": [
+    {
+      "colecao": "Bambine",
+      "url_oficial": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes",
+      "oficial_ativos_total": 37,
+      "catalogo_total": 50,
+      "refs_ativas_extraidas": 38,
+      "extracao_ativa_completa": true,
+      "faltantes_ativos_confirmados": [],
+      "catalogo_nao_encontrado_na_vitrine_ativa": [
+        "BA0005",
+        "BA0008",
+        "BA0011",
+        "BA0016",
+        "BA0017",
+        "BA0022",
+        "BA0025",
+        "BA0028",
+        "BA0033",
+        "BA0048",
+        "BA0049",
+        "BA0050"
+      ],
+      "observacao_catalogo_nao_ativo": "Itens não encontrados na vitrine ativa NÃO são candidatos automáticos a remoção; podem ser referências históricas/válidas do book.",
+      "refs_ativas": [
+        "BA0001",
+        "BA0002",
+        "BA0003",
+        "BA0004",
+        "BA0006",
+        "BA0007",
+        "BA0009",
+        "BA0010",
+        "BA0012",
+        "BA0013",
+        "BA0014",
+        "BA0015",
+        "BA0018",
+        "BA0019",
+        "BA0020",
+        "BA0021",
+        "BA0023",
+        "BA0024",
+        "BA0026",
+        "BA0027",
+        "BA0029",
+        "BA0030",
+        "BA0031",
+        "BA0032",
+        "BA0034",
+        "BA0035",
+        "BA0036",
+        "BA0037",
+        "BA0038",
+        "BA0039",
+        "BA0040",
+        "BA0041",
+        "BA0042",
+        "BA0043",
+        "BA0044",
+        "BA0045",
+        "BA0046",
+        "BA0047"
+      ],
+      "paginas": [
+        {
+          "pagina": 1,
+          "url": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes",
+          "http": 200,
+          "refs_na_pagina": 21,
+          "novas_refs": 21,
+          "total_acumulado": 21,
+          "contagens_visiveis": [
+            37
+          ]
+        },
+        {
+          "pagina": 2,
+          "url": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes&page=2",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes&page=2",
+          "http": 200,
+          "refs_na_pagina": 21,
+          "novas_refs": 17,
+          "total_acumulado": 38,
+          "contagens_visiveis": [
+            37
+          ]
+        }
+      ],
+      "erro": null,
+      "status": "ok"
+    },
+    {
+      "colecao": "Tacto",
+      "url_oficial": "https://www.wiler.com.br/papel-de-parede/tacto?map=category-1%2Ccolecoes",
+      "oficial_ativos_total": 0,
+      "catalogo_total": 41,
+      "refs_ativas_extraidas": 0,
+      "extracao_ativa_completa": false,
+      "faltantes_ativos_confirmados": [],
+      "catalogo_nao_encontrado_na_vitrine_ativa": [],
+      "observacao_catalogo_nao_ativo": "Itens não encontrados na vitrine ativa NÃO são candidatos automáticos a remoção; podem ser referências históricas/válidas do book.",
+      "refs_ativas": [],
+      "paginas": [
+        {
+          "pagina": 1,
+          "url": "https://www.wiler.com.br/papel-de-parede/tacto?map=category-1%2Ccolecoes",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/tacto?map=category-1%2Ccolecoes",
+          "http": 200,
+          "refs_na_pagina": 0,
+          "novas_refs": 0,
+          "total_acumulado": 0,
+          "contagens_visiveis": [
+            0
+          ]
+        },
+        {
+          "pagina": 2,
+          "url": "https://www.wiler.com.br/papel-de-parede/tacto?map=category-1%2Ccolecoes&page=2",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/tacto?map=category-1%2Ccolecoes&page=2",
+          "http": 200,
+          "refs_na_pagina": 0,
+          "novas_refs": 0,
+          "total_acumulado": 0,
+          "contagens_visiveis": [
+            0
+          ]
+        }
+      ],
+      "erro": null,
+      "status": "erro"
+    },
+    {
+      "colecao": "Texture II",
+      "url_oficial": "https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes",
+      "oficial_ativos_total": 42,
+      "catalogo_total": 52,
+      "refs_ativas_extraidas": 42,
+      "extracao_ativa_completa": true,
+      "faltantes_ativos_confirmados": [],
+      "catalogo_nao_encontrado_na_vitrine_ativa": [
+        "TX-2024",
+        "TX-2025",
+        "TX-2026",
+        "TX-2027",
+        "TX-2028",
+        "TX-2029",
+        "TX-2030",
+        "TX-2031",
+        "TX-2032",
+        "TX-2034"
+      ],
+      "observacao_catalogo_nao_ativo": "Itens não encontrados na vitrine ativa NÃO são candidatos automáticos a remoção; podem ser referências históricas/válidas do book.",
+      "refs_ativas": [
+        "TX-2001",
+        "TX-2002",
+        "TX-2003",
+        "TX-2004",
+        "TX-2005",
+        "TX-2006",
+        "TX-2007",
+        "TX-2008",
+        "TX-2009",
+        "TX-2010",
+        "TX-2011",
+        "TX-2012",
+        "TX-2013",
+        "TX-2014",
+        "TX-2015",
+        "TX-2016",
+        "TX-2017",
+        "TX-2018",
+        "TX-2019",
+        "TX-2020",
+        "TX-2021",
+        "TX-2022",
+        "TX-2023",
+        "TX-2033",
+        "TX-2035",
+        "TX-2036",
+        "TX-2037",
+        "TX-2038",
+        "TX-2039",
+        "TX-2040",
+        "TX-2041",
+        "TX-2042",
+        "TX-2043",
+        "TX-2044",
+        "TX-2045",
+        "TX-2046",
+        "TX-2047",
+        "TX-2048",
+        "TX-2049",
+        "TX-2050",
+        "TX-2051",
+        "TX-2052"
+      ],
+      "paginas": [
+        {
+          "pagina": 1,
+          "url": "https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes",
+          "http": 200,
+          "refs_na_pagina": 16,
+          "novas_refs": 16,
+          "total_acumulado": 16,
+          "contagens_visiveis": [
+            42
+          ]
+        },
+        {
+          "pagina": 2,
+          "url": "https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes&page=2",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes&page=2",
+          "http": 200,
+          "refs_na_pagina": 16,
+          "novas_refs": 16,
+          "total_acumulado": 32,
+          "contagens_visiveis": [
+            42
+          ]
+        },
+        {
+          "pagina": 3,
+          "url": "https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes&page=3",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes&page=3",
+          "http": 200,
+          "refs_na_pagina": 10,
+          "novas_refs": 10,
+          "total_acumulado": 42,
+          "contagens_visiveis": [
+            42
+          ]
+        }
+      ],
+      "erro": null,
+      "status": "ok"
+    },
+    {
+      "colecao": "Texture III",
+      "url_oficial": "https://www.wiler.com.br/papel-de-parede/texture-iii?map=category-1%2Ccolecoes",
+      "oficial_ativos_total": 0,
+      "catalogo_total": 51,
+      "refs_ativas_extraidas": 0,
+      "extracao_ativa_completa": false,
+      "faltantes_ativos_confirmados": [],
+      "catalogo_nao_encontrado_na_vitrine_ativa": [],
+      "observacao_catalogo_nao_ativo": "Itens não encontrados na vitrine ativa NÃO são candidatos automáticos a remoção; podem ser referências históricas/válidas do book.",
+      "refs_ativas": [],
+      "paginas": [
+        {
+          "pagina": 1,
+          "url": "https://www.wiler.com.br/papel-de-parede/texture-iii?map=category-1%2Ccolecoes",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/texture-iii?map=category-1%2Ccolecoes",
+          "http": 200,
+          "refs_na_pagina": 0,
+          "novas_refs": 0,
+          "total_acumulado": 0,
+          "contagens_visiveis": [
+            0
+          ]
+        },
+        {
+          "pagina": 2,
+          "url": "https://www.wiler.com.br/papel-de-parede/texture-iii?map=category-1%2Ccolecoes&page=2",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/texture-iii?map=category-1%2Ccolecoes&page=2",
+          "http": 200,
+          "refs_na_pagina": 0,
+          "novas_refs": 0,
+          "total_acumulado": 0,
+          "contagens_visiveis": [
+            0
+          ]
+        }
+      ],
+      "erro": null,
+      "status": "erro"
+    },
+    {
+      "colecao": "Tramas",
+      "url_oficial": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes",
+      "oficial_ativos_total": 52,
+      "catalogo_total": 62,
+      "refs_ativas_extraidas": 52,
+      "extracao_ativa_completa": true,
+      "faltantes_ativos_confirmados": [],
+      "catalogo_nao_encontrado_na_vitrine_ativa": [
+        "TR-4011",
+        "TR-4014",
+        "TR-4021",
+        "TR-4024",
+        "TR-4026",
+        "TR-4029",
+        "TR-4035",
+        "TR-4038",
+        "TR-4043",
+        "TR-4048"
+      ],
+      "observacao_catalogo_nao_ativo": "Itens não encontrados na vitrine ativa NÃO são candidatos automáticos a remoção; podem ser referências históricas/válidas do book.",
+      "refs_ativas": [
+        "TR-4001",
+        "TR-4002",
+        "TR-4003",
+        "TR-4004",
+        "TR-4005",
+        "TR-4006",
+        "TR-4007",
+        "TR-4008",
+        "TR-4009",
+        "TR-4010",
+        "TR-4012",
+        "TR-4013",
+        "TR-4015",
+        "TR-4016",
+        "TR-4017",
+        "TR-4018",
+        "TR-4019",
+        "TR-4020",
+        "TR-4022",
+        "TR-4023",
+        "TR-4025",
+        "TR-4027",
+        "TR-4028",
+        "TR-4030",
+        "TR-4031",
+        "TR-4032",
+        "TR-4033",
+        "TR-4034",
+        "TR-4036",
+        "TR-4037",
+        "TR-4039",
+        "TR-4040",
+        "TR-4041",
+        "TR-4042",
+        "TR-4044",
+        "TR-4045",
+        "TR-4046",
+        "TR-4047",
+        "TR-4049",
+        "TR-4050",
+        "TR-4051",
+        "TR-4052",
+        "TR-4053",
+        "TR-4054",
+        "TR-4055",
+        "TR-4056",
+        "TR-4057",
+        "TR-4058",
+        "TR-4059",
+        "TR-4060",
+        "TR-4061",
+        "TR-4062"
+      ],
+      "paginas": [
+        {
+          "pagina": 1,
+          "url": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes",
+          "http": 200,
+          "refs_na_pagina": 16,
+          "novas_refs": 16,
+          "total_acumulado": 16,
+          "contagens_visiveis": [
+            52
+          ]
+        },
+        {
+          "pagina": 2,
+          "url": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes&page=2",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes&page=2",
+          "http": 200,
+          "refs_na_pagina": 16,
+          "novas_refs": 16,
+          "total_acumulado": 32,
+          "contagens_visiveis": [
+            52
+          ]
+        },
+        {
+          "pagina": 3,
+          "url": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes&page=3",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes&page=3",
+          "http": 200,
+          "refs_na_pagina": 16,
+          "novas_refs": 16,
+          "total_acumulado": 48,
+          "contagens_visiveis": [
+            52
+          ]
+        },
+        {
+          "pagina": 4,
+          "url": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes&page=4",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes&page=4",
+          "http": 200,
+          "refs_na_pagina": 4,
+          "novas_refs": 4,
+          "total_acumulado": 52,
+          "contagens_visiveis": [
+            52
+          ]
+        }
+      ],
+      "erro": null,
+      "status": "ok"
+    }
+  ],
+  "resumo": {
+    "catalogo_total_wiler": 256,
+    "ativos_oficiais_somados": 131,
+    "refs_ativas_extraidas": 132,
+    "faltantes_ativos_confirmados": 0,
+    "colecoes_extracao_completa": 3,
+    "colecoes_parciais_ou_erro": [
+      "Tacto",
+      "Texture III"
+    ]
+  }
+}
