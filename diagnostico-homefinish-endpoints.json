@@ -1,0 +1,57 @@
+{
+  "fonte": "Home Finish — endpoints públicos oficiais",
+  "objetivo": "Descobrir uma fonte oficial estruturada para auditar todas as referências sem depender das páginas HTML bloqueadas no runner.",
+  "resultado": [
+    {
+      "path": "/robots.txt",
+      "url": "https://www.homefinish.com.br/robots.txt",
+      "status": 200,
+      "url_final": "https://www.homefinish.com.br/robots.txt",
+      "content_type": "text/plain; charset=utf-8",
+      "bytes_lidos": 1836,
+      "urls_encontradas": 0,
+      "urls_produto": [],
+      "urls_produto_count": 0,
+      "urls_colecao": [],
+      "urls_colecao_count": 0,
+      "preview": "# As a condition of accessing this website, you agree to abide by the following # content signals: # (a) If a Content-Signal = yes, you may collect content for the corresponding # use. # (b) If a Content-Signal = no, you may not collect content for the # corresponding use. # (c) If the website operator does not include a Content-Signal for a # corresponding use, the website operator neither grants nor restricts # permission via Content-Signal with respect to the corresponding use. # The content signals and their meanings are: # search: building a search index and providing search results (e.g., returning # hyperlinks and short excerpts from your website'",
+      "erro": null
+    },
+    {
+      "path": "/wp-sitemap.xml",
+      "url": "https://www.homefinish.com.br/wp-sitemap.xml",
+      "status": null,
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "path": "/sitemap_index.xml",
+      "url": "https://www.homefinish.com.br/sitemap_index.xml",
+      "status": null,
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "path": "/sitemap.xml",
+      "url": "https://www.homefinish.com.br/sitemap.xml",
+      "status": null,
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "path": "/wp-json/",
+      "url": "https://www.homefinish.com.br/wp-json/",
+      "status": null,
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "path": "/wp-json/wp/v2/types",
+      "url": "https://www.homefinish.com.br/wp-json/wp/v2/types",
+      "status": null,
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "path": "/feed/",
+      "url": "https://www.homefinish.com.br/feed/",
+      "status": null,
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    }
+  ]
+}
