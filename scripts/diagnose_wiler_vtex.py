@@ -8,27 +8,33 @@ from playwright.sync_api import sync_playwright
 ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "diagnostico-wiler-vtex.json"
 
-# Para descobrir a API basta uma página representativa. Depois o auditor usa
-# a mesma API para todas as coleções, evitando cinco navegações lentas.
-COLLECTION = "Bambine"
-URL = "https://www.wiler.com.br/papel-de-parede/wiler-k?map=category-1%2Cbrand"
+# Texture II é uma coleção pública com produtos ativos e serve para descobrir
+# a chamada real de busca/paginação usada pela vitrine VTEX.
+COLLECTION = "Texture II"
+URL = "https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes"
 INTEREST = re.compile(r"(?:catalog|search|graphql|facets|products|vtex|api/io|_v/api)", re.I)
 
 
 def slim_json(value, depth=0):
-    if depth > 4:
+    if depth > 5:
         return "[depth]"
     if isinstance(value, dict):
         out = {}
-        for k, v in list(value.items())[:60]:
-            if re.search(r"product|item|record|total|count|facet|search|query|href|link|id|name|reference", str(k), re.I):
+        for k, v in list(value.items())[:80]:
+            if re.search(r"product|item|record|total|count|facet|search|query|href|link|id|name|reference|data", str(k), re.I):
                 out[k] = slim_json(v, depth + 1)
-        return out or {k: slim_json(v, depth + 1) for k, v in list(value.items())[:8]}
+        return out or {k: slim_json(v, depth + 1) for k, v in list(value.items())[:10]}
     if isinstance(value, list):
-        return [slim_json(v, depth + 1) for v in value[:5]]
+        return [slim_json(v, depth + 1) for v in value[:8]]
     if isinstance(value, (str, int, float, bool)) or value is None:
         return value
     return str(value)
+
+
+def clip(text: str | None, limit: int = 6000):
+    if text is None:
+        return None
+    return text[:limit]
 
 
 def main() -> None:
@@ -44,12 +50,19 @@ def main() -> None:
         seen = set()
 
         def on_response(response):
+            req = response.request
             rurl = response.url
-            if rurl in seen or not INTEREST.search(rurl):
+            resource_type = req.resource_type
+            interesting = resource_type in {"xhr", "fetch"} or INTEREST.search(rurl)
+            key = (req.method, rurl, clip(req.post_data, 500))
+            if key in seen or not interesting:
                 return
-            seen.add(rurl)
+            seen.add(key)
             entry = {
                 "url": rurl,
+                "method": req.method,
+                "resource_type": resource_type,
+                "post_data": clip(req.post_data),
                 "status": response.status,
                 "content_type": response.headers.get("content-type", ""),
             }
@@ -61,13 +74,13 @@ def main() -> None:
             captured.append(entry)
 
         page.on("response", on_response)
-        response = page.goto(URL, wait_until="domcontentloaded", timeout=20000)
-        page.wait_for_timeout(5000)
-        for _ in range(2):
-            page.mouse.wheel(0, 3000)
-            page.wait_for_timeout(1000)
+        response = page.goto(URL, wait_until="domcontentloaded", timeout=30000)
+        page.wait_for_timeout(7000)
+        for _ in range(4):
+            page.mouse.wheel(0, 2600)
+            page.wait_for_timeout(900)
 
-        text = page.locator("body").inner_text(timeout=8000)
+        text = page.locator("body").inner_text(timeout=10000)
         body_refs = sorted(set(re.findall(r"\b(?:BA\d{4}|TA\d{3,6}(?:-\d{1,3})?|TX-?\d{3,6}|TX3-?\d{2,6}|TR-?\d{3,6}|YS-?\d{5,9})\b", text, re.I)))
         count_matches = re.findall(r"(\d{1,4})\s+Produtos?\s+Encontrados?", text, re.I)
         result = {
@@ -77,15 +90,15 @@ def main() -> None:
             "http": response.status if response else None,
             "titulo": page.title(),
             "contagens_visiveis": [int(x) for x in count_matches],
-            "refs_visiveis": body_refs[:100],
+            "refs_visiveis": body_refs[:150],
             "refs_visiveis_count": len(body_refs),
-            "respostas_interessantes": captured[:120],
+            "respostas_interessantes": captured[:180],
         }
         browser.close()
 
     REPORT.write_text(json.dumps({
         "fonte": "Wiler oficial — navegador + diagnóstico de rede",
-        "criterio": "Usa uma vitrine oficial representativa para descobrir a API pública usada pelo próprio site. Não altera o catálogo.",
+        "criterio": "Abre a coleção Texture II e registra XHR/fetch/GraphQL com método, corpo da requisição e prévia JSON para descobrir a API pública real de busca e paginação. Não altera o catálogo.",
         "resultado": result,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps({
