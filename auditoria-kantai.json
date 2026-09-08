@@ -1,0 +1,82 @@
+{
+  "status": "ok",
+  "catalogo_antes": 1206,
+  "itens_adicionados": 0,
+  "catalogo_depois": 1206,
+  "colecoes": [
+    {
+      "colecao": "Aditare 3",
+      "url_oficial": "https://www.kantai.com.br/aditare3",
+      "total_oficial_esperado": 81,
+      "total_api": 81,
+      "catalogo_antes": 81,
+      "adicionados": 0,
+      "catalogo_depois": 81,
+      "refs_adicionadas": [],
+      "duplicidades_depois": 0,
+      "imagens_locais": 81,
+      "imagem_max_bytes": 255747,
+      "imagem_p95_bytes": 249217,
+      "teto_imagem_bytes": 256000,
+      "medida_catalogo_preservada": "Rolo: 51 cm x 10 m",
+      "observacao_medida": "O importador preserva a medida comercial já existente no catálogo; especificações oficiais serão auditadas separadamente para não alterar dados de negócio silenciosamente."
+    },
+    {
+      "colecao": "Criativo 3",
+      "url_oficial": "https://www.kantai.com.br/criativo3",
+      "total_oficial_esperado": 89,
+      "total_api": 89,
+      "catalogo_antes": 89,
+      "adicionados": 0,
+      "catalogo_depois": 89,
+      "refs_adicionadas": [],
+      "duplicidades_depois": 0,
+      "imagens_locais": 89,
+      "imagem_max_bytes": 255129,
+      "imagem_p95_bytes": 244208,
+      "teto_imagem_bytes": 256000,
+      "medida_catalogo_preservada": "Rolo: 51 cm x 10 m",
+      "observacao_medida": "O importador preserva a medida comercial já existente no catálogo; especificações oficiais serão auditadas separadamente para não alterar dados de negócio silenciosamente."
+    },
+    {
+      "colecao": "Poet Chart 5",
+      "url_oficial": "https://www.kantai.com.br/poetchart5",
+      "total_oficial_esperado": 78,
+      "total_api": 78,
+      "catalogo_antes": 78,
+      "adicionados": 0,
+      "catalogo_depois": 78,
+      "refs_adicionadas": [],
+      "duplicidades_depois": 0,
+      "imagens_locais": 78,
+      "imagem_max_bytes": 254563,
+      "imagem_p95_bytes": 246813,
+      "teto_imagem_bytes": 256000,
+      "medida_catalogo_preservada": "Rolo: 51 cm x 10 m",
+      "observacao_medida": "O importador preserva a medida comercial já existente no catálogo; especificações oficiais serão auditadas separadamente para não alterar dados de negócio silenciosamente."
+    },
+    {
+      "colecao": "Space IX",
+      "url_oficial": "https://www.kantai.com.br/space9",
+      "total_oficial_esperado": 83,
+      "total_api": 83,
+      "catalogo_antes": 83,
+      "adicionados": 0,
+      "catalogo_depois": 83,
+      "refs_adicionadas": [],
+      "duplicidades_depois": 0,
+      "imagens_locais": 83,
+      "imagem_max_bytes": 255896,
+      "imagem_p95_bytes": 232822,
+      "teto_imagem_bytes": 256000,
+      "medida_catalogo_preservada": "Rolo: 51 cm x 10 m",
+      "observacao_medida": "O importador preserva a medida comercial já existente no catálogo; especificações oficiais serão auditadas separadamente para não alterar dados de negócio silenciosamente."
+    }
+  ],
+  "garantias": {
+    "importacao_parcial_bloqueada": true,
+    "imagens_kantai_externas_no_catalogo": 0,
+    "limite_imagem_bytes": 256000,
+    "max_long_edge_px": 1200
+  }
+}
