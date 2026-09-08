@@ -8,15 +8,16 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "diagnostico-wiler-oficial.json"
-BASE = "https://www.wiler.com.br/"
+BASE = "https://www.wiler-k.com.br/"
 
 # Coleções que existem no DATA publicado hoje.
+# A rota VTEX de coleção usa /papel-de-parede/<slug>?map=category-1,colecoes.
 CANDIDATES = {
-    "Bambine": ["bambine", "colecao/bambine", "papel-de-parede/bambine"],
-    "Tacto": ["tacto", "colecao/tacto", "papel-de-parede/tacto"],
-    "Texture II": ["texture-ii", "colecao/texture-ii", "papel-de-parede/texture-ii"],
-    "Texture III": ["texture-iii", "colecao/texture-iii", "papel-de-parede/texture-iii"],
-    "Tramas": ["tramas", "colecao/tramas", "papel-de-parede/tramas"],
+    "Bambine": ["papel-de-parede/bambine?map=category-1%2Ccolecoes"],
+    "Tacto": ["papel-de-parede/tacto?map=category-1%2Ccolecoes"],
+    "Texture II": ["papel-de-parede/texture-ii?map=category-1%2Ccolecoes"],
+    "Texture III": ["papel-de-parede/texture-iii?map=category-1%2Ccolecoes"],
+    "Tramas": ["papel-de-parede/tramas?map=category-1%2Ccolecoes"],
 }
 
 
@@ -27,7 +28,7 @@ def get(url: str) -> dict:
         "Accept-Language": "pt-BR,pt;q=0.9",
     })
     try:
-        with urllib.request.urlopen(req, timeout=7) as resp:
+        with urllib.request.urlopen(req, timeout=12) as resp:
             body = resp.read().decode("utf-8", errors="replace")
             title = ""
             mt = re.search(r"<title[^>]*>(.*?)</title>", body, re.I | re.S)
@@ -58,7 +59,7 @@ def get(url: str) -> dict:
 def main() -> None:
     tasks = [(collection, BASE + slug) for collection, slugs in CANDIDATES.items() for slug in slugs]
     grouped = {collection: [] for collection in CANDIDATES}
-    with ThreadPoolExecutor(max_workers=10) as pool:
+    with ThreadPoolExecutor(max_workers=5) as pool:
         futures = {pool.submit(get, url): (collection, url) for collection, url in tasks}
         for future in as_completed(futures):
             collection, _ = futures[future]
@@ -74,12 +75,13 @@ def main() -> None:
         out.append({"colecao": collection, "tentativas": probes})
 
     REPORT.write_text(json.dumps({
-        "fonte": "site oficial Wiler",
+        "fonte": "Wiler-K — site oficial",
+        "dominio_oficial": BASE,
         "colecoes_catalogo_atual": list(CANDIDATES),
         "resultado": out,
-        "criterio": "Sondagem concorrente de rotas públicas oficiais correspondentes às coleções que existem no DATA atual. Não altera o catálogo.",
+        "criterio": "Sondagem das rotas públicas oficiais de coleção da Wiler-K. Não altera o catálogo.",
     }, ensure_ascii=False, indent=2), encoding="utf-8")
-    print("Diagnóstico Wiler concluído")
+    print("Diagnóstico Wiler-K concluído")
 
 
 if __name__ == "__main__":
