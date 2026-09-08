@@ -32,8 +32,8 @@ def get(path: str) -> dict:
             raw = resp.read(2_000_000)
             text = raw.decode("utf-8", errors="replace")
             urls = re.findall(r"https?://[^<\s\"']+", text)
-            product_urls = sorted({u.rstrip("/)"] for u in urls if "/papel-de-parede/" in u})
-            collection_urls = sorted({u.rstrip("/)"] for u in urls if "/colecoes/papeis-de-parede/" in u})
+            product_urls = sorted({u.rstrip('/)\"]') for u in urls if "/papel-de-parede/" in u})
+            collection_urls = sorted({u.rstrip('/)\"]') for u in urls if "/colecoes/papeis-de-parede/" in u})
             return {
                 "path": path,
                 "url": url,
