@@ -7,6 +7,7 @@ on:
       - '.github/workflows/repair-catalog.yml'
       - 'scripts/repair_catalog.py'
       - 'scripts/harden_external_images.py'
+      - 'scripts/audit_catalog_completeness.py'
   workflow_dispatch:
 
 permissions:
@@ -58,8 +59,11 @@ jobs:
           print(f'thumbnails novos: {copied}; atualizados: {updated}')
           PY
 
-      - name: Repair catalog references and audit
+      - name: Repair catalog references and audit images
         run: python scripts/repair_catalog.py
+
+      - name: Audit collection completeness
+        run: python scripts/audit_catalog_completeness.py
 
       - name: Protect official external images from hotlink blocking
         run: python scripts/harden_external_images.py
@@ -69,10 +73,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A imagens index.html auditoria-imagens.json
+          git add -A imagens index.html auditoria-imagens.json auditoria-completude.json
           if git diff --cached --quiet; then
             echo "No catalog repairs needed"
           else
-            git commit -m "Repair catalog image references and missing thumbnails"
+            git commit -m "Repair catalog and audit collection completeness"
             git push
           fi
