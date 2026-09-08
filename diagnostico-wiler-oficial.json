@@ -1,0 +1,175 @@
+{
+  "fonte": "site oficial Wiler",
+  "resultado": [
+    {
+      "colecao": "Harmony III",
+      "tentativas": [
+        {
+          "url": "https://www.wiler.com.br/harmony-iii-5",
+          "status": 200,
+          "url_final": "https://www.wiler.com.br/harmony-iii-5",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "contem_nome_colecao": false,
+          "erro": null
+        },
+        {
+          "url": "https://www.wiler.com.br/harmony-iii",
+          "status": 200,
+          "url_final": "https://www.wiler.com.br/harmony-iii",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "contem_nome_colecao": false,
+          "erro": null
+        },
+        {
+          "url": "https://www.wiler.com.br/colecao/harmony-iii",
+          "status": 0,
+          "url_final": "https://www.wiler.com.br/colecao/harmony-iii",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "contem_nome_colecao": false,
+          "erro": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "colecao": "Nickal",
+      "tentativas": [
+        {
+          "url": "https://www.wiler.com.br/nickal",
+          "status": 200,
+          "url_final": "https://www.wiler.com.br/nickal",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "contem_nome_colecao": false,
+          "erro": null
+        },
+        {
+          "url": "https://www.wiler.com.br/colecao/nickal",
+          "status": 0,
+          "url_final": "https://www.wiler.com.br/colecao/nickal",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "contem_nome_colecao": false,
+          "erro": "HTTPError: HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.wiler.com.br/nickal-5",
+          "status": 200,
+          "url_final": "https://www.wiler.com.br/nickal-5",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "contem_nome_colecao": false,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "colecao": "Pure Nature",
+      "tentativas": [
+        {
+          "url": "https://www.wiler.com.br/pure-nature",
+          "status": 200,
+          "url_final": "https://www.wiler.com.br/pure-nature",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "contem_nome_colecao": false,
+          "erro": null
+        },
+        {
+          "url": "https://www.wiler.com.br/colecao/pure-nature",
+          "status": 0,
+          "url_final": "https://www.wiler.com.br/colecao/pure-nature",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "contem_nome_colecao": false,
+          "erro": "HTTPError: HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.wiler.com.br/pure-nature-5",
+          "status": 200,
+          "url_final": "https://www.wiler.com.br/pure-nature-5",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "contem_nome_colecao": false,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "colecao": "Pure Nature II",
+      "tentativas": [
+        {
+          "url": "https://www.wiler.com.br/pure-nature-ii",
+          "status": 200,
+          "url_final": "https://www.wiler.com.br/pure-nature-ii",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "contem_nome_colecao": false,
+          "erro": null
+        },
+        {
+          "url": "https://www.wiler.com.br/colecao/pure-nature-ii",
+          "status": 0,
+          "url_final": "https://www.wiler.com.br/colecao/pure-nature-ii",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "contem_nome_colecao": false,
+          "erro": "HTTPError: HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.wiler.com.br/pure-nature-ii-5",
+          "status": 200,
+          "url_final": "https://www.wiler.com.br/pure-nature-ii-5",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "contem_nome_colecao": false,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "colecao": "Wallstreet",
+      "tentativas": [
+        {
+          "url": "https://www.wiler.com.br/wallstreet",
+          "status": 200,
+          "url_final": "https://www.wiler.com.br/wallstreet",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "contem_nome_colecao": false,
+          "erro": null
+        },
+        {
+          "url": "https://www.wiler.com.br/wall-street",
+          "status": 200,
+          "url_final": "https://www.wiler.com.br/wall-street",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "contem_nome_colecao": false,
+          "erro": null
+        },
+        {
+          "url": "https://www.wiler.com.br/colecao/wallstreet",
+          "status": 0,
+          "url_final": "https://www.wiler.com.br/colecao/wallstreet",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "contem_nome_colecao": false,
+          "erro": "HTTPError: HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.wiler.com.br/wallstreet-5",
+          "status": 200,
+          "url_final": "https://www.wiler.com.br/wallstreet-5",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "contem_nome_colecao": false,
+          "erro": null
+        }
+      ]
+    }
+  ],
+  "criterio": "Sondagem de rotas públicas oficiais para localizar a fonte adequada de cada coleção. Não altera o catálogo."
+}
