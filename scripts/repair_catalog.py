@@ -5,7 +5,7 @@ import re
 import unicodedata
 from collections import defaultdict
 from pathlib import Path
-from urllib.parse import unquote, urlparse
+from urllib.parse import quote, unquote, urlparse
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -60,8 +60,34 @@ def valid_image_bytes(data: bytes) -> bool:
     )
 
 
+def fetch_bytes(url: str) -> tuple[bytes, str]:
+    headers = {
+        "User-Agent": "Mozilla/5.0 (compatible; FK-Catalog-Repair/1.0)",
+        "Referer": "https://homefinish.com.br/",
+        "Accept": "image/*,*/*;q=0.8",
+    }
+    attempts = [(url, "direto")]
+    if "homefinish.com.br/" in url:
+        raw = url.split("://", 1)[-1]
+        proxied = "https://images.weserv.nl/?url=" + quote(raw, safe="/:?=&%") + "&output=jpg&q=92"
+        attempts.append((proxied, "proxy_biblioteca"))
+
+    last_exc = None
+    for attempt_url, method in attempts:
+        try:
+            req = Request(attempt_url, headers=headers)
+            with urlopen(req, timeout=35) as response:
+                payload = response.read()
+            if len(payload) < 1024 or not valid_image_bytes(payload):
+                raise ValueError("resposta não é uma imagem válida")
+            return payload, method
+        except Exception as exc:
+            last_exc = exc
+    raise last_exc or RuntimeError("download falhou")
+
+
 def internalize_official_external(data: list[dict], corrections: list[dict], download_errors: list[dict]):
-    cache: dict[str, Path | None] = {}
+    cache: dict[str, tuple[Path | None, str | None]] = {}
 
     for item in data:
         for field in ("card", "zoom"):
@@ -74,48 +100,35 @@ def internalize_official_external(data: list[dict], corrections: list[dict], dow
                 continue
 
             if original in cache:
-                target = cache[original]
+                target, method = cache[original]
                 if target is not None:
                     item[field] = posix(target)
                     corrections.append({
                         "codigo": item.get("codigo"), "ref": item.get("ref"), "campo": field,
-                        "de": original, "para": posix(target), "criterio": "download_oficial_cache"
+                        "de": original, "para": posix(target), "criterio": f"download_oficial_cache:{method}"
                     })
                 continue
 
             vendor = slug(item.get("fornecedor", "")) or "fornecedor"
             collection = slug(item.get("colecao", "")) or "colecao"
             ref = str(item.get("ref", "")).strip() or Path(parsed.path).stem
-            ext = Path(parsed.path).suffix.lower()
-            if ext not in VALID_EXTS:
-                ext = ".jpg"
-            target = IMAGES / vendor / collection / "thumbnails" / f"{ref}{ext}"
+            target = IMAGES / vendor / collection / "thumbnails" / f"{ref}.jpg"
             target.parent.mkdir(parents=True, exist_ok=True)
 
             try:
+                method = "existente"
                 if not target.exists():
-                    req = Request(
-                        original,
-                        headers={
-                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/152 Safari/537.36",
-                            "Referer": "https://homefinish.com.br/",
-                            "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
-                        },
-                    )
-                    with urlopen(req, timeout=30) as response:
-                        payload = response.read()
-                    if len(payload) < 1024 or not valid_image_bytes(payload):
-                        raise ValueError("resposta não é uma imagem válida")
+                    payload, method = fetch_bytes(original)
                     target.write_bytes(payload)
 
-                cache[original] = target
+                cache[original] = (target, method)
                 item[field] = posix(target)
                 corrections.append({
                     "codigo": item.get("codigo"), "ref": item.get("ref"), "campo": field,
-                    "de": original, "para": posix(target), "criterio": "download_oficial"
+                    "de": original, "para": posix(target), "criterio": f"download_oficial:{method}"
                 })
             except Exception as exc:
-                cache[original] = None
+                cache[original] = (None, None)
                 download_errors.append({
                     "codigo": item.get("codigo"), "ref": item.get("ref"), "campo": field,
                     "url": original, "erro": f"{type(exc).__name__}: {exc}"
@@ -186,9 +199,7 @@ def main():
     unresolved = []
     download_errors = []
 
-    # Remove dependências externas oficiais antes da validação local.
     internalize_official_external(data, corrections, download_errors)
-
     _, by_name, by_stem = build_index()
 
     for item in data:
