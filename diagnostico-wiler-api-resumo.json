@@ -1,25 +1,24 @@
 {
   "fonte": "diagnostico-wiler-vtex.json",
   "hosts_observados": {
-    "willerk.vtexassets.com": 123,
+    "willerk.vtexassets.com": 125,
     "www.wiler.com.br": 28,
-    "www.google-analytics.com": 5,
-    "af-origin.vtex.com": 4,
     "pagead2.googlesyndication.com": 4,
+    "af-origin.vtex.com": 4,
+    "www.google-analytics.com": 4,
     "io.vtex.com.br": 2,
     "sp.vtex.com": 2,
     "activity-flow.vtex.com": 1,
-    "trustvox.com.br": 1,
     "dev.visualwebsiteoptimizer.com": 1,
-    "service.smarthint.co": 1,
-    "rc.vtex.com": 1,
+    "trustvox.com.br": 1,
     "dxyxft75r9rwr.cloudfront.net": 1,
+    "service.smarthint.co": 1,
+    "disclaimer-api.goadopt.io": 1,
+    "rc.vtex.com": 1,
     "pageview-notify.rdstation.com.br": 1,
     "popups.rdstation.com.br": 1,
-    "disclaimer-api.goadopt.io": 1,
     "axeptio-api.goadopt.io": 1,
-    "static.smarthint.co": 1,
-    "recs.smarthint.co": 1
+    "static.smarthint.co": 1
   },
   "operacoes_busca_vtex_detectadas": [
     "QueryFacetsV2",
@@ -310,26 +309,6 @@
       }
     },
     {
-      "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU4OSJ9%22%7D",
-      "host": "www.wiler.com.br",
-      "path": "/_v/public/graphql/v1",
-      "query": "workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU4OSJ9%22%7D",
-      "method": "GET",
-      "resource_type": "fetch",
-      "operation_name": "productSummary",
-      "post_data": null,
-      "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "json_preview": {
-        "data": {
-          "productSummary": {
-            "Total": 0,
-            "__typename": "Summary"
-          }
-        }
-      }
-    },
-    {
       "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU5MiJ9%22%7D",
       "host": "www.wiler.com.br",
       "path": "/_v/public/graphql/v1",
@@ -348,9 +327,81 @@
           }
         }
       }
+    },
+    {
+      "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU4OSJ9%22%7D",
+      "host": "www.wiler.com.br",
+      "path": "/_v/public/graphql/v1",
+      "query": "workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU4OSJ9%22%7D",
+      "method": "GET",
+      "resource_type": "fetch",
+      "operation_name": "productSummary",
+      "post_data": null,
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json_preview": {
+        "data": {
+          "productSummary": {
+            "Total": 0,
+            "__typename": "Summary"
+          }
+        }
+      }
     }
   ],
   "candidatos_dados": [
+    {
+      "url": "https://dev.visualwebsiteoptimizer.com/j.php?a=1025788&u=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&vn=2.1&x=true",
+      "host": "dev.visualwebsiteoptimizer.com",
+      "path": "/j.php",
+      "query": "a=1025788&u=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&vn=2.1&x=true",
+      "method": "GET",
+      "resource_type": "xhr",
+      "operation_name": null,
+      "post_data": null,
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "json_preview": null
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=11&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=366578985.1788903724&navt=n&npa=1&ep.ads_data_redaction=1&gdid=dZmNiZj&_tu=CA&gtm=45He6941h2v811370786za200zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938466~115938468~118897920~118897930~120385422~120469145~120469153&tft=1788903724515&tfd=655&fmt=8",
+      "host": "pagead2.googlesyndication.com",
+      "path": "/ccm/collect",
+      "query": "rcb=11&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=366578985.1788903724&navt=n&npa=1&ep.ads_data_redaction=1&gdid=dZmNiZj&_tu=CA&gtm=45He6941h2v811370786za200zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938466~115938468~118897920~118897930~120385422~120469145~120469153&tft=1788903724515&tfd=655&fmt=8",
+      "method": "POST",
+      "resource_type": "fetch",
+      "operation_name": null,
+      "post_data": null,
+      "status": 200,
+      "content_type": "",
+      "json_preview": null
+    },
+    {
+      "url": "https://af-origin.vtex.com/api/activity-flow/page-views",
+      "host": "af-origin.vtex.com",
+      "path": "/api/activity-flow/page-views",
+      "query": "",
+      "method": "POST",
+      "resource_type": "ping",
+      "operation_name": null,
+      "post_data": "{\"eventType\":\"pageView\",\"isDelayed\":false,\"DataType\":\"Event\",\"SessionId\":\"bced3cfe-391b-41c7-8086-3673199f8eb1\",\"MacId\":\"e82260cf-7097-42fd-b679-f3ab24f3f137\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"accountName\":\"willerk\",\"accountEnvironment\":\"store_framework\",\"clientdate\":1788903724386,\"workspace\":\"master%3A-\",\"ckInfo\":\"VtexWorkspace=master%3A-; VtexRCSessionIdv7=bced3cfe-391b-41c7-8086-3673199f8eb1; VtexRCMacIdv7=e82260cf-7097-42fd-b679-f3ab24f3f137\",\"IsNewUser\":false,\"isFirstEvent\":false}",
+      "status": 200,
+      "content_type": "application/json",
+      "json_preview": null
+    },
+    {
+      "url": "https://af-origin.vtex.com/api/activity-flow/user-session",
+      "host": "af-origin.vtex.com",
+      "path": "/api/activity-flow/user-session",
+      "query": "",
+      "method": "POST",
+      "resource_type": "ping",
+      "operation_name": null,
+      "post_data": "{\"eventType\":\"userSession\",\"DataType\":\"Event\",\"SessionId\":\"bced3cfe-391b-41c7-8086-3673199f8eb1\",\"MacId\":\"e82260cf-7097-42fd-b679-f3ab24f3f137\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"accountName\":\"willerk\",\"accountEnvironment\":\"store_framework\",\"clientdate\":1788903724384,\"workspace\":\"master%3A-\",\"ckInfo\":\"VtexWorkspace=master%3A-; VtexRCSessionIdv7=bced3cfe-391b-41c7-8086-3673199f8eb1; VtexRCMacIdv7=e82260cf-7097-42fd-b679-f3ab24f3f137\",\"IsNewUser\":true}",
+      "status": 200,
+      "content_type": "application/json",
+      "json_preview": null
+    },
     {
       "url": "https://trustvox.com.br/store_reviews/store_reviews?store_id=&limit=7&min_rating=2",
       "host": "trustvox.com.br",
@@ -378,7 +429,7 @@
       "status": 201,
       "content_type": "application/json; charset=utf-8",
       "json_preview": {
-        "id": "a8a5535a-19a6-4464-95a4-6d19af6dc5c0",
+        "id": "30fe475c-717f-4bf6-a92d-aabcd69d2b5d",
         "namespaces": {
           "account": {
             "id": {
@@ -393,23 +444,23 @@
       }
     },
     {
-      "url": "https://af-origin.vtex.com/api/activity-flow/page-views",
-      "host": "af-origin.vtex.com",
-      "path": "/api/activity-flow/page-views",
-      "query": "",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-18WWV0TPPP&gtm=45je6941h2v9102585009za20gzb811370786zd811370786&_p=1788903724278&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&_eu=AEAAAGAC&ae=a&are=1&cid=109231639.1788903725&frm=0&gtm_up=1&pscdl=denied&rcb=13&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&gaf=2&_s=1&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153&sid=1788903724&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=&_tu=CA&en=scroll&_fv=1&_nsi=1&_ss=1&epn.percent_scrolled=90&tfd=1013",
+      "host": "www.google-analytics.com",
+      "path": "/g/collect",
+      "query": "v=2&tid=G-18WWV0TPPP&gtm=45je6941h2v9102585009za20gzb811370786zd811370786&_p=1788903724278&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&_eu=AEAAAGAC&ae=a&are=1&cid=109231639.1788903725&frm=0&gtm_up=1&pscdl=denied&rcb=13&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&gaf=2&_s=1&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153&sid=1788903724&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=&_tu=CA&en=scroll&_fv=1&_nsi=1&_ss=1&epn.percent_scrolled=90&tfd=1013",
       "method": "POST",
-      "resource_type": "ping",
+      "resource_type": "fetch",
       "operation_name": null,
-      "post_data": "{\"eventType\":\"pageView\",\"isDelayed\":false,\"DataType\":\"Event\",\"SessionId\":\"601d492d-e0a7-4e1f-8d2a-74b066174763\",\"MacId\":\"ebc9bcfb-65ae-493c-af53-1a8c05d05f7f\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"accountName\":\"willerk\",\"accountEnvironment\":\"store_framework\",\"clientdate\":1788903433360,\"workspace\":\"master%3A-\",\"ckInfo\":\"VtexWorkspace=master%3A-; __trf.src=encoded_eyJmaXJzdF9zZXNzaW9uIjp7InZhbHVlIjoiKG5vbmUpIiwiZXh0cmFfcGFyYW1zIjp7fX0sImN1cnJlbnRfc2Vzc2lvbiI6eyJ2YWx1ZSI6Iihub25lKSIsImV4dHJhX3BhcmFtcyI6e319LCJjcmVhdGVkX2F0IjoxNzg4OTAzNDMzMjYwfQ==; VtexRCSessionIdv7=601d492d-e0a7-4e1f-8d2a-74b066174763; VtexRCMacIdv7=ebc9bcfb-65ae-493c-af53-1a8c05d05f7f\",\"IsNewUser\":false,\"isFirstEvent\":false}",
-      "status": 200,
-      "content_type": "application/json",
+      "post_data": null,
+      "status": 204,
+      "content_type": "text/plain",
       "json_preview": null
     },
     {
-      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=13&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=288342830.1788903433&navt=n&npa=1&ep.ads_data_redaction=1&gdid=dZmNiZj&_tu=CA&gtm=45He6930h1v811370786za200zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118897920~118897930~120385422~120469145~120469153&tft=1788903433462&tfd=761&fmt=8",
+      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=15&frm=0&apvc=0&tid=AW-865462130&en=page_view&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=366578985.1788903724&navt=n&npa=1&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6941h2v9123716997z8811370786za20gzb811370786zd811370786xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1788903724939&tfd=1080&tids=AW-865462130&fmt=8",
       "host": "pagead2.googlesyndication.com",
       "path": "/ccm/collect",
-      "query": "rcb=13&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=288342830.1788903433&navt=n&npa=1&ep.ads_data_redaction=1&gdid=dZmNiZj&_tu=CA&gtm=45He6930h1v811370786za200zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118897920~118897930~120385422~120469145~120469153&tft=1788903433462&tfd=761&fmt=8",
+      "query": "rcb=15&frm=0&apvc=0&tid=AW-865462130&en=page_view&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=366578985.1788903724&navt=n&npa=1&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6941h2v9123716997z8811370786za20gzb811370786zd811370786xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1788903724939&tfd=1080&tids=AW-865462130&fmt=8",
       "method": "POST",
       "resource_type": "fetch",
       "operation_name": null,
@@ -419,114 +470,30 @@
       "json_preview": null
     },
     {
-      "url": "https://sp.vtex.com/event-api/v1/willerk/event",
-      "host": "sp.vtex.com",
-      "path": "/event-api/v1/willerk/event",
-      "query": "",
+      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=15&frm=0&apvc=0&ae=g&tid=AW-865462130&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=366578985.1788903724&navt=n&npa=1&ep.ads_data_redaction=1&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6941h2v9123716997z8811370786za20gzb811370786zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1788903724940&tfd=1081&tids=AW-865462130&fmt=8",
+      "host": "pagead2.googlesyndication.com",
+      "path": "/ccm/collect",
+      "query": "rcb=15&frm=0&apvc=0&ae=g&tid=AW-865462130&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=366578985.1788903724&navt=n&npa=1&ep.ads_data_redaction=1&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6941h2v9123716997z8811370786za20gzb811370786zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1788903724940&tfd=1081&tids=AW-865462130&fmt=8",
       "method": "POST",
       "resource_type": "fetch",
       "operation_name": null,
-      "post_data": "{\"account\":\"willerk\",\"url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"workspace\":\"master\",\"locale\":\"pt-BR\",\"type\":\"session.ping\",\"ab\":\"master\",\"session\":\"ce9f6f7d2c144dea8fbd0ba0071cfb54\",\"anonymous\":\"0dd8ccc167f746bb87ee2851fb831a44\",\"vtexSession\":\"601d492d-e0a7-4e1f-8d2a-74b066174763\",\"vtexMac\":\"ebc9bcfb-65ae-493c-af53-1a8c05d05f7f\"}",
-      "status": 204,
+      "post_data": null,
+      "status": 200,
       "content_type": "",
       "json_preview": null
     },
     {
-      "url": "https://dev.visualwebsiteoptimizer.com/j.php?a=1025788&u=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&vn=2.1&x=true",
-      "host": "dev.visualwebsiteoptimizer.com",
-      "path": "/j.php",
-      "query": "a=1025788&u=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&vn=2.1&x=true",
+      "url": "https://dxyxft75r9rwr.cloudfront.net/i/628647244ded2c5bb52613fd.json?t=%271788903725090",
+      "host": "dxyxft75r9rwr.cloudfront.net",
+      "path": "/i/628647244ded2c5bb52613fd.json",
+      "query": "t=%271788903725090",
       "method": "GET",
       "resource_type": "xhr",
       "operation_name": null,
       "post_data": null,
       "status": 200,
-      "content_type": "application/javascript; charset=UTF-8",
+      "content_type": "application/octet-stream",
       "json_preview": null
-    },
-    {
-      "url": "https://af-origin.vtex.com/api/activity-flow/user-session",
-      "host": "af-origin.vtex.com",
-      "path": "/api/activity-flow/user-session",
-      "query": "",
-      "method": "POST",
-      "resource_type": "ping",
-      "operation_name": null,
-      "post_data": "{\"eventType\":\"userSession\",\"DataType\":\"Event\",\"SessionId\":\"601d492d-e0a7-4e1f-8d2a-74b066174763\",\"MacId\":\"ebc9bcfb-65ae-493c-af53-1a8c05d05f7f\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"accountName\":\"willerk\",\"accountEnvironment\":\"store_framework\",\"clientdate\":1788903433358,\"workspace\":\"master%3A-\",\"ckInfo\":\"VtexWorkspace=master%3A-; __trf.src=encoded_eyJmaXJzdF9zZXNzaW9uIjp7InZhbHVlIjoiKG5vbmUpIiwiZXh0cmFfcGFyYW1zIjp7fX0sImN1cnJlbnRfc2Vzc2lvbiI6eyJ2YWx1ZSI6Iihub25lKSIsImV4dHJhX3BhcmFtcyI6e319LCJjcmVhdGVkX2F0IjoxNzg4OTAzNDMzMjYwfQ==; VtexRCSessionIdv7=601d492d-e0a7-4e1f-8d2a-74b066174763; VtexRCMacIdv7=ebc9bcfb-65ae-493c-af53-1a8c05d05f7f\",\"IsNewUser\":true}",
-      "status": 200,
-      "content_type": "application/json",
-      "json_preview": null
-    },
-    {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-3Y8LN5PVE7&gtm=45je6941h2v9209668265za200zd9209668265&_p=1788903432944&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&are=1&cid=42890947.1788903434&frm=0&gtm_up=1&ngs=1&pscdl=denied&rcb=1&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1788903433&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=&_tu=CA&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=853",
-      "host": "www.google-analytics.com",
-      "path": "/g/collect",
-      "query": "v=2&tid=G-3Y8LN5PVE7&gtm=45je6941h2v9209668265za200zd9209668265&_p=1788903432944&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&are=1&cid=42890947.1788903434&frm=0&gtm_up=1&ngs=1&pscdl=denied&rcb=1&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1788903433&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=&_tu=CA&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=853",
-      "method": "POST",
-      "resource_type": "fetch",
-      "operation_name": null,
-      "post_data": null,
-      "status": 204,
-      "content_type": "text/plain",
-      "json_preview": null
-    },
-    {
-      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=2&frm=0&apvc=0&tid=AW-865462130&en=page_view&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=288342830.1788903433&navt=n&npa=1&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6930h1v9123716997z8811370786za20gzb811370786zd811370786xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118012007~118897920~118897930~120213116~120385423~120469145~120469153~120914213&tft=1788903433642&tfd=940&tids=AW-865462130&fmt=8",
-      "host": "pagead2.googlesyndication.com",
-      "path": "/ccm/collect",
-      "query": "rcb=2&frm=0&apvc=0&tid=AW-865462130&en=page_view&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=288342830.1788903433&navt=n&npa=1&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6930h1v9123716997z8811370786za20gzb811370786zd811370786xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118012007~118897920~118897930~120213116~120385423~120469145~120469153~120914213&tft=1788903433642&tfd=940&tids=AW-865462130&fmt=8",
-      "method": "POST",
-      "resource_type": "fetch",
-      "operation_name": null,
-      "post_data": null,
-      "status": 200,
-      "content_type": "",
-      "json_preview": null
-    },
-    {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-3Y8LN5PVE7&gtm=45je6941h2v9209668265za200zd9209668265&_p=1788903432944&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&_eu=AEA&ae=a&are=1&cid=42890947.1788903434&frm=0&gtm_up=1&ngs=1&pscdl=denied&rcb=1&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=2&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1788903433&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=&_tu=CA&en=scroll&epn.percent_scrolled=90&_et=12&tfd=949",
-      "host": "www.google-analytics.com",
-      "path": "/g/collect",
-      "query": "v=2&tid=G-3Y8LN5PVE7&gtm=45je6941h2v9209668265za200zd9209668265&_p=1788903432944&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&_eu=AEA&ae=a&are=1&cid=42890947.1788903434&frm=0&gtm_up=1&ngs=1&pscdl=denied&rcb=1&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=2&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1788903433&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=&_tu=CA&en=scroll&epn.percent_scrolled=90&_et=12&tfd=949",
-      "method": "POST",
-      "resource_type": "fetch",
-      "operation_name": null,
-      "post_data": null,
-      "status": 204,
-      "content_type": "text/plain",
-      "json_preview": null
-    },
-    {
-      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=2&frm=0&apvc=0&ae=g&tid=AW-865462130&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=288342830.1788903433&navt=n&npa=1&ep.ads_data_redaction=1&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6930h1v9123716997z8811370786za20gzb811370786zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118012007~118897920~118897930~120213116~120385423~120469145~120469153~120914213&tft=1788903433643&tfd=942&tids=AW-865462130&fmt=8",
-      "host": "pagead2.googlesyndication.com",
-      "path": "/ccm/collect",
-      "query": "rcb=2&frm=0&apvc=0&ae=g&tid=AW-865462130&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=288342830.1788903433&navt=n&npa=1&ep.ads_data_redaction=1&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6930h1v9123716997z8811370786za20gzb811370786zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118012007~118897920~118897930~120213116~120385423~120469145~120469153~120914213&tft=1788903433643&tfd=942&tids=AW-865462130&fmt=8",
-      "method": "POST",
-      "resource_type": "fetch",
-      "operation_name": null,
-      "post_data": null,
-      "status": 200,
-      "content_type": "",
-      "json_preview": null
-    },
-    {
-      "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%222edd7e66d602ced132258924511dded7167ec69067cb827d6a8fefd5be7d3554%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
-      "host": "www.wiler.com.br",
-      "path": "/_v/public/graphql/v1",
-      "query": "workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%222edd7e66d602ced132258924511dded7167ec69067cb827d6a8fefd5be7d3554%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
-      "method": "GET",
-      "resource_type": "fetch",
-      "operation_name": "pwaData",
-      "post_data": null,
-      "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "json_preview": {
-        "data": {
-          "pwaSettings": {
-            "__typename": "PWASettings"
-          }
-        }
-      }
     },
     {
       "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%2236f57d74b4ad859ff109e725c396702a6c5b604ee144401defcd68a4fe341abd%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
@@ -559,6 +526,25 @@
       "json_preview": {
         "data": {
           "iOSIcons": []
+        }
+      }
+    },
+    {
+      "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%222edd7e66d602ced132258924511dded7167ec69067cb827d6a8fefd5be7d3554%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
+      "host": "www.wiler.com.br",
+      "path": "/_v/public/graphql/v1",
+      "query": "workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=pwaData&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%222edd7e66d602ced132258924511dded7167ec69067cb827d6a8fefd5be7d3554%22%2C%22sender%22%3A%22vtex.store-resources%400.x%22%2C%22provider%22%3A%22vtex.pwa-graphql%401.x%22%7D%7D",
+      "method": "GET",
+      "resource_type": "fetch",
+      "operation_name": "pwaData",
+      "post_data": null,
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json_preview": {
+        "data": {
+          "pwaSettings": {
+            "__typename": "PWASettings"
+          }
         }
       }
     },
@@ -618,41 +604,17 @@
       }
     },
     {
-      "url": "https://www.wiler.com.br/_v/private/graphql/v1?workspace=master&maxAge=long&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0",
-      "host": "www.wiler.com.br",
-      "path": "/_v/private/graphql/v1",
-      "query": "workspace=master&maxAge=long&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0",
+      "url": "https://sp.vtex.com/event-api/v1/willerk/event",
+      "host": "sp.vtex.com",
+      "path": "/event-api/v1/willerk/event",
+      "query": "",
       "method": "POST",
       "resource_type": "fetch",
-      "operation_name": "orderForm",
-      "post_data": "{\"operationName\":\"orderForm\",\"variables\":{},\"extensions\":{\"persistedQuery\":{\"version\":1,\"sha256Hash\":\"0e4744147dc063d889099111536c3c8bb748a31ab1cdc610d8ea7843f1724591\",\"sender\":\"vtex.checkout-resources@0.x\",\"provider\":\"vtex.checkout-graphql@0.x\"},\"variables\":\"eyJyZWZyZXNoT3V0ZGF0ZWREYXRhIjpmYWxzZX0=\"}}",
-      "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "json_preview": {
-        "data": {
-          "orderForm": {
-            "id": "51a2d72574054be0b4a1c03d4170a9b9",
-            "items": [],
-            "canEditData": true,
-            "userProfileId": null,
-            "marketingData": {
-              "__typename": "MarketingData"
-            },
-            "totalizers": [],
-            "paymentData": {
-              "availableAccounts": [],
-              "isValid": false,
-              "__typename": "PaymentData"
-            },
-            "clientProfileData": null,
-            "clientPreferencesData": {
-              "__typename": "ClientPreferencesData"
-            },
-            "customData": null,
-            "__typename": "OrderForm"
-          }
-        }
-      }
+      "operation_name": null,
+      "post_data": "{\"account\":\"willerk\",\"url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"workspace\":\"master\",\"locale\":\"pt-BR\",\"type\":\"session.ping\",\"ab\":\"master\",\"session\":\"64e31782ff3a4a54aa5c7afbf4101db4\",\"anonymous\":\"a5b3b4fcae814e48b2ae37a333da6f4e\",\"vtexSession\":\"bced3cfe-391b-41c7-8086-3673199f8eb1\",\"vtexMac\":\"e82260cf-7097-42fd-b679-f3ab24f3f137\"}",
+      "status": 204,
+      "content_type": "",
+      "json_preview": null
     },
     {
       "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=getConfig&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%224a8824e9a0693309f658dbe0edf008d242354264954badd98c24941075ee9d3f%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%7D",
@@ -674,45 +636,39 @@
       }
     },
     {
-      "url": "https://sp.vtex.com/event-api/v1/willerk/event",
-      "host": "sp.vtex.com",
-      "path": "/event-api/v1/willerk/event",
-      "query": "",
-      "method": "POST",
-      "resource_type": "fetch",
-      "operation_name": null,
-      "post_data": "{\"account\":\"willerk\",\"url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"workspace\":\"master\",\"locale\":\"pt-BR\",\"type\":\"page.category\",\"match\":42,\"ab\":\"master\",\"session\":\"ce9f6f7d2c144dea8fbd0ba0071cfb54\",\"anonymous\":\"0dd8ccc167f746bb87ee2851fb831a44\",\"vtexSession\":\"601d492d-e0a7-4e1f-8d2a-74b066174763\",\"vtexMac\":\"ebc9bcfb-65ae-493c-af53-1a8c05d05f7f\"}",
-      "status": 204,
-      "content_type": "",
-      "json_preview": null
-    },
-    {
-      "url": "https://af-origin.vtex.com/api/activity-flow/impression",
-      "host": "af-origin.vtex.com",
-      "path": "/api/activity-flow/impression",
-      "query": "",
-      "method": "POST",
-      "resource_type": "ping",
-      "operation_name": null,
-      "post_data": "{\"eventType\":\"impression\",\"element\":\"div\",\"impressionType\":\"rerender\",\"attributes\":{\"data-af-search-id\":\"9d78d266c4c04bb6afc0aa136372fe4a\"},\"elementSource\":\"search-result\",\"DataType\":\"Event\",\"SessionId\":\"601d492d-e0a7-4e1f-8d2a-74b066174763\",\"MacId\":\"ebc9bcfb-65ae-493c-af53-1a8c05d05f7f\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"accountName\":\"willerk\",\"accountEnvironment\":\"store_framework\",\"clientdate\":1788903434051,\"workspace\":\"master%3A-\",\"ckInfo\":\"VtexWorkspace=master%3A-; __trf.src=encoded_eyJmaXJzdF9zZXNzaW9uIjp7InZhbHVlIjoiKG5vbmUpIiwiZXh0cmFfcGFyYW1zIjp7fX0sImN1cnJlbnRfc2Vzc2lvbiI6eyJ2YWx1ZSI6Iihub25lKSIsImV4dHJhX3BhcmFtcyI6e319LCJjcmVhdGVkX2F0IjoxNzg4OTAzNDMzMjYwfQ==; VtexRCSessionIdv7=601d492d-e0a7-4e1f-8d2a-74b066174763; VtexRCMacIdv7=ebc9bcfb-65ae-493c-af53-1a8c05d05f7f; vtex-search-session=ce9f6f7d2c144dea8fbd0ba0071cfb54; vtex-search-anonymous=0dd8ccc167f746bb87ee2851fb831a44; vtex_binding_address=willerk.myvtex.com/\"}",
-      "status": 200,
-      "content_type": "application/json",
-      "json_preview": null
-    },
-    {
       "url": "https://www.wiler.com.br/_v/private/graphql/v1?workspace=master&maxAge=long&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0",
       "host": "www.wiler.com.br",
       "path": "/_v/private/graphql/v1",
       "query": "workspace=master&maxAge=long&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0",
       "method": "POST",
       "resource_type": "fetch",
-      "operation_name": "Profile",
-      "post_data": "{\"operationName\":\"Profile\",\"variables\":{},\"extensions\":{\"persistedQuery\":{\"version\":1,\"sha256Hash\":\"1025cf1771c9bf1fecfe52b7a12b19f6b659b2a5d283ed6f86f608819331af50\",\"sender\":\"vtex.wish-list@1.x\",\"provider\":\"vtex.store-graphql@2.x\"}}}",
+      "operation_name": "orderForm",
+      "post_data": "{\"operationName\":\"orderForm\",\"variables\":{},\"extensions\":{\"persistedQuery\":{\"version\":1,\"sha256Hash\":\"0e4744147dc063d889099111536c3c8bb748a31ab1cdc610d8ea7843f1724591\",\"sender\":\"vtex.checkout-resources@0.x\",\"provider\":\"vtex.checkout-graphql@0.x\"},\"variables\":\"eyJyZWZyZXNoT3V0ZGF0ZWREYXRhIjpmYWxzZX0=\"}}",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "json_preview": {
         "data": {
-          "profile": null
+          "orderForm": {
+            "id": "6c990306cc3f4c68b32c35c19afe6d64",
+            "items": [],
+            "canEditData": true,
+            "userProfileId": null,
+            "marketingData": {
+              "__typename": "MarketingData"
+            },
+            "totalizers": [],
+            "paymentData": {
+              "availableAccounts": [],
+              "isValid": false,
+              "__typename": "PaymentData"
+            },
+            "clientProfileData": null,
+            "clientPreferencesData": {
+              "__typename": "ClientPreferencesData"
+            },
+            "customData": null,
+            "__typename": "OrderForm"
+          }
         }
       }
     },
@@ -739,6 +695,32 @@
       }
     },
     {
+      "url": "https://sp.vtex.com/event-api/v1/willerk/event",
+      "host": "sp.vtex.com",
+      "path": "/event-api/v1/willerk/event",
+      "query": "",
+      "method": "POST",
+      "resource_type": "fetch",
+      "operation_name": null,
+      "post_data": "{\"account\":\"willerk\",\"url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"workspace\":\"master\",\"locale\":\"pt-BR\",\"type\":\"page.category\",\"match\":42,\"ab\":\"master\",\"session\":\"64e31782ff3a4a54aa5c7afbf4101db4\",\"anonymous\":\"a5b3b4fcae814e48b2ae37a333da6f4e\",\"vtexSession\":\"bced3cfe-391b-41c7-8086-3673199f8eb1\",\"vtexMac\":\"e82260cf-7097-42fd-b679-f3ab24f3f137\"}",
+      "status": 204,
+      "content_type": "",
+      "json_preview": null
+    },
+    {
+      "url": "https://af-origin.vtex.com/api/activity-flow/impression",
+      "host": "af-origin.vtex.com",
+      "path": "/api/activity-flow/impression",
+      "query": "",
+      "method": "POST",
+      "resource_type": "ping",
+      "operation_name": null,
+      "post_data": "{\"eventType\":\"impression\",\"element\":\"div\",\"impressionType\":\"rerender\",\"attributes\":{\"data-af-search-id\":\"9d78d266c4c04bb6afc0aa136372fe4a\"},\"elementSource\":\"search-result\",\"DataType\":\"Event\",\"SessionId\":\"bced3cfe-391b-41c7-8086-3673199f8eb1\",\"MacId\":\"e82260cf-7097-42fd-b679-f3ab24f3f137\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"accountName\":\"willerk\",\"accountEnvironment\":\"store_framework\",\"clientdate\":1788903725471,\"workspace\":\"master%3A-\",\"ckInfo\":\"VtexWorkspace=master%3A-; VtexRCSessionIdv7=bced3cfe-391b-41c7-8086-3673199f8eb1; VtexRCMacIdv7=e82260cf-7097-42fd-b679-f3ab24f3f137; vtex-search-session=64e31782ff3a4a54aa5c7afbf4101db4; vtex-search-anonymous=a5b3b4fcae814e48b2ae37a333da6f4e; AdoptVisitorId=undefined; AdoptConsent=undefined; vtex_binding_address=willerk.myvtex.com/\"}",
+      "status": 200,
+      "content_type": "application/json",
+      "json_preview": null
+    },
+    {
       "url": "https://www.wiler.com.br/api/sessions?items=public.shippingOption",
       "host": "www.wiler.com.br",
       "path": "/api/sessions",
@@ -750,50 +732,46 @@
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "json_preview": {
-        "id": "a8a5535a-19a6-4464-95a4-6d19af6dc5c0",
+        "id": "30fe475c-717f-4bf6-a92d-aabcd69d2b5d",
         "namespaces": {
           "public": {}
         }
       }
     },
     {
-      "url": "https://rc.vtex.com/v8",
-      "host": "rc.vtex.com",
-      "path": "/v8",
+      "url": "https://disclaimer-api.goadopt.io/api/tag/get-consent",
+      "host": "disclaimer-api.goadopt.io",
+      "path": "/api/tag/get-consent",
       "query": "",
       "method": "POST",
       "resource_type": "xhr",
       "operation_name": null,
-      "post_data": "{\"DataType\":\"Event\",\"RequestType\":\"categoryView\",\"SessionId\":\"601d492d-e0a7-4e1f-8d2a-74b066174763\",\"MacId\":\"ebc9bcfb-65ae-493c-af53-1a8c05d05f7f\",\"IsNewUser\":false,\"workspace\":\"master%3A-\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"Path\":\"/papel-de-parede/texture-ii\",\"HostName\":\"www.wiler.com.br\",\"pageTitle\":\"Papel de Parede: Transforme seu espaço sem sujeira\",\"accountName\":\"willerk\"}",
+      "post_data": "{\"websiteID\":\"aee23cf1-14df-4ca6-9edf-d2d5be379f02\",\"adoptConsent\":null,\"visitorId\":null,\"device\":\"desktop\",\"consentTTL\":60,\"consentVersion\":0,\"priorityQueue\":true,\"allowTPCookies\":false}",
       "status": 200,
-      "content_type": "application/json",
-      "json_preview": null
+      "content_type": "application/json; charset=utf-8",
+      "json_preview": {
+        "data": {
+          "visitorId": "a0883501-0889-4903-94e4-6099996a6203",
+          "consentId": "Xj7MSW"
+        }
+      }
     },
     {
-      "url": "https://dxyxft75r9rwr.cloudfront.net/i/628647244ded2c5bb52613fd.json?t=%271788903434332",
-      "host": "dxyxft75r9rwr.cloudfront.net",
-      "path": "/i/628647244ded2c5bb52613fd.json",
-      "query": "t=%271788903434332",
-      "method": "GET",
-      "resource_type": "xhr",
-      "operation_name": null,
-      "post_data": null,
-      "status": 200,
-      "content_type": "application/octet-stream",
-      "json_preview": null
-    },
-    {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-18WWV0TPPP&gtm=45je6930h1v9102585009z8811370786za20gzb811370786zd811370786&_p=1788903432944&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&_eu=AAAAAGAC&are=1&cid=42890947.1788903434&frm=0&gtm_up=1&pscdl=denied&rcb=9&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&gaf=2&_s=1&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~120914214&sid=1788903434&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&en=page_view&_fv=1&_ss=1&tfd=1744",
-      "host": "www.google-analytics.com",
-      "path": "/g/collect",
-      "query": "v=2&tid=G-18WWV0TPPP&gtm=45je6930h1v9102585009z8811370786za20gzb811370786zd811370786&_p=1788903432944&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&_eu=AAAAAGAC&are=1&cid=42890947.1788903434&frm=0&gtm_up=1&pscdl=denied&rcb=9&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&gaf=2&_s=1&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~120914214&sid=1788903434&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&en=page_view&_fv=1&_ss=1&tfd=1744",
+      "url": "https://www.wiler.com.br/_v/private/graphql/v1?workspace=master&maxAge=long&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0",
+      "host": "www.wiler.com.br",
+      "path": "/_v/private/graphql/v1",
+      "query": "workspace=master&maxAge=long&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0",
       "method": "POST",
       "resource_type": "fetch",
-      "operation_name": null,
-      "post_data": null,
-      "status": 204,
-      "content_type": "text/plain",
-      "json_preview": null
+      "operation_name": "Profile",
+      "post_data": "{\"operationName\":\"Profile\",\"variables\":{},\"extensions\":{\"persistedQuery\":{\"version\":1,\"sha256Hash\":\"1025cf1771c9bf1fecfe52b7a12b19f6b659b2a5d283ed6f86f608819331af50\",\"sender\":\"vtex.wish-list@1.x\",\"provider\":\"vtex.store-graphql@2.x\"}}}",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json_preview": {
+        "data": {
+          "profile": null
+        }
+      }
     },
     {
       "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU4NSJ9%22%7D",
@@ -896,6 +874,19 @@
       }
     },
     {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-3Y8LN5PVE7&gtm=45je6930v9209668265za200zd9209668265&_p=1788903724278&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&are=1&cid=109231639.1788903725&frm=0&gtm_up=1&ngs=1&pscdl=denied&rcb=7&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=1&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1788903725&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&en=page_view&_fv=1&_ss=1&_ee=1&tfd=2040",
+      "host": "www.google-analytics.com",
+      "path": "/g/collect",
+      "query": "v=2&tid=G-3Y8LN5PVE7&gtm=45je6930v9209668265za200zd9209668265&_p=1788903724278&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&are=1&cid=109231639.1788903725&frm=0&gtm_up=1&ngs=1&pscdl=denied&rcb=7&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=1&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1788903725&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&en=page_view&_fv=1&_ss=1&_ee=1&tfd=2040",
+      "method": "POST",
+      "resource_type": "fetch",
+      "operation_name": null,
+      "post_data": null,
+      "status": 204,
+      "content_type": "text/plain",
+      "json_preview": null
+    },
+    {
       "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU4NyJ9%22%7D",
       "host": "www.wiler.com.br",
       "path": "/_v/public/graphql/v1",
@@ -954,6 +945,19 @@
           }
         }
       }
+    },
+    {
+      "url": "https://rc.vtex.com/v8",
+      "host": "rc.vtex.com",
+      "path": "/v8",
+      "query": "",
+      "method": "POST",
+      "resource_type": "xhr",
+      "operation_name": null,
+      "post_data": "{\"DataType\":\"Event\",\"RequestType\":\"categoryView\",\"SessionId\":\"bced3cfe-391b-41c7-8086-3673199f8eb1\",\"MacId\":\"e82260cf-7097-42fd-b679-f3ab24f3f137\",\"IsNewUser\":false,\"workspace\":\"master%3A-\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"Path\":\"/papel-de-parede/texture-ii\",\"HostName\":\"www.wiler.com.br\",\"pageTitle\":\"Papel de Parede: Transforme seu espaço sem sujeira\",\"accountName\":\"willerk\"}",
+      "status": 200,
+      "content_type": "application/json",
+      "json_preview": null
     },
     {
       "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU3OCJ9%22%7D",
@@ -1076,10 +1080,10 @@
       }
     },
     {
-      "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU4OSJ9%22%7D",
+      "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU5MiJ9%22%7D",
       "host": "www.wiler.com.br",
       "path": "/_v/public/graphql/v1",
-      "query": "workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU4OSJ9%22%7D",
+      "query": "workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU5MiJ9%22%7D",
       "method": "GET",
       "resource_type": "fetch",
       "operation_name": "productSummary",
@@ -1096,10 +1100,10 @@
       }
     },
     {
-      "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU5MiJ9%22%7D",
+      "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU4OSJ9%22%7D",
       "host": "www.wiler.com.br",
       "path": "/_v/public/graphql/v1",
-      "query": "workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU5MiJ9%22%7D",
+      "query": "workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU4OSJ9%22%7D",
       "method": "GET",
       "resource_type": "fetch",
       "operation_name": "productSummary",
@@ -1123,7 +1127,7 @@
       "method": "POST",
       "resource_type": "ping",
       "operation_name": null,
-      "post_data": "{\"eventType\":\"webVitals\",\"name\":\"TTFB\",\"value\":84.5,\"rating\":\"good\",\"delta\":84.5,\"entries\":[{\"name\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"entryType\":\"navigation\",\"startTime\":0,\"duration\":2339.2000000000116,\"navigationId\":1750,\"initiatorType\":\"navigation\",\"deliveryType\":\"\",\"nextHopProtocol\":\"h2\",\"renderBlockingStatus\":\"non-blocking\",\"contentType\":\"text/html\",\"contentEncoding\":\"gzip\",\"workerStart\":0,\"workerRouterEvaluationStart\":0,\"workerCacheLookupStart\":0,\"workerMatchedSourceType\":\"\",\"workerFinalSourceType\":\"\",\"redirectStart\":0,\"redirectEnd\":0,\"fetchStart\":0.20000000001164153,\"domainLookupStart\":1.5,\"domainLookupEnd\":4.7000000000116415,\"connectStart\":4.7000000000116415,\"secureConnectionStart\":7.100000000005821,\"connectEnd\":15.200000000011642,\"requestStart\":15.39999999999418,\"responseStart\":84.5,\"firstInterimResponseStart\":0,\"finalResponseHeadersStart\":84.5,\"responseEnd\":109.60000000000582,\"transferSize\":163735,\"encodedBodySize\":163435,\"decodedBodySize\":1893765,\"responseStatus\":200,\"serverTiming\":[],\"unloadEventStart\":0,\"unloadEventEnd\":0,\"domInteractive\":298.3999999999942,\"domContentLoadedEventStart\":298.3999999999942,\"domContentLoadedEventEnd\":298.5,\"domComplete\":2337.7000000000116,\"loadEventStart\":2338.100000000006,\"loadEventEnd\":2339.2000000000116,\"type\":\"navigate\",\"redirectCount\":0,\"activationStart\":0,\"criticalCHRestart\":0,\"notRestoredReasons\":null,\"confidence\":{\"randomizedTriggerRate\":0.4994798,\"value\":\"low\"}}],\"id\":\"v4-1788903433361-4975744765505\",\"navigationType\":\"navigate\",\"DataType\":\"Event\",\"SessionId\":\"601d492d-e0a7-4e1f-8d2a-74b066174763\",\"MacId\":\"ebc9bcfb-65ae-493c-af53-1a8c05d05f7f\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"accountName\":\"willerk\",\"accountEnvironment\":\"store_framework\",\"clientdate\":1788903435051,\"workspace\":\"master%3A-\",\"ckInfo\":\"VtexWorkspace=master%3A-; __trf.src=encoded_eyJmaXJzdF9zZXNzaW9uIjp7InZhbHVlIjoiKG5vbmUpIiwiZXh0cmFfcGFyYW1zIjp7fX0sImN1cnJlbnRfc2Vzc2lvbiI6eyJ2YWx1ZSI6Iihub25lKSIsImV4dHJhX3BhcmFtcyI6e319LCJjcmVhdGVkX2F0IjoxNzg4OTAzNDMzMjYwfQ==; VtexRCSessionIdv7=601d492d-e0a7-4e1f-8d2a-74b066174763; VtexRCMacIdv7=ebc9bcfb-65ae-493c-af53-1a8c05d05f7f; vtex-search-session=ce9f6f7d2c144dea8fbd0ba0071cfb54; vtex-search-anonymous=0dd8ccc167f746bb87ee2851fb831a44; vtex_binding_address=willerk.myvtex.com/; AdoptVisitorId=undefined; AdoptConsent=undefined\"}",
+      "post_data": "{\"eventType\":\"webVitals\",\"name\":\"TTFB\",\"value\":266.6999999999971,\"rating\":\"good\",\"delta\":266.6999999999971,\"entries\":[{\"name\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"entryType\":\"navigation\",\"startTime\":0,\"duration\":2531,\"navigationId\":1756,\"initiatorType\":\"navigation\",\"deliveryType\":\"\",\"nextHopProtocol\":\"h2\",\"renderBlockingStatus\":\"non-blocking\",\"contentType\":\"text/html\",\"contentEncoding\":\"gzip\",\"workerStart\":0,\"workerRouterEvaluationStart\":0,\"workerCacheLookupStart\":0,\"workerMatchedSourceType\":\"\",\"workerFinalSourceType\":\"\",\"redirectStart\":0,\"redirectEnd\":0,\"fetchStart\":0.09999999999126885,\"domainLookupStart\":1.3999999999941792,\"domainLookupEnd\":2.5,\"connectStart\":2.5,\"secureConnectionStart\":10.89999999999418,\"connectEnd\":28.5,\"requestStart\":28.89999999999418,\"responseStart\":266.6999999999971,\"firstInterimResponseStart\":0,\"finalResponseHeadersStart\":266.6999999999971,\"responseEnd\":481.6999999999971,\"transferSize\":163735,\"encodedBodySize\":163435,\"decodedBodySize\":1893765,\"responseStatus\":200,\"serverTiming\":[],\"unloadEventStart\":0,\"unloadEventEnd\":0,\"domInteractive\":768.0999999999913,\"domContentLoadedEventStart\":768.1999999999971,\"domContentLoadedEventEnd\":768.3000000000029,\"domComplete\":2529.399999999994,\"loadEventStart\":2529.800000000003,\"loadEventEnd\":2531,\"type\":\"navigate\",\"redirectCount\":0,\"activationStart\":0,\"criticalCHRestart\":0,\"notRestoredReasons\":null,\"confidence\":{\"randomizedTriggerRate\":0.4994798,\"value\":\"low\"}}],\"id\":\"v4-1788903724387-3120891553597\",\"navigationType\":\"navigate\",\"DataType\":\"Event\",\"SessionId\":\"bced3cfe-391b-41c7-8086-3673199f8eb1\",\"MacId\":\"e82260cf-7097-42fd-b679-f3ab24f3f137\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"accountName\":\"willerk\",\"accountEnvironment\":\"store_framework\",\"clientdate\":1788903726415,\"workspace\":\"master%3A-\",\"ckInfo\":\"VtexWorkspace=master%3A-; VtexRCSessionIdv7=bced3cfe-391b-41c7-8086-3673199f8eb1; VtexRCMacIdv7=e82260cf-7097-42fd-b679-f3ab24f3f137; vtex-search-session=64e31782ff3a4a54aa5c7afbf4101db4; vtex-search-anonymous=a5b3b4fcae814e48b2ae37a333da6f4e; vtex_binding_address=willerk.myvtex.com/; AdoptConsent=N4Ig7gpgRgzglgFwgSQCIgFwgIYQgJgGYBjAMwEYBacgFgBNTKbjsA2SgTggcrvzoCsUCIQDsHUgAZ8IADQgAbnHgIA9gCdkdTDkkAOPYQGSq+vRyYdJhTjQg1KrSRxcdWbfNbkhVABwTIAHYAKtgA5jCYANoAuvJ+CADyAK4IoRHRcSDEqoEwEIEB2lgAGgBWogCyAMoA6t4QCgVpAJ6+EDpgelBwABIAXhAAct45ec0AahDq8LmYkvLJvnTYSHQAggg6nvjszpT6wfjkGDT4GJICAHSsLgBaIAC+QA; AdoptVisitorId=IYBgHGDMCsIIwFpxgJwICwpJBL0FN0EA2EFclY4YgJmyA===; __trf.src=encoded_eyJmaXJzdF9zZXNzaW9uIjp7InZhbHVlIjoiKG5vbmUpIiwiZXh0cmFfcGFyYW1zIjp7fX0sImN1cnJlbnRfc2Vzc2lvbiI6eyJ2YWx1ZSI6Iihub25lKSIsImV4dHJhX3BhcmFtcyI6e319LCJjcmVhdGVkX2F0IjoxNzg4OTAzNzI2MDA0fQ==\"}",
       "status": 200,
       "content_type": "application/json",
       "json_preview": null
@@ -1142,10 +1146,23 @@
       "json_preview": null
     },
     {
-      "url": "https://popups.rdstation.com.br/popup/show.json?account_id=1020694&uniq=_amih0k6il&ref=aHR0cHM6Ly93d3cud2lsZXIuY29tLmJyL3BhcGVsLWRlLXBhcmVkZS90ZXh0dXJlLWlpP21hcD1jYXRlZ29yeS0xJTJDY29sZWNvZXM%3D",
+      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=15&frm=0&apvc=0&ae=g&tid=AW-865462130&en=view_item_list&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=366578985.1788903724&navt=n&npa=1&ep.ads_data_redaction=1&ep.value=0&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6941h2v9123716997z8811370786za20gzb811370786zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1788903726681&tfd=2822&tids=AW-865462130&fmt=8",
+      "host": "pagead2.googlesyndication.com",
+      "path": "/ccm/collect",
+      "query": "rcb=15&frm=0&apvc=0&ae=g&tid=AW-865462130&en=view_item_list&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=366578985.1788903724&navt=n&npa=1&ep.ads_data_redaction=1&ep.value=0&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6941h2v9123716997z8811370786za20gzb811370786zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1788903726681&tfd=2822&tids=AW-865462130&fmt=8",
+      "method": "POST",
+      "resource_type": "fetch",
+      "operation_name": null,
+      "post_data": null,
+      "status": 200,
+      "content_type": "",
+      "json_preview": null
+    },
+    {
+      "url": "https://popups.rdstation.com.br/popup/show.json?account_id=1020694&uniq=_xwdgncvph&ref=aHR0cHM6Ly93d3cud2lsZXIuY29tLmJyL3BhcGVsLWRlLXBhcmVkZS90ZXh0dXJlLWlpP21hcD1jYXRlZ29yeS0xJTJDY29sZWNvZXM%3D",
       "host": "popups.rdstation.com.br",
       "path": "/popup/show.json",
-      "query": "account_id=1020694&uniq=_amih0k6il&ref=aHR0cHM6Ly93d3cud2lsZXIuY29tLmJyL3BhcGVsLWRlLXBhcmVkZS90ZXh0dXJlLWlpP21hcD1jYXRlZ29yeS0xJTJDY29sZWNvZXM%3D",
+      "query": "account_id=1020694&uniq=_xwdgncvph&ref=aHR0cHM6Ly93d3cud2lsZXIuY29tLmJyL3BhcGVsLWRlLXBhcmVkZS90ZXh0dXJlLWlpP21hcD1jYXRlZ29yeS0xJTJDY29sZWNvZXM%3D",
       "method": "GET",
       "resource_type": "xhr",
       "operation_name": null,
@@ -1157,37 +1174,6 @@
       }
     },
     {
-      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=2&frm=0&apvc=0&ae=g&tid=AW-865462130&en=view_item_list&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=288342830.1788903433&navt=n&npa=1&ep.ads_data_redaction=1&ep.value=0&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6930h1v9123716997z8811370786za20gzb811370786zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118012007~118897920~118897930~120213116~120385423~120469145~120469153~120914213&tft=1788903435331&tfd=2629&tids=AW-865462130&fmt=8",
-      "host": "pagead2.googlesyndication.com",
-      "path": "/ccm/collect",
-      "query": "rcb=2&frm=0&apvc=0&ae=g&tid=AW-865462130&en=view_item_list&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=288342830.1788903433&navt=n&npa=1&ep.ads_data_redaction=1&ep.value=0&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6930h1v9123716997z8811370786za20gzb811370786zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118012007~118897920~118897930~120213116~120385423~120469145~120469153~120914213&tft=1788903435331&tfd=2629&tids=AW-865462130&fmt=8",
-      "method": "POST",
-      "resource_type": "fetch",
-      "operation_name": null,
-      "post_data": null,
-      "status": 200,
-      "content_type": "",
-      "json_preview": null
-    },
-    {
-      "url": "https://disclaimer-api.goadopt.io/api/tag/get-consent",
-      "host": "disclaimer-api.goadopt.io",
-      "path": "/api/tag/get-consent",
-      "query": "",
-      "method": "POST",
-      "resource_type": "xhr",
-      "operation_name": null,
-      "post_data": "{\"websiteID\":\"aee23cf1-14df-4ca6-9edf-d2d5be379f02\",\"adoptConsent\":null,\"visitorId\":null,\"device\":\"desktop\",\"consentTTL\":60,\"consentVersion\":0,\"priorityQueue\":true,\"allowTPCookies\":false}",
-      "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "json_preview": {
-        "data": {
-          "visitorId": "6c44638c-82e9-43aa-95ef-96d4492e185a",
-          "consentId": "ZU6JZn"
-        }
-      }
-    },
-    {
       "url": "https://axeptio-api.goadopt.io/flow",
       "host": "axeptio-api.goadopt.io",
       "path": "/flow",
@@ -1195,48 +1181,35 @@
       "method": "POST",
       "resource_type": "fetch",
       "operation_name": null,
-      "post_data": "[{\"timestamp\":\"2026-09-08T21:37:15.462Z\",\"deployment\":\"2026-09-08T21:37:15.462Z\",\"source\":\"sdk-web-adopt\",\"type\":\"pageview\",\"token\":\"6c44638c-82e9-43aa-95ef-96d4492e185a\",\"domain\":\"www.wiler.com.br\",\"projectId\":\"15e19eb5-958a-4d1e-a1b2-cdbda58af4e6\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"preferences\":{\"enabled\":[],\"disabled\":[]},\"pathname\":\"/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"referrer\":null,\"config\":{\"language\":\"pt\",\"consent_mode\":\"opt_out\",\"display_mode\":\"show\",\"identifier\":\"aee23cf1-14df-4ca6-9edf-d2d5be379f02\"},\"geolocation\":{\"reglementation\":\"ccpa\",\"userLanguage\":\"pt\",\"countryCode\":\"US\"},\"metadata\":{\"injector_version\":\"1.2.25\",\"disclaimer_version\":8,\"transport\":\"keepalive\"}},{\"timestamp\":\"2026-09-08T21:37:15.462Z\",\"deployment\":\"2026-09-08T21:37:15.462Z\",\"source\":\"sdk-web-adopt\",\"type\":\"cookies:open\",\"token\":\"6c44638c-82e9-43aa-95ef-96d4492e185a\",\"domain\":\"www.wiler.com.br\",\"projectId\":\"15e19eb5-958a-4d1e-a1b2-cdbda58af4e6\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"preferences\":{\"enabled\":[],\"disabled\":[]},\"pathname\":\"/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"referrer\":null,\"config\":{\"language\":\"pt\",\"consent_mode\":\"opt_out\",\"display_mode\":\"show\",\"identifier\":\"aee23cf1-14df-4ca6-9edf-d2d5be379f02\"},\"geolocation\":{\"reglementation\":\"ccpa\",\"userLanguage\":\"pt\",\"countryCode\":\"US\"},\"metadata\":{\"injector_version\":\"1.2.25\",\"disclaimer_version\":8,\"transport\":\"keepalive\"}}]",
+      "post_data": "[{\"timestamp\":\"2026-09-08T21:42:05.753Z\",\"deployment\":\"2026-09-08T21:42:05.753Z\",\"source\":\"sdk-web-adopt\",\"type\":\"pageview\",\"token\":\"a0883501-0889-4903-94e4-6099996a6203\",\"domain\":\"www.wiler.com.br\",\"projectId\":\"15e19eb5-958a-4d1e-a1b2-cdbda58af4e6\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"preferences\":{\"enabled\":[],\"disabled\":[]},\"pathname\":\"/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"referrer\":null,\"config\":{\"language\":\"pt\",\"consent_mode\":\"opt_out\",\"display_mode\":\"show\",\"identifier\":\"aee23cf1-14df-4ca6-9edf-d2d5be379f02\"},\"geolocation\":{\"reglementation\":\"ccpa\",\"userLanguage\":\"pt\",\"countryCode\":\"US\"},\"metadata\":{\"injector_version\":\"1.2.25\",\"disclaimer_version\":8,\"transport\":\"keepalive\"}},{\"timestamp\":\"2026-09-08T21:42:05.754Z\",\"deployment\":\"2026-09-08T21:42:05.754Z\",\"source\":\"sdk-web-adopt\",\"type\":\"cookies:open\",\"token\":\"a0883501-0889-4903-94e4-6099996a6203\",\"domain\":\"www.wiler.com.br\",\"projectId\":\"15e19eb5-958a-4d1e-a1b2-cdbda58af4e6\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"preferences\":{\"enabled\":[],\"disabled\":[]},\"pathname\":\"/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"referrer\":null,\"config\":{\"language\":\"pt\",\"consent_mode\":\"opt_out\",\"display_mode\":\"show\",\"identifier\":\"aee23cf1-14df-4ca6-9edf-d2d5be379f02\"},\"geolocation\":{\"reglementation\":\"ccpa\",\"userLanguage\":\"pt\",\"countryCode\":\"US\"},\"metadata\":{\"injector_version\":\"1.2.25\",\"disclaimer_version\":8,\"transport\":\"keepalive\"}}]",
       "status": 204,
       "content_type": "",
       "json_preview": null
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-3Y8LN5PVE7&gtm=45je6941h2v9209668265za200zd9209668265&_p=1788903432944&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&are=1&cid=42890947.1788903434&frm=0&gtm_up=1&ngs=1&pscdl=denied&rcb=1&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=3&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1788903433&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=&_tu=CA&en=widget_view_main&_ee=1&ep.event_category=engagement&ep.event_label=widget_view_main&_et=80&tfd=5950",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-18WWV0TPPP&gtm=45je6941h2v9102585009z8811370786za20gzb811370786zd811370786&_p=1788903724278&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&_eu=AAAAAGAC&are=1&cid=109231639.1788903725&frm=0&gtm_up=1&pscdl=denied&rcb=13&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&gaf=2&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153&sid=1788903724&sct=1&seg=1&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&_s=2&tfd=6643",
       "host": "www.google-analytics.com",
       "path": "/g/collect",
-      "query": "v=2&tid=G-3Y8LN5PVE7&gtm=45je6941h2v9209668265za200zd9209668265&_p=1788903432944&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&are=1&cid=42890947.1788903434&frm=0&gtm_up=1&ngs=1&pscdl=denied&rcb=1&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=3&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1788903433&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=&_tu=CA&en=widget_view_main&_ee=1&ep.event_category=engagement&ep.event_label=widget_view_main&_et=80&tfd=5950",
+      "query": "v=2&tid=G-18WWV0TPPP&gtm=45je6941h2v9102585009z8811370786za20gzb811370786zd811370786&_p=1788903724278&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&_eu=AAAAAGAC&are=1&cid=109231639.1788903725&frm=0&gtm_up=1&pscdl=denied&rcb=13&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&gaf=2&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153&sid=1788903724&sct=1&seg=1&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&_s=2&tfd=6643",
+      "method": "POST",
+      "resource_type": "fetch",
+      "operation_name": null,
+      "post_data": "en=page_view&_et=628\r\nen=view_item_list&pr1=id55585~nmPapel%20de%20Parede%20Texture%20II%20Bege%20TX-2010%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55585~brEdantex~lp1~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055585~k1dimension2~v155585~k2dimension3~v2TX-2010~k3dimension4~v3available&pr2=id56290~nmPapel%20De%20Parede%20Texture%20II%20Carvalho%20TX-2052%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va56290~brEdantex~lp2~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v056290~k1dimension2~v156290~k2dimension3~v2TX-2052~k3dimension4~v3available&pr3=id55580~nmPapel%20de%20Parede%20Texture%20II%20Marrom%20TX-2005%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55580~brEdantex~lp3~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055580~k1dimension2~v155580~k2dimension3~v2TX-2005~k3dimension4~v3available&pr4=id55593~nmPapel%20de%20Parede%20Texture%20II%20Castor%20TX-2018%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55593~brEdantex~lp4~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055593~k1dimension2~v155593~k2dimension3~v2TX-2018~k3dimension4~v3available&pr5=id55611~nmPapel%20de%20Parede%20Texture%20II%20Off%20White%20Cinza%20TX-2042%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55611~brEdantex~lp5~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055611~k1dimension2~v155611~k2dimension3~v2TX-2042~k3dimension4~v3available&pr6=id55587~nmPapel%20de%20Parede%20Texture%20II%20Grafite%20TX-2012%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55587~brEdantex~lp6~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055587~k1dimension2~v155587~k2dimension3~v2TX-2012~k3dimension4~v3available&pr7=id55584~nmPapel%20de%20Parede%20Texture%20II%20Linho%20TX-2009%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55584~brEdantex~lp7~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055584~k1dimension2~v155584~k2dimension3~v2TX-2009~k3dimension4~v3available&pr8=id55604~nmPapel%20de%20Parede%20Texture%20II%20Cinza%20TX-2035%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55604~brEdantex~lp8~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055604~k1dimension2~v155604~k2dimension3~v2TX-2035~k3dimension4~v3available&ep.item_list_name=Papel%20de%20parede&_et=1165",
+      "status": 204,
+      "content_type": "text/plain",
+      "json_preview": null
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-3Y8LN5PVE7&gtm=45je6930v9209668265za200zd9209668265&_p=1788903724278&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&are=1&cid=109231639.1788903725&frm=0&gtm_up=1&ngs=1&pscdl=denied&rcb=7&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=2&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1788903725&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&en=widget_view_main&_ee=1&ep.event_category=engagement&ep.event_label=widget_view_main&_et=29&tfd=7070",
+      "host": "www.google-analytics.com",
+      "path": "/g/collect",
+      "query": "v=2&tid=G-3Y8LN5PVE7&gtm=45je6930v9209668265za200zd9209668265&_p=1788903724278&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&are=1&cid=109231639.1788903725&frm=0&gtm_up=1&ngs=1&pscdl=denied&rcb=7&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=2&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1788903725&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&en=widget_view_main&_ee=1&ep.event_category=engagement&ep.event_label=widget_view_main&_et=29&tfd=7070",
       "method": "POST",
       "resource_type": "fetch",
       "operation_name": null,
       "post_data": null,
       "status": 204,
       "content_type": "text/plain",
-      "json_preview": null
-    },
-    {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-18WWV0TPPP&gtm=45je6930h1v9102585009z8811370786za20gzb811370786zd811370786&_p=1788903432944&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&_eu=AAAAAGAC&are=1&cid=42890947.1788903434&frm=0&gtm_up=1&pscdl=denied&rcb=9&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&gaf=2&_s=2&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~120914214&sid=1788903434&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&tfd=7325",
-      "host": "www.google-analytics.com",
-      "path": "/g/collect",
-      "query": "v=2&tid=G-18WWV0TPPP&gtm=45je6930h1v9102585009z8811370786za20gzb811370786zd811370786&_p=1788903432944&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&_eu=AAAAAGAC&are=1&cid=42890947.1788903434&frm=0&gtm_up=1&pscdl=denied&rcb=9&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&gaf=2&_s=2&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~120914214&sid=1788903434&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&tfd=7325",
-      "method": "POST",
-      "resource_type": "fetch",
-      "operation_name": null,
-      "post_data": "en=view_item_list&pr1=id55585~nmPapel%20de%20Parede%20Texture%20II%20Bege%20TX-2010%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55585~brEdantex~lp1~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055585~k1dimension2~v155585~k2dimension3~v2TX-2010~k3dimension4~v3available&pr2=id56290~nmPapel%20De%20Parede%20Texture%20II%20Carvalho%20TX-2052%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va56290~brEdantex~lp2~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v056290~k1dimension2~v156290~k2dimension3~v2TX-2052~k3dimension4~v3available&pr3=id55580~nmPapel%20de%20Parede%20Texture%20II%20Marrom%20TX-2005%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55580~brEdantex~lp3~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055580~k1dimension2~v155580~k2dimension3~v2TX-2005~k3dimension4~v3available&pr4=id55593~nmPapel%20de%20Parede%20Texture%20II%20Castor%20TX-2018%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55593~brEdantex~lp4~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055593~k1dimension2~v155593~k2dimension3~v2TX-2018~k3dimension4~v3available&pr5=id55611~nmPapel%20de%20Parede%20Texture%20II%20Off%20White%20Cinza%20TX-2042%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55611~brEdantex~lp5~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055611~k1dimension2~v155611~k2dimension3~v2TX-2042~k3dimension4~v3available&pr6=id55587~nmPapel%20de%20Parede%20Texture%20II%20Grafite%20TX-2012%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55587~brEdantex~lp6~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055587~k1dimension2~v155587~k2dimension3~v2TX-2012~k3dimension4~v3available&pr7=id55584~nmPapel%20de%20Parede%20Texture%20II%20Linho%20TX-2009%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55584~brEdantex~lp7~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055584~k1dimension2~v155584~k2dimension3~v2TX-2009~k3dimension4~v3available&pr8=id55604~nmPapel%20de%20Parede%20Texture%20II%20Cinza%20TX-2035%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55604~brEdantex~lp8~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055604~k1dimension2~v155604~k2dimension3~v2TX-2035~k3dimension4~v3available&ep.item_list_name=Papel%20de%20parede&_et=882",
-      "status": 204,
-      "content_type": "text/plain",
-      "json_preview": null
-    },
-    {
-      "url": "https://recs.smarthint.co/box/GetInitialData?callback=jQuery341000489422324458777_1788903437942&key=SH-658457&pageType=category&searchTest=false&recommendationEnabled=false&recommendationLocalDisable=false&bannersEnabled=false&bannersLocalDisable=false&currentUrl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&_=1788903437944",
-      "host": "recs.smarthint.co",
-      "path": "/box/GetInitialData",
-      "query": "callback=jQuery341000489422324458777_1788903437942&key=SH-658457&pageType=category&searchTest=false&recommendationEnabled=false&recommendationLocalDisable=false&bannersEnabled=false&bannersLocalDisable=false&currentUrl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&_=1788903437944",
-      "method": "GET",
-      "resource_type": "script",
-      "operation_name": null,
-      "post_data": null,
-      "status": 200,
-      "content_type": "text/plain; charset=utf-8",
       "json_preview": null
     }
   ],

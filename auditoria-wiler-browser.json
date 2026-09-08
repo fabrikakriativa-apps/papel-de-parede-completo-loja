@@ -1,7 +1,7 @@
 {
   "fonte": "Wiler — vitrine oficial pública em navegador real",
   "dominio_oficial": "https://www.wiler.com.br/",
-  "criterio": "Percorre a paginação renderizada das cinco coleções. A vitrine ativa é usada para detectar referências ativas faltantes no catálogo. Referências do catálogo ausentes na vitrine não são removidas automaticamente.",
+  "criterio": "Percorre a paginação renderizada das cinco coleções. Só confirma completude quando refs extraídas = total oficial. A vitrine ativa detecta faltantes ativos, mas nunca autoriza remover automaticamente referências históricas do catálogo.",
   "colecoes": [
     {
       "colecao": "Bambine",
@@ -9,22 +9,10 @@
       "oficial_ativos_total": 37,
       "catalogo_total": 50,
       "refs_ativas_extraidas": 38,
-      "extracao_ativa_completa": true,
+      "extracao_ativa_completa": false,
       "faltantes_ativos_confirmados": [],
-      "catalogo_nao_encontrado_na_vitrine_ativa": [
-        "BA0005",
-        "BA0008",
-        "BA0011",
-        "BA0016",
-        "BA0017",
-        "BA0022",
-        "BA0025",
-        "BA0028",
-        "BA0033",
-        "BA0048",
-        "BA0049",
-        "BA0050"
-      ],
+      "faltantes_observados_na_extracao_incompleta": [],
+      "catalogo_nao_encontrado_na_vitrine_ativa": [],
       "observacao_catalogo_nao_ativo": "Itens não encontrados na vitrine ativa NÃO são candidatos automáticos a remoção; podem ser referências históricas/válidas do book.",
       "refs_ativas": [
         "BA0001",
@@ -93,7 +81,7 @@
         }
       ],
       "erro": null,
-      "status": "ok"
+      "status": "inconsistente_contagem"
     },
     {
       "colecao": "Tacto",
@@ -103,6 +91,7 @@
       "refs_ativas_extraidas": 0,
       "extracao_ativa_completa": false,
       "faltantes_ativos_confirmados": [],
+      "faltantes_observados_na_extracao_incompleta": [],
       "catalogo_nao_encontrado_na_vitrine_ativa": [],
       "observacao_catalogo_nao_ativo": "Itens não encontrados na vitrine ativa NÃO são candidatos automáticos a remoção; podem ser referências históricas/válidas do book.",
       "refs_ativas": [],
@@ -133,7 +122,7 @@
         }
       ],
       "erro": null,
-      "status": "erro"
+      "status": "fonte_nao_localizada"
     },
     {
       "colecao": "Texture II",
@@ -143,6 +132,7 @@
       "refs_ativas_extraidas": 42,
       "extracao_ativa_completa": true,
       "faltantes_ativos_confirmados": [],
+      "faltantes_observados_na_extracao_incompleta": [],
       "catalogo_nao_encontrado_na_vitrine_ativa": [
         "TX-2024",
         "TX-2025",
@@ -249,6 +239,7 @@
       "refs_ativas_extraidas": 0,
       "extracao_ativa_completa": false,
       "faltantes_ativos_confirmados": [],
+      "faltantes_observados_na_extracao_incompleta": [],
       "catalogo_nao_encontrado_na_vitrine_ativa": [],
       "observacao_catalogo_nao_ativo": "Itens não encontrados na vitrine ativa NÃO são candidatos automáticos a remoção; podem ser referências históricas/válidas do book.",
       "refs_ativas": [],
@@ -279,7 +270,7 @@
         }
       ],
       "erro": null,
-      "status": "erro"
+      "status": "fonte_nao_localizada"
     },
     {
       "colecao": "Tramas",
@@ -289,6 +280,7 @@
       "refs_ativas_extraidas": 52,
       "extracao_ativa_completa": true,
       "faltantes_ativos_confirmados": [],
+      "faltantes_observados_na_extracao_incompleta": [],
       "catalogo_nao_encontrado_na_vitrine_ativa": [
         "TR-4011",
         "TR-4014",
@@ -415,8 +407,9 @@
     "ativos_oficiais_somados": 131,
     "refs_ativas_extraidas": 132,
     "faltantes_ativos_confirmados": 0,
-    "colecoes_extracao_completa": 3,
-    "colecoes_parciais_ou_erro": [
+    "colecoes_extracao_completa": 2,
+    "colecoes_nao_validadas": [
+      "Bambine",
       "Tacto",
       "Texture III"
     ]
