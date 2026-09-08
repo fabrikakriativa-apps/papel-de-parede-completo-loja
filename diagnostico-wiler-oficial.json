@@ -1,31 +1,38 @@
 {
   "fonte": "site oficial Wiler",
+  "colecoes_catalogo_atual": [
+    "Bambine",
+    "Tacto",
+    "Texture II",
+    "Texture III",
+    "Tramas"
+  ],
   "resultado": [
     {
-      "colecao": "Harmony III",
+      "colecao": "Bambine",
       "tentativas": [
         {
-          "url": "https://www.wiler.com.br/harmony-iii-5",
+          "url": "https://www.wiler.com.br/bambine",
           "status": 200,
-          "url_final": "https://www.wiler.com.br/harmony-iii-5",
+          "url_final": "https://www.wiler.com.br/bambine",
           "titulo": "",
           "produtos_encontrados": null,
           "erro": null,
           "contem_nome_colecao": false
         },
         {
-          "url": "https://www.wiler.com.br/harmony-iii",
-          "status": 200,
-          "url_final": "https://www.wiler.com.br/harmony-iii",
-          "titulo": "",
-          "produtos_encontrados": null,
-          "erro": null,
-          "contem_nome_colecao": false
-        },
-        {
-          "url": "https://www.wiler.com.br/colecao/harmony-iii",
+          "url": "https://www.wiler.com.br/colecao/bambine",
           "status": 0,
-          "url_final": "https://www.wiler.com.br/colecao/harmony-iii",
+          "url_final": "https://www.wiler.com.br/colecao/bambine",
+          "titulo": "",
+          "produtos_encontrados": null,
+          "erro": "HTTPError: HTTP Error 404: Not Found",
+          "contem_nome_colecao": false
+        },
+        {
+          "url": "https://www.wiler.com.br/papel-de-parede/bambine",
+          "status": 0,
+          "url_final": "https://www.wiler.com.br/papel-de-parede/bambine",
           "titulo": "",
           "produtos_encontrados": null,
           "erro": "HTTPError: HTTP Error 404: Not Found",
@@ -34,142 +41,133 @@
       ]
     },
     {
-      "colecao": "Nickal",
+      "colecao": "Tacto",
       "tentativas": [
         {
-          "url": "https://www.wiler.com.br/nickal",
+          "url": "https://www.wiler.com.br/tacto",
           "status": 200,
-          "url_final": "https://www.wiler.com.br/nickal",
+          "url_final": "https://www.wiler.com.br/tacto",
           "titulo": "",
           "produtos_encontrados": null,
           "erro": null,
           "contem_nome_colecao": false
         },
         {
-          "url": "https://www.wiler.com.br/colecao/nickal",
+          "url": "https://www.wiler.com.br/colecao/tacto",
           "status": 0,
-          "url_final": "https://www.wiler.com.br/colecao/nickal",
+          "url_final": "https://www.wiler.com.br/colecao/tacto",
           "titulo": "",
           "produtos_encontrados": null,
           "erro": "HTTPError: HTTP Error 404: Not Found",
           "contem_nome_colecao": false
         },
         {
-          "url": "https://www.wiler.com.br/nickal-5",
-          "status": 200,
-          "url_final": "https://www.wiler.com.br/nickal-5",
+          "url": "https://www.wiler.com.br/papel-de-parede/tacto",
+          "status": 0,
+          "url_final": "https://www.wiler.com.br/papel-de-parede/tacto",
           "titulo": "",
           "produtos_encontrados": null,
-          "erro": null,
+          "erro": "HTTPError: HTTP Error 404: Not Found",
           "contem_nome_colecao": false
         }
       ]
     },
     {
-      "colecao": "Pure Nature",
+      "colecao": "Texture II",
       "tentativas": [
         {
-          "url": "https://www.wiler.com.br/pure-nature",
+          "url": "https://www.wiler.com.br/texture-ii",
           "status": 200,
-          "url_final": "https://www.wiler.com.br/pure-nature",
+          "url_final": "https://www.wiler.com.br/texture-ii",
           "titulo": "",
           "produtos_encontrados": null,
           "erro": null,
           "contem_nome_colecao": false
         },
         {
-          "url": "https://www.wiler.com.br/colecao/pure-nature",
+          "url": "https://www.wiler.com.br/colecao/texture-ii",
           "status": 0,
-          "url_final": "https://www.wiler.com.br/colecao/pure-nature",
+          "url_final": "https://www.wiler.com.br/colecao/texture-ii",
           "titulo": "",
           "produtos_encontrados": null,
           "erro": "HTTPError: HTTP Error 404: Not Found",
           "contem_nome_colecao": false
         },
         {
-          "url": "https://www.wiler.com.br/pure-nature-5",
-          "status": 200,
-          "url_final": "https://www.wiler.com.br/pure-nature-5",
+          "url": "https://www.wiler.com.br/papel-de-parede/texture-ii",
+          "status": 0,
+          "url_final": "https://www.wiler.com.br/papel-de-parede/texture-ii",
           "titulo": "",
           "produtos_encontrados": null,
-          "erro": null,
+          "erro": "HTTPError: HTTP Error 404: Not Found",
           "contem_nome_colecao": false
         }
       ]
     },
     {
-      "colecao": "Pure Nature II",
+      "colecao": "Texture III",
       "tentativas": [
         {
-          "url": "https://www.wiler.com.br/pure-nature-ii",
+          "url": "https://www.wiler.com.br/texture-iii",
           "status": 200,
-          "url_final": "https://www.wiler.com.br/pure-nature-ii",
+          "url_final": "https://www.wiler.com.br/texture-iii",
           "titulo": "",
           "produtos_encontrados": null,
           "erro": null,
           "contem_nome_colecao": false
         },
         {
-          "url": "https://www.wiler.com.br/colecao/pure-nature-ii",
+          "url": "https://www.wiler.com.br/colecao/texture-iii",
           "status": 0,
-          "url_final": "https://www.wiler.com.br/colecao/pure-nature-ii",
+          "url_final": "https://www.wiler.com.br/colecao/texture-iii",
           "titulo": "",
           "produtos_encontrados": null,
           "erro": "HTTPError: HTTP Error 404: Not Found",
           "contem_nome_colecao": false
         },
         {
-          "url": "https://www.wiler.com.br/pure-nature-ii-5",
-          "status": 200,
-          "url_final": "https://www.wiler.com.br/pure-nature-ii-5",
+          "url": "https://www.wiler.com.br/papel-de-parede/texture-iii",
+          "status": 0,
+          "url_final": "https://www.wiler.com.br/papel-de-parede/texture-iii",
           "titulo": "",
           "produtos_encontrados": null,
-          "erro": null,
+          "erro": "HTTPError: HTTP Error 404: Not Found",
           "contem_nome_colecao": false
         }
       ]
     },
     {
-      "colecao": "Wallstreet",
+      "colecao": "Tramas",
       "tentativas": [
         {
-          "url": "https://www.wiler.com.br/wallstreet",
+          "url": "https://www.wiler.com.br/tramas",
           "status": 200,
-          "url_final": "https://www.wiler.com.br/wallstreet",
+          "url_final": "https://www.wiler.com.br/tramas",
           "titulo": "",
           "produtos_encontrados": null,
           "erro": null,
           "contem_nome_colecao": false
         },
         {
-          "url": "https://www.wiler.com.br/wall-street",
-          "status": 200,
-          "url_final": "https://www.wiler.com.br/wall-street",
-          "titulo": "",
-          "produtos_encontrados": null,
-          "erro": null,
-          "contem_nome_colecao": false
-        },
-        {
-          "url": "https://www.wiler.com.br/colecao/wallstreet",
+          "url": "https://www.wiler.com.br/colecao/tramas",
           "status": 0,
-          "url_final": "https://www.wiler.com.br/colecao/wallstreet",
+          "url_final": "https://www.wiler.com.br/colecao/tramas",
           "titulo": "",
           "produtos_encontrados": null,
           "erro": "HTTPError: HTTP Error 404: Not Found",
           "contem_nome_colecao": false
         },
         {
-          "url": "https://www.wiler.com.br/wallstreet-5",
-          "status": 200,
-          "url_final": "https://www.wiler.com.br/wallstreet-5",
+          "url": "https://www.wiler.com.br/papel-de-parede/tramas",
+          "status": 0,
+          "url_final": "https://www.wiler.com.br/papel-de-parede/tramas",
           "titulo": "",
           "produtos_encontrados": null,
-          "erro": null,
+          "erro": "HTTPError: HTTP Error 404: Not Found",
           "contem_nome_colecao": false
         }
       ]
     }
   ],
-  "criterio": "Sondagem concorrente de rotas públicas oficiais para localizar a fonte adequada de cada coleção. Não altera o catálogo."
+  "criterio": "Sondagem concorrente de rotas públicas oficiais correspondentes às coleções que existem no DATA atual. Não altera o catálogo."
 }
