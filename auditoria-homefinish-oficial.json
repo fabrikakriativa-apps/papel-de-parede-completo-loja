@@ -1,0 +1,210 @@
+{
+  "fonte": "Home Finish — páginas oficiais das coleções",
+  "fornecedor_catalogo": "Home Finish",
+  "colecoes_configuradas": 13,
+  "colecoes_auditadas_com_sucesso": 0,
+  "erros_coleta": [
+    {
+      "colecao": "BIO Habitat",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/bio-habitat/",
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "colecao": "Biomas",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/biomas/",
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "colecao": "Bosque da Imaginação",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/bosque-da-imaginacao/",
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "colecao": "Botânica",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/botanica/",
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "colecao": "Doce Estilo",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/doce-estilo/",
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "colecao": "Era Uma Vez",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/era-uma-vez/",
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "colecao": "Flora",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/flora/",
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "colecao": "HF Texture III",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-textures-3/",
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "colecao": "Memórias de Infância",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/memorias-de-infancia/",
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "colecao": "Natureza Lúdica",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/natureza-ludica/",
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "colecao": "Passeio no Campo",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/passeio-no-campo/",
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "colecao": "Provence",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/provence/",
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "colecao": "Tartan",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/tartan/",
+      "erro": "HTTPError: HTTP Error 403: Forbidden"
+    }
+  ],
+  "total_oficial_parcial": 0,
+  "total_catalogo": 619,
+  "total_faltantes_confirmados": 0,
+  "total_extras_confirmados": 0,
+  "colecoes": [
+    {
+      "colecao": "BIO Habitat",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/bio-habitat/",
+      "oficial": null,
+      "catalogo": 35,
+      "faltantes": [],
+      "extras_no_catalogo": [],
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Biomas",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/biomas/",
+      "oficial": null,
+      "catalogo": 46,
+      "faltantes": [],
+      "extras_no_catalogo": [],
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Bosque da Imaginação",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/bosque-da-imaginacao/",
+      "oficial": null,
+      "catalogo": 40,
+      "faltantes": [],
+      "extras_no_catalogo": [],
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Botânica",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/botanica/",
+      "oficial": null,
+      "catalogo": 24,
+      "faltantes": [],
+      "extras_no_catalogo": [],
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Doce Estilo",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/doce-estilo/",
+      "oficial": null,
+      "catalogo": 72,
+      "faltantes": [],
+      "extras_no_catalogo": [],
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Era Uma Vez",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/era-uma-vez/",
+      "oficial": null,
+      "catalogo": 51,
+      "faltantes": [],
+      "extras_no_catalogo": [],
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Flora",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/flora/",
+      "oficial": null,
+      "catalogo": 55,
+      "faltantes": [],
+      "extras_no_catalogo": [],
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "HF Texture III",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-textures-3/",
+      "oficial": null,
+      "catalogo": 27,
+      "faltantes": [],
+      "extras_no_catalogo": [],
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Memórias de Infância",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/memorias-de-infancia/",
+      "oficial": null,
+      "catalogo": 39,
+      "faltantes": [],
+      "extras_no_catalogo": [],
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Natureza Lúdica",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/natureza-ludica/",
+      "oficial": null,
+      "catalogo": 40,
+      "faltantes": [],
+      "extras_no_catalogo": [],
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Passeio no Campo",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/passeio-no-campo/",
+      "oficial": null,
+      "catalogo": 60,
+      "faltantes": [],
+      "extras_no_catalogo": [],
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Provence",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/provence/",
+      "oficial": null,
+      "catalogo": 64,
+      "faltantes": [],
+      "extras_no_catalogo": [],
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Tartan",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/tartan/",
+      "oficial": null,
+      "catalogo": 66,
+      "faltantes": [],
+      "extras_no_catalogo": [],
+      "paginas": [],
+      "status": "erro_coleta"
+    }
+  ],
+  "criterio": "Compara referências publicadas nas páginas oficiais da Home Finish, percorrendo a paginação. Falhas de acesso são registradas e nunca tratadas como zero itens."
+}
