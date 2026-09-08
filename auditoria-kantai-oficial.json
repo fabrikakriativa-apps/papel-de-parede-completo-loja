@@ -1,0 +1,3203 @@
+{
+  "source": "Kantai official public website / Wix public gallery API",
+  "collections": [
+    {
+      "name": "Aditare 3",
+      "slug": "aditare-3",
+      "url": "https://www.kantai.com.br/aditare3",
+      "expected": 81,
+      "gallery_id": "28d97a2e-c195-426b-b05e-bc2cc56f8fe6",
+      "declared_total": 81,
+      "pages": [
+        {
+          "offset": 0,
+          "url": "https://www.kantai.com.br/pro-gallery-webapp/v1/galleries/28d97a2e-c195-426b-b05e-bc2cc56f8fe6?galleryId=28d97a2e-c195-426b-b05e-bc2cc56f8fe6&offset=0&limit=25&externalId=3b775db8-4c8f-42d7-8b46-e68c1b5630b7&state=PUBLISHED",
+          "status": 200,
+          "items_count": 25,
+          "totalItemsCount": 81
+        },
+        {
+          "offset": 25,
+          "url": "https://www.kantai.com.br/pro-gallery-webapp/v1/galleries/28d97a2e-c195-426b-b05e-bc2cc56f8fe6?galleryId=28d97a2e-c195-426b-b05e-bc2cc56f8fe6&offset=25&limit=25&externalId=3b775db8-4c8f-42d7-8b46-e68c1b5630b7&state=PUBLISHED",
+          "status": 200,
+          "items_count": 25,
+          "totalItemsCount": 81
+        },
+        {
+          "offset": 50,
+          "url": "https://www.kantai.com.br/pro-gallery-webapp/v1/galleries/28d97a2e-c195-426b-b05e-bc2cc56f8fe6?galleryId=28d97a2e-c195-426b-b05e-bc2cc56f8fe6&offset=50&limit=25&externalId=3b775db8-4c8f-42d7-8b46-e68c1b5630b7&state=PUBLISHED",
+          "status": 200,
+          "items_count": 25,
+          "totalItemsCount": 81
+        },
+        {
+          "offset": 75,
+          "url": "https://www.kantai.com.br/pro-gallery-webapp/v1/galleries/28d97a2e-c195-426b-b05e-bc2cc56f8fe6?galleryId=28d97a2e-c195-426b-b05e-bc2cc56f8fe6&offset=75&limit=25&externalId=3b775db8-4c8f-42d7-8b46-e68c1b5630b7&state=PUBLISHED",
+          "status": 200,
+          "items_count": 6,
+          "totalItemsCount": 81
+        }
+      ],
+      "captured_items": 81,
+      "valid_reference_items": 81,
+      "unique_references": 81,
+      "invalid_items": [],
+      "status": "ok",
+      "items": [
+        {
+          "id": "7b26438d-f8b9-4bf4-bd29-c22a386b3cdf",
+          "ref": "AD300604R",
+          "name": "AD300604R.jpg",
+          "title": "AD300604R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_15a81e37f724405cb107fe8318f01fd1~mv2.jpg",
+          "orderIndex": 1776432268620.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "2c10147e-a201-431a-abfb-3ae24bf5030e",
+          "ref": "AD300605R",
+          "name": "AD300605R.jpg",
+          "title": "AD300605R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_5dd0e79292e9472483a7692e96723ad8~mv2.jpg",
+          "orderIndex": 1776432268721.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "7372c04e-4271-489d-9ebd-b6c5eac4cc7e",
+          "ref": "AD300606R",
+          "name": "AD300606R.jpg",
+          "title": "AD300606R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_84e6044b630f40db84317a4ddc21be3e~mv2.jpg",
+          "orderIndex": 1776432268821.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "d3af9f72-62bc-49d5-87ad-805e1bb32ccc",
+          "ref": "AD300608R",
+          "name": "AD300608R.jpg",
+          "title": "AD300608R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_7a35ee8bab29442f9871b7bc2e778bb4~mv2.jpg",
+          "orderIndex": 1776432268921.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "24703e2c-aeeb-40c1-aa9f-d5e1f20999ef",
+          "ref": "AD300607R",
+          "name": "AD300607R.jpg",
+          "title": "AD300607R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b339d783827c44ef80c5baa8768f8bfd~mv2.jpg",
+          "orderIndex": 1776432269021.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "4becadae-2cc5-4823-b5b4-61fa2c7a2c7c",
+          "ref": "AD300609R",
+          "name": "AD300609R.jpg",
+          "title": "AD300609R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_f99543c0f6ba487eaf321bce3738c622~mv2.jpg",
+          "orderIndex": 1776432269121.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "497b61c1-48c5-492e-b031-621339db35e5",
+          "ref": "AD300701R",
+          "name": "AD300701R.jpg",
+          "title": "AD300701R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_a6e723d44cc14ab2ac93c87ad2ec5bd2~mv2.jpg",
+          "orderIndex": 1776432269221.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "e5cb6373-ec5b-45aa-a48d-f86e079fae51",
+          "ref": "AD300702R",
+          "name": "AD300702R.jpg",
+          "title": "AD300702R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_96afbba1f08840f5b95ab02876258e10~mv2.jpg",
+          "orderIndex": 1776432269321.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "59a20260-6fab-4991-9da1-bce57c88685d",
+          "ref": "AD300703R",
+          "name": "AD300703R.jpg",
+          "title": "AD300703R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_afbd8572659b449690fe23337dc727eb~mv2.jpg",
+          "orderIndex": 1776432269421.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "bc6fc997-0f87-4970-8c26-554a4d7f1271",
+          "ref": "AD300705R",
+          "name": "AD300705R.jpg",
+          "title": "AD300705R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_7ebcb08f9a5b4392b6f015f6b53fdea8~mv2.jpg",
+          "orderIndex": 1776432269521.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "ea247fe8-7ca2-4e60-a2bd-b98b89c15700",
+          "ref": "AD300704R",
+          "name": "AD300704R.jpg",
+          "title": "AD300704R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_5f0ff9c32e09458ea0402c3c1588c4d3~mv2.jpg",
+          "orderIndex": 1776432269621.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "98c7d867-2799-4fde-a19f-57653dd025da",
+          "ref": "AD300706R",
+          "name": "AD300706R.jpg",
+          "title": "AD300706R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_959e28605278480192247397b4038de8~mv2.jpg",
+          "orderIndex": 1776432269721.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "b27bccdc-5368-4840-805d-7cb18ae8197a",
+          "ref": "AD300707R",
+          "name": "AD300707R.jpg",
+          "title": "AD300707R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_7653ed9d87844a9797abef4aadb0d8c4~mv2.jpg",
+          "orderIndex": 1776432269821.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "81b5f2f0-7b4e-43cc-b4fa-6916acaec727",
+          "ref": "AD300001R",
+          "name": "AD300001R.jpg",
+          "title": "AD300001R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_2142f9500f5947da9f32d6615b5ce309~mv2.jpg",
+          "orderIndex": 1776432269921.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "6c315239-0187-4126-bb65-0b2cee37ae29",
+          "ref": "AD300002R",
+          "name": "AD300002R.jpg",
+          "title": "AD300002R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_d6d4323fd09445289710d497eecb2234~mv2.jpg",
+          "orderIndex": 1776432270021.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "f2142b1c-f9c6-4335-8630-4bb409f1c0ef",
+          "ref": "AD300003R",
+          "name": "AD300003R.jpg",
+          "title": "AD300003R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_f39a909a03a04277a6a8008a856db797~mv2.jpg",
+          "orderIndex": 1776432270121.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "d970749a-bfab-40c6-8db9-2a310b122417",
+          "ref": "AD300004R",
+          "name": "AD300004R.jpg",
+          "title": "AD300004R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_8a086432a20c4272a5fcaef1e5580fdc~mv2.jpg",
+          "orderIndex": 1776432270221.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "6ded21af-df2f-4dcc-bc3a-894cc49f4594",
+          "ref": "AD300005R",
+          "name": "AD300005R.jpg",
+          "title": "AD300005R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_5cfdf0948e784d26a8f4487db8277cb3~mv2.jpg",
+          "orderIndex": 1776432270321.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "7422f8be-4edf-4b4d-8d93-d457484591d8",
+          "ref": "AD300007R",
+          "name": "AD300007R.jpg",
+          "title": "AD300007R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_cdf07ee8e65b4679aa42bf7e08e717dd~mv2.jpg",
+          "orderIndex": 1776432270421.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "f35d6451-7e31-4da8-ab44-0295a2e52293",
+          "ref": "AD300006R",
+          "name": "AD300006R.jpg",
+          "title": "AD300006R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_f0074ea5b5b14ac08863f5d592f97122~mv2.jpg",
+          "orderIndex": 1776432270521.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "05fcecfd-107c-442f-b0d6-8c1c040dcff5",
+          "ref": "AD300008R",
+          "name": "AD300008R.jpg",
+          "title": "AD300008R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_21db46a071d14ba6b6f5906d83cd924e~mv2.jpg",
+          "orderIndex": 1776432270621.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "9258dc93-23a4-4449-bc38-23ca9f93a248",
+          "ref": "AD300009R",
+          "name": "AD300009R.jpg",
+          "title": "AD300009R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_567bbd3b62804c1895d9927f7ab4ebed~mv2.jpg",
+          "orderIndex": 1776432270721.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "8e942c7d-d42d-4d4f-895b-33274b64eb1e",
+          "ref": "AD300011R",
+          "name": "AD300011R.jpg",
+          "title": "AD300011R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_ff0ad2fdf84048bd8fd5c20354238341~mv2.jpg",
+          "orderIndex": 1776432270821.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "3ff2e36a-de4a-4b0f-931d-40cc16942be6",
+          "ref": "AD300010R",
+          "name": "AD300010R.jpg",
+          "title": "AD300010R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_a7934fa147294213acd5909945e9837f~mv2.jpg",
+          "orderIndex": 1776432270921.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "853e8c55-88a3-4dec-bc12-2f4ac2454d54",
+          "ref": "AD300012R",
+          "name": "AD300012R.jpg",
+          "title": "AD300012R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_cdeae87f722b44e89f20c7d7388b9f40~mv2.jpg",
+          "orderIndex": 1776432271021.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "35ca645e-4e78-4738-a927-bdf1c6fd12c3",
+          "ref": "AD300013R",
+          "name": "AD300013R.jpg",
+          "title": "AD300013R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_fa23a9f1bad84b0d96ff1be16cca7406~mv2.jpg",
+          "orderIndex": 1776432271121.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "6ad75111-914c-4b97-ab19-0fcb49fe7e32",
+          "ref": "AD300014R",
+          "name": "AD300014R.jpg",
+          "title": "AD300014R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_adaf92ecba42490a8c514504d5f267b5~mv2.jpg",
+          "orderIndex": 1776432271221.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "2b7f0df7-dbaf-4668-aed3-f6f98dce5b72",
+          "ref": "AD300101R",
+          "name": "AD300101R.jpg",
+          "title": "AD300101R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_45d19bf83fe0465f9cbb40679a9044d4~mv2.jpg",
+          "orderIndex": 1776432271321.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "8f0c8f62-695e-4cea-8bd3-23f37fee77ab",
+          "ref": "AD300015R",
+          "name": "AD300015R.jpg",
+          "title": "AD300015R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_594b48bf1bf845d7bb6755ab0e2bf0f9~mv2.jpg",
+          "orderIndex": 1776432271421.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "6b9d3ea0-750b-47dc-816e-2a1e76d4f7a5",
+          "ref": "AD300102R",
+          "name": "AD300102R.jpg",
+          "title": "AD300102R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_938d3fceafcf46fe8b3a46cf28d38d87~mv2.jpg",
+          "orderIndex": 1776432271521.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "e7400695-3341-4647-93f7-73d51dd5b3f2",
+          "ref": "AD300103R",
+          "name": "AD300103R.jpg",
+          "title": "AD300103R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_6bf4aa8ac41241ad935c5393647edda6~mv2.jpg",
+          "orderIndex": 1776432271621.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "70ed48cb-ffa7-423b-8443-92cada4f2852",
+          "ref": "AD300105R",
+          "name": "AD300105R.jpg",
+          "title": "AD300105R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_71be13df5a6e4bccb0617e16a16025e5~mv2.jpg",
+          "orderIndex": 1776432271721.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "85b03b18-a062-4dec-8857-562d086fe631",
+          "ref": "AD300104R",
+          "name": "AD300104R.jpg",
+          "title": "AD300104R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_eff4035a8c894b99aa5b1e095f8fbb91~mv2.jpg",
+          "orderIndex": 1776432271821.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "20d7e79f-6e9b-4d27-b8f7-68608707b5cf",
+          "ref": "AD300106R",
+          "name": "AD300106R.jpg",
+          "title": "AD300106R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_77beaa42e9da40c8a3e525a3bf6403e1~mv2.jpg",
+          "orderIndex": 1776432271921.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "06c31182-3164-4f17-8815-43e2c56cee6b",
+          "ref": "AD300107R",
+          "name": "AD300107R.jpg",
+          "title": "AD300107R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_02c96b5450ef4ec2a79624d245cc0c8c~mv2.jpg",
+          "orderIndex": 1776432272021.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "4daaea37-1708-42a6-bd99-a21f33eb5989",
+          "ref": "AD300108R",
+          "name": "AD300108R.jpg",
+          "title": "AD300108R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_86858459fbf3437dac02987e6e3b0fdc~mv2.jpg",
+          "orderIndex": 1776432272121.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "94427037-d9d1-4bdb-a9f1-52242936c14e",
+          "ref": "AD300109R",
+          "name": "AD300109R.jpg",
+          "title": "AD300109R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_a3168df8dce24508bd359e3e65154243~mv2.jpg",
+          "orderIndex": 1776432272221.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "35d0bb91-13cf-4fe2-ac93-394cd046b48b",
+          "ref": "AD300110R",
+          "name": "AD300110R.jpg",
+          "title": "AD300110R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_5d22fd931b0e4da38f7a4d43ac0d22db~mv2.jpg",
+          "orderIndex": 1776432272321.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "2855a7d7-ebfa-4599-b189-64bef4d067fb",
+          "ref": "AD300111R",
+          "name": "AD300111R.jpg",
+          "title": "AD300111R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_4e0246c6710b442dacf8605a32c77d02~mv2.jpg",
+          "orderIndex": 1776432272421.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "75901299-8f94-4d53-9177-d6e131fe54b1",
+          "ref": "AD300201R",
+          "name": "AD300201R.jpg",
+          "title": "AD300201R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b00c7b03c55a46fbb9c999e469bba5fc~mv2.jpg",
+          "orderIndex": 1776432272521.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "cd97e857-71ea-4dac-bc6c-8a3d33efc0b4",
+          "ref": "AD300202R",
+          "name": "AD300202R.jpg",
+          "title": "AD300202R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_36de7da7cb674a87a5b5538a67d2a81c~mv2.jpg",
+          "orderIndex": 1776432272621.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "d6956f90-f8cf-415a-80d9-fc9fb42f18a9",
+          "ref": "AD300208R",
+          "name": "AD300208R.jpg",
+          "title": "AD300208R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_a1a5e566c5b24a078c03069436c47151~mv2.jpg",
+          "orderIndex": 1776432272721.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "d9d22963-ce6f-4cd6-8ef6-f503b78c5724",
+          "ref": "AD300209R",
+          "name": "AD300209R.jpg",
+          "title": "AD300209R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_a0b3ab249b4e412a83f2971da394b372~mv2.jpg",
+          "orderIndex": 1776432272821.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "c1a83d6a-1196-4d09-9d95-18b30c9d28ff",
+          "ref": "AD300203R",
+          "name": "AD300203R.jpg",
+          "title": "AD300203R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_22b2d09a23064e4e940b2494d7a64e81~mv2.jpg",
+          "orderIndex": 1776432272921.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "b1c32c1d-3604-4aed-9843-ff1d3eaad059",
+          "ref": "AD300204R",
+          "name": "AD300204R.jpg",
+          "title": "AD300204R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_6466b8e4c7784375bd7fc7ab6c054c1a~mv2.jpg",
+          "orderIndex": 1776432273021.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "2aae09c0-df3c-4038-b440-2121bb1bcb76",
+          "ref": "AD300205R",
+          "name": "AD300205R.jpg",
+          "title": "AD300205R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_c17a2ec2c57f4532bdc92ae7b21f43c4~mv2.jpg",
+          "orderIndex": 1776432273121.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "a334f4ea-67a2-4003-9463-aba5edc973fb",
+          "ref": "AD300206R",
+          "name": "AD300206R.jpg",
+          "title": "AD300206R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_f190c2683ef4432dbeb77105e4b507b1~mv2.jpg",
+          "orderIndex": 1776432273221.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "415abc38-ad34-4c61-9214-ec4f53d10a32",
+          "ref": "AD300207R",
+          "name": "AD300207R.jpg",
+          "title": "AD300207R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_2264ec8a460b4a1faaf6b9de22bf7b00~mv2.jpg",
+          "orderIndex": 1776432273321.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "3ca44172-6175-4b9e-b129-a443cba7beda",
+          "ref": "AD300210R",
+          "name": "AD300210R.jpg",
+          "title": "AD300210R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_9ef52f415a4044f78829ec29b5e17427~mv2.jpg",
+          "orderIndex": 1776432273421.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "2cb4e172-bfcb-41b1-968e-62f6d3f7e44a",
+          "ref": "AD300211R",
+          "name": "AD300211R.jpg",
+          "title": "AD300211R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_3280b09e96c14d9a8332d80abeb56079~mv2.jpg",
+          "orderIndex": 1776432273521.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "2e34d339-cedf-44bc-9aa8-ed51afa27c98",
+          "ref": "AD300212R",
+          "name": "AD300212R.jpg",
+          "title": "AD300212R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b9a76b749ddb41feac84b0a287d3a068~mv2.jpg",
+          "orderIndex": 1776432273621.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "9a5d2c44-986b-4ce3-b8a1-80e508befe90",
+          "ref": "AD300301R",
+          "name": "AD300301R.jpg",
+          "title": "AD300301R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_bedbd9763fc54fafa384a4af0f72ba31~mv2.jpg",
+          "orderIndex": 1776432273721.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "00594e15-7a5b-45ae-9938-4d5ea7f785d8",
+          "ref": "AD300302R",
+          "name": "AD300302R.jpg",
+          "title": "AD300302R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_3b863c7d54424bb787cd1f5589dea737~mv2.jpg",
+          "orderIndex": 1776432273821.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "684e3f5f-4b38-4825-9f21-8d34260d6cc9",
+          "ref": "AD300303R",
+          "name": "AD300303R.jpg",
+          "title": "AD300303R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_8668839d7ebd4e2098f60199ab96e135~mv2.jpg",
+          "orderIndex": 1776432273921.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "e0b0d18a-cf4e-41e5-a4da-5e59f2024c4d",
+          "ref": "AD300304R",
+          "name": "AD300304R.jpg",
+          "title": "AD300304R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b9335cdd38e441b18240f90c161cc6b0~mv2.jpg",
+          "orderIndex": 1776432274021.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "3809fc84-ea6e-40ad-8d2c-1a5931bcb7ba",
+          "ref": "AD300505R",
+          "name": "AD300505R.jpg",
+          "title": "AD300505R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_440dcf01e18442fa9cac8aae21c099b9~mv2.jpg",
+          "orderIndex": 1776432274121.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "d8e261e2-0493-4706-9a94-3e77170593c5",
+          "ref": "AD300305R",
+          "name": "AD300305R.jpg",
+          "title": "AD300305R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_aa7c220a33ec4b719e9fa0f0f7c50d41~mv2.jpg",
+          "orderIndex": 1776432274221.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "54c7e4bc-9437-4cfb-87c0-69dab8c09168",
+          "ref": "AD300306R",
+          "name": "AD300306R.jpg",
+          "title": "AD300306R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_1f3d1d0af5d34c4fb89362fba71929db~mv2.jpg",
+          "orderIndex": 1776432274321.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "f32b1324-d17f-421b-9890-b80be7c3db42",
+          "ref": "AD300307R",
+          "name": "AD300307R.jpg",
+          "title": "AD300307R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_e2b834c24ea0444fad94e336664db775~mv2.jpg",
+          "orderIndex": 1776432274421.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "1ea24d23-9796-46fb-8b25-cba0d3026eb2",
+          "ref": "AD300309R",
+          "name": "AD300309R.jpg",
+          "title": "AD300309R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_8db20c3abc9d40bf8580622b038f6f89~mv2.jpg",
+          "orderIndex": 1776432274521.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "01659ab3-a3c3-481c-bcf6-1c1ebdee9f71",
+          "ref": "AD300308R",
+          "name": "AD300308R.jpg",
+          "title": "AD300308R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_f0df0f66a241463fbe578a2468e33e00~mv2.jpg",
+          "orderIndex": 1776432274621.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "1474966f-9106-4f0a-b122-af35e56b7fc2",
+          "ref": "AD300401R",
+          "name": "AD300401R.jpg",
+          "title": "AD300401R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_daedf91cd5ef41a1bd7da5f52b7bedb2~mv2.jpg",
+          "orderIndex": 1776432274721.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "5b537ded-cf9f-40a5-8259-a1ead98b9033",
+          "ref": "AD300403R",
+          "name": "AD300403R.jpg",
+          "title": "AD300403R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_6388b051410d4ad6bf5ea1a6bc8f3155~mv2.jpg",
+          "orderIndex": 1776432274821.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "c9c5e084-c580-402c-b33d-f2cd81baaa03",
+          "ref": "AD300402R",
+          "name": "AD300402R.jpg",
+          "title": "AD300402R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_86ccfb213a1842a2b960efc355f033db~mv2.jpg",
+          "orderIndex": 1776432274921.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "205fbcef-4b0f-43ce-ac00-1486ab58520e",
+          "ref": "AD300404R",
+          "name": "AD300404R.jpg",
+          "title": "AD300404R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_bf7c1599d4354a21899885ad0d4ec771~mv2.jpg",
+          "orderIndex": 1776432275021.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "0cf183c1-8a2c-45ed-817f-9cb441e0db7d",
+          "ref": "AD300405R",
+          "name": "AD300405R.jpg",
+          "title": "AD300405R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_bd881f4d0c5442e3a8e26e76394570ea~mv2.jpg",
+          "orderIndex": 1776432275121.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "f80a3052-e985-44a0-b014-935905b93ff2",
+          "ref": "AD300406R",
+          "name": "AD300406R.jpg",
+          "title": "AD300406R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_97e5b0d2227b459b992a15b7f637121e~mv2.jpg",
+          "orderIndex": 1776432275221.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "98b72804-afd5-413c-adb3-22504ac3c351",
+          "ref": "AD300407R",
+          "name": "AD300407R.jpg",
+          "title": "AD300407R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_6dd5c0052ed6495389f6d3885acadd13~mv2.jpg",
+          "orderIndex": 1776432275321.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "eaf4eeba-fa28-4d10-97fe-0a0a8f473e29",
+          "ref": "AD300408R",
+          "name": "AD300408R.jpg",
+          "title": "AD300408R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_4845c18c310f4c1bbd013b5c7ea74383~mv2.jpg",
+          "orderIndex": 1776432275421.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "89161db2-0b69-4a61-bb05-66ab58279a8b",
+          "ref": "AD300409R",
+          "name": "AD300409R.jpg",
+          "title": "AD300409R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b2a5de4758e544de9074a9784ed68f8d~mv2.jpg",
+          "orderIndex": 1776432275521.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "8db0621c-e711-434e-a7e2-9453b477c2f9",
+          "ref": "AD300501R",
+          "name": "AD300501R.jpg",
+          "title": "AD300501R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_4109bc18d81f48cf9f65df278096b308~mv2.jpg",
+          "orderIndex": 1776432275621.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "00d53d18-4326-48aa-b97d-f090a3cfc94e",
+          "ref": "AD300503R",
+          "name": "AD300503R.jpg",
+          "title": "AD300503R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_ed0cc75f371742f290d990a0c51db244~mv2.jpg",
+          "orderIndex": 1776432275721.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "a11e2e6e-89f5-4b14-bc97-3efb0b19bda7",
+          "ref": "AD300502R",
+          "name": "AD300502R.jpg",
+          "title": "AD300502R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_3ee17b4e4f8f4f3b8057da7c0ee0326c~mv2.jpg",
+          "orderIndex": 1776432275822.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "ad27af59-0e2f-431a-bd56-5d81dcfd8d22",
+          "ref": "AD300504R",
+          "name": "AD300504R.jpg",
+          "title": "AD300504R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_5e975ab768d84fac8cfcea7af841e64d~mv2.jpg",
+          "orderIndex": 1776432275922.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "25248831-4de6-4390-a03b-520f159984a4",
+          "ref": "AD300506R",
+          "name": "AD300506R.jpg",
+          "title": "AD300506R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_c6ba8cdd514e4ac483e0846a524db298~mv2.jpg",
+          "orderIndex": 1776432276022.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "1e2dc606-6654-43cf-af1e-a56ed1f3b1cc",
+          "ref": "AD300507R",
+          "name": "AD300507R.jpg",
+          "title": "AD300507R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_ec99406444de42d8b4c08097304b082f~mv2.jpg",
+          "orderIndex": 1776432276122.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "648cd76c-03f4-4ba9-886e-35caba6579a9",
+          "ref": "AD300508R",
+          "name": "AD300508R.jpg",
+          "title": "AD300508R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_536bf43d0b8a4820a106af66e51ba632~mv2.jpg",
+          "orderIndex": 1776432276222.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "94a355f0-4794-4304-a547-c053292cdfcb",
+          "ref": "AD300602R",
+          "name": "AD300602R.jpg",
+          "title": "AD300602R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_10a8a8374e1c40459ff08193a903e6e8~mv2.jpg",
+          "orderIndex": 1776432276322.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "05dc0e17-a436-4769-b0ed-c30adc6ee065",
+          "ref": "AD300601R",
+          "name": "AD300601R.jpg",
+          "title": "AD300601R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_31f6c82d73524a2ba7051a497474afe3~mv2.jpg",
+          "orderIndex": 1776432276422.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "5da21c75-bcc6-4eb5-beef-8de61e85ba7d",
+          "ref": "AD300509R",
+          "name": "AD300509R.jpg",
+          "title": "AD300509R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_360ea45de56c44a78d851c0a1e5203f2~mv2.jpg",
+          "orderIndex": 1776432276522.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "0efceef2-f416-4365-ae27-400686ff7b60",
+          "ref": "AD300603R",
+          "name": "AD300603R.jpg",
+          "title": "AD300603R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_ba6aa7a3739042ed91262f4c65a72688~mv2.jpg",
+          "orderIndex": 1776432276622.0,
+          "dataType": "Photo"
+        }
+      ]
+    },
+    {
+      "name": "Criativo 3",
+      "slug": "criativo-3",
+      "url": "https://www.kantai.com.br/criativo3",
+      "expected": 89,
+      "gallery_id": "1c6a3cf0-5f6d-4125-955b-43454cfa0095",
+      "declared_total": 89,
+      "pages": [
+        {
+          "offset": 0,
+          "url": "https://www.kantai.com.br/pro-gallery-webapp/v1/galleries/1c6a3cf0-5f6d-4125-955b-43454cfa0095?galleryId=1c6a3cf0-5f6d-4125-955b-43454cfa0095&offset=0&limit=25&externalId=a26a2c5a-1764-445c-8e2d-a9ffae9662e8&state=PUBLISHED",
+          "status": 200,
+          "items_count": 25,
+          "totalItemsCount": 89
+        },
+        {
+          "offset": 25,
+          "url": "https://www.kantai.com.br/pro-gallery-webapp/v1/galleries/1c6a3cf0-5f6d-4125-955b-43454cfa0095?galleryId=1c6a3cf0-5f6d-4125-955b-43454cfa0095&offset=25&limit=25&externalId=a26a2c5a-1764-445c-8e2d-a9ffae9662e8&state=PUBLISHED",
+          "status": 200,
+          "items_count": 25,
+          "totalItemsCount": 89
+        },
+        {
+          "offset": 50,
+          "url": "https://www.kantai.com.br/pro-gallery-webapp/v1/galleries/1c6a3cf0-5f6d-4125-955b-43454cfa0095?galleryId=1c6a3cf0-5f6d-4125-955b-43454cfa0095&offset=50&limit=25&externalId=a26a2c5a-1764-445c-8e2d-a9ffae9662e8&state=PUBLISHED",
+          "status": 200,
+          "items_count": 25,
+          "totalItemsCount": 89
+        },
+        {
+          "offset": 75,
+          "url": "https://www.kantai.com.br/pro-gallery-webapp/v1/galleries/1c6a3cf0-5f6d-4125-955b-43454cfa0095?galleryId=1c6a3cf0-5f6d-4125-955b-43454cfa0095&offset=75&limit=25&externalId=a26a2c5a-1764-445c-8e2d-a9ffae9662e8&state=PUBLISHED",
+          "status": 200,
+          "items_count": 14,
+          "totalItemsCount": 89
+        }
+      ],
+      "captured_items": 89,
+      "valid_reference_items": 89,
+      "unique_references": 89,
+      "invalid_items": [],
+      "status": "ok",
+      "items": [
+        {
+          "id": "76747a3f-c640-4157-8740-447b304ee072",
+          "ref": "CR333704R",
+          "name": "CR333704R.jpg",
+          "title": "CR333704R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_e054b476a4954f9baea5b821b61ad240~mv2.jpg",
+          "orderIndex": 1773929322433.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "cfbdabad-e6ff-48f0-966d-65225a07f373",
+          "ref": "CR333705R",
+          "name": "CR333705R.jpg",
+          "title": "CR333705R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_a5419ecc92b8416a8ecff1a18356bcdd~mv2.jpg",
+          "orderIndex": 1773929322534.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "0f541d2c-7572-4c23-a7d9-f400693e1bb2",
+          "ref": "CR333706R",
+          "name": "CR333706R.jpg",
+          "title": "CR333706R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_304e64704b4c43c3adab551d400bf4c6~mv2.jpg",
+          "orderIndex": 1773929322634.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "1f84cbe1-4a5b-4378-b617-6727c48251ec",
+          "ref": "CR333707R",
+          "name": "CR333707R.jpg",
+          "title": "CR333707R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_8f1b72c3cd7b476c9e8414958ac4ea05~mv2.jpg",
+          "orderIndex": 1773929322734.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "941dc3c2-2f20-4ab3-b73d-9f328087b95b",
+          "ref": "CR333709R",
+          "name": "CR333709R.jpg",
+          "title": "CR333709R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_cf1004c4e405430aa125db47bb6715ce~mv2.jpg",
+          "orderIndex": 1773929322834.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "f822fada-504d-4000-9178-e5c2421c2823",
+          "ref": "CR333710R",
+          "name": "CR333710R.jpg",
+          "title": "CR333710R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_ae7bde46462a436886f39255d70728ac~mv2.jpg",
+          "orderIndex": 1773929322934.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "d0e417d9-03ff-4a9f-940d-4889a227e08e",
+          "ref": "CR333708R",
+          "name": "CR333708R.jpg",
+          "title": "CR333708R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_647f42faecef4fb0ae23a8c5c1ad13fc~mv2.jpg",
+          "orderIndex": 1773929323034.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "e0df4f4f-a9a7-4bbf-b24a-694075bc9ff4",
+          "ref": "CR333712R",
+          "name": "CR333712R.jpg",
+          "title": "CR333712R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_6114091dae614afcaabc36ddcff8226d~mv2.jpg",
+          "orderIndex": 1773929323134.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "f0df922c-d3c0-4a46-a1f4-d48b06632512",
+          "ref": "CR333711R",
+          "name": "CR333711R.jpg",
+          "title": "CR333711R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_33b444b8a113488e804a99df8b4c0c42~mv2.jpg",
+          "orderIndex": 1773929323234.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "fe291b16-d237-4066-addc-455a664be32f",
+          "ref": "CR333713R",
+          "name": "CR333713R.jpg",
+          "title": "CR333713R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_51c628f6d6534391ac69a2229daec553~mv2.jpg",
+          "orderIndex": 1773929323334.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "22202243-857f-45af-b0d7-3ca5af2ccb70",
+          "ref": "CR333714R",
+          "name": "CR333714R.jpg",
+          "title": "CR333714R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b4f9e5ba95a74c6eba5ddda5793f5833~mv2.jpg",
+          "orderIndex": 1773929323434.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "b17534e1-3eef-432b-82ed-dd0c87dba62e",
+          "ref": "CR333715R",
+          "name": "CR333715R.jpg",
+          "title": "CR333715R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_851a581a03d7430b8d88adb8623e5ca9~mv2.jpg",
+          "orderIndex": 1773929323534.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "5818dda3-b5ff-4786-8a99-6750764225d9",
+          "ref": "CR333716R",
+          "name": "CR333716R.jpg",
+          "title": "CR333716R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_de919123e64e4c549bbdf63376524bc5~mv2.jpg",
+          "orderIndex": 1773929323634.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "a9ac8d42-643c-4b45-8771-dee824cef643",
+          "ref": "CR333717R",
+          "name": "CR333717R.jpg",
+          "title": "CR333717R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b655fcf5b12b4f3dbb6951c2bd10a55c~mv2.jpg",
+          "orderIndex": 1773929323734.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "d8a3628b-ad3a-45ff-8d63-618a4c3c519a",
+          "ref": "CR333718R",
+          "name": "CR333718R.jpg",
+          "title": "CR333718R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_46d337f7643e4e50b07ee163421a72e7~mv2.jpg",
+          "orderIndex": 1773929323834.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "d94c77c9-5bb4-45a6-850b-adb15c643316",
+          "ref": "CR333720R",
+          "name": "CR333720R.jpg",
+          "title": "CR333720R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_678a0c0e9bff44e2a8b9f9fbd4c98554~mv2.jpg",
+          "orderIndex": 1773929323934.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "ab642cd3-a7f2-4e0b-86c1-a7f03c46eee6",
+          "ref": "CR333719R",
+          "name": "CR333719R.jpg",
+          "title": "CR333719R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_ebad1c3f94ea4637b7a25638f2d05ac8~mv2.jpg",
+          "orderIndex": 1773929324034.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "0a6ac294-2ada-45f0-84bd-e7b0595c790e",
+          "ref": "CR333721R",
+          "name": "CR333721R.jpg",
+          "title": "CR333721R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_1e7cf67ac5f348eda2c74ee5a7b88c92~mv2.jpg",
+          "orderIndex": 1773929324134.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "6296549e-2404-4f3c-88d3-4c45aeb62e5e",
+          "ref": "CR333722R",
+          "name": "CR333722R.jpg",
+          "title": "CR333722R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_1b3bc948dbf843858e5e68b1d3e35c34~mv2.jpg",
+          "orderIndex": 1773929324234.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "a311ba16-a841-47c5-bcf9-8d7a9cd39dc2",
+          "ref": "CR333723R",
+          "name": "CR333723R.jpg",
+          "title": "CR333723R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_9c14735ed84640c6b3bd932e1f686ac7~mv2.jpg",
+          "orderIndex": 1773929324334.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "12376839-5c63-4cb7-8615-0e15a93544c4",
+          "ref": "CR333724R",
+          "name": "CR333724R.jpg",
+          "title": "CR333724R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_52ec75020c714460bb1d3a067ba81407~mv2.jpg",
+          "orderIndex": 1773929324434.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "6bcb7042-8b42-4dee-8101-520b7dfb49c0",
+          "ref": "CR333725R",
+          "name": "CR333725R.jpg",
+          "title": "CR333725R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_5f244456c61b42f4a64792c188aea32e~mv2.jpg",
+          "orderIndex": 1773929324534.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "d4ef5523-4dbf-436b-b1ef-fae894264184",
+          "ref": "CR333726R",
+          "name": "CR333726R.jpg",
+          "title": "CR333726R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_40b35b0660114174883a0aa811b96e28~mv2.jpg",
+          "orderIndex": 1773929324634.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "955835b9-f33f-4d0f-93cc-a726a57bcc31",
+          "ref": "CR333727R",
+          "name": "CR333727R.jpg",
+          "title": "CR333727R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_621ed36660cc449d80fe9145d5a79829~mv2.jpg",
+          "orderIndex": 1773929324734.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "1f24bf0d-f004-48ba-8dd4-beb2fb3a6190",
+          "ref": "CR333728R",
+          "name": "CR333728R.jpg",
+          "title": "CR333728R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_3b0f031a0d4f4971b9bc2ee296ae5fbf~mv2.jpg",
+          "orderIndex": 1773929324834.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "a85ec511-1f0a-4ca1-953f-01dd6fe6c63c",
+          "ref": "CR333729R",
+          "name": "CR333729R.jpg",
+          "title": "CR333729R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_ee4908d375b14f289b794efab75af71b~mv2.jpg",
+          "orderIndex": 1773929324934.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "9302ff4d-6783-45b1-a328-c0a955f61181",
+          "ref": "CR333730R",
+          "name": "CR333730R.jpg",
+          "title": "CR333730R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_2fea697834bb4b0c915474c839086ce5~mv2.jpg",
+          "orderIndex": 1773929325034.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "bb1bc2cc-3a20-427a-a2a0-d7a46e244f8e",
+          "ref": "CR333731R",
+          "name": "CR333731R.jpg",
+          "title": "CR333731R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_797d16e52a9943979c0b3b7cd35ec207~mv2.jpg",
+          "orderIndex": 1773929325134.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "a7e51bfb-3ba4-4523-8431-61f2602b1346",
+          "ref": "CR333732R",
+          "name": "CR333732R.jpg",
+          "title": "CR333732R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_cdf5a3bfeee848c8998b26847655f15f~mv2.jpg",
+          "orderIndex": 1773929325234.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "7162a7dc-d46c-44a7-9993-3a89a9f12bd2",
+          "ref": "CR333733R",
+          "name": "CR333733R.jpg",
+          "title": "CR333733R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_5c97bc697cf740e59103982b1d7515e5~mv2.jpg",
+          "orderIndex": 1773929325334.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "0e8a2981-a2df-4e00-a612-b554eefcb855",
+          "ref": "CR333734R",
+          "name": "CR333734R.jpg",
+          "title": "CR333734R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_550f62385da64182a9e2966944b6f48f~mv2.jpg",
+          "orderIndex": 1773929325434.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "142a08bd-d18a-438d-b07a-5cc780e41bf8",
+          "ref": "CR333735R",
+          "name": "CR333735R.jpg",
+          "title": "CR333735R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_2148bc7c7aec4465ad8ecc7de405ca1e~mv2.jpg",
+          "orderIndex": 1773929325534.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "f9b0498f-261e-4afc-90e4-8b118605522f",
+          "ref": "CR333736R",
+          "name": "CR333736R.jpg",
+          "title": "CR333736R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_eb8e20c8dcce47099a9033ab499c54be~mv2.jpg",
+          "orderIndex": 1773929325634.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "03ef8591-a862-4884-9446-c3c95aabdb2e",
+          "ref": "CR333737R",
+          "name": "CR333737R.jpg",
+          "title": "CR333737R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_7518b0b4fe8f409bb12207b8933ed8e4~mv2.jpg",
+          "orderIndex": 1773929325734.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "03ea277c-0c6d-4987-a97e-3c966258b933",
+          "ref": "CR333738R",
+          "name": "CR333738R.jpg",
+          "title": "CR333738R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_5c14ec1c2c8c48efbe1ee0a243a923f0~mv2.jpg",
+          "orderIndex": 1773929325834.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "f6ff803a-714a-49b8-86b4-b2b9cd00cdf2",
+          "ref": "CR333739R",
+          "name": "CR333739R.jpg",
+          "title": "CR333739R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_70e602cf9b024989b8c8c1d31573c630~mv2.jpg",
+          "orderIndex": 1773929325934.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "ead6823a-3d71-46c6-b17b-3a3b02b2856d",
+          "ref": "CR333740R",
+          "name": "CR333740R.jpg",
+          "title": "CR333740R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_0271184550d743d982452ec707b0d1d7~mv2.jpg",
+          "orderIndex": 1773929326034.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "3f051435-8e4d-4676-a4ab-f57c3662ede6",
+          "ref": "CR333741R",
+          "name": "CR333741R.jpg",
+          "title": "CR333741R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_733824c8ff204ccb9f18d0a19a626b0d~mv2.jpg",
+          "orderIndex": 1773929326134.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "40b02e61-b6e4-445a-a4e8-1f8cd7b3ab96",
+          "ref": "CR333742R",
+          "name": "CR333742R.jpg",
+          "title": "CR333742R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b432ff73917e4c57b33c68b66d33442b~mv2.jpg",
+          "orderIndex": 1773929326234.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "c4890103-241b-4aa7-a263-19f64537fff0",
+          "ref": "CR333743R",
+          "name": "CR333743R.jpg",
+          "title": "CR333743R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_04869898a6384717ab4f7647e03526b0~mv2.jpg",
+          "orderIndex": 1773929326334.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "a39205bc-23e2-4080-a3c5-54012a299a81",
+          "ref": "CR333744R",
+          "name": "CR333744R.jpg",
+          "title": "CR333744R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_8403ae7d29904e6ba482e32bdf0abb26~mv2.jpg",
+          "orderIndex": 1773929326434.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "068834c3-21be-4a2f-a90c-bc64a1cb90de",
+          "ref": "CR333745R",
+          "name": "CR333745R.jpg",
+          "title": "CR333745R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_efbfa1c9622b473eaa9aa86d7967c334~mv2.jpg",
+          "orderIndex": 1773929326534.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "5cbac0f4-0882-4df5-9adc-0c4ba749a339",
+          "ref": "CR333746R",
+          "name": "CR333746R.jpg",
+          "title": "CR333746R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_77e4f62efaf746d2a177c4686cf3b359~mv2.jpg",
+          "orderIndex": 1773929326634.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "20853286-ac7b-4add-b2fc-dd95b0ba5149",
+          "ref": "CR333747R",
+          "name": "CR333747R.jpg",
+          "title": "CR333747R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_86cfec4792aa429c82a98365f4475a6d~mv2.jpg",
+          "orderIndex": 1773929326734.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "97f6a22c-cf2b-4dd9-bc4c-89b7938bb6d4",
+          "ref": "CR333749R",
+          "name": "CR333749R.jpg",
+          "title": "CR333749R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_c4864ad54fa5440fbd9cd90f77cc30ba~mv2.jpg",
+          "orderIndex": 1773929326834.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "75842522-9051-448e-a116-27820cd072f8",
+          "ref": "CR333748R",
+          "name": "CR333748R.jpg",
+          "title": "CR333748R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_0482effe3f504028a16c95b507e04618~mv2.jpg",
+          "orderIndex": 1773929326934.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "63e25a9d-87b1-4034-89ff-b352bea652e3",
+          "ref": "CR333750R",
+          "name": "CR333750R.jpg",
+          "title": "CR333750R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_9b9ab33de179441d855a4b5bfe92729e~mv2.jpg",
+          "orderIndex": 1773929327034.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "9b798aa6-e603-4817-9197-a21ad3f112f8",
+          "ref": "CR333751R",
+          "name": "CR333751R.jpg",
+          "title": "CR333751R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_243aa1b6a779487eb0d2366e1e0fe526~mv2.jpg",
+          "orderIndex": 1773929327134.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "58726bd9-33fc-4f8a-b6d4-b160db7ba20c",
+          "ref": "CR333752R",
+          "name": "CR333752R.jpg",
+          "title": "CR333752R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_77c86365e2af42cba9db2b8512858698~mv2.jpg",
+          "orderIndex": 1773929327234.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "0baaf085-f5a3-4a84-89e2-8dbda7e4d790",
+          "ref": "CR333754R",
+          "name": "CR333754R.jpg",
+          "title": "CR333754R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_3e125edd3dee43f7ae58e2c8079a4cbc~mv2.jpg",
+          "orderIndex": 1773929327334.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "da39af43-226e-4783-8c80-e650a34191fa",
+          "ref": "CR333753R",
+          "name": "CR333753R.jpg",
+          "title": "CR333753R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_5f17c8396b124d70b56f02bf67cb1456~mv2.jpg",
+          "orderIndex": 1773929327434.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "51c89cc8-0405-4286-98d1-a05f7aa496a8",
+          "ref": "CR333755R",
+          "name": "CR333755R.jpg",
+          "title": "CR333755R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_33518498aa694ef0a93173a35b16a657~mv2.jpg",
+          "orderIndex": 1773929327534.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "00ad9688-baac-4b13-9977-130dfea4c3a4",
+          "ref": "CR333756R",
+          "name": "CR333756R.jpg",
+          "title": "CR333756R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_27a6b16e05a94a7996ae89ccdb4f27d5~mv2.jpg",
+          "orderIndex": 1773929327634.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "18d31944-00cb-48b4-b8f5-6e69e6ff0bdf",
+          "ref": "CR333757R",
+          "name": "CR333757R.jpg",
+          "title": "CR333757R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_4c160e7e7c684978abe6b8992d1d6696~mv2.jpg",
+          "orderIndex": 1773929327734.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "c635fb59-621c-4f35-b832-d1af7c18eda2",
+          "ref": "CR333758R",
+          "name": "CR333758R.jpg",
+          "title": "CR333758R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_973305725cec4fea8e159b3efcb8a535~mv2.jpg",
+          "orderIndex": 1773929327835.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "da4ec7ec-0566-4390-a7ba-960ba0be1340",
+          "ref": "CR333759R",
+          "name": "CR333759R.jpg",
+          "title": "CR333759R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_8227f71b7e8942828d490e19f83bd93a~mv2.jpg",
+          "orderIndex": 1773929327935.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "da905e77-e8ea-4d8a-9c8b-179d74d0c5a5",
+          "ref": "CR333760R",
+          "name": "CR333760R.jpg",
+          "title": "CR333760R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_5dc88d45b70c4b02a98d0ff98e7a4ab5~mv2.jpg",
+          "orderIndex": 1773929328035.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "2af3ba36-ac3b-4d5c-b3d1-2c166225856d",
+          "ref": "CR333761R",
+          "name": "CR333761R.jpg",
+          "title": "CR333761R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_41fd3eeb15bc4e1396e3758684afe031~mv2.jpg",
+          "orderIndex": 1773929328135.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "04a07138-d759-4f81-978e-ce92c945aabc",
+          "ref": "CR333762R",
+          "name": "CR333762R.jpg",
+          "title": "CR333762R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_f5f77e203f824ccfba49aa0dc0c80b08~mv2.jpg",
+          "orderIndex": 1773929328235.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "624ded14-46d2-4406-aca1-c650be5ee795",
+          "ref": "CR333763R",
+          "name": "CR333763R.jpg",
+          "title": "CR333763R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_ae5a496605304dfbb17ed026e11863e2~mv2.jpg",
+          "orderIndex": 1773929328335.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "fd628b7c-ce93-49e7-b5d4-4d6b818dc83b",
+          "ref": "CR333764R",
+          "name": "CR333764R.jpg",
+          "title": "CR333764R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_301cddef79b74249a8d41d54b854ca87~mv2.jpg",
+          "orderIndex": 1773929328435.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "9a592d70-56b8-4fd1-a185-fd01c8334e1b",
+          "ref": "CR333766R",
+          "name": "CR333766R.jpg",
+          "title": "CR333766R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_df4a50c434344a8eaa3f2621f4985c65~mv2.jpg",
+          "orderIndex": 1773929328535.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "5a9d539c-8303-493d-8d7f-662ad3e27a36",
+          "ref": "CR333765R",
+          "name": "CR333765R.jpg",
+          "title": "CR333765R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b73945efa494407ab8d7651f9cf7fef8~mv2.jpg",
+          "orderIndex": 1773929328635.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "31a59961-35fa-41b4-8943-fbffecf4fb51",
+          "ref": "CR333767R",
+          "name": "CR333767R.jpg",
+          "title": "CR333767R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_4053e0deace94e7d9152099ca6d0c317~mv2.jpg",
+          "orderIndex": 1773929328735.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "eb36096c-1aa7-492e-9984-e78b55107f47",
+          "ref": "CR333768R",
+          "name": "CR333768R.jpg",
+          "title": "CR333768R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_70411fa3385c485e895380527d4e43a3~mv2.jpg",
+          "orderIndex": 1773929328835.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "4f9e2dc4-d554-4f85-916f-430d83a6a161",
+          "ref": "CR333769R",
+          "name": "CR333769R.jpg",
+          "title": "CR333769R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_3b7e5cf722404b18893e223bb411a1a7~mv2.jpg",
+          "orderIndex": 1773929328935.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "fedd8fcd-d819-4735-8981-9f3a622c7e20",
+          "ref": "CR333770R",
+          "name": "CR333770R.jpg",
+          "title": "CR333770R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_8ca012eb8e4241b497d96bd8c6724640~mv2.jpg",
+          "orderIndex": 1773929329035.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "3b89ea33-d44c-493a-9c95-53da5496a035",
+          "ref": "CR333771R",
+          "name": "CR333771R.jpg",
+          "title": "CR333771R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_94c4e106811740b4ab28921e0616b512~mv2.jpg",
+          "orderIndex": 1773929329135.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "0d1d6f21-b5fa-4e70-8275-bbc31045f3a7",
+          "ref": "CR333772R",
+          "name": "CR333772R.jpg",
+          "title": "CR333772R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_74e5bc14329f48a5b5d4a1dfbc4dae00~mv2.jpg",
+          "orderIndex": 1773929329235.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "8faa21ab-296d-4f3b-8294-82f2adc3f8b1",
+          "ref": "CR333773R",
+          "name": "CR333773R.jpg",
+          "title": "CR333773R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_f034df1f51864b0b9e364ac3f35211ef~mv2.jpg",
+          "orderIndex": 1773929329335.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "078d61c4-01b0-43c0-ad5a-2ea8206b3162",
+          "ref": "CR333774R",
+          "name": "CR333774R.jpg",
+          "title": "CR333774R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_f5bdd6cf91664bb4b7a00c046a45a484~mv2.jpg",
+          "orderIndex": 1773929329435.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "9e9d4a2b-d1f3-47df-a322-09922de77c59",
+          "ref": "CR333777R",
+          "name": "CR333777R.jpg",
+          "title": "CR333777R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_bb21f3510fda40d8a40fbfa885ccd855~mv2.jpg",
+          "orderIndex": 1773929329535.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "75410a7f-17e0-46f7-b240-e188e394f567",
+          "ref": "CR333775R",
+          "name": "CR333775R.jpg",
+          "title": "CR333775R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_64fc50e93e4d4244a15cc64043a3fdf4~mv2.jpg",
+          "orderIndex": 1773929329635.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "374cca5b-cd67-4845-abed-2f94e499cb0a",
+          "ref": "CR333776R",
+          "name": "CR333776R.jpg",
+          "title": "CR333776R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b72491ebdf94471a84abe3fef4fef81c~mv2.jpg",
+          "orderIndex": 1773929329735.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "3ba90445-29ff-4916-93cb-4ec21e046766",
+          "ref": "CR333779R",
+          "name": "CR333779R.jpg",
+          "title": "CR333779R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_f4f4bc1387a844cda6d0ed6b2b2f91d5~mv2.jpg",
+          "orderIndex": 1773929329835.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "dd8d9973-bf05-411c-9a4f-a4a24dee6690",
+          "ref": "CR333778R",
+          "name": "CR333778R.jpg",
+          "title": "CR333778R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_0d146c9326274afb98b5df5e4c0de234~mv2.jpg",
+          "orderIndex": 1773929329935.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "e45a8b82-268e-4bfb-a414-ba97becb198f",
+          "ref": "CR333780R",
+          "name": "CR333780R.jpg",
+          "title": "CR333780R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_e9d9b164df1348c78bb0a8eed122803b~mv2.jpg",
+          "orderIndex": 1773929330035.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "f372d58b-9ac4-4709-a081-4ac0c37b0df0",
+          "ref": "CR333781R",
+          "name": "CR333781R.jpg",
+          "title": "CR333781R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_8c9c1223aa7b42df825252b203bc43b0~mv2.jpg",
+          "orderIndex": 1773929330135.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "71cf8d68-d9fb-45d8-af0b-ed7cbafc0643",
+          "ref": "CR333782R",
+          "name": "CR333782R.jpg",
+          "title": "CR333782R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_ddb44f3fdfb941f58ccc9a6f99ca32d0~mv2.jpg",
+          "orderIndex": 1773929330235.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "d8092340-3afe-419e-914e-4b4ebcaf93f6",
+          "ref": "CR333783R",
+          "name": "CR333783R.jpg",
+          "title": "CR333783R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_ab5e3d52b43846aa9a6f07efd194a688~mv2.jpg",
+          "orderIndex": 1773929330335.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "dd32c89c-8d46-4559-8fd8-5cdc9c84bcf6",
+          "ref": "CR333784R",
+          "name": "CR333784R.jpg",
+          "title": "CR333784R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_05b0066710f14aeda8b8e70a3997dd4c~mv2.jpg",
+          "orderIndex": 1773929330435.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "27a5eaf3-9dbe-4ba0-ae9c-2741d0ac1520",
+          "ref": "CR333785R",
+          "name": "CR333785R.jpg",
+          "title": "CR333785R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_578f2ba20445482292b21eca0ae500f2~mv2.jpg",
+          "orderIndex": 1773929330535.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "753c78d5-b9f1-4df0-9afc-9990dc60682f",
+          "ref": "CR333788R",
+          "name": "CR333788R.jpg",
+          "title": "CR333788R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b05f3e05bdbb451c977795edf1c95b7d~mv2.jpg",
+          "orderIndex": 1773929330635.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "cf2c0b5b-5e94-4d30-a952-283447c551ba",
+          "ref": "CR333786R",
+          "name": "CR333786R.jpg",
+          "title": "CR333786R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_e01ce461c7024beea3ccc547fd68fb14~mv2.jpg",
+          "orderIndex": 1773929330735.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "a9ad401e-327a-4af5-977f-6f772272a261",
+          "ref": "CR333787R",
+          "name": "CR333787R.jpg",
+          "title": "CR333787R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_92f7b9a38da04abbaa2cfa1c85758a56~mv2.jpg",
+          "orderIndex": 1773929330835.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "ae303aea-1d5f-4c16-91f8-25c7f275483f",
+          "ref": "CR333702R",
+          "name": "CR333702R.jpg",
+          "title": "CR333702R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_95cdcca1a7304e73899a69a3e1cf7606~mv2.jpg",
+          "orderIndex": 1773929330935.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "ba2f2ccb-3bbf-44fc-9c0c-f2a28a39a1c5",
+          "ref": "CR333703R",
+          "name": "CR333703R.jpg",
+          "title": "CR333703R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_0754ec7ffe614e3cab187d1bd75ae616~mv2.jpg",
+          "orderIndex": 1773929331035.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "5b49942f-6aec-4edc-b6f4-ab45b2f69b85",
+          "ref": "CR333789R",
+          "name": "CR333789R.jpg",
+          "title": "CR333789R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_068199aa77b74ff2af2185fd255bbca6~mv2.jpg",
+          "orderIndex": 1773929331135.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "eb5770e1-7399-4e79-ba61-252e310085b5",
+          "ref": "CR333701R",
+          "name": "CR333701R.jpg",
+          "title": "CR333701R",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_0453014b2691403fbb98179b7712fc87~mv2.jpg",
+          "orderIndex": 1773929331235.0,
+          "dataType": "Photo"
+        }
+      ]
+    },
+    {
+      "name": "Poet Chart 5",
+      "slug": "poet-chart-5",
+      "url": "https://www.kantai.com.br/poetchart5",
+      "expected": 78,
+      "gallery_id": "50e9ed52-dd8a-4eb0-b0e0-8de981cc4e4b",
+      "declared_total": 78,
+      "pages": [
+        {
+          "offset": 0,
+          "url": "https://www.kantai.com.br/pro-gallery-webapp/v1/galleries/50e9ed52-dd8a-4eb0-b0e0-8de981cc4e4b?galleryId=50e9ed52-dd8a-4eb0-b0e0-8de981cc4e4b&offset=0&limit=25&externalId=3b775db8-4c8f-42d7-8b46-e68c1b5630b7&state=PUBLISHED",
+          "status": 200,
+          "items_count": 25,
+          "totalItemsCount": 78
+        },
+        {
+          "offset": 25,
+          "url": "https://www.kantai.com.br/pro-gallery-webapp/v1/galleries/50e9ed52-dd8a-4eb0-b0e0-8de981cc4e4b?galleryId=50e9ed52-dd8a-4eb0-b0e0-8de981cc4e4b&offset=25&limit=25&externalId=3b775db8-4c8f-42d7-8b46-e68c1b5630b7&state=PUBLISHED",
+          "status": 200,
+          "items_count": 25,
+          "totalItemsCount": 78
+        },
+        {
+          "offset": 50,
+          "url": "https://www.kantai.com.br/pro-gallery-webapp/v1/galleries/50e9ed52-dd8a-4eb0-b0e0-8de981cc4e4b?galleryId=50e9ed52-dd8a-4eb0-b0e0-8de981cc4e4b&offset=50&limit=25&externalId=3b775db8-4c8f-42d7-8b46-e68c1b5630b7&state=PUBLISHED",
+          "status": 200,
+          "items_count": 25,
+          "totalItemsCount": 78
+        },
+        {
+          "offset": 75,
+          "url": "https://www.kantai.com.br/pro-gallery-webapp/v1/galleries/50e9ed52-dd8a-4eb0-b0e0-8de981cc4e4b?galleryId=50e9ed52-dd8a-4eb0-b0e0-8de981cc4e4b&offset=75&limit=25&externalId=3b775db8-4c8f-42d7-8b46-e68c1b5630b7&state=PUBLISHED",
+          "status": 200,
+          "items_count": 3,
+          "totalItemsCount": 78
+        }
+      ],
+      "captured_items": 78,
+      "valid_reference_items": 78,
+      "unique_references": 78,
+      "invalid_items": [],
+      "status": "ok",
+      "items": [
+        {
+          "id": "77ad331f-d443-4641-a731-ac78c68394ef",
+          "ref": "PT501103",
+          "name": "PT501103.jpg",
+          "title": "PT501103",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_6103d433b45c4876b135c648e2e05f3a~mv2.jpg",
+          "orderIndex": -1777580269768.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "69f04176-d6c5-405e-94c2-fdc4b90c946f",
+          "ref": "PT501102",
+          "name": "PT501102.jpg",
+          "title": "PT501102",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_c52bfddd973342ec92785431529d2425~mv2.jpg",
+          "orderIndex": -1777580269758.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "4b2cde68-27b5-483e-aab3-9da9ab304b51",
+          "ref": "PT501101",
+          "name": "PT501101.jpg",
+          "title": "PT501101",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_597fa8b8a2664be3bded40fbb0ca8d3b~mv2.jpg",
+          "orderIndex": -1777580269748.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "38a253d5-6009-4d32-bcfe-951c729f6c59",
+          "ref": "PT501005",
+          "name": "PT501005.jpg",
+          "title": "PT501005",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_79814cef5fa848db95f9ce26fdda1f31~mv2.jpg",
+          "orderIndex": -1777580269738.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "78b7b30d-a2b4-4159-80a9-c1d86c1a8cd8",
+          "ref": "PT501004",
+          "name": "PT501004.jpg",
+          "title": "PT501004",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_addd1159af6f46ba9b74a8dc25bf931f~mv2.jpg",
+          "orderIndex": -1777580269728.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "9b3d3010-a30e-41ef-8fe6-fc5fa13ba4b5",
+          "ref": "PT501003",
+          "name": "PT501003.jpg",
+          "title": "PT501003",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_d3b94504dbaf4ca2a623186a22ff770b~mv2.jpg",
+          "orderIndex": -1777580269718.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "9bcf6eb8-21ba-4c3f-a415-85a069e34ce4",
+          "ref": "PT501002",
+          "name": "PT501002.jpg",
+          "title": "PT501002",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_afa828fe5d2443fb8a7d19ad7f54ce67~mv2.jpg",
+          "orderIndex": -1777580269708.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "90b593b4-e352-491d-a629-9e9cbc81e8b9",
+          "ref": "PT501001",
+          "name": "PT501001.jpg",
+          "title": "PT501001",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_ab46706db083427fa2b67f821ff6c9b2~mv2.jpg",
+          "orderIndex": -1777580269698.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "61a627dd-452f-4eb0-ae75-c976400fd859",
+          "ref": "PT500904",
+          "name": "PT500904.jpg",
+          "title": "PT500904",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_71838d94556d4c9eb02b29a9b0e5a14c~mv2.jpg",
+          "orderIndex": -1777580269688.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "3669e7ee-3450-45d7-b4e1-2b69192dfcc1",
+          "ref": "PT500903",
+          "name": "PT500903.jpg",
+          "title": "PT500903",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_e3fcfaf390214512af7d5fd990ef6002~mv2.jpg",
+          "orderIndex": -1777580269678.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "10d8f319-eb08-4221-9663-efc3480855f3",
+          "ref": "PT500902",
+          "name": "PT500902.jpg",
+          "title": "PT500902",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_eb14925fd22d4cd89781281998a76c5f~mv2.jpg",
+          "orderIndex": -1777580269668.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "e11e9f29-cc77-4f2a-826b-e28e2847679d",
+          "ref": "PT500901",
+          "name": "PT500901.jpg",
+          "title": "PT500901",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_3237015d4cf34499bbd34ace515ad488~mv2.jpg",
+          "orderIndex": -1777580269658.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "65207cf2-bf70-4984-b1c0-074abcff98fd",
+          "ref": "PT500808",
+          "name": "PT500808.jpg",
+          "title": "PT500808",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_37f7ff34334d4fb091f3c6725a5d80c6~mv2.jpg",
+          "orderIndex": -1777580269648.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "63f8b448-9175-45a2-b361-7c3df258cdb0",
+          "ref": "PT500807",
+          "name": "PT500807.jpg",
+          "title": "PT500807",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_9867b78408d04d779ccf0e439847e3bf~mv2.jpg",
+          "orderIndex": -1777580269638.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "bd1a146c-ac0d-4dfa-acf8-bf79755aa2f5",
+          "ref": "PT500806",
+          "name": "PT500806.jpg",
+          "title": "PT500806",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_926ad97f202a40aa97e867675e6ec9b8~mv2.jpg",
+          "orderIndex": -1777580269628.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "4041d369-718d-42a8-b817-6434f42328b0",
+          "ref": "PT500805",
+          "name": "PT500805.jpg",
+          "title": "PT500805",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_e1193fa7d5a748ec889fbd6efa191cbe~mv2.jpg",
+          "orderIndex": -1777580269618.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "965431c2-4f47-411d-b6c2-29fd5fc54454",
+          "ref": "PT500804",
+          "name": "PT500804.jpg",
+          "title": "PT500804",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_e07b250c498744e992223bdaf1a44955~mv2.jpg",
+          "orderIndex": -1777580269608.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "877d62d1-dcc4-4137-956b-e852266ff6f1",
+          "ref": "PT500803",
+          "name": "PT500803.jpg",
+          "title": "PT500803",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_4c34f2dee56a4ca39dcbf3c7d30c9cb5~mv2.jpg",
+          "orderIndex": -1777580269598.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "619df3a0-6050-4a51-a39a-377018a6259a",
+          "ref": "PT500802",
+          "name": "PT500802.jpg",
+          "title": "PT500802",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_733d34b68fbd4c0d8628727960a7c9f5~mv2.jpg",
+          "orderIndex": -1777580269588.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "05d3f81f-a7fc-407a-8d52-80b0609e3596",
+          "ref": "PT500801",
+          "name": "PT500801.jpg",
+          "title": "PT500801",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_f7f58c3ad2ef49b9b43b07ee353c9b4e~mv2.jpg",
+          "orderIndex": -1777580269578.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "ac68da7b-45fd-436b-901b-c542c298279e",
+          "ref": "PT500706",
+          "name": "PT500706.jpg",
+          "title": "PT500706",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_a50bac0ef056467584521e38eaf883d8~mv2.jpg",
+          "orderIndex": -1777580269568.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "22c7c6d6-8953-46a9-9427-5247b8d29130",
+          "ref": "PT500705",
+          "name": "PT500705.jpg",
+          "title": "PT500705",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_8049a6698acf4db9a8262b718d501796~mv2.jpg",
+          "orderIndex": -1777580269558.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "2789867c-aca7-4129-8931-ff7157475738",
+          "ref": "PT500704",
+          "name": "PT500704.jpg",
+          "title": "PT500704",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b28c47b6c2894ed4b48e9ee6966c3e30~mv2.jpg",
+          "orderIndex": -1777580269548.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "128dcf5c-6919-417f-b241-3b491e4005cc",
+          "ref": "PT500703",
+          "name": "PT500703.jpg",
+          "title": "PT500703",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_1ca37d8502f6458d85f4fe335d41f712~mv2.jpg",
+          "orderIndex": -1777580269538.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "c5bcba77-958b-45f0-aa17-64c532834497",
+          "ref": "PT500702",
+          "name": "PT500702.jpg",
+          "title": "PT500702",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_578335cfef874e8eba7498589c7a9638~mv2.jpg",
+          "orderIndex": -1777580269528.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "31507837-f26e-47ba-8245-ea43c901a497",
+          "ref": "PT500701",
+          "name": "PT500701.jpg",
+          "title": "PT500701",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_cf751d014df04bdfbf81786b1c65c990~mv2.jpg",
+          "orderIndex": -1777580269518.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "4843bbf9-5342-4ad8-aa9a-e1489a79b130",
+          "ref": "PT500607",
+          "name": "PT500607.jpg",
+          "title": "PT500607",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_bc8083f549a84c76b3dc675453ae82f3~mv2.jpg",
+          "orderIndex": -1777580269508.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "f4c94862-20d9-48b2-b7bf-f846a7405fdf",
+          "ref": "PT500606",
+          "name": "PT500606.jpg",
+          "title": "PT500606",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_dca1cd20d60b4654b02f3e2fa2c668f4~mv2.jpg",
+          "orderIndex": -1777580269498.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "067ea343-0ec8-409a-bcff-6825b6732958",
+          "ref": "PT500605",
+          "name": "PT500605.jpg",
+          "title": "PT500605",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_02db12e7c1384972904ce923aa82b6dd~mv2.jpg",
+          "orderIndex": -1777580269488.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "f8b499d2-61ec-4ce5-9811-dc1c69eb9120",
+          "ref": "PT500604",
+          "name": "PT500604.jpg",
+          "title": "PT500604",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_ecd29bba81bc401e86b093d8f030893a~mv2.jpg",
+          "orderIndex": -1777580269478.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "53a45935-ffda-4905-80d3-196a49b0e6ba",
+          "ref": "PT500603",
+          "name": "PT500603.jpg",
+          "title": "PT500603",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_a9ca733f83824c93864da2907fa0fa6d~mv2.jpg",
+          "orderIndex": -1777580269468.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "07851b4c-3565-4335-bbe3-f2a47f6be7fe",
+          "ref": "PT500602",
+          "name": "PT500602.jpg",
+          "title": "PT500602",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_2e0db1e6b9d3461780d4a610ccea2cd8~mv2.jpg",
+          "orderIndex": -1777580269458.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "bc3f1d49-54f9-4914-a512-709379456190",
+          "ref": "PT500601",
+          "name": "PT500601.jpg",
+          "title": "PT500601",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_8c82a4afa2024c5cb3ce29a53504c6ea~mv2.jpg",
+          "orderIndex": -1777580269448.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "cd062339-29b9-4497-9fd8-274d2f1390d9",
+          "ref": "PT500505",
+          "name": "PT500505.jpg",
+          "title": "PT500505",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_d56c197093aa48d7bb6a8a1b36343fdd~mv2.jpg",
+          "orderIndex": -1777580269438.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "9ae74e84-c61e-4048-8339-0cdd9bf88499",
+          "ref": "PT500504",
+          "name": "PT500504.jpg",
+          "title": "PT500504",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b558ede3ed2a4bf1b30f47742cccb69f~mv2.jpg",
+          "orderIndex": -1777580269428.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "3b337bce-a2f9-47c3-b254-83528815dfde",
+          "ref": "PT500503",
+          "name": "PT500503.jpg",
+          "title": "PT500503",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_2d9d81a8a4b54f4c9b9fa40fdf71e7a3~mv2.jpg",
+          "orderIndex": -1777580269418.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "25133c41-a83e-4d5c-880f-41436e06813f",
+          "ref": "PT500502",
+          "name": "PT500502.jpg",
+          "title": "PT500502",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_1bdeba9af11647cfa7feba4a29d6d600~mv2.jpg",
+          "orderIndex": -1777580269408.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "cc183f92-e3f4-41e0-8650-a0cc737720b8",
+          "ref": "PT500501",
+          "name": "PT500501.jpg",
+          "title": "PT500501",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_f8d1a8fe13464a2d9290f356e02bf7e8~mv2.jpg",
+          "orderIndex": -1777580269398.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "fb77b707-a02d-4bc1-939b-f6e5dcb55153",
+          "ref": "PT500408",
+          "name": "PT500408.jpg",
+          "title": "PT500408",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_69a0a832fcba4dc4a3814c3c5081a412~mv2.jpg",
+          "orderIndex": -1777580269388.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "d1b1c47b-07b2-43fb-853e-df580404613b",
+          "ref": "PT500407",
+          "name": "PT500407.jpg",
+          "title": "PT500407",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_484e08fe2f9f4505b9e3e293ec7430b5~mv2.jpg",
+          "orderIndex": -1777580269378.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "6602bce6-9299-4249-a7e0-ad23911cf69f",
+          "ref": "PT500406",
+          "name": "PT500406.jpg",
+          "title": "PT500406",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_a537dd49266543f6b68bae840520fd84~mv2.jpg",
+          "orderIndex": -1777580269368.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "95c32497-ea11-4c1d-9586-8f2de23dc01b",
+          "ref": "PT500405",
+          "name": "PT500405.jpg",
+          "title": "PT500405",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_fe7de0a0e3e947bbbfffab78daaa02fb~mv2.jpg",
+          "orderIndex": -1777580269358.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "b1412dc6-baf0-4a9c-8ed9-c4f3d85d03cd",
+          "ref": "PT500404",
+          "name": "PT500404.jpg",
+          "title": "PT500404",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_3bb7716782594321993afaa98fac2b74~mv2.jpg",
+          "orderIndex": -1777580269348.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "32357b80-5a6f-4cdd-a693-67ceecc21c03",
+          "ref": "PT500403",
+          "name": "PT500403.jpg",
+          "title": "PT500403",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_4ddb0ac43e7046b680fab23f3244a085~mv2.jpg",
+          "orderIndex": -1777580269338.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "8044eea5-52a3-4af7-8873-e59e679d4a70",
+          "ref": "PT500402",
+          "name": "PT500402.jpg",
+          "title": "PT500402",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_133ab2a4e8d94f53a6955c4ffea7947d~mv2.jpg",
+          "orderIndex": -1777580269328.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "1c66ddde-71ef-4510-ad2a-a41b7f5be402",
+          "ref": "PT500401",
+          "name": "PT500401.jpg",
+          "title": "PT500401",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_7cbf52f9791744cb91d23509574afce6~mv2.jpg",
+          "orderIndex": -1777580269318.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "e4515a27-ff7f-471d-951b-ad4e31ff48b8",
+          "ref": "PT500308",
+          "name": "PT500308.jpg",
+          "title": "PT500308",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_f0fe673e9dc548e089bd3feb71c5ebc4~mv2.jpg",
+          "orderIndex": -1777580269308.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "e8ec978c-3aec-4647-8aef-2995e6df2aee",
+          "ref": "PT500307",
+          "name": "PT500307.jpg",
+          "title": "PT500307",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_d34b473cf59d4880a50388f89a5241da~mv2.jpg",
+          "orderIndex": -1777580269298.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "915ec2a7-8725-4ff9-b5ab-db4a65ef203b",
+          "ref": "PT500306",
+          "name": "PT500306.jpg",
+          "title": "PT500306",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_f7039e39f4cf4bacbeb0bd2afcf3eeae~mv2.jpg",
+          "orderIndex": -1777580269288.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "615bd09f-ed22-46fd-a389-b7b801bb18b4",
+          "ref": "PT500305",
+          "name": "PT500305.jpg",
+          "title": "PT500305",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_6970bf53b18d4491953a207b744997ae~mv2.jpg",
+          "orderIndex": -1777580269278.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "e870180e-7be4-426e-9065-a84b28ab8ede",
+          "ref": "PT500304",
+          "name": "PT500304.jpg",
+          "title": "PT500304",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_806820623c3e47f288fdd89cf5445515~mv2.jpg",
+          "orderIndex": -1777580269268.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "d5cccb3b-3f7e-4403-aca2-cebefce04d71",
+          "ref": "PT500303",
+          "name": "PT500303.jpg",
+          "title": "PT500303",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_80e67c15b43846ba90d83156c78831a8~mv2.jpg",
+          "orderIndex": -1777580269258.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "552fae09-19e7-4764-ac72-4b6122273bad",
+          "ref": "PT500302",
+          "name": "PT500302.jpg",
+          "title": "PT500302",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_197894ce78da459887d2e362196924a9~mv2.jpg",
+          "orderIndex": -1777580269248.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "49410ade-e178-4256-b053-fc4996075a87",
+          "ref": "PT500301",
+          "name": "PT500301.jpg",
+          "title": "PT500301",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_5e3defbcf9254dbda527c647f4761496~mv2.jpg",
+          "orderIndex": -1777580269238.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "bc951a0e-560f-4711-941a-a9f9dbbb92f0",
+          "ref": "PT500208",
+          "name": "PT500208.jpg",
+          "title": "PT500208",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_62b3a96a611447348c46459f43c05545~mv2.jpg",
+          "orderIndex": -1777580269228.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "ff4e748c-02c1-45f3-8c34-07612862e94b",
+          "ref": "PT500207",
+          "name": "PT500207.jpg",
+          "title": "PT500207",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b2895bf51b3241abb87099b0eaba5d15~mv2.jpg",
+          "orderIndex": -1777580269218.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "297f7b89-ceb6-4995-8943-2cc258ad8d56",
+          "ref": "PT500206",
+          "name": "PT500206.jpg",
+          "title": "PT500206",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_482c4487662c49e6b4c318d197560626~mv2.jpg",
+          "orderIndex": -1777580269208.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "6d56037b-ec01-4db6-8238-09ef0b664a0c",
+          "ref": "PT500205",
+          "name": "PT500205.jpg",
+          "title": "PT500205",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_67963a4508474982b87c4eaadc480b58~mv2.jpg",
+          "orderIndex": -1777580269198.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "ba70a47f-2479-481d-878a-4069305a392e",
+          "ref": "PT500204",
+          "name": "PT500204.jpg",
+          "title": "PT500204",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_5204386b954447f3a65cc9fac241194b~mv2.jpg",
+          "orderIndex": -1777580269188.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "91db277b-813d-46c6-9a40-14fef1c4f0a2",
+          "ref": "PT500203",
+          "name": "PT500203.jpg",
+          "title": "PT500203",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_d45ddef93ffa479ca7b81702b8e2c65b~mv2.jpg",
+          "orderIndex": -1777580269178.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "7b7233ad-0cf0-4e5f-a55f-37b3165ce412",
+          "ref": "PT500202",
+          "name": "PT500202.jpg",
+          "title": "PT500202",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_1880ffd69cfd49c7b04b60da5b42f972~mv2.jpg",
+          "orderIndex": -1777580269168.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "18d93b7c-2069-4346-a5a3-04b527e25e42",
+          "ref": "PT500201",
+          "name": "PT500201.jpg",
+          "title": "PT500201",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_3d35b9ed51574a2abbbfce6e217c96e5~mv2.jpg",
+          "orderIndex": -1777580269158.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "2554dbf7-ff14-474e-82ec-0e2651163bac",
+          "ref": "PT500109",
+          "name": "PT500109.jpg",
+          "title": "PT500109",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_935be089abcf4a59b61fb265c0a0fbc0~mv2.jpg",
+          "orderIndex": -1777580269148.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "b3281c64-9b00-49b7-a8ff-34c0954edcb5",
+          "ref": "PT500108",
+          "name": "PT500108.jpg",
+          "title": "PT500108",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b041825b55854a798bc9dec8bc1ce506~mv2.jpg",
+          "orderIndex": -1777580269138.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "e00f4eae-b330-4466-ad9b-1f5ed8b9afbf",
+          "ref": "PT500107",
+          "name": "PT500107.jpg",
+          "title": "PT500107",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_ecdd4378659f46faa414b13e476cf883~mv2.jpg",
+          "orderIndex": -1777580269128.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "374f3a5a-26d2-4566-97e5-ecb7a9491ee6",
+          "ref": "PT500106",
+          "name": "PT500106.jpg",
+          "title": "PT500106",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b78344241990405daa2955242a7918ff~mv2.jpg",
+          "orderIndex": -1777580269118.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "f4b49c94-1c3a-4d28-9f97-358fb8236920",
+          "ref": "PT500105",
+          "name": "PT500105.jpg",
+          "title": "PT500105",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_2773a80389c44562a4f4d14ed1774afa~mv2.jpg",
+          "orderIndex": -1777580269108.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "f8dfd349-ae9f-4c9d-aecc-db6e92af4274",
+          "ref": "PT500104",
+          "name": "PT500104.jpg",
+          "title": "PT500104",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_cc868d935c224710949ae0d6855d8a14~mv2.jpg",
+          "orderIndex": -1777580269098.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "dbea4435-ee90-44d4-9d9c-d9947a893fbe",
+          "ref": "PT500103",
+          "name": "PT500103.jpg",
+          "title": "PT500103",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_c607b6de85a9413b90420508b5cc39aa~mv2.jpg",
+          "orderIndex": -1777580269088.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "9c1db3e9-20a9-43ed-b1c3-abfb4f48ee74",
+          "ref": "PT500102",
+          "name": "PT500102.jpg",
+          "title": "PT500102",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_c4b83737dc884e339fb05d2aeef9224d~mv2.jpg",
+          "orderIndex": -1777580269078.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "d4b0ca36-59fb-4a32-9bae-50b76fc6da84",
+          "ref": "PT500101",
+          "name": "PT500101.jpg",
+          "title": "PT500101",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_4203e3b26c7f4b54991843ba32296d9e~mv2.jpg",
+          "orderIndex": -1777580269068.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "fb27590c-575e-454e-9b70-980d2b8b7923",
+          "ref": "PT500007",
+          "name": "PT500007.jpg",
+          "title": "PT500007",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_6ce4141164db4db19b0ea934c0758dc8~mv2.jpg",
+          "orderIndex": -1777580269058.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "e0488648-a111-42a4-94af-f8086f2114cc",
+          "ref": "PT500006",
+          "name": "PT500006.jpg",
+          "title": "PT500006",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_613ed4e7a7e5463e8286ed7a66a3165b~mv2.jpg",
+          "orderIndex": -1777580269048.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "c64fea9a-2bee-4c96-b408-316038938114",
+          "ref": "PT500005",
+          "name": "PT500005.jpg",
+          "title": "PT500005",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_40e616549c484387bd1162e2aed662e3~mv2.jpg",
+          "orderIndex": -1777580269038.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "1c2771ab-1e59-4386-862b-074e43d84407",
+          "ref": "PT500004",
+          "name": "PT500004.jpg",
+          "title": "PT500004",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_2c53dc4d7dfc4ddc8b21704c1730f2d5~mv2.jpg",
+          "orderIndex": -1777580269028.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "cccbc956-0662-44db-8b3f-233c362f65d7",
+          "ref": "PT500003",
+          "name": "PT500003.jpg",
+          "title": "PT500003",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_361fa597a1034ebba20f4cf186b019b8~mv2.jpg",
+          "orderIndex": -1777580269018.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "7ef2fa28-5582-4e60-b609-aa5b8df3c038",
+          "ref": "PT500002",
+          "name": "PT500002.jpg",
+          "title": "PT500002",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_e2c16ecdf82f4a74a9dc3f599789c2c0~mv2.jpg",
+          "orderIndex": -1777580269008.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "fe24f776-68e1-46e1-b11b-2dc6754dc1e0",
+          "ref": "PT500001",
+          "name": "PT500001.jpg",
+          "title": "PT500001",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b4fffe9e4c804fc9899b3ada13289c6e~mv2.jpg",
+          "orderIndex": -1777580268998.0,
+          "dataType": "Photo"
+        }
+      ]
+    },
+    {
+      "name": "Space IX",
+      "slug": "space-ix",
+      "url": "https://www.kantai.com.br/space9",
+      "expected": 83,
+      "gallery_id": "5ea2e49b-2c64-440f-80d5-17b410fee6d9",
+      "declared_total": 83,
+      "pages": [
+        {
+          "offset": 0,
+          "url": "https://www.kantai.com.br/pro-gallery-webapp/v1/galleries/5ea2e49b-2c64-440f-80d5-17b410fee6d9?galleryId=5ea2e49b-2c64-440f-80d5-17b410fee6d9&offset=0&limit=25&externalId=67cc2616-0c08-4eb7-98d0-93e3ca906fe0&state=PUBLISHED",
+          "status": 200,
+          "items_count": 25,
+          "totalItemsCount": 83
+        },
+        {
+          "offset": 25,
+          "url": "https://www.kantai.com.br/pro-gallery-webapp/v1/galleries/5ea2e49b-2c64-440f-80d5-17b410fee6d9?galleryId=5ea2e49b-2c64-440f-80d5-17b410fee6d9&offset=25&limit=25&externalId=67cc2616-0c08-4eb7-98d0-93e3ca906fe0&state=PUBLISHED",
+          "status": 200,
+          "items_count": 25,
+          "totalItemsCount": 83
+        },
+        {
+          "offset": 50,
+          "url": "https://www.kantai.com.br/pro-gallery-webapp/v1/galleries/5ea2e49b-2c64-440f-80d5-17b410fee6d9?galleryId=5ea2e49b-2c64-440f-80d5-17b410fee6d9&offset=50&limit=25&externalId=67cc2616-0c08-4eb7-98d0-93e3ca906fe0&state=PUBLISHED",
+          "status": 200,
+          "items_count": 25,
+          "totalItemsCount": 83
+        },
+        {
+          "offset": 75,
+          "url": "https://www.kantai.com.br/pro-gallery-webapp/v1/galleries/5ea2e49b-2c64-440f-80d5-17b410fee6d9?galleryId=5ea2e49b-2c64-440f-80d5-17b410fee6d9&offset=75&limit=25&externalId=67cc2616-0c08-4eb7-98d0-93e3ca906fe0&state=PUBLISHED",
+          "status": 200,
+          "items_count": 8,
+          "totalItemsCount": 83
+        }
+      ],
+      "captured_items": 83,
+      "valid_reference_items": 83,
+      "unique_references": 83,
+      "invalid_items": [],
+      "status": "ok",
+      "items": [
+        {
+          "id": "97998550-3f02-4665-b84b-29505955ea68",
+          "ref": "9S160106",
+          "name": "9S160106",
+          "title": "9S160106",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_6cee2a672d12418294a7c6afd980b48d~mv2.jpg",
+          "orderIndex": 1753389710974.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "57b42921-d18d-4c18-87a4-8c175c93eba6",
+          "ref": "9S160104",
+          "name": "9S160104",
+          "title": "9S160104",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_9e920591621c4a0cb2e34083e1a10b00~mv2.jpg",
+          "orderIndex": 1753389711074.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "f0f857e8-fb5d-453c-909b-cc52460f86fd",
+          "ref": "9S160105",
+          "name": "9S160105",
+          "title": "9S160105",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_c6fdfd39fa77415bb8523957b460abcf~mv2.jpg",
+          "orderIndex": 1753389711174.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "c76acb8e-8dba-492f-9b6d-35586ee94aae",
+          "ref": "9S160103",
+          "name": "9S160103",
+          "title": "9S160103",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_d23e40616e35459b860414beee6c88a9~mv2.jpg",
+          "orderIndex": 1753389711274.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "39c155ab-f0ea-47bc-ae81-bad51437afcb",
+          "ref": "9S160102",
+          "name": "9S160102",
+          "title": "9S160102",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_80d800257ec84371a08df679b41c7e79~mv2.jpg",
+          "orderIndex": 1753389711374.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "1baa7fff-4bc4-44e7-b9a1-bdb6ca034e3a",
+          "ref": "9S160101",
+          "name": "9S160101",
+          "title": "9S160101",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_361dafade4e4467bb772da41f693bed4~mv2.jpg",
+          "orderIndex": 1753389711474.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "71bed073-8c8b-4289-baa6-45c1195a7d50",
+          "ref": "9S161206",
+          "name": "9S161206",
+          "title": "9S161206",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_a4d8aeb470874368bc5ec42bba3c2b37~mv2.jpg",
+          "orderIndex": 1753389711574.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "1946afdd-08c8-4e86-b253-b6f867f79d45",
+          "ref": "9S161205",
+          "name": "9S161205",
+          "title": "9S161205",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_f1f00ecbe77c4187b1bce200c309cb17~mv2.jpg",
+          "orderIndex": 1753389711674.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "17ca2e39-5bc4-40be-a628-8f01674d0937",
+          "ref": "9S161207",
+          "name": "9S161207",
+          "title": "9S161207",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_0fdba41c7121430fb256952a537011fe~mv2.jpg",
+          "orderIndex": 1753389711774.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "30887299-28c7-4b50-9d9b-a4f7e1530373",
+          "ref": "9S161204",
+          "name": "9S161204",
+          "title": "9S161204",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_69262a52c5034378abcf3e6a6f402743~mv2.jpg",
+          "orderIndex": 1753389711874.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "e47e07ba-938f-447b-a0ab-14658d92b23b",
+          "ref": "9S161203",
+          "name": "9S161203",
+          "title": "9S161203",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_98a9cc453b374debb66e6ba6cf6f6e77~mv2.jpg",
+          "orderIndex": 1753389711974.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "55ed1620-aa5f-40bb-a6a2-d6a0979313c6",
+          "ref": "9S161202",
+          "name": "9S161202",
+          "title": "9S161202",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_04fdd271304d4261a65c7c4cac6add36~mv2.jpg",
+          "orderIndex": 1753389712074.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "04d3a15a-f2c2-4cab-b69c-b176ad457229",
+          "ref": "9S161201",
+          "name": "9S161201",
+          "title": "9S161201",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_7bf4cff40982401d941b39f108b99d56~mv2.jpg",
+          "orderIndex": 1753389712174.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "c8e7fa41-95ce-4d71-ba15-44c69ac5c623",
+          "ref": "9S161104",
+          "name": "9S161104",
+          "title": "9S161104",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_bcf6f258db1942df844513a0821a42cd~mv2.jpg",
+          "orderIndex": 1753389712274.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "06d2079b-d40a-4482-bf6a-e6775bfba533",
+          "ref": "9S161103",
+          "name": "9S161103",
+          "title": "9S161103",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_95dab076c6fb43e2a5dd0c03a897816e~mv2.jpg",
+          "orderIndex": 1753389712374.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "276bfa82-7fdf-48e8-8d53-7c027b287f32",
+          "ref": "9S161102",
+          "name": "9S161102",
+          "title": "9S161102",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_969af05ac69b4da08e9c95562dc0bf77~mv2.jpg",
+          "orderIndex": 1753389712474.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "638250a4-5661-4dcf-a4d2-492ebc85aa0c",
+          "ref": "9S161101",
+          "name": "9S161101",
+          "title": "9S161101",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_c83d65b097354945933371e7ca0d34bc~mv2.jpg",
+          "orderIndex": 1753389712574.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "d9f962f6-adc3-4acc-8621-58edd0225072",
+          "ref": "9S161008",
+          "name": "9S161008",
+          "title": "9S161008",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_70f180592ebc4a1a94a38162d3af49f6~mv2.jpg",
+          "orderIndex": 1753389712674.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "769a5e76-30f5-421e-8984-9f9b2cf45fff",
+          "ref": "9S161007",
+          "name": "9S161007",
+          "title": "9S161007",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_a3876406413e487c84b16b98c21f8216~mv2.jpg",
+          "orderIndex": 1753389712774.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "f2e418c9-6463-47a1-a419-b61d8b663215",
+          "ref": "9S161006",
+          "name": "9S161006",
+          "title": "9S161006",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_873d40907e294fdab11bdd16ba4a8ac5~mv2.jpg",
+          "orderIndex": 1753389712874.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "cad4539b-bfa1-41f1-b9cd-0d7416aa4118",
+          "ref": "9S161005",
+          "name": "9S161005",
+          "title": "9S161005",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_8b1a6677601c4349a7c183ea1942533d~mv2.jpg",
+          "orderIndex": 1753389712974.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "0a0e88ae-60a0-4334-b9c0-9b3fd676e58d",
+          "ref": "9S161004",
+          "name": "9S161004",
+          "title": "9S161004",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_48ac30d21858429baa014eee3822b6d5~mv2.jpg",
+          "orderIndex": 1753389713074.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "2e0fcb9d-9650-49ec-b5b0-e486b08465e7",
+          "ref": "9S161003",
+          "name": "9S161003",
+          "title": "9S161003",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_7c1f2e8e6dca4b23b49c217392e4b54c~mv2.jpg",
+          "orderIndex": 1753389713174.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "0fa2e588-cf57-4c19-aa2a-aee02a4a84b7",
+          "ref": "9S161002",
+          "name": "9S161002",
+          "title": "9S161002",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_cd82a48212114d79a9328b660b1520fb~mv2.jpg",
+          "orderIndex": 1753389713274.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "4ed80de1-d6e8-4efc-83c6-ce803056e8e7",
+          "ref": "9S160905",
+          "name": "9S160905",
+          "title": "9S160905",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_d6b322a9302e43308351f42535769e88~mv2.jpg",
+          "orderIndex": 1753389713374.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "592b2be5-1bab-4d07-9a6d-d7291b4cfa8c",
+          "ref": "9S160904",
+          "name": "9S160904",
+          "title": "9S160904",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_8f5d8fcd322b435fb6476bbba245fc13~mv2.jpg",
+          "orderIndex": 1753389713474.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "47120fc4-3ca4-4891-9b45-86df0fc0e903",
+          "ref": "9S161001",
+          "name": "9S161001",
+          "title": "9S161001",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_436c21a4229e4faa89dff42816bbb55e~mv2.jpg",
+          "orderIndex": 1753389713574.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "57628ab9-6404-4995-bc41-a470441c973e",
+          "ref": "9S160903",
+          "name": "9S160903",
+          "title": "9S160903",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_f954076c621c48c498c81eeda896b556~mv2.jpg",
+          "orderIndex": 1753389713674.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "7dc01ff2-a1cb-4b52-a038-904715b28d7e",
+          "ref": "9S160902",
+          "name": "9S160902",
+          "title": "9S160902",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_818184ac66ad47c5bd521b4e4e915584~mv2.jpg",
+          "orderIndex": 1753389713774.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "5da2dbf0-b2cd-46f9-ac79-fd819529a3c2",
+          "ref": "9S160901",
+          "name": "9S160901",
+          "title": "9S160901",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_9814c809785e49048df8094eebfde636~mv2.jpg",
+          "orderIndex": 1753389713875.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "18689af3-70c9-4f61-9b53-b415c3fa3c09",
+          "ref": "9S160805",
+          "name": "9S160805",
+          "title": "9S160805",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_1207d0e56cb34bb1a46c18d1fc9a0a4c~mv2.jpg",
+          "orderIndex": 1753389713975.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "a1403883-53c6-4eb7-a649-4e874d664bcb",
+          "ref": "9S160804",
+          "name": "9S160804",
+          "title": "9S160804",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_25ca258a82604925a20941c4addd76fa~mv2.jpg",
+          "orderIndex": 1753389714075.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "970e8332-1741-4a91-a359-8c99d499e77f",
+          "ref": "9S160803",
+          "name": "9S160803",
+          "title": "9S160803",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_c517158e6ffe4ea2b3ed96285aed7982~mv2.jpg",
+          "orderIndex": 1753389714175.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "eb515327-5f81-4cea-a90e-8a278c55f2ef",
+          "ref": "9S160802",
+          "name": "9S160802",
+          "title": "9S160802",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_8a69d48bc98b4a45a1923db60181cc80~mv2.jpg",
+          "orderIndex": 1753389714275.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "040c3cfe-ce87-4696-a9c4-3d3c1016d2c6",
+          "ref": "9S160708",
+          "name": "9S160708",
+          "title": "9S160708",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_64fefa75c5054652b0576da841f383bd~mv2.jpg",
+          "orderIndex": 1753389714375.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "420e3ee6-46a1-43d2-8a84-413c3f0d618a",
+          "ref": "9S160801",
+          "name": "9S160801",
+          "title": "9S160801",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_11516e7f3dfd4626be9dc975dd3f5c0b~mv2.jpg",
+          "orderIndex": 1753389714475.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "4e2cdd2d-e19b-44a0-9bfb-3822ffc5afcb",
+          "ref": "9S160707",
+          "name": "9S160707",
+          "title": "9S160707",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_cb5dfd9d6a55434caa1ed7be25da9791~mv2.jpg",
+          "orderIndex": 1753389714575.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "114fb866-cc74-40fb-a36a-095f1b23d6b6",
+          "ref": "9S160706",
+          "name": "9S160706",
+          "title": "9S160706",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_d333ddd43c204025ba44e97bf89538bb~mv2.jpg",
+          "orderIndex": 1753389714675.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "2b218232-f667-485d-891d-ee6bd6909bd0",
+          "ref": "9S160705",
+          "name": "9S160705",
+          "title": "9S160705",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_c377fc1d680e4293a94459c07d8d84b6~mv2.jpg",
+          "orderIndex": 1753389714775.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "08b5f1af-7c25-48a7-a5c0-82c29eb98404",
+          "ref": "9S160704",
+          "name": "9S160704",
+          "title": "9S160704",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_a92742b692514659883be48aa703acf7~mv2.jpg",
+          "orderIndex": 1753389714875.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "2cc1c76d-6daf-4114-9c10-42e86846bf30",
+          "ref": "9S160703",
+          "name": "9S160703",
+          "title": "9S160703",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_1cd97ff9bc414bbfa141549b838177a6~mv2.jpg",
+          "orderIndex": 1753389714975.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "fa6d856e-6675-4017-88bd-cafd34a60c55",
+          "ref": "9S160702",
+          "name": "9S160702",
+          "title": "9S160702",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_8179490e5dab43cea37ef6b25f38ece1~mv2.jpg",
+          "orderIndex": 1753389715075.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "3648af98-52ce-411f-871f-4e7347e85615",
+          "ref": "9S160701",
+          "name": "9S160701",
+          "title": "9S160701",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_1bdcef6b57db45b4aadec55c46886b5e~mv2.jpg",
+          "orderIndex": 1753389715175.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "a42aa5ad-5f63-4201-913a-330f5867f44b",
+          "ref": "9S160609",
+          "name": "9S160609",
+          "title": "9S160609",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_4fe58703cf314c51b70b85d983df014b~mv2.jpg",
+          "orderIndex": 1753389715275.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "f15dd418-e180-404c-b746-048091bb8b3c",
+          "ref": "9S160608",
+          "name": "9S160608",
+          "title": "9S160608",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_a11688501f60443b89be12921a03b791~mv2.jpg",
+          "orderIndex": 1753389715375.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "28176431-f7b1-45a0-ba54-d0713b2ec469",
+          "ref": "9S160607",
+          "name": "9S160607",
+          "title": "9S160607",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_c2fe34e4248e4e78862996c0e6792259~mv2.jpg",
+          "orderIndex": 1753389715475.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "e8e0e026-60e4-4767-acaf-77da8ea743f6",
+          "ref": "9S160606",
+          "name": "9S160606",
+          "title": "9S160606",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_3af6d60a421c42f78da38418641850da~mv2.jpg",
+          "orderIndex": 1753389715575.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "0cbfe870-913f-4013-9921-e7abdc69b658",
+          "ref": "9S160605",
+          "name": "9S160605",
+          "title": "9S160605",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_7679352539704da8a4ddefcdc2805cd0~mv2.jpg",
+          "orderIndex": 1753389715675.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "7febaff8-583f-4f04-bf8d-24fffc1aa580",
+          "ref": "9S160603",
+          "name": "9S160603",
+          "title": "9S160603",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_67b94d4cd91e4b4ca4b4269c89bd64a7~mv2.jpg",
+          "orderIndex": 1753389715775.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "1a3e2468-20a9-4417-93ff-7f2ad36f9921",
+          "ref": "9S160602",
+          "name": "9S160602",
+          "title": "9S160602",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_1bd6456f4ee048188834d084b221453c~mv2.jpg",
+          "orderIndex": 1753389715875.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "9e1a0648-1d45-4242-bfda-31e26e1c9bc2",
+          "ref": "9S160601",
+          "name": "9S160601",
+          "title": "9S160601",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_8064c9cb4b3b4ba79663e3b7ceeabab5~mv2.jpg",
+          "orderIndex": 1753389715975.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "464b9fbe-e498-49ee-ae58-4f5e41bbe1ed",
+          "ref": "9S160506",
+          "name": "9S160506",
+          "title": "9S160506",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_0b3a678738e04e3b8713edb473f6fb56~mv2.jpg",
+          "orderIndex": 1753389716075.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "4e599371-33cc-4f41-be09-d5344cc11b09",
+          "ref": "9S160604",
+          "name": "9S160604",
+          "title": "9S160604",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_3e402837402b4f42bbe58db3300bd94c~mv2.jpg",
+          "orderIndex": 1753389716175.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "3cb67d1a-af2a-4a26-8292-08ca0bf34ba4",
+          "ref": "9S160505",
+          "name": "9S160505",
+          "title": "9S160505",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_0a604911fd654fa6b493fc106fc7c7bb~mv2.jpg",
+          "orderIndex": 1753389716275.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "5b6bebbf-6cc4-4696-91c9-98440eb9d943",
+          "ref": "9S160504",
+          "name": "9S160504",
+          "title": "9S160504",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_62f1bab481dc486e82e75a67546875f0~mv2.jpg",
+          "orderIndex": 1753389716375.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "7ef94a42-7209-4dac-b8ad-1081e4839cf9",
+          "ref": "9S160503",
+          "name": "9S160503",
+          "title": "9S160503",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_83e7428170a646489cd4d4520ed4bc92~mv2.jpg",
+          "orderIndex": 1753389716475.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "c5982037-11c4-481f-86de-69c9e2ee45d9",
+          "ref": "9S160502",
+          "name": "9S160502",
+          "title": "9S160502",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_72fc241b439e44e18534387175e4e130~mv2.jpg",
+          "orderIndex": 1753389716575.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "216c8e71-5801-44b8-91c7-a6af80d9b237",
+          "ref": "9S160501",
+          "name": "9S160501",
+          "title": "9S160501",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_c93d5930fc4d4e038cd6fdc3c08cd14e~mv2.jpg",
+          "orderIndex": 1753389716675.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "95ffd447-bb27-42dd-a64a-565f608ad680",
+          "ref": "9S160403",
+          "name": "9S160403",
+          "title": "9S160403",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_aed1333596154387bde71c2b38bf88f0~mv2.jpg",
+          "orderIndex": 1753389716775.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "43ba96f6-571c-4273-a16a-40dda1cd9fe2",
+          "ref": "9S160402",
+          "name": "9S160402",
+          "title": "9S160402",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_cb134961facc47aea89d562ddf11154a~mv2.jpg",
+          "orderIndex": 1753389716875.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "b8f11a65-9ea8-4bdf-a527-993f654734bd",
+          "ref": "9S160401",
+          "name": "9S160401",
+          "title": "9S160401",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_348743956d04456b9c7864dcd9baf304~mv2.jpg",
+          "orderIndex": 1753389716975.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "43a9287a-ea8a-4781-8104-592fded28ee6",
+          "ref": "9S160304",
+          "name": "9S160304",
+          "title": "9S160304",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_308b67f2d7d14e3db8639f327b86b7e5~mv2.jpg",
+          "orderIndex": 1753389717075.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "1ff2580f-f367-49cf-a309-88c56115d8cd",
+          "ref": "9S160303",
+          "name": "9S160303",
+          "title": "9S160303",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_52fd44cbd84e4db69c3c4c977aebedea~mv2.jpg",
+          "orderIndex": 1753389717175.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "98bdc84d-495d-47a6-aa19-e90973c7f239",
+          "ref": "9S160302",
+          "name": "9S160302",
+          "title": "9S160302",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_7b2ae94c47c2462ea71120e573f2bb23~mv2.jpg",
+          "orderIndex": 1753389717275.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "c13ce6c7-84e9-468b-8c6f-450b8cd42064",
+          "ref": "9S160301",
+          "name": "9S160301",
+          "title": "9S160301",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_4d86115b4cc747c79ea84d0ea79ff148~mv2.jpg",
+          "orderIndex": 1753389717375.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "96ffd3de-7938-42a4-b889-0530de11b414",
+          "ref": "9S160213",
+          "name": "9S160213",
+          "title": "9S160213",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_250347d56b0d46fab801dd54896bc24e~mv2.jpg",
+          "orderIndex": 1753389717475.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "d7497202-1d06-4008-b7fc-9a20f7a3bcf3",
+          "ref": "9S160214",
+          "name": "9S160214",
+          "title": "9S160214",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_0c6f5baddb744da9a7f1bd8f12159ee7~mv2.jpg",
+          "orderIndex": 1753389717575.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "3af9c458-7d5f-4cbe-a7bd-9e4accef448f",
+          "ref": "9S160212",
+          "name": "9S160212",
+          "title": "9S160212",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_357d2ccd48d34737acb163fc5dfdeb33~mv2.jpg",
+          "orderIndex": 1753389717675.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "c1da6873-f84c-447e-9368-bafd90af9cda",
+          "ref": "9S160211",
+          "name": "9S160211",
+          "title": "9S160211",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_250d48202ea64632ba0ecde3b2f6e00d~mv2.jpg",
+          "orderIndex": 1753389717775.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "73b7210a-6275-4571-8bfd-4923c21a3889",
+          "ref": "9S160209",
+          "name": "9S160209",
+          "title": "9S160209",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_21e25991b94a4bc09dc77dd1e1a22b87~mv2.jpg",
+          "orderIndex": 1753389717875.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "a936c395-aa8f-4816-8c0a-10fc4879d310",
+          "ref": "9S160210",
+          "name": "9S160210",
+          "title": "9S160210",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_9c0c786fe42444e48a2230d0c8059883~mv2.jpg",
+          "orderIndex": 1753389717975.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "35b5a50b-a0e9-4dd2-82c6-d2bd75ada31d",
+          "ref": "9S160208",
+          "name": "9S160208",
+          "title": "9S160208",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_62a6af4f4bb64b40a5553a04c2006e76~mv2.jpg",
+          "orderIndex": 1753389718075.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "d4e15306-b612-49ba-b7da-aeac420fa445",
+          "ref": "9S160207",
+          "name": "9S160207",
+          "title": "9S160207",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_06dc1193ad8a4f999de5170a58767ac8~mv2.jpg",
+          "orderIndex": 1753389718175.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "dbeb47d5-7c76-4a48-b5bf-1ba70001da7e",
+          "ref": "9S160206",
+          "name": "9S160206",
+          "title": "9S160206",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_b157c22fcbbc42eaaffd11b97be326b2~mv2.jpg",
+          "orderIndex": 1753389718275.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "97c79a9a-f8d2-469c-8dce-3731a2771933",
+          "ref": "9S160205",
+          "name": "9S160205",
+          "title": "9S160205",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_89b2630e2d704756afddc23f02f3d349~mv2.jpg",
+          "orderIndex": 1753389718375.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "256c069c-b812-40fa-9f33-1c5e33510111",
+          "ref": "9S160204",
+          "name": "9S160204",
+          "title": "9S160204",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_a91400e5c4ce45c5bcbbba3c085c6ce8~mv2.jpg",
+          "orderIndex": 1753389718475.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "ddbf2b98-21d0-4348-96b5-3d3c230c1a6f",
+          "ref": "9S160203",
+          "name": "9S160203",
+          "title": "9S160203",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_7edb8be6441e4bc4b2f7cfe98d1e1322~mv2.jpg",
+          "orderIndex": 1753389718575.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "07addcb6-4765-4e14-b6db-a4bc92c101ed",
+          "ref": "9S160202",
+          "name": "9S160202",
+          "title": "9S160202",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_9823a6807a9b48c4b3e6a8bed8d4f646~mv2.jpg",
+          "orderIndex": 1753389718675.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "94e9bb88-27f2-4df3-9235-aaf6252cfc6b",
+          "ref": "9S160201",
+          "name": "9S160201",
+          "title": "9S160201",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_7a9415710fcb44aaa0690fd5ae113827~mv2.jpg",
+          "orderIndex": 1753389718775.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "1d9d83fb-feea-44a6-aaa1-5dc4f74c06a5",
+          "ref": "9S160110",
+          "name": "9S160110",
+          "title": "9S160110",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_eaec382f7599420e8a93f9b84a515c58~mv2.jpg",
+          "orderIndex": 1753389718875.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "318782ec-2628-4f5d-b6e5-e6bfadab70b9",
+          "ref": "9S160109",
+          "name": "9S160109",
+          "title": "9S160109",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_bafcd175ff4d4e9597e6dd4fed30079e~mv2.jpg",
+          "orderIndex": 1753389718975.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "6108c014-40b1-4b22-84c3-82e09362eed3",
+          "ref": "9S160108",
+          "name": "9S160108",
+          "title": "9S160108",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_f9d328504f954057a1248c2f8c3dee24~mv2.jpg",
+          "orderIndex": 1753389719075.0,
+          "dataType": "Photo"
+        },
+        {
+          "id": "ba34ffe1-c270-42d5-9b3e-039c90d8450f",
+          "ref": "9S160107",
+          "name": "9S160107",
+          "title": "9S160107",
+          "mediaUrl": "https://static.wixstatic.com/media/3a4455_c25a9bd1642d4733b6e5833277a3ec74~mv2.jpg",
+          "orderIndex": 1753389719175.0,
+          "dataType": "Photo"
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "name": "Aditare 3",
+      "expected": 81,
+      "declared_total": 81,
+      "captured_items": 81,
+      "valid_reference_items": 81,
+      "invalid_items": 0,
+      "status": "ok"
+    },
+    {
+      "name": "Criativo 3",
+      "expected": 89,
+      "declared_total": 89,
+      "captured_items": 89,
+      "valid_reference_items": 89,
+      "invalid_items": 0,
+      "status": "ok"
+    },
+    {
+      "name": "Poet Chart 5",
+      "expected": 78,
+      "declared_total": 78,
+      "captured_items": 78,
+      "valid_reference_items": 78,
+      "invalid_items": 0,
+      "status": "ok"
+    },
+    {
+      "name": "Space IX",
+      "expected": 83,
+      "declared_total": 83,
+      "captured_items": 83,
+      "valid_reference_items": 83,
+      "invalid_items": 0,
+      "status": "ok"
+    }
+  ],
+  "all_ok": true
+}
