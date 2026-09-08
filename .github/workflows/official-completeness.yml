@@ -62,5 +62,6 @@ jobs:
             echo "Official audit unchanged"
           else
             git commit -m "Refresh official catalog completeness audit"
-            git push
+            git pull --rebase origin main
+            git push origin main
           fi
