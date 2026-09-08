@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/repair-catalog.yml'
       - 'scripts/repair_catalog.py'
+      - 'scripts/harden_external_images.py'
   workflow_dispatch:
 
 permissions:
@@ -59,6 +60,9 @@ jobs:
 
       - name: Repair catalog references and audit
         run: python scripts/repair_catalog.py
+
+      - name: Protect official external images from hotlink blocking
+        run: python scripts/harden_external_images.py
 
       - name: Commit repaired catalog
         shell: bash
