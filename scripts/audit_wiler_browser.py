@@ -21,7 +21,7 @@ COLLECTIONS = {
 
 REF_PATTERNS = {
     "Bambine": re.compile(r"\b(BA-?\d{3,6})\b", re.I),
-    "Tacto": re.compile(r"\b(TA-?\d{3,6}(?:-\d{1,3})?)\b", re.I),
+    "Tacto": re.compile(r"\b(TAC-[A-Z0-9-]+)\b", re.I),
     "Texture II": re.compile(r"\b(TX-?2\d{3,5})\b", re.I),
     "Texture III": re.compile(r"\b(TX-?3\d{3,5}|TX3-?\d{2,6})\b", re.I),
     "Tramas": re.compile(r"\b(TR-?\d{3,6}|YS-?\d{5,9})\b", re.I),
@@ -83,7 +83,6 @@ def main() -> None:
                     url = url_for(slug, page_number)
                     response = page.goto(url, wait_until="domcontentloaded", timeout=30000)
                     page.wait_for_timeout(5500)
-                    # Algumas vitrines só montam todos os cards após entrar no viewport.
                     for _ in range(4):
                         page.mouse.wheel(0, 2200)
                         page.wait_for_timeout(500)
@@ -97,7 +96,6 @@ def main() -> None:
 
                     counts = [int(x) for x in COUNT_RE.findall(body)]
                     if page_number == 1 and counts:
-                        # Ignora zeros de componentes auxiliares e usa a maior contagem visível.
                         official_total = max(counts)
 
                     pages.append({
@@ -122,7 +120,22 @@ def main() -> None:
             cat_norm = {norm(r): r for r in catalog_refs if norm(r)}
             missing = [off_norm[k] for k in sorted(set(off_norm) - set(cat_norm))]
             not_active = [cat_norm[k] for k in sorted(set(cat_norm) - set(off_norm))]
-            extraction_complete = bool(official_total) and len(official_refs) >= official_total
+
+            # Só declaramos a extração completa quando a quantidade de referências
+            # recuperadas bate EXATAMENTE com a contagem exibida pela própria Wiler.
+            # Acima do total também é inconsistência, pois pode indicar falso positivo.
+            extraction_complete = official_total is not None and official_total > 0 and len(official_refs) == official_total
+            if not extraction_complete:
+                not_active = []
+
+            if extraction_complete:
+                status = "ok"
+            elif official_total and official_refs:
+                status = "inconsistente_contagem"
+            elif official_refs:
+                status = "parcial"
+            else:
+                status = "fonte_nao_localizada"
 
             output.append({
                 "colecao": collection,
@@ -131,13 +144,14 @@ def main() -> None:
                 "catalogo_total": len(catalog_refs),
                 "refs_ativas_extraidas": len(official_refs),
                 "extracao_ativa_completa": extraction_complete,
-                "faltantes_ativos_confirmados": missing,
-                "catalogo_nao_encontrado_na_vitrine_ativa": not_active if extraction_complete else [],
+                "faltantes_ativos_confirmados": missing if extraction_complete else [],
+                "faltantes_observados_na_extracao_incompleta": missing if not extraction_complete else [],
+                "catalogo_nao_encontrado_na_vitrine_ativa": not_active,
                 "observacao_catalogo_nao_ativo": "Itens não encontrados na vitrine ativa NÃO são candidatos automáticos a remoção; podem ser referências históricas/válidas do book.",
                 "refs_ativas": sorted(official_refs),
                 "paginas": pages,
                 "erro": error,
-                "status": "ok" if extraction_complete else ("parcial" if official_refs else "erro"),
+                "status": status,
             })
 
         browser.close()
@@ -145,7 +159,7 @@ def main() -> None:
     report = {
         "fonte": "Wiler — vitrine oficial pública em navegador real",
         "dominio_oficial": "https://www.wiler.com.br/",
-        "criterio": "Percorre a paginação renderizada das cinco coleções. A vitrine ativa é usada para detectar referências ativas faltantes no catálogo. Referências do catálogo ausentes na vitrine não são removidas automaticamente.",
+        "criterio": "Percorre a paginação renderizada das cinco coleções. Só confirma completude quando refs extraídas = total oficial. A vitrine ativa detecta faltantes ativos, mas nunca autoriza remover automaticamente referências históricas do catálogo.",
         "colecoes": output,
         "resumo": {
             "catalogo_total_wiler": sum(x["catalogo_total"] for x in output),
@@ -153,7 +167,7 @@ def main() -> None:
             "refs_ativas_extraidas": sum(x["refs_ativas_extraidas"] for x in output),
             "faltantes_ativos_confirmados": sum(len(x["faltantes_ativos_confirmados"]) for x in output),
             "colecoes_extracao_completa": sum(1 for x in output if x["extracao_ativa_completa"]),
-            "colecoes_parciais_ou_erro": [x["colecao"] for x in output if not x["extracao_ativa_completa"]],
+            "colecoes_nao_validadas": [x["colecao"] for x in output if not x["extracao_ativa_completa"]],
         },
     }
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
