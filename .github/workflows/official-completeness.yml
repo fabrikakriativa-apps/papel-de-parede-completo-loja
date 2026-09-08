@@ -8,6 +8,7 @@ on:
       - 'scripts/diagnose_homefinish_endpoints.py'
       - 'scripts/diagnose_wiler_official.py'
       - 'scripts/diagnose_wiler_vtex.py'
+      - 'scripts/summarize_wiler_network.py'
       - 'scripts/audit_wiler_official.py'
       - '.github/workflows/official-completeness.yml'
   workflow_dispatch:
@@ -46,6 +47,10 @@ jobs:
         continue-on-error: true
         run: python scripts/diagnose_wiler_vtex.py
 
+      - name: Summarize Wiler storefront data endpoints
+        continue-on-error: true
+        run: python scripts/summarize_wiler_network.py
+
       - name: Audit Wiler against official collections
         continue-on-error: true
         run: python scripts/audit_wiler_official.py
@@ -55,7 +60,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in auditoria-homefinish-oficial.json diagnostico-homefinish-endpoints.json diagnostico-wiler-oficial.json diagnostico-wiler-vtex.json auditoria-wiler-oficial.json; do
+          for f in auditoria-homefinish-oficial.json diagnostico-homefinish-endpoints.json diagnostico-wiler-oficial.json diagnostico-wiler-vtex.json diagnostico-wiler-api-resumo.json auditoria-wiler-oficial.json; do
             [ -f "$f" ] && git add "$f"
           done
           if git diff --cached --quiet; then
