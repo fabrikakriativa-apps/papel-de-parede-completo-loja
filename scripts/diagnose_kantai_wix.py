@@ -10,12 +10,24 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "diagnostico-kantai.json"
 URL = "https://www.kantai.com.br/aditare3"
 REF_RE = re.compile(r"\bAD3\d{5}R\b", re.I)
-BROAD_RE = re.compile(r"\bAD[A-Z0-9-]{5,14}\b", re.I)
+
+
+def extract_gallery_objects(obj):
+    found = []
+    if isinstance(obj, dict):
+        if isinstance(obj.get("gallery"), dict) and isinstance(obj["gallery"].get("items"), list):
+            found.append(obj["gallery"])
+        for v in obj.values():
+            found.extend(extract_gallery_objects(v))
+    elif isinstance(obj, list):
+        for v in obj:
+            found.extend(extract_gallery_objects(v))
+    return found
 
 
 async def main():
-    network = []
     refs_network = set()
+    gallery_responses = []
 
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
@@ -23,111 +35,78 @@ async def main():
 
         async def inspect_response(response):
             req = response.request
-            url = response.url
             rtype = req.resource_type
-            if rtype not in {"xhr", "fetch", "document", "script"}:
+            if rtype not in {"xhr", "fetch", "document"}:
                 return
             try:
-                ctype = (await response.all_headers()).get("content-type", "")
+                headers = await response.all_headers()
+                ctype = headers.get("content-type", "")
+                if "json" not in ctype and rtype not in {"xhr", "fetch"}:
+                    return
+                body = await response.text()
             except Exception:
-                ctype = ""
-            interesting = any(token in url.lower() for token in (
-                "wix", "data", "query", "collection", "dataset", "cloud", "_api"
-            )) or rtype in {"xhr", "fetch"}
-            if not interesting:
                 return
-            entry = {
-                "url": url[:1000],
-                "method": req.method,
-                "resource_type": rtype,
-                "content_type": ctype,
-                "post_data": (req.post_data or "")[:12000],
-                "status": response.status,
-            }
+
+            refs = sorted(set(x.upper() for x in REF_RE.findall(body)))
+            refs_network.update(refs)
+
             try:
-                if "json" in ctype or "text" in ctype or rtype in {"xhr", "fetch"}:
-                    body = await response.text()
-                    refs = sorted(set(x.upper() for x in REF_RE.findall(body)))
-                    if refs:
-                        refs_network.update(refs)
-                        entry["refs"] = refs
-                        entry["body_excerpt"] = body[:24000]
-            except Exception as exc:
-                entry["body_error"] = f"{type(exc).__name__}: {exc}"
-            network.append(entry)
+                parsed = json.loads(body)
+            except Exception:
+                return
+
+            for gallery in extract_gallery_objects(parsed):
+                items = []
+                for it in gallery.get("items", []):
+                    if not isinstance(it, dict):
+                        continue
+                    items.append({
+                        "id": it.get("id"),
+                        "name": it.get("name"),
+                        "title": it.get("title"),
+                        "mediaUrl": it.get("mediaUrl"),
+                        "orderIndex": it.get("orderIndex"),
+                        "dataType": it.get("dataType"),
+                    })
+                gallery_responses.append({
+                    "response_url": response.url,
+                    "gallery_id": gallery.get("id"),
+                    "totalItemsCount": gallery.get("totalItemsCount"),
+                    "items_count": len(items),
+                    "items": items,
+                })
 
         page.on("response", inspect_response)
         await page.goto(URL, wait_until="domcontentloaded", timeout=90000)
         await page.wait_for_timeout(8000)
-
         for _ in range(28):
             await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             await page.wait_for_timeout(600)
 
         body_text = await page.locator("body").inner_text()
         refs_dom = sorted(set(x.upper() for x in REF_RE.findall(body_text)))
-        broad_tokens = sorted(set(x.upper() for x in BROAD_RE.findall(body_text)))
-
-        # For each exact reference text element, walk upward until an ancestor with an image is found.
-        cards = await page.evaluate("""
-        () => {
-          const re = /^AD3\\d{5}R$/i;
-          const all = [...document.querySelectorAll('body *')];
-          const out = [];
-          const seen = new Set();
-          for (const el of all) {
-            const text = (el.textContent || '').trim();
-            if (!re.test(text)) continue;
-            if ([...el.children].some(c => re.test((c.textContent || '').trim()))) continue;
-            let cur = el;
-            let holder = null;
-            for (let i=0; i<7 && cur; i++, cur=cur.parentElement) {
-              const imgs = cur.querySelectorAll ? cur.querySelectorAll('img') : [];
-              if (imgs && imgs.length) { holder = cur; break; }
-            }
-            if (!holder) continue;
-            const imgs = [...holder.querySelectorAll('img')].map(img => ({
-              src: img.currentSrc || img.src || '',
-              alt: img.alt || '',
-              title: img.title || '',
-              width: img.naturalWidth || 0,
-              height: img.naturalHeight || 0
-            }));
-            const key = text.toUpperCase();
-            if (seen.has(key)) continue;
-            seen.add(key);
-            out.push({
-              ref: key,
-              tag: el.tagName,
-              holder_tag: holder.tagName,
-              holder_class: holder.className || '',
-              holder_text: (holder.innerText || '').trim().slice(0,500),
-              imgs,
-              holder_html: holder.outerHTML.slice(0,5000)
-            });
-          }
-          return out;
-        }
-        """)
-
-        # All image metadata whose URL/alt/title hints at Aditare or AD3, useful for spotting unmatched items.
-        ad_images = await page.locator('img').evaluate_all("""
-        imgs => imgs.map((img, i) => ({
-          i,
-          src: img.currentSrc || img.src || '',
-          alt: img.alt || '',
-          title: img.title || '',
-          width: img.naturalWidth || 0,
-          height: img.naturalHeight || 0
-        })).filter(x => /adit|ad3|ADIT|AD3/.test((x.src+' '+x.alt+' '+x.title)))
-        """)
-
         html = await page.content()
         refs_html = sorted(set(x.upper() for x in REF_RE.findall(html)))
-        broad_html = sorted(set(x.upper() for x in BROAD_RE.findall(html)))
         await browser.close()
 
-    focused_network = [x for x in network if x.get("refs") or x["resource_type"] in {"xhr", "fetch"}]
+    # Merge gallery items by stable id/media/name across all public responses.
+    merged = {}
+    totals = []
+    for response in gallery_responses:
+        if response.get("totalItemsCount") is not None:
+            totals.append(response["totalItemsCount"])
+        for item in response["items"]:
+            key = item.get("id") or item.get("mediaUrl") or item.get("name") or item.get("title")
+            if key:
+                merged[key] = item
+
+    gallery_items = sorted(
+        merged.values(),
+        key=lambda x: (x.get("orderIndex") is None, x.get("orderIndex") or 0, x.get("name") or "")
+    )
+    matching = [x for x in gallery_items if REF_RE.search((x.get("title") or "") + " " + (x.get("name") or ""))]
+    nonmatching = [x for x in gallery_items if x not in matching]
+
     report = {
         "url": URL,
         "refs_dom_count": len(refs_dom),
@@ -136,21 +115,23 @@ async def main():
         "refs_html": refs_html,
         "refs_network_count": len(refs_network),
         "refs_network": sorted(refs_network),
-        "broad_tokens_dom": broad_tokens,
-        "broad_tokens_html": broad_html,
-        "cards_count": len(cards),
-        "cards": cards,
-        "ad_images_count": len(ad_images),
-        "ad_images": ad_images,
-        "network": focused_network[:160],
+        "gallery_total_reported": max(totals) if totals else None,
+        "gallery_response_count": len(gallery_responses),
+        "gallery_responses": gallery_responses,
+        "gallery_items_merged_count": len(gallery_items),
+        "gallery_items_merged": gallery_items,
+        "gallery_matching_ref_count": len(matching),
+        "gallery_nonmatching_count": len(nonmatching),
+        "gallery_nonmatching": nonmatching,
     }
     OUT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps({
         "refs_dom_count": len(refs_dom),
         "refs_network_count": len(refs_network),
-        "broad_tokens_dom": broad_tokens,
-        "cards_count": len(cards),
-        "ad_images_count": len(ad_images),
+        "gallery_total_reported": report["gallery_total_reported"],
+        "gallery_items_merged_count": len(gallery_items),
+        "gallery_matching_ref_count": len(matching),
+        "gallery_nonmatching": [x.get("name") or x.get("title") for x in nonmatching],
     }, ensure_ascii=False))
 
 
