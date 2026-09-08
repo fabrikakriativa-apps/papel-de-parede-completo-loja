@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/audit_homefinish_official.py'
+      - 'scripts/diagnose_homefinish_endpoints.py'
       - 'scripts/diagnose_wiler_official.py'
       - 'scripts/diagnose_wiler_vtex.py'
       - 'scripts/audit_wiler_official.py'
@@ -29,6 +30,9 @@ jobs:
           python -m pip install --quiet playwright
           python -m playwright install chromium --with-deps
 
+      - name: Probe Home Finish structured official endpoints
+        run: python scripts/diagnose_homefinish_endpoints.py
+
       - name: Audit Home Finish against official collections
         run: python scripts/audit_homefinish_official.py
 
@@ -46,7 +50,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add auditoria-homefinish-oficial.json diagnostico-wiler-oficial.json diagnostico-wiler-vtex.json auditoria-wiler-oficial.json
+          git add auditoria-homefinish-oficial.json diagnostico-homefinish-endpoints.json diagnostico-wiler-oficial.json diagnostico-wiler-vtex.json auditoria-wiler-oficial.json
           if git diff --cached --quiet; then
             echo "Official audit unchanged"
           else
