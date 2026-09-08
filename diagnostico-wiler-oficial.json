@@ -10,8 +10,8 @@
           "url_final": "https://www.wiler.com.br/harmony-iii-5",
           "titulo": "",
           "produtos_encontrados": null,
-          "contem_nome_colecao": false,
-          "erro": null
+          "erro": null,
+          "contem_nome_colecao": false
         },
         {
           "url": "https://www.wiler.com.br/harmony-iii",
@@ -19,8 +19,8 @@
           "url_final": "https://www.wiler.com.br/harmony-iii",
           "titulo": "",
           "produtos_encontrados": null,
-          "contem_nome_colecao": false,
-          "erro": null
+          "erro": null,
+          "contem_nome_colecao": false
         },
         {
           "url": "https://www.wiler.com.br/colecao/harmony-iii",
@@ -28,8 +28,8 @@
           "url_final": "https://www.wiler.com.br/colecao/harmony-iii",
           "titulo": "",
           "produtos_encontrados": null,
-          "contem_nome_colecao": false,
-          "erro": "HTTPError: HTTP Error 404: Not Found"
+          "erro": "HTTPError: HTTP Error 404: Not Found",
+          "contem_nome_colecao": false
         }
       ]
     },
@@ -42,8 +42,8 @@
           "url_final": "https://www.wiler.com.br/nickal",
           "titulo": "",
           "produtos_encontrados": null,
-          "contem_nome_colecao": false,
-          "erro": null
+          "erro": null,
+          "contem_nome_colecao": false
         },
         {
           "url": "https://www.wiler.com.br/colecao/nickal",
@@ -51,8 +51,8 @@
           "url_final": "https://www.wiler.com.br/colecao/nickal",
           "titulo": "",
           "produtos_encontrados": null,
-          "contem_nome_colecao": false,
-          "erro": "HTTPError: HTTP Error 404: Not Found"
+          "erro": "HTTPError: HTTP Error 404: Not Found",
+          "contem_nome_colecao": false
         },
         {
           "url": "https://www.wiler.com.br/nickal-5",
@@ -60,8 +60,8 @@
           "url_final": "https://www.wiler.com.br/nickal-5",
           "titulo": "",
           "produtos_encontrados": null,
-          "contem_nome_colecao": false,
-          "erro": null
+          "erro": null,
+          "contem_nome_colecao": false
         }
       ]
     },
@@ -74,8 +74,8 @@
           "url_final": "https://www.wiler.com.br/pure-nature",
           "titulo": "",
           "produtos_encontrados": null,
-          "contem_nome_colecao": false,
-          "erro": null
+          "erro": null,
+          "contem_nome_colecao": false
         },
         {
           "url": "https://www.wiler.com.br/colecao/pure-nature",
@@ -83,8 +83,8 @@
           "url_final": "https://www.wiler.com.br/colecao/pure-nature",
           "titulo": "",
           "produtos_encontrados": null,
-          "contem_nome_colecao": false,
-          "erro": "HTTPError: HTTP Error 404: Not Found"
+          "erro": "HTTPError: HTTP Error 404: Not Found",
+          "contem_nome_colecao": false
         },
         {
           "url": "https://www.wiler.com.br/pure-nature-5",
@@ -92,8 +92,8 @@
           "url_final": "https://www.wiler.com.br/pure-nature-5",
           "titulo": "",
           "produtos_encontrados": null,
-          "contem_nome_colecao": false,
-          "erro": null
+          "erro": null,
+          "contem_nome_colecao": false
         }
       ]
     },
@@ -106,8 +106,8 @@
           "url_final": "https://www.wiler.com.br/pure-nature-ii",
           "titulo": "",
           "produtos_encontrados": null,
-          "contem_nome_colecao": false,
-          "erro": null
+          "erro": null,
+          "contem_nome_colecao": false
         },
         {
           "url": "https://www.wiler.com.br/colecao/pure-nature-ii",
@@ -115,8 +115,8 @@
           "url_final": "https://www.wiler.com.br/colecao/pure-nature-ii",
           "titulo": "",
           "produtos_encontrados": null,
-          "contem_nome_colecao": false,
-          "erro": "HTTPError: HTTP Error 404: Not Found"
+          "erro": "HTTPError: HTTP Error 404: Not Found",
+          "contem_nome_colecao": false
         },
         {
           "url": "https://www.wiler.com.br/pure-nature-ii-5",
@@ -124,8 +124,8 @@
           "url_final": "https://www.wiler.com.br/pure-nature-ii-5",
           "titulo": "",
           "produtos_encontrados": null,
-          "contem_nome_colecao": false,
-          "erro": null
+          "erro": null,
+          "contem_nome_colecao": false
         }
       ]
     },
@@ -138,8 +138,8 @@
           "url_final": "https://www.wiler.com.br/wallstreet",
           "titulo": "",
           "produtos_encontrados": null,
-          "contem_nome_colecao": false,
-          "erro": null
+          "erro": null,
+          "contem_nome_colecao": false
         },
         {
           "url": "https://www.wiler.com.br/wall-street",
@@ -147,8 +147,8 @@
           "url_final": "https://www.wiler.com.br/wall-street",
           "titulo": "",
           "produtos_encontrados": null,
-          "contem_nome_colecao": false,
-          "erro": null
+          "erro": null,
+          "contem_nome_colecao": false
         },
         {
           "url": "https://www.wiler.com.br/colecao/wallstreet",
@@ -156,8 +156,8 @@
           "url_final": "https://www.wiler.com.br/colecao/wallstreet",
           "titulo": "",
           "produtos_encontrados": null,
-          "contem_nome_colecao": false,
-          "erro": "HTTPError: HTTP Error 404: Not Found"
+          "erro": "HTTPError: HTTP Error 404: Not Found",
+          "contem_nome_colecao": false
         },
         {
           "url": "https://www.wiler.com.br/wallstreet-5",
@@ -165,11 +165,11 @@
           "url_final": "https://www.wiler.com.br/wallstreet-5",
           "titulo": "",
           "produtos_encontrados": null,
-          "contem_nome_colecao": false,
-          "erro": null
+          "erro": null,
+          "contem_nome_colecao": false
         }
       ]
     }
   ],
-  "criterio": "Sondagem de rotas públicas oficiais para localizar a fonte adequada de cada coleção. Não altera o catálogo."
+  "criterio": "Sondagem concorrente de rotas públicas oficiais para localizar a fonte adequada de cada coleção. Não altera o catálogo."
 }
