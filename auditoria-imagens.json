@@ -1,0 +1,853 @@
+{
+  "itens_catalogo": 975,
+  "referencias_imagem": 1950,
+  "correcoes_aplicadas": 0,
+  "faltantes_locais_apos_correcao": 0,
+  "externas_apos_correcao": 56,
+  "correcoes": [],
+  "nao_resolvidos": [
+    {
+      "codigo": "FK-0102",
+      "ref": "BH101041",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101041.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0102",
+      "ref": "BH101041",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101041.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0103",
+      "ref": "BH101042",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101042.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0103",
+      "ref": "BH101042",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101042.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0104",
+      "ref": "BH101043",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101043.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0104",
+      "ref": "BH101043",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101043.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0105",
+      "ref": "BH101044",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101044.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0105",
+      "ref": "BH101044",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101044.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0106",
+      "ref": "BH101036",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101036.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0106",
+      "ref": "BH101036",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101036.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0107",
+      "ref": "BH101016",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101016.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0107",
+      "ref": "BH101016",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101016.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0112",
+      "ref": "BH101014",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101014.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0112",
+      "ref": "BH101014",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101014.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0113",
+      "ref": "BH101022",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101022.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0113",
+      "ref": "BH101022",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101022.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0114",
+      "ref": "BH101019",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101019.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0114",
+      "ref": "BH101019",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101019.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0115",
+      "ref": "BH101020",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101020.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0115",
+      "ref": "BH101020",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101020.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0116",
+      "ref": "BH101011",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101011.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0116",
+      "ref": "BH101011",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101011.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0117",
+      "ref": "BH101010",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101010.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0117",
+      "ref": "BH101010",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101010.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0118",
+      "ref": "BH101038",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101038.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0118",
+      "ref": "BH101038",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101038.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0119",
+      "ref": "BH101032",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101032.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0119",
+      "ref": "BH101032",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101032.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0120",
+      "ref": "BH101033",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101033.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0120",
+      "ref": "BH101033",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101033.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0121",
+      "ref": "BH101034",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101034.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0121",
+      "ref": "BH101034",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101034.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0122",
+      "ref": "BH101035",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101035.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0122",
+      "ref": "BH101035",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101035.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0123",
+      "ref": "BH101029",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101029.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0123",
+      "ref": "BH101029",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101029.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0125",
+      "ref": "BH101030",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101030.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0125",
+      "ref": "BH101030",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101030.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0126",
+      "ref": "BH101028",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101028.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0126",
+      "ref": "BH101028",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101028.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0127",
+      "ref": "BH101027",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101027.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0127",
+      "ref": "BH101027",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101027.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0128",
+      "ref": "BH101026",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101026.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0128",
+      "ref": "BH101026",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101026.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0129",
+      "ref": "BH101025",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101025.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0129",
+      "ref": "BH101025",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101025.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0130",
+      "ref": "BH101018",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101018.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0130",
+      "ref": "BH101018",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101018.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0132",
+      "ref": "BH101040",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101040.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0132",
+      "ref": "BH101040",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101040.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0133",
+      "ref": "BH101039",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101039.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0133",
+      "ref": "BH101039",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101039.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0134",
+      "ref": "BH101045",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101045.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0134",
+      "ref": "BH101045",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101045.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0135",
+      "ref": "BH101046",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101046.jpg",
+      "motivo": "nao_encontrado"
+    },
+    {
+      "codigo": "FK-0135",
+      "ref": "BH101046",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101046.jpg",
+      "motivo": "nao_encontrado"
+    }
+  ],
+  "faltantes_locais": [],
+  "externas": [
+    {
+      "codigo": "FK-0102",
+      "ref": "BH101041",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101041.jpg"
+    },
+    {
+      "codigo": "FK-0102",
+      "ref": "BH101041",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101041.jpg"
+    },
+    {
+      "codigo": "FK-0103",
+      "ref": "BH101042",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101042.jpg"
+    },
+    {
+      "codigo": "FK-0103",
+      "ref": "BH101042",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101042.jpg"
+    },
+    {
+      "codigo": "FK-0104",
+      "ref": "BH101043",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101043.jpg"
+    },
+    {
+      "codigo": "FK-0104",
+      "ref": "BH101043",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101043.jpg"
+    },
+    {
+      "codigo": "FK-0105",
+      "ref": "BH101044",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101044.jpg"
+    },
+    {
+      "codigo": "FK-0105",
+      "ref": "BH101044",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101044.jpg"
+    },
+    {
+      "codigo": "FK-0106",
+      "ref": "BH101036",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101036.jpg"
+    },
+    {
+      "codigo": "FK-0106",
+      "ref": "BH101036",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101036.jpg"
+    },
+    {
+      "codigo": "FK-0107",
+      "ref": "BH101016",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101016.jpg"
+    },
+    {
+      "codigo": "FK-0107",
+      "ref": "BH101016",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101016.jpg"
+    },
+    {
+      "codigo": "FK-0112",
+      "ref": "BH101014",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101014.jpg"
+    },
+    {
+      "codigo": "FK-0112",
+      "ref": "BH101014",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101014.jpg"
+    },
+    {
+      "codigo": "FK-0113",
+      "ref": "BH101022",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101022.jpg"
+    },
+    {
+      "codigo": "FK-0113",
+      "ref": "BH101022",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101022.jpg"
+    },
+    {
+      "codigo": "FK-0114",
+      "ref": "BH101019",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101019.jpg"
+    },
+    {
+      "codigo": "FK-0114",
+      "ref": "BH101019",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101019.jpg"
+    },
+    {
+      "codigo": "FK-0115",
+      "ref": "BH101020",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101020.jpg"
+    },
+    {
+      "codigo": "FK-0115",
+      "ref": "BH101020",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101020.jpg"
+    },
+    {
+      "codigo": "FK-0116",
+      "ref": "BH101011",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101011.jpg"
+    },
+    {
+      "codigo": "FK-0116",
+      "ref": "BH101011",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101011.jpg"
+    },
+    {
+      "codigo": "FK-0117",
+      "ref": "BH101010",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101010.jpg"
+    },
+    {
+      "codigo": "FK-0117",
+      "ref": "BH101010",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101010.jpg"
+    },
+    {
+      "codigo": "FK-0118",
+      "ref": "BH101038",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101038.jpg"
+    },
+    {
+      "codigo": "FK-0118",
+      "ref": "BH101038",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101038.jpg"
+    },
+    {
+      "codigo": "FK-0119",
+      "ref": "BH101032",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101032.jpg"
+    },
+    {
+      "codigo": "FK-0119",
+      "ref": "BH101032",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101032.jpg"
+    },
+    {
+      "codigo": "FK-0120",
+      "ref": "BH101033",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101033.jpg"
+    },
+    {
+      "codigo": "FK-0120",
+      "ref": "BH101033",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101033.jpg"
+    },
+    {
+      "codigo": "FK-0121",
+      "ref": "BH101034",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101034.jpg"
+    },
+    {
+      "codigo": "FK-0121",
+      "ref": "BH101034",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101034.jpg"
+    },
+    {
+      "codigo": "FK-0122",
+      "ref": "BH101035",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101035.jpg"
+    },
+    {
+      "codigo": "FK-0122",
+      "ref": "BH101035",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101035.jpg"
+    },
+    {
+      "codigo": "FK-0123",
+      "ref": "BH101029",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101029.jpg"
+    },
+    {
+      "codigo": "FK-0123",
+      "ref": "BH101029",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101029.jpg"
+    },
+    {
+      "codigo": "FK-0125",
+      "ref": "BH101030",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101030.jpg"
+    },
+    {
+      "codigo": "FK-0125",
+      "ref": "BH101030",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101030.jpg"
+    },
+    {
+      "codigo": "FK-0126",
+      "ref": "BH101028",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101028.jpg"
+    },
+    {
+      "codigo": "FK-0126",
+      "ref": "BH101028",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101028.jpg"
+    },
+    {
+      "codigo": "FK-0127",
+      "ref": "BH101027",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101027.jpg"
+    },
+    {
+      "codigo": "FK-0127",
+      "ref": "BH101027",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101027.jpg"
+    },
+    {
+      "codigo": "FK-0128",
+      "ref": "BH101026",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101026.jpg"
+    },
+    {
+      "codigo": "FK-0128",
+      "ref": "BH101026",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101026.jpg"
+    },
+    {
+      "codigo": "FK-0129",
+      "ref": "BH101025",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101025.jpg"
+    },
+    {
+      "codigo": "FK-0129",
+      "ref": "BH101025",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101025.jpg"
+    },
+    {
+      "codigo": "FK-0130",
+      "ref": "BH101018",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101018.jpg"
+    },
+    {
+      "codigo": "FK-0130",
+      "ref": "BH101018",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101018.jpg"
+    },
+    {
+      "codigo": "FK-0132",
+      "ref": "BH101040",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101040.jpg"
+    },
+    {
+      "codigo": "FK-0132",
+      "ref": "BH101040",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101040.jpg"
+    },
+    {
+      "codigo": "FK-0133",
+      "ref": "BH101039",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101039.jpg"
+    },
+    {
+      "codigo": "FK-0133",
+      "ref": "BH101039",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101039.jpg"
+    },
+    {
+      "codigo": "FK-0134",
+      "ref": "BH101045",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101045.jpg"
+    },
+    {
+      "codigo": "FK-0134",
+      "ref": "BH101045",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101045.jpg"
+    },
+    {
+      "codigo": "FK-0135",
+      "ref": "BH101046",
+      "campo": "card",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101046.jpg"
+    },
+    {
+      "codigo": "FK-0135",
+      "ref": "BH101046",
+      "campo": "zoom",
+      "caminho": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101046.jpg"
+    }
+  ]
+}
