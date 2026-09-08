@@ -51,8 +51,10 @@ def fetch(url: str) -> str:
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "Mozilla/5.0 (compatible; FabrikaKriativaCatalogAudit/1.0)",
-            "Accept": "text/html,application/xhtml+xml",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/152 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.7",
+            "Cache-Control": "no-cache",
         },
     )
     with urllib.request.urlopen(req, timeout=30) as resp:
@@ -62,7 +64,6 @@ def fetch(url: str) -> str:
 
 
 def refs_from_page(source: str) -> set[str]:
-    # Remove a seção de recomendações para não misturar outras coleções.
     upper = html_lib.unescape(source).upper()
     cut_candidates = [
         upper.find("TALVEZ VOCÊ TAMBÉM GOSTE"),
@@ -96,16 +97,36 @@ def crawl(slug: str) -> tuple[set[str], list[dict]]:
 def main() -> None:
     data = parse_data()
     results = []
+    errors = []
     total_missing = 0
     total_extras = 0
 
     for collection, slug in COLLECTIONS.items():
-        official_refs, pages = crawl(slug)
         catalog_raw = {
             str(x.get("ref") or "").strip()
             for x in data
             if x.get("fornecedor") == "Home Finish" and x.get("colecao") == collection and str(x.get("ref") or "").strip()
         }
+        try:
+            official_refs, pages = crawl(slug)
+        except Exception as exc:
+            errors.append({
+                "colecao": collection,
+                "url_oficial": BASE + slug + "/",
+                "erro": f"{type(exc).__name__}: {exc}",
+            })
+            results.append({
+                "colecao": collection,
+                "url_oficial": BASE + slug + "/",
+                "oficial": None,
+                "catalogo": len(catalog_raw),
+                "faltantes": [],
+                "extras_no_catalogo": [],
+                "paginas": [],
+                "status": "erro_coleta",
+            })
+            continue
+
         official_norm = {norm(r, collection): r for r in official_refs if norm(r, collection)}
         catalog_norm = {norm(r, collection): r for r in catalog_raw if norm(r, collection)}
         missing_keys = sorted(set(official_norm) - set(catalog_norm))
@@ -122,26 +143,30 @@ def main() -> None:
             "faltantes": missing,
             "extras_no_catalogo": extras,
             "paginas": pages,
+            "status": "ok",
         })
 
+    valid = [r for r in results if r["oficial"] is not None]
     report = {
         "fonte": "Home Finish — páginas oficiais das coleções",
         "fornecedor_catalogo": "Home Finish",
-        "colecoes_auditadas": len(results),
-        "total_oficial": sum(r["oficial"] for r in results),
+        "colecoes_configuradas": len(results),
+        "colecoes_auditadas_com_sucesso": len(valid),
+        "erros_coleta": errors,
+        "total_oficial_parcial": sum(r["oficial"] for r in valid),
         "total_catalogo": sum(r["catalogo"] for r in results),
-        "total_faltantes": total_missing,
-        "total_extras_no_catalogo": total_extras,
+        "total_faltantes_confirmados": total_missing,
+        "total_extras_confirmados": total_extras,
         "colecoes": results,
-        "criterio": "Compara referências publicadas nas páginas oficiais da Home Finish, percorrendo a paginação, com as referências do DATA atual. Não usa a biblioteca local como fonte de completude.",
+        "criterio": "Compara referências publicadas nas páginas oficiais da Home Finish, percorrendo a paginação. Falhas de acesso são registradas e nunca tratadas como zero itens.",
     }
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps({
-        "colecoes": len(results),
-        "total_oficial": report["total_oficial"],
+        "colecoes_ok": len(valid),
+        "erros": len(errors),
+        "total_oficial_parcial": report["total_oficial_parcial"],
         "total_catalogo": report["total_catalogo"],
-        "total_faltantes": total_missing,
-        "total_extras": total_extras,
+        "faltantes_confirmados": total_missing,
     }, ensure_ascii=False))
 
 
