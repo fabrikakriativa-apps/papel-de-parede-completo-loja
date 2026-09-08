@@ -1,0 +1,48 @@
+name: Import complete Kantai collections
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/import-kantai-complete.yml'
+      - 'scripts/import_kantai_complete.py'
+      - 'auditoria-kantai-oficial.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install image tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install pillow
+
+      - name: Import complete official Kantai collections
+        run: python scripts/import_kantai_complete.py
+
+      - name: Verify repaired catalog image paths
+        run: python scripts/repair_catalog.py
+
+      - name: Protect external images
+        run: python scripts/harden_external_images.py
+
+      - name: Commit complete Kantai catalog
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html imagens/kantai auditoria-importacao-kantai.json auditoria-imagens.json
+          if git diff --cached --quiet; then
+            echo "No import changes"
+          else
+            git commit -m "Import complete official Kantai collections"
+            git push
+          fi
