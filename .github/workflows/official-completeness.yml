@@ -31,18 +31,23 @@ jobs:
           python -m playwright install chromium --with-deps
 
       - name: Probe Home Finish structured official endpoints
+        continue-on-error: true
         run: python scripts/diagnose_homefinish_endpoints.py
 
       - name: Audit Home Finish against official collections
+        continue-on-error: true
         run: python scripts/audit_homefinish_official.py
 
       - name: Diagnose Wiler official collection sources
+        continue-on-error: true
         run: python scripts/diagnose_wiler_official.py
 
       - name: Diagnose Wiler storefront API traffic
+        continue-on-error: true
         run: python scripts/diagnose_wiler_vtex.py
 
       - name: Audit Wiler against official collections
+        continue-on-error: true
         run: python scripts/audit_wiler_official.py
 
       - name: Commit official audit reports
@@ -50,7 +55,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add auditoria-homefinish-oficial.json diagnostico-homefinish-endpoints.json diagnostico-wiler-oficial.json diagnostico-wiler-vtex.json auditoria-wiler-oficial.json
+          for f in auditoria-homefinish-oficial.json diagnostico-homefinish-endpoints.json diagnostico-wiler-oficial.json diagnostico-wiler-vtex.json auditoria-wiler-oficial.json; do
+            [ -f "$f" ] && git add "$f"
+          done
           if git diff --cached --quiet; then
             echo "Official audit unchanged"
           else
