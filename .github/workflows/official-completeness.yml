@@ -10,6 +10,7 @@ on:
       - 'scripts/diagnose_wiler_vtex.py'
       - 'scripts/summarize_wiler_network.py'
       - 'scripts/audit_wiler_official.py'
+      - 'scripts/audit_wiler_browser.py'
       - '.github/workflows/official-completeness.yml'
   workflow_dispatch:
 
@@ -19,7 +20,7 @@ permissions:
 jobs:
   audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - name: Checkout catalog
         uses: actions/checkout@v4
@@ -51,16 +52,20 @@ jobs:
         continue-on-error: true
         run: python scripts/summarize_wiler_network.py
 
-      - name: Audit Wiler against official collections
+      - name: Audit Wiler static source
         continue-on-error: true
         run: python scripts/audit_wiler_official.py
+
+      - name: Audit Wiler rendered collection pagination
+        continue-on-error: true
+        run: python scripts/audit_wiler_browser.py
 
       - name: Commit official audit reports
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in auditoria-homefinish-oficial.json diagnostico-homefinish-endpoints.json diagnostico-wiler-oficial.json diagnostico-wiler-vtex.json diagnostico-wiler-api-resumo.json auditoria-wiler-oficial.json; do
+          for f in auditoria-homefinish-oficial.json diagnostico-homefinish-endpoints.json diagnostico-wiler-oficial.json diagnostico-wiler-vtex.json diagnostico-wiler-api-resumo.json auditoria-wiler-oficial.json auditoria-wiler-browser.json; do
             [ -f "$f" ] && git add "$f"
           done
           if git diff --cached --quiet; then
