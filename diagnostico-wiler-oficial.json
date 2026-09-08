@@ -1,5 +1,6 @@
 {
-  "fonte": "site oficial Wiler",
+  "fonte": "Wiler-K — site oficial",
+  "dominio_oficial": "https://www.wiler-k.com.br/",
   "colecoes_catalogo_atual": [
     "Bambine",
     "Tacto",
@@ -12,30 +13,12 @@
       "colecao": "Bambine",
       "tentativas": [
         {
-          "url": "https://www.wiler.com.br/bambine",
+          "url": "https://www.wiler-k.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes",
           "status": 200,
-          "url_final": "https://www.wiler.com.br/bambine",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes",
           "titulo": "",
           "produtos_encontrados": null,
           "erro": null,
-          "contem_nome_colecao": false
-        },
-        {
-          "url": "https://www.wiler.com.br/colecao/bambine",
-          "status": 0,
-          "url_final": "https://www.wiler.com.br/colecao/bambine",
-          "titulo": "",
-          "produtos_encontrados": null,
-          "erro": "HTTPError: HTTP Error 404: Not Found",
-          "contem_nome_colecao": false
-        },
-        {
-          "url": "https://www.wiler.com.br/papel-de-parede/bambine",
-          "status": 0,
-          "url_final": "https://www.wiler.com.br/papel-de-parede/bambine",
-          "titulo": "",
-          "produtos_encontrados": null,
-          "erro": "HTTPError: HTTP Error 404: Not Found",
           "contem_nome_colecao": false
         }
       ]
@@ -44,30 +27,12 @@
       "colecao": "Tacto",
       "tentativas": [
         {
-          "url": "https://www.wiler.com.br/tacto",
+          "url": "https://www.wiler-k.com.br/papel-de-parede/tacto?map=category-1%2Ccolecoes",
           "status": 200,
-          "url_final": "https://www.wiler.com.br/tacto",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/tacto?map=category-1%2Ccolecoes",
           "titulo": "",
           "produtos_encontrados": null,
           "erro": null,
-          "contem_nome_colecao": false
-        },
-        {
-          "url": "https://www.wiler.com.br/colecao/tacto",
-          "status": 0,
-          "url_final": "https://www.wiler.com.br/colecao/tacto",
-          "titulo": "",
-          "produtos_encontrados": null,
-          "erro": "HTTPError: HTTP Error 404: Not Found",
-          "contem_nome_colecao": false
-        },
-        {
-          "url": "https://www.wiler.com.br/papel-de-parede/tacto",
-          "status": 0,
-          "url_final": "https://www.wiler.com.br/papel-de-parede/tacto",
-          "titulo": "",
-          "produtos_encontrados": null,
-          "erro": "HTTPError: HTTP Error 404: Not Found",
           "contem_nome_colecao": false
         }
       ]
@@ -76,30 +41,12 @@
       "colecao": "Texture II",
       "tentativas": [
         {
-          "url": "https://www.wiler.com.br/texture-ii",
+          "url": "https://www.wiler-k.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes",
           "status": 200,
-          "url_final": "https://www.wiler.com.br/texture-ii",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes",
           "titulo": "",
           "produtos_encontrados": null,
           "erro": null,
-          "contem_nome_colecao": false
-        },
-        {
-          "url": "https://www.wiler.com.br/colecao/texture-ii",
-          "status": 0,
-          "url_final": "https://www.wiler.com.br/colecao/texture-ii",
-          "titulo": "",
-          "produtos_encontrados": null,
-          "erro": "HTTPError: HTTP Error 404: Not Found",
-          "contem_nome_colecao": false
-        },
-        {
-          "url": "https://www.wiler.com.br/papel-de-parede/texture-ii",
-          "status": 0,
-          "url_final": "https://www.wiler.com.br/papel-de-parede/texture-ii",
-          "titulo": "",
-          "produtos_encontrados": null,
-          "erro": "HTTPError: HTTP Error 404: Not Found",
           "contem_nome_colecao": false
         }
       ]
@@ -108,30 +55,12 @@
       "colecao": "Texture III",
       "tentativas": [
         {
-          "url": "https://www.wiler.com.br/texture-iii",
+          "url": "https://www.wiler-k.com.br/papel-de-parede/texture-iii?map=category-1%2Ccolecoes",
           "status": 200,
-          "url_final": "https://www.wiler.com.br/texture-iii",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/texture-iii?map=category-1%2Ccolecoes",
           "titulo": "",
           "produtos_encontrados": null,
           "erro": null,
-          "contem_nome_colecao": false
-        },
-        {
-          "url": "https://www.wiler.com.br/colecao/texture-iii",
-          "status": 0,
-          "url_final": "https://www.wiler.com.br/colecao/texture-iii",
-          "titulo": "",
-          "produtos_encontrados": null,
-          "erro": "HTTPError: HTTP Error 404: Not Found",
-          "contem_nome_colecao": false
-        },
-        {
-          "url": "https://www.wiler.com.br/papel-de-parede/texture-iii",
-          "status": 0,
-          "url_final": "https://www.wiler.com.br/papel-de-parede/texture-iii",
-          "titulo": "",
-          "produtos_encontrados": null,
-          "erro": "HTTPError: HTTP Error 404: Not Found",
           "contem_nome_colecao": false
         }
       ]
@@ -140,34 +69,16 @@
       "colecao": "Tramas",
       "tentativas": [
         {
-          "url": "https://www.wiler.com.br/tramas",
+          "url": "https://www.wiler-k.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes",
           "status": 200,
-          "url_final": "https://www.wiler.com.br/tramas",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes",
           "titulo": "",
           "produtos_encontrados": null,
           "erro": null,
-          "contem_nome_colecao": false
-        },
-        {
-          "url": "https://www.wiler.com.br/colecao/tramas",
-          "status": 0,
-          "url_final": "https://www.wiler.com.br/colecao/tramas",
-          "titulo": "",
-          "produtos_encontrados": null,
-          "erro": "HTTPError: HTTP Error 404: Not Found",
-          "contem_nome_colecao": false
-        },
-        {
-          "url": "https://www.wiler.com.br/papel-de-parede/tramas",
-          "status": 0,
-          "url_final": "https://www.wiler.com.br/papel-de-parede/tramas",
-          "titulo": "",
-          "produtos_encontrados": null,
-          "erro": "HTTPError: HTTP Error 404: Not Found",
           "contem_nome_colecao": false
         }
       ]
     }
   ],
-  "criterio": "Sondagem concorrente de rotas públicas oficiais correspondentes às coleções que existem no DATA atual. Não altera o catálogo."
+  "criterio": "Sondagem das rotas públicas oficiais de coleção da Wiler-K. Não altera o catálogo."
 }

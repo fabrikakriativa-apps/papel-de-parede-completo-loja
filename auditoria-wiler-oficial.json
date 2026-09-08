@@ -1,0 +1,96 @@
+{
+  "fonte": "Wiler-K — páginas oficiais de coleção",
+  "dominio_oficial": "https://www.wiler-k.com.br/",
+  "fornecedor_catalogo": "Wiler",
+  "colecoes_configuradas": 5,
+  "colecoes_auditadas_com_sucesso": 0,
+  "erros_coleta": [
+    {
+      "colecao": "Bambine",
+      "url_oficial": "https://www.wiler-k.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes",
+      "erro": "RuntimeError: A página oficial não informou 'Produtos Encontrados': https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes"
+    },
+    {
+      "colecao": "Tacto",
+      "url_oficial": "https://www.wiler-k.com.br/papel-de-parede/tacto?map=category-1%2Ccolecoes",
+      "erro": "RuntimeError: A página oficial não informou 'Produtos Encontrados': https://www.wiler.com.br/papel-de-parede/tacto?map=category-1%2Ccolecoes"
+    },
+    {
+      "colecao": "Texture II",
+      "url_oficial": "https://www.wiler-k.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes",
+      "erro": "RuntimeError: A página oficial não informou 'Produtos Encontrados': https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes"
+    },
+    {
+      "colecao": "Texture III",
+      "url_oficial": "https://www.wiler-k.com.br/papel-de-parede/texture-iii?map=category-1%2Ccolecoes",
+      "erro": "RuntimeError: A página oficial não informou 'Produtos Encontrados': https://www.wiler.com.br/papel-de-parede/texture-iii?map=category-1%2Ccolecoes"
+    },
+    {
+      "colecao": "Tramas",
+      "url_oficial": "https://www.wiler-k.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes",
+      "erro": "RuntimeError: A página oficial não informou 'Produtos Encontrados': https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes"
+    }
+  ],
+  "total_oficial": 0,
+  "total_catalogo": 256,
+  "saldo_contagem": 0,
+  "colecoes_com_divergencia": [],
+  "colecoes": [
+    {
+      "colecao": "Bambine",
+      "url_oficial": "https://www.wiler-k.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes",
+      "oficial_total": null,
+      "catalogo": 50,
+      "diferenca_contagem": null,
+      "faltantes_confirmados": [],
+      "extras_confirmados": [],
+      "refs_oficiais_extraidas": 0,
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Tacto",
+      "url_oficial": "https://www.wiler-k.com.br/papel-de-parede/tacto?map=category-1%2Ccolecoes",
+      "oficial_total": null,
+      "catalogo": 41,
+      "diferenca_contagem": null,
+      "faltantes_confirmados": [],
+      "extras_confirmados": [],
+      "refs_oficiais_extraidas": 0,
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Texture II",
+      "url_oficial": "https://www.wiler-k.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes",
+      "oficial_total": null,
+      "catalogo": 52,
+      "diferenca_contagem": null,
+      "faltantes_confirmados": [],
+      "extras_confirmados": [],
+      "refs_oficiais_extraidas": 0,
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Texture III",
+      "url_oficial": "https://www.wiler-k.com.br/papel-de-parede/texture-iii?map=category-1%2Ccolecoes",
+      "oficial_total": null,
+      "catalogo": 51,
+      "diferenca_contagem": null,
+      "faltantes_confirmados": [],
+      "extras_confirmados": [],
+      "refs_oficiais_extraidas": 0,
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Tramas",
+      "url_oficial": "https://www.wiler-k.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes",
+      "oficial_total": null,
+      "catalogo": 62,
+      "diferenca_contagem": null,
+      "faltantes_confirmados": [],
+      "extras_confirmados": [],
+      "refs_oficiais_extraidas": 0,
+      "status": "erro_coleta"
+    }
+  ],
+  "criterio": "A contagem vem exclusivamente da vitrine oficial Wiler-K filtrada por coleção. A comparação referência a referência só é considerada completa quando o parser recupera ao menos o total oficial; falhas nunca são tratadas como zero."
+}
