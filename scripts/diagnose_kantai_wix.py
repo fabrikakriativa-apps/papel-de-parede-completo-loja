@@ -9,7 +9,8 @@ from playwright.async_api import async_playwright
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "diagnostico-kantai.json"
 URL = "https://www.kantai.com.br/aditare3"
-REF_RE = re.compile(r"\bAD3\d{6}R\b", re.I)
+# Aditare 3 references use AD3 + five digits + R, e.g. AD300604R.
+REF_RE = re.compile(r"\bAD3\d{5}R\b", re.I)
 
 
 async def main():
@@ -50,7 +51,7 @@ async def main():
                     if refs:
                         refs_network.update(refs)
                         entry["refs"] = refs
-                        entry["body_excerpt"] = body[:16000]
+                        entry["body_excerpt"] = body[:20000]
             except Exception as exc:
                 entry["body_error"] = f"{type(exc).__name__}: {exc}"
             network.append(entry)
@@ -59,7 +60,8 @@ async def main():
         await page.goto(URL, wait_until="domcontentloaded", timeout=90000)
         await page.wait_for_timeout(8000)
 
-        for _ in range(20):
+        # Scroll repeatedly to trigger lazy-loaded gallery/data requests.
+        for _ in range(24):
             await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             await page.wait_for_timeout(700)
 
@@ -67,7 +69,7 @@ async def main():
         refs_dom = sorted(set(x.upper() for x in REF_RE.findall(body_text)))
 
         controls = await page.locator("button, a, [role=button]").evaluate_all(
-            "els => els.map((e, i) => ({i, tag:e.tagName, text:(e.innerText||e.getAttribute('aria-label')||'').trim().slice(0,200), aria:e.getAttribute('aria-label'), href:e.href||null, disabled:e.disabled||e.getAttribute('aria-disabled')})).filter(x => x.text || x.aria)"
+            "els => els.map((e, i) => ({i, tag:e.tagName, text:(e.innerText||e.getAttribute('aria-label')||'').trim().slice(0,200), aria:e.getAttribute('aria-label'), href:e.href||null, disabled:e.disabled||e.getAttribute('aria-disabled'), outer:e.outerHTML.slice(0,800)})).filter(x => x.text || x.aria)"
         )
         likely_pagination = [
             x for x in controls
@@ -80,7 +82,6 @@ async def main():
 
         await browser.close()
 
-    # Keep network output focused: responses containing refs or data/query-like calls.
     focused_network = [
         x for x in network
         if x.get("refs") or x["resource_type"] in {"xhr", "fetch"}
@@ -94,10 +95,16 @@ async def main():
         "refs_network_count": len(refs_network),
         "refs_network": sorted(refs_network),
         "likely_pagination_controls": likely_pagination[:100],
-        "network": focused_network[:120],
+        "network": focused_network[:160],
     }
     OUT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps({k: report[k] for k in ("refs_dom_count", "refs_html_count", "refs_network_count", "likely_pagination_controls")}, ensure_ascii=False))
+    print(json.dumps({
+        "refs_dom_count": report["refs_dom_count"],
+        "refs_html_count": report["refs_html_count"],
+        "refs_network_count": report["refs_network_count"],
+        "refs_dom": report["refs_dom"],
+        "refs_network": report["refs_network"],
+    }, ensure_ascii=False))
 
 
 if __name__ == "__main__":
