@@ -7,6 +7,7 @@ on:
       - 'index.html'
       - 'scripts/catalog_inventory.py'
       - 'scripts/optimize_catalog_html.py'
+      - 'scripts/diagnose_image_render.py'
       - '.github/workflows/catalog-health.yml'
   workflow_dispatch:
 
@@ -29,15 +30,18 @@ jobs:
       - name: Inventory current published catalog
         run: python scripts/catalog_inventory.py
 
+      - name: Diagnose dynamic image rendering
+        run: python scripts/diagnose_image_render.py
+
       - name: Commit health fixes and reports
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html auditoria-performance.json auditoria-catalogo-atual.json
+          git add index.html auditoria-performance.json auditoria-catalogo-atual.json diagnostico-render-imagens.json
           if git diff --cached --quiet; then
             echo "Catalog already healthy"
           else
-            git commit -m "Optimize catalog loading and refresh current inventory"
+            git commit -m "Refresh catalog health diagnostics"
             git push
           fi
