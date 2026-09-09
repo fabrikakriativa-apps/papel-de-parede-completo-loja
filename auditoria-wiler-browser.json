@@ -1,14 +1,14 @@
 {
   "fonte": "Wiler — vitrine oficial pública em navegador real",
   "dominio_oficial": "https://www.wiler.com.br/",
-  "criterio": "Percorre a paginação renderizada das cinco coleções. Só confirma completude quando refs extraídas = total oficial. A vitrine ativa detecta faltantes ativos, mas nunca autoriza remover automaticamente referências históricas do catálogo.",
+  "criterio": "Percorre a paginação renderizada das cinco coleções e lê apenas os cards da grade VTEX. Só confirma completude quando refs extraídas = total oficial. A vitrine ativa detecta faltantes ativos, mas nunca autoriza remover automaticamente referências históricas do catálogo.",
   "colecoes": [
     {
       "colecao": "Bambine",
       "url_oficial": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes",
       "oficial_ativos_total": 37,
       "catalogo_total": 50,
-      "refs_ativas_extraidas": 38,
+      "refs_ativas_extraidas": 40,
       "extracao_ativa_completa": false,
       "faltantes_ativos_confirmados": [],
       "faltantes_observados_na_extracao_incompleta": [],
@@ -23,16 +23,18 @@
         "BA0007",
         "BA0009",
         "BA0010",
+        "BA0011",
         "BA0012",
         "BA0013",
-        "BA0014",
         "BA0015",
+        "BA0016",
         "BA0018",
         "BA0019",
         "BA0020",
         "BA0021",
         "BA0023",
         "BA0024",
+        "BA0025",
         "BA0026",
         "BA0027",
         "BA0029",
@@ -60,9 +62,11 @@
           "url": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes",
           "url_final": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes",
           "http": 200,
-          "refs_na_pagina": 21,
-          "novas_refs": 21,
-          "total_acumulado": 21,
+          "seletor_grade": "[class*=\"galleryItem\"] a[href*=\"/p\"]",
+          "links_grade": 15,
+          "refs_na_pagina": 19,
+          "novas_refs": 19,
+          "total_acumulado": 19,
           "contagens_visiveis": [
             37
           ]
@@ -72,9 +76,39 @@
           "url": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes&page=2",
           "url_final": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes&page=2",
           "http": 200,
+          "seletor_grade": "[class*=\"galleryItem\"] a[href*=\"/p\"]",
+          "links_grade": 16,
           "refs_na_pagina": 21,
           "novas_refs": 17,
-          "total_acumulado": 38,
+          "total_acumulado": 36,
+          "contagens_visiveis": [
+            37
+          ]
+        },
+        {
+          "pagina": 3,
+          "url": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes&page=3",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes&page=3",
+          "http": 200,
+          "seletor_grade": "[class*=\"galleryItem\"] a[href*=\"/p\"]",
+          "links_grade": 5,
+          "refs_na_pagina": 7,
+          "novas_refs": 4,
+          "total_acumulado": 40,
+          "contagens_visiveis": [
+            37
+          ]
+        },
+        {
+          "pagina": 4,
+          "url": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes&page=4",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes&page=4",
+          "http": 200,
+          "seletor_grade": null,
+          "links_grade": 0,
+          "refs_na_pagina": 0,
+          "novas_refs": 0,
+          "total_acumulado": 40,
           "contagens_visiveis": [
             37
           ]
@@ -101,6 +135,8 @@
           "url": "https://www.wiler.com.br/papel-de-parede/tacto?map=category-1%2Ccolecoes",
           "url_final": "https://www.wiler.com.br/papel-de-parede/tacto?map=category-1%2Ccolecoes",
           "http": 200,
+          "seletor_grade": null,
+          "links_grade": 0,
           "refs_na_pagina": 0,
           "novas_refs": 0,
           "total_acumulado": 0,
@@ -113,6 +149,8 @@
           "url": "https://www.wiler.com.br/papel-de-parede/tacto?map=category-1%2Ccolecoes&page=2",
           "url_final": "https://www.wiler.com.br/papel-de-parede/tacto?map=category-1%2Ccolecoes&page=2",
           "http": 200,
+          "seletor_grade": null,
+          "links_grade": 0,
           "refs_na_pagina": 0,
           "novas_refs": 0,
           "total_acumulado": 0,
@@ -127,9 +165,9 @@
     {
       "colecao": "Texture II",
       "url_oficial": "https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes",
-      "oficial_ativos_total": 42,
+      "oficial_ativos_total": 41,
       "catalogo_total": 52,
-      "refs_ativas_extraidas": 42,
+      "refs_ativas_extraidas": 41,
       "extracao_ativa_completa": true,
       "faltantes_ativos_confirmados": [],
       "faltantes_observados_na_extracao_incompleta": [],
@@ -143,7 +181,8 @@
         "TX-2030",
         "TX-2031",
         "TX-2032",
-        "TX-2034"
+        "TX-2034",
+        "TX-2035"
       ],
       "observacao_catalogo_nao_ativo": "Itens não encontrados na vitrine ativa NÃO são candidatos automáticos a remoção; podem ser referências históricas/válidas do book.",
       "refs_ativas": [
@@ -171,7 +210,6 @@
         "TX-2022",
         "TX-2023",
         "TX-2033",
-        "TX-2035",
         "TX-2036",
         "TX-2037",
         "TX-2038",
@@ -196,11 +234,13 @@
           "url": "https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes",
           "url_final": "https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes",
           "http": 200,
+          "seletor_grade": "[class*=\"galleryItem\"] a[href*=\"/p\"]",
+          "links_grade": 16,
           "refs_na_pagina": 16,
           "novas_refs": 16,
           "total_acumulado": 16,
           "contagens_visiveis": [
-            42
+            41
           ]
         },
         {
@@ -208,11 +248,13 @@
           "url": "https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes&page=2",
           "url_final": "https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes&page=2",
           "http": 200,
+          "seletor_grade": "[class*=\"galleryItem\"] a[href*=\"/p\"]",
+          "links_grade": 16,
           "refs_na_pagina": 16,
           "novas_refs": 16,
           "total_acumulado": 32,
           "contagens_visiveis": [
-            42
+            41
           ]
         },
         {
@@ -220,11 +262,13 @@
           "url": "https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes&page=3",
           "url_final": "https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes&page=3",
           "http": 200,
-          "refs_na_pagina": 10,
-          "novas_refs": 10,
-          "total_acumulado": 42,
+          "seletor_grade": "[class*=\"galleryItem\"] a[href*=\"/p\"]",
+          "links_grade": 9,
+          "refs_na_pagina": 9,
+          "novas_refs": 9,
+          "total_acumulado": 41,
           "contagens_visiveis": [
-            42
+            41
           ]
         }
       ],
@@ -249,6 +293,8 @@
           "url": "https://www.wiler.com.br/papel-de-parede/texture-iii?map=category-1%2Ccolecoes",
           "url_final": "https://www.wiler.com.br/papel-de-parede/texture-iii?map=category-1%2Ccolecoes",
           "http": 200,
+          "seletor_grade": null,
+          "links_grade": 0,
           "refs_na_pagina": 0,
           "novas_refs": 0,
           "total_acumulado": 0,
@@ -261,6 +307,8 @@
           "url": "https://www.wiler.com.br/papel-de-parede/texture-iii?map=category-1%2Ccolecoes&page=2",
           "url_final": "https://www.wiler.com.br/papel-de-parede/texture-iii?map=category-1%2Ccolecoes&page=2",
           "http": 200,
+          "seletor_grade": null,
+          "links_grade": 0,
           "refs_na_pagina": 0,
           "novas_refs": 0,
           "total_acumulado": 0,
@@ -354,6 +402,8 @@
           "url": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes",
           "url_final": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes",
           "http": 200,
+          "seletor_grade": "[class*=\"galleryItem\"] a[href*=\"/p\"]",
+          "links_grade": 16,
           "refs_na_pagina": 16,
           "novas_refs": 16,
           "total_acumulado": 16,
@@ -366,6 +416,8 @@
           "url": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes&page=2",
           "url_final": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes&page=2",
           "http": 200,
+          "seletor_grade": "[class*=\"galleryItem\"] a[href*=\"/p\"]",
+          "links_grade": 16,
           "refs_na_pagina": 16,
           "novas_refs": 16,
           "total_acumulado": 32,
@@ -378,6 +430,8 @@
           "url": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes&page=3",
           "url_final": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes&page=3",
           "http": 200,
+          "seletor_grade": "[class*=\"galleryItem\"] a[href*=\"/p\"]",
+          "links_grade": 16,
           "refs_na_pagina": 16,
           "novas_refs": 16,
           "total_acumulado": 48,
@@ -390,6 +444,8 @@
           "url": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes&page=4",
           "url_final": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes&page=4",
           "http": 200,
+          "seletor_grade": "[class*=\"galleryItem\"] a[href*=\"/p\"]",
+          "links_grade": 4,
           "refs_na_pagina": 4,
           "novas_refs": 4,
           "total_acumulado": 52,
@@ -404,8 +460,8 @@
   ],
   "resumo": {
     "catalogo_total_wiler": 256,
-    "ativos_oficiais_somados": 131,
-    "refs_ativas_extraidas": 132,
+    "ativos_oficiais_somados": 130,
+    "refs_ativas_extraidas": 133,
     "faltantes_ativos_confirmados": 0,
     "colecoes_extracao_completa": 2,
     "colecoes_nao_validadas": [
