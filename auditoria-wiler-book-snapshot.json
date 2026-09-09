@@ -1,0 +1,308 @@
+{
+  "fonte": "Snapshot interno do repositório-fonte da Fábrika; usado como evidência histórica do book, não como substituto da fonte oficial online.",
+  "criterio": "Decodifica os datasets de coleções já construídos a partir dos materiais de origem e compara referência a referência com o catálogo publicado. Nenhuma divergência causa remoção automática.",
+  "arquivos_lidos": [
+    {
+      "arquivo": "home-finish--bio-habitat.json",
+      "tipo_topo": "dict",
+      "colecoes_detectadas": []
+    },
+    {
+      "arquivo": "home-finish--hf-texture-iii.json",
+      "tipo_topo": "dict",
+      "colecoes_detectadas": []
+    },
+    {
+      "arquivo": "home-finish--memorias-de-infancia.json",
+      "tipo_topo": "dict",
+      "colecoes_detectadas": []
+    },
+    {
+      "arquivo": "kantai-aditare-3.json",
+      "tipo_topo": "dict",
+      "colecoes_detectadas": [
+        "Aditare 3"
+      ]
+    },
+    {
+      "arquivo": "kantai-criativo-3.json",
+      "tipo_topo": "dict",
+      "colecoes_detectadas": [
+        "Criativo 3"
+      ]
+    },
+    {
+      "arquivo": "kantai-space-ix.json",
+      "tipo_topo": "dict",
+      "colecoes_detectadas": [
+        "Space IX"
+      ]
+    },
+    {
+      "arquivo": "remaining.json.gz.b64",
+      "tipo_topo": "dict",
+      "colecoes_detectadas": []
+    },
+    {
+      "arquivo": "wiler-tacto.json",
+      "tipo_topo": "dict",
+      "colecoes_detectadas": [
+        "Tacto"
+      ]
+    },
+    {
+      "arquivo": "wiler-texture-ii.json",
+      "tipo_topo": "dict",
+      "colecoes_detectadas": [
+        "Texture II"
+      ]
+    }
+  ],
+  "erros": [],
+  "colecoes": [
+    {
+      "colecao": "Bambine",
+      "catalogo_total": 50,
+      "snapshot_total": null,
+      "snapshot_fontes": [],
+      "faltantes_vs_snapshot": [],
+      "extras_vs_snapshot": [
+        "BA0001",
+        "BA0002",
+        "BA0003",
+        "BA0004",
+        "BA0005",
+        "BA0006",
+        "BA0007",
+        "BA0008",
+        "BA0009",
+        "BA0010",
+        "BA0011",
+        "BA0012",
+        "BA0013",
+        "BA0014",
+        "BA0015",
+        "BA0016",
+        "BA0017",
+        "BA0018",
+        "BA0019",
+        "BA0020",
+        "BA0021",
+        "BA0022",
+        "BA0023",
+        "BA0024",
+        "BA0025",
+        "BA0026",
+        "BA0027",
+        "BA0028",
+        "BA0029",
+        "BA0030",
+        "BA0031",
+        "BA0032",
+        "BA0033",
+        "BA0034",
+        "BA0035",
+        "BA0036",
+        "BA0037",
+        "BA0038",
+        "BA0039",
+        "BA0040",
+        "BA0041",
+        "BA0042",
+        "BA0043",
+        "BA0044",
+        "BA0045",
+        "BA0046",
+        "BA0047",
+        "BA0048",
+        "BA0049",
+        "BA0050"
+      ],
+      "match_exato": false,
+      "status": "snapshot_nao_localizado"
+    },
+    {
+      "colecao": "Tacto",
+      "catalogo_total": 41,
+      "snapshot_total": 41,
+      "snapshot_fontes": [
+        {
+          "arquivo": "wiler-tacto.json",
+          "path": "root",
+          "fornecedor": "Wiler",
+          "fonte_pdf": "CATÁLOGO_PAPEL DE PAREDE Tacto.pdf",
+          "refs": 41
+        }
+      ],
+      "faltantes_vs_snapshot": [],
+      "extras_vs_snapshot": [],
+      "match_exato": true,
+      "status": "match_exato"
+    },
+    {
+      "colecao": "Texture II",
+      "catalogo_total": 52,
+      "snapshot_total": 52,
+      "snapshot_fontes": [
+        {
+          "arquivo": "wiler-texture-ii.json",
+          "path": "root",
+          "fornecedor": "Wiler",
+          "fonte_pdf": null,
+          "refs": 52
+        }
+      ],
+      "faltantes_vs_snapshot": [],
+      "extras_vs_snapshot": [],
+      "match_exato": true,
+      "status": "match_exato"
+    },
+    {
+      "colecao": "Texture III",
+      "catalogo_total": 51,
+      "snapshot_total": null,
+      "snapshot_fontes": [],
+      "faltantes_vs_snapshot": [],
+      "extras_vs_snapshot": [
+        "TX-3001",
+        "TX-3002",
+        "TX-3003",
+        "TX-3004",
+        "TX-3005",
+        "TX-3006",
+        "TX-3007",
+        "TX-3008",
+        "TX-3009",
+        "TX-3011",
+        "TX-3012",
+        "TX-3013",
+        "TX-3014",
+        "TX-3015",
+        "TX-3016",
+        "TX-3017",
+        "TX-3018",
+        "TX-3020",
+        "TX-3021",
+        "TX-3022",
+        "TX-3023",
+        "TX-3024",
+        "TX-3025",
+        "TX-3026",
+        "TX-3027",
+        "TX-3028",
+        "TX-3029",
+        "TX-3030",
+        "TX-3031",
+        "TX-3032",
+        "TX-3033",
+        "TX-3034",
+        "TX-3035",
+        "TX-3036",
+        "TX-3038",
+        "TX-3039",
+        "TX-3040",
+        "TX-3041",
+        "TX-3042",
+        "TX-3043",
+        "TX-3044",
+        "TX-3045",
+        "TX-3046",
+        "TX-3047",
+        "TX-3048",
+        "TX-3049",
+        "TX-3051",
+        "TX-3053",
+        "TX-3055",
+        "TX-3056",
+        "TX-3057"
+      ],
+      "match_exato": false,
+      "status": "snapshot_nao_localizado"
+    },
+    {
+      "colecao": "Tramas",
+      "catalogo_total": 62,
+      "snapshot_total": null,
+      "snapshot_fontes": [],
+      "faltantes_vs_snapshot": [],
+      "extras_vs_snapshot": [
+        "TR-4001",
+        "TR-4002",
+        "TR-4003",
+        "TR-4004",
+        "TR-4005",
+        "TR-4006",
+        "TR-4007",
+        "TR-4008",
+        "TR-4009",
+        "TR-4010",
+        "TR-4011",
+        "TR-4012",
+        "TR-4013",
+        "TR-4014",
+        "TR-4015",
+        "TR-4016",
+        "TR-4017",
+        "TR-4018",
+        "TR-4019",
+        "TR-4020",
+        "TR-4021",
+        "TR-4022",
+        "TR-4023",
+        "TR-4024",
+        "TR-4025",
+        "TR-4026",
+        "TR-4027",
+        "TR-4028",
+        "TR-4029",
+        "TR-4030",
+        "TR-4031",
+        "TR-4032",
+        "TR-4033",
+        "TR-4034",
+        "TR-4035",
+        "TR-4036",
+        "TR-4037",
+        "TR-4038",
+        "TR-4039",
+        "TR-4040",
+        "TR-4041",
+        "TR-4042",
+        "TR-4043",
+        "TR-4044",
+        "TR-4045",
+        "TR-4046",
+        "TR-4047",
+        "TR-4048",
+        "TR-4049",
+        "TR-4050",
+        "TR-4051",
+        "TR-4052",
+        "TR-4053",
+        "TR-4054",
+        "TR-4055",
+        "TR-4056",
+        "TR-4057",
+        "TR-4058",
+        "TR-4059",
+        "TR-4060",
+        "TR-4061",
+        "TR-4062"
+      ],
+      "match_exato": false,
+      "status": "snapshot_nao_localizado"
+    }
+  ],
+  "resumo": {
+    "matches_exatos": [
+      "Tacto",
+      "Texture II"
+    ],
+    "divergencias": [],
+    "sem_snapshot": [
+      "Bambine",
+      "Texture III",
+      "Tramas"
+    ]
+  }
+}
