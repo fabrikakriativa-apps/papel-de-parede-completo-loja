@@ -1,0 +1,44 @@
+name: Diagnose Texture III distributor cards
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/diagnose_texture_iii_cards.py'
+      - '.github/workflows/diagnose-texture-iii-cards.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout catalog
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install browser
+        run: |
+          python -m pip install --quiet playwright
+          python -m playwright install chromium --with-deps
+
+      - name: Inspect distributor cards
+        run: python scripts/diagnose_texture_iii_cards.py
+
+      - name: Commit diagnostic
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add diagnostico-texture-iii-cards.json
+          if git diff --cached --quiet; then
+            echo "Diagnostic unchanged"
+          else
+            git commit -m "Refresh Texture III card diagnostic"
+            git pull --rebase origin main
+            git push origin main
+          fi
