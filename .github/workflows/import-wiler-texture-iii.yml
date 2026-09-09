@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/import_wiler_texture_iii.py'
+      - 'scripts/import_wiler_texture_iii_v2.py'
       - '.github/workflows/import-wiler-texture-iii.yml'
   workflow_dispatch:
 
@@ -27,7 +28,7 @@ jobs:
           python -m playwright install chromium --with-deps
 
       - name: Import six confirmed Texture III references
-        run: python scripts/import_wiler_texture_iii.py
+        run: python scripts/import_wiler_texture_iii_v2.py
 
       - name: Validate catalog integrity
         run: |
