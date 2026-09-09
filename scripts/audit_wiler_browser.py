@@ -28,6 +28,15 @@ REF_PATTERNS = {
 }
 COUNT_RE = re.compile(r"(\d{1,4})\s+Produtos?\s+Encontrados?", re.I)
 
+# VTEX Search Result. O seletor da grade é deliberadamente mais restrito do
+# que `a[href*=\"/p\"]`: recomendações, carrosséis e banners também contêm
+# links de produto e podem gerar falso positivo na contagem da coleção.
+GRID_SELECTORS = [
+    '[class*="galleryItem"] a[href*="/p"]',
+    '[class*="galleryItem"] [class*="product-summary"] a[href*="/p"]',
+    '[class*="galleryItem"] a[class*="clearLink"][href*="/p"]',
+]
+
 
 def parse_data() -> list[dict]:
     text = INDEX.read_text(encoding="utf-8")
@@ -47,9 +56,28 @@ def url_for(slug: str, page_number: int) -> str:
     return BASE + slug + "?" + urlencode(params)
 
 
-def extract_refs(text: str, hrefs: list[str], collection: str) -> set[str]:
-    source = text + "\n" + "\n".join(hrefs)
+def refs_from_values(values: list[str], collection: str) -> set[str]:
+    source = "\n".join(str(v or "") for v in values)
     return {m.group(1).upper() for m in REF_PATTERNS[collection].finditer(source)}
+
+
+def collect_grid_product_values(page) -> tuple[list[str], str | None, int]:
+    """Retorna hrefs/títulos apenas dos cards da grade VTEX.
+
+    `selector_used=None` significa que a página não expôs uma grade reconhecível;
+    nesse caso a coleta NÃO faz fallback para todos os links, justamente para não
+    transformar recomendação em produto da coleção.
+    """
+    for selector in GRID_SELECTORS:
+        locator = page.locator(selector)
+        count = locator.count()
+        if not count:
+            continue
+        values = locator.evaluate_all(
+            "els => els.flatMap(a => [a.href || '', a.getAttribute('title') || '', a.getAttribute('aria-label') || '', a.textContent || ''])"
+        )
+        return values, selector, count
+    return [], None, 0
 
 
 def main() -> None:
@@ -88,8 +116,8 @@ def main() -> None:
                         page.wait_for_timeout(500)
 
                     body = page.locator("body").inner_text(timeout=10000)
-                    hrefs = page.locator("a").evaluate_all("els => els.map(a => a.href || '')")
-                    refs = extract_refs(body, hrefs, collection)
+                    grid_values, selector_used, grid_links = collect_grid_product_values(page)
+                    refs = refs_from_values(grid_values, collection)
                     before = len(official_refs)
                     official_refs.update(refs)
                     new_count = len(official_refs) - before
@@ -103,13 +131,15 @@ def main() -> None:
                         "url": url,
                         "url_final": page.url,
                         "http": response.status if response else None,
+                        "seletor_grade": selector_used,
+                        "links_grade": grid_links,
                         "refs_na_pagina": len(refs),
                         "novas_refs": new_count,
                         "total_acumulado": len(official_refs),
                         "contagens_visiveis": counts,
                     })
 
-                    if official_total and len(official_refs) >= official_total:
+                    if official_total and len(official_refs) == official_total:
                         break
                     if page_number > 1 and new_count == 0:
                         break
@@ -121,9 +151,6 @@ def main() -> None:
             missing = [off_norm[k] for k in sorted(set(off_norm) - set(cat_norm))]
             not_active = [cat_norm[k] for k in sorted(set(cat_norm) - set(off_norm))]
 
-            # Só declaramos a extração completa quando a quantidade de referências
-            # recuperadas bate EXATAMENTE com a contagem exibida pela própria Wiler.
-            # Acima do total também é inconsistência, pois pode indicar falso positivo.
             extraction_complete = official_total is not None and official_total > 0 and len(official_refs) == official_total
             if not extraction_complete:
                 not_active = []
@@ -159,7 +186,7 @@ def main() -> None:
     report = {
         "fonte": "Wiler — vitrine oficial pública em navegador real",
         "dominio_oficial": "https://www.wiler.com.br/",
-        "criterio": "Percorre a paginação renderizada das cinco coleções. Só confirma completude quando refs extraídas = total oficial. A vitrine ativa detecta faltantes ativos, mas nunca autoriza remover automaticamente referências históricas do catálogo.",
+        "criterio": "Percorre a paginação renderizada das cinco coleções e lê apenas os cards da grade VTEX. Só confirma completude quando refs extraídas = total oficial. A vitrine ativa detecta faltantes ativos, mas nunca autoriza remover automaticamente referências históricas do catálogo.",
         "colecoes": output,
         "resumo": {
             "catalogo_total_wiler": sum(x["catalogo_total"] for x in output),
