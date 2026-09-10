@@ -32,7 +32,7 @@
     }
   ],
   "total_oficial": 0,
-  "total_catalogo": 256,
+  "total_catalogo": 262,
   "saldo_contagem": 0,
   "colecoes_com_divergencia": [],
   "colecoes": [
@@ -73,7 +73,7 @@
       "colecao": "Texture III",
       "url_oficial": "https://www.wiler-k.com.br/papel-de-parede/texture-iii?map=category-1%2Ccolecoes",
       "oficial_total": null,
-      "catalogo": 51,
+      "catalogo": 57,
       "diferenca_contagem": null,
       "faltantes_confirmados": [],
       "extras_confirmados": [],
