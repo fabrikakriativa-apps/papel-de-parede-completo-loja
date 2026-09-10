@@ -1,0 +1,44 @@
+name: Audit wallpaper style calibration quality
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_style_calibration_quality.py'
+      - '.github/workflows/audit-style-calibration-quality.yml'
+      - 'classificacao/amostra-estilo-clip.json'
+  workflow_dispatch:
+
+concurrency:
+  group: audit-wallpaper-style-quality-main
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout catalog
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Audit existing style calibration
+        run: python scripts/audit_style_calibration_quality.py
+
+      - name: Commit quality report
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add auditoria-estilo-qualidade.json
+          if git diff --cached --quiet; then
+            echo "Style quality report unchanged"
+          else
+            git commit -m "Audit wallpaper style calibration quality"
+            git pull --rebase origin main
+            git push origin main
+          fi
