@@ -1,0 +1,57 @@
+{
+  "fornecedor": "Wiler",
+  "status": "completo_nas_cinco_colecoes_auditadas",
+  "catalogo_total_wiler": 262,
+  "criterio": "Fontes finais de cadeia de fornecimento (fabricante/distribuidor/importador) e, para Tacto indisponível nas vitrines atuais, snapshot histórico extraído do book de origem. Nenhuma referência histórica foi removida por ausência em vitrine ativa.",
+  "colecoes": [
+    {
+      "colecao": "Bambine",
+      "catalogo": 50,
+      "confirmado": 50,
+      "status": "completo",
+      "fonte": "https://www.imperiopapeldeparede.com.br/produtos/categoria/papel-de-parede-bambine",
+      "fonte_tipo": "Distribuidor/importador",
+      "evidencia": "51 produtos na categoria: mostruário CAT7174 + 50 papéis BA0001 a BA0050; auditoria exata sem faltas ou extras.",
+      "relatorio": "auditoria-wiler-bambine-distribuidor.json"
+    },
+    {
+      "colecao": "Tacto",
+      "catalogo": 41,
+      "confirmado": 41,
+      "status": "completo_snapshot_book",
+      "fonte_tipo": "Snapshot histórico do book de origem",
+      "evidencia": "wiler-tacto.json, fonte_pdf CATÁLOGO_PAPEL DE PAREDE Tacto.pdf; 41/41 referências com match exato.",
+      "relatorio": "auditoria-wiler-book-snapshot.json"
+    },
+    {
+      "colecao": "Texture II",
+      "catalogo": 52,
+      "confirmado": 52,
+      "status": "completo",
+      "fonte": "https://www.imperiopapeldeparede.com.br/produtos/categoria/papel-de-parede-texture-ii",
+      "fonte_tipo": "Distribuidor/importador",
+      "evidencia": "53 produtos na categoria: mostruário CAT7153 + 52 papéis. O snapshot histórico também fecha 52/52.",
+      "relatorio_secundario": "auditoria-wiler-book-snapshot.json"
+    },
+    {
+      "colecao": "Texture III",
+      "catalogo": 57,
+      "confirmado": 57,
+      "status": "completo",
+      "fonte": "https://www.imperiopapeldeparede.com.br/produtos/categoria/papel-de-parede-texture-iii",
+      "fonte_tipo": "Distribuidor/importador",
+      "evidencia": "58 produtos na categoria: mostruário CAT7154 + 57 papéis. Seis referências ausentes foram confirmadas e adicionadas com imagens locais.",
+      "refs_adicionadas": ["TX-3010", "TX-3019", "TX-3037", "TX-3050", "TX-3052", "TX-3054"],
+      "relatorio": "auditoria-import-texture-iii.json"
+    },
+    {
+      "colecao": "Tramas",
+      "catalogo": 62,
+      "confirmado": 62,
+      "status": "completo",
+      "fonte": "https://www.imperiopapeldeparede.com.br/produtos/categoria/papel-de-parede-tramas",
+      "fonte_tipo": "Distribuidor/importador",
+      "evidencia": "63 produtos na categoria: mostruário CAT7155 + 62 papéis. Nenhuma inclusão necessária."
+    }
+  ]
+}
