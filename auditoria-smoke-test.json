@@ -1,5 +1,5 @@
 {
-  "status": "falha",
+  "status": "ok",
   "itens_data": 1212,
   "itens_inventario": 1212,
   "itens_consolidado": 1212,
@@ -13,8 +13,8 @@
     {
       "fornecedor": "Home Finish",
       "colecao": "BIO Habitat",
-      "ref": "101046",
-      "ocorrencias": 0
+      "ref": "BH101046",
+      "ocorrencias": 1
     },
     {
       "fornecedor": "Home Finish",
@@ -55,9 +55,7 @@
     "card": 28,
     "zoom": 28
   },
-  "falhas": [
-    "Referência crítica Home Finish / BIO Habitat / 101046 tem 0 ocorrência(s); esperado 1"
-  ],
+  "falhas": [],
   "avisos": [],
   "criterio": "Smoke test do catálogo publicado: estrutura DATA, consistência com relatórios, controles de busca/filtro, referências críticas reparadas e existência dos assets locais de card/zoom. Não altera produtos nem imagens."
 }
