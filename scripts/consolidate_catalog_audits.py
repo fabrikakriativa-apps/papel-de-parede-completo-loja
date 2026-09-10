@@ -27,7 +27,7 @@ def audited_total(values: dict[str, object]) -> int:
     return total
 
 
-def build_homefinish(report: dict, inventory_count: int) -> dict:
+def build_homefinish(report: dict, scope: dict, inventory_count: int) -> dict:
     audited_catalog_total = int(report.get("total_catalogo_home_finish") or 0)
     source_total = int(report.get("total_fonte_validada") or 0)
     current_match = inventory_count == audited_catalog_total == source_total
@@ -42,7 +42,7 @@ def build_homefinish(report: dict, inventory_count: int) -> dict:
         "itens_catalogo": inventory_count,
         "itens_auditados": audited_catalog_total,
         "itens_fonte_validada": source_total,
-        "colecoes": report.get("colecoes_catalogo"),
+        "colecoes_cadastradas": report.get("colecoes_catalogo"),
         "status_colecoes_cadastradas": (
             "completo_contra_snapshot_validado_oficial"
             if base_ok and current_match
@@ -52,6 +52,16 @@ def build_homefinish(report: dict, inventory_count: int) -> dict:
         "extras": int(report.get("total_extras_no_catalogo") or 0),
         "duplicidades": len(report.get("duplicatas_catalogo") or []),
         "totais_coincidem": current_match,
+        "cobertura_portfolio_oficial": {
+            "status": scope.get("status"),
+            "colecoes_ausentes_confirmadas": [
+                row.get("nome") for row in scope.get("colecoes_ausentes_confirmadas", []) if row.get("nome")
+            ],
+            "colecoes_em_classificacao": [
+                row.get("nome") for row in scope.get("colecoes_encontradas_em_produtos_a_classificar", []) if row.get("nome")
+            ],
+            "relatorio": "auditoria-homefinish-escopo-oficial.json",
+        },
         "fonte": "Snapshot validado de URLs do domínio oficial homefinish.com.br",
         "relatorio": "auditoria-homefinish-fonte-validada.json",
         "observacao": "Os prefixos comerciais BH e MI são preservados no catálogo e normalizados apenas durante a comparação.",
@@ -98,7 +108,7 @@ def build_kantai(report: dict, scope: dict, inventory_count: int) -> dict:
     }
 
 
-def build_wiler(report: dict, inventory_count: int) -> dict:
+def build_wiler(report: dict, scope: dict, inventory_count: int) -> dict:
     rows = report.get("colecoes") or []
     audited: dict[str, object] = {}
     all_rows_ok = True
@@ -124,6 +134,12 @@ def build_wiler(report: dict, inventory_count: int) -> dict:
         ),
         "totais_coincidem": current_match,
         "colecoes_auditadas": audited,
+        "cobertura_portfolio_oficial": {
+            "status": scope.get("status"),
+            "produtos_papel_de_parede_marca_wiler_k_na_vitrine_atual": scope.get("produtos_papel_de_parede_marca_wiler_k_na_vitrine_atual"),
+            "colecoes_ativas_ausentes_confirmadas": scope.get("colecoes_ativas_ausentes_confirmadas", []),
+            "relatorio": "auditoria-wiler-escopo-oficial.json",
+        },
         "fonte": "Fontes da cadeia de fornecimento e snapshot histórico do book de origem para Tacto",
         "relatorio": "auditoria-wiler-consolidada.json",
     }
@@ -136,9 +152,11 @@ def provider_registered_ok(row: dict) -> bool:
 def main() -> None:
     inventory = load("auditoria-catalogo-atual.json")
     homefinish = load("auditoria-homefinish-fonte-validada.json")
+    homefinish_scope = load("auditoria-homefinish-escopo-oficial.json")
     kantai = load("auditoria-kantai-oficial.json")
     kantai_scope = load("auditoria-kantai-escopo-oficial.json")
     wiler = load("auditoria-wiler-consolidada.json")
+    wiler_scope = load("auditoria-wiler-escopo-oficial.json")
 
     suppliers = inventory.get("fornecedores") or {}
     integrity_ok = (
@@ -148,16 +166,21 @@ def main() -> None:
     )
 
     provider_rows = [
-        build_homefinish(homefinish, int(suppliers.get("Home Finish") or 0)),
+        build_homefinish(homefinish, homefinish_scope, int(suppliers.get("Home Finish") or 0)),
         build_kantai(kantai, kantai_scope, int(suppliers.get("Kantai") or 0)),
-        build_wiler(wiler, int(suppliers.get("Wiler") or 0)),
+        build_wiler(wiler, wiler_scope, int(suppliers.get("Wiler") or 0)),
     ]
 
     registered_complete = integrity_ok and all(provider_registered_ok(row) for row in provider_rows)
+    portfolio_statuses = {
+        "Home Finish": homefinish_scope.get("status"),
+        "Kantai": kantai_scope.get("status"),
+        "Wiler": wiler_scope.get("status"),
+    }
 
     report = {
         "status": "completo_nas_fontes_auditadas" if registered_complete else "revisao_necessaria",
-        "escopo_status": "cobertura_portfolio_em_auditoria",
+        "escopo_status": "cobertura_portfolio_parcial_confirmada",
         "itens_catalogo": inventory.get("itens_catalogo"),
         "fornecedores": inventory.get("total_fornecedores"),
         "colecoes": inventory.get("total_colecoes"),
@@ -167,6 +190,15 @@ def main() -> None:
             "imagens_locais_faltantes": int(inventory.get("imagens_card_locais_faltantes") or 0),
         },
         "cobertura_portfolio": {
+            "Home Finish": {
+                "status": homefinish_scope.get("status"),
+                "colecoes_ausentes_confirmadas": [
+                    row.get("nome") for row in homefinish_scope.get("colecoes_ausentes_confirmadas", []) if row.get("nome")
+                ],
+                "colecoes_em_classificacao": [
+                    row.get("nome") for row in homefinish_scope.get("colecoes_encontradas_em_produtos_a_classificar", []) if row.get("nome")
+                ],
+            },
             "Kantai": {
                 "status": kantai_scope.get("status"),
                 "colecoes_oficiais_listadas": kantai_scope.get("colecoes_oficiais_listadas"),
@@ -174,11 +206,15 @@ def main() -> None:
                 "colecoes_ausentes_no_catalogo": kantai_scope.get("colecoes_ausentes_no_catalogo"),
                 "amostras_declaradas_em_colecoes_ausentes": kantai_scope.get("amostras_declaradas_em_colecoes_ausentes"),
             },
-            "Home Finish": {"status": "a_validar_portfolio_completo"},
-            "Wiler": {"status": "a_validar_portfolio_completo"},
+            "Wiler": {
+                "status": wiler_scope.get("status"),
+                "produtos_papel_de_parede_marca_wiler_k_na_vitrine_atual": wiler_scope.get("produtos_papel_de_parede_marca_wiler_k_na_vitrine_atual"),
+                "colecoes_ativas_ausentes_confirmadas": wiler_scope.get("colecoes_ativas_ausentes_confirmadas", []),
+            },
         },
         "fornecedores_auditados": provider_rows,
-        "criterio": "O status principal mede integridade e completude das coleções já cadastradas; não equivale a dizer que todo o portfólio atual de cada fornecedor está no catálogo. A cobertura de portfólio é registrada separadamente. Totais publicados precisam coincidir com os totais efetivamente auditados, evitando falso positivo após novas inclusões. Não usa versões ZIP/HTML antigas como fonte operacional.",
+        "criterio": "O status principal mede integridade e completude das coleções já cadastradas; não equivale a dizer que todo o portfólio atual de cada fornecedor está no catálogo. A cobertura de portfólio é registrada separadamente e, nesta data, é parcial nos três fornecedores. Coleções encontradas fora da biblioteca-fonte original são tratadas como expansão de escopo, não como erro de publicação. Totais publicados precisam coincidir com os totais efetivamente auditados. Não usa versões ZIP/HTML antigas como fonte operacional.",
+        "portfolio_statuses": portfolio_statuses,
     }
 
     OUT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -190,7 +226,7 @@ def main() -> None:
         "colecoes": report["colecoes"],
         "integridade_ok": integrity_ok,
         "colecoes_cadastradas_ok": all(provider_registered_ok(row) for row in provider_rows),
-        "kantai_portfolio": kantai_scope.get("status"),
+        "portfolio_statuses": portfolio_statuses,
     }, ensure_ascii=False))
 
 
