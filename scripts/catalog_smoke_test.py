@@ -9,7 +9,7 @@ INDEX = ROOT / "index.html"
 REPORT = ROOT / "auditoria-smoke-test.json"
 
 CRITICAL_REFS = [
-    {"fornecedor": "Home Finish", "colecao": "BIO Habitat", "ref": "101046"},
+    {"fornecedor": "Home Finish", "colecao": "BIO Habitat", "ref": "BH101046"},
     {"fornecedor": "Home Finish", "colecao": "Memórias de Infância", "ref": "MI201010"},
     {"fornecedor": "Kantai", "colecao": "Poet Chart 5", "ref": "PT500706"},
     {"fornecedor": "Kantai", "colecao": "Aditare 3", "ref": "AD300001R"},
