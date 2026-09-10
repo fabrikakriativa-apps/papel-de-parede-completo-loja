@@ -12,12 +12,12 @@
     "refs_visiveis_count": 0,
     "respostas_interessantes": [
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/bundle/css/asset.min.css?v=3&files=theme,vtex.admin-docs@0.13.0$style.common,vtex.admin-docs@0.13.0$style.small,vtex.admin-docs@0.13.0$style.notsmall,vtex.admin-docs@0.13.0$style.large,vtex.admin-docs@0.13.0$style.xlarge&files=fonts,989db2448f309bfdd99b513f37c84b8f5794d2b5&files=react~vtex.render-runtime@8.136.4,common&files=npm,animate.css@3.7.0/animate.min.css&files=react~vtex.store-components@3.178.6,Container,BackToTopButton,4,SearchBar,Logo,DiscountBadge&files=react~vtex.styleguide@9.146.16,0,Spinner,1,15,NumericStepper,Tooltip&files=react~vtex.search-result@3.150.2,2,NotFoundLayout,11,10,12,OrderByFlexible&files=react~vtex.admin-pages@4.59.2,HighlightOverlay&files=react~vtex.flex-layout@0.21.6,0&files=react~vtex.rich-text@0.16.1,index&files=react~vtex.store-video@1.4.3,0&files=react~vtex.login@2.70.0,1&files=react~willerk.minicart@2.67.4,Minicart&files=react~vtex.delivery-promise-components@1.5.1,4&files=react~vtex.product-summary@2.92.1,ProductSummaryImage&files=react~yourviews.yourviewsreviews@1.28.9,1&files=react~vtex.wish-list@1.19.1,AddProductBtn&files=overrides,willerk.product-list@0.37.5$overrides,vtex.product-list@0.37.5$overrides,willerk.minicart@2.67.4$overrides,vtex.minicart@2.68.0$overrides,willerk.store-theme@3.0.90$overrides&workspace=master",
+        "url": "https://io.vtex.com.br/v3/polyfill.min.js?version=3.89.4&features=Object.values,Object.entries,Object.assign,Array.from,Array.prototype.findIndex,Array.prototype.fill,Array.prototype.find,Array.prototype.flatMap,Array.prototype.includes,String.prototype.startsWith,String.prototype.endsWith,String.prototype.includes,String.prototype.repeat,Symbol,fetch,Promise,Map,WeakMap,Number.isInteger,Number.isNaN,Number.EPSILON,Set,Function.name,URL,IntersectionObserver,Intl.~locale.pt-BR&flags=gated",
         "method": "GET",
-        "resource_type": "stylesheet",
+        "resource_type": "script",
         "post_data": null,
         "status": 200,
-        "content_type": "text/css"
+        "content_type": "text/javascript; charset=UTF-8"
       },
       {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/vtex-render-session@1.9.2/dist/index.min.js?async=2&workspace=master",
@@ -26,6 +26,14 @@
         "post_data": null,
         "status": 200,
         "content_type": "text/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.render-runtime@8.136.4/public/react/common.min.js?async=2&workspace=master",
+        "method": "GET",
+        "resource_type": "script",
+        "post_data": null,
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
       },
       {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.render-runtime@8.136.4/public/react/regenerator-runtime.min.js?async=2&workspace=master",
@@ -52,12 +60,12 @@
         "content_type": "text/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.render-runtime@8.136.4/public/react/common.min.js?async=2&workspace=master",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/react-dom@0.0.0-experimental-94c0244ba/umd/react-dom.production.min.js?async=2&workspace=master",
         "method": "GET",
         "resource_type": "script",
         "post_data": null,
         "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
+        "content_type": "text/javascript; charset=utf-8"
       },
       {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/react-dom@0.0.0-experimental-94c0244ba/umd/react-dom-server.browser.production.min.js?async=2&workspace=master",
@@ -68,7 +76,7 @@
         "content_type": "text/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/react-dom@0.0.0-experimental-94c0244ba/umd/react-dom.production.min.js?async=2&workspace=master",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/react-intl@3.9.1/dist/react-intl.min.js?async=2&workspace=master",
         "method": "GET",
         "resource_type": "script",
         "post_data": null,
@@ -77,6 +85,14 @@
       },
       {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/history@4.7.2/umd/history.min.js?async=2&workspace=master",
+        "method": "GET",
+        "resource_type": "script",
+        "post_data": null,
+        "status": 200,
+        "content_type": "text/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/ramda@0.26.1/dist/ramda.min.js?async=2&workspace=master",
         "method": "GET",
         "resource_type": "script",
         "post_data": null,
@@ -108,23 +124,7 @@
         "content_type": "text/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/react-intl@3.9.1/dist/react-intl.min.js?async=2&workspace=master",
-        "method": "GET",
-        "resource_type": "script",
-        "post_data": null,
-        "status": 200,
-        "content_type": "text/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/npm/ramda@0.26.1/dist/ramda.min.js?async=2&workspace=master",
-        "method": "GET",
-        "resource_type": "script",
-        "post_data": null,
-        "status": 200,
-        "content_type": "text/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.render-runtime@8.136.4/public/react/index.min.js?async=2&workspace=master",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.render-runtime@8.136.4/public/react/graphql.min.js?async=2&workspace=master",
         "method": "GET",
         "resource_type": "script",
         "post_data": null,
@@ -140,7 +140,7 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-2f14e0b98de079771e5be2f3fd22e6439ad9b3f3.min.js?v=1&files=vtex.render-runtime@8.136.4,LayoutContainer&files=vtex.device-detector@0.2.6,common,useDevice,withDevice&files=vtex.css-handles@0.4.4,common,useCssHandles,applyModifiers&files=vtex.styleguide@9.146.16,common,0,Button,ButtonWithIcon,19,ToastContext,IconArrowBack,IconClose,ToastProvider,Spinner,Checkbox,1,Input&async=2&workspace=master",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.render-runtime@8.136.4/public/react/index.min.js?async=2&workspace=master",
         "method": "GET",
         "resource_type": "script",
         "post_data": null,
@@ -148,7 +148,7 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.render-runtime@8.136.4/public/react/graphql.min.js?async=2&workspace=master",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-2f14e0b98de079771e5be2f3fd22e6439ad9b3f3.min.js?v=1&files=vtex.render-runtime@8.136.4,LayoutContainer&files=vtex.device-detector@0.2.6,common,useDevice,withDevice&files=vtex.css-handles@0.4.4,common,useCssHandles,applyModifiers&files=vtex.styleguide@9.146.16,common,0,Button,ButtonWithIcon,19,ToastContext,IconArrowBack,IconClose,ToastProvider,Spinner,Checkbox,1,Input&async=2&workspace=master",
         "method": "GET",
         "resource_type": "script",
         "post_data": null,
@@ -172,6 +172,22 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-1164569a1916393d90612559a3c273f75d4539e2.min.js?v=1&files=vtex.session-client@1.0.4,useRenderSession&files=vtex.search-page-context@0.2.0,SearchPageContext&files=vtex.css-handles@1.0.1,common,0,useCssHandles,applyModifiers,createCssHandlesContext,useCustomClasses&files=willerk.store-components@0.0.15,common,MyAccountInputRules,CanonicalWithoutPage&files=vtex.visibility-layout@0.2.1,Experimental__VisibilityLayout&files=vtex.on-view@1.0.0,common,useOnView&files=vtex.modal-layout@0.14.2,common,ModalContext&files=vtex.react-vtexid@4.70.0,common,AuthServiceLazy,AuthStateLazy,RecaptchaProvider,getAbsReturnUrl&async=2&workspace=master",
+        "method": "GET",
+        "resource_type": "script",
+        "post_data": null,
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-4527ea244734daa5e5259c5d7f610cb4e7d71d0f.min.js?v=1&files=vtex.react-vtexid@4.70.0,1,2,0,useGetPhoneNumberByEmail,useLogInWithAccessKey,useLogInWithPassword,useLogOut,useRedirectAfterLogin,useSendAccessCode,useSendAccessKey,useSetPassword,useStartLoginAttempt,validations&files=vtex.address-form@4.29.3,common,AddressRules,0,1,2,5,3,helpers&async=2&workspace=master",
+        "method": "GET",
+        "resource_type": "script",
+        "post_data": null,
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-75d33359d05ddf30ac481cb878794229ea1a2927.min.js?v=1&files=vtex.product-context@0.10.1,common,ProductContextProvider,useProduct,useProductDispatch,ProductDispatchContext,ProductContext&files=vtex.product-group-context@0.2.0,ProductGroupContext&files=vtex.responsive-values@0.4.2,common,useResponsiveValues,useResponsiveValue&files=vtex.responsive-layout@0.1.4,common,ResponsiveLayoutDesktop&files=vtex.store-icons@0.19.4,common,IconSearch,IconCaret,IconGrid,IconInlineGrid,IconSingleGrid,Icon,IconExpand,IconPause&async=2&workspace=master",
         "method": "GET",
         "resource_type": "script",
@@ -181,14 +197,6 @@
       },
       {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-edcdac9af58f65a941f99ebb819f32e48307529e.min.js?v=1&files=vtex.store-icons@0.19.4,IconPlay,IconVolumeOff,IconVolumeOn,IconHome,IconClose,IconArrowBack,IconEyeSight,IconProfile,IconMenu,IconCart,IconFilter&files=vtex.sticky-layout@0.3.6,common,0,StickyLayout&files=vtex.react-portal@0.4.1,common,0,Overlay&files=vtex.stack-layout@0.1.4,index&files=vtex.native-types@0.10.1,common,IOMessage,formatIOMessage&async=2&workspace=master",
-        "method": "GET",
-        "resource_type": "script",
-        "post_data": null,
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-4527ea244734daa5e5259c5d7f610cb4e7d71d0f.min.js?v=1&files=vtex.react-vtexid@4.70.0,1,2,0,useGetPhoneNumberByEmail,useLogInWithAccessKey,useLogInWithPassword,useLogOut,useRedirectAfterLogin,useSendAccessCode,useSendAccessKey,useSetPassword,useStartLoginAttempt,validations&files=vtex.address-form@4.29.3,common,AddressRules,0,1,2,5,3,helpers&async=2&workspace=master",
         "method": "GET",
         "resource_type": "script",
         "post_data": null,
@@ -220,14 +228,6 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-02398393c0128eaeca81d90ab67457757d23955e.min.js?v=1&files=willerk.minicart@2.67.4,Minicart&files=maeztraio.list-context-rich-text@0.0.1,RichTextList&files=vtex.delivery-promise-components@1.5.1,common,0,2,1,3,5,DeliveryPromiseContext,4,PickupModalPresentational,6,PostalCodeModal&files=vtex.shipping-option-components@1.12.0,common,0,1,ShippingOptionContext&files=vtex.store-components@3.178.6,common,Container,Image,10&async=2&workspace=master",
-        "method": "GET",
-        "resource_type": "script",
-        "post_data": null,
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-70dda7043dcffd83b9a5fda5ea7ae5946996e373.min.js?v=1&files=vtex.product-highlights@2.3.2,ProductHighlightText&files=vtex.order-items@0.14.0,common,0,OrderItems&files=vtex.slider-layout@0.24.10,common,SliderLayout&files=vtex.store-image@0.24.0,common,Image,0,ImageList&files=yourviews.yourviewsreviews@1.28.9,common,0,3,1,2,RatingInline&files=vtex.product-price@1.33.0,common,ListPrice,SellingPrice,Savings&files=willerk.minicart@2.67.4,common&async=2&workspace=master",
         "method": "GET",
         "resource_type": "script",
@@ -236,23 +236,7 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-6734ad24a331343b28e68fddba0a009de16584e1.min.js?v=1&files=vtex.product-summary@2.92.1,common,ProductSummaryCustom,0,ProductSummaryList,ProductSummaryImage,ProductSummaryName&files=vtex.search-result@3.150.2,common,1,5,SearchQuery,4,19,0,2,3,9,SearchResultLayout,17,SearchResultFlexible,NotFoundLayout,11&async=2&workspace=master",
-        "method": "GET",
-        "resource_type": "script",
-        "post_data": null,
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-b8ece7df2319ef28206dd8f921ee60f5c5e17a6e.min.js?v=1&files=vtex.store@2.147.2,0,SearchWrapper,StoreWrapper,DefaultChallenge&async=2&workspace=master",
-        "method": "GET",
-        "resource_type": "script",
-        "post_data": null,
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-1164569a1916393d90612559a3c273f75d4539e2.min.js?v=1&files=vtex.session-client@1.0.4,useRenderSession&files=vtex.search-page-context@0.2.0,SearchPageContext&files=vtex.css-handles@1.0.1,common,0,useCssHandles,applyModifiers,createCssHandlesContext,useCustomClasses&files=willerk.store-components@0.0.15,common,MyAccountInputRules,CanonicalWithoutPage&files=vtex.visibility-layout@0.2.1,Experimental__VisibilityLayout&files=vtex.on-view@1.0.0,common,useOnView&files=vtex.modal-layout@0.14.2,common,ModalContext&files=vtex.react-vtexid@4.70.0,common,AuthServiceLazy,AuthStateLazy,RecaptchaProvider,getAbsReturnUrl&async=2&workspace=master",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-02398393c0128eaeca81d90ab67457757d23955e.min.js?v=1&files=willerk.minicart@2.67.4,Minicart&files=maeztraio.list-context-rich-text@0.0.1,RichTextList&files=vtex.delivery-promise-components@1.5.1,common,0,2,1,3,5,DeliveryPromiseContext,4,PickupModalPresentational,6,PostalCodeModal&files=vtex.shipping-option-components@1.12.0,common,0,1,ShippingOptionContext&files=vtex.store-components@3.178.6,common,Container,Image,10&async=2&workspace=master",
         "method": "GET",
         "resource_type": "script",
         "post_data": null,
@@ -268,6 +252,14 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-6734ad24a331343b28e68fddba0a009de16584e1.min.js?v=1&files=vtex.product-summary@2.92.1,common,ProductSummaryCustom,0,ProductSummaryList,ProductSummaryImage,ProductSummaryName&files=vtex.search-result@3.150.2,common,1,5,SearchQuery,4,19,0,2,3,9,SearchResultLayout,17,SearchResultFlexible,NotFoundLayout,11&async=2&workspace=master",
+        "method": "GET",
+        "resource_type": "script",
+        "post_data": null,
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-8b7c5b60514a13c9dedc079aa0c62812e8bec136.min.js?v=1&files=vtex.search-result@3.150.2,SearchTitleFlexible,6,7,13,10,FilterNavigatorFlexible,SidebarCloseButton,SearchContent,FetchMore,12,TotalProductsFlexible,OrderByFlexible,15,8,16,14,Gallery,NotFoundSearch&files=vtex.store@2.147.2,common,1,SearchContext&async=2&workspace=master",
         "method": "GET",
         "resource_type": "script",
@@ -276,12 +268,12 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://activity-flow.vtex.com/af/af.js",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-b8ece7df2319ef28206dd8f921ee60f5c5e17a6e.min.js?v=1&files=vtex.store@2.147.2,0,SearchWrapper,StoreWrapper,DefaultChallenge&async=2&workspace=master",
         "method": "GET",
         "resource_type": "script",
         "post_data": null,
         "status": 200,
-        "content_type": "text/javascript"
+        "content_type": "application/javascript; charset=utf-8"
       },
       {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/bundle/public/react/asset-e6c61e1b89c9bd2fc8caaf6d75b0840e5c2818d5.min.js?v=1&files=vtex.render-runtime@8.136.4,ExtensionContainer&files=vtex.admin-pages@4.59.2,common,6,18,HighlightOverlay&files=vtex.request-capture@2.3.0,index&files=vtex.sae-analytics@2.17.0,common,index&files=vtex.google-tag-manager@3.5.4,index&files=maeztraio.trustvox-integration@1.0.1,common,index&files=willerk.store-components@0.0.15,index&files=vtex.store-components@3.178.6,BackToTopButton&async=2&workspace=master",
@@ -292,6 +284,14 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/bundle/css/asset.min.css?v=3&files=theme,vtex.admin-docs@0.13.0$style.common,vtex.admin-docs@0.13.0$style.small,vtex.admin-docs@0.13.0$style.notsmall,vtex.admin-docs@0.13.0$style.large,vtex.admin-docs@0.13.0$style.xlarge&files=fonts,989db2448f309bfdd99b513f37c84b8f5794d2b5&files=react~vtex.render-runtime@8.136.4,common&files=npm,animate.css@3.7.0/animate.min.css&files=react~vtex.store-components@3.178.6,Container,BackToTopButton,4,SearchBar,Logo,DiscountBadge&files=react~vtex.styleguide@9.146.16,0,Spinner,1,15,NumericStepper,Tooltip&files=react~vtex.search-result@3.150.2,2,NotFoundLayout,11,10,12,OrderByFlexible&files=react~vtex.admin-pages@4.59.2,HighlightOverlay&files=react~vtex.flex-layout@0.21.6,0&files=react~vtex.rich-text@0.16.1,index&files=react~vtex.store-video@1.4.3,0&files=react~vtex.login@2.70.0,1&files=react~willerk.minicart@2.67.4,Minicart&files=react~vtex.delivery-promise-components@1.5.1,4&files=react~vtex.product-summary@2.92.1,ProductSummaryImage&files=react~yourviews.yourviewsreviews@1.28.9,1&files=react~vtex.wish-list@1.19.1,AddProductBtn&files=overrides,willerk.product-list@0.37.5$overrides,vtex.product-list@0.37.5$overrides,willerk.minicart@2.67.4$overrides,vtex.minicart@2.68.0$overrides,willerk.store-theme@3.0.90$overrides&workspace=master",
+        "method": "GET",
+        "resource_type": "stylesheet",
+        "post_data": null,
+        "status": 200,
+        "content_type": "text/css"
+      },
+      {
         "url": "https://io.vtex.com.br/rc/rc.js",
         "method": "GET",
         "resource_type": "script",
@@ -300,12 +300,34 @@
         "content_type": "application/javascript"
       },
       {
-        "url": "https://io.vtex.com.br/v3/polyfill.min.js?version=3.89.4&features=Object.values,Object.entries,Object.assign,Array.from,Array.prototype.findIndex,Array.prototype.fill,Array.prototype.find,Array.prototype.flatMap,Array.prototype.includes,String.prototype.startsWith,String.prototype.endsWith,String.prototype.includes,String.prototype.repeat,Symbol,fetch,Promise,Map,WeakMap,Number.isInteger,Number.isNaN,Number.EPSILON,Set,Function.name,URL,IntersectionObserver,Intl.~locale.pt-BR&flags=gated",
+        "url": "https://activity-flow.vtex.com/af/af.js",
         "method": "GET",
         "resource_type": "script",
         "post_data": null,
         "status": 200,
-        "content_type": "text/javascript; charset=UTF-8"
+        "content_type": "text/javascript"
+      },
+      {
+        "url": "https://www.wiler.com.br/api/sessions?map=category-1%2Ccolecoes&items=account.id,account.accountName,store.channel,store.countryCode,store.cultureInfo,store.currencyCode,store.currencySymbol,store.admin_cultureInfo,creditControl.creditAccounts,creditControl.deadlines,creditControl.minimumInstallmentValue,authentication.storeUserId,authentication.storeUserEmail,profile.firstName,profile.document,profile.email,profile.id,profile.isAuthenticated,profile.lastName,profile.phone,public.favoritePickup,public.utm_source,public.utm_medium,public.utm_campaign,public.utmi_cp,public.utmi_p,public.utmi_pc&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0",
+        "method": "POST",
+        "resource_type": "fetch",
+        "post_data": "{}",
+        "status": 201,
+        "content_type": "application/json; charset=utf-8",
+        "json_preview": {
+          "id": "4c2b8695-7429-4e48-88b9-5f82f08e1cec",
+          "namespaces": {
+            "account": {
+              "id": {
+                "value": "ffc7c889-2cde-43e7-8315-7c5e5fcb7ca5",
+                "keepAlive": true
+              },
+              "accountName": {
+                "value": "willerk"
+              }
+            }
+          }
+        }
       },
       {
         "url": "https://trustvox.com.br/store_reviews/store_reviews?store_id=&limit=7&min_rating=2",
@@ -327,99 +349,11 @@
         "content_type": "font/ttf"
       },
       {
-        "url": "https://af-origin.vtex.com/api/activity-flow/page-views",
-        "method": "POST",
-        "resource_type": "ping",
-        "post_data": "{\"eventType\":\"pageView\",\"isDelayed\":false,\"DataType\":\"Event\",\"SessionId\":\"d0867751-e95a-4390-9cda-d25a9f09cccd\",\"MacId\":\"9db929fd-9110-4173-8550-ea6544bae52f\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"accountName\":\"willerk\",\"accountEnvironment\":\"store_framework\",\"clientdate\":1789062350398,\"workspace\":\"master%3A-\",\"ckInfo\":\"VtexWorkspace=master%3A-; VtexRCSessionIdv7=d0867751-e95a-4390-9cda-d25a9f09cccd; VtexRCMacIdv7=9db929fd-9110-4173-8550-ea6544bae52f\",\"IsNewUser\":false,\"isFirstEvent\":false}",
-        "status": 200,
-        "content_type": "application/json",
-        "json_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-      },
-      {
-        "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=2&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=65654146.1789062351&navt=n&npa=1&ep.ads_data_redaction=1&gdid=dZmNiZj&_tu=CA&gtm=45He6990v811370786za200zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938466~115938469~118897920~118897930~120385423~120469145~120469153&tft=1789062350522&tfd=572&fmt=8",
+        "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=9&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=153060877.1789063100&navt=n&npa=1&ep.ads_data_redaction=1&gdid=dZmNiZj&_tu=CA&gtm=45He6990v811370786za200zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118897920~118897930~120385422~120469145~120469153&tft=1789063100247&tfd=3273&fmt=8",
         "method": "POST",
         "resource_type": "fetch",
         "post_data": null,
         "status": 200,
-        "content_type": ""
-      },
-      {
-        "url": "https://dev.visualwebsiteoptimizer.com/j.php?a=1025788&u=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&vn=2.1&x=true",
-        "method": "GET",
-        "resource_type": "xhr",
-        "post_data": null,
-        "status": 200,
-        "content_type": "application/javascript; charset=UTF-8"
-      },
-      {
-        "url": "https://af-origin.vtex.com/api/activity-flow/user-session",
-        "method": "POST",
-        "resource_type": "ping",
-        "post_data": "{\"eventType\":\"userSession\",\"DataType\":\"Event\",\"SessionId\":\"d0867751-e95a-4390-9cda-d25a9f09cccd\",\"MacId\":\"9db929fd-9110-4173-8550-ea6544bae52f\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"accountName\":\"willerk\",\"accountEnvironment\":\"store_framework\",\"clientdate\":1789062350396,\"workspace\":\"master%3A-\",\"ckInfo\":\"VtexWorkspace=master%3A-; VtexRCSessionIdv7=d0867751-e95a-4390-9cda-d25a9f09cccd; VtexRCMacIdv7=9db929fd-9110-4173-8550-ea6544bae52f\",\"IsNewUser\":true}",
-        "status": 200,
-        "content_type": "application/json",
-        "json_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-      },
-      {
-        "url": "https://www.wiler.com.br/api/sessions?map=category-1%2Ccolecoes&items=account.id,account.accountName,store.channel,store.countryCode,store.cultureInfo,store.currencyCode,store.currencySymbol,store.admin_cultureInfo,creditControl.creditAccounts,creditControl.deadlines,creditControl.minimumInstallmentValue,authentication.storeUserId,authentication.storeUserEmail,profile.firstName,profile.document,profile.email,profile.id,profile.isAuthenticated,profile.lastName,profile.phone,public.favoritePickup,public.utm_source,public.utm_medium,public.utm_campaign,public.utmi_cp,public.utmi_p,public.utmi_pc&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0",
-        "method": "POST",
-        "resource_type": "fetch",
-        "post_data": "{}",
-        "status": 201,
-        "content_type": "application/json; charset=utf-8",
-        "json_preview": {
-          "id": "3cd2d9c4-b5e5-4e27-9591-aaf6035ddeab",
-          "namespaces": {
-            "account": {
-              "id": {
-                "value": "ffc7c889-2cde-43e7-8315-7c5e5fcb7ca5",
-                "keepAlive": true
-              },
-              "accountName": {
-                "value": "willerk"
-              }
-            }
-          }
-        }
-      },
-      {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-18WWV0TPPP&gtm=45je6990v9102585009za20gzb811370786zd811370786&_p=1789062350259&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&_eu=AEAAAGAC&ae=a&are=1&cid=2132362631.1789062351&frm=0&gtm_up=1&pscdl=denied&rcb=8&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&gaf=2&_s=1&tag_exp=115616985~115938466~115938468~118897920~118897930~120213116~120385423~120469145~120469153&sid=1789062350&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=&_tu=CA&en=scroll&_fv=1&_nsi=1&_ss=1&epn.percent_scrolled=90&tfd=919",
-        "method": "POST",
-        "resource_type": "fetch",
-        "post_data": null,
-        "status": 204,
-        "content_type": "text/plain"
-      },
-      {
-        "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=16&frm=0&apvc=0&tid=AW-865462130&en=page_view&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=65654146.1789062351&navt=n&npa=1&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6990v9123716997z8811370786za20gzb811370786zd811370786xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1789062350943&tfd=993&tids=AW-865462130&fmt=8",
-        "method": "POST",
-        "resource_type": "fetch",
-        "post_data": null,
-        "status": 200,
-        "content_type": ""
-      },
-      {
-        "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=16&frm=0&apvc=0&ae=g&tid=AW-865462130&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=65654146.1789062351&navt=n&npa=1&ep.ads_data_redaction=1&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6990v9123716997z8811370786za20gzb811370786zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1789062350945&tfd=994&tids=AW-865462130&fmt=8",
-        "method": "POST",
-        "resource_type": "fetch",
-        "post_data": null,
-        "status": 200,
-        "content_type": ""
-      },
-      {
-        "url": "https://dxyxft75r9rwr.cloudfront.net/i/628647244ded2c5bb52613fd.json?t=%271789062350950",
-        "method": "GET",
-        "resource_type": "xhr",
-        "post_data": null,
-        "status": 200,
-        "content_type": "application/octet-stream"
-      },
-      {
-        "url": "https://sp.vtex.com/event-api/v1/willerk/event",
-        "method": "POST",
-        "resource_type": "fetch",
-        "post_data": "{\"account\":\"willerk\",\"url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"workspace\":\"master\",\"locale\":\"pt-BR\",\"type\":\"session.ping\",\"ab\":\"master\",\"session\":\"3549b8e72a0b4c0abc27ae4cdefa218c\",\"anonymous\":\"bc96a49ad3bb4b138adeeec0ea6cb436\",\"vtexSession\":\"d0867751-e95a-4390-9cda-d25a9f09cccd\",\"vtexMac\":\"9db929fd-9110-4173-8550-ea6544bae52f\"}",
-        "status": 204,
         "content_type": ""
       },
       {
@@ -492,12 +426,30 @@
         }
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/566a9052-128d-499d-9692-68acb1d26266___af56f1cc83ce44a60a504b858d552c67.jpg",
+        "url": "https://af-origin.vtex.com/api/activity-flow/user-session",
+        "method": "POST",
+        "resource_type": "ping",
+        "post_data": "{\"eventType\":\"userSession\",\"DataType\":\"Event\",\"SessionId\":\"6de3a028-69a8-43a3-aa84-4df1ee853ca7\",\"MacId\":\"cdfbc761-257a-4ef9-9e20-cfd76ab666e9\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"accountName\":\"willerk\",\"accountEnvironment\":\"store_framework\",\"clientdate\":1789063100173,\"workspace\":\"master%3A-\",\"ckInfo\":\"VtexWorkspace=master%3A-; vtex-search-session=12d83152f8ac4d56aa9daf52f8fd2c24; vtex-search-anonymous=b94e445d3a564e07af0192b01f6a5c40; __trf.src=encoded_eyJmaXJzdF9zZXNzaW9uIjp7InZhbHVlIjoiKG5vbmUpIiwiZXh0cmFfcGFyYW1zIjp7fX0sImN1cnJlbnRfc2Vzc2lvbiI6eyJ2YWx1ZSI6Iihub25lKSIsImV4dHJhX3BhcmFtcyI6e319LCJjcmVhdGVkX2F0IjoxNzg5MDYzMTAwMTY3fQ==; VtexRCSessionIdv7=6de3a028-69a8-43a3-aa84-4df1ee853ca7; VtexRCMacIdv7=cdfbc761-257a-4ef9-9e20-cfd76ab666e9\",\"IsNewUser\":true}",
+        "status": 200,
+        "content_type": "application/json",
+        "json_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "url": "https://af-origin.vtex.com/api/activity-flow/page-views",
+        "method": "POST",
+        "resource_type": "ping",
+        "post_data": "{\"eventType\":\"pageView\",\"isDelayed\":false,\"DataType\":\"Event\",\"SessionId\":\"6de3a028-69a8-43a3-aa84-4df1ee853ca7\",\"MacId\":\"cdfbc761-257a-4ef9-9e20-cfd76ab666e9\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"accountName\":\"willerk\",\"accountEnvironment\":\"store_framework\",\"clientdate\":1789063100174,\"workspace\":\"master%3A-\",\"ckInfo\":\"VtexWorkspace=master%3A-; vtex-search-session=12d83152f8ac4d56aa9daf52f8fd2c24; vtex-search-anonymous=b94e445d3a564e07af0192b01f6a5c40; __trf.src=encoded_eyJmaXJzdF9zZXNzaW9uIjp7InZhbHVlIjoiKG5vbmUpIiwiZXh0cmFfcGFyYW1zIjp7fX0sImN1cnJlbnRfc2Vzc2lvbiI6eyJ2YWx1ZSI6Iihub25lKSIsImV4dHJhX3BhcmFtcyI6e319LCJjcmVhdGVkX2F0IjoxNzg5MDYzMTAwMTY3fQ==; VtexRCSessionIdv7=6de3a028-69a8-43a3-aa84-4df1ee853ca7; VtexRCMacIdv7=cdfbc761-257a-4ef9-9e20-cfd76ab666e9\",\"IsNewUser\":false,\"isFirstEvent\":false}",
+        "status": 200,
+        "content_type": "application/json",
+        "json_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "url": "https://dev.visualwebsiteoptimizer.com/j.php?a=1025788&u=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&vn=2.1&x=true",
         "method": "GET",
-        "resource_type": "image",
+        "resource_type": "xhr",
         "post_data": null,
         "status": 200,
-        "content_type": "image/webp"
+        "content_type": "application/javascript; charset=UTF-8"
       },
       {
         "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=installedApp&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22ec242d8fc2dca51162eb59b3c55b818fa5fec4a04b2529b9c9c48c6b21ddeb7d%22%2C%22sender%22%3A%22vtex.checkout-resources%400.x%22%2C%22provider%22%3A%22vtex.apps-graphql%403.x%22%7D%2C%22variables%22%3A%22eyJzbHVnIjoidnRleC5jaGVja291dCJ9%22%7D",
@@ -515,14 +467,6 @@
         }
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/20d210c8-9bd9-4ce4-bdc3-b5edcaa68d85___03dcb685699ebb51b74c1e0cef332853.jpg",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
         "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/de37d6e9-6646-477f-846b-7e1bd0489783___3ae9820979f176025fd87b4dd8fabfe9.jpg",
         "method": "GET",
         "resource_type": "image",
@@ -531,7 +475,7 @@
         "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/81498740-8c9d-4a54-a046-a879e84399fb___f1aa5330053416b38ea5fb36bc046898.jpg",
+        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/566a9052-128d-499d-9692-68acb1d26266___af56f1cc83ce44a60a504b858d552c67.jpg",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
@@ -539,7 +483,7 @@
         "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/bd68feeb-f1c3-4418-af67-22070dd244d4___0a7468137de2bcdfc97ecb643fc82f08.jpg",
+        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/81498740-8c9d-4a54-a046-a879e84399fb___f1aa5330053416b38ea5fb36bc046898.jpg",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
@@ -576,48 +520,15 @@
         "resource_type": "image",
         "post_data": null,
         "status": 200,
-        "content_type": "application/octet-stream"
+        "content_type": "image/webp"
       },
       {
-        "url": "https://service.smarthint.co/Scripts/i/Vtex.IO.min.js",
+        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/20d210c8-9bd9-4ce4-bdc3-b5edcaa68d85___03dcb685699ebb51b74c1e0cef332853.jpg",
         "method": "GET",
-        "resource_type": "script",
+        "resource_type": "image",
         "post_data": null,
         "status": 200,
-        "content_type": "application/javascript"
-      },
-      {
-        "url": "https://www.wiler.com.br/_v/private/graphql/v1?workspace=master&maxAge=long&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0",
-        "method": "POST",
-        "resource_type": "fetch",
-        "post_data": "{\"operationName\":\"orderForm\",\"variables\":{},\"extensions\":{\"persistedQuery\":{\"version\":1,\"sha256Hash\":\"0e4744147dc063d889099111536c3c8bb748a31ab1cdc610d8ea7843f1724591\",\"sender\":\"vtex.checkout-resources@0.x\",\"provider\":\"vtex.checkout-graphql@0.x\"},\"variables\":\"eyJyZWZyZXNoT3V0ZGF0ZWREYXRhIjpmYWxzZX0=\"}}",
-        "status": 200,
-        "content_type": "application/json; charset=utf-8",
-        "json_preview": {
-          "data": {
-            "orderForm": {
-              "id": "a13a7a8705f44fe3b96a40141bb7a8c3",
-              "items": [],
-              "canEditData": true,
-              "userProfileId": null,
-              "marketingData": {
-                "__typename": "MarketingData"
-              },
-              "totalizers": [],
-              "paymentData": {
-                "availableAccounts": [],
-                "isValid": false,
-                "__typename": "PaymentData"
-              },
-              "clientProfileData": null,
-              "clientPreferencesData": {
-                "__typename": "ClientPreferencesData"
-              },
-              "customData": null,
-              "__typename": "OrderForm"
-            }
-          }
-        }
+        "content_type": "image/webp"
       },
       {
         "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=getConfig&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%224a8824e9a0693309f658dbe0edf008d242354264954badd98c24941075ee9d3f%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%7D",
@@ -651,14 +562,6 @@
         "content_type": "image/svg+xml"
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.90/svg/filter-check___a376c11b076a219e4919c00a4259b27c.svg",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/svg+xml"
-      },
-      {
         "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.90/svg/arrow-right-topbar___ae8eb5e7f272a21a0f260e273488e42a.svg",
         "method": "GET",
         "resource_type": "image",
@@ -667,23 +570,7 @@
         "content_type": "image/svg+xml"
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.90/svg/fi_shopping-bag___2ca29c107044092ce47c4e8b29d38c5b.svg",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/svg+xml"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.90/svg/arrow-left-topbar___720b94649461ececdcd02d35eee5733f.svg",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/svg+xml"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.90/svg/mobile-user___abc2a7bad6e997a62aecdc3a7b0348aa.svg",
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.90/svg/filter-check___a376c11b076a219e4919c00a4259b27c.svg",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
@@ -699,6 +586,30 @@
         "content_type": "image/svg+xml"
       },
       {
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.90/svg/fi_shopping-bag___2ca29c107044092ce47c4e8b29d38c5b.svg",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/svg+xml"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.90/svg/mobile-user___abc2a7bad6e997a62aecdc3a7b0348aa.svg",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/svg+xml"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.90/svg/arrow-left-topbar___720b94649461ececdcd02d35eee5733f.svg",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/svg+xml"
+      },
+      {
         "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.90/svg/u_heart-outline___75595b9213e65e9c07584cd6091171dd.svg",
         "method": "GET",
         "resource_type": "image",
@@ -707,15 +618,47 @@
         "content_type": "image/svg+xml"
       },
       {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/215526-249-249?v=638846422640300000&width=249&height=249&aspect=true",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-icons@0.19.4/public/react/IconAssistantSales.min.js",
         "method": "GET",
-        "resource_type": "image",
+        "resource_type": "script",
         "post_data": null,
         "status": 200,
-        "content_type": "image/webp"
+        "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/215527-249-249?v=638846422640430000&width=249&height=249&aspect=true",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.telemarketing@2.12.1/public/react/index.min.js",
+        "method": "GET",
+        "resource_type": "script",
+        "post_data": null,
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-resources@0.105.0/public/react/QuerySession.min.js",
+        "method": "GET",
+        "resource_type": "script",
+        "post_data": null,
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://sp.vtex.com/event-api/v1/willerk/event",
+        "method": "POST",
+        "resource_type": "fetch",
+        "post_data": "{\"account\":\"willerk\",\"url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"workspace\":\"master\",\"locale\":\"pt-BR\",\"type\":\"session.ping\",\"ab\":\"master\",\"session\":\"12d83152f8ac4d56aa9daf52f8fd2c24\",\"anonymous\":\"b94e445d3a564e07af0192b01f6a5c40\"}",
+        "status": 204,
+        "content_type": ""
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-drawer@0.18.1/public/react/0.min.js",
+        "method": "GET",
+        "resource_type": "script",
+        "post_data": null,
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/arquivos/ids/215526-249-249?v=638846422640300000&width=249&height=249&aspect=true",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
@@ -739,23 +682,7 @@
         "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/226955-249-249?v=639156531819170000&width=249&height=249&aspect=true",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/229381-249-249?v=639183612569570000&width=249&height=249&aspect=true",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/226956-249-249?v=639156531819170000&width=249&height=249&aspect=true",
+        "url": "https://willerk.vtexassets.com/arquivos/ids/226950-249-249?v=639156531423830000&width=249&height=249&aspect=true",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
@@ -771,23 +698,7 @@
         "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/226950-249-249?v=639156531423830000&width=249&height=249&aspect=true",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/229386-249-249?v=639183613299730000&width=249&height=249&aspect=true",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/229372-249-249?v=639183611106770000&width=249&height=249&aspect=true",
+        "url": "https://willerk.vtexassets.com/arquivos/ids/226951-249-249?v=639156531423830000&width=249&height=249&aspect=true",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
@@ -803,23 +714,7 @@
         "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/226951-249-249?v=639156531423830000&width=249&height=249&aspect=true",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/215412-249-249?v=638846411489800000&width=249&height=249&aspect=true",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/215411-249-249?v=638846411489500000&width=249&height=249&aspect=true",
+        "url": "https://willerk.vtexassets.com/arquivos/ids/229386-249-249?v=639183613299730000&width=249&height=249&aspect=true",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
@@ -835,36 +730,118 @@
         "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-resources@0.105.0/public/react/QuerySession.min.js",
+        "url": "https://willerk.vtexassets.com/arquivos/ids/215411-249-249?v=638846411489500000&width=249&height=249&aspect=true",
         "method": "GET",
-        "resource_type": "script",
+        "resource_type": "image",
         "post_data": null,
         "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
+        "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-icons@0.19.4/public/react/IconAssistantSales.min.js",
+        "url": "https://willerk.vtexassets.com/arquivos/ids/215412-249-249?v=638846411489800000&width=249&height=249&aspect=true",
         "method": "GET",
-        "resource_type": "script",
+        "resource_type": "image",
         "post_data": null,
         "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
+        "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.telemarketing@2.12.1/public/react/index.min.js",
+        "url": "https://willerk.vtexassets.com/arquivos/ids/215527-249-249?v=638846422640430000&width=249&height=249&aspect=true",
         "method": "GET",
-        "resource_type": "script",
+        "resource_type": "image",
         "post_data": null,
         "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
+        "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-drawer@0.18.1/public/react/0.min.js",
+        "url": "https://willerk.vtexassets.com/arquivos/ids/226956-249-249?v=639156531819170000&width=249&height=249&aspect=true",
         "method": "GET",
-        "resource_type": "script",
+        "resource_type": "image",
         "post_data": null,
         "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
+        "content_type": "image/webp"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/arquivos/ids/229381-249-249?v=639183612569570000&width=249&height=249&aspect=true",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/arquivos/ids/226955-249-249?v=639156531819170000&width=249&height=249&aspect=true",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/arquivos/ids/229372-249-249?v=639183611106770000&width=249&height=249&aspect=true",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/bd68feeb-f1c3-4418-af67-22070dd244d4___0a7468137de2bcdfc97ecb643fc82f08.jpg",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "url": "https://www.wiler.com.br/_v/private/graphql/v1?workspace=master&maxAge=long&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0",
+        "method": "POST",
+        "resource_type": "fetch",
+        "post_data": "{\"operationName\":\"orderForm\",\"variables\":{},\"extensions\":{\"persistedQuery\":{\"version\":1,\"sha256Hash\":\"0e4744147dc063d889099111536c3c8bb748a31ab1cdc610d8ea7843f1724591\",\"sender\":\"vtex.checkout-resources@0.x\",\"provider\":\"vtex.checkout-graphql@0.x\"},\"variables\":\"eyJyZWZyZXNoT3V0ZGF0ZWREYXRhIjpmYWxzZX0=\"}}",
+        "status": 200,
+        "content_type": "application/json; charset=utf-8",
+        "json_preview": {
+          "data": {
+            "orderForm": {
+              "id": "6842da283c5d4a6085e9f88d65eb469c",
+              "items": [],
+              "canEditData": true,
+              "userProfileId": null,
+              "marketingData": {
+                "__typename": "MarketingData"
+              },
+              "totalizers": [],
+              "paymentData": {
+                "availableAccounts": [],
+                "isValid": false,
+                "__typename": "PaymentData"
+              },
+              "clientProfileData": null,
+              "clientPreferencesData": {
+                "__typename": "ClientPreferencesData"
+              },
+              "customData": null,
+              "__typename": "OrderForm"
+            }
+          }
+        }
+      },
+      {
+        "url": "https://sp.vtex.com/event-api/v1/willerk/event",
+        "method": "POST",
+        "resource_type": "fetch",
+        "post_data": "{\"account\":\"willerk\",\"url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"workspace\":\"master\",\"locale\":\"pt-BR\",\"type\":\"page.category\",\"match\":41,\"ab\":\"master\",\"session\":\"12d83152f8ac4d56aa9daf52f8fd2c24\",\"anonymous\":\"b94e445d3a564e07af0192b01f6a5c40\",\"vtexSession\":\"6de3a028-69a8-43a3-aa84-4df1ee853ca7\",\"vtexMac\":\"cdfbc761-257a-4ef9-9e20-cfd76ab666e9\"}",
+        "status": 204,
+        "content_type": ""
+      },
+      {
+        "url": "https://af-origin.vtex.com/api/activity-flow/impression",
+        "method": "POST",
+        "resource_type": "ping",
+        "post_data": "{\"eventType\":\"impression\",\"element\":\"div\",\"impressionType\":\"rerender\",\"attributes\":{\"data-af-search-id\":\"4d028c9737624baf801a2c2d57c31fa4\"},\"elementSource\":\"search-result\",\"DataType\":\"Event\",\"SessionId\":\"6de3a028-69a8-43a3-aa84-4df1ee853ca7\",\"MacId\":\"cdfbc761-257a-4ef9-9e20-cfd76ab666e9\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"accountName\":\"willerk\",\"accountEnvironment\":\"store_framework\",\"clientdate\":1789063100591,\"workspace\":\"master%3A-\",\"ckInfo\":\"VtexWorkspace=master%3A-; vtex-search-session=12d83152f8ac4d56aa9daf52f8fd2c24; vtex-search-anonymous=b94e445d3a564e07af0192b01f6a5c40; __trf.src=encoded_eyJmaXJzdF9zZXNzaW9uIjp7InZhbHVlIjoiKG5vbmUpIiwiZXh0cmFfcGFyYW1zIjp7fX0sImN1cnJlbnRfc2Vzc2lvbiI6eyJ2YWx1ZSI6Iihub25lKSIsImV4dHJhX3BhcmFtcyI6e319LCJjcmVhdGVkX2F0IjoxNzg5MDYzMTAwMTY3fQ==; VtexRCSessionIdv7=6de3a028-69a8-43a3-aa84-4df1ee853ca7; VtexRCMacIdv7=cdfbc761-257a-4ef9-9e20-cfd76ab666e9; vtex_binding_address=willerk.myvtex.com/\"}",
+        "status": 200,
+        "content_type": "application/json",
+        "json_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
       },
       {
         "url": "https://www.wiler.com.br/_v/private/graphql/v1?workspace=master&maxAge=long&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0",
@@ -878,15 +855,6 @@
             "profile": null
           }
         }
-      },
-      {
-        "url": "https://af-origin.vtex.com/api/activity-flow/impression",
-        "method": "POST",
-        "resource_type": "ping",
-        "post_data": "{\"eventType\":\"impression\",\"element\":\"div\",\"impressionType\":\"rerender\",\"attributes\":{\"data-af-search-id\":\"4d028c9737624baf801a2c2d57c31fa4\"},\"elementSource\":\"search-result\",\"DataType\":\"Event\",\"SessionId\":\"d0867751-e95a-4390-9cda-d25a9f09cccd\",\"MacId\":\"9db929fd-9110-4173-8550-ea6544bae52f\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"accountName\":\"willerk\",\"accountEnvironment\":\"store_framework\",\"clientdate\":1789062351315,\"workspace\":\"master%3A-\",\"ckInfo\":\"VtexWorkspace=master%3A-; VtexRCSessionIdv7=d0867751-e95a-4390-9cda-d25a9f09cccd; VtexRCMacIdv7=9db929fd-9110-4173-8550-ea6544bae52f; vtex-search-session=3549b8e72a0b4c0abc27ae4cdefa218c; vtex-search-anonymous=bc96a49ad3bb4b138adeeec0ea6cb436; vtex_binding_address=willerk.myvtex.com/\"}",
-        "status": 200,
-        "content_type": "application/json",
-        "json_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
       },
       {
         "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=storeSettings&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22e1216c9de837038566fff08e570473f55a52f03e0a525daedd721ed8637d15de%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%7D",
@@ -914,31 +882,31 @@
         "status": 200,
         "content_type": "application/json; charset=utf-8",
         "json_preview": {
-          "id": "3cd2d9c4-b5e5-4e27-9591-aaf6035ddeab",
+          "id": "4c2b8695-7429-4e48-88b9-5f82f08e1cec",
           "namespaces": {
             "public": {}
           }
         }
       },
       {
-        "url": "https://sp.vtex.com/event-api/v1/willerk/event",
-        "method": "POST",
-        "resource_type": "fetch",
-        "post_data": "{\"account\":\"willerk\",\"url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"workspace\":\"master\",\"locale\":\"pt-BR\",\"type\":\"page.category\",\"match\":41,\"ab\":\"master\",\"session\":\"3549b8e72a0b4c0abc27ae4cdefa218c\",\"anonymous\":\"bc96a49ad3bb4b138adeeec0ea6cb436\",\"vtexSession\":\"d0867751-e95a-4390-9cda-d25a9f09cccd\",\"vtexMac\":\"9db929fd-9110-4173-8550-ea6544bae52f\"}",
-        "status": 204,
-        "content_type": ""
+        "url": "https://service.smarthint.co/Scripts/i/Vtex.IO.min.js",
+        "method": "GET",
+        "resource_type": "script",
+        "post_data": null,
+        "status": 200,
+        "content_type": "application/javascript"
       },
       {
         "url": "https://rc.vtex.com/v8",
         "method": "POST",
         "resource_type": "xhr",
-        "post_data": "{\"DataType\":\"Event\",\"RequestType\":\"categoryView\",\"SessionId\":\"d0867751-e95a-4390-9cda-d25a9f09cccd\",\"MacId\":\"9db929fd-9110-4173-8550-ea6544bae52f\",\"IsNewUser\":false,\"workspace\":\"master%3A-\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"Path\":\"/papel-de-parede/texture-ii\",\"HostName\":\"www.wiler.com.br\",\"pageTitle\":\"Papel de Parede: Transforme seu espaço sem sujeira\",\"accountName\":\"willerk\"}",
+        "post_data": "{\"DataType\":\"Event\",\"RequestType\":\"categoryView\",\"SessionId\":\"6de3a028-69a8-43a3-aa84-4df1ee853ca7\",\"MacId\":\"cdfbc761-257a-4ef9-9e20-cfd76ab666e9\",\"IsNewUser\":false,\"workspace\":\"master%3A-\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"Path\":\"/papel-de-parede/texture-ii\",\"HostName\":\"www.wiler.com.br\",\"pageTitle\":\"Papel de Parede: Transforme seu espaço sem sujeira\",\"accountName\":\"willerk\"}",
         "status": 200,
         "content_type": "application/json",
         "json_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-3Y8LN5PVE7&gtm=45je6990v9209668265za200zd9209668265&_p=1789062350259&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&are=1&cid=2132362631.1789062351&frm=0&gtm_up=1&ngs=1&pscdl=denied&rcb=14&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=1&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153&sid=1789062351&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&en=page_view&_fv=1&_ss=1&_ee=1&tfd=1761",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-3Y8LN5PVE7&gtm=45je6990h1v9209668265za200zd9209668265&_p=1789063099860&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&are=1&cid=1409693125.1789063101&frm=0&gtm_up=1&ngs=1&pscdl=denied&rcb=13&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=1&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153&sid=1789063101&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=4334",
         "method": "POST",
         "resource_type": "fetch",
         "post_data": null,
@@ -946,31 +914,53 @@
         "content_type": "text/plain"
       },
       {
+        "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=2&frm=0&apvc=0&tid=AW-865462130&en=page_view&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=153060877.1789063100&navt=n&npa=1&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6990v9123716997z8811370786za20gzb811370786zd811370786xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1789063101414&tfd=4440&tids=AW-865462130&fmt=8",
+        "method": "POST",
+        "resource_type": "fetch",
+        "post_data": null,
+        "status": 200,
+        "content_type": ""
+      },
+      {
+        "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=2&frm=0&apvc=0&ae=g&tid=AW-865462130&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=153060877.1789063100&navt=n&npa=1&ep.ads_data_redaction=1&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6990v9123716997z8811370786za20gzb811370786zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1789063101416&tfd=4442&tids=AW-865462130&fmt=8",
+        "method": "POST",
+        "resource_type": "fetch",
+        "post_data": null,
+        "status": 200,
+        "content_type": ""
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-18WWV0TPPP&gtm=45je6990v9102585009z8811370786za20gzb811370786zd811370786&_p=1789063099860&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&_eu=AAAAAGAC&are=1&cid=1409693125.1789063101&frm=0&gtm_up=1&pscdl=denied&rcb=11&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&gaf=2&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153&sid=1789063101&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&en=page_view&_fv=1&_ss=1&tfd=4506",
+        "method": "POST",
+        "resource_type": "fetch",
+        "post_data": null,
+        "status": 204,
+        "content_type": "text/plain"
+      },
+      {
+        "url": "https://disclaimer-api.goadopt.io/api/tag/get-consent",
+        "method": "POST",
+        "resource_type": "xhr",
+        "post_data": "{\"websiteID\":\"aee23cf1-14df-4ca6-9edf-d2d5be379f02\",\"adoptConsent\":null,\"visitorId\":null,\"device\":\"desktop\",\"consentTTL\":60,\"consentVersion\":0,\"priorityQueue\":true,\"allowTPCookies\":false}",
+        "status": 200,
+        "content_type": "application/json; charset=utf-8",
+        "json_preview": {
+          "data": {
+            "visitorId": "a06c5c76-13c2-4843-9dbd-cfb99310f10b",
+            "consentId": "39ueI_"
+          }
+        }
+      },
+      {
+        "url": "https://dxyxft75r9rwr.cloudfront.net/i/628647244ded2c5bb52613fd.json?t=%271789063101327",
+        "method": "GET",
+        "resource_type": "xhr",
+        "post_data": null,
+        "status": 200,
+        "content_type": "application/octet-stream"
+      },
+      {
         "url": "https://willerk.vtexassets.com/arquivos/ids/226960-249-249?v=639156533977300000&width=249&height=249&aspect=true",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/226961-249-249?v=639156533977670000&width=249&height=249&aspect=true",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/215351-249-249?v=638846397453000000&width=249&height=249&aspect=true",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/230482-249-249?v=639205176086400000&width=249&height=249&aspect=true",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
@@ -986,7 +976,31 @@
         "content_type": "image/webp"
       },
       {
+        "url": "https://willerk.vtexassets.com/arquivos/ids/226961-249-249?v=639156533977670000&width=249&height=249&aspect=true",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/arquivos/ids/230482-249-249?v=639205176086400000&width=249&height=249&aspect=true",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
         "url": "https://willerk.vtexassets.com/arquivos/ids/215580-249-249?v=638846445443700000&width=249&height=249&aspect=true",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/arquivos/ids/215351-249-249?v=638846397453000000&width=249&height=249&aspect=true",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
@@ -1010,22 +1024,6 @@
         "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/229399-249-249?v=639183614106070000&width=249&height=249&aspect=true",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/229400-249-249?v=639183614106070000&width=249&height=249&aspect=true",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
         "url": "https://willerk.vtexassets.com/arquivos/ids/215506-249-249?v=638846419489230000&width=249&height=249&aspect=true",
         "method": "GET",
         "resource_type": "image",
@@ -1034,7 +1032,7 @@
         "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/215507-249-249?v=638846419489300000&width=249&height=249&aspect=true",
+        "url": "https://willerk.vtexassets.com/arquivos/ids/229399-249-249?v=639183614106070000&width=249&height=249&aspect=true",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
@@ -1058,14 +1056,6 @@
         "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/arquivos/ids/215491-249-249?v=638846418179070000&width=249&height=249&aspect=true",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/jpeg"
-      },
-      {
         "url": "https://willerk.vtexassets.com/arquivos/ids/215492-249-249?v=638846418179530000&width=249&height=249&aspect=true",
         "method": "GET",
         "resource_type": "image",
@@ -1074,20 +1064,28 @@
         "content_type": "image/webp"
       },
       {
-        "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU4NSJ9%22%7D",
+        "url": "https://willerk.vtexassets.com/arquivos/ids/215507-249-249?v=638846419489300000&width=249&height=249&aspect=true",
         "method": "GET",
-        "resource_type": "fetch",
+        "resource_type": "image",
         "post_data": null,
         "status": 200,
-        "content_type": "application/json; charset=utf-8",
-        "json_preview": {
-          "data": {
-            "productSummary": {
-              "Total": 0,
-              "__typename": "Summary"
-            }
-          }
-        }
+        "content_type": "image/webp"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/arquivos/ids/229400-249-249?v=639183614106070000&width=249&height=249&aspect=true",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/arquivos/ids/215491-249-249?v=638846418179070000&width=249&height=249&aspect=true",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/jpeg"
       },
       {
         "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NjI5MCJ9%22%7D",
@@ -1170,6 +1168,15 @@
         }
       },
       {
+        "url": "https://af-origin.vtex.com/api/activity-flow/web-vitals",
+        "method": "POST",
+        "resource_type": "ping",
+        "post_data": "{\"eventType\":\"webVitals\",\"name\":\"TTFB\",\"value\":428.19999999998254,\"rating\":\"good\",\"delta\":428.19999999998254,\"entries\":[{\"name\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"entryType\":\"navigation\",\"startTime\":0,\"duration\":4636.799999999988,\"navigationId\":1066,\"initiatorType\":\"navigation\",\"deliveryType\":\"\",\"nextHopProtocol\":\"h2\",\"renderBlockingStatus\":\"non-blocking\",\"contentType\":\"text/html\",\"contentEncoding\":\"gzip\",\"workerStart\":0,\"workerRouterEvaluationStart\":0,\"workerCacheLookupStart\":0,\"workerMatchedSourceType\":\"\",\"workerFinalSourceType\":\"\",\"redirectStart\":0,\"redirectEnd\":0,\"fetchStart\":0.1999999999825377,\"domainLookupStart\":1.1999999999825377,\"domainLookupEnd\":2.8999999999941792,\"connectStart\":2.8999999999941792,\"secureConnectionStart\":7.899999999994179,\"connectEnd\":161.19999999998254,\"requestStart\":161.5,\"responseStart\":428.19999999998254,\"firstInterimResponseStart\":0,\"finalResponseHeadersStart\":428.19999999998254,\"responseEnd\":547.6999999999825,\"transferSize\":163598,\"encodedBodySize\":163298,\"decodedBodySize\":1894055,\"responseStatus\":200,\"serverTiming\":[],\"unloadEventStart\":0,\"unloadEventEnd\":0,\"domInteractive\":2915.2999999999884,\"domContentLoadedEventStart\":2915.2999999999884,\"domContentLoadedEventEnd\":2915.2999999999884,\"domComplete\":4635.600000000006,\"loadEventStart\":4635.6999999999825,\"loadEventEnd\":4636.799999999988,\"type\":\"navigate\",\"redirectCount\":0,\"activationStart\":0,\"criticalCHRestart\":0,\"notRestoredReasons\":null,\"confidence\":{\"randomizedTriggerRate\":0.4994798,\"value\":\"high\"}}],\"id\":\"v4-1789063100176-7269245547878\",\"navigationType\":\"navigate\",\"DataType\":\"Event\",\"SessionId\":\"6de3a028-69a8-43a3-aa84-4df1ee853ca7\",\"MacId\":\"cdfbc761-257a-4ef9-9e20-cfd76ab666e9\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"accountName\":\"willerk\",\"accountEnvironment\":\"store_framework\",\"clientdate\":1789063101632,\"workspace\":\"master%3A-\",\"ckInfo\":\"VtexWorkspace=master%3A-; vtex-search-session=12d83152f8ac4d56aa9daf52f8fd2c24; vtex-search-anonymous=b94e445d3a564e07af0192b01f6a5c40; __trf.src=encoded_eyJmaXJzdF9zZXNzaW9uIjp7InZhbHVlIjoiKG5vbmUpIiwiZXh0cmFfcGFyYW1zIjp7fX0sImN1cnJlbnRfc2Vzc2lvbiI6eyJ2YWx1ZSI6Iihub25lKSIsImV4dHJhX3BhcmFtcyI6e319LCJjcmVhdGVkX2F0IjoxNzg5MDYzMTAwMTY3fQ==; VtexRCSessionIdv7=6de3a028-69a8-43a3-aa84-4df1ee853ca7; VtexRCMacIdv7=cdfbc761-257a-4ef9-9e20-cfd76ab666e9; vtex_binding_address=willerk.myvtex.com/; AdoptConsent=N4Ig7gpgRgzglgFwgSQCIgFwgIYQgJgGYBjAMwEYBacgFgBNTKbjsA2SgTggcrvzoCsUCIQDsHUgAZ8IADQgAbnHgIA9gCdkdTDkmtiA4qPbkS+JgA4ahTnSh1KZKBw6FykipKhyQqgA4IyAB2ACrYAOYwmADaALry/ggA8gCuCGGRMfEgxKpBMBBBgdpYhBwpKAD6PhAKhekAnn4QOmAWUHAAEgBeEAByPrn59QBqEOrweZiS8il+dNhIdACCCDr40uySHNSSIeSiGAIWGPjkAHQChJIAWiAAvkA===; AdoptVisitorId=IYBgbAxgrBDsYFoCMBmCAmBAWAHFlCAnACYBGxCEAZqYYSkiFY6UA===\"}",
+        "status": 200,
+        "content_type": "application/json",
+        "json_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      },
+      {
         "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTYxNiJ9%22%7D",
         "method": "GET",
         "resource_type": "fetch",
@@ -1202,7 +1209,39 @@
         }
       },
       {
+        "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU4NSJ9%22%7D",
+        "method": "GET",
+        "resource_type": "fetch",
+        "post_data": null,
+        "status": 200,
+        "content_type": "application/json; charset=utf-8",
+        "json_preview": {
+          "data": {
+            "productSummary": {
+              "Total": 0,
+              "__typename": "Summary"
+            }
+          }
+        }
+      },
+      {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-footer@2.27.0/public/react/common.min.js",
+        "method": "GET",
+        "resource_type": "script",
+        "post_data": null,
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-newsletter@1.3.0/public/react/common.min.js",
+        "method": "GET",
+        "resource_type": "script",
+        "post_data": null,
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-footer@2.27.0/public/react/FooterLayout.min.js",
         "method": "GET",
         "resource_type": "script",
         "post_data": null,
@@ -1218,7 +1257,7 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-footer@2.27.0/public/react/FooterLayout.min.js",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-newsletter@1.3.0/public/react/FormNameInput.min.js",
         "method": "GET",
         "resource_type": "script",
         "post_data": null,
@@ -1258,7 +1297,15 @@
         }
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-newsletter@1.3.0/public/react/common.min.js",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-newsletter@1.3.0/public/react/Newsletter.min.js",
+        "method": "GET",
+        "resource_type": "script",
+        "post_data": null,
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-newsletter@1.3.0/public/react/FormConfirmationCheckbox.min.js",
         "method": "GET",
         "resource_type": "script",
         "post_data": null,
@@ -1267,14 +1314,6 @@
       },
       {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-newsletter@1.3.0/public/react/FormEmailInput.min.js",
-        "method": "GET",
-        "resource_type": "script",
-        "post_data": null,
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-newsletter@1.3.0/public/react/Newsletter.min.js",
         "method": "GET",
         "resource_type": "script",
         "post_data": null,
@@ -1298,22 +1337,6 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-newsletter@1.3.0/public/react/FormConfirmationCheckbox.min.js",
-        "method": "GET",
-        "resource_type": "script",
-        "post_data": null,
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.store-newsletter@1.3.0/public/react/FormNameInput.min.js",
-        "method": "GET",
-        "resource_type": "script",
-        "post_data": null,
-        "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
-      },
-      {
         "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/maeztraio.html-renderer@0.0.4/public/react/HtmlRenderer.min.js",
         "method": "GET",
         "resource_type": "script",
@@ -1322,39 +1345,7 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU4OCJ9%22%7D",
-        "method": "GET",
-        "resource_type": "fetch",
-        "post_data": null,
-        "status": 200,
-        "content_type": "application/json; charset=utf-8",
-        "json_preview": {
-          "data": {
-            "productSummary": {
-              "Total": 0,
-              "__typename": "Summary"
-            }
-          }
-        }
-      },
-      {
         "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU5MiJ9%22%7D",
-        "method": "GET",
-        "resource_type": "fetch",
-        "post_data": null,
-        "status": 200,
-        "content_type": "application/json; charset=utf-8",
-        "json_preview": {
-          "data": {
-            "productSummary": {
-              "Total": 0,
-              "__typename": "Summary"
-            }
-          }
-        }
-      },
-      {
-        "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU4OSJ9%22%7D",
         "method": "GET",
         "resource_type": "fetch",
         "post_data": null,
@@ -1378,15 +1369,23 @@
         "content_type": "application/javascript; charset=utf-8"
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.sandbox@0.5.1/public/react/Sandbox.min.js",
+        "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU4OSJ9%22%7D",
         "method": "GET",
-        "resource_type": "script",
+        "resource_type": "fetch",
         "post_data": null,
         "status": 200,
-        "content_type": "application/javascript; charset=utf-8"
+        "content_type": "application/json; charset=utf-8",
+        "json_preview": {
+          "data": {
+            "productSummary": {
+              "Total": 0,
+              "__typename": "Summary"
+            }
+          }
+        }
       },
       {
-        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.sandbox@0.5.1/public/react/0.min.js",
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.sandbox@0.5.1/public/react/Sandbox.min.js",
         "method": "GET",
         "resource_type": "script",
         "post_data": null,
@@ -1410,7 +1409,31 @@
         }
       },
       {
+        "url": "https://willerk.vtexassets.com/_v/public/assets/v1/published/vtex.sandbox@0.5.1/public/react/0.min.js",
+        "method": "GET",
+        "resource_type": "script",
+        "post_data": null,
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8"
+      },
+      {
         "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU5NiJ9%22%7D",
+        "method": "GET",
+        "resource_type": "fetch",
+        "post_data": null,
+        "status": 200,
+        "content_type": "application/json; charset=utf-8",
+        "json_preview": {
+          "data": {
+            "productSummary": {
+              "Total": 0,
+              "__typename": "Summary"
+            }
+          }
+        }
+      },
+      {
+        "url": "https://www.wiler.com.br/_v/public/graphql/v1?workspace=master&maxAge=short&appsEtag=remove&domain=store&locale=pt-BR&__bindingId=4258df3a-148c-4d8e-b772-435a77edbcc0&operationName=productSummary&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22fbf3467a2a8cbac023564e9f71a48ce20a6a34968545b8f0144b4851319cadc7%22%2C%22sender%22%3A%22yourviews.yourviewsreviews%401.x%22%2C%22provider%22%3A%22yourviews.yourviewsreviews%401.x%22%7D%2C%22variables%22%3A%22eyJwcm9kdWN0SWQiOiI1NTU4OCJ9%22%7D",
         "method": "GET",
         "resource_type": "fetch",
         "post_data": null,
@@ -1442,31 +1465,15 @@
         }
       },
       {
+        "url": "https://pageview-notify.rdstation.com.br/send",
+        "method": "POST",
+        "resource_type": "xhr",
+        "post_data": "url=www.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii&token=0837ff75695dda042ae2ca0ecc297441&title=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira",
+        "status": 200,
+        "content_type": "text/html;charset=utf-8"
+      },
+      {
         "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/02a2935f-b7b2-472d-bf5e-74a94c2c45aa___c671a7df3291d5899b3c0a5f24b953c6.png",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/ae57cdd3-636c-4141-a816-ba6d87b26df5___8b025c224332c8c17b01b41fab96fceb.png",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/433ab6a0-84a6-4598-9a50-c68b09981041___f44b936d2542b7de471629397df99d07.png",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/719d940f-68b7-456f-b13b-8ae813c70233___455a5eb4675200443ddb6524715e62d7.png",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
@@ -1482,20 +1489,12 @@
         "content_type": "image/png"
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/svg/facebook-footer___8dd64ee50d050c9b92e217948eaf554e.svg",
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/Maestro___7848a2a0b53cd7ca6666db72266a5e92.png",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
         "status": 200,
-        "content_type": "image/svg+xml"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/svg/instagram-footer___85aed151e7961925497a95f13181877c.svg",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/svg+xml"
+        "content_type": "image/webp"
       },
       {
         "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/MasterCard___128e87af078279ad142466256ff97428.png",
@@ -1506,7 +1505,7 @@
         "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/Maestro___7848a2a0b53cd7ca6666db72266a5e92.png",
+        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/719d940f-68b7-456f-b13b-8ae813c70233___455a5eb4675200443ddb6524715e62d7.png",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
@@ -1514,23 +1513,31 @@
         "content_type": "image/webp"
       },
       {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/Elo___4f27a0d238bd437a622bd066dd28f87c.png",
+        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/433ab6a0-84a6-4598-9a50-c68b09981041___f44b936d2542b7de471629397df99d07.png",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
         "status": 200,
         "content_type": "image/webp"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/svg/instagram-footer___85aed151e7961925497a95f13181877c.svg",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/svg+xml"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/svg/facebook-footer___8dd64ee50d050c9b92e217948eaf554e.svg",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/svg+xml"
       },
       {
         "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/Visa___073d9b743799cbfc80674f90fc846d7d.png",
-        "method": "GET",
-        "resource_type": "image",
-        "post_data": null,
-        "status": 200,
-        "content_type": "image/webp"
-      },
-      {
-        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/Boleto___481076af307b18831dc87f7d862a9dc1.png",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
@@ -1547,6 +1554,14 @@
       },
       {
         "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/jbc___7f060b8cd0d71d7a956153e6a70f6834.png",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/Elo___4f27a0d238bd437a622bd066dd28f87c.png",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
@@ -1594,12 +1609,39 @@
         "content_type": "image/webp"
       },
       {
+        "url": "https://willerk.vtexassets.com/assets/vtex.file-manager-graphql/images/ae57cdd3-636c-4141-a816-ba6d87b26df5___8b025c224332c8c17b01b41fab96fceb.png",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
         "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/3.0.90/img/Footer-newsletter___190e13f2f27da7f601c579740a6f3563.png",
         "method": "GET",
         "resource_type": "image",
         "post_data": null,
         "status": 200,
         "content_type": "image/webp"
+      },
+      {
+        "url": "https://willerk.vtexassets.com/assets/vtex/assets-builder/willerk.store-theme/0.0.30/img/Boleto___481076af307b18831dc87f7d862a9dc1.png",
+        "method": "GET",
+        "resource_type": "image",
+        "post_data": null,
+        "status": 200,
+        "content_type": "image/webp"
+      },
+      {
+        "url": "https://popups.rdstation.com.br/popup/show.json?account_id=1020694&uniq=_lxs36zbar&ref=aHR0cHM6Ly93d3cud2lsZXIuY29tLmJyL3BhcGVsLWRlLXBhcmVkZS90ZXh0dXJlLWlpP21hcD1jYXRlZ29yeS0xJTJDY29sZWNvZXM%3D",
+        "method": "GET",
+        "resource_type": "xhr",
+        "post_data": null,
+        "status": 200,
+        "content_type": "application/json",
+        "json_preview": {
+          "popups": []
+        }
       },
       {
         "url": "https://api.reclameaqui.com.br/embed-reputation/hash/OTA0MTE6d2lsZXItay1kZWNvcmFjYW8=",
@@ -1615,24 +1657,7 @@
         }
       },
       {
-        "url": "https://af-origin.vtex.com/api/activity-flow/web-vitals",
-        "method": "POST",
-        "resource_type": "ping",
-        "post_data": "{\"eventType\":\"webVitals\",\"name\":\"TTFB\",\"value\":61.10000000000582,\"rating\":\"good\",\"delta\":61.10000000000582,\"entries\":[{\"name\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"entryType\":\"navigation\",\"startTime\":0,\"duration\":2703.100000000006,\"navigationId\":2680,\"initiatorType\":\"navigation\",\"deliveryType\":\"\",\"nextHopProtocol\":\"h2\",\"renderBlockingStatus\":\"non-blocking\",\"contentType\":\"text/html\",\"contentEncoding\":\"gzip\",\"workerStart\":0,\"workerRouterEvaluationStart\":0,\"workerCacheLookupStart\":0,\"workerMatchedSourceType\":\"\",\"workerFinalSourceType\":\"\",\"redirectStart\":0,\"redirectEnd\":0,\"fetchStart\":0.1999999999825377,\"domainLookupStart\":2.5,\"domainLookupEnd\":4.399999999994179,\"connectStart\":4.399999999994179,\"secureConnectionStart\":14.699999999982538,\"connectEnd\":37.69999999998254,\"requestStart\":38,\"responseStart\":61.10000000000582,\"firstInterimResponseStart\":0,\"finalResponseHeadersStart\":61.10000000000582,\"responseEnd\":81.69999999998254,\"transferSize\":163598,\"encodedBodySize\":163298,\"decodedBodySize\":1894055,\"responseStatus\":200,\"serverTiming\":[],\"unloadEventStart\":0,\"unloadEventEnd\":0,\"domInteractive\":484,\"domContentLoadedEventStart\":484,\"domContentLoadedEventEnd\":484,\"domComplete\":2701.2999999999884,\"loadEventStart\":2701.600000000006,\"loadEventEnd\":2703.100000000006,\"type\":\"navigate\",\"redirectCount\":0,\"activationStart\":0,\"criticalCHRestart\":0,\"notRestoredReasons\":null,\"confidence\":{\"randomizedTriggerRate\":0.4994798,\"value\":\"high\"}}],\"id\":\"v4-1789062350401-2127476128124\",\"navigationType\":\"navigate\",\"DataType\":\"Event\",\"SessionId\":\"d0867751-e95a-4390-9cda-d25a9f09cccd\",\"MacId\":\"9db929fd-9110-4173-8550-ea6544bae52f\",\"Url\":\"https://www.wiler.com.br/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"Ref\":\"\",\"accountName\":\"willerk\",\"accountEnvironment\":\"store_framework\",\"clientdate\":1789062352659,\"workspace\":\"master%3A-\",\"ckInfo\":\"VtexWorkspace=master%3A-; VtexRCSessionIdv7=d0867751-e95a-4390-9cda-d25a9f09cccd; VtexRCMacIdv7=9db929fd-9110-4173-8550-ea6544bae52f; vtex-search-session=3549b8e72a0b4c0abc27ae4cdefa218c; vtex-search-anonymous=bc96a49ad3bb4b138adeeec0ea6cb436; vtex_binding_address=willerk.myvtex.com/; __trf.src=encoded_eyJmaXJzdF9zZXNzaW9uIjp7InZhbHVlIjoiKG5vbmUpIiwiZXh0cmFfcGFyYW1zIjp7fX0sImN1cnJlbnRfc2Vzc2lvbiI6eyJ2YWx1ZSI6Iihub25lKSIsImV4dHJhX3BhcmFtcyI6e319LCJjcmVhdGVkX2F0IjoxNzg5MDYyMzUxODk0fQ==; AdoptVisitorId=undefined; AdoptConsent=undefined\"}",
-        "status": 200,
-        "content_type": "application/json",
-        "json_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-      },
-      {
-        "url": "https://pageview-notify.rdstation.com.br/send",
-        "method": "POST",
-        "resource_type": "xhr",
-        "post_data": "url=www.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii&token=0837ff75695dda042ae2ca0ecc297441&title=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira",
-        "status": 200,
-        "content_type": "text/html;charset=utf-8"
-      },
-      {
-        "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=16&frm=0&apvc=0&ae=g&tid=AW-865462130&en=view_item_list&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=65654146.1789062351&navt=n&npa=1&ep.ads_data_redaction=1&ep.value=0&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6990v9123716997z8811370786za20gzb811370786zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1789062352763&tfd=2812&tids=AW-865462130&fmt=8",
+        "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=2&frm=0&apvc=0&ae=g&tid=AW-865462130&en=view_item_list&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=153060877.1789063100&navt=n&npa=1&ep.ads_data_redaction=1&ep.value=0&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6990v9123716997z8811370786za20gzb811370786zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1789063102692&tfd=5718&tids=AW-865462130&fmt=8",
         "method": "POST",
         "resource_type": "fetch",
         "post_data": null,
@@ -1640,53 +1665,20 @@
         "content_type": ""
       },
       {
-        "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=16&frm=0&apvc=0&ae=g&tid=AW-865462130&en=view_item_list&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=65654146.1789062351&navt=n&npa=1&ep.ads_data_redaction=1&ep.value=0&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6990v9123716997z8811370786za20gzb811370786zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1789062352854&tfd=2903&tids=AW-865462130&fmt=8",
+        "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=2&frm=0&apvc=0&ae=g&tid=AW-865462130&en=view_item_list&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&scrsrc=www.googletagmanager.com&rnd=153060877.1789063100&navt=n&npa=1&ep.ads_data_redaction=1&ep.value=0&did=dZmNiZj&gdid=dZmNiZj&_tu=CA&gtm=45be6990v9123716997z8811370786za20gzb811370786zd811370786xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1789063102772&tfd=5798&tids=AW-865462130&fmt=8",
         "method": "POST",
         "resource_type": "fetch",
         "post_data": null,
         "status": 200,
         "content_type": ""
-      },
-      {
-        "url": "https://disclaimer-api.goadopt.io/api/tag/get-consent",
-        "method": "POST",
-        "resource_type": "xhr",
-        "post_data": "{\"websiteID\":\"aee23cf1-14df-4ca6-9edf-d2d5be379f02\",\"adoptConsent\":null,\"visitorId\":null,\"device\":\"desktop\",\"consentTTL\":60,\"consentVersion\":0,\"priorityQueue\":true,\"allowTPCookies\":false}",
-        "status": 200,
-        "content_type": "application/json; charset=utf-8",
-        "json_preview": {
-          "data": {
-            "visitorId": "156e8221-32a0-4d6b-8a62-8bac3de88564",
-            "consentId": "Ti6N7b"
-          }
-        }
-      },
-      {
-        "url": "https://popups.rdstation.com.br/popup/show.json?account_id=1020694&uniq=_cqw67f64r&ref=aHR0cHM6Ly93d3cud2lsZXIuY29tLmJyL3BhcGVsLWRlLXBhcmVkZS90ZXh0dXJlLWlpP21hcD1jYXRlZ29yeS0xJTJDY29sZWNvZXM%3D",
-        "method": "GET",
-        "resource_type": "xhr",
-        "post_data": null,
-        "status": 200,
-        "content_type": "application/json",
-        "json_preview": {
-          "popups": []
-        }
       },
       {
         "url": "https://axeptio-api.goadopt.io/flow",
         "method": "POST",
         "resource_type": "fetch",
-        "post_data": "[{\"timestamp\":\"2026-09-10T17:45:52.960Z\",\"deployment\":\"2026-09-10T17:45:52.960Z\",\"source\":\"sdk-web-adopt\",\"type\":\"pageview\",\"token\":\"156e8221-32a0-4d6b-8a62-8bac3de88564\",\"domain\":\"www.wiler.com.br\",\"projectId\":\"15e19eb5-958a-4d1e-a1b2-cdbda58af4e6\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"preferences\":{\"enabled\":[],\"disabled\":[]},\"pathname\":\"/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"referrer\":null,\"config\":{\"language\":\"pt\",\"consent_mode\":\"opt_out\",\"display_mode\":\"show\",\"identifier\":\"aee23cf1-14df-4ca6-9edf-d2d5be379f02\"},\"geolocation\":{\"reglementation\":\"ccpa\",\"userLanguage\":\"pt\",\"countryCode\":\"US\"},\"metadata\":{\"injector_version\":\"1.2.25\",\"disclaimer_version\":8,\"transport\":\"keepalive\"}},{\"timestamp\":\"2026-09-10T17:45:52.960Z\",\"deployment\":\"2026-09-10T17:45:52.960Z\",\"source\":\"sdk-web-adopt\",\"type\":\"cookies:open\",\"token\":\"156e8221-32a0-4d6b-8a62-8bac3de88564\",\"domain\":\"www.wiler.com.br\",\"projectId\":\"15e19eb5-958a-4d1e-a1b2-cdbda58af4e6\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"preferences\":{\"enabled\":[],\"disabled\":[]},\"pathname\":\"/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"referrer\":null,\"config\":{\"language\":\"pt\",\"consent_mode\":\"opt_out\",\"display_mode\":\"show\",\"identifier\":\"aee23cf1-14df-4ca6-9edf-d2d5be379f02\"},\"geolocation\":{\"reglementation\":\"ccpa\",\"userLanguage\":\"pt\",\"countryCode\":\"US\"},\"metadata\":{\"injector_version\":\"1.2.25\",\"disclaimer_version\":8,\"transport\":\"keepalive\"}}]",
+        "post_data": "[{\"timestamp\":\"2026-09-10T17:58:21.561Z\",\"deployment\":\"2026-09-10T17:58:21.561Z\",\"source\":\"sdk-web-adopt\",\"type\":\"pageview\",\"token\":\"a06c5c76-13c2-4843-9dbd-cfb99310f10b\",\"domain\":\"www.wiler.com.br\",\"projectId\":\"15e19eb5-958a-4d1e-a1b2-cdbda58af4e6\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"preferences\":{\"enabled\":[],\"disabled\":[]},\"pathname\":\"/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"referrer\":null,\"config\":{\"language\":\"pt\",\"consent_mode\":\"opt_out\",\"display_mode\":\"show\",\"identifier\":\"aee23cf1-14df-4ca6-9edf-d2d5be379f02\"},\"geolocation\":{\"reglementation\":\"ccpa\",\"userLanguage\":\"pt\",\"countryCode\":\"US\"},\"metadata\":{\"injector_version\":\"1.2.25\",\"disclaimer_version\":8,\"transport\":\"keepalive\"}},{\"timestamp\":\"2026-09-10T17:58:21.561Z\",\"deployment\":\"2026-09-10T17:58:21.561Z\",\"source\":\"sdk-web-adopt\",\"type\":\"cookies:open\",\"token\":\"a06c5c76-13c2-4843-9dbd-cfb99310f10b\",\"domain\":\"www.wiler.com.br\",\"projectId\":\"15e19eb5-958a-4d1e-a1b2-cdbda58af4e6\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"preferences\":{\"enabled\":[],\"disabled\":[]},\"pathname\":\"/papel-de-parede/texture-ii?map=category-1%2Ccolecoes\",\"referrer\":null,\"config\":{\"language\":\"pt\",\"consent_mode\":\"opt_out\",\"display_mode\":\"show\",\"identifier\":\"aee23cf1-14df-4ca6-9edf-d2d5be379f02\"},\"geolocation\":{\"reglementation\":\"ccpa\",\"userLanguage\":\"pt\",\"countryCode\":\"US\"},\"metadata\":{\"injector_version\":\"1.2.25\",\"disclaimer_version\":8,\"transport\":\"keepalive\"}}]",
         "status": 204,
         "content_type": ""
-      },
-      {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-18WWV0TPPP&gtm=45je6990v9102585009z8811370786za20gzb811370786zd811370786&_p=1789062350259&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&_eu=AAAAAGAC&are=1&cid=2132362631.1789062351&frm=0&gtm_up=1&pscdl=denied&rcb=8&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&gaf=2&tag_exp=115616985~115938466~115938468~118897920~118897930~120213116~120385423~120469145~120469153&sid=1789062350&sct=1&seg=1&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&_s=2&tfd=6396",
-        "method": "POST",
-        "resource_type": "fetch",
-        "post_data": "en=page_view&_et=476\r\nen=page_view&_et=209\r\nen=view_item_list&pr1=id55585~nmPapel%20de%20Parede%20Texture%20II%20Bege%20TX-2010%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55585~brEdantex~lp1~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055585~k1dimension2~v155585~k2dimension3~v2TX-2010~k3dimension4~v3available&pr2=id56290~nmPapel%20De%20Parede%20Texture%20II%20Carvalho%20TX-2052%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va56290~brEdantex~lp2~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v056290~k1dimension2~v156290~k2dimension3~v2TX-2052~k3dimension4~v3available&pr3=id55580~nmPapel%20de%20Parede%20Texture%20II%20Marrom%20TX-2005%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55580~brEdantex~lp3~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055580~k1dimension2~v155580~k2dimension3~v2TX-2005~k3dimension4~v3available&pr4=id55584~nmPapel%20de%20Parede%20Texture%20II%20Linho%20TX-2009%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55584~brEdantex~lp4~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055584~k1dimension2~v155584~k2dimension3~v2TX-2009~k3dimension4~v3available&pr5=id55578~nmPapel%20de%20Parede%20Texture%20II%20Marrom%20Claro%20TX-2003%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55578~brEdantex~lp5~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055578~k1dimension2~v155578~k2dimension3~v2TX-2003~k3dimension4~v3available&pr6=id55577~nmPapel%20de%20Parede%20Texture%20II%20Bege%20TX-2002%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55577~brEdantex~lp6~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055577~k1dimension2~v155577~k2dimension3~v2TX-2002~k3dimension4~v3available&pr7=id55616~nmPapel%20de%20Parede%20Texture%20II%20Cinza%20TX-2047%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55616~brEdantex~lp7~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055616~k1dimension2~v155616~k2dimension3~v2TX-2047~k3dimension4~v3available&pr8=id55606~nmPapel%20de%20Parede%20Texture%20II%20Areia%20TX-2037%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55606~brEdantex~lp8~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055606~k1dimension2~v155606~k2dimension3~v2TX-2037~k3dimension4~v3available&ep.item_list_name=Papel%20de%20parede&_et=1195\r\nen=view_item_list&pr1=id55585~nmPapel%20de%20Parede%20Texture%20II%20Bege%20TX-2010%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55585~brEdantex~lp1~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055585~k1dimension2~v155585~k2dimension3~v2TX-2010~k3dimension4~v3available&pr2=id56290~nmPapel%20De%20Parede%20Texture%20II%20Carvalho%20TX-2052%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va56290~brEdantex~lp2~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v056290~k1dimension2~v156290~k2dimension3~v2TX-2052~k3dimension4~v3available&pr3=id55580~nmPapel%20de%20Parede%20Texture%20II%20Marrom%20TX-2005%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55580~brEdantex~lp3~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055580~k1dimension2~v155580~k2dimension3~v2TX-2005~k3dimension4~v3available&pr4=id55584~nmPapel%20de%20Parede%20Texture%20II%20Linho%20TX-2009%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55584~brEdantex~lp4~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055584~k1dimension2~v155584~k2dimension3~v2TX-2009~k3dimension4~v3available&pr5=id55578~nmPapel%20de%20Parede%20Texture%20II%20Marrom%20Claro%20TX-2003%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55578~brEdantex~lp5~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055578~k1dimension2~v155578~k2dimension3~v2TX-2003~k3dimension4~v3available&pr6=id55577~nmPapel%20de%20Parede%20Texture%20II%20Bege%20TX-2002%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55577~brEdantex~lp6~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055577~k1dimension2~v155577~k2dimension3~v2TX-2002~k3dimension4~v3available&pr7=id55616~nmPapel%20de%20Parede%20Texture%20II%20Cinza%20TX-2047%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55616~brEdantex~lp7~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055616~k1dimension2~v155616~k2dimension3~v2TX-2047~k3dimension4~v3available&pr8=id55606~nmPapel%20de%20Parede%20Texture%20II%20Areia%20TX-2037%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55606~brEdantex~lp8~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055606~k1dimension2~v155606~k2dimension3~v2TX-2037~k3dimension4~v3available&ep.item_list_name=Papel%20de%20parede&_et=89",
-        "status": 204,
-        "content_type": "text/plain"
       },
       {
         "url": "https://static.smarthint.co/Scripts/i/Vtex.IO.Full.min.js?v=1",
@@ -1697,10 +1689,18 @@
         "content_type": "text/javascript"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-3Y8LN5PVE7&gtm=45je6990v9209668265za200zd9209668265&_p=1789062350259&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&are=1&cid=2132362631.1789062351&frm=0&gtm_up=1&ngs=1&pscdl=denied&rcb=14&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=2&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153&sid=1789062351&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&en=widget_view_main&_ee=1&ep.event_category=engagement&ep.event_label=widget_view_main&_et=12&tfd=6775",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-3Y8LN5PVE7&gtm=45je6990h1v9209668265za200zd9209668265&_p=1789063099860&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&are=1&cid=1409693125.1789063101&frm=0&gtm_up=1&ngs=1&pscdl=denied&rcb=13&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=2&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153&sid=1789063101&sct=1&seg=0&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&en=widget_view_main&_ee=1&ep.event_category=engagement&ep.event_label=widget_view_main&_et=17&tfd=9352",
         "method": "POST",
         "resource_type": "fetch",
         "post_data": null,
+        "status": 204,
+        "content_type": "text/plain"
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-18WWV0TPPP&gtm=45je6990v9102585009z8811370786za20gzb811370786zd811370786&_p=1789063099860&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dZmNiZj&_eu=AAAAAGAC&are=1&cid=1409693125.1789063101&frm=0&gtm_up=1&pscdl=denied&rcb=11&sr=1440x1000&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&gaf=2&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153&sid=1789063101&sct=1&seg=1&dl=https%3A%2F%2Fwww.wiler.com.br%2Fpapel-de-parede%2Ftexture-ii%3Fmap%3Dcategory-1%252Ccolecoes&dt=Papel%20de%20Parede%3A%20Transforme%20seu%20espa%C3%A7o%20sem%20sujeira&_tu=CA&_s=2&tfd=9511",
+        "method": "POST",
+        "resource_type": "fetch",
+        "post_data": "en=page_view&_et=4\r\nen=view_item_list&pr1=id55585~nmPapel%20de%20Parede%20Texture%20II%20Bege%20TX-2010%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55585~brEdantex~lp1~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055585~k1dimension2~v155585~k2dimension3~v2TX-2010~k3dimension4~v3available&pr2=id56290~nmPapel%20De%20Parede%20Texture%20II%20Carvalho%20TX-2052%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va56290~brEdantex~lp2~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v056290~k1dimension2~v156290~k2dimension3~v2TX-2052~k3dimension4~v3available&pr3=id55580~nmPapel%20de%20Parede%20Texture%20II%20Marrom%20TX-2005%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55580~brEdantex~lp3~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055580~k1dimension2~v155580~k2dimension3~v2TX-2005~k3dimension4~v3available&pr4=id55584~nmPapel%20de%20Parede%20Texture%20II%20Linho%20TX-2009%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55584~brEdantex~lp4~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055584~k1dimension2~v155584~k2dimension3~v2TX-2009~k3dimension4~v3available&pr5=id55578~nmPapel%20de%20Parede%20Texture%20II%20Marrom%20Claro%20TX-2003%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55578~brEdantex~lp5~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055578~k1dimension2~v155578~k2dimension3~v2TX-2003~k3dimension4~v3available&pr6=id55577~nmPapel%20de%20Parede%20Texture%20II%20Bege%20TX-2002%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55577~brEdantex~lp6~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055577~k1dimension2~v155577~k2dimension3~v2TX-2002~k3dimension4~v3available&pr7=id55616~nmPapel%20de%20Parede%20Texture%20II%20Cinza%20TX-2047%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55616~brEdantex~lp7~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055616~k1dimension2~v155616~k2dimension3~v2TX-2047~k3dimension4~v3available&pr8=id55606~nmPapel%20de%20Parede%20Texture%20II%20Areia%20TX-2037%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55606~brEdantex~lp8~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055606~k1dimension2~v155606~k2dimension3~v2TX-2037~k3dimension4~v3available&ep.item_list_name=Papel%20de%20parede&_et=1203\r\nen=view_item_list&pr1=id55585~nmPapel%20de%20Parede%20Texture%20II%20Bege%20TX-2010%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55585~brEdantex~lp1~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055585~k1dimension2~v155585~k2dimension3~v2TX-2010~k3dimension4~v3available&pr2=id56290~nmPapel%20De%20Parede%20Texture%20II%20Carvalho%20TX-2052%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va56290~brEdantex~lp2~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v056290~k1dimension2~v156290~k2dimension3~v2TX-2052~k3dimension4~v3available&pr3=id55580~nmPapel%20de%20Parede%20Texture%20II%20Marrom%20TX-2005%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55580~brEdantex~lp3~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055580~k1dimension2~v155580~k2dimension3~v2TX-2005~k3dimension4~v3available&pr4=id55584~nmPapel%20de%20Parede%20Texture%20II%20Linho%20TX-2009%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55584~brEdantex~lp4~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055584~k1dimension2~v155584~k2dimension3~v2TX-2009~k3dimension4~v3available&pr5=id55578~nmPapel%20de%20Parede%20Texture%20II%20Marrom%20Claro%20TX-2003%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55578~brEdantex~lp5~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055578~k1dimension2~v155578~k2dimension3~v2TX-2003~k3dimension4~v3available&pr6=id55577~nmPapel%20de%20Parede%20Texture%20II%20Bege%20TX-2002%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55577~brEdantex~lp6~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055577~k1dimension2~v155577~k2dimension3~v2TX-2002~k3dimension4~v3available&pr7=id55616~nmPapel%20de%20Parede%20Texture%20II%20Cinza%20TX-2047%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55616~brEdantex~lp7~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055616~k1dimension2~v155616~k2dimension3~v2TX-2047~k3dimension4~v3available&pr8=id55606~nmPapel%20de%20Parede%20Texture%20II%20Areia%20TX-2037%20-%20Rolo%20Fechado%20de%200%2C53cm%20x%2010mts~va55606~brEdantex~lp8~ds0~pr210~qt1~caPapel%20de%20parede~c2TEXTURA~k0dimension1~v055606~k1dimension2~v155606~k2dimension3~v2TX-2037~k3dimension4~v3available&ep.item_list_name=Papel%20de%20parede&_et=81",
         "status": 204,
         "content_type": "text/plain"
       }

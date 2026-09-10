@@ -310,34 +310,21 @@
       "url_oficial": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes",
       "oficial_ativos_total": 52,
       "catalogo_total": 62,
-      "refs_ativas_extraidas": 52,
-      "extracao_ativa_completa": true,
+      "refs_ativas_extraidas": 48,
+      "extracao_ativa_completa": false,
       "faltantes_ativos_confirmados": [],
       "faltantes_observados_na_extracao_incompleta": [],
-      "catalogo_nao_encontrado_na_vitrine_ativa": [
-        "TR-4011",
-        "TR-4014",
-        "TR-4021",
-        "TR-4024",
-        "TR-4026",
-        "TR-4029",
-        "TR-4035",
-        "TR-4038",
-        "TR-4043",
-        "TR-4048"
-      ],
+      "catalogo_nao_encontrado_na_vitrine_ativa": [],
       "observacao_catalogo_nao_ativo": "Itens não encontrados na vitrine ativa NÃO são candidatos automáticos a remoção; podem ser referências históricas/válidas do book.",
       "refs_ativas": [
         "TR-4001",
         "TR-4002",
         "TR-4003",
         "TR-4004",
-        "TR-4005",
         "TR-4006",
         "TR-4007",
         "TR-4008",
         "TR-4009",
-        "TR-4010",
         "TR-4012",
         "TR-4013",
         "TR-4015",
@@ -358,7 +345,6 @@
         "TR-4034",
         "TR-4036",
         "TR-4037",
-        "TR-4039",
         "TR-4040",
         "TR-4041",
         "TR-4042",
@@ -374,7 +360,6 @@
         "TR-4054",
         "TR-4055",
         "TR-4056",
-        "TR-4057",
         "TR-4058",
         "TR-4059",
         "TR-4060",
@@ -416,10 +401,10 @@
           "url_final": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes&page=3",
           "http": 200,
           "seletor_grade": "[class*=\"galleryItem\"] a[href*=\"/p\"]",
-          "links_grade": 16,
-          "refs_na_pagina": 16,
-          "novas_refs": 16,
-          "total_acumulado": 48,
+          "links_grade": 12,
+          "refs_na_pagina": 12,
+          "novas_refs": 12,
+          "total_acumulado": 44,
           "contagens_visiveis": [
             52
           ]
@@ -433,26 +418,41 @@
           "links_grade": 4,
           "refs_na_pagina": 4,
           "novas_refs": 4,
-          "total_acumulado": 52,
+          "total_acumulado": 48,
+          "contagens_visiveis": [
+            52
+          ]
+        },
+        {
+          "pagina": 5,
+          "url": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes&page=5",
+          "url_final": "https://www.wiler.com.br/papel-de-parede/tramas?map=category-1%2Ccolecoes&page=5",
+          "http": 200,
+          "seletor_grade": null,
+          "links_grade": 0,
+          "refs_na_pagina": 0,
+          "novas_refs": 0,
+          "total_acumulado": 48,
           "contagens_visiveis": [
             52
           ]
         }
       ],
       "erro": null,
-      "status": "ok"
+      "status": "inconsistente_contagem"
     }
   ],
   "resumo": {
     "catalogo_total_wiler": 262,
     "ativos_oficiais_somados": 93,
-    "refs_ativas_extraidas": 120,
+    "refs_ativas_extraidas": 116,
     "faltantes_ativos_confirmados": 0,
-    "colecoes_extracao_completa": 2,
+    "colecoes_extracao_completa": 1,
     "colecoes_nao_validadas": [
       "Bambine",
       "Tacto",
-      "Texture III"
+      "Texture III",
+      "Tramas"
     ]
   }
 }
