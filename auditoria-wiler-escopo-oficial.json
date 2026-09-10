@@ -1,0 +1,36 @@
+{
+  "fornecedor": "Wiler",
+  "fonte_principal": "https://www.wiler.com.br/papel-de-parede/wiler-k?map=category-1%2Cbrand",
+  "fonte_tipo": "Site oficial Wiler-K",
+  "data_verificacao": "2026-09-10",
+  "status": "cobertura_parcial_confirmada",
+  "produtos_papel_de_parede_marca_wiler_k_na_vitrine_atual": 211,
+  "colecoes_cadastradas_no_catalogo": [
+    "Bambine",
+    "Tacto",
+    "Texture II",
+    "Texture III",
+    "Tramas"
+  ],
+  "colecoes_ativas_ausentes_confirmadas": [
+    "Texture",
+    "Unique",
+    "Avalon 01",
+    "Avalon 02",
+    "Colorkey",
+    "Essencial",
+    "Fofura Baby",
+    "Reno",
+    "Bavária",
+    "Le Jardin",
+    "Vip"
+  ],
+  "evidencias": [
+    "A vitrine oficial por marca Wiler-K retorna 211 produtos de papel de parede.",
+    "Filtros atuais do site exibem Unique, Avalon, Reno, Bavária, Le Jardin, Essencial e Vip.",
+    "Páginas oficiais de produto confirmam Colorkey, Fofura Baby e Texture como coleções/linhas ativas.",
+    "Os cinco books já cadastrados permanecem auditados separadamente; alguns são históricos e não devem ser removidos apenas por não aparecerem na vitrine atual."
+  ],
+  "observacao": "O total de 211 produtos da vitrine atual não é comparável diretamente aos 262 registros do catálogo da Fábrika, porque este preserva books históricos e a vitrine atual pode agrupar ou omitir referências por disponibilidade. Por isso, este relatório comprova cobertura parcial sem converter a diferença de contagem em número de referências faltantes.",
+  "criterio": "Somente o site oficial Wiler-K é usado para confirmar coleções atuais neste relatório. A ausência de uma coleção histórica na vitrine atual não autoriza exclusão do catálogo da Fábrika."
+}
