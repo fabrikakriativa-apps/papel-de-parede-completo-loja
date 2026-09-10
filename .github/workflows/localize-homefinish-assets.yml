@@ -72,21 +72,25 @@ jobs:
           if missing:
               raise SystemExit(f'Local image paths are missing: {missing[:10]}')
 
+          localized = report.get('imagens_localizadas')
+          localized = int(localized) if localized is not None else -1
+
           if status == 'ok':
               if external:
                   raise SystemExit(f'External image references remain after successful localization: {external[:5]}')
-              if int(report.get('imagens_localizadas') or 0) not in {0, 28}:
+              if localized not in {0, 28}:
                   raise SystemExit('Unexpected localized image count')
           else:
               if len(external) != 56:
                   raise SystemExit(f'Blocked state must preserve exactly 56 card/zoom URLs; found {len(external)}')
-              if int(report.get('imagens_localizadas') or -1) != 0:
+              if localized != 0:
                   raise SystemExit('Blocked state must not leave partially localized images')
 
           print(json.dumps({
               'status': status,
               'catalog_items': len(data),
               'external_url_fields': len(external),
+              'localized_images': localized,
               'missing_local_assets': 0,
           }, ensure_ascii=False))
           PY
