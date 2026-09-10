@@ -6,134 +6,30 @@
   "status": "cobertura_parcial_confirmada",
   "colecoes_cadastradas_no_catalogo": 13,
   "colecoes_ausentes_confirmadas": [
-    {
-      "nome": "HF Orient",
-      "url": "https://homefinish.com.br/colecoes/papeis-de-parede/hf-orient/",
-      "evidencia": "Página oficial de coleção ativa com referências próprias e paginação.",
-      "status_enumeracao": "parcial"
-    },
-    {
-      "nome": "HF Orient II",
-      "url": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-orient-ii/",
-      "evidencia": "Página oficial de coleção ativa com referências próprias e paginação.",
-      "status_enumeracao": "parcial"
-    },
-    {
-      "nome": "Mundo Encantado",
-      "url": "https://homefinish.com.br/colecoes/papeis-de-parede/mundo-encantado/",
-      "evidencia": "Página oficial de coleção ativa ligada pelo Home Finish Studio; 25 referências confirmadas em três páginas oficiais.",
-      "status_enumeracao": "completa_25_de_25",
-      "total_referencias_confirmadas": 25,
-      "relatorio_expansao": "auditoria-homefinish-expansao-confirmada.json"
-    },
-    {
-      "nome": "Vichy",
-      "url": "https://www.homefinish.com.br/colecoes/dicoracao/vichy/",
-      "evidencia": "Página oficial de produto Home Finish identifica explicitamente COLEÇÃO Vichy e o próprio link de coleção aponta para a rota oficial DiCoração. Referências confirmadas incluem 600465 e 600472.",
-      "status_enumeracao": "pendente_enumeracao_integral",
-      "referencias_confirmadas_amostra": ["600465", "600472"]
-    },
-    {
-      "nome": "Bosque",
-      "url": "https://www.homefinish.com.br/colecoes/dicoracao/bosque/",
-      "evidencia": "Página oficial de produto Home Finish identifica explicitamente COLEÇÃO Bosque, referência 604234, e o link de coleção aponta para a rota oficial DiCoração. É distinta de Bosque da Imaginação.",
-      "status_enumeracao": "pendente_enumeracao_integral",
-      "referencias_confirmadas_amostra": ["604234"]
-    },
-    {
-      "nome": "Xadrez",
-      "url": "https://www.homefinish.com.br/colecoes/dicoracao/xadrez/",
-      "evidencia": "Páginas oficiais Home Finish identificam explicitamente COLEÇÃO Xadrez e o link de coleção aponta para a rota oficial DiCoração. É distinta de Tartan.",
-      "status_enumeracao": "pendente_enumeracao_integral",
-      "referencias_confirmadas_amostra": ["600618", "600625", "600632", "600755"]
-    },
-    {
-      "nome": "Temáticos",
-      "url": "https://www.homefinish.com.br/colecoes/dicoracao/tematicos/",
-      "evidencia": "Página oficial Home Finish identifica explicitamente COLEÇÃO Temáticos, referência 600397, e fornece link para a rota oficial DiCoração.",
-      "status_enumeracao": "pendente_enumeracao_integral",
-      "referencias_confirmadas_amostra": ["600397"]
-    },
-    {
-      "nome": "Floresta Brasileira",
-      "url": "https://www.homefinish.com.br/colecoes/dicoracao/floresta-brasileira/",
-      "evidencia": "Páginas oficiais Home Finish identificam explicitamente COLEÇÃO Floresta Brasileira e fornecem link para a rota oficial DiCoração.",
-      "status_enumeracao": "pendente_enumeracao_integral",
-      "referencias_confirmadas_amostra": ["DC200P", "DC200PP"]
-    },
-    {
-      "nome": "Clássicos",
-      "url": "https://www.homefinish.com.br/colecoes/dicoracao/classicos/",
-      "evidencia": "Página oficial Home Finish identifica explicitamente COLEÇÃO Clássicos, referência 603565, e fornece link para a rota oficial DiCoração.",
-      "status_enumeracao": "pendente_enumeracao_integral",
-      "referencias_confirmadas_amostra": ["603565"]
-    },
-    {
-      "nome": "Fundo do Mar",
-      "url": "https://www.homefinish.com.br/colecoes/dicoracao/fundo-do-mar/",
-      "evidencia": "Páginas oficiais Home Finish identificam explicitamente COLEÇÃO Fundo do Mar e o próprio link de coleção aponta para a rota oficial DiCoração.",
-      "status_enumeracao": "pendente_enumeracao_integral",
-      "referencias_confirmadas_amostra": ["DC400M", "DC400G", "DC400XG"]
-    },
-    {
-      "nome": "Montanhas",
-      "url": "https://www.homefinish.com.br/colecoes/dicoracao/montanhas/",
-      "evidencia": "Página oficial Home Finish identifica explicitamente COLEÇÃO Montanhas, referência DC220P, e o próprio link de coleção aponta para a rota oficial DiCoração.",
-      "status_enumeracao": "pendente_enumeracao_integral",
-      "referencias_confirmadas_amostra": ["DC220P"]
-    },
-    {
-      "nome": "Safari",
-      "url": "https://www.homefinish.com.br/colecoes/dicoracao/safari/",
-      "evidencia": "Páginas oficiais Home Finish identificam explicitamente COLEÇÃO Safari e o próprio link de coleção aponta para a rota oficial DiCoração.",
-      "status_enumeracao": "pendente_enumeracao_integral",
-      "referencias_confirmadas_amostra": ["DC130P", "DC130PP", "DC130XG"]
-    },
-    {
-      "nome": "As Crônicas de Nárnia",
-      "evidencia": "Página oficial Home Finish identifica explicitamente COLEÇÃO As Crônicas de Nárnia, referência 603664. A identidade da coleção está confirmada; a rota de coleção e a enumeração integral ainda precisam ser capturadas sem inferência.",
-      "status_enumeracao": "pendente_rota_e_enumeracao_integral",
-      "referencias_confirmadas_amostra": ["603664"]
-    },
-    {
-      "nome": "Floresta Encantada",
-      "url": "https://www.homefinish.com.br/colecoes/feito-por-melanie/floresta-encantada/",
-      "evidencia": "Páginas oficiais Home Finish identificam explicitamente COLEÇÃO Floresta Encantada; o link de coleção do próprio produto aponta para a rota Feito por Melanie.",
-      "status_enumeracao": "pendente_enumeracao_integral",
-      "referencias_confirmadas_amostra": ["603923", "603930", "603947", "603954", "603961"]
-    },
-    {
-      "nome": "É Primavera na Floresta",
-      "url": "https://www.homefinish.com.br/colecoes/feito-por-melanie/e-primavera-na-floresta/",
-      "evidencia": "Páginas oficiais Home Finish identificam explicitamente COLEÇÃO É Primavera na Floresta; o link de coleção do próprio produto aponta para a rota Feito por Melanie.",
-      "status_enumeracao": "pendente_enumeracao_integral",
-      "referencias_confirmadas_amostra": ["604074", "604104"]
-    },
-    {
-      "nome": "Família de Cavalinhos",
-      "url": "https://www.homefinish.com.br/colecoes/feito-por-melanie/familia-de-cavalinhos/",
-      "evidencia": "Página oficial Home Finish identifica explicitamente COLEÇÃO Família de Cavalinhos, referência 603749; o link de coleção do próprio produto aponta para a rota Feito por Melanie.",
-      "status_enumeracao": "pendente_enumeracao_integral",
-      "referencias_confirmadas_amostra": ["603749"]
-    },
-    {
-      "nome": "Chuva de Flores",
-      "url": "https://www.homefinish.com.br/colecoes/feito-por-melanie/chuva-de-flores/",
-      "evidencia": "Página oficial Home Finish identifica explicitamente COLEÇÃO Chuva de Flores, referência 603848; o link de coleção do próprio produto aponta para a rota Feito por Melanie.",
-      "status_enumeracao": "pendente_enumeracao_integral",
-      "referencias_confirmadas_amostra": ["603848"]
-    }
+    {"nome":"HF Orient","url":"https://homefinish.com.br/colecoes/papeis-de-parede/hf-orient/","evidencia":"Página oficial de coleção ativa com referências próprias e paginação.","status_enumeracao":"parcial"},
+    {"nome":"HF Orient II","url":"https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-orient-ii/","evidencia":"Página oficial de coleção ativa com referências próprias e paginação.","status_enumeracao":"parcial"},
+    {"nome":"Mundo Encantado","url":"https://homefinish.com.br/colecoes/papeis-de-parede/mundo-encantado/","evidencia":"Página oficial de coleção ativa ligada pelo Home Finish Studio; 25 referências confirmadas em três páginas oficiais.","status_enumeracao":"completa_25_de_25","total_referencias_confirmadas":25,"relatorio_expansao":"auditoria-homefinish-expansao-confirmada.json"},
+    {"nome":"HF Petit","url":"https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-petit/","evidencia":"Página oficial Home Finish ativa, ausente do catálogo atual, com 12 referências visíveis na primeira página e paginação adicional. Página oficial de produto confirma também a referência 51910 como pertencente à coleção HF Petit.","status_enumeracao":"parcial","referencias_confirmadas_amostra":["31307","31311","33307","33309","33311","36801","36804","45701","45710","51507","51601","51603","51910"]},
+    {"nome":"Vichy","url":"https://www.homefinish.com.br/colecoes/dicoracao/vichy/","evidencia":"Página oficial de produto Home Finish identifica explicitamente COLEÇÃO Vichy e o próprio link de coleção aponta para a rota oficial DiCoração.","status_enumeracao":"pendente_enumeracao_integral","referencias_confirmadas_amostra":["600465","600472"]},
+    {"nome":"Bosque","url":"https://www.homefinish.com.br/colecoes/dicoracao/bosque/","evidencia":"Página oficial de produto Home Finish identifica explicitamente COLEÇÃO Bosque, referência 604234, e o link de coleção aponta para a rota oficial DiCoração. É distinta de Bosque da Imaginação.","status_enumeracao":"pendente_enumeracao_integral","referencias_confirmadas_amostra":["604234"]},
+    {"nome":"Xadrez","url":"https://www.homefinish.com.br/colecoes/dicoracao/xadrez/","evidencia":"Páginas oficiais Home Finish identificam explicitamente COLEÇÃO Xadrez e o link de coleção aponta para a rota oficial DiCoração. É distinta de Tartan.","status_enumeracao":"pendente_enumeracao_integral","referencias_confirmadas_amostra":["600618","600625","600632","600755"]},
+    {"nome":"Temáticos","url":"https://www.homefinish.com.br/colecoes/dicoracao/tematicos/","evidencia":"Página oficial Home Finish identifica explicitamente COLEÇÃO Temáticos, referência 600397, e fornece link para a rota oficial DiCoração.","status_enumeracao":"pendente_enumeracao_integral","referencias_confirmadas_amostra":["600397"]},
+    {"nome":"Floresta Brasileira","url":"https://www.homefinish.com.br/colecoes/dicoracao/floresta-brasileira/","evidencia":"Páginas oficiais Home Finish identificam explicitamente COLEÇÃO Floresta Brasileira e fornecem link para a rota oficial DiCoração.","status_enumeracao":"pendente_enumeracao_integral","referencias_confirmadas_amostra":["DC200P","DC200PP"]},
+    {"nome":"Clássicos","url":"https://www.homefinish.com.br/colecoes/dicoracao/classicos/","evidencia":"Página oficial Home Finish identifica explicitamente COLEÇÃO Clássicos, referência 603565, e fornece link para a rota oficial DiCoração.","status_enumeracao":"pendente_enumeracao_integral","referencias_confirmadas_amostra":["603565"]},
+    {"nome":"Fundo do Mar","url":"https://www.homefinish.com.br/colecoes/dicoracao/fundo-do-mar/","evidencia":"Páginas oficiais Home Finish identificam explicitamente COLEÇÃO Fundo do Mar e o próprio link de coleção aponta para a rota oficial DiCoração.","status_enumeracao":"pendente_enumeracao_integral","referencias_confirmadas_amostra":["DC400M","DC400G","DC400XG"]},
+    {"nome":"Montanhas","url":"https://www.homefinish.com.br/colecoes/dicoracao/montanhas/","evidencia":"Página oficial Home Finish identifica explicitamente COLEÇÃO Montanhas, referência DC220P, e o próprio link de coleção aponta para a rota oficial DiCoração.","status_enumeracao":"pendente_enumeracao_integral","referencias_confirmadas_amostra":["DC220P"]},
+    {"nome":"Safari","url":"https://www.homefinish.com.br/colecoes/dicoracao/safari/","evidencia":"Páginas oficiais Home Finish identificam explicitamente COLEÇÃO Safari e o próprio link de coleção aponta para a rota oficial DiCoração.","status_enumeracao":"pendente_enumeracao_integral","referencias_confirmadas_amostra":["DC130P","DC130PP","DC130XG"]},
+    {"nome":"As Crônicas de Nárnia","evidencia":"Página oficial Home Finish identifica explicitamente COLEÇÃO As Crônicas de Nárnia, referência 603664. A identidade da coleção está confirmada; a rota de coleção e a enumeração integral ainda precisam ser capturadas sem inferência.","status_enumeracao":"pendente_rota_e_enumeracao_integral","referencias_confirmadas_amostra":["603664"]},
+    {"nome":"Floresta Encantada","url":"https://www.homefinish.com.br/colecoes/feito-por-melanie/floresta-encantada/","evidencia":"Páginas oficiais Home Finish identificam explicitamente COLEÇÃO Floresta Encantada; o link de coleção do próprio produto aponta para a rota Feito por Melanie.","status_enumeracao":"pendente_enumeracao_integral","referencias_confirmadas_amostra":["603923","603930","603947","603954","603961"]},
+    {"nome":"É Primavera na Floresta","url":"https://www.homefinish.com.br/colecoes/feito-por-melanie/e-primavera-na-floresta/","evidencia":"Páginas oficiais Home Finish identificam explicitamente COLEÇÃO É Primavera na Floresta; o link de coleção do próprio produto aponta para a rota Feito por Melanie.","status_enumeracao":"pendente_enumeracao_integral","referencias_confirmadas_amostra":["604074","604104"]},
+    {"nome":"Família de Cavalinhos","url":"https://www.homefinish.com.br/colecoes/feito-por-melanie/familia-de-cavalinhos/","evidencia":"Página oficial Home Finish identifica explicitamente COLEÇÃO Família de Cavalinhos, referência 603749; o link de coleção do próprio produto aponta para a rota Feito por Melanie.","status_enumeracao":"pendente_enumeracao_integral","referencias_confirmadas_amostra":["603749"]},
+    {"nome":"Chuva de Flores","url":"https://www.homefinish.com.br/colecoes/feito-por-melanie/chuva-de-flores/","evidencia":"Página oficial Home Finish identifica explicitamente COLEÇÃO Chuva de Flores, referência 603848; o link de coleção do próprio produto aponta para a rota Feito por Melanie.","status_enumeracao":"pendente_enumeracao_integral","referencias_confirmadas_amostra":["603848"]}
   ],
   "colecoes_encontradas_em_produtos_a_classificar": [],
-  "nao_contabilizados": [
-    {
-      "nome": "Green Park",
-      "motivo": "Há conteúdo histórico e URL de coleção, mas a página de coleção encontrada está vazia/legada; não foi contada como coleção ativa."
-    }
-  ],
-  "observacao": "A cobertura do catálogo Home Finish é parcial. Dezessete coleções ausentes estão confirmadas até esta etapa; este é um mínimo confirmado e não uma alegação de esgotamento do portfólio oficial. Mundo Encantado já teve 25 referências enumeradas. HF Orient e HF Orient II estão em enumeração parcial. As coleções DiCoração e Feito por Melanie foram confirmadas por metadado explícito COLEÇÃO em páginas oficiais Home Finish; quando a própria página expôs o link de coleção, a rota oficial foi registrada. Nenhuma coleção é importada por associação visual, nome parecido ou fonte de varejo.",
+  "nao_contabilizados": [{"nome":"Green Park","motivo":"Há conteúdo histórico e URL de coleção, mas a página de coleção encontrada está vazia/legada; não foi contada como coleção ativa."}],
+  "observacao": "A cobertura do catálogo Home Finish é parcial. Dezoito coleções ausentes estão confirmadas até esta etapa; este é um mínimo confirmado e não uma alegação de esgotamento do portfólio oficial. Mundo Encantado já teve 25 referências enumeradas. HF Petit, HF Orient e HF Orient II estão em enumeração parcial. As coleções DiCoração e Feito por Melanie foram confirmadas por metadado explícito COLEÇÃO em páginas oficiais Home Finish. Nenhuma coleção é importada por associação visual, nome parecido ou fonte de varejo.",
   "criterio": "A existência de uma coleção pode ser confirmada por página oficial de coleção ativa ou por metadado explícito COLEÇÃO em página oficial de produto do fabricante. Isso confirma a identidade e a lacuna de portfólio, mas não autoriza importação parcial. A inclusão no catálogo exige enumeração completa de referências e validação visual exata. O número de lacunas é tratado como mínimo confirmado enquanto a descoberta do portfólio não estiver integralmente fechada.",
-  "colecoes_ausentes_confirmadas_total_minimo": 17,
+  "colecoes_ausentes_confirmadas_total_minimo": 18,
   "colecoes_ausentes_com_enumeracao_completa": 1,
-  "colecoes_ausentes_em_enumeracao_ou_pendentes": 16
+  "colecoes_ausentes_em_enumeracao_ou_pendentes": 17
 }
