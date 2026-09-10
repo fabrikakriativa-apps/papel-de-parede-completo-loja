@@ -53,25 +53,75 @@ def next_fk_codes(data: list[dict], quantity: int) -> list[str]:
     return out
 
 
-def discover_product(page, ref: str) -> dict:
+def discover_card(page, ref: str) -> dict:
     result = page.evaluate(
-        """
-        (ref) => {
-          const clean = s => (s || '').replace(/\s+/g,' ').trim().toUpperCase();
-          const nodes = [...document.querySelectorAll('body *')].filter(el => {
+        r"""
+        async (ref) => {
+          const clean = s => (s || '').replace(/\s+/g, ' ').trim().toUpperCase();
+          const hasRef = el => {
             const t = clean(el.textContent);
-            return el.children.length === 0 && (t === ref || t === `CÓD: ${ref}` || t.endsWith(` ${ref}`));
-          });
-          for (const node of nodes) {
+            return t === ref || t === `CÓD: ${ref}` || t.endsWith(` ${ref}`) || t.includes(`CÓD: ${ref}`);
+          };
+          const refNodes = [...document.querySelectorAll('body *')]
+            .filter(el => el.children.length === 0 && hasRef(el));
+          if (refNodes.length) {
+            refNodes[0].scrollIntoView({block: 'center'});
+            await new Promise(resolve => setTimeout(resolve, 600));
+          }
+
+          const imageUrl = img => {
+            if (!img) return '';
+            const values = [
+              img.currentSrc,
+              img.getAttribute('src'),
+              img.dataset?.src,
+              img.dataset?.lazySrc,
+              img.dataset?.original,
+              img.getAttribute('data-original'),
+              img.getAttribute('data-lazy'),
+              img.getAttribute('data-image')
+            ].filter(Boolean);
+            for (const value of values) {
+              if (/^https?:\/\//i.test(value)) return value;
+            }
+            const srcset = img.getAttribute('srcset') || img.getAttribute('data-srcset') || '';
+            const candidate = srcset.split(',').map(x => x.trim().split(/\s+/)[0]).find(x => /^https?:\/\//i.test(x));
+            return candidate || '';
+          };
+
+          const containers = [...document.querySelectorAll('article, li, div')]
+            .map(el => ({el, text: clean(el.innerText)}))
+            .filter(x => x.text.includes(ref) && x.el.querySelector('img'))
+            .sort((a, b) => a.text.length - b.text.length);
+
+          for (const item of containers) {
+            const img = item.el.querySelector('img');
+            const image = imageUrl(img);
+            const links = [...item.el.querySelectorAll('a[href]')];
+            const productLink = links.find(a => /\/produto\//i.test(a.href)) ||
+                                links.find(a => /produto/i.test(a.href)) || null;
+            if (image || productLink) {
+              return {
+                href: productLink ? productLink.href : '',
+                image,
+                text: item.text.slice(0, 800)
+              };
+            }
+          }
+
+          for (const node of refNodes) {
             let cur = node;
-            for (let i=0; i<9 && cur; i++, cur=cur.parentElement) {
-              const link = cur.querySelector?.('a[href*="/produto/"]');
+            for (let i = 0; i < 18 && cur; i++, cur = cur.parentElement) {
               const img = cur.querySelector?.('img');
-              if (link) {
+              const image = imageUrl(img);
+              const links = [...(cur.querySelectorAll?.('a[href]') || [])];
+              const productLink = links.find(a => /\/produto\//i.test(a.href)) ||
+                                  links.find(a => /produto/i.test(a.href)) || null;
+              if (image || productLink) {
                 return {
-                  href: link.href,
-                  image: img ? (img.currentSrc || img.src || img.dataset?.src || img.dataset?.lazySrc || '') : '',
-                  text: clean(cur.innerText).slice(0, 600)
+                  href: productLink ? productLink.href : '',
+                  image,
+                  text: clean(cur.innerText).slice(0, 800)
                 };
               }
             }
@@ -81,14 +131,18 @@ def discover_product(page, ref: str) -> dict:
         """,
         ref,
     )
-    if not result or not result.get("href"):
-        raise RuntimeError(f"Não foi possível localizar o card oficial/distribuidor de {ref}")
+    if not result or (not result.get("href") and not result.get("image")):
+        raise RuntimeError(f"Não foi possível localizar imagem ou página do card distribuidor de {ref}")
     return result
 
 
 def discover_image(page, product_url: str, fallback: str) -> str:
+    if fallback and fallback.startswith(("http://", "https://")):
+        return fallback
+    if not product_url:
+        raise RuntimeError("Card sem imagem pública e sem link de produto")
     page.goto(product_url, wait_until="domcontentloaded", timeout=30000)
-    page.wait_for_timeout(1800)
+    page.wait_for_timeout(1500)
     candidates = []
     for selector, attr in [
         ('meta[property="og:image"]', 'content'),
@@ -99,16 +153,14 @@ def discover_image(page, product_url: str, fallback: str) -> str:
             value = loc.first.get_attribute(attr)
             if value:
                 candidates.append(value)
-    for selector in ['img[src*="produto"]', 'img[src*="product"]', '.produto img', '.product img']:
+    for selector in ['img[src*="produto"]', 'img[src*="product"]', '.produto img', '.product img', 'main img']:
         loc = page.locator(selector)
         if loc.count():
             value = loc.first.get_attribute('src') or loc.first.get_attribute('data-src')
             if value:
                 candidates.append(value)
-    if fallback:
-        candidates.append(fallback)
     for value in candidates:
-        if value and value.startswith(('http://', 'https://')):
+        if value and value.startswith(("http://", "https://")):
             return value
     raise RuntimeError(f"Nenhuma imagem pública encontrada em {product_url}")
 
@@ -173,8 +225,6 @@ def main() -> None:
     already = [ref for ref in MISSING_REFS if norm(ref) in existing]
     pending = [ref for ref in MISSING_REFS if norm(ref) not in existing]
 
-    # Idempotência: depois da primeira inclusão bem-sucedida, execuções futuras
-    # apenas validam que as seis referências continuam presentes.
     if not pending:
         report = {
             "fonte": CATEGORY_URL,
@@ -222,16 +272,18 @@ def main() -> None:
         for ref in MISSING_REFS:
             if ref not in body:
                 raise RuntimeError(f"A fonte não confirmou {ref}; abortando sem mutação")
-            card = discover_product(page, ref)
-            image_url = discover_image(page, card["href"], card.get("image", ""))
-            discovered[ref] = {"product_url": card["href"], "image_url": image_url}
-            page.goto(CATEGORY_URL, wait_until="domcontentloaded", timeout=30000)
-            page.wait_for_timeout(700)
+            card = discover_card(page, ref)
+            image_url = discover_image(page, card.get("href", ""), card.get("image", ""))
+            discovered[ref] = {
+                "product_url": card.get("href") or CATEGORY_URL,
+                "image_url": image_url,
+                "card_text": card.get("text", ""),
+            }
+            if page.url != CATEGORY_URL:
+                page.goto(CATEGORY_URL, wait_until="domcontentloaded", timeout=30000)
+                page.wait_for_timeout(700)
         browser.close()
 
-    # Só baixa/escreve imagens depois de todas as seis referências terem sido
-    # confirmadas na fonte. O index só é alterado depois de TODAS as imagens
-    # terem sido baixadas, otimizadas e reabertas com sucesso.
     image_audit = {}
     created_files = []
     try:
@@ -276,7 +328,6 @@ def main() -> None:
     new_text = original_text[:start] + encoded + original_text[end:]
     INDEX.write_text(new_text, encoding="utf-8")
 
-    # Validação pós-escrita.
     _, final_data, _, _ = parse_index()
     final_refs = {
         norm(x.get("ref"))
@@ -296,7 +347,7 @@ def main() -> None:
         "colecao": COLLECTION,
         "colecao_produtos_reportados": 58,
         "mostruario": "CAT7154",
-        "papeis_inferidos_pela_fonte": 57,
+        "papeis_confirmados": 57,
         "catalogo_antes": len(final_data) - len(added),
         "catalogo_depois": len(final_data),
         "texture_iii_antes": len(existing),
