@@ -9,6 +9,12 @@ on:
       - 'scripts/optimize_catalog_html.py'
       - 'scripts/diagnose_image_render.py'
       - '.github/workflows/catalog-health.yml'
+  workflow_run:
+    workflows:
+      - 'Import Wiler Texture III completeness'
+      - 'Import complete Kantai collections'
+      - 'Importar colecoes Kantai completas'
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -16,6 +22,7 @@ permissions:
 
 jobs:
   health:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -43,5 +50,6 @@ jobs:
             echo "Catalog already healthy"
           else
             git commit -m "Refresh catalog health diagnostics"
-            git push
+            git pull --rebase origin main
+            git push origin main
           fi
