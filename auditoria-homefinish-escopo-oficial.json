@@ -28,21 +28,72 @@
     },
     {
       "nome": "Vichy",
-      "evidencia": "Produtos no domínio oficial Home Finish identificam explicitamente COLEÇÃO Vichy. Referências oficiais já confirmadas incluem 600465 e 600472.",
+      "url": "https://www.homefinish.com.br/colecoes/dicoracao/vichy/",
+      "evidencia": "Página oficial de produto Home Finish identifica explicitamente COLEÇÃO Vichy e o próprio link de coleção aponta para a rota oficial DiCoração. Referências confirmadas incluem 600465 e 600472.",
       "status_enumeracao": "pendente_enumeracao_integral",
       "referencias_confirmadas_amostra": ["600465", "600472"]
     },
     {
       "nome": "Bosque",
-      "evidencia": "Produto no domínio oficial Home Finish identifica explicitamente COLEÇÃO Bosque, referência 604234. É uma coleção distinta de Bosque da Imaginação.",
+      "url": "https://www.homefinish.com.br/colecoes/dicoracao/bosque/",
+      "evidencia": "Página oficial de produto Home Finish identifica explicitamente COLEÇÃO Bosque, referência 604234, e o link de coleção aponta para a rota oficial DiCoração. É distinta de Bosque da Imaginação.",
       "status_enumeracao": "pendente_enumeracao_integral",
       "referencias_confirmadas_amostra": ["604234"]
     },
     {
       "nome": "Xadrez",
-      "evidencia": "Produtos no domínio oficial Home Finish identificam explicitamente COLEÇÃO Xadrez. Referências oficiais já confirmadas incluem 600632 e 600618. É uma coleção distinta de Tartan.",
+      "url": "https://www.homefinish.com.br/colecoes/dicoracao/xadrez/",
+      "evidencia": "Páginas oficiais Home Finish identificam explicitamente COLEÇÃO Xadrez e o link de coleção aponta para a rota oficial DiCoração. É distinta de Tartan.",
       "status_enumeracao": "pendente_enumeracao_integral",
-      "referencias_confirmadas_amostra": ["600632", "600618"]
+      "referencias_confirmadas_amostra": ["600618", "600625", "600632", "600755"]
+    },
+    {
+      "nome": "Temáticos",
+      "url": "https://www.homefinish.com.br/colecoes/dicoracao/tematicos/",
+      "evidencia": "Página oficial Home Finish identifica explicitamente COLEÇÃO Temáticos, referência 600397, e fornece link para a rota oficial DiCoração.",
+      "status_enumeracao": "pendente_enumeracao_integral",
+      "referencias_confirmadas_amostra": ["600397"]
+    },
+    {
+      "nome": "Floresta Brasileira",
+      "url": "https://www.homefinish.com.br/colecoes/dicoracao/floresta-brasileira/",
+      "evidencia": "Páginas oficiais Home Finish identificam explicitamente COLEÇÃO Floresta Brasileira e fornecem link para a rota oficial DiCoração.",
+      "status_enumeracao": "pendente_enumeracao_integral",
+      "referencias_confirmadas_amostra": ["DC200P", "DC200PP"]
+    },
+    {
+      "nome": "Clássicos",
+      "url": "https://www.homefinish.com.br/colecoes/dicoracao/classicos/",
+      "evidencia": "Página oficial Home Finish identifica explicitamente COLEÇÃO Clássicos, referência 603565, e fornece link para a rota oficial DiCoração.",
+      "status_enumeracao": "pendente_enumeracao_integral",
+      "referencias_confirmadas_amostra": ["603565"]
+    },
+    {
+      "nome": "Fundo do Mar",
+      "url": "https://www.homefinish.com.br/colecoes/dicoracao/fundo-do-mar/",
+      "evidencia": "Páginas oficiais Home Finish identificam explicitamente COLEÇÃO Fundo do Mar e o próprio link de coleção aponta para a rota oficial DiCoração.",
+      "status_enumeracao": "pendente_enumeracao_integral",
+      "referencias_confirmadas_amostra": ["DC400M", "DC400G", "DC400XG"]
+    },
+    {
+      "nome": "Montanhas",
+      "url": "https://www.homefinish.com.br/colecoes/dicoracao/montanhas/",
+      "evidencia": "Página oficial Home Finish identifica explicitamente COLEÇÃO Montanhas, referência DC220P, e o próprio link de coleção aponta para a rota oficial DiCoração.",
+      "status_enumeracao": "pendente_enumeracao_integral",
+      "referencias_confirmadas_amostra": ["DC220P"]
+    },
+    {
+      "nome": "Safari",
+      "url": "https://www.homefinish.com.br/colecoes/dicoracao/safari/",
+      "evidencia": "Páginas oficiais Home Finish identificam explicitamente COLEÇÃO Safari e o próprio link de coleção aponta para a rota oficial DiCoração.",
+      "status_enumeracao": "pendente_enumeracao_integral",
+      "referencias_confirmadas_amostra": ["DC130P", "DC130PP", "DC130XG"]
+    },
+    {
+      "nome": "As Crônicas de Nárnia",
+      "evidencia": "Página oficial Home Finish identifica explicitamente COLEÇÃO As Crônicas de Nárnia, referência 603664. A identidade da coleção está confirmada; a rota de coleção e a enumeração integral ainda precisam ser capturadas sem inferência.",
+      "status_enumeracao": "pendente_rota_e_enumeracao_integral",
+      "referencias_confirmadas_amostra": ["603664"]
     }
   ],
   "colecoes_encontradas_em_produtos_a_classificar": [],
@@ -52,9 +103,9 @@
       "motivo": "Há conteúdo histórico e URL de coleção, mas a página de coleção encontrada está vazia/legada; não foi contada como coleção ativa."
     }
   ],
-  "observacao": "A cobertura do catálogo Home Finish é parcial. Seis coleções ausentes estão confirmadas como identidades de coleção no domínio oficial. Mundo Encantado já teve as 25 referências enumeradas; HF Orient e HF Orient II estão em enumeração parcial; Vichy, Bosque e Xadrez têm a identidade de coleção confirmada por metadados explícitos de produtos oficiais, mas ainda exigem enumeração integral antes de qualquer importação. O domínio Home Finish pode exibir produtos de books diversos, por isso nenhuma coleção é importada apenas por associação visual ou nome semelhante.",
-  "criterio": "A existência de uma coleção pode ser confirmada por página oficial de coleção ativa ou por metadado explícito COLEÇÃO em página oficial de produto do fabricante. Isso confirma a identidade e a lacuna de portfólio, mas não autoriza importação parcial. A inclusão no catálogo exige enumeração completa de referências e validação visual exata. Produtos isolados sem metadado inequívoco de coleção não são usados para expandir o escopo.",
-  "colecoes_ausentes_confirmadas_total": 6,
+  "observacao": "A cobertura do catálogo Home Finish é parcial. Treze coleções ausentes estão confirmadas até esta etapa; este é um mínimo confirmado e não uma alegação de esgotamento do portfólio oficial. Mundo Encantado já teve 25 referências enumeradas. HF Orient e HF Orient II estão em enumeração parcial. As coleções DiCoração foram confirmadas por metadado explícito COLEÇÃO em páginas oficiais Home Finish; quando a própria página expôs o link de coleção, a rota oficial foi registrada. Nenhuma coleção é importada por associação visual, nome parecido ou fonte de varejo.",
+  "criterio": "A existência de uma coleção pode ser confirmada por página oficial de coleção ativa ou por metadado explícito COLEÇÃO em página oficial de produto do fabricante. Isso confirma a identidade e a lacuna de portfólio, mas não autoriza importação parcial. A inclusão no catálogo exige enumeração completa de referências e validação visual exata. O número de lacunas é tratado como mínimo confirmado enquanto a descoberta do portfólio não estiver integralmente fechada.",
+  "colecoes_ausentes_confirmadas_total_minimo": 13,
   "colecoes_ausentes_com_enumeracao_completa": 1,
-  "colecoes_ausentes_em_enumeracao_ou_pendentes": 5
+  "colecoes_ausentes_em_enumeracao_ou_pendentes": 12
 }
