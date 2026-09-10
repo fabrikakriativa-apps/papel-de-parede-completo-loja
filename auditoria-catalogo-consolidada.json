@@ -12,11 +12,14 @@
     {
       "fornecedor": "Home Finish",
       "itens_catalogo": 619,
+      "itens_auditados": 619,
+      "itens_fonte_validada": 619,
       "colecoes": 13,
       "status": "completo_contra_snapshot_validado_oficial",
       "faltando": 0,
       "extras": 0,
       "duplicidades": 0,
+      "totais_coincidem": true,
       "fonte": "Snapshot validado de URLs do domínio oficial homefinish.com.br",
       "relatorio": "auditoria-homefinish-fonte-validada.json",
       "observacao": "Os prefixos comerciais BH e MI são preservados no catálogo e normalizados apenas durante a comparação."
@@ -24,8 +27,10 @@
     {
       "fornecedor": "Kantai",
       "itens_catalogo": 331,
+      "itens_auditados": 331,
       "colecoes": 4,
       "status": "completo_contra_fonte_oficial",
+      "totais_coincidem": true,
       "colecoes_auditadas": {
         "Aditare 3": 81,
         "Criativo 3": 89,
@@ -38,8 +43,10 @@
     {
       "fornecedor": "Wiler",
       "itens_catalogo": 262,
+      "itens_auditados": 262,
       "colecoes": 5,
       "status": "completo_nas_cinco_colecoes_auditadas",
+      "totais_coincidem": true,
       "colecoes_auditadas": {
         "Bambine": 50,
         "Tacto": 41,
@@ -51,5 +58,5 @@
       "relatorio": "auditoria-wiler-consolidada.json"
     }
   ],
-  "criterio": "Estado consolidado gerado automaticamente a partir do catálogo publicado e dos relatórios de auditoria. Não usa versões ZIP/HTML antigas como fonte operacional. Alterações futuras devem partir da main atual e das fontes de cadeia de fornecimento/oficiais correspondentes."
+  "criterio": "Estado consolidado gerado automaticamente a partir do catálogo publicado e dos relatórios de auditoria. Além do status de cada auditoria, os totais publicados de cada fornecedor precisam coincidir com os totais efetivamente auditados; isso impede que uma auditoria antiga mantenha um falso status de completude após novas inclusões. Não usa versões ZIP/HTML antigas como fonte operacional."
 }
