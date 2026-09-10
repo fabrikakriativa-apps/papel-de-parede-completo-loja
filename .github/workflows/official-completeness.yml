@@ -17,6 +17,12 @@ on:
       - '.github/workflows/official-completeness.yml'
   workflow_dispatch:
 
+# Only the newest official audit is relevant. This prevents two long-running
+# executions from trying to commit the same generated reports at the same time.
+concurrency:
+  group: official-catalog-completeness-main
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
