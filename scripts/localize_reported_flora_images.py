@@ -1,10 +1,10 @@
 from __future__ import annotations
 
+import argparse
 import hashlib
-import io
 import json
+import shutil
 from pathlib import Path
-from urllib.request import Request, urlopen
 
 from PIL import Image, ImageStat
 
@@ -15,13 +15,16 @@ REPORT = ROOT / "auditoria-flora-imagens-localizadas.json"
 TARGETS = {
     "FK-0371": {
         "ref": "84384",
-        "url": "https://www.homefinish.com.br/wp-content/uploads/2025/06/84384-papel-parede-home-finish-flora.jpg",
         "local": "imagens/home-finish/flora/thumbnails/84384.jpg",
+        "source_kind": "validated_alias",
+        "source_local": "imagens/home-finish/flora/thumbnails/84391.jpg",
+        "source_alias_peer": "84391",
     },
     "FK-0380": {
         "ref": "84858",
-        "url": "https://homefinish.com.br/wp-content/uploads/2025/06/84858-papel-parede-home-finish-flora.jpg",
         "local": "imagens/home-finish/flora/thumbnails/84858.jpg",
+        "source_kind": "validated_original",
+        "source_library": "imagens/home-finish/flora/originals/84858.jpg",
     },
 }
 
@@ -33,58 +36,60 @@ def parse_data(text: str) -> list[dict]:
     return data
 
 
-def download_image(url: str) -> tuple[bytes, dict]:
-    req = Request(
-        url,
-        headers={
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/152 Safari/537.36",
-            "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
-            "Referer": "https://www.homefinish.com.br/",
-            "Cache-Control": "no-cache",
-        },
-    )
-    with urlopen(req, timeout=45) as response:
-        payload = response.read(12 * 1024 * 1024 + 1)
-        content_type = response.headers.get("Content-Type", "")
-    if len(payload) > 12 * 1024 * 1024:
-        raise RuntimeError(f"Imagem excede 12 MB: {url}")
-    if len(payload) < 10_000:
-        raise RuntimeError(f"Download pequeno demais ({len(payload)} bytes), possível placeholder: {url}")
-    if "image" not in content_type.lower():
-        raise RuntimeError(f"Content-Type não é imagem: {content_type!r} - {url}")
-
-    with Image.open(io.BytesIO(payload)) as im:
+def validate_image(path: Path, min_bytes: int = 10_000) -> dict:
+    payload = path.read_bytes()
+    if len(payload) < min_bytes:
+        raise RuntimeError(f"{path}: imagem pequena demais ({len(payload)} bytes)")
+    with Image.open(path) as im:
         im.verify()
-    with Image.open(io.BytesIO(payload)) as im:
+    with Image.open(path) as im:
         width, height = im.size
         fmt = (im.format or "").upper()
         if width < 400 or height < 400:
-            raise RuntimeError(f"Dimensões pequenas demais {width}x{height}: {url}")
+            raise RuntimeError(f"{path}: dimensões pequenas demais {width}x{height}")
         rgb = im.convert("RGB").resize((64, 64))
-        stat = ImageStat.Stat(rgb)
-        spread = sum(stat.stddev)
+        spread = sum(ImageStat.Stat(rgb).stddev)
         if spread < 8:
-            raise RuntimeError(f"Imagem quase uniforme/placeholder (desvio {spread:.2f}): {url}")
-
-    return payload, {
+            raise RuntimeError(f"{path}: imagem quase uniforme/placeholder (desvio {spread:.2f})")
+    return {
         "bytes": len(payload),
         "width": width,
         "height": height,
         "format": fmt,
         "sha256": hashlib.sha256(payload).hexdigest(),
         "pixel_stddev_sum": round(spread, 2),
-        "content_type": content_type,
     }
 
 
+def load_validated_map(source_root: Path) -> dict:
+    part = source_root / "dados/home-finish-urls/part-03.json"
+    if not part.exists():
+        raise RuntimeError(f"Biblioteca-fonte ausente: {part}")
+    return json.loads(part.read_text(encoding="utf-8"))["items"]
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--source-root", required=True)
+    args = parser.parse_args()
+    source_root = Path(args.source_root).resolve()
+
+    validated = load_validated_map(source_root)
+
+    # A fonte validada registra 84384 e 84391 no mesmo asset i224.
+    a84384 = validated.get("Flora|84384")
+    a84391 = validated.get("Flora|84391")
+    if not a84384 or not a84391 or a84384.get("url") != "i224" or a84391.get("url") != "i224":
+        raise RuntimeError("Fonte validada não confirma o alias compartilhado i224 para 84384/84391")
+
+    # A referência 84858 deve existir explicitamente na fonte validada.
+    a84858 = validated.get("Flora|84858")
+    if not a84858 or a84858.get("url") != "i229":
+        raise RuntimeError("Fonte validada não confirma Flora|84858 como i229")
+
     original_text = INDEX.read_text(encoding="utf-8")
     data = parse_data(original_text)
 
-    downloaded: dict[str, tuple[bytes, dict]] = {}
-    rows = []
-
-    # Baixa e valida tudo antes de alterar qualquer arquivo.
     for codigo, target in TARGETS.items():
         matches = [x for x in data if str(x.get("codigo") or "") == codigo]
         if len(matches) != 1:
@@ -95,26 +100,29 @@ def main() -> None:
             if str(item.get(field) or "") != value:
                 raise RuntimeError(f"{codigo}: {field}={item.get(field)!r}, esperado {value!r}")
 
-        payload, meta = download_image(target["url"])
-        downloaded[codigo] = (payload, meta)
-        rows.append({
-            "codigo": codigo,
-            "ref": target["ref"],
-            "fonte_oficial": target["url"],
-            "arquivo_local": target["local"],
-            **meta,
-        })
+    source_84384 = ROOT / TARGETS["FK-0371"]["source_local"]
+    source_84858 = source_root / TARGETS["FK-0380"]["source_library"]
 
-    # Grava somente depois que os dois downloads foram validados.
+    meta_84384 = validate_image(source_84384)
+    meta_84858 = validate_image(source_84858)
+
     text = original_text
-    written_paths: list[Path] = []
+    rows = []
+
     try:
+        copies = {
+            "FK-0371": (source_84384, meta_84384),
+            "FK-0380": (source_84858, meta_84858),
+        }
+
         for codigo, target in TARGETS.items():
-            payload, _ = downloaded[codigo]
+            src, meta = copies[codigo]
             dest = ROOT / target["local"]
             dest.parent.mkdir(parents=True, exist_ok=True)
-            dest.write_bytes(payload)
-            written_paths.append(dest)
+            shutil.copyfile(src, dest)
+            dest_meta = validate_image(dest)
+            if dest_meta["sha256"] != meta["sha256"]:
+                raise RuntimeError(f"{codigo}: checksum divergiu após cópia")
 
             item = next(x for x in data if str(x.get("codigo") or "") == codigo)
             current_card = str(item.get("card") or "")
@@ -124,11 +132,30 @@ def main() -> None:
 
             old_json = json.dumps(current_card, ensure_ascii=False)
             new_json = json.dumps(target["local"], ensure_ascii=False)
-            occurrences = text.count(old_json)
             if current_card != target["local"]:
+                occurrences = text.count(old_json)
                 if occurrences != 2:
                     raise RuntimeError(f"{codigo}: esperado caminho atual 2x, encontrado {occurrences}")
                 text = text.replace(old_json, new_json)
+
+            row = {
+                "codigo": codigo,
+                "ref": target["ref"],
+                "arquivo_local": target["local"],
+                "origem": target["source_kind"],
+                **dest_meta,
+            }
+            if codigo == "FK-0371":
+                row["proveniencia"] = (
+                    "Biblioteca validada: Flora|84384 e Flora|84391 usam o mesmo asset i224; "
+                    "foi reutilizado o arquivo local íntegro da referência 84391."
+                )
+            else:
+                row["proveniencia"] = (
+                    "Arquivo original preservado na biblioteca-fonte "
+                    "catalogos-papel-de-parede/imagens/home-finish/flora/originals/84858.jpg."
+                )
+            rows.append(row)
 
         INDEX.write_text(text, encoding="utf-8")
 
@@ -137,9 +164,6 @@ def main() -> None:
             item = next(x for x in final_data if str(x.get("codigo") or "") == codigo)
             if item.get("card") != target["local"] or item.get("zoom") != target["local"]:
                 raise RuntimeError(f"{codigo}: card/zoom não ficaram locais")
-            dest = ROOT / target["local"]
-            with Image.open(dest) as im:
-                im.verify()
 
     except Exception:
         INDEX.write_text(original_text, encoding="utf-8")
@@ -147,7 +171,7 @@ def main() -> None:
 
     report = {
         "status": "ok",
-        "escopo": "Localização definitiva das duas imagens Flora que continuavam sem carregar no catálogo publicado",
+        "escopo": "Correção definitiva de FK-0371/84384 e FK-0380/84858 sem hotlink externo",
         "itens": rows,
         "resultado": {
             "itens_localizados": 2,
@@ -155,9 +179,9 @@ def main() -> None:
             "card_e_zoom_locais": True,
         },
         "criterio": (
-            "Somente FK-0371/84384 e FK-0380/84858 foram tratados. Os bytes foram baixados diretamente "
-            "dos JPGs oficiais da Home Finish, validados como imagem real e gravados no repositório; depois card e zoom "
-            "foram alterados para os caminhos locais. Nenhum outro produto foi reserializado."
+            "Foram usadas apenas fontes já validadas da biblioteca de fornecimento da Fábrika. "
+            "84384 foi recuperada a partir do asset compartilhado i224 confirmado com 84391; "
+            "84858 foi recuperada do original preservado no repositório-fonte. Nenhum varejista foi usado."
         ),
     }
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
