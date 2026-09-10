@@ -34,6 +34,21 @@ COLLECTION_URLS = {
     "Vichy": "https://www.homefinish.com.br/colecoes/dicoracao/vichy/",
     "Bosque": "https://www.homefinish.com.br/colecoes/dicoracao/bosque/",
     "Xadrez": "https://www.homefinish.com.br/colecoes/dicoracao/xadrez/",
+    "Temáticos": "https://www.homefinish.com.br/colecoes/dicoracao/tematicos/",
+    "Floresta Brasileira": "https://www.homefinish.com.br/colecoes/dicoracao/floresta-brasileira/",
+    "Clássicos": "https://www.homefinish.com.br/colecoes/dicoracao/classicos/",
+    "Fundo do Mar": "https://www.homefinish.com.br/colecoes/dicoracao/fundo-do-mar/",
+    "Montanhas": "https://www.homefinish.com.br/colecoes/dicoracao/montanhas/",
+    "Safari": "https://www.homefinish.com.br/colecoes/dicoracao/safari/",
+}
+
+# A coleção está confirmada por metadado oficial de produto, mas sua rota de
+# coleção ainda não foi capturada. Não inferir slug para fazê-la parecer auditável.
+CONFIRMED_WITHOUT_COLLECTION_URL = {
+    "As Crônicas de Nárnia": {
+        "referencias_confirmadas": ["603664"],
+        "evidencia": "Metadado COLEÇÃO em página oficial Home Finish",
+    }
 }
 
 REF_TEXT_RE = re.compile(r"^[A-Z]{0,6}(?:-?[A-Z]{0,3})?-?\d{2,9}[A-Z]?$", re.I)
@@ -198,7 +213,8 @@ def main() -> None:
         browser.close()
 
     valid = [r for r in results if r["oficial"] is not None]
-    complete_collection_audit = len(valid) == len(results)
+    unresolved_names = sorted(CONFIRMED_WITHOUT_COLLECTION_URL)
+    complete_collection_audit = len(valid) == len(results) and not unresolved_names
     all_403 = bool(errors) and all("HTTP 403" in str(row.get("erro") or "") for row in errors)
 
     if complete_collection_audit:
@@ -206,7 +222,7 @@ def main() -> None:
     elif not valid and all_403:
         audit_status = "bloqueado_pela_origem_http_403"
     elif valid:
-        audit_status = "parcial_com_falhas_de_coleta"
+        audit_status = "parcial_com_falhas_ou_rotas_pendentes"
     else:
         audit_status = "sem_coleta_confiavel"
 
@@ -214,7 +230,10 @@ def main() -> None:
         "status": audit_status,
         "fonte": "Home Finish — páginas oficiais das coleções lidas em navegador real",
         "fornecedor_catalogo": "Home Finish",
-        "colecoes_configuradas": len(results),
+        "colecoes_com_url_configurada": len(results),
+        "colecoes_confirmadas_sem_url_de_colecao": CONFIRMED_WITHOUT_COLLECTION_URL,
+        "colecoes_confirmadas_sem_url_de_colecao_total": len(unresolved_names),
+        "colecoes_confirmadas_no_escopo_desta_rotina": len(results) + len(unresolved_names),
         "colecoes_auditadas_com_sucesso": len(valid),
         "colecoes_com_falha_de_coleta": len(errors),
         "auditoria_integral": complete_collection_audit,
@@ -226,20 +245,23 @@ def main() -> None:
         "faltantes_confirmados_nas_colecoes_coletadas": partial_missing,
         "extras_confirmados_nas_colecoes_coletadas": partial_extras,
         "nao_inferir_zero_em_falha": True,
+        "nao_inferir_rota_de_colecao": True,
         "rotas_colecao_explicitas": True,
         "colecoes": results,
         "criterio": (
             "Navega pelas URLs oficiais exatas e pela paginação pública da Home Finish em Chromium. "
             "As rotas DiCoração são mantidas separadas das rotas de papéis de parede tradicionais. "
-            "Falhas de acesso nunca são tratadas como zero itens ou zero faltantes. Os totais globais "
-            "de faltantes/extras só recebem número quando todas as coleções configuradas foram "
-            "coletadas com sucesso. O script apenas audita; não altera o catálogo."
+            "Coleções confirmadas por metadado oficial, mas ainda sem rota capturada, ficam explicitamente "
+            "fora da enumeração automática até a URL ser comprovada. Falhas de acesso nunca são tratadas "
+            "como zero itens ou zero faltantes. Os totais globais de faltantes/extras só recebem número "
+            "quando todas as coleções confirmadas do escopo estiverem integralmente auditáveis."
         ),
     }
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({
         "status": audit_status,
-        "colecoes_configuradas": len(results),
+        "colecoes_com_url": len(results),
+        "colecoes_sem_url": len(unresolved_names),
         "colecoes_ok": len(valid),
         "erros": len(errors),
         "total_oficial_parcial": report["total_oficial_parcial"],
