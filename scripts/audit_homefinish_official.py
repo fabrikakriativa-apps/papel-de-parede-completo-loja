@@ -12,8 +12,8 @@ REPORT = ROOT / "auditoria-homefinish-oficial.json"
 PAGE_PARAM = "e-page-23ca821"
 
 # URLs exatas das coleções já cadastradas e das lacunas confirmadas.
-# As coleções DiCoração usam /colecoes/dicoracao/, enquanto as demais usam
-# /colecoes/papeis-de-parede/. Guardar a URL completa evita inferência de rota.
+# As famílias usam caminhos diferentes no site oficial: papéis de parede,
+# DiCoração e Feito por Melanie. Guardar a URL completa evita inferência de rota.
 COLLECTION_URLS = {
     "BIO Habitat": "https://www.homefinish.com.br/colecoes/papeis-de-parede/bio-habitat/",
     "Biomas": "https://www.homefinish.com.br/colecoes/papeis-de-parede/biomas/",
@@ -40,6 +40,10 @@ COLLECTION_URLS = {
     "Fundo do Mar": "https://www.homefinish.com.br/colecoes/dicoracao/fundo-do-mar/",
     "Montanhas": "https://www.homefinish.com.br/colecoes/dicoracao/montanhas/",
     "Safari": "https://www.homefinish.com.br/colecoes/dicoracao/safari/",
+    "Floresta Encantada": "https://www.homefinish.com.br/colecoes/feito-por-melanie/floresta-encantada/",
+    "É Primavera na Floresta": "https://www.homefinish.com.br/colecoes/feito-por-melanie/e-primavera-na-floresta/",
+    "Família de Cavalinhos": "https://www.homefinish.com.br/colecoes/feito-por-melanie/familia-de-cavalinhos/",
+    "Chuva de Flores": "https://www.homefinish.com.br/colecoes/feito-por-melanie/chuva-de-flores/",
 }
 
 # A coleção está confirmada por metadado oficial de produto, mas sua rota de
@@ -250,7 +254,7 @@ def main() -> None:
         "colecoes": results,
         "criterio": (
             "Navega pelas URLs oficiais exatas e pela paginação pública da Home Finish em Chromium. "
-            "As rotas DiCoração são mantidas separadas das rotas de papéis de parede tradicionais. "
+            "As famílias de coleção são mantidas em suas rotas oficiais exatas, sem converter nomes em slugs por suposição. "
             "Coleções confirmadas por metadado oficial, mas ainda sem rota capturada, ficam explicitamente "
             "fora da enumeração automática até a URL ser comprovada. Falhas de acesso nunca são tratadas "
             "como zero itens ou zero faltantes. Os totais globais de faltantes/extras só recebem número "
