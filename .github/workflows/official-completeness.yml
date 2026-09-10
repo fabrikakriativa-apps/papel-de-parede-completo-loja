@@ -91,7 +91,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in auditoria-homefinish-catalog-refs.json auditoria-homefinish-fonte-validada.json auditoria-homefinish-oficial.json diagnostico-homefinish-endpoints.json diagnostico-wiler-oficial.json diagnostico-wiler-vtex.json diagnostico-wiler-api-resumo.json auditoria-wiler-oficial.json auditoria-wiler-browser.json auditoria-wiler-book-snapshot.json; do
+          # auditoria-homefinish-fonte-validada.json is owned by the dedicated
+          # Home Finish validated completeness workflow and is intentionally
+          # not committed here to avoid cross-workflow write conflicts.
+          for f in auditoria-homefinish-catalog-refs.json auditoria-homefinish-oficial.json diagnostico-homefinish-endpoints.json diagnostico-wiler-oficial.json diagnostico-wiler-vtex.json diagnostico-wiler-api-resumo.json auditoria-wiler-oficial.json auditoria-wiler-browser.json auditoria-wiler-book-snapshot.json; do
             [ -f "$f" ] && git add "$f"
           done
           if git diff --cached --quiet; then
