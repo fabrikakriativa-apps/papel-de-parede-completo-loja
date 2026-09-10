@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import io
 import json
-import urllib.error
 import urllib.request
 from pathlib import Path
 from urllib.parse import urlparse
@@ -16,6 +15,7 @@ REPORT = ROOT / "auditoria-localizacao-homefinish.json"
 SUPPLIER = "Home Finish"
 COLLECTION = "BIO Habitat"
 COLLECTION_PAGE = "https://homefinish.com.br/colecoes/papeis-de-parede/bio-habitat/"
+COLLECTION_PAGE_WWW = "https://www.homefinish.com.br/colecoes/papeis-de-parede/bio-habitat/"
 TARGET_DIR = ROOT / "imagens" / "home-finish" / "bio-habitat" / "thumbnails"
 EXPECTED_EXTERNAL_ITEMS = 28
 ALLOWED_HOSTS = {"homefinish.com.br", "www.homefinish.com.br"}
@@ -49,6 +49,20 @@ def validate_official_url(url: str) -> None:
         raise RuntimeError(f"Host externo não autorizado para esta rotina: {url}")
     if "/wp-content/uploads/" not in parsed.path:
         raise RuntimeError(f"URL Home Finish fora da biblioteca oficial esperada: {url}")
+
+
+def official_variants(url: str) -> list[str]:
+    validate_official_url(url)
+    parsed = urlparse(url)
+    if parsed.netloc.casefold() == "homefinish.com.br":
+        alt = url.replace("https://homefinish.com.br/", "https://www.homefinish.com.br/", 1)
+    else:
+        alt = url.replace("https://www.homefinish.com.br/", "https://homefinish.com.br/", 1)
+    return [url, alt] if alt != url else [url]
+
+
+def referer_for(url: str) -> str:
+    return COLLECTION_PAGE_WWW if urlparse(url).netloc.casefold().startswith("www.") else COLLECTION_PAGE
 
 
 def validate_image_bytes(raw: bytes, content_type: str, url: str) -> tuple[bytes, dict]:
@@ -86,7 +100,7 @@ def fetch_with_urllib(url: str) -> tuple[bytes, dict]:
             "User-Agent": UA,
             "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
             "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
-            "Referer": COLLECTION_PAGE,
+            "Referer": referer_for(url),
         },
     )
     with urllib.request.urlopen(request, timeout=45) as response:
@@ -96,15 +110,17 @@ def fetch_with_urllib(url: str) -> tuple[bytes, dict]:
         raw = response.read(MAX_SOURCE_BYTES + 1)
     raw, info = validate_image_bytes(raw, content_type, url)
     info["metodo"] = "urllib_same_origin_referer"
+    info["source_resolved"] = url
     return raw, info
 
 
 def fetch_with_browser(context, page, url: str) -> tuple[bytes, dict]:
     validate_official_url(url)
+    referer = referer_for(url)
     headers = {
         "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
         "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
-        "Referer": COLLECTION_PAGE,
+        "Referer": referer,
         "Sec-Fetch-Dest": "image",
         "Sec-Fetch-Mode": "no-cors",
         "Sec-Fetch-Site": "same-origin",
@@ -115,30 +131,44 @@ def fetch_with_browser(context, page, url: str) -> tuple[bytes, dict]:
         raw = response.body()
         raw, info = validate_image_bytes(raw, response.headers.get("content-type", ""), url)
         info["metodo"] = "playwright_api_context"
+        info["source_resolved"] = url
         return raw, info
 
     page.set_extra_http_headers({
         "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
-        "Referer": COLLECTION_PAGE,
+        "Referer": referer,
     })
     nav = page.goto(url, wait_until="commit", timeout=45000)
     if not nav or nav.status != 200:
         raise RuntimeError(
-            f"Home Finish bloqueou acesso oficial: api_status={response.status}, "
-            f"browser_status={nav.status if nav else None}, url={url}"
+            f"api_status={response.status}, browser_status={nav.status if nav else None}, url={url}"
         )
     raw = nav.body()
     raw, info = validate_image_bytes(raw, nav.headers.get("content-type", ""), url)
     info["metodo"] = "playwright_browser_navigation"
+    info["source_resolved"] = url
     return raw, info
 
 
 def fetch_official_image(context, page, url: str) -> tuple[bytes, dict]:
-    try:
-        return fetch_with_urllib(url)
-    except Exception as first_exc:
-        print(f"urllib bloqueado para {url}: {first_exc}; tentando navegador", flush=True)
-        return fetch_with_browser(context, page, url)
+    errors: list[str] = []
+    variants = official_variants(url)
+
+    for candidate in variants:
+        try:
+            return fetch_with_urllib(candidate)
+        except Exception as exc:
+            errors.append(f"urllib {candidate}: {exc}")
+            print(f"urllib bloqueado para {candidate}: {exc}", flush=True)
+
+    for candidate in variants:
+        try:
+            return fetch_with_browser(context, page, candidate)
+        except Exception as exc:
+            errors.append(f"browser {candidate}: {exc}")
+            print(f"navegador bloqueado para {candidate}: {exc}", flush=True)
+
+    raise RuntimeError("Todas as rotas oficiais Home Finish foram bloqueadas: " + " | ".join(errors))
 
 
 def extension_for(fmt: str) -> str:
@@ -185,15 +215,14 @@ def main() -> None:
             viewport={"width": 1440, "height": 1200},
         )
         page = context.new_page()
-        try:
-            warmup = page.goto(COLLECTION_PAGE, wait_until="domcontentloaded", timeout=45000)
-            print(
-                f"Home Finish warmup status={warmup.status if warmup else None}",
-                flush=True,
-            )
-            page.wait_for_timeout(1200)
-        except Exception as exc:
-            print(f"Warmup Home Finish não concluiu: {exc}", flush=True)
+
+        for warmup_url in (COLLECTION_PAGE, COLLECTION_PAGE_WWW):
+            try:
+                warmup = page.goto(warmup_url, wait_until="domcontentloaded", timeout=45000)
+                print(f"Home Finish warmup {warmup_url} status={warmup.status if warmup else None}", flush=True)
+                page.wait_for_timeout(600)
+            except Exception as exc:
+                print(f"Warmup Home Finish não concluiu em {warmup_url}: {exc}", flush=True)
 
         try:
             for item in targets:
@@ -216,12 +245,17 @@ def main() -> None:
                     check.verify()
 
                 downloaded[ref] = {
-                    "source": card_url,
+                    "source_requested": card_url,
+                    "source_resolved": info["source_resolved"],
                     "local": output.relative_to(ROOT).as_posix(),
-                    **info,
+                    "format": info["format"],
+                    "width": info["width"],
+                    "height": info["height"],
+                    "bytes": info["bytes"],
+                    "metodo": info["metodo"],
                 }
                 print(
-                    f"LOCALIZED {ref} {info['width']}x{info['height']} {info['bytes']} bytes via {info['metodo']}",
+                    f"LOCALIZED {ref} {info['width']}x{info['height']} {info['bytes']} bytes via {info['metodo']} {info['source_resolved']}",
                     flush=True,
                 )
         except Exception:
@@ -268,9 +302,9 @@ def main() -> None:
         "imagens_localizadas": len(downloaded),
         "bytes_preservados_da_fonte": sum(int(v["bytes"]) for v in downloaded.values()),
         "metodos": sorted({v["metodo"] for v in downloaded.values()}),
-        "fontes": sorted({v["source"] for v in downloaded.values()}),
+        "fontes_resolvidas": sorted({v["source_resolved"] for v in downloaded.values()}),
         "itens": downloaded,
-        "criterio": "Copia byte a byte as mesmas imagens já usadas pelo catálogo a partir do domínio oficial Home Finish. Tenta requisição com Referer de mesma origem e, em caso de bloqueio, usa sessão Chromium/Playwright do próprio domínio. Valida formato, dimensões e todos os 28 arquivos antes de trocar card/zoom para caminhos locais. Nenhuma recompressão ou substituição visual é realizada; falha parcial é revertida.",
+        "criterio": "Copia byte a byte as mesmas imagens já usadas pelo catálogo a partir exclusivamente dos domínios oficiais homefinish.com.br ou www.homefinish.com.br. Tenta ambas as rotas oficiais por requisição de mesma origem e Chromium/Playwright. Valida formato, dimensões e todos os 28 arquivos antes de trocar card/zoom para caminhos locais. Nenhuma recompressão ou substituição visual é realizada; falha parcial é revertida.",
     }
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({
