@@ -1,0 +1,95 @@
+{
+  "fonte": "https://www.imperiopapeldeparede.com.br/produtos/categoria/papel-de-parede-texture-iii",
+  "fonte_tipo": "Distribuidor/importador — cadeia de fornecimento",
+  "fornecedor": "Wiler",
+  "colecao": "Texture III",
+  "colecao_produtos_reportados": 58,
+  "mostruario": "CAT7154",
+  "papeis_confirmados": 57,
+  "catalogo_antes": 1206,
+  "catalogo_depois": 1212,
+  "texture_iii_antes": 51,
+  "texture_iii_depois": 57,
+  "refs_confirmadas_adicionadas": [
+    "TX-3010",
+    "TX-3019",
+    "TX-3037",
+    "TX-3050",
+    "TX-3052",
+    "TX-3054"
+  ],
+  "produtos": {
+    "TX-3010": {
+      "product_url": "https://www.imperiopapeldeparede.com.br/produto/57843/pag-10-papel-de-parede-linho-cinza-e-azul-colecao-texture-iii-vinilico-importado",
+      "image_url": "https://www.imperiopapeldeparede.com.br/upload/produtos/thumb/papel-de-parede-linho-cinza-e-azul-tx-3010-texture-iii-imperio-a-home-042754.jpg",
+      "card_text": "VISUALIZAR INDISPONÍVEL - PAPEL DE PAREDE TEXTURE III - LINHO CÓD: TX-3010"
+    },
+    "TX-3019": {
+      "product_url": "https://www.imperiopapeldeparede.com.br/produto/57852/pag-19-papel-de-parede-efeito-tecido-off-white-colecao-texture-iii-vinilico-importado",
+      "image_url": "https://www.imperiopapeldeparede.com.br/upload/produtos/thumb/papel-de-parede-efeito-tecido-off-white-tx-3019-texture-iii-imperio-a-home-085820.jpg",
+      "card_text": "VISUALIZAR PAPEL DE PAREDE TEXTURE III - EFEITO TECIDO CÓD: TX-3019"
+    },
+    "TX-3037": {
+      "product_url": "https://www.imperiopapeldeparede.com.br/produto/57870/pag-37-papel-de-parede-tramas-bege-leve-brilho-colecao-texture-iii-vinilico-importado",
+      "image_url": "https://www.imperiopapeldeparede.com.br/upload/produtos/thumb/papel-de-parede-tramas-bege-tx-3037-texture-iii-imperio-distribuidor-a-home-025049.jpg",
+      "card_text": "VISUALIZAR PAPEL DE PAREDE TEXTURE III - TRAMAS CÓD: TX-3037"
+    },
+    "TX-3050": {
+      "product_url": "https://www.imperiopapeldeparede.com.br/produto/57883/pag-50-papel-de-parede-linho-cinza-escuro-leve-brilho-colecao-texture-iii-vinilico-importado",
+      "image_url": "https://www.imperiopapeldeparede.com.br/upload/produtos/thumb/papel-de-parede-linho-cinza-escuro-tx-3050-texture-iii-imperio-a-home-041618.jpg",
+      "card_text": "VISUALIZAR PAPEL DE PAREDE TEXTURE III - LINHO CÓD: TX-3050"
+    },
+    "TX-3052": {
+      "product_url": "https://www.imperiopapeldeparede.com.br/produto/57887/pag-52-papel-de-parede-linho-cinza-azulado-leve-brilho-colecao-texture-iii-vinilico-importado",
+      "image_url": "https://www.imperiopapeldeparede.com.br/upload/produtos/thumb/papel-de-parede-linho-cinza-azulado-tx-3052-texture-iii-imperio-a-home-045630.jpg",
+      "card_text": "VISUALIZAR INDISPONÍVEL - PAPEL DE PAREDE TEXTURE III - LINHO CÓD: TX-3052"
+    },
+    "TX-3054": {
+      "product_url": "https://www.imperiopapeldeparede.com.br/produto/57886/pag-54-papel-de-parede-linho-off-white-leve-brilho-colecao-texture-iii-vinilico-importado",
+      "image_url": "https://www.imperiopapeldeparede.com.br/upload/produtos/thumb/papel-de-parede-linho-off-white-tx-3054-texture-iii-imperio-a-home-045130.jpg",
+      "card_text": "VISUALIZAR INDISPONÍVEL - PAPEL DE PAREDE TEXTURE III - LINHO CÓD: TX-3054"
+    }
+  },
+  "imagens": {
+    "TX-3010": {
+      "bytes": 31267,
+      "quality": 82,
+      "width": 270,
+      "height": 307
+    },
+    "TX-3019": {
+      "bytes": 19244,
+      "quality": 82,
+      "width": 270,
+      "height": 307
+    },
+    "TX-3037": {
+      "bytes": 26100,
+      "quality": 82,
+      "width": 270,
+      "height": 307
+    },
+    "TX-3050": {
+      "bytes": 30443,
+      "quality": 82,
+      "width": 270,
+      "height": 307
+    },
+    "TX-3052": {
+      "bytes": 32726,
+      "quality": 82,
+      "width": 270,
+      "height": 307
+    },
+    "TX-3054": {
+      "bytes": 8741,
+      "quality": 82,
+      "width": 270,
+      "height": 307
+    }
+  },
+  "total_bytes_novos": 148521,
+  "max_bytes": 32726,
+  "runtime_hotlinks_novos": 0,
+  "status": "ok"
+}
