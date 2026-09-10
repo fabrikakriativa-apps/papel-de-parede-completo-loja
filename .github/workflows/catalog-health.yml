@@ -11,6 +11,7 @@ on:
       - '.github/workflows/catalog-health.yml'
   workflow_run:
     workflows:
+      - 'Localize Home Finish external assets'
       - 'Import Wiler Texture III completeness'
       - 'Import complete Kantai collections'
       - 'Importar colecoes Kantai completas'
