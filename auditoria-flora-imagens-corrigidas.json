@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "escopo": "Somente três imagens Home Finish · Flora reportadas como não carregando",
+  "itens_corrigidos_ou_ja_corrigidos": 3,
+  "itens": [
+    {
+      "codigo": "FK-0371",
+      "ref": "84384",
+      "status": "corrigido",
+      "antes_card": "imagens/home-finish/flora/thumbnails/84384.jpg",
+      "antes_zoom": "imagens/home-finish/flora/thumbnails/84384.jpg",
+      "depois": "https://www.homefinish.com.br/wp-content/uploads/2025/06/84384-papel-parede-home-finish-flora.jpg"
+    },
+    {
+      "codigo": "FK-0380",
+      "ref": "84858",
+      "status": "corrigido",
+      "antes_card": "imagens/home-finish/flora/thumbnails/84858.jpg",
+      "antes_zoom": "imagens/home-finish/flora/thumbnails/84858.jpg",
+      "depois": "https://homefinish.com.br/wp-content/uploads/2025/06/84858-papel-parede-home-finish-flora.jpg"
+    },
+    {
+      "codigo": "FK-0408",
+      "ref": "84360",
+      "status": "corrigido",
+      "antes_card": "imagens/home-finish/flora/thumbnails/84360.jpg",
+      "antes_zoom": "imagens/home-finish/flora/thumbnails/84360.jpg",
+      "depois": "https://homefinish.com.br/wp-content/uploads/2025/06/84360-papel-parede-home-finish-flora.jpg"
+    }
+  ],
+  "criterio": "Cada FK foi validado por código, referência, fornecedor e coleção. Card e zoom foram trocados somente para o JPG oficial exato exposto pela própria Home Finish. Nenhum outro item do DATA foi reserializado ou alterado."
+}

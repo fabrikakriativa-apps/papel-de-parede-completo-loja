@@ -1,12 +1,13 @@
 {
   "status": "dependencias_externas_encontradas",
   "itens_catalogo": 1212,
-  "itens_com_asset_externo": 28,
-  "urls_externas": 56,
+  "itens_com_asset_externo": 31,
+  "urls_externas": 62,
   "hosts": {
-    "homefinish.com.br": 56
+    "homefinish.com.br": 60,
+    "www.homefinish.com.br": 2
   },
-  "itens_com_candidato_local": 0,
+  "itens_com_candidato_local": 3,
   "itens_sem_candidato_local": 28,
   "itens": [
     {
@@ -372,6 +373,52 @@
       ],
       "candidatos_locais_por_ref": [],
       "tem_candidato_local": false
+    },
+    {
+      "codigo": "FK-0371",
+      "fornecedor": "Home Finish",
+      "colecao": "Flora",
+      "ref": "84384",
+      "card": "https://www.homefinish.com.br/wp-content/uploads/2025/06/84384-papel-parede-home-finish-flora.jpg",
+      "zoom": "https://www.homefinish.com.br/wp-content/uploads/2025/06/84384-papel-parede-home-finish-flora.jpg",
+      "hosts": [
+        "www.homefinish.com.br"
+      ],
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/flora/thumbnails/84384.jpg"
+      ],
+      "tem_candidato_local": true
+    },
+    {
+      "codigo": "FK-0380",
+      "fornecedor": "Home Finish",
+      "colecao": "Flora",
+      "ref": "84858",
+      "card": "https://homefinish.com.br/wp-content/uploads/2025/06/84858-papel-parede-home-finish-flora.jpg",
+      "zoom": "https://homefinish.com.br/wp-content/uploads/2025/06/84858-papel-parede-home-finish-flora.jpg",
+      "hosts": [
+        "homefinish.com.br"
+      ],
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/flora/thumbnails/84858.jpg"
+      ],
+      "tem_candidato_local": true
+    },
+    {
+      "codigo": "FK-0408",
+      "fornecedor": "Home Finish",
+      "colecao": "Flora",
+      "ref": "84360",
+      "card": "https://homefinish.com.br/wp-content/uploads/2025/06/84360-papel-parede-home-finish-flora.jpg",
+      "zoom": "https://homefinish.com.br/wp-content/uploads/2025/06/84360-papel-parede-home-finish-flora.jpg",
+      "hosts": [
+        "homefinish.com.br"
+      ],
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/flora/thumbnails/84360.jpg",
+        "imagens/home-finish/provence/thumbnails/84360.jpg"
+      ],
+      "tem_candidato_local": true
     }
   ],
   "criterio": "Lista todos os itens cujo card ou zoom depende de URL externa e procura, sem alterar nada, arquivos locais existentes que contenham a referência no nome. Candidato por nome não é prova de correspondência visual e exige validação antes de substituição."
