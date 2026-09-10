@@ -7,6 +7,7 @@ on:
       - 'scripts/audit_homefinish_official.py'
       - 'scripts/diagnose_homefinish_endpoints.py'
       - 'scripts/snapshot_homefinish_catalog.py'
+      - 'scripts/audit_homefinish_validated_source.py'
       - 'scripts/diagnose_wiler_official.py'
       - 'scripts/diagnose_wiler_vtex.py'
       - 'scripts/summarize_wiler_network.py'
@@ -43,6 +44,9 @@ jobs:
 
       - name: Snapshot exact Home Finish refs in published catalog
         run: python scripts/snapshot_homefinish_catalog.py
+
+      - name: Audit Home Finish against validated official-source snapshot
+        run: python scripts/audit_homefinish_validated_source.py
 
       - name: Probe Home Finish structured official endpoints
         continue-on-error: true
@@ -81,7 +85,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in auditoria-homefinish-catalog-refs.json auditoria-homefinish-oficial.json diagnostico-homefinish-endpoints.json diagnostico-wiler-oficial.json diagnostico-wiler-vtex.json diagnostico-wiler-api-resumo.json auditoria-wiler-oficial.json auditoria-wiler-browser.json auditoria-wiler-book-snapshot.json; do
+          for f in auditoria-homefinish-catalog-refs.json auditoria-homefinish-fonte-validada.json auditoria-homefinish-oficial.json diagnostico-homefinish-endpoints.json diagnostico-wiler-oficial.json diagnostico-wiler-vtex.json diagnostico-wiler-api-resumo.json auditoria-wiler-oficial.json auditoria-wiler-browser.json auditoria-wiler-book-snapshot.json; do
             [ -f "$f" ] && git add "$f"
           done
           if git diff --cached --quiet; then
