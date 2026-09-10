@@ -1,8 +1,11 @@
 {
+  "status": "bloqueado_pela_origem_http_403",
   "fonte": "Home Finish — páginas oficiais das coleções lidas em navegador real",
   "fornecedor_catalogo": "Home Finish",
-  "colecoes_configuradas": 13,
+  "colecoes_configuradas": 16,
   "colecoes_auditadas_com_sucesso": 0,
+  "colecoes_com_falha_de_coleta": 16,
+  "auditoria_integral": false,
   "erros_coleta": [
     {
       "colecao": "BIO Habitat",
@@ -68,20 +71,38 @@
       "colecao": "Tartan",
       "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/tartan/",
       "erro": "RuntimeError: Página oficial não auditável: HTTP 403, 0 refs, título='Just a moment...'"
+    },
+    {
+      "colecao": "HF Orient",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-orient/",
+      "erro": "RuntimeError: Página oficial não auditável: HTTP 403, 0 refs, título='Just a moment...'"
+    },
+    {
+      "colecao": "HF Orient II",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-orient-ii/",
+      "erro": "RuntimeError: Página oficial não auditável: HTTP 403, 0 refs, título='Just a moment...'"
+    },
+    {
+      "colecao": "Mundo Encantado",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/mundo-encantado/",
+      "erro": "RuntimeError: Página oficial não auditável: HTTP 403, 0 refs, título='Just a moment...'"
     }
   ],
   "total_oficial_parcial": 0,
-  "total_catalogo": 619,
-  "total_faltantes_confirmados": 0,
-  "total_extras_confirmados": 0,
+  "total_catalogo_nas_colecoes_configuradas": 619,
+  "total_faltantes_confirmados": null,
+  "total_extras_confirmados": null,
+  "faltantes_confirmados_nas_colecoes_coletadas": 0,
+  "extras_confirmados_nas_colecoes_coletadas": 0,
+  "nao_inferir_zero_em_falha": true,
   "colecoes": [
     {
       "colecao": "BIO Habitat",
       "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/bio-habitat/",
       "oficial": null,
       "catalogo": 35,
-      "faltantes": [],
-      "extras_no_catalogo": [],
+      "faltantes": null,
+      "extras_no_catalogo": null,
       "paginas": [],
       "status": "erro_coleta"
     },
@@ -90,8 +111,8 @@
       "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/biomas/",
       "oficial": null,
       "catalogo": 46,
-      "faltantes": [],
-      "extras_no_catalogo": [],
+      "faltantes": null,
+      "extras_no_catalogo": null,
       "paginas": [],
       "status": "erro_coleta"
     },
@@ -100,8 +121,8 @@
       "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/bosque-da-imaginacao/",
       "oficial": null,
       "catalogo": 40,
-      "faltantes": [],
-      "extras_no_catalogo": [],
+      "faltantes": null,
+      "extras_no_catalogo": null,
       "paginas": [],
       "status": "erro_coleta"
     },
@@ -110,8 +131,8 @@
       "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/botanica/",
       "oficial": null,
       "catalogo": 24,
-      "faltantes": [],
-      "extras_no_catalogo": [],
+      "faltantes": null,
+      "extras_no_catalogo": null,
       "paginas": [],
       "status": "erro_coleta"
     },
@@ -120,8 +141,8 @@
       "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/doce-estilo/",
       "oficial": null,
       "catalogo": 72,
-      "faltantes": [],
-      "extras_no_catalogo": [],
+      "faltantes": null,
+      "extras_no_catalogo": null,
       "paginas": [],
       "status": "erro_coleta"
     },
@@ -130,8 +151,8 @@
       "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/era-uma-vez/",
       "oficial": null,
       "catalogo": 51,
-      "faltantes": [],
-      "extras_no_catalogo": [],
+      "faltantes": null,
+      "extras_no_catalogo": null,
       "paginas": [],
       "status": "erro_coleta"
     },
@@ -140,8 +161,8 @@
       "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/flora/",
       "oficial": null,
       "catalogo": 55,
-      "faltantes": [],
-      "extras_no_catalogo": [],
+      "faltantes": null,
+      "extras_no_catalogo": null,
       "paginas": [],
       "status": "erro_coleta"
     },
@@ -150,8 +171,8 @@
       "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-textures-3/",
       "oficial": null,
       "catalogo": 27,
-      "faltantes": [],
-      "extras_no_catalogo": [],
+      "faltantes": null,
+      "extras_no_catalogo": null,
       "paginas": [],
       "status": "erro_coleta"
     },
@@ -160,8 +181,8 @@
       "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/memorias-de-infancia/",
       "oficial": null,
       "catalogo": 39,
-      "faltantes": [],
-      "extras_no_catalogo": [],
+      "faltantes": null,
+      "extras_no_catalogo": null,
       "paginas": [],
       "status": "erro_coleta"
     },
@@ -170,8 +191,8 @@
       "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/natureza-ludica/",
       "oficial": null,
       "catalogo": 40,
-      "faltantes": [],
-      "extras_no_catalogo": [],
+      "faltantes": null,
+      "extras_no_catalogo": null,
       "paginas": [],
       "status": "erro_coleta"
     },
@@ -180,8 +201,8 @@
       "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/passeio-no-campo/",
       "oficial": null,
       "catalogo": 60,
-      "faltantes": [],
-      "extras_no_catalogo": [],
+      "faltantes": null,
+      "extras_no_catalogo": null,
       "paginas": [],
       "status": "erro_coleta"
     },
@@ -190,8 +211,8 @@
       "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/provence/",
       "oficial": null,
       "catalogo": 64,
-      "faltantes": [],
-      "extras_no_catalogo": [],
+      "faltantes": null,
+      "extras_no_catalogo": null,
       "paginas": [],
       "status": "erro_coleta"
     },
@@ -200,11 +221,41 @@
       "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/tartan/",
       "oficial": null,
       "catalogo": 66,
-      "faltantes": [],
-      "extras_no_catalogo": [],
+      "faltantes": null,
+      "extras_no_catalogo": null,
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "HF Orient",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-orient/",
+      "oficial": null,
+      "catalogo": 0,
+      "faltantes": null,
+      "extras_no_catalogo": null,
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "HF Orient II",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-orient-ii/",
+      "oficial": null,
+      "catalogo": 0,
+      "faltantes": null,
+      "extras_no_catalogo": null,
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Mundo Encantado",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/mundo-encantado/",
+      "oficial": null,
+      "catalogo": 0,
+      "faltantes": null,
+      "extras_no_catalogo": null,
       "paginas": [],
       "status": "erro_coleta"
     }
   ],
-  "criterio": "Navega pelas páginas oficiais e paginação pública da Home Finish em Chromium. Falhas de acesso nunca são tratadas como zero itens e o script apenas audita; não altera o catálogo."
+  "criterio": "Navega pelas páginas oficiais e paginação pública da Home Finish em Chromium. Falhas de acesso nunca são tratadas como zero itens ou zero faltantes. Os totais globais de faltantes/extras só recebem número quando todas as coleções configuradas foram coletadas com sucesso. O script apenas audita; não altera o catálogo."
 }
