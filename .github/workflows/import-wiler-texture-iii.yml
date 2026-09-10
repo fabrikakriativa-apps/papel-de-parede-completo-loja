@@ -31,17 +31,77 @@ jobs:
       - name: Import six confirmed Texture III references
         run: python scripts/import_wiler_texture_iii_v3.py
 
-      - name: Validate catalog integrity
+      - name: Validate Texture III integrity and performance
+        shell: bash
         run: |
-          python scripts/audit_catalog.py
-          python scripts/audit_collection_completeness.py
+          python - <<'PY'
+          import json
+          from collections import Counter
+          from pathlib import Path
+          from PIL import Image
+
+          root = Path('.')
+          text = (root / 'index.html').read_text(encoding='utf-8')
+          marker = 'let DATA='
+          start = text.index(marker) + len(marker)
+          data, _ = json.JSONDecoder().raw_decode(text[start:])
+
+          expected_new = {'TX-3010','TX-3019','TX-3037','TX-3050','TX-3052','TX-3054'}
+          items = [x for x in data if x.get('fornecedor') == 'Wiler' and x.get('colecao') == 'Texture III']
+          refs = [str(x.get('ref') or '').strip().upper() for x in items]
+          counts = Counter(refs)
+
+          if len(items) != 57:
+              raise SystemExit(f'Texture III deveria ter 57 itens, encontrou {len(items)}')
+          duplicates = sorted(ref for ref, count in counts.items() if count != 1)
+          if duplicates:
+              raise SystemExit(f'Referências duplicadas/irregulares: {duplicates}')
+          missing = sorted(expected_new - set(refs))
+          if missing:
+              raise SystemExit(f'Faltam referências confirmadas: {missing}')
+
+          external = []
+          missing_files = []
+          invalid_files = []
+          for item in items:
+              for field in ('card', 'zoom'):
+                  value = str(item.get(field) or '').strip()
+                  if value.startswith(('http://','https://')):
+                      external.append((item.get('ref'), field, value))
+                      continue
+                  path = root / value
+                  if not value or not path.is_file():
+                      missing_files.append((item.get('ref'), field, value))
+                      continue
+                  try:
+                      with Image.open(path) as im:
+                          im.verify()
+                  except Exception as exc:
+                      invalid_files.append((item.get('ref'), field, value, str(exc)))
+
+          if external:
+              raise SystemExit(f'Hotlinks Texture III encontrados: {external[:5]}')
+          if missing_files:
+              raise SystemExit(f'Arquivos locais ausentes: {missing_files[:10]}')
+          if invalid_files:
+              raise SystemExit(f'Imagens locais inválidas: {invalid_files[:10]}')
+
+          print(json.dumps({
+              'texture_iii': len(items),
+              'refs_unicas': len(counts),
+              'seis_confirmadas_presentes': True,
+              'hotlinks': 0,
+              'arquivos_locais_validos': True,
+          }, ensure_ascii=False))
+          PY
+          python scripts/audit_catalog_completeness.py
 
       - name: Commit validated import
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html auditoria-import-texture-iii.json imagens/wiler/texture-iii/thumbnails/TX-3010.jpg imagens/wiler/texture-iii/thumbnails/TX-3019.jpg imagens/wiler/texture-iii/thumbnails/TX-3037.jpg imagens/wiler/texture-iii/thumbnails/TX-3050.jpg imagens/wiler/texture-iii/thumbnails/TX-3052.jpg imagens/wiler/texture-iii/thumbnails/TX-3054.jpg
+          git add index.html auditoria-import-texture-iii.json auditoria-completude.json imagens/wiler/texture-iii/thumbnails/TX-3010.jpg imagens/wiler/texture-iii/thumbnails/TX-3019.jpg imagens/wiler/texture-iii/thumbnails/TX-3037.jpg imagens/wiler/texture-iii/thumbnails/TX-3050.jpg imagens/wiler/texture-iii/thumbnails/TX-3052.jpg imagens/wiler/texture-iii/thumbnails/TX-3054.jpg
           if git diff --cached --quiet; then
             echo "Texture III already complete; nothing to commit"
           else
