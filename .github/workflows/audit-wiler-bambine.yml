@@ -1,0 +1,44 @@
+name: Audit Wiler Bambine completeness
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_wiler_bambine_distributor.py'
+      - '.github/workflows/audit-wiler-bambine.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout catalog
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install browser
+        run: |
+          python -m pip install --quiet playwright
+          python -m playwright install chromium --with-deps
+
+      - name: Audit Bambine against distributor source
+        run: python scripts/audit_wiler_bambine_distributor.py
+
+      - name: Commit audit report
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add auditoria-wiler-bambine-distribuidor.json
+          if git diff --cached --quiet; then
+            echo "No Bambine audit changes"
+          else
+            git commit -m "Record Wiler Bambine completeness audit"
+            git pull --rebase origin main
+            git push origin main
+          fi
