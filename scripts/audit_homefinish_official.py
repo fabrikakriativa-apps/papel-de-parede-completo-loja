@@ -31,6 +31,7 @@ COLLECTION_URLS = {
     "HF Orient": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-orient/",
     "HF Orient II": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-orient-ii/",
     "Mundo Encantado": "https://www.homefinish.com.br/colecoes/papeis-de-parede/mundo-encantado/",
+    "HF Petit": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-petit/",
     "Vichy": "https://www.homefinish.com.br/colecoes/dicoracao/vichy/",
     "Bosque": "https://www.homefinish.com.br/colecoes/dicoracao/bosque/",
     "Xadrez": "https://www.homefinish.com.br/colecoes/dicoracao/xadrez/",
