@@ -1,0 +1,385 @@
+{
+  "status": "ok",
+  "itens_amostra": 132,
+  "colecoes": {
+    "Aditare 3": {
+      "amostra": 6,
+      "estaveis": 2,
+      "fortes": 2,
+      "candidatos_fortes": {
+        "Textura": 2
+      },
+      "top1_primeira_view": {
+        "Botânico/Folhagem": 4,
+        "Textura": 2
+      }
+    },
+    "BIO Habitat": {
+      "amostra": 6,
+      "estaveis": 4,
+      "fortes": 4,
+      "candidatos_fortes": {
+        "Botânico/Folhagem": 4
+      },
+      "top1_primeira_view": {
+        "Botânico/Folhagem": 4,
+        "Textura": 1,
+        "Temático": 1
+      }
+    },
+    "Bambine": {
+      "amostra": 6,
+      "estaveis": 5,
+      "fortes": 5,
+      "candidatos_fortes": {
+        "Temático": 3,
+        "Liso": 2
+      },
+      "top1_primeira_view": {
+        "Temático": 3,
+        "Liso": 2,
+        "Listrado": 1
+      }
+    },
+    "Biomas": {
+      "amostra": 6,
+      "estaveis": 5,
+      "fortes": 4,
+      "candidatos_fortes": {
+        "Botânico/Folhagem": 4
+      },
+      "top1_primeira_view": {
+        "Botânico/Folhagem": 5,
+        "Floral": 1
+      }
+    },
+    "Bosque da Imaginação": {
+      "amostra": 6,
+      "estaveis": 6,
+      "fortes": 5,
+      "candidatos_fortes": {
+        "Xadrez": 4,
+        "Temático": 1
+      },
+      "top1_primeira_view": {
+        "Xadrez": 4,
+        "Temático": 1,
+        "Floral": 1
+      }
+    },
+    "Botânica": {
+      "amostra": 6,
+      "estaveis": 5,
+      "fortes": 5,
+      "candidatos_fortes": {
+        "Botânico/Folhagem": 5
+      },
+      "top1_primeira_view": {
+        "Botânico/Folhagem": 5,
+        "Floral": 1
+      }
+    },
+    "Criativo 3": {
+      "amostra": 6,
+      "estaveis": 3,
+      "fortes": 3,
+      "candidatos_fortes": {
+        "Textura": 3
+      },
+      "top1_primeira_view": {
+        "Botânico/Folhagem": 3,
+        "Textura": 3
+      }
+    },
+    "Doce Estilo": {
+      "amostra": 6,
+      "estaveis": 5,
+      "fortes": 5,
+      "candidatos_fortes": {
+        "Xadrez": 5
+      },
+      "top1_primeira_view": {
+        "Xadrez": 6
+      }
+    },
+    "Era Uma Vez": {
+      "amostra": 6,
+      "estaveis": 6,
+      "fortes": 5,
+      "candidatos_fortes": {
+        "Floral": 3,
+        "Listrado": 2
+      },
+      "top1_primeira_view": {
+        "Floral": 4,
+        "Listrado": 2
+      }
+    },
+    "Flora": {
+      "amostra": 6,
+      "estaveis": 6,
+      "fortes": 6,
+      "candidatos_fortes": {
+        "Liso": 3,
+        "Botânico/Folhagem": 2,
+        "Floral": 1
+      },
+      "top1_primeira_view": {
+        "Liso": 3,
+        "Botânico/Folhagem": 2,
+        "Floral": 1
+      }
+    },
+    "HF Texture III": {
+      "amostra": 6,
+      "estaveis": 5,
+      "fortes": 4,
+      "candidatos_fortes": {
+        "Liso": 3,
+        "Textura": 1
+      },
+      "top1_primeira_view": {
+        "Liso": 4,
+        "Textura": 2
+      }
+    },
+    "Memórias de Infância": {
+      "amostra": 6,
+      "estaveis": 5,
+      "fortes": 5,
+      "candidatos_fortes": {
+        "Temático": 3,
+        "Floral": 2
+      },
+      "top1_primeira_view": {
+        "Temático": 3,
+        "Floral": 2,
+        "Botânico/Folhagem": 1
+      }
+    },
+    "Natureza Lúdica": {
+      "amostra": 6,
+      "estaveis": 5,
+      "fortes": 5,
+      "candidatos_fortes": {
+        "Temático": 3,
+        "Floral": 2
+      },
+      "top1_primeira_view": {
+        "Temático": 4,
+        "Floral": 2
+      }
+    },
+    "Passeio no Campo": {
+      "amostra": 6,
+      "estaveis": 4,
+      "fortes": 4,
+      "candidatos_fortes": {
+        "Temático": 3,
+        "Floral": 1
+      },
+      "top1_primeira_view": {
+        "Temático": 3,
+        "Botânico/Folhagem": 1,
+        "Floral": 1,
+        "Xadrez": 1
+      }
+    },
+    "Poet Chart 5": {
+      "amostra": 6,
+      "estaveis": 2,
+      "fortes": 2,
+      "candidatos_fortes": {
+        "Textura": 2
+      },
+      "top1_primeira_view": {
+        "Textura": 3,
+        "Botânico/Folhagem": 2,
+        "Listrado": 1
+      }
+    },
+    "Provence": {
+      "amostra": 6,
+      "estaveis": 4,
+      "fortes": 2,
+      "candidatos_fortes": {
+        "Liso": 1,
+        "Listrado": 1
+      },
+      "top1_primeira_view": {
+        "Liso": 3,
+        "Floral": 1,
+        "Botânico/Folhagem": 1,
+        "Listrado": 1
+      }
+    },
+    "Space IX": {
+      "amostra": 6,
+      "estaveis": 4,
+      "fortes": 4,
+      "candidatos_fortes": {
+        "Textura": 4
+      },
+      "top1_primeira_view": {
+        "Textura": 4,
+        "Botânico/Folhagem": 1,
+        "Xadrez": 1
+      }
+    },
+    "Tacto": {
+      "amostra": 6,
+      "estaveis": 4,
+      "fortes": 2,
+      "candidatos_fortes": {
+        "Textura": 2
+      },
+      "top1_primeira_view": {
+        "Textura": 4,
+        "Liso": 2
+      }
+    },
+    "Tartan": {
+      "amostra": 6,
+      "estaveis": 6,
+      "fortes": 6,
+      "candidatos_fortes": {
+        "Xadrez": 6
+      },
+      "top1_primeira_view": {
+        "Xadrez": 6
+      }
+    },
+    "Texture II": {
+      "amostra": 6,
+      "estaveis": 4,
+      "fortes": 3,
+      "candidatos_fortes": {
+        "Liso": 2,
+        "Textura": 1
+      },
+      "top1_primeira_view": {
+        "Textura": 3,
+        "Liso": 3
+      }
+    },
+    "Texture III": {
+      "amostra": 6,
+      "estaveis": 3,
+      "fortes": 3,
+      "candidatos_fortes": {
+        "Textura": 3
+      },
+      "top1_primeira_view": {
+        "Liso": 3,
+        "Textura": 3
+      }
+    },
+    "Tramas": {
+      "amostra": 6,
+      "estaveis": 6,
+      "fortes": 3,
+      "candidatos_fortes": {
+        "Textura": 3
+      },
+      "top1_primeira_view": {
+        "Textura": 3,
+        "Listrado": 1,
+        "Xadrez": 1,
+        "Liso": 1
+      }
+    }
+  },
+  "ancoras": {
+    "Tartan": {
+      "descricao": "book de padrão tartan/xadrez",
+      "amostra": 6,
+      "candidatos_fortes": 6,
+      "fortes_compativeis": 6,
+      "taxa_compativel_sobre_fortes": 1.0,
+      "tags_aceitas": [
+        "Xadrez"
+      ],
+      "distribuicao": {
+        "Xadrez": 6
+      }
+    },
+    "HF Texture III": {
+      "descricao": "book explicitamente de textura",
+      "amostra": 6,
+      "candidatos_fortes": 4,
+      "fortes_compativeis": 4,
+      "taxa_compativel_sobre_fortes": 1.0,
+      "tags_aceitas": [
+        "Liso",
+        "Textura"
+      ],
+      "distribuicao": {
+        "Liso": 3,
+        "Textura": 1
+      }
+    },
+    "Texture II": {
+      "descricao": "book explicitamente de textura",
+      "amostra": 6,
+      "candidatos_fortes": 3,
+      "fortes_compativeis": 3,
+      "taxa_compativel_sobre_fortes": 1.0,
+      "tags_aceitas": [
+        "Liso",
+        "Textura"
+      ],
+      "distribuicao": {
+        "Liso": 2,
+        "Textura": 1
+      }
+    },
+    "Texture III": {
+      "descricao": "book explicitamente de textura",
+      "amostra": 6,
+      "candidatos_fortes": 3,
+      "fortes_compativeis": 3,
+      "taxa_compativel_sobre_fortes": 1.0,
+      "tags_aceitas": [
+        "Liso",
+        "Textura"
+      ],
+      "distribuicao": {
+        "Textura": 3
+      }
+    },
+    "Tramas": {
+      "descricao": "book de tramas/texturas",
+      "amostra": 6,
+      "candidatos_fortes": 3,
+      "fortes_compativeis": 3,
+      "taxa_compativel_sobre_fortes": 1.0,
+      "tags_aceitas": [
+        "Liso",
+        "Textura"
+      ],
+      "distribuicao": {
+        "Textura": 3
+      }
+    },
+    "Flora": {
+      "descricao": "book Flora; floral/botânico, com possíveis coordenados lisos/texturizados",
+      "amostra": 6,
+      "candidatos_fortes": 6,
+      "fortes_compativeis": 6,
+      "taxa_compativel_sobre_fortes": 1.0,
+      "tags_aceitas": [
+        "Botânico/Folhagem",
+        "Floral",
+        "Liso",
+        "Textura"
+      ],
+      "distribuicao": {
+        "Liso": 3,
+        "Botânico/Folhagem": 2,
+        "Floral": 1
+      }
+    }
+  },
+  "conclusao_metodologica": "Esta auditoria serve para detectar viés do classificador top-1. A próxima versão deve tratar estilos como tags independentes/multirrótulo, porque categorias como Floral/Botânico e Xadrez/Geométrico podem coexistir.",
+  "publicado_no_catalogo": false
+}
