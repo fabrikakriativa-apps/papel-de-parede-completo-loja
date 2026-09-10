@@ -95,7 +95,6 @@ def select_sample(data: list[dict]) -> list[dict]:
 
     selected = []
     for key in sorted(groups):
-        # Deduplica imagens repetidas dentro do book para não calibrar em cópias do mesmo asset.
         unique = []
         seen_cards = set()
         for item in sorted(groups[key], key=lambda x: str(x.get("codigo") or "")):
@@ -119,7 +118,6 @@ def load_views(path: Path) -> list[Image.Image]:
     with Image.open(path) as raw:
         image = ImageOps.exif_transpose(raw).convert("RGB")
     w, h = image.size
-    side = min(w, h)
     full = ImageOps.fit(image, (224, 224), method=Image.Resampling.LANCZOS)
     center80 = image.crop((
         int(w * 0.10), int(h * 0.10), max(int(w * 0.90), int(w * 0.10) + 1), max(int(h * 0.90), int(h * 0.10) + 1)
@@ -130,6 +128,23 @@ def load_views(path: Path) -> list[Image.Image]:
     ))
     center60 = ImageOps.fit(center60, (224, 224), method=Image.Resampling.LANCZOS)
     return [full, center80, center60]
+
+
+def text_embedding(model: CLIPModel, inputs: dict) -> torch.Tensor:
+    # Transformers 5 retorna BaseModelOutputWithPooling em get_text_features.
+    output = model.get_text_features(**inputs)
+    if isinstance(output, torch.Tensor):
+        return output
+    pooled = output.pooler_output
+    return model.text_projection(pooled)
+
+
+def image_embedding(model: CLIPModel, inputs: dict) -> torch.Tensor:
+    output = model.get_image_features(**inputs)
+    if isinstance(output, torch.Tensor):
+        return output
+    pooled = output.pooler_output
+    return model.visual_projection(pooled)
 
 
 def main() -> None:
@@ -148,8 +163,8 @@ def main() -> None:
     model.eval()
 
     text_inputs = processor(text=prompts, return_tensors="pt", padding=True)
-    with torch.no_grad():
-        text_features = model.get_text_features(**text_inputs)
+    with torch.inference_mode():
+        text_features = text_embedding(model, text_inputs)
         text_features = text_features / text_features.norm(dim=-1, keepdim=True)
 
     rows = []
@@ -165,12 +180,11 @@ def main() -> None:
         path = ROOT / card.split("?", 1)[0]
         views = load_views(path)
         image_inputs = processor(images=views, return_tensors="pt")
-        with torch.no_grad():
-            image_features = model.get_image_features(**image_inputs)
+        with torch.inference_mode():
+            image_features = image_embedding(model, image_inputs)
             image_features = image_features / image_features.norm(dim=-1, keepdim=True)
             similarities = image_features @ text_features.T
 
-        # Média dos três prompts de cada estilo, para cada enquadramento.
         view_style_scores = []
         for view_idx in range(similarities.shape[0]):
             scores = []
@@ -186,15 +200,12 @@ def main() -> None:
 
         avg_scores = []
         for style in styles:
-            vals = []
-            for scores in view_style_scores:
-                vals.append(dict(scores)[style])
+            vals = [dict(scores)[style] for scores in view_style_scores]
             avg_scores.append((style, sum(vals) / len(vals), min(vals), max(vals)))
         avg_scores.sort(key=lambda x: -x[1])
         margin = avg_scores[0][1] - avg_scores[1][1]
         margins.append(margin)
 
-        # Ainda é calibração: candidato forte exige 3/3 views e margem conservadora.
         strong = stable and margin >= 0.010
         candidate = avg_scores[0][0] if strong else None
         collection = str(item.get("colecao") or "")
@@ -225,6 +236,7 @@ def main() -> None:
             print(f"processados {pos}/{len(sample)}")
 
     margins_sorted = sorted(margins)
+
     def percentile(q: float) -> float:
         if not margins_sorted:
             return 0.0
