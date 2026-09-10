@@ -1,0 +1,45 @@
+name: Audit external catalog assets
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'scripts/audit_external_assets.py'
+      - '.github/workflows/audit-external-assets.yml'
+  workflow_run:
+    workflows:
+      - 'Catalog health'
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout catalog
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Audit external image dependencies
+        run: python scripts/audit_external_assets.py
+
+      - name: Commit external asset report
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add auditoria-assets-externos.json
+          if git diff --cached --quiet; then
+            echo "External asset report already current"
+          else
+            git commit -m "Refresh external catalog asset audit"
+            git pull --rebase origin main
+            git push origin main
+          fi
