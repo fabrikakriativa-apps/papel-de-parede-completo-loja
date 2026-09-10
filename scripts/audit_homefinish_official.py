@@ -32,6 +32,7 @@ COLLECTION_URLS = {
     "HF Orient II": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-orient-ii/",
     "Mundo Encantado": "https://www.homefinish.com.br/colecoes/papeis-de-parede/mundo-encantado/",
     "HF Petit": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-petit/",
+    "Lille": "https://www.homefinish.com.br/colecoes/papeis-de-parede/lille/",
     "Vichy": "https://www.homefinish.com.br/colecoes/dicoracao/vichy/",
     "Bosque": "https://www.homefinish.com.br/colecoes/dicoracao/bosque/",
     "Xadrez": "https://www.homefinish.com.br/colecoes/dicoracao/xadrez/",
@@ -154,7 +155,7 @@ def main() -> None:
             locale="pt-BR",
             viewport={"width": 1280, "height": 900},
             user_agent=(
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "Mozilla/5.0 (Windows NT 10.0; Win64 x64) "
                 "AppleWebKit/537.36 (KHTML, like Gecko) "
                 "Chrome/152.0.0.0 Safari/537.36"
             ),
@@ -179,11 +180,7 @@ def main() -> None:
                 official_refs, pages = crawl(page, official_url)
             except Exception as exc:
                 error_text = f"{type(exc).__name__}: {exc}"
-                errors.append({
-                    "colecao": collection,
-                    "url_oficial": official_url,
-                    "erro": error_text,
-                })
+                errors.append({"colecao": collection, "url_oficial": official_url, "erro": error_text})
                 results.append({
                     "colecao": collection,
                     "url_oficial": official_url,
