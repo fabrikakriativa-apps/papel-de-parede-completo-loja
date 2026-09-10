@@ -14,6 +14,16 @@ on:
       - 'auditoria-wiler-escopo-oficial.json'
       - 'scripts/consolidate_catalog_audits.py'
       - '.github/workflows/consolidate-catalog-audits.yml'
+  workflow_run:
+    workflows:
+      - 'Catalog health'
+      - 'Home Finish validated completeness'
+      - 'Official catalog completeness'
+      - 'Capture official Kantai collections'
+      - 'Import Wiler Texture III completeness'
+      - 'Import complete Kantai collections'
+      - 'Importar colecoes Kantai completas'
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -21,6 +31,7 @@ permissions:
 
 jobs:
   consolidate:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout catalog
