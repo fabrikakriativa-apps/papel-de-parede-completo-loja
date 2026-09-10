@@ -94,6 +94,34 @@
       "evidencia": "Página oficial Home Finish identifica explicitamente COLEÇÃO As Crônicas de Nárnia, referência 603664. A identidade da coleção está confirmada; a rota de coleção e a enumeração integral ainda precisam ser capturadas sem inferência.",
       "status_enumeracao": "pendente_rota_e_enumeracao_integral",
       "referencias_confirmadas_amostra": ["603664"]
+    },
+    {
+      "nome": "Floresta Encantada",
+      "url": "https://www.homefinish.com.br/colecoes/feito-por-melanie/floresta-encantada/",
+      "evidencia": "Páginas oficiais Home Finish identificam explicitamente COLEÇÃO Floresta Encantada; o link de coleção do próprio produto aponta para a rota Feito por Melanie.",
+      "status_enumeracao": "pendente_enumeracao_integral",
+      "referencias_confirmadas_amostra": ["603923", "603930", "603947", "603954", "603961"]
+    },
+    {
+      "nome": "É Primavera na Floresta",
+      "url": "https://www.homefinish.com.br/colecoes/feito-por-melanie/e-primavera-na-floresta/",
+      "evidencia": "Páginas oficiais Home Finish identificam explicitamente COLEÇÃO É Primavera na Floresta; o link de coleção do próprio produto aponta para a rota Feito por Melanie.",
+      "status_enumeracao": "pendente_enumeracao_integral",
+      "referencias_confirmadas_amostra": ["604074", "604104"]
+    },
+    {
+      "nome": "Família de Cavalinhos",
+      "url": "https://www.homefinish.com.br/colecoes/feito-por-melanie/familia-de-cavalinhos/",
+      "evidencia": "Página oficial Home Finish identifica explicitamente COLEÇÃO Família de Cavalinhos, referência 603749; o link de coleção do próprio produto aponta para a rota Feito por Melanie.",
+      "status_enumeracao": "pendente_enumeracao_integral",
+      "referencias_confirmadas_amostra": ["603749"]
+    },
+    {
+      "nome": "Chuva de Flores",
+      "url": "https://www.homefinish.com.br/colecoes/feito-por-melanie/chuva-de-flores/",
+      "evidencia": "Página oficial Home Finish identifica explicitamente COLEÇÃO Chuva de Flores, referência 603848; o link de coleção do próprio produto aponta para a rota Feito por Melanie.",
+      "status_enumeracao": "pendente_enumeracao_integral",
+      "referencias_confirmadas_amostra": ["603848"]
     }
   ],
   "colecoes_encontradas_em_produtos_a_classificar": [],
@@ -103,9 +131,9 @@
       "motivo": "Há conteúdo histórico e URL de coleção, mas a página de coleção encontrada está vazia/legada; não foi contada como coleção ativa."
     }
   ],
-  "observacao": "A cobertura do catálogo Home Finish é parcial. Treze coleções ausentes estão confirmadas até esta etapa; este é um mínimo confirmado e não uma alegação de esgotamento do portfólio oficial. Mundo Encantado já teve 25 referências enumeradas. HF Orient e HF Orient II estão em enumeração parcial. As coleções DiCoração foram confirmadas por metadado explícito COLEÇÃO em páginas oficiais Home Finish; quando a própria página expôs o link de coleção, a rota oficial foi registrada. Nenhuma coleção é importada por associação visual, nome parecido ou fonte de varejo.",
+  "observacao": "A cobertura do catálogo Home Finish é parcial. Dezessete coleções ausentes estão confirmadas até esta etapa; este é um mínimo confirmado e não uma alegação de esgotamento do portfólio oficial. Mundo Encantado já teve 25 referências enumeradas. HF Orient e HF Orient II estão em enumeração parcial. As coleções DiCoração e Feito por Melanie foram confirmadas por metadado explícito COLEÇÃO em páginas oficiais Home Finish; quando a própria página expôs o link de coleção, a rota oficial foi registrada. Nenhuma coleção é importada por associação visual, nome parecido ou fonte de varejo.",
   "criterio": "A existência de uma coleção pode ser confirmada por página oficial de coleção ativa ou por metadado explícito COLEÇÃO em página oficial de produto do fabricante. Isso confirma a identidade e a lacuna de portfólio, mas não autoriza importação parcial. A inclusão no catálogo exige enumeração completa de referências e validação visual exata. O número de lacunas é tratado como mínimo confirmado enquanto a descoberta do portfólio não estiver integralmente fechada.",
-  "colecoes_ausentes_confirmadas_total_minimo": 13,
+  "colecoes_ausentes_confirmadas_total_minimo": 17,
   "colecoes_ausentes_com_enumeracao_completa": 1,
-  "colecoes_ausentes_em_enumeracao_ou_pendentes": 12
+  "colecoes_ausentes_em_enumeracao_ou_pendentes": 16
 }
