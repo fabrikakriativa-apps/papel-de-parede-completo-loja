@@ -2,21 +2,25 @@ from __future__ import annotations
 
 import io
 import json
+import urllib.error
 import urllib.request
 from pathlib import Path
 from urllib.parse import urlparse
 
 from PIL import Image
+from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 REPORT = ROOT / "auditoria-localizacao-homefinish.json"
 SUPPLIER = "Home Finish"
 COLLECTION = "BIO Habitat"
+COLLECTION_PAGE = "https://homefinish.com.br/colecoes/papeis-de-parede/bio-habitat/"
 TARGET_DIR = ROOT / "imagens" / "home-finish" / "bio-habitat" / "thumbnails"
 EXPECTED_EXTERNAL_ITEMS = 28
 ALLOWED_HOSTS = {"homefinish.com.br", "www.homefinish.com.br"}
 MAX_SOURCE_BYTES = 12 * 1024 * 1024
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
 
 
 def parse_index() -> tuple[str, list[dict], int, int]:
@@ -47,25 +51,12 @@ def validate_official_url(url: str) -> None:
         raise RuntimeError(f"URL Home Finish fora da biblioteca oficial esperada: {url}")
 
 
-def fetch_official_image(url: str) -> tuple[bytes, dict]:
-    validate_official_url(url)
-    request = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/152 Safari/537.36",
-            "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
-        },
-    )
-    with urllib.request.urlopen(request, timeout=45) as response:
-        if response.status != 200:
-            raise RuntimeError(f"HTTP {response.status} ao buscar {url}")
-        content_type = (response.headers.get("Content-Type") or "").lower()
-        raw = response.read(MAX_SOURCE_BYTES + 1)
+def validate_image_bytes(raw: bytes, content_type: str, url: str) -> tuple[bytes, dict]:
     if len(raw) > MAX_SOURCE_BYTES:
         raise RuntimeError(f"Imagem excede limite de segurança de {MAX_SOURCE_BYTES} bytes: {url}")
     if len(raw) < 1500:
         raise RuntimeError(f"Resposta pequena demais para ser imagem válida ({len(raw)} bytes): {url}")
-    if content_type and not content_type.startswith("image/"):
+    if content_type and not content_type.lower().startswith("image/"):
         raise RuntimeError(f"Content-Type inesperado {content_type!r}: {url}")
 
     try:
@@ -85,6 +76,69 @@ def fetch_official_image(url: str) -> tuple[bytes, dict]:
     if info["width"] < 200 or info["height"] < 200:
         raise RuntimeError(f"Imagem pequena demais ({info['width']}x{info['height']}): {url}")
     return raw, info
+
+
+def fetch_with_urllib(url: str) -> tuple[bytes, dict]:
+    validate_official_url(url)
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": UA,
+            "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+            "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+            "Referer": COLLECTION_PAGE,
+        },
+    )
+    with urllib.request.urlopen(request, timeout=45) as response:
+        if response.status != 200:
+            raise RuntimeError(f"HTTP {response.status} ao buscar {url}")
+        content_type = response.headers.get("Content-Type") or ""
+        raw = response.read(MAX_SOURCE_BYTES + 1)
+    raw, info = validate_image_bytes(raw, content_type, url)
+    info["metodo"] = "urllib_same_origin_referer"
+    return raw, info
+
+
+def fetch_with_browser(context, page, url: str) -> tuple[bytes, dict]:
+    validate_official_url(url)
+    headers = {
+        "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Referer": COLLECTION_PAGE,
+        "Sec-Fetch-Dest": "image",
+        "Sec-Fetch-Mode": "no-cors",
+        "Sec-Fetch-Site": "same-origin",
+    }
+
+    response = context.request.get(url, headers=headers, timeout=45000, fail_on_status_code=False)
+    if response.status == 200:
+        raw = response.body()
+        raw, info = validate_image_bytes(raw, response.headers.get("content-type", ""), url)
+        info["metodo"] = "playwright_api_context"
+        return raw, info
+
+    page.set_extra_http_headers({
+        "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Referer": COLLECTION_PAGE,
+    })
+    nav = page.goto(url, wait_until="commit", timeout=45000)
+    if not nav or nav.status != 200:
+        raise RuntimeError(
+            f"Home Finish bloqueou acesso oficial: api_status={response.status}, "
+            f"browser_status={nav.status if nav else None}, url={url}"
+        )
+    raw = nav.body()
+    raw, info = validate_image_bytes(raw, nav.headers.get("content-type", ""), url)
+    info["metodo"] = "playwright_browser_navigation"
+    return raw, info
+
+
+def fetch_official_image(context, page, url: str) -> tuple[bytes, dict]:
+    try:
+        return fetch_with_urllib(url)
+    except Exception as first_exc:
+        print(f"urllib bloqueado para {url}: {first_exc}; tentando navegador", flush=True)
+        return fetch_with_browser(context, page, url)
 
 
 def extension_for(fmt: str) -> str:
@@ -123,38 +177,60 @@ def main() -> None:
     downloaded: dict[str, dict] = {}
     staged_files: list[Path] = []
 
-    # Download and validate every source before changing index.html.
-    try:
-        for item in targets:
-            ref = norm(item.get("ref"))
-            card_url = norm(item.get("card"))
-            zoom_url = norm(item.get("zoom"))
-            if not is_external(card_url) or not is_external(zoom_url):
-                raise RuntimeError(f"{ref}: card e zoom precisam estar externos nesta migração controlada")
-            if card_url != zoom_url:
-                raise RuntimeError(f"{ref}: card e zoom usam fontes diferentes; revisão manual necessária")
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(
+            locale="pt-BR",
+            user_agent=UA,
+            viewport={"width": 1440, "height": 1200},
+        )
+        page = context.new_page()
+        try:
+            warmup = page.goto(COLLECTION_PAGE, wait_until="domcontentloaded", timeout=45000)
+            print(
+                f"Home Finish warmup status={warmup.status if warmup else None}",
+                flush=True,
+            )
+            page.wait_for_timeout(1200)
+        except Exception as exc:
+            print(f"Warmup Home Finish não concluiu: {exc}", flush=True)
 
-            raw, info = fetch_official_image(card_url)
-            output = TARGET_DIR / f"{ref}{extension_for(info['format'])}"
-            if output.exists():
-                raise RuntimeError(f"Arquivo destino já existe e não será sobrescrito automaticamente: {output}")
-            output.write_bytes(raw)
-            staged_files.append(output)
+        try:
+            for item in targets:
+                ref = norm(item.get("ref"))
+                card_url = norm(item.get("card"))
+                zoom_url = norm(item.get("zoom"))
+                if not is_external(card_url) or not is_external(zoom_url):
+                    raise RuntimeError(f"{ref}: card e zoom precisam estar externos nesta migração controlada")
+                if card_url != zoom_url:
+                    raise RuntimeError(f"{ref}: card e zoom usam fontes diferentes; revisão manual necessária")
 
-            with Image.open(output) as check:
-                check.verify()
+                raw, info = fetch_official_image(context, page, card_url)
+                output = TARGET_DIR / f"{ref}{extension_for(info['format'])}"
+                if output.exists():
+                    raise RuntimeError(f"Arquivo destino já existe e não será sobrescrito automaticamente: {output}")
+                output.write_bytes(raw)
+                staged_files.append(output)
 
-            downloaded[ref] = {
-                "source": card_url,
-                "local": output.relative_to(ROOT).as_posix(),
-                **info,
-            }
-    except Exception:
-        for path in staged_files:
-            path.unlink(missing_ok=True)
-        raise
+                with Image.open(output) as check:
+                    check.verify()
 
-    # Only after all 28 images are valid do we switch DATA to local paths.
+                downloaded[ref] = {
+                    "source": card_url,
+                    "local": output.relative_to(ROOT).as_posix(),
+                    **info,
+                }
+                print(
+                    f"LOCALIZED {ref} {info['width']}x{info['height']} {info['bytes']} bytes via {info['metodo']}",
+                    flush=True,
+                )
+        except Exception:
+            for path in staged_files:
+                path.unlink(missing_ok=True)
+            raise
+        finally:
+            browser.close()
+
     for item in targets:
         ref = norm(item.get("ref"))
         local = downloaded[ref]["local"]
@@ -191,9 +267,10 @@ def main() -> None:
         "itens_externalizados_depois": 0,
         "imagens_localizadas": len(downloaded),
         "bytes_preservados_da_fonte": sum(int(v["bytes"]) for v in downloaded.values()),
+        "metodos": sorted({v["metodo"] for v in downloaded.values()}),
         "fontes": sorted({v["source"] for v in downloaded.values()}),
         "itens": downloaded,
-        "criterio": "Copia byte a byte as mesmas imagens já usadas pelo catálogo a partir do domínio oficial Home Finish, valida formato e dimensões e só depois troca card/zoom para arquivos locais. Nenhuma recompressão ou substituição visual é realizada. A operação aborta e remove arquivos parciais se qualquer uma das 28 imagens falhar.",
+        "criterio": "Copia byte a byte as mesmas imagens já usadas pelo catálogo a partir do domínio oficial Home Finish. Tenta requisição com Referer de mesma origem e, em caso de bloqueio, usa sessão Chromium/Playwright do próprio domínio. Valida formato, dimensões e todos os 28 arquivos antes de trocar card/zoom para caminhos locais. Nenhuma recompressão ou substituição visual é realizada; falha parcial é revertida.",
     }
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({
@@ -201,6 +278,7 @@ def main() -> None:
         "imagens_localizadas": report["imagens_localizadas"],
         "itens_externalizados_depois": report["itens_externalizados_depois"],
         "bytes_preservados_da_fonte": report["bytes_preservados_da_fonte"],
+        "metodos": report["metodos"],
     }, ensure_ascii=False))
 
 
