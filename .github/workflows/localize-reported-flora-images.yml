@@ -1,0 +1,65 @@
+name: Localize reported Flora images
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/localize_reported_flora_images.py'
+      - '.github/workflows/localize-reported-flora-images.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: localize-reported-flora-images-main
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  localize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout catalog
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Pillow
+        run: python -m pip install --disable-pip-version-check pillow
+
+      - name: Download and localize the two reported Flora images
+        run: python scripts/localize_reported_flora_images.py
+
+      - name: Refresh catalog inventory
+        run: python scripts/catalog_inventory.py
+
+      - name: Refresh external asset audit
+        run: python scripts/audit_external_assets.py
+
+      - name: Run catalog smoke test
+        run: python scripts/catalog_smoke_test.py
+
+      - name: Diagnose image rendering
+        run: python scripts/diagnose_image_render.py
+
+      - name: Commit localized images and validation reports
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html \
+            imagens/home-finish/flora/thumbnails/84384.jpg \
+            imagens/home-finish/flora/thumbnails/84858.jpg \
+            auditoria-flora-imagens-localizadas.json \
+            auditoria-catalogo-atual.json \
+            auditoria-assets-externos.json \
+            auditoria-smoke-test.json \
+            diagnostico-render-imagens.json
+          if git diff --cached --quiet; then
+            echo "Flora images already localized and reports unchanged"
+          else
+            git commit -m "Localize two reported Flora images"
+            git pull --rebase origin main
+            git push origin main
+          fi
