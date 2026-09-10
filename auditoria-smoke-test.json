@@ -1,0 +1,63 @@
+{
+  "status": "falha",
+  "itens_data": 1212,
+  "itens_inventario": 1212,
+  "itens_consolidado": 1212,
+  "fornecedores_data": {
+    "Home Finish": 619,
+    "Kantai": 331,
+    "Wiler": 262
+  },
+  "ui_markers_ausentes": [],
+  "referencias_criticas": [
+    {
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "ref": "101046",
+      "ocorrencias": 0
+    },
+    {
+      "fornecedor": "Home Finish",
+      "colecao": "Memórias de Infância",
+      "ref": "MI201010",
+      "ocorrencias": 1
+    },
+    {
+      "fornecedor": "Kantai",
+      "colecao": "Poet Chart 5",
+      "ref": "PT500706",
+      "ocorrencias": 1
+    },
+    {
+      "fornecedor": "Kantai",
+      "colecao": "Aditare 3",
+      "ref": "AD300001R",
+      "ocorrencias": 1
+    },
+    {
+      "fornecedor": "Wiler",
+      "colecao": "Texture III",
+      "ref": "TX-3010",
+      "ocorrencias": 1
+    },
+    {
+      "fornecedor": "Wiler",
+      "colecao": "Texture III",
+      "ref": "TX-3054",
+      "ocorrencias": 1
+    }
+  ],
+  "referencias_criticas_search_falhou": [],
+  "cards_vazios": 0,
+  "assets_locais_faltantes": 0,
+  "assets_locais_faltantes_amostra": [],
+  "assets_externos": {
+    "card": 28,
+    "zoom": 28
+  },
+  "falhas": [
+    "Referência crítica Home Finish / BIO Habitat / 101046 tem 0 ocorrência(s); esperado 1"
+  ],
+  "avisos": [],
+  "criterio": "Smoke test do catálogo publicado: estrutura DATA, consistência com relatórios, controles de busca/filtro, referências críticas reparadas e existência dos assets locais de card/zoom. Não altera produtos nem imagens."
+}
