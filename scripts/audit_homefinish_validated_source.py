@@ -30,7 +30,10 @@ def collection_key(value: object) -> str:
 
 def normalize_ref(collection: object, value: object) -> str:
     ref = str(value or "").strip().upper().replace(" ", "")
-    if collection_key(collection) == "bio habitat" and ref.startswith("BH") and ref[2:].isdigit():
+    key = collection_key(collection)
+    if key == "bio habitat" and ref.startswith("BH") and ref[2:].isdigit():
+        ref = ref[2:]
+    if key == "memorias de infancia" and ref.startswith("MI") and ref[2:].isdigit():
         ref = ref[2:]
     return ref
 
@@ -123,7 +126,7 @@ def main() -> None:
         "duplicatas_catalogo": duplicate_pairs,
         "status": "ok" if total_missing == 0 and total_extra == 0 and not duplicate_pairs else "divergente",
         "colecoes": rows,
-        "criterio": "Compara referências por coleção contra o snapshot validado de URLs do domínio oficial Home Finish. Para BIO Habitat, o prefixo BH do catálogo é normalizado apenas para a comparação com a numeração usada no snapshot.",
+        "criterio": "Compara referências por coleção contra o snapshot validado de URLs do domínio oficial Home Finish. Para BIO Habitat e Memórias de Infância, os prefixos comerciais BH e MI do catálogo são normalizados apenas para comparação com a numeração usada no snapshot; as referências exibidas no catálogo não são alteradas.",
     }
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps({
