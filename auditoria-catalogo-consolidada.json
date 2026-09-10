@@ -25,7 +25,11 @@
         "Fundo do Mar",
         "Montanhas",
         "Safari",
-        "As Crônicas de Nárnia"
+        "As Crônicas de Nárnia",
+        "Floresta Encantada",
+        "É Primavera na Floresta",
+        "Família de Cavalinhos",
+        "Chuva de Flores"
       ],
       "colecoes_em_classificacao": []
     },
@@ -81,7 +85,11 @@
           "Fundo do Mar",
           "Montanhas",
           "Safari",
-          "As Crônicas de Nárnia"
+          "As Crônicas de Nárnia",
+          "Floresta Encantada",
+          "É Primavera na Floresta",
+          "Família de Cavalinhos",
+          "Chuva de Flores"
         ],
         "colecoes_em_classificacao": [],
         "relatorio": "auditoria-homefinish-escopo-oficial.json"
