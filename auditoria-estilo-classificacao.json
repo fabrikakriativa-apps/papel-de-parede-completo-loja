@@ -1,0 +1,309 @@
+{
+  "status": "ok",
+  "publicado_no_catalogo": false,
+  "itens_catalogo": 1212,
+  "assets_unicos_locais": 1183,
+  "itens_asset_externo": 29,
+  "sementes_fortes": 648,
+  "assets_estilo_validado": 625,
+  "assets_nao_classificados": 558,
+  "taxa_assets_validada": 0.5283,
+  "aceites_por_margem_muito_forte": 1,
+  "tags_por_asset": {
+    "Textura": 190,
+    "Geométrico": 161,
+    "Xadrez": 137,
+    "Botânico/Folhagem": 82,
+    "Temático": 73,
+    "Liso": 69,
+    "Floral": 50,
+    "Listrado": 24
+  },
+  "tags_por_item": {
+    "Textura": 190,
+    "Geométrico": 161,
+    "Xadrez": 137,
+    "Botânico/Folhagem": 82,
+    "Temático": 73,
+    "Liso": 69,
+    "Floral": 50,
+    "Listrado": 24
+  },
+  "acordo_vizinhos": {
+    "5/5": 871,
+    "4/5": 156,
+    "3/5": 129,
+    "2/5": 26,
+    "1/5": 1
+  },
+  "colecoes": {
+    "Aditare 3": {
+      "total": 81,
+      "classificados": 33,
+      "taxa": 0.407,
+      "tags": {
+        "Textura": 33
+      }
+    },
+    "BIO Habitat": {
+      "total": 35,
+      "classificados": 5,
+      "taxa": 0.143,
+      "tags": {
+        "Botânico/Folhagem": 5
+      }
+    },
+    "Bambine": {
+      "total": 50,
+      "classificados": 28,
+      "taxa": 0.56,
+      "tags": {
+        "Geométrico": 10,
+        "Temático": 9,
+        "Xadrez": 6,
+        "Floral": 5,
+        "Listrado": 4,
+        "Liso": 4
+      }
+    },
+    "Biomas": {
+      "total": 46,
+      "classificados": 23,
+      "taxa": 0.5,
+      "tags": {
+        "Botânico/Folhagem": 22,
+        "Floral": 1
+      }
+    },
+    "Bosque da Imaginação": {
+      "total": 40,
+      "classificados": 17,
+      "taxa": 0.425,
+      "tags": {
+        "Xadrez": 10,
+        "Geométrico": 10,
+        "Temático": 7
+      }
+    },
+    "Botânica": {
+      "total": 24,
+      "classificados": 20,
+      "taxa": 0.833,
+      "tags": {
+        "Botânico/Folhagem": 20
+      }
+    },
+    "Criativo 3": {
+      "total": 89,
+      "classificados": 22,
+      "taxa": 0.247,
+      "tags": {
+        "Textura": 22
+      }
+    },
+    "Doce Estilo": {
+      "total": 72,
+      "classificados": 59,
+      "taxa": 0.819,
+      "tags": {
+        "Geométrico": 59,
+        "Xadrez": 50,
+        "Listrado": 9
+      }
+    },
+    "Era Uma Vez": {
+      "total": 51,
+      "classificados": 29,
+      "taxa": 0.569,
+      "tags": {
+        "Geométrico": 13,
+        "Floral": 9,
+        "Listrado": 7,
+        "Xadrez": 6,
+        "Temático": 6,
+        "Liso": 1
+      }
+    },
+    "Flora": {
+      "total": 55,
+      "classificados": 52,
+      "taxa": 0.945,
+      "tags": {
+        "Liso": 24,
+        "Botânico/Folhagem": 24,
+        "Floral": 4
+      }
+    },
+    "HF Texture III": {
+      "total": 27,
+      "classificados": 14,
+      "taxa": 0.519,
+      "tags": {
+        "Liso": 10,
+        "Textura": 4
+      }
+    },
+    "Memórias de Infância": {
+      "total": 39,
+      "classificados": 31,
+      "taxa": 0.795,
+      "tags": {
+        "Temático": 17,
+        "Floral": 12,
+        "Botânico/Folhagem": 2
+      }
+    },
+    "Natureza Lúdica": {
+      "total": 40,
+      "classificados": 27,
+      "taxa": 0.675,
+      "tags": {
+        "Temático": 21,
+        "Floral": 6
+      }
+    },
+    "Passeio no Campo": {
+      "total": 60,
+      "classificados": 29,
+      "taxa": 0.483,
+      "tags": {
+        "Temático": 13,
+        "Floral": 13,
+        "Botânico/Folhagem": 3
+      }
+    },
+    "Poet Chart 5": {
+      "total": 78,
+      "classificados": 24,
+      "taxa": 0.308,
+      "tags": {
+        "Textura": 18,
+        "Botânico/Folhagem": 6
+      }
+    },
+    "Provence": {
+      "total": 64,
+      "classificados": 15,
+      "taxa": 0.234,
+      "tags": {
+        "Liso": 8,
+        "Geométrico": 7,
+        "Listrado": 4,
+        "Xadrez": 3
+      }
+    },
+    "Space IX": {
+      "total": 83,
+      "classificados": 29,
+      "taxa": 0.349,
+      "tags": {
+        "Textura": 29
+      }
+    },
+    "Tacto": {
+      "total": 41,
+      "classificados": 15,
+      "taxa": 0.366,
+      "tags": {
+        "Textura": 15
+      }
+    },
+    "Tartan": {
+      "total": 66,
+      "classificados": 62,
+      "taxa": 0.939,
+      "tags": {
+        "Xadrez": 62,
+        "Geométrico": 62
+      }
+    },
+    "Texture II": {
+      "total": 52,
+      "classificados": 25,
+      "taxa": 0.481,
+      "tags": {
+        "Liso": 17,
+        "Textura": 8
+      }
+    },
+    "Texture III": {
+      "total": 57,
+      "classificados": 36,
+      "taxa": 0.632,
+      "tags": {
+        "Textura": 36
+      }
+    },
+    "Tramas": {
+      "total": 62,
+      "classificados": 30,
+      "taxa": 0.484,
+      "tags": {
+        "Textura": 25,
+        "Liso": 5
+      }
+    }
+  },
+  "ancoras": {
+    "Tartan": {
+      "classificados": 62,
+      "compativeis": 62,
+      "taxa_compativel": 1.0,
+      "aceitos": [
+        "Geométrico",
+        "Xadrez"
+      ]
+    },
+    "HF Texture III": {
+      "classificados": 14,
+      "compativeis": 14,
+      "taxa_compativel": 1.0,
+      "aceitos": [
+        "Liso",
+        "Textura"
+      ]
+    },
+    "Texture II": {
+      "classificados": 25,
+      "compativeis": 25,
+      "taxa_compativel": 1.0,
+      "aceitos": [
+        "Liso",
+        "Textura"
+      ]
+    },
+    "Texture III": {
+      "classificados": 36,
+      "compativeis": 36,
+      "taxa_compativel": 1.0,
+      "aceitos": [
+        "Liso",
+        "Textura"
+      ]
+    },
+    "Tramas": {
+      "classificados": 30,
+      "compativeis": 30,
+      "taxa_compativel": 1.0,
+      "aceitos": [
+        "Geométrico",
+        "Liso",
+        "Listrado",
+        "Textura",
+        "Xadrez"
+      ]
+    },
+    "Flora": {
+      "classificados": 52,
+      "compativeis": 52,
+      "taxa_compativel": 1.0,
+      "aceitos": [
+        "Botânico/Folhagem",
+        "Floral",
+        "Liso",
+        "Textura"
+      ]
+    }
+  },
+  "criterio": "Classificação conservadora: nenhuma tag é publicada no catálogo. Itens sem consenso permanecem sem estilo em vez de receber rótulo forçado."
+}
