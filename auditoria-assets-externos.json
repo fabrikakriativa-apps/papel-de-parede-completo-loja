@@ -1,13 +1,12 @@
 {
   "status": "dependencias_externas_encontradas",
   "itens_catalogo": 1212,
-  "itens_com_asset_externo": 31,
-  "urls_externas": 62,
+  "itens_com_asset_externo": 29,
+  "urls_externas": 58,
   "hosts": {
-    "homefinish.com.br": 60,
-    "www.homefinish.com.br": 2
+    "homefinish.com.br": 58
   },
-  "itens_com_candidato_local": 3,
+  "itens_com_candidato_local": 1,
   "itens_sem_candidato_local": 28,
   "itens": [
     {
@@ -373,36 +372,6 @@
       ],
       "candidatos_locais_por_ref": [],
       "tem_candidato_local": false
-    },
-    {
-      "codigo": "FK-0371",
-      "fornecedor": "Home Finish",
-      "colecao": "Flora",
-      "ref": "84384",
-      "card": "https://www.homefinish.com.br/wp-content/uploads/2025/06/84384-papel-parede-home-finish-flora.jpg",
-      "zoom": "https://www.homefinish.com.br/wp-content/uploads/2025/06/84384-papel-parede-home-finish-flora.jpg",
-      "hosts": [
-        "www.homefinish.com.br"
-      ],
-      "candidatos_locais_por_ref": [
-        "imagens/home-finish/flora/thumbnails/84384.jpg"
-      ],
-      "tem_candidato_local": true
-    },
-    {
-      "codigo": "FK-0380",
-      "fornecedor": "Home Finish",
-      "colecao": "Flora",
-      "ref": "84858",
-      "card": "https://homefinish.com.br/wp-content/uploads/2025/06/84858-papel-parede-home-finish-flora.jpg",
-      "zoom": "https://homefinish.com.br/wp-content/uploads/2025/06/84858-papel-parede-home-finish-flora.jpg",
-      "hosts": [
-        "homefinish.com.br"
-      ],
-      "candidatos_locais_por_ref": [
-        "imagens/home-finish/flora/thumbnails/84858.jpg"
-      ],
-      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0408",

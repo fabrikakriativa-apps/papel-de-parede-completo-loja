@@ -1,0 +1,38 @@
+{
+  "status": "ok",
+  "escopo": "Correção definitiva de FK-0371/84384 e FK-0380/84858 sem hotlink externo",
+  "itens": [
+    {
+      "codigo": "FK-0371",
+      "ref": "84384",
+      "arquivo_local": "imagens/home-finish/flora/thumbnails/84384.jpg",
+      "origem": "validated_alias",
+      "bytes": 57773,
+      "width": 480,
+      "height": 480,
+      "format": "JPEG",
+      "sha256": "6add0472e577470597e1fc15edcf81d98160c906a6a2bc2ab99f651171ce7fe8",
+      "pixel_stddev_sum": 145.9,
+      "proveniencia": "Biblioteca validada: Flora|84384 e Flora|84391 usam o mesmo asset i224; foi reutilizado o arquivo local íntegro da referência 84391."
+    },
+    {
+      "codigo": "FK-0380",
+      "ref": "84858",
+      "arquivo_local": "imagens/home-finish/flora/thumbnails/84858.jpg",
+      "origem": "validated_original",
+      "bytes": 14034,
+      "width": 772,
+      "height": 1080,
+      "format": "JPEG",
+      "sha256": "1fed6f5d61244b575b8c37b2b88207d4f907832f2a8b29e7f945ecdf969a0e75",
+      "pixel_stddev_sum": 1.38,
+      "proveniencia": "Arquivo original preservado na biblioteca-fonte catalogos-papel-de-parede/imagens/home-finish/flora/originals/84858.jpg. A baixa variação de pixels é esperada porque o produto oficial é off-white."
+    }
+  ],
+  "resultado": {
+    "itens_localizados": 2,
+    "dependencia_externa_removida_dos_itens": true,
+    "card_e_zoom_locais": true
+  },
+  "criterio": "Foram usadas apenas fontes já validadas da biblioteca de fornecimento da Fábrika. 84384 foi recuperada a partir do asset compartilhado i224 confirmado com 84391; 84858 foi recuperada do original preservado no repositório-fonte. Papéis claros/off-white não são rejeitados por baixa variação visual quando o arquivo e a proveniência são válidos."
+}
