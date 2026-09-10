@@ -1,0 +1,139 @@
+{
+  "status": "ok",
+  "publicado_no_catalogo": false,
+  "modelo": "openai/clip-vit-base-patch32",
+  "itens_amostra": 132,
+  "colecoes_amostradas": 22,
+  "estaveis_3_de_3": 99,
+  "taxa_estabilidade": 0.75,
+  "candidatos_fortes_margem_0_010": 87,
+  "taxa_candidatos_fortes": 0.6591,
+  "candidatos_por_estilo": {
+    "Textura": 21,
+    "Botânico/Folhagem": 15,
+    "Xadrez": 15,
+    "Temático": 13,
+    "Liso": 11,
+    "Floral": 9,
+    "Listrado": 3
+  },
+  "margem_distribuicao": {
+    "p25": 0.0067,
+    "p50": 0.01846,
+    "p75": 0.03052,
+    "p90": 0.04451
+  },
+  "estabilidade_por_colecao": {
+    "Aditare 3": {
+      "estaveis": 2,
+      "amostra": 6,
+      "taxa": 0.333
+    },
+    "BIO Habitat": {
+      "estaveis": 4,
+      "amostra": 6,
+      "taxa": 0.667
+    },
+    "Bambine": {
+      "estaveis": 5,
+      "amostra": 6,
+      "taxa": 0.833
+    },
+    "Biomas": {
+      "estaveis": 5,
+      "amostra": 6,
+      "taxa": 0.833
+    },
+    "Bosque da Imaginação": {
+      "estaveis": 6,
+      "amostra": 6,
+      "taxa": 1.0
+    },
+    "Botânica": {
+      "estaveis": 5,
+      "amostra": 6,
+      "taxa": 0.833
+    },
+    "Criativo 3": {
+      "estaveis": 3,
+      "amostra": 6,
+      "taxa": 0.5
+    },
+    "Doce Estilo": {
+      "estaveis": 5,
+      "amostra": 6,
+      "taxa": 0.833
+    },
+    "Era Uma Vez": {
+      "estaveis": 6,
+      "amostra": 6,
+      "taxa": 1.0
+    },
+    "Flora": {
+      "estaveis": 6,
+      "amostra": 6,
+      "taxa": 1.0
+    },
+    "HF Texture III": {
+      "estaveis": 5,
+      "amostra": 6,
+      "taxa": 0.833
+    },
+    "Memórias de Infância": {
+      "estaveis": 5,
+      "amostra": 6,
+      "taxa": 0.833
+    },
+    "Natureza Lúdica": {
+      "estaveis": 5,
+      "amostra": 6,
+      "taxa": 0.833
+    },
+    "Passeio no Campo": {
+      "estaveis": 4,
+      "amostra": 6,
+      "taxa": 0.667
+    },
+    "Poet Chart 5": {
+      "estaveis": 2,
+      "amostra": 6,
+      "taxa": 0.333
+    },
+    "Provence": {
+      "estaveis": 4,
+      "amostra": 6,
+      "taxa": 0.667
+    },
+    "Space IX": {
+      "estaveis": 4,
+      "amostra": 6,
+      "taxa": 0.667
+    },
+    "Tacto": {
+      "estaveis": 4,
+      "amostra": 6,
+      "taxa": 0.667
+    },
+    "Tartan": {
+      "estaveis": 6,
+      "amostra": 6,
+      "taxa": 1.0
+    },
+    "Texture II": {
+      "estaveis": 4,
+      "amostra": 6,
+      "taxa": 0.667
+    },
+    "Texture III": {
+      "estaveis": 3,
+      "amostra": 6,
+      "taxa": 0.5
+    },
+    "Tramas": {
+      "estaveis": 6,
+      "amostra": 6,
+      "taxa": 1.0
+    }
+  },
+  "criterio": "Calibração apenas: 3 enquadramentos por imagem e 3 prompts por classe. Nenhuma tag é gravada no catálogo ou na classificação principal nesta etapa."
+}

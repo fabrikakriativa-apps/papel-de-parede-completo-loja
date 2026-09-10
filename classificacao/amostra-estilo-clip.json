@@ -1,0 +1,6224 @@
+{
+  "status": "calibracao_nao_publicada",
+  "model": "openai/clip-vit-base-patch32",
+  "amostra": 132,
+  "views_por_imagem": 3,
+  "taxonomia": [
+    "Liso",
+    "Textura",
+    "Floral",
+    "Botânico/Folhagem",
+    "Geométrico",
+    "Listrado",
+    "Xadrez",
+    "Abstrato",
+    "Clássico",
+    "Temático"
+  ],
+  "itens": [
+    {
+      "codigo": "FK-0101",
+      "ref": "BH101024",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "card": "imagens/home-finish/bio-habitat/thumbnails/101024.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.0264,
+      "candidato_forte": "Botânico/Folhagem",
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.29303,
+          "min_view": 0.28508,
+          "max_view": 0.2991
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.26662,
+          "min_view": 0.25524,
+          "max_view": 0.27251
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.26471,
+          "min_view": 0.25299,
+          "max_view": 0.2709
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.24731,
+          "min_view": 0.24096,
+          "max_view": 0.25124
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.24688,
+          "min_view": 0.23319,
+          "max_view": 0.25567
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0108",
+      "ref": "BH101017",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "card": "imagens/home-finish/bio-habitat/thumbnails/101017.jpg",
+      "views_top1": [
+        "Textura",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00738,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.28994,
+          "min_view": 0.27837,
+          "max_view": 0.29806
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.28256,
+          "min_view": 0.27104,
+          "max_view": 0.29701
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.26375,
+          "min_view": 0.25815,
+          "max_view": 0.26917
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.2634,
+          "min_view": 0.25349,
+          "max_view": 0.27787
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26336,
+          "min_view": 0.24118,
+          "max_view": 0.2795
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0109",
+      "ref": "BH101015",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "card": "imagens/home-finish/bio-habitat/thumbnails/BH101015.jpg",
+      "views_top1": [
+        "Temático",
+        "Liso",
+        "Liso"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00113,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.25344,
+          "min_view": 0.24996,
+          "max_view": 0.25638
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.25231,
+          "min_view": 0.24603,
+          "max_view": 0.26222
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.23453,
+          "min_view": 0.22995,
+          "max_view": 0.24352
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.23356,
+          "min_view": 0.22776,
+          "max_view": 0.24004
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.23274,
+          "min_view": 0.21794,
+          "max_view": 0.25141
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0111",
+      "ref": "BH101013",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "card": "imagens/home-finish/bio-habitat/thumbnails/BH101013.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.04145,
+      "candidato_forte": "Botânico/Folhagem",
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.33642,
+          "min_view": 0.33205,
+          "max_view": 0.33897
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.29497,
+          "min_view": 0.28554,
+          "max_view": 0.30296
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.2909,
+          "min_view": 0.2859,
+          "max_view": 0.29615
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.27425,
+          "min_view": 0.26491,
+          "max_view": 0.28373
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26997,
+          "min_view": 0.26688,
+          "max_view": 0.2718
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0124",
+      "ref": "BH101031",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "card": "imagens/home-finish/bio-habitat/thumbnails/BH101031.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.03922,
+      "candidato_forte": "Botânico/Folhagem",
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.3196,
+          "min_view": 0.31345,
+          "max_view": 0.32703
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.28038,
+          "min_view": 0.27748,
+          "max_view": 0.28275
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.27669,
+          "min_view": 0.27264,
+          "max_view": 0.27975
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26556,
+          "min_view": 0.24987,
+          "max_view": 0.27794
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.26171,
+          "min_view": 0.25344,
+          "max_view": 0.26823
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0131",
+      "ref": "BH101037",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "card": "imagens/home-finish/bio-habitat/thumbnails/BH101037.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.04731,
+      "candidato_forte": "Botânico/Folhagem",
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.32016,
+          "min_view": 0.31552,
+          "max_view": 0.32338
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.27285,
+          "min_view": 0.26572,
+          "max_view": 0.27732
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.26819,
+          "min_view": 0.26033,
+          "max_view": 0.27554
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26448,
+          "min_view": 0.25585,
+          "max_view": 0.27532
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.2605,
+          "min_view": 0.25172,
+          "max_view": 0.26525
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0136",
+      "ref": "83035",
+      "fornecedor": "Home Finish",
+      "colecao": "Biomas",
+      "card": "imagens/home-finish/biomas/thumbnails/83035.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01322,
+      "candidato_forte": "Botânico/Folhagem",
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.26658,
+          "min_view": 0.25788,
+          "max_view": 0.27402
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.25335,
+          "min_view": 0.24922,
+          "max_view": 0.25935
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.24913,
+          "min_view": 0.24025,
+          "max_view": 0.25479
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.24553,
+          "min_view": 0.23215,
+          "max_view": 0.25286
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.22784,
+          "min_view": 0.21939,
+          "max_view": 0.23347
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0145",
+      "ref": "83103",
+      "fornecedor": "Home Finish",
+      "colecao": "Biomas",
+      "card": "imagens/home-finish/biomas/thumbnails/83103.jpg",
+      "views_top1": [
+        "Floral",
+        "Floral",
+        "Floral"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.00492,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Floral",
+          "score": 0.28179,
+          "min_view": 0.27451,
+          "max_view": 0.2858
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.27687,
+          "min_view": 0.27326,
+          "max_view": 0.27928
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.27241,
+          "min_view": 0.26323,
+          "max_view": 0.27888
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.26141,
+          "min_view": 0.25762,
+          "max_view": 0.26707
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.25233,
+          "min_view": 0.24085,
+          "max_view": 0.26057
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0154",
+      "ref": "83202",
+      "fornecedor": "Home Finish",
+      "colecao": "Biomas",
+      "card": "imagens/home-finish/biomas/thumbnails/83202.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.03465,
+      "candidato_forte": "Botânico/Folhagem",
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.30297,
+          "min_view": 0.29524,
+          "max_view": 0.3085
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.26832,
+          "min_view": 0.2626,
+          "max_view": 0.27363
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.25771,
+          "min_view": 0.25595,
+          "max_view": 0.26083
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.24728,
+          "min_view": 0.24252,
+          "max_view": 0.24984
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.24377,
+          "min_view": 0.23747,
+          "max_view": 0.24885
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0163",
+      "ref": "83288",
+      "fornecedor": "Home Finish",
+      "colecao": "Biomas",
+      "card": "imagens/home-finish/biomas/thumbnails/83288.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01576,
+      "candidato_forte": "Botânico/Folhagem",
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.31392,
+          "min_view": 0.3114,
+          "max_view": 0.3185
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.29816,
+          "min_view": 0.29605,
+          "max_view": 0.29972
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.28844,
+          "min_view": 0.287,
+          "max_view": 0.28977
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.2814,
+          "min_view": 0.27916,
+          "max_view": 0.2844
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.2788,
+          "min_view": 0.2736,
+          "max_view": 0.28276
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0172",
+      "ref": "83370",
+      "fornecedor": "Home Finish",
+      "colecao": "Biomas",
+      "card": "imagens/home-finish/biomas/thumbnails/83370.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Temático",
+        "Temático"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00754,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Temático",
+          "score": 0.25742,
+          "min_view": 0.2555,
+          "max_view": 0.261
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.24988,
+          "min_view": 0.24363,
+          "max_view": 0.26139
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.2305,
+          "min_view": 0.22391,
+          "max_view": 0.2428
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.21579,
+          "min_view": 0.20803,
+          "max_view": 0.22087
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.21333,
+          "min_view": 0.20892,
+          "max_view": 0.22187
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0181",
+      "ref": "83523",
+      "fornecedor": "Home Finish",
+      "colecao": "Biomas",
+      "card": "imagens/home-finish/biomas/thumbnails/83523.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01955,
+      "candidato_forte": "Botânico/Folhagem",
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.30053,
+          "min_view": 0.29183,
+          "max_view": 0.30858
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.28098,
+          "min_view": 0.27955,
+          "max_view": 0.28202
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.27292,
+          "min_view": 0.27205,
+          "max_view": 0.27452
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.27215,
+          "min_view": 0.27004,
+          "max_view": 0.27444
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.26136,
+          "min_view": 0.25741,
+          "max_view": 0.26634
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0182",
+      "ref": "80737",
+      "fornecedor": "Home Finish",
+      "colecao": "Bosque da Imaginação",
+      "card": "imagens/home-finish/bosque-da-imaginacao/thumbnails/80737.jpg",
+      "views_top1": [
+        "Temático",
+        "Temático",
+        "Temático"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02759,
+      "candidato_forte": "Temático",
+      "ranking_medio": [
+        {
+          "estilo": "Temático",
+          "score": 0.29531,
+          "min_view": 0.29151,
+          "max_view": 0.30136
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26772,
+          "min_view": 0.26006,
+          "max_view": 0.27696
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.26402,
+          "min_view": 0.25524,
+          "max_view": 0.2797
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.25919,
+          "min_view": 0.2475,
+          "max_view": 0.27189
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.24834,
+          "min_view": 0.24109,
+          "max_view": 0.25877
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0190",
+      "ref": "80607",
+      "fornecedor": "Home Finish",
+      "colecao": "Bosque da Imaginação",
+      "card": "imagens/home-finish/bosque-da-imaginacao/thumbnails/80607.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Xadrez"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.03831,
+      "candidato_forte": "Xadrez",
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.31795,
+          "min_view": 0.3089,
+          "max_view": 0.32582
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27964,
+          "min_view": 0.27625,
+          "max_view": 0.28474
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.2745,
+          "min_view": 0.26974,
+          "max_view": 0.28232
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.27212,
+          "min_view": 0.26465,
+          "max_view": 0.2837
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.27206,
+          "min_view": 0.26489,
+          "max_view": 0.28496
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0198",
+      "ref": "80706",
+      "fornecedor": "Home Finish",
+      "colecao": "Bosque da Imaginação",
+      "card": "imagens/home-finish/bosque-da-imaginacao/thumbnails/80706.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Xadrez"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.03432,
+      "candidato_forte": "Xadrez",
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.29819,
+          "min_view": 0.28562,
+          "max_view": 0.31982
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26388,
+          "min_view": 0.24856,
+          "max_view": 0.28118
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.2521,
+          "min_view": 0.24336,
+          "max_view": 0.2677
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.2496,
+          "min_view": 0.24256,
+          "max_view": 0.26077
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.2359,
+          "min_view": 0.22908,
+          "max_view": 0.24896
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0205",
+      "ref": "80683",
+      "fornecedor": "Home Finish",
+      "colecao": "Bosque da Imaginação",
+      "card": "imagens/home-finish/bosque-da-imaginacao/thumbnails/80683.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Xadrez"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.04274,
+      "candidato_forte": "Xadrez",
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.31123,
+          "min_view": 0.29893,
+          "max_view": 0.32171
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.26849,
+          "min_view": 0.26647,
+          "max_view": 0.27035
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.2682,
+          "min_view": 0.26613,
+          "max_view": 0.27197
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.2597,
+          "min_view": 0.25247,
+          "max_view": 0.2655
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.23367,
+          "min_view": 0.22401,
+          "max_view": 0.2418
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0213",
+      "ref": "81161",
+      "fornecedor": "Home Finish",
+      "colecao": "Bosque da Imaginação",
+      "card": "imagens/home-finish/bosque-da-imaginacao/thumbnails/81161.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Xadrez"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.03719,
+      "candidato_forte": "Xadrez",
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.31047,
+          "min_view": 0.30432,
+          "max_view": 0.319
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.27328,
+          "min_view": 0.26103,
+          "max_view": 0.27988
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26396,
+          "min_view": 0.25521,
+          "max_view": 0.27823
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.24792,
+          "min_view": 0.24018,
+          "max_view": 0.25205
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.24368,
+          "min_view": 0.23335,
+          "max_view": 0.2521
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0221",
+      "ref": "81048",
+      "fornecedor": "Home Finish",
+      "colecao": "Bosque da Imaginação",
+      "card": "imagens/home-finish/bosque-da-imaginacao/thumbnails/81048.jpg",
+      "views_top1": [
+        "Floral",
+        "Floral",
+        "Floral"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.00298,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Floral",
+          "score": 0.30776,
+          "min_view": 0.3034,
+          "max_view": 0.31401
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.30478,
+          "min_view": 0.30247,
+          "max_view": 0.30795
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.28883,
+          "min_view": 0.28541,
+          "max_view": 0.29404
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.28053,
+          "min_view": 0.27577,
+          "max_view": 0.28443
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.26937,
+          "min_view": 0.26474,
+          "max_view": 0.27395
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0222",
+      "ref": "81666",
+      "fornecedor": "Home Finish",
+      "colecao": "Botânica",
+      "card": "imagens/home-finish/botanica/thumbnails/81666.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.03543,
+      "candidato_forte": "Botânico/Folhagem",
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.31344,
+          "min_view": 0.30915,
+          "max_view": 0.3202
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.278,
+          "min_view": 0.2724,
+          "max_view": 0.28334
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.27238,
+          "min_view": 0.26719,
+          "max_view": 0.27721
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.26556,
+          "min_view": 0.25825,
+          "max_view": 0.27434
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.24892,
+          "min_view": 0.23506,
+          "max_view": 0.26081
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0227",
+      "ref": "81208",
+      "fornecedor": "Home Finish",
+      "colecao": "Botânica",
+      "card": "imagens/home-finish/botanica/thumbnails/81208.jpg",
+      "views_top1": [
+        "Floral",
+        "Floral",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00066,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Floral",
+          "score": 0.30515,
+          "min_view": 0.30398,
+          "max_view": 0.3063
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.30449,
+          "min_view": 0.30028,
+          "max_view": 0.30931
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.28822,
+          "min_view": 0.28709,
+          "max_view": 0.28949
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.27879,
+          "min_view": 0.27344,
+          "max_view": 0.28794
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.27834,
+          "min_view": 0.27213,
+          "max_view": 0.28832
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0231",
+      "ref": "81284",
+      "fornecedor": "Home Finish",
+      "colecao": "Botânica",
+      "card": "imagens/home-finish/botanica/thumbnails/81284.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.04451,
+      "candidato_forte": "Botânico/Folhagem",
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.32893,
+          "min_view": 0.32568,
+          "max_view": 0.3331
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.28442,
+          "min_view": 0.27064,
+          "max_view": 0.29193
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.27686,
+          "min_view": 0.26657,
+          "max_view": 0.2873
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26778,
+          "min_view": 0.26696,
+          "max_view": 0.26843
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.2653,
+          "min_view": 0.2631,
+          "max_view": 0.26665
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0236",
+      "ref": "81383",
+      "fornecedor": "Home Finish",
+      "colecao": "Botânica",
+      "card": "imagens/home-finish/botanica/thumbnails/81383.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02194,
+      "candidato_forte": "Botânico/Folhagem",
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.32692,
+          "min_view": 0.32181,
+          "max_view": 0.33243
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.30498,
+          "min_view": 0.30163,
+          "max_view": 0.30702
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.29465,
+          "min_view": 0.29154,
+          "max_view": 0.3004
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.28889,
+          "min_view": 0.28247,
+          "max_view": 0.29599
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27557,
+          "min_view": 0.271,
+          "max_view": 0.28021
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0240",
+      "ref": "81505",
+      "fornecedor": "Home Finish",
+      "colecao": "Botânica",
+      "card": "imagens/home-finish/botanica/thumbnails/81505.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.0291,
+      "candidato_forte": "Botânico/Folhagem",
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.32774,
+          "min_view": 0.32116,
+          "max_view": 0.33815
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.29864,
+          "min_view": 0.29623,
+          "max_view": 0.29984
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.29092,
+          "min_view": 0.28173,
+          "max_view": 0.29703
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.28566,
+          "min_view": 0.28037,
+          "max_view": 0.29412
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.26516,
+          "min_view": 0.26311,
+          "max_view": 0.26678
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0245",
+      "ref": "81628",
+      "fornecedor": "Home Finish",
+      "colecao": "Botânica",
+      "card": "imagens/home-finish/botanica/thumbnails/81628.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.0224,
+      "candidato_forte": "Botânico/Folhagem",
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.29173,
+          "min_view": 0.28585,
+          "max_view": 0.29526
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.26932,
+          "min_view": 0.2667,
+          "max_view": 0.27181
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26406,
+          "min_view": 0.26299,
+          "max_view": 0.2656
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.25923,
+          "min_view": 0.24874,
+          "max_view": 0.27089
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.25004,
+          "min_view": 0.24715,
+          "max_view": 0.25418
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0246",
+      "ref": "82328",
+      "fornecedor": "Home Finish",
+      "colecao": "Doce Estilo",
+      "card": "imagens/home-finish/doce-estilo/thumbnails/82328.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Xadrez"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01091,
+      "candidato_forte": "Xadrez",
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.25159,
+          "min_view": 0.24401,
+          "max_view": 0.26576
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.24068,
+          "min_view": 0.2299,
+          "max_view": 0.25524
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.22468,
+          "min_view": 0.21749,
+          "max_view": 0.23523
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.21949,
+          "min_view": 0.21281,
+          "max_view": 0.23111
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.21626,
+          "min_view": 0.21083,
+          "max_view": 0.22505
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0260",
+      "ref": "82427",
+      "fornecedor": "Home Finish",
+      "colecao": "Doce Estilo",
+      "card": "imagens/home-finish/doce-estilo/thumbnails/82427.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Liso"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00475,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.27981,
+          "min_view": 0.26712,
+          "max_view": 0.28818
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27506,
+          "min_view": 0.26812,
+          "max_view": 0.28159
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25038,
+          "min_view": 0.24336,
+          "max_view": 0.25568
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.23739,
+          "min_view": 0.22922,
+          "max_view": 0.24257
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.2338,
+          "min_view": 0.22911,
+          "max_view": 0.23871
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0274",
+      "ref": "82007",
+      "fornecedor": "Home Finish",
+      "colecao": "Doce Estilo",
+      "card": "imagens/home-finish/doce-estilo/thumbnails/82007.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Xadrez"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.05232,
+      "candidato_forte": "Xadrez",
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.31867,
+          "min_view": 0.3062,
+          "max_view": 0.33047
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.26636,
+          "min_view": 0.2614,
+          "max_view": 0.27115
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26089,
+          "min_view": 0.25695,
+          "max_view": 0.26822
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.24998,
+          "min_view": 0.24851,
+          "max_view": 0.25127
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.22892,
+          "min_view": 0.22557,
+          "max_view": 0.23357
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0289",
+      "ref": "82069",
+      "fornecedor": "Home Finish",
+      "colecao": "Doce Estilo",
+      "card": "imagens/home-finish/doce-estilo/thumbnails/82069.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Xadrez"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02701,
+      "candidato_forte": "Xadrez",
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.30848,
+          "min_view": 0.29896,
+          "max_view": 0.32214
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.28147,
+          "min_view": 0.27832,
+          "max_view": 0.28641
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.27533,
+          "min_view": 0.26789,
+          "max_view": 0.2817
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27284,
+          "min_view": 0.26288,
+          "max_view": 0.28082
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.25284,
+          "min_view": 0.24778,
+          "max_view": 0.26247
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0303",
+      "ref": "81932",
+      "fornecedor": "Home Finish",
+      "colecao": "Doce Estilo",
+      "card": "imagens/home-finish/doce-estilo/thumbnails/81932.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Xadrez"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.0307,
+      "candidato_forte": "Xadrez",
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.29547,
+          "min_view": 0.28748,
+          "max_view": 0.30309
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.26477,
+          "min_view": 0.26167,
+          "max_view": 0.26932
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26251,
+          "min_view": 0.25891,
+          "max_view": 0.2667
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.25595,
+          "min_view": 0.24915,
+          "max_view": 0.26127
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.23184,
+          "min_view": 0.22426,
+          "max_view": 0.23959
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0317",
+      "ref": "82243",
+      "fornecedor": "Home Finish",
+      "colecao": "Doce Estilo",
+      "card": "imagens/home-finish/doce-estilo/thumbnails/82243.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Xadrez"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.06356,
+      "candidato_forte": "Xadrez",
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.3319,
+          "min_view": 0.32671,
+          "max_view": 0.3372
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.26834,
+          "min_view": 0.26095,
+          "max_view": 0.27909
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26715,
+          "min_view": 0.26578,
+          "max_view": 0.26847
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.26275,
+          "min_view": 0.25881,
+          "max_view": 0.26594
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.2436,
+          "min_view": 0.24032,
+          "max_view": 0.24549
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0318",
+      "ref": "89730",
+      "fornecedor": "Home Finish",
+      "colecao": "Era Uma Vez",
+      "card": "imagens/home-finish/era-uma-vez/thumbnails/89730.jpg",
+      "views_top1": [
+        "Floral",
+        "Floral",
+        "Floral"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.00484,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Floral",
+          "score": 0.30142,
+          "min_view": 0.29622,
+          "max_view": 0.3074
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.29657,
+          "min_view": 0.29216,
+          "max_view": 0.30114
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.28618,
+          "min_view": 0.28374,
+          "max_view": 0.28812
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.28144,
+          "min_view": 0.27402,
+          "max_view": 0.28721
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.2674,
+          "min_view": 0.25934,
+          "max_view": 0.27842
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0328",
+      "ref": "600014",
+      "fornecedor": "Home Finish",
+      "colecao": "Era Uma Vez",
+      "card": "imagens/home-finish/era-uma-vez/thumbnails/600014.jpg",
+      "views_top1": [
+        "Floral",
+        "Floral",
+        "Floral"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01454,
+      "candidato_forte": "Floral",
+      "ranking_medio": [
+        {
+          "estilo": "Floral",
+          "score": 0.31286,
+          "min_view": 0.31134,
+          "max_view": 0.31417
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.29832,
+          "min_view": 0.29006,
+          "max_view": 0.30562
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.2902,
+          "min_view": 0.28572,
+          "max_view": 0.29403
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.27975,
+          "min_view": 0.27722,
+          "max_view": 0.28264
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.27591,
+          "min_view": 0.27247,
+          "max_view": 0.28117
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0338",
+      "ref": "89952",
+      "fornecedor": "Home Finish",
+      "colecao": "Era Uma Vez",
+      "card": "imagens/home-finish/era-uma-vez/thumbnails/89952.jpg",
+      "views_top1": [
+        "Floral",
+        "Floral",
+        "Floral"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02636,
+      "candidato_forte": "Floral",
+      "ranking_medio": [
+        {
+          "estilo": "Floral",
+          "score": 0.32573,
+          "min_view": 0.32005,
+          "max_view": 0.33099
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.29937,
+          "min_view": 0.29244,
+          "max_view": 0.30477
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.29884,
+          "min_view": 0.2957,
+          "max_view": 0.30304
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.29063,
+          "min_view": 0.2818,
+          "max_view": 0.29669
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.28222,
+          "min_view": 0.27552,
+          "max_view": 0.28921
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0348",
+      "ref": "89983",
+      "fornecedor": "Home Finish",
+      "colecao": "Era Uma Vez",
+      "card": "imagens/home-finish/era-uma-vez/thumbnails/89983.jpg",
+      "views_top1": [
+        "Listrado",
+        "Listrado",
+        "Listrado"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.0588,
+      "candidato_forte": "Listrado",
+      "ranking_medio": [
+        {
+          "estilo": "Listrado",
+          "score": 0.33297,
+          "min_view": 0.33134,
+          "max_view": 0.33558
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.27417,
+          "min_view": 0.27018,
+          "max_view": 0.27755
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27247,
+          "min_view": 0.26845,
+          "max_view": 0.27527
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.26746,
+          "min_view": 0.26634,
+          "max_view": 0.26906
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.25526,
+          "min_view": 0.25216,
+          "max_view": 0.25905
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0358",
+      "ref": "89709",
+      "fornecedor": "Home Finish",
+      "colecao": "Era Uma Vez",
+      "card": "imagens/home-finish/era-uma-vez/thumbnails/89709.jpg",
+      "views_top1": [
+        "Floral",
+        "Floral",
+        "Floral"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01846,
+      "candidato_forte": "Floral",
+      "ranking_medio": [
+        {
+          "estilo": "Floral",
+          "score": 0.30597,
+          "min_view": 0.30223,
+          "max_view": 0.31228
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.28752,
+          "min_view": 0.27895,
+          "max_view": 0.29664
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.2773,
+          "min_view": 0.27223,
+          "max_view": 0.28539
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.27638,
+          "min_view": 0.26831,
+          "max_view": 0.28614
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.27248,
+          "min_view": 0.26751,
+          "max_view": 0.27594
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0368",
+      "ref": "89822",
+      "fornecedor": "Home Finish",
+      "colecao": "Era Uma Vez",
+      "card": "imagens/home-finish/era-uma-vez/thumbnails/89822.jpg",
+      "views_top1": [
+        "Listrado",
+        "Listrado",
+        "Listrado"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01292,
+      "candidato_forte": "Listrado",
+      "ranking_medio": [
+        {
+          "estilo": "Listrado",
+          "score": 0.30565,
+          "min_view": 0.28432,
+          "max_view": 0.31691
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.29273,
+          "min_view": 0.27065,
+          "max_view": 0.30484
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.29216,
+          "min_view": 0.2641,
+          "max_view": 0.30905
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.27911,
+          "min_view": 0.2593,
+          "max_view": 0.29057
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.27427,
+          "min_view": 0.26139,
+          "max_view": 0.28426
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0369",
+      "ref": "84407",
+      "fornecedor": "Home Finish",
+      "colecao": "Flora",
+      "card": "imagens/home-finish/flora/thumbnails/84407.jpg",
+      "views_top1": [
+        "Liso",
+        "Liso",
+        "Liso"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.03637,
+      "candidato_forte": "Liso",
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.28211,
+          "min_view": 0.27904,
+          "max_view": 0.28557
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.24574,
+          "min_view": 0.24421,
+          "max_view": 0.24776
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.24095,
+          "min_view": 0.23856,
+          "max_view": 0.24392
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.23644,
+          "min_view": 0.23561,
+          "max_view": 0.23809
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.23518,
+          "min_view": 0.23379,
+          "max_view": 0.23673
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0380",
+      "ref": "84858",
+      "fornecedor": "Home Finish",
+      "colecao": "Flora",
+      "card": "imagens/home-finish/flora/thumbnails/84858.jpg",
+      "views_top1": [
+        "Liso",
+        "Liso",
+        "Liso"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.03052,
+      "candidato_forte": "Liso",
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.23544,
+          "min_view": 0.22615,
+          "max_view": 0.2415
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.20492,
+          "min_view": 0.20072,
+          "max_view": 0.20763
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.20484,
+          "min_view": 0.19904,
+          "max_view": 0.20858
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.20409,
+          "min_view": 0.19954,
+          "max_view": 0.2072
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.20375,
+          "min_view": 0.19659,
+          "max_view": 0.20735
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0390",
+      "ref": "84773",
+      "fornecedor": "Home Finish",
+      "colecao": "Flora",
+      "card": "imagens/home-finish/flora/thumbnails/84773.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.0332,
+      "candidato_forte": "Botânico/Folhagem",
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.32172,
+          "min_view": 0.32111,
+          "max_view": 0.32249
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.28853,
+          "min_view": 0.28611,
+          "max_view": 0.29
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.28388,
+          "min_view": 0.28236,
+          "max_view": 0.28572
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.28352,
+          "min_view": 0.28133,
+          "max_view": 0.28477
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27313,
+          "min_view": 0.26928,
+          "max_view": 0.28035
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0401",
+      "ref": "84513",
+      "fornecedor": "Home Finish",
+      "colecao": "Flora",
+      "card": "imagens/home-finish/flora/thumbnails/84513.jpg",
+      "views_top1": [
+        "Floral",
+        "Floral",
+        "Floral"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02066,
+      "candidato_forte": "Floral",
+      "ranking_medio": [
+        {
+          "estilo": "Floral",
+          "score": 0.31557,
+          "min_view": 0.31331,
+          "max_view": 0.31702
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.29492,
+          "min_view": 0.29205,
+          "max_view": 0.29659
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.28482,
+          "min_view": 0.27526,
+          "max_view": 0.29149
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.28007,
+          "min_view": 0.27843,
+          "max_view": 0.28279
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27228,
+          "min_view": 0.27077,
+          "max_view": 0.27305
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0412",
+      "ref": "84674",
+      "fornecedor": "Home Finish",
+      "colecao": "Flora",
+      "card": "imagens/home-finish/flora/thumbnails/84674.jpg",
+      "views_top1": [
+        "Liso",
+        "Liso",
+        "Liso"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02786,
+      "candidato_forte": "Liso",
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.25583,
+          "min_view": 0.24683,
+          "max_view": 0.26639
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.22797,
+          "min_view": 0.22143,
+          "max_view": 0.23972
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.223,
+          "min_view": 0.2156,
+          "max_view": 0.23288
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.22264,
+          "min_view": 0.21195,
+          "max_view": 0.23415
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.22167,
+          "min_view": 0.21445,
+          "max_view": 0.22794
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0423",
+      "ref": "84735",
+      "fornecedor": "Home Finish",
+      "colecao": "Flora",
+      "card": "imagens/home-finish/flora/thumbnails/84735.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02658,
+      "candidato_forte": "Botânico/Folhagem",
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.3174,
+          "min_view": 0.3057,
+          "max_view": 0.331
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.29082,
+          "min_view": 0.28025,
+          "max_view": 0.30214
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.27047,
+          "min_view": 0.26066,
+          "max_view": 0.28018
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.26809,
+          "min_view": 0.25116,
+          "max_view": 0.28739
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.26347,
+          "min_view": 0.25814,
+          "max_view": 0.26708
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0424",
+      "ref": "524081",
+      "fornecedor": "Home Finish",
+      "colecao": "HF Texture III",
+      "card": "imagens/home-finish/hf-texture-iii/thumbnails/524081.jpg",
+      "views_top1": [
+        "Liso",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00248,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.30416,
+          "min_view": 0.29876,
+          "max_view": 0.30914
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.30168,
+          "min_view": 0.28616,
+          "max_view": 0.31381
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26392,
+          "min_view": 0.25341,
+          "max_view": 0.26994
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.25886,
+          "min_view": 0.25149,
+          "max_view": 0.26282
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25281,
+          "min_view": 0.23991,
+          "max_view": 0.26315
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0429",
+      "ref": "524024",
+      "fornecedor": "Home Finish",
+      "colecao": "HF Texture III",
+      "card": "imagens/home-finish/hf-texture-iii/thumbnails/524024.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02562,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.30982,
+          "min_view": 0.30909,
+          "max_view": 0.31101
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.2842,
+          "min_view": 0.27416,
+          "max_view": 0.29669
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.27527,
+          "min_view": 0.27184,
+          "max_view": 0.27927
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.27496,
+          "min_view": 0.27166,
+          "max_view": 0.27907
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.26942,
+          "min_view": 0.26565,
+          "max_view": 0.27178
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0434",
+      "ref": "656083",
+      "fornecedor": "Home Finish",
+      "colecao": "HF Texture III",
+      "card": "imagens/home-finish/hf-texture-iii/thumbnails/656083.jpg",
+      "views_top1": [
+        "Liso",
+        "Liso",
+        "Liso"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01703,
+      "candidato_forte": "Liso",
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.28599,
+          "min_view": 0.28102,
+          "max_view": 0.29105
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.26896,
+          "min_view": 0.26621,
+          "max_view": 0.27353
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.2662,
+          "min_view": 0.26345,
+          "max_view": 0.27071
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.25438,
+          "min_view": 0.25243,
+          "max_view": 0.25766
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.24248,
+          "min_view": 0.23904,
+          "max_view": 0.2469
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0440",
+      "ref": "656024",
+      "fornecedor": "Home Finish",
+      "colecao": "HF Texture III",
+      "card": "imagens/home-finish/hf-texture-iii/thumbnails/656024.jpg",
+      "views_top1": [
+        "Liso",
+        "Liso",
+        "Liso"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01687,
+      "candidato_forte": "Liso",
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.29659,
+          "min_view": 0.28836,
+          "max_view": 0.30184
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.27972,
+          "min_view": 0.27178,
+          "max_view": 0.28412
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26171,
+          "min_view": 0.26024,
+          "max_view": 0.26426
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25705,
+          "min_view": 0.25464,
+          "max_view": 0.26001
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.25441,
+          "min_view": 0.24885,
+          "max_view": 0.25758
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0445",
+      "ref": "656145",
+      "fornecedor": "Home Finish",
+      "colecao": "HF Texture III",
+      "card": "imagens/home-finish/hf-texture-iii/thumbnails/656145.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.00843,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.31199,
+          "min_view": 0.31037,
+          "max_view": 0.31381
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.30356,
+          "min_view": 0.29785,
+          "max_view": 0.31003
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.28166,
+          "min_view": 0.27874,
+          "max_view": 0.28374
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.27506,
+          "min_view": 0.2738,
+          "max_view": 0.2757
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.26949,
+          "min_view": 0.26677,
+          "max_view": 0.27233
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0450",
+      "ref": "656116",
+      "fornecedor": "Home Finish",
+      "colecao": "HF Texture III",
+      "card": "imagens/home-finish/hf-texture-iii/thumbnails/656116.jpg",
+      "views_top1": [
+        "Liso",
+        "Liso",
+        "Liso"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02347,
+      "candidato_forte": "Liso",
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.28121,
+          "min_view": 0.27895,
+          "max_view": 0.28385
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.25774,
+          "min_view": 0.25413,
+          "max_view": 0.26162
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.25373,
+          "min_view": 0.24956,
+          "max_view": 0.25774
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.24712,
+          "min_view": 0.24599,
+          "max_view": 0.24889
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.24188,
+          "min_view": 0.23885,
+          "max_view": 0.24375
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0451",
+      "ref": "MI201010",
+      "fornecedor": "Home Finish",
+      "colecao": "Memórias de Infância",
+      "card": "imagens/home-finish/memorias-de-infancia/thumbnails/MI201010.jpg",
+      "views_top1": [
+        "Temático",
+        "Temático",
+        "Temático"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02524,
+      "candidato_forte": "Temático",
+      "ranking_medio": [
+        {
+          "estilo": "Temático",
+          "score": 0.26878,
+          "min_view": 0.2559,
+          "max_view": 0.28584
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.24354,
+          "min_view": 0.23147,
+          "max_view": 0.26547
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.24228,
+          "min_view": 0.22982,
+          "max_view": 0.26368
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.23775,
+          "min_view": 0.22329,
+          "max_view": 0.26026
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.23106,
+          "min_view": 0.21959,
+          "max_view": 0.24516
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0459",
+      "ref": "MI201018",
+      "fornecedor": "Home Finish",
+      "colecao": "Memórias de Infância",
+      "card": "imagens/home-finish/memorias-de-infancia/thumbnails/MI201018.jpg",
+      "views_top1": [
+        "Temático",
+        "Temático",
+        "Temático"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.03037,
+      "candidato_forte": "Temático",
+      "ranking_medio": [
+        {
+          "estilo": "Temático",
+          "score": 0.25825,
+          "min_view": 0.24878,
+          "max_view": 0.26991
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.22788,
+          "min_view": 0.21901,
+          "max_view": 0.2327
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.22368,
+          "min_view": 0.21677,
+          "max_view": 0.23405
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.21553,
+          "min_view": 0.20092,
+          "max_view": 0.23491
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.20216,
+          "min_view": 0.19172,
+          "max_view": 0.21593
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0466",
+      "ref": "MI201025",
+      "fornecedor": "Home Finish",
+      "colecao": "Memórias de Infância",
+      "card": "imagens/home-finish/memorias-de-infancia/thumbnails/MI201025.jpg",
+      "views_top1": [
+        "Temático",
+        "Temático",
+        "Temático"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.04366,
+      "candidato_forte": "Temático",
+      "ranking_medio": [
+        {
+          "estilo": "Temático",
+          "score": 0.25412,
+          "min_view": 0.24854,
+          "max_view": 0.26448
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.21046,
+          "min_view": 0.20065,
+          "max_view": 0.22653
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.20943,
+          "min_view": 0.19443,
+          "max_view": 0.23415
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.20414,
+          "min_view": 0.18839,
+          "max_view": 0.2279
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.19768,
+          "min_view": 0.1822,
+          "max_view": 0.21951
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0474",
+      "ref": "MI201033",
+      "fornecedor": "Home Finish",
+      "colecao": "Memórias de Infância",
+      "card": "imagens/home-finish/memorias-de-infancia/thumbnails/MI201033.jpg",
+      "views_top1": [
+        "Floral",
+        "Floral",
+        "Floral"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01296,
+      "candidato_forte": "Floral",
+      "ranking_medio": [
+        {
+          "estilo": "Floral",
+          "score": 0.30717,
+          "min_view": 0.30266,
+          "max_view": 0.31159
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.29421,
+          "min_view": 0.28734,
+          "max_view": 0.30564
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27705,
+          "min_view": 0.27099,
+          "max_view": 0.28599
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.26961,
+          "min_view": 0.26105,
+          "max_view": 0.2796
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.26386,
+          "min_view": 0.25842,
+          "max_view": 0.26951
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0481",
+      "ref": "MI201040",
+      "fornecedor": "Home Finish",
+      "colecao": "Memórias de Infância",
+      "card": "imagens/home-finish/memorias-de-infancia/thumbnails/MI201040.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Floral",
+        "Floral"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00337,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Floral",
+          "score": 0.29717,
+          "min_view": 0.29289,
+          "max_view": 0.3022
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.2938,
+          "min_view": 0.29044,
+          "max_view": 0.30046
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.28574,
+          "min_view": 0.28355,
+          "max_view": 0.28991
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.26592,
+          "min_view": 0.25923,
+          "max_view": 0.27065
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.26431,
+          "min_view": 0.25908,
+          "max_view": 0.26902
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0489",
+      "ref": "MI201048",
+      "fornecedor": "Home Finish",
+      "colecao": "Memórias de Infância",
+      "card": "imagens/home-finish/memorias-de-infancia/thumbnails/MI201048.jpg",
+      "views_top1": [
+        "Floral",
+        "Floral",
+        "Floral"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.0316,
+      "candidato_forte": "Floral",
+      "ranking_medio": [
+        {
+          "estilo": "Floral",
+          "score": 0.2902,
+          "min_view": 0.28727,
+          "max_view": 0.29559
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.2586,
+          "min_view": 0.25599,
+          "max_view": 0.26326
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.25759,
+          "min_view": 0.25571,
+          "max_view": 0.25914
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.25534,
+          "min_view": 0.25391,
+          "max_view": 0.25764
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.25411,
+          "min_view": 0.2526,
+          "max_view": 0.25666
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0490",
+      "ref": "83561",
+      "fornecedor": "Home Finish",
+      "colecao": "Natureza Lúdica",
+      "card": "imagens/home-finish/natureza-ludica/thumbnails/83561.jpg",
+      "views_top1": [
+        "Temático",
+        "Temático",
+        "Temático"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02165,
+      "candidato_forte": "Temático",
+      "ranking_medio": [
+        {
+          "estilo": "Temático",
+          "score": 0.23193,
+          "min_view": 0.23029,
+          "max_view": 0.23326
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.21028,
+          "min_view": 0.20926,
+          "max_view": 0.2123
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.19228,
+          "min_view": 0.1827,
+          "max_view": 0.2022
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.18884,
+          "min_view": 0.17457,
+          "max_view": 0.19723
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.18275,
+          "min_view": 0.17841,
+          "max_view": 0.18824
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0498",
+      "ref": "83646",
+      "fornecedor": "Home Finish",
+      "colecao": "Natureza Lúdica",
+      "card": "imagens/home-finish/natureza-ludica/thumbnails/83646.jpg",
+      "views_top1": [
+        "Temático",
+        "Temático",
+        "Temático"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.06381,
+      "candidato_forte": "Temático",
+      "ranking_medio": [
+        {
+          "estilo": "Temático",
+          "score": 0.28006,
+          "min_view": 0.27385,
+          "max_view": 0.28838
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.21625,
+          "min_view": 0.20774,
+          "max_view": 0.22641
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.20689,
+          "min_view": 0.19865,
+          "max_view": 0.21608
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.20624,
+          "min_view": 0.20018,
+          "max_view": 0.21069
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.19776,
+          "min_view": 0.18742,
+          "max_view": 0.20774
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0506",
+      "ref": "83721",
+      "fornecedor": "Home Finish",
+      "colecao": "Natureza Lúdica",
+      "card": "imagens/home-finish/natureza-ludica/thumbnails/83721.jpg",
+      "views_top1": [
+        "Floral",
+        "Floral",
+        "Floral"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01374,
+      "candidato_forte": "Floral",
+      "ranking_medio": [
+        {
+          "estilo": "Floral",
+          "score": 0.28837,
+          "min_view": 0.28483,
+          "max_view": 0.2924
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27463,
+          "min_view": 0.26858,
+          "max_view": 0.27824
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.26684,
+          "min_view": 0.26369,
+          "max_view": 0.26923
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.26116,
+          "min_view": 0.25607,
+          "max_view": 0.2676
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.25954,
+          "min_view": 0.25286,
+          "max_view": 0.26304
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0513",
+      "ref": "83776",
+      "fornecedor": "Home Finish",
+      "colecao": "Natureza Lúdica",
+      "card": "imagens/home-finish/natureza-ludica/thumbnails/83776.jpg",
+      "views_top1": [
+        "Floral",
+        "Floral",
+        "Floral"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01232,
+      "candidato_forte": "Floral",
+      "ranking_medio": [
+        {
+          "estilo": "Floral",
+          "score": 0.27826,
+          "min_view": 0.27413,
+          "max_view": 0.28421
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26594,
+          "min_view": 0.26337,
+          "max_view": 0.27104
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.25726,
+          "min_view": 0.24994,
+          "max_view": 0.26145
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.24901,
+          "min_view": 0.24461,
+          "max_view": 0.25612
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.24734,
+          "min_view": 0.24134,
+          "max_view": 0.25735
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0521",
+      "ref": "83851",
+      "fornecedor": "Home Finish",
+      "colecao": "Natureza Lúdica",
+      "card": "imagens/home-finish/natureza-ludica/thumbnails/83851.jpg",
+      "views_top1": [
+        "Temático",
+        "Temático",
+        "Temático"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.03525,
+      "candidato_forte": "Temático",
+      "ranking_medio": [
+        {
+          "estilo": "Temático",
+          "score": 0.25274,
+          "min_view": 0.24928,
+          "max_view": 0.25923
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.21749,
+          "min_view": 0.21187,
+          "max_view": 0.22206
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.20822,
+          "min_view": 0.20253,
+          "max_view": 0.2113
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.19795,
+          "min_view": 0.19083,
+          "max_view": 0.20563
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.19422,
+          "min_view": 0.18618,
+          "max_view": 0.20837
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0529",
+      "ref": "83936",
+      "fornecedor": "Home Finish",
+      "colecao": "Natureza Lúdica",
+      "card": "imagens/home-finish/natureza-ludica/thumbnails/83936.jpg",
+      "views_top1": [
+        "Temático",
+        "Floral",
+        "Temático"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00291,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Temático",
+          "score": 0.24594,
+          "min_view": 0.24161,
+          "max_view": 0.24863
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.24303,
+          "min_view": 0.23743,
+          "max_view": 0.24791
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.21909,
+          "min_view": 0.20829,
+          "max_view": 0.22556
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.21674,
+          "min_view": 0.21342,
+          "max_view": 0.21976
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.21629,
+          "min_view": 0.21452,
+          "max_view": 0.21901
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0530",
+      "ref": "602773",
+      "fornecedor": "Home Finish",
+      "colecao": "Passeio no Campo",
+      "card": "imagens/home-finish/passeio-no-campo/thumbnails/602773.jpg",
+      "views_top1": [
+        "Temático",
+        "Temático",
+        "Temático"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.0156,
+      "candidato_forte": "Temático",
+      "ranking_medio": [
+        {
+          "estilo": "Temático",
+          "score": 0.25957,
+          "min_view": 0.25569,
+          "max_view": 0.26154
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.24397,
+          "min_view": 0.23338,
+          "max_view": 0.25491
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.2399,
+          "min_view": 0.23944,
+          "max_view": 0.24029
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.22574,
+          "min_view": 0.21757,
+          "max_view": 0.23709
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.22518,
+          "min_view": 0.21628,
+          "max_view": 0.23597
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0542",
+      "ref": "602254",
+      "fornecedor": "Home Finish",
+      "colecao": "Passeio no Campo",
+      "card": "imagens/home-finish/passeio-no-campo/thumbnails/602254.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Floral",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00427,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.28967,
+          "min_view": 0.27848,
+          "max_view": 0.2968
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.2854,
+          "min_view": 0.28051,
+          "max_view": 0.28858
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.25442,
+          "min_view": 0.24646,
+          "max_view": 0.26004
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.25083,
+          "min_view": 0.24357,
+          "max_view": 0.26025
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.24391,
+          "min_view": 0.23783,
+          "max_view": 0.24863
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0554",
+      "ref": "602681",
+      "fornecedor": "Home Finish",
+      "colecao": "Passeio no Campo",
+      "card": "imagens/home-finish/passeio-no-campo/thumbnails/602681.jpg",
+      "views_top1": [
+        "Temático",
+        "Temático",
+        "Temático"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02776,
+      "candidato_forte": "Temático",
+      "ranking_medio": [
+        {
+          "estilo": "Temático",
+          "score": 0.31346,
+          "min_view": 0.31076,
+          "max_view": 0.31508
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.2857,
+          "min_view": 0.2796,
+          "max_view": 0.2898
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.27209,
+          "min_view": 0.26229,
+          "max_view": 0.27904
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.26709,
+          "min_view": 0.26467,
+          "max_view": 0.26856
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.25913,
+          "min_view": 0.25655,
+          "max_view": 0.26069
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0565",
+      "ref": "602728",
+      "fornecedor": "Home Finish",
+      "colecao": "Passeio no Campo",
+      "card": "imagens/home-finish/passeio-no-campo/thumbnails/602728.jpg",
+      "views_top1": [
+        "Temático",
+        "Temático",
+        "Temático"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02326,
+      "candidato_forte": "Temático",
+      "ranking_medio": [
+        {
+          "estilo": "Temático",
+          "score": 0.2708,
+          "min_view": 0.26644,
+          "max_view": 0.27689
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.24754,
+          "min_view": 0.24399,
+          "max_view": 0.25187
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.23885,
+          "min_view": 0.22782,
+          "max_view": 0.24955
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.23396,
+          "min_view": 0.22576,
+          "max_view": 0.24934
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.22443,
+          "min_view": 0.22173,
+          "max_view": 0.22711
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0577",
+      "ref": "602582",
+      "fornecedor": "Home Finish",
+      "colecao": "Passeio no Campo",
+      "card": "imagens/home-finish/passeio-no-campo/thumbnails/602582.jpg",
+      "views_top1": [
+        "Floral",
+        "Floral",
+        "Floral"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01135,
+      "candidato_forte": "Floral",
+      "ranking_medio": [
+        {
+          "estilo": "Floral",
+          "score": 0.30337,
+          "min_view": 0.29966,
+          "max_view": 0.3067
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.29202,
+          "min_view": 0.2908,
+          "max_view": 0.29402
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26599,
+          "min_view": 0.26064,
+          "max_view": 0.27186
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.26576,
+          "min_view": 0.25286,
+          "max_view": 0.27222
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.26424,
+          "min_view": 0.26,
+          "max_view": 0.26682
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0589",
+      "ref": "602704",
+      "fornecedor": "Home Finish",
+      "colecao": "Passeio no Campo",
+      "card": "imagens/home-finish/passeio-no-campo/thumbnails/602704.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00058,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.2856,
+          "min_view": 0.27765,
+          "max_view": 0.29574
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.28502,
+          "min_view": 0.27983,
+          "max_view": 0.29092
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27501,
+          "min_view": 0.26403,
+          "max_view": 0.28605
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.26697,
+          "min_view": 0.26089,
+          "max_view": 0.2723
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.2666,
+          "min_view": 0.26267,
+          "max_view": 0.26907
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0590",
+      "ref": "85527",
+      "fornecedor": "Home Finish",
+      "colecao": "Provence",
+      "card": "imagens/home-finish/provence/thumbnails/85527.jpg",
+      "views_top1": [
+        "Liso",
+        "Floral",
+        "Floral"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00194,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Floral",
+          "score": 0.30321,
+          "min_view": 0.29369,
+          "max_view": 0.31156
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.30127,
+          "min_view": 0.29148,
+          "max_view": 0.31116
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.30066,
+          "min_view": 0.29019,
+          "max_view": 0.30754
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.28884,
+          "min_view": 0.28151,
+          "max_view": 0.29512
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.28734,
+          "min_view": 0.28402,
+          "max_view": 0.29366
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0603",
+      "ref": "85756",
+      "fornecedor": "Home Finish",
+      "colecao": "Provence",
+      "card": "imagens/home-finish/provence/thumbnails/85756.jpg",
+      "views_top1": [
+        "Liso",
+        "Liso",
+        "Liso"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01909,
+      "candidato_forte": "Liso",
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.30136,
+          "min_view": 0.29415,
+          "max_view": 0.30532
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.28227,
+          "min_view": 0.27586,
+          "max_view": 0.28638
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.28049,
+          "min_view": 0.27885,
+          "max_view": 0.28192
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.27418,
+          "min_view": 0.27068,
+          "max_view": 0.27623
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.27363,
+          "min_view": 0.27038,
+          "max_view": 0.27714
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0615",
+      "ref": "86098",
+      "fornecedor": "Home Finish",
+      "colecao": "Provence",
+      "card": "imagens/home-finish/provence/thumbnails/86098.jpg",
+      "views_top1": [
+        "Floral",
+        "Floral",
+        "Floral"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.00364,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Floral",
+          "score": 0.28103,
+          "min_view": 0.2732,
+          "max_view": 0.29658
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.27739,
+          "min_view": 0.26762,
+          "max_view": 0.29236
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.27214,
+          "min_view": 0.26559,
+          "max_view": 0.28376
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27019,
+          "min_view": 0.2632,
+          "max_view": 0.27883
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.26648,
+          "min_view": 0.25245,
+          "max_view": 0.29009
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0628",
+      "ref": "85749",
+      "fornecedor": "Home Finish",
+      "colecao": "Provence",
+      "card": "imagens/home-finish/provence/thumbnails/85749.jpg",
+      "views_top1": [
+        "Liso",
+        "Floral",
+        "Liso"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.0015,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.30213,
+          "min_view": 0.30006,
+          "max_view": 0.30626
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.30063,
+          "min_view": 0.29919,
+          "max_view": 0.30151
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.29123,
+          "min_view": 0.28449,
+          "max_view": 0.30423
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.28366,
+          "min_view": 0.28099,
+          "max_view": 0.28806
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.27812,
+          "min_view": 0.27059,
+          "max_view": 0.28749
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0640",
+      "ref": "85633",
+      "fornecedor": "Home Finish",
+      "colecao": "Provence",
+      "card": "imagens/home-finish/provence/thumbnails/85633.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Botânico/Folhagem"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.00938,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.31231,
+          "min_view": 0.30314,
+          "max_view": 0.32334
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.30293,
+          "min_view": 0.29106,
+          "max_view": 0.3114
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.29743,
+          "min_view": 0.29031,
+          "max_view": 0.30215
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.2901,
+          "min_view": 0.28599,
+          "max_view": 0.29756
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.289,
+          "min_view": 0.28294,
+          "max_view": 0.29251
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0653",
+      "ref": "85667",
+      "fornecedor": "Home Finish",
+      "colecao": "Provence",
+      "card": "imagens/home-finish/provence/thumbnails/85667.jpg",
+      "views_top1": [
+        "Listrado",
+        "Listrado",
+        "Listrado"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.04392,
+      "candidato_forte": "Listrado",
+      "ranking_medio": [
+        {
+          "estilo": "Listrado",
+          "score": 0.33564,
+          "min_view": 0.31602,
+          "max_view": 0.34714
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.29172,
+          "min_view": 0.28369,
+          "max_view": 0.29613
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.28343,
+          "min_view": 0.27288,
+          "max_view": 0.29267
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.27254,
+          "min_view": 0.26441,
+          "max_view": 0.27686
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.27107,
+          "min_view": 0.26564,
+          "max_view": 0.2757
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0654",
+      "ref": "88597",
+      "fornecedor": "Home Finish",
+      "colecao": "Tartan",
+      "card": "imagens/home-finish/tartan/thumbnails/88597.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Xadrez"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.07057,
+      "candidato_forte": "Xadrez",
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.34753,
+          "min_view": 0.33053,
+          "max_view": 0.3632
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27695,
+          "min_view": 0.26445,
+          "max_view": 0.28784
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.27258,
+          "min_view": 0.25307,
+          "max_view": 0.29807
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.26351,
+          "min_view": 0.25348,
+          "max_view": 0.27643
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.25891,
+          "min_view": 0.24104,
+          "max_view": 0.27664
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0667",
+      "ref": "88726",
+      "fornecedor": "Home Finish",
+      "colecao": "Tartan",
+      "card": "imagens/home-finish/tartan/thumbnails/88726.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Xadrez"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.06982,
+      "candidato_forte": "Xadrez",
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.35979,
+          "min_view": 0.35583,
+          "max_view": 0.3619
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.28996,
+          "min_view": 0.28431,
+          "max_view": 0.293
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.27905,
+          "min_view": 0.26662,
+          "max_view": 0.28909
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.26704,
+          "min_view": 0.26158,
+          "max_view": 0.27441
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.26605,
+          "min_view": 0.25848,
+          "max_view": 0.27224
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0680",
+      "ref": "88856",
+      "fornecedor": "Home Finish",
+      "colecao": "Tartan",
+      "card": "imagens/home-finish/tartan/thumbnails/88856.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Xadrez"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.07841,
+      "candidato_forte": "Xadrez",
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.37497,
+          "min_view": 0.37283,
+          "max_view": 0.37689
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.29656,
+          "min_view": 0.28581,
+          "max_view": 0.30207
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.27252,
+          "min_view": 0.2592,
+          "max_view": 0.28356
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.2635,
+          "min_view": 0.26016,
+          "max_view": 0.26827
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.25319,
+          "min_view": 0.24299,
+          "max_view": 0.2587
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0693",
+      "ref": "88986",
+      "fornecedor": "Home Finish",
+      "colecao": "Tartan",
+      "card": "imagens/home-finish/tartan/thumbnails/88986.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Xadrez"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.06009,
+      "candidato_forte": "Xadrez",
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.35884,
+          "min_view": 0.35052,
+          "max_view": 0.36353
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.29875,
+          "min_view": 0.29728,
+          "max_view": 0.30057
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.2831,
+          "min_view": 0.27928,
+          "max_view": 0.28682
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26947,
+          "min_view": 0.26416,
+          "max_view": 0.27514
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.26681,
+          "min_view": 0.26271,
+          "max_view": 0.27029
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0706",
+      "ref": "89112",
+      "fornecedor": "Home Finish",
+      "colecao": "Tartan",
+      "card": "imagens/home-finish/tartan/thumbnails/89112.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Xadrez"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.07308,
+      "candidato_forte": "Xadrez",
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.35238,
+          "min_view": 0.3492,
+          "max_view": 0.35618
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.2793,
+          "min_view": 0.27415,
+          "max_view": 0.28521
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.2635,
+          "min_view": 0.25024,
+          "max_view": 0.27576
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.26327,
+          "min_view": 0.25203,
+          "max_view": 0.27253
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.26054,
+          "min_view": 0.2514,
+          "max_view": 0.27183
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0719",
+      "ref": "89235",
+      "fornecedor": "Home Finish",
+      "colecao": "Tartan",
+      "card": "imagens/home-finish/tartan/thumbnails/89235.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Xadrez"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.08358,
+      "candidato_forte": "Xadrez",
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.35071,
+          "min_view": 0.34766,
+          "max_view": 0.3552
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26712,
+          "min_view": 0.26342,
+          "max_view": 0.27161
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.24757,
+          "min_view": 0.24163,
+          "max_view": 0.25293
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.24446,
+          "min_view": 0.23712,
+          "max_view": 0.25577
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.24308,
+          "min_view": 0.2373,
+          "max_view": 0.25277
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0001",
+      "ref": "AD300604R",
+      "fornecedor": "Kantai",
+      "colecao": "Aditare 3",
+      "card": "imagens/kantai/aditare-3/thumbnails/AD300604R.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Xadrez",
+        "Textura"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00099,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.27606,
+          "min_view": 0.25473,
+          "max_view": 0.30364
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.27506,
+          "min_view": 0.26537,
+          "max_view": 0.28292
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.27242,
+          "min_view": 0.25247,
+          "max_view": 0.29721
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.27238,
+          "min_view": 0.24663,
+          "max_view": 0.29359
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26932,
+          "min_view": 0.25294,
+          "max_view": 0.29049
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0017",
+      "ref": "AD300004R",
+      "fornecedor": "Kantai",
+      "colecao": "Aditare 3",
+      "card": "imagens/kantai/aditare-3/thumbnails/AD300004R.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Liso",
+        "Textura"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00226,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.27279,
+          "min_view": 0.25799,
+          "max_view": 0.29289
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27054,
+          "min_view": 0.26464,
+          "max_view": 0.27366
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.26562,
+          "min_view": 0.25934,
+          "max_view": 0.27781
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.25693,
+          "min_view": 0.25152,
+          "max_view": 0.25988
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.25693,
+          "min_view": 0.24701,
+          "max_view": 0.2676
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0982",
+      "ref": "AD300104R",
+      "fornecedor": "Kantai",
+      "colecao": "Aditare 3",
+      "card": "imagens/kantai/aditare-3/thumbnails/AD300104R.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Liso",
+        "Textura"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.007,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.2747,
+          "min_view": 0.26227,
+          "max_view": 0.29651
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.2677,
+          "min_view": 0.25951,
+          "max_view": 0.27944
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.26586,
+          "min_view": 0.26016,
+          "max_view": 0.2752
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.25804,
+          "min_view": 0.24842,
+          "max_view": 0.26987
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25734,
+          "min_view": 0.24761,
+          "max_view": 0.27135
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0998",
+      "ref": "AD300210R",
+      "fornecedor": "Kantai",
+      "colecao": "Aditare 3",
+      "card": "imagens/kantai/aditare-3/thumbnails/AD300210R.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.03603,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28731,
+          "min_view": 0.2828,
+          "max_view": 0.29236
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25129,
+          "min_view": 0.24309,
+          "max_view": 0.26431
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.24836,
+          "min_view": 0.24576,
+          "max_view": 0.25062
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.24576,
+          "min_view": 0.23327,
+          "max_view": 0.25354
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.23966,
+          "min_view": 0.23036,
+          "max_view": 0.25262
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1014",
+      "ref": "AD300404R",
+      "fornecedor": "Kantai",
+      "colecao": "Aditare 3",
+      "card": "imagens/kantai/aditare-3/thumbnails/AD300404R.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02454,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28178,
+          "min_view": 0.26676,
+          "max_view": 0.29581
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.25723,
+          "min_view": 0.24782,
+          "max_view": 0.26724
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.25608,
+          "min_view": 0.25353,
+          "max_view": 0.25902
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25263,
+          "min_view": 0.24014,
+          "max_view": 0.26457
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.25124,
+          "min_view": 0.23321,
+          "max_view": 0.26994
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1030",
+      "ref": "AD300603R",
+      "fornecedor": "Kantai",
+      "colecao": "Aditare 3",
+      "card": "imagens/kantai/aditare-3/thumbnails/AD300603R.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Xadrez",
+        "Liso"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00087,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.27942,
+          "min_view": 0.25837,
+          "max_view": 0.2946
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.27855,
+          "min_view": 0.27368,
+          "max_view": 0.28281
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.27569,
+          "min_view": 0.24845,
+          "max_view": 0.29103
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.27487,
+          "min_view": 0.26427,
+          "max_view": 0.29121
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.26998,
+          "min_view": 0.25759,
+          "max_view": 0.28669
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0051",
+      "ref": "CR333704R",
+      "fornecedor": "Kantai",
+      "colecao": "Criativo 3",
+      "card": "imagens/kantai/criativo-3/thumbnails/CR333704R.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Liso",
+        "Textura"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00504,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.28237,
+          "min_view": 0.27551,
+          "max_view": 0.2955
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.27733,
+          "min_view": 0.26733,
+          "max_view": 0.28675
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.26894,
+          "min_view": 0.25185,
+          "max_view": 0.29762
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.26774,
+          "min_view": 0.25674,
+          "max_view": 0.28666
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.2668,
+          "min_view": 0.2558,
+          "max_view": 0.2821
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0069",
+      "ref": "CR333722R",
+      "fornecedor": "Kantai",
+      "colecao": "Criativo 3",
+      "card": "imagens/kantai/criativo-3/thumbnails/CR333722R.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01472,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.29085,
+          "min_view": 0.27836,
+          "max_view": 0.30358
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27613,
+          "min_view": 0.26562,
+          "max_view": 0.28185
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.26558,
+          "min_view": 0.2601,
+          "max_view": 0.26925
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.26554,
+          "min_view": 0.25095,
+          "max_view": 0.28061
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.2645,
+          "min_view": 0.24714,
+          "max_view": 0.28158
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1041",
+      "ref": "CR333739R",
+      "fornecedor": "Kantai",
+      "colecao": "Criativo 3",
+      "card": "imagens/kantai/criativo-3/thumbnails/CR333739R.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02304,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28201,
+          "min_view": 0.27573,
+          "max_view": 0.29135
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.25897,
+          "min_view": 0.25238,
+          "max_view": 0.2706
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.25764,
+          "min_view": 0.23517,
+          "max_view": 0.27426
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.25263,
+          "min_view": 0.23769,
+          "max_view": 0.27568
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25078,
+          "min_view": 0.24653,
+          "max_view": 0.25463
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1059",
+      "ref": "CR333757R",
+      "fornecedor": "Kantai",
+      "colecao": "Criativo 3",
+      "card": "imagens/kantai/criativo-3/thumbnails/CR333757R.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Xadrez",
+        "Textura"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00828,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28341,
+          "min_view": 0.26646,
+          "max_view": 0.30965
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.27513,
+          "min_view": 0.27157,
+          "max_view": 0.27876
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26984,
+          "min_view": 0.25366,
+          "max_view": 0.28524
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.26524,
+          "min_view": 0.24807,
+          "max_view": 0.27587
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.26237,
+          "min_view": 0.25376,
+          "max_view": 0.27809
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1076",
+      "ref": "CR333774R",
+      "fornecedor": "Kantai",
+      "colecao": "Criativo 3",
+      "card": "imagens/kantai/criativo-3/thumbnails/CR333774R.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.03249,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28713,
+          "min_view": 0.27156,
+          "max_view": 0.30217
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.25464,
+          "min_view": 0.248,
+          "max_view": 0.26426
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.25245,
+          "min_view": 0.24918,
+          "max_view": 0.25885
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25227,
+          "min_view": 0.24478,
+          "max_view": 0.26575
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.25174,
+          "min_view": 0.24799,
+          "max_view": 0.25499
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1094",
+      "ref": "CR333701R",
+      "fornecedor": "Kantai",
+      "colecao": "Criativo 3",
+      "card": "imagens/kantai/criativo-3/thumbnails/CR333701R.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Liso",
+        "Textura"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00316,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.25494,
+          "min_view": 0.23182,
+          "max_view": 0.28333
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.25179,
+          "min_view": 0.22648,
+          "max_view": 0.28387
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.2452,
+          "min_view": 0.23981,
+          "max_view": 0.25374
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.23958,
+          "min_view": 0.21122,
+          "max_view": 0.25931
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.23751,
+          "min_view": 0.21138,
+          "max_view": 0.26414
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0026",
+      "ref": "PT501103",
+      "fornecedor": "Kantai",
+      "colecao": "Poet Chart 5",
+      "card": "imagens/kantai/poet-chart-5/thumbnails/PT501103.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Botânico/Folhagem",
+        "Textura"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00328,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.27931,
+          "min_view": 0.27436,
+          "max_view": 0.28531
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.27602,
+          "min_view": 0.25918,
+          "max_view": 0.30162
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.25142,
+          "min_view": 0.24085,
+          "max_view": 0.26909
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25076,
+          "min_view": 0.24154,
+          "max_view": 0.26696
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.24829,
+          "min_view": 0.24058,
+          "max_view": 0.26267
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0041",
+      "ref": "PT500805",
+      "fornecedor": "Kantai",
+      "colecao": "Poet Chart 5",
+      "card": "imagens/kantai/poet-chart-5/thumbnails/PT500805.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02578,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28342,
+          "min_view": 0.27243,
+          "max_view": 0.29955
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.25765,
+          "min_view": 0.24624,
+          "max_view": 0.272
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.25698,
+          "min_view": 0.2464,
+          "max_view": 0.26562
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.25694,
+          "min_view": 0.25253,
+          "max_view": 0.25982
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.25498,
+          "min_view": 0.24733,
+          "max_view": 0.2654
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1101",
+      "ref": "PT500602",
+      "fornecedor": "Kantai",
+      "colecao": "Poet Chart 5",
+      "card": "imagens/kantai/poet-chart-5/thumbnails/PT500602.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Listrado"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00703,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28366,
+          "min_view": 0.26945,
+          "max_view": 0.30153
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.27663,
+          "min_view": 0.25697,
+          "max_view": 0.3032
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.25923,
+          "min_view": 0.25155,
+          "max_view": 0.26727
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.25665,
+          "min_view": 0.24419,
+          "max_view": 0.28117
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.24709,
+          "min_view": 0.23018,
+          "max_view": 0.25641
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1116",
+      "ref": "PT500308",
+      "fornecedor": "Kantai",
+      "colecao": "Poet Chart 5",
+      "card": "imagens/kantai/poet-chart-5/thumbnails/PT500308.jpg",
+      "views_top1": [
+        "Listrado",
+        "Textura",
+        "Listrado"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00054,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.30085,
+          "min_view": 0.28863,
+          "max_view": 0.31784
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.3003,
+          "min_view": 0.29027,
+          "max_view": 0.31805
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.28379,
+          "min_view": 0.2736,
+          "max_view": 0.29109
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.27522,
+          "min_view": 0.25386,
+          "max_view": 0.29017
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.27456,
+          "min_view": 0.26858,
+          "max_view": 0.28127
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1132",
+      "ref": "PT500109",
+      "fornecedor": "Kantai",
+      "colecao": "Poet Chart 5",
+      "card": "imagens/kantai/poet-chart-5/thumbnails/PT500109.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02969,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.29407,
+          "min_view": 0.29091,
+          "max_view": 0.29626
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.26438,
+          "min_view": 0.25606,
+          "max_view": 0.27105
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26426,
+          "min_view": 0.25659,
+          "max_view": 0.27001
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.26044,
+          "min_view": 0.24338,
+          "max_view": 0.2763
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.24966,
+          "min_view": 0.24519,
+          "max_view": 0.25453
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1147",
+      "ref": "PT500001",
+      "fornecedor": "Kantai",
+      "colecao": "Poet Chart 5",
+      "card": "imagens/kantai/poet-chart-5/thumbnails/PT500001.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Liso",
+        "Textura"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.0079,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28995,
+          "min_view": 0.275,
+          "max_view": 0.31136
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.28206,
+          "min_view": 0.27577,
+          "max_view": 0.29028
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.27868,
+          "min_view": 0.26924,
+          "max_view": 0.29543
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.27501,
+          "min_view": 0.2666,
+          "max_view": 0.28686
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.27096,
+          "min_view": 0.26231,
+          "max_view": 0.28106
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0076",
+      "ref": "9S160106",
+      "fornecedor": "Kantai",
+      "colecao": "Space IX",
+      "card": "imagens/kantai/space-ix/thumbnails/9S160106.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01704,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.29678,
+          "min_view": 0.28341,
+          "max_view": 0.30522
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27974,
+          "min_view": 0.26529,
+          "max_view": 0.30084
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.27422,
+          "min_view": 0.24384,
+          "max_view": 0.30248
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.26791,
+          "min_view": 0.25562,
+          "max_view": 0.28011
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.26315,
+          "min_view": 0.24418,
+          "max_view": 0.27909
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0092",
+      "ref": "9S161101",
+      "fornecedor": "Kantai",
+      "colecao": "Space IX",
+      "card": "imagens/kantai/space-ix/thumbnails/9S161101.jpg",
+      "views_top1": [
+        "Botânico/Folhagem",
+        "Liso",
+        "Textura"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00278,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.28436,
+          "min_view": 0.2756,
+          "max_view": 0.30177
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.28158,
+          "min_view": 0.26746,
+          "max_view": 0.30448
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.26554,
+          "min_view": 0.24889,
+          "max_view": 0.28986
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.26257,
+          "min_view": 0.25171,
+          "max_view": 0.27179
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26253,
+          "min_view": 0.25343,
+          "max_view": 0.27211
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1156",
+      "ref": "9S160802",
+      "fornecedor": "Kantai",
+      "colecao": "Space IX",
+      "card": "imagens/kantai/space-ix/thumbnails/9S160802.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02139,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.30179,
+          "min_view": 0.30015,
+          "max_view": 0.30378
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.28039,
+          "min_view": 0.27871,
+          "max_view": 0.28166
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.27754,
+          "min_view": 0.27128,
+          "max_view": 0.28337
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.27129,
+          "min_view": 0.26589,
+          "max_view": 0.2805
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26214,
+          "min_view": 0.25841,
+          "max_view": 0.2677
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1172",
+      "ref": "9S160602",
+      "fornecedor": "Kantai",
+      "colecao": "Space IX",
+      "card": "imagens/kantai/space-ix/thumbnails/9S160602.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01633,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.30081,
+          "min_view": 0.28921,
+          "max_view": 0.31517
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.28448,
+          "min_view": 0.27341,
+          "max_view": 0.29827
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.26844,
+          "min_view": 0.24924,
+          "max_view": 0.28618
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.26581,
+          "min_view": 0.25727,
+          "max_view": 0.27896
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.26351,
+          "min_view": 0.25435,
+          "max_view": 0.2707
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1189",
+      "ref": "9S160214",
+      "fornecedor": "Kantai",
+      "colecao": "Space IX",
+      "card": "imagens/kantai/space-ix/thumbnails/9S160214.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Liso"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00278,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.27259,
+          "min_view": 0.27055,
+          "max_view": 0.27427
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26982,
+          "min_view": 0.26079,
+          "max_view": 0.2805
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.26148,
+          "min_view": 0.25021,
+          "max_view": 0.27959
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.24802,
+          "min_view": 0.24222,
+          "max_view": 0.25797
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.24787,
+          "min_view": 0.24416,
+          "max_view": 0.25209
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1205",
+      "ref": "9S160107",
+      "fornecedor": "Kantai",
+      "colecao": "Space IX",
+      "card": "imagens/kantai/space-ix/thumbnails/9S160107.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02097,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28952,
+          "min_view": 0.27673,
+          "max_view": 0.29995
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26855,
+          "min_view": 0.25493,
+          "max_view": 0.28469
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.2654,
+          "min_view": 0.23978,
+          "max_view": 0.29597
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.26242,
+          "min_view": 0.24816,
+          "max_view": 0.27849
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.25227,
+          "min_view": 0.23612,
+          "max_view": 0.26804
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0833",
+      "ref": "BA0001",
+      "fornecedor": "Wiler",
+      "colecao": "Bambine",
+      "card": "imagens/wiler/bambine/thumbnails/BA0001.jpg",
+      "views_top1": [
+        "Temático",
+        "Temático",
+        "Temático"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.03712,
+      "candidato_forte": "Temático",
+      "ranking_medio": [
+        {
+          "estilo": "Temático",
+          "score": 0.26895,
+          "min_view": 0.24825,
+          "max_view": 0.28181
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.23183,
+          "min_view": 0.20465,
+          "max_view": 0.25222
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.21602,
+          "min_view": 0.1864,
+          "max_view": 0.23405
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.21559,
+          "min_view": 0.19657,
+          "max_view": 0.22818
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.21203,
+          "min_view": 0.18952,
+          "max_view": 0.23099
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0843",
+      "ref": "BA0011",
+      "fornecedor": "Wiler",
+      "colecao": "Bambine",
+      "card": "imagens/wiler/bambine/thumbnails/BA0011.jpg",
+      "views_top1": [
+        "Liso",
+        "Liso",
+        "Liso"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.0291,
+      "candidato_forte": "Liso",
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.27462,
+          "min_view": 0.26344,
+          "max_view": 0.2849
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.24553,
+          "min_view": 0.24191,
+          "max_view": 0.24869
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.23266,
+          "min_view": 0.22418,
+          "max_view": 0.24139
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.22924,
+          "min_view": 0.2179,
+          "max_view": 0.23524
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.22886,
+          "min_view": 0.22347,
+          "max_view": 0.23372
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0853",
+      "ref": "BA0021",
+      "fornecedor": "Wiler",
+      "colecao": "Bambine",
+      "card": "imagens/wiler/bambine/thumbnails/BA0021.jpg",
+      "views_top1": [
+        "Temático",
+        "Temático",
+        "Temático"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.04615,
+      "candidato_forte": "Temático",
+      "ranking_medio": [
+        {
+          "estilo": "Temático",
+          "score": 0.27224,
+          "min_view": 0.26279,
+          "max_view": 0.28147
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.22609,
+          "min_view": 0.21601,
+          "max_view": 0.24229
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.21549,
+          "min_view": 0.2095,
+          "max_view": 0.22252
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.21342,
+          "min_view": 0.20694,
+          "max_view": 0.22253
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.21,
+          "min_view": 0.203,
+          "max_view": 0.22003
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0862",
+      "ref": "BA0030",
+      "fornecedor": "Wiler",
+      "colecao": "Bambine",
+      "card": "imagens/wiler/bambine/thumbnails/BA0030.jpg",
+      "views_top1": [
+        "Listrado",
+        "Listrado",
+        "Liso"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00683,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Listrado",
+          "score": 0.28023,
+          "min_view": 0.27067,
+          "max_view": 0.28845
+        },
+        {
+          "estilo": "Botânico/Folhagem",
+          "score": 0.2734,
+          "min_view": 0.26991,
+          "max_view": 0.27879
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27091,
+          "min_view": 0.26687,
+          "max_view": 0.27316
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.25102,
+          "min_view": 0.2451,
+          "max_view": 0.25635
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.24954,
+          "min_view": 0.24523,
+          "max_view": 0.25595
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0872",
+      "ref": "BA0040",
+      "fornecedor": "Wiler",
+      "colecao": "Bambine",
+      "card": "imagens/wiler/bambine/thumbnails/BA0040.jpg",
+      "views_top1": [
+        "Liso",
+        "Liso",
+        "Liso"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01378,
+      "candidato_forte": "Liso",
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.28362,
+          "min_view": 0.27211,
+          "max_view": 0.29322
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.26983,
+          "min_view": 0.26104,
+          "max_view": 0.28073
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26685,
+          "min_view": 0.26037,
+          "max_view": 0.27706
+        },
+        {
+          "estilo": "Temático",
+          "score": 0.25315,
+          "min_view": 0.25164,
+          "max_view": 0.25459
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.2463,
+          "min_view": 0.24019,
+          "max_view": 0.25612
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0882",
+      "ref": "BA0050",
+      "fornecedor": "Wiler",
+      "colecao": "Bambine",
+      "card": "imagens/wiler/bambine/thumbnails/BA0050.jpg",
+      "views_top1": [
+        "Temático",
+        "Temático",
+        "Temático"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.06218,
+      "candidato_forte": "Temático",
+      "ranking_medio": [
+        {
+          "estilo": "Temático",
+          "score": 0.28184,
+          "min_view": 0.27653,
+          "max_view": 0.29131
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.21966,
+          "min_view": 0.20963,
+          "max_view": 0.23374
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.21831,
+          "min_view": 0.20795,
+          "max_view": 0.22853
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.21623,
+          "min_view": 0.20777,
+          "max_view": 0.23201
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.20927,
+          "min_view": 0.20266,
+          "max_view": 0.21601
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0883",
+      "ref": "TAC-WK205102",
+      "fornecedor": "Wiler",
+      "colecao": "Tacto",
+      "card": "imagens/wiler/tacto/thumbnails/TAC-WK205102.jpg",
+      "views_top1": [
+        "Liso",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00023,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28974,
+          "min_view": 0.28543,
+          "max_view": 0.29731
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.28952,
+          "min_view": 0.28268,
+          "max_view": 0.30307
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.28296,
+          "min_view": 0.27784,
+          "max_view": 0.2901
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.2685,
+          "min_view": 0.26505,
+          "max_view": 0.27087
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.26275,
+          "min_view": 0.25566,
+          "max_view": 0.27416
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0891",
+      "ref": "TAC-WKA69103",
+      "fornecedor": "Wiler",
+      "colecao": "Tacto",
+      "card": "imagens/wiler/tacto/thumbnails/TAC-WKA69103.jpg",
+      "views_top1": [
+        "Textura",
+        "Abstrato",
+        "Textura"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00138,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.26901,
+          "min_view": 0.25239,
+          "max_view": 0.28453
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26763,
+          "min_view": 0.2546,
+          "max_view": 0.28392
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.26375,
+          "min_view": 0.25256,
+          "max_view": 0.27949
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.25327,
+          "min_view": 0.24256,
+          "max_view": 0.27278
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.25156,
+          "min_view": 0.24042,
+          "max_view": 0.26512
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0899",
+      "ref": "TAC-WKA77903",
+      "fornecedor": "Wiler",
+      "colecao": "Tacto",
+      "card": "imagens/wiler/tacto/thumbnails/TAC-WKA77903.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01734,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28778,
+          "min_view": 0.2855,
+          "max_view": 0.29056
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.27044,
+          "min_view": 0.26732,
+          "max_view": 0.2745
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.25837,
+          "min_view": 0.25587,
+          "max_view": 0.26087
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.24703,
+          "min_view": 0.24356,
+          "max_view": 0.24962
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.23497,
+          "min_view": 0.23143,
+          "max_view": 0.23914
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0907",
+      "ref": "TAC-WKA78306",
+      "fornecedor": "Wiler",
+      "colecao": "Tacto",
+      "card": "imagens/wiler/tacto/thumbnails/TAC-WKA78306.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02818,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.31172,
+          "min_view": 0.30914,
+          "max_view": 0.31404
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.28354,
+          "min_view": 0.27732,
+          "max_view": 0.28793
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.28342,
+          "min_view": 0.2766,
+          "max_view": 0.29044
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.27476,
+          "min_view": 0.26682,
+          "max_view": 0.28003
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.27006,
+          "min_view": 0.26648,
+          "max_view": 0.27673
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0915",
+      "ref": "TAC-WKA78703",
+      "fornecedor": "Wiler",
+      "colecao": "Tacto",
+      "card": "imagens/wiler/tacto/thumbnails/TAC-WKA78703.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.0067,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28312,
+          "min_view": 0.28274,
+          "max_view": 0.28332
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27642,
+          "min_view": 0.26759,
+          "max_view": 0.2832
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26311,
+          "min_view": 0.26204,
+          "max_view": 0.26501
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25306,
+          "min_view": 0.25262,
+          "max_view": 0.25339
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.24989,
+          "min_view": 0.24767,
+          "max_view": 0.25304
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0923",
+      "ref": "TAC-WKA78712",
+      "fornecedor": "Wiler",
+      "colecao": "Tacto",
+      "card": "imagens/wiler/tacto/thumbnails/TAC-WKA78712.jpg",
+      "views_top1": [
+        "Liso",
+        "Liso",
+        "Liso"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.00608,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.28087,
+          "min_view": 0.27616,
+          "max_view": 0.28615
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.2748,
+          "min_view": 0.27341,
+          "max_view": 0.27551
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.2607,
+          "min_view": 0.25733,
+          "max_view": 0.26252
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25267,
+          "min_view": 0.25107,
+          "max_view": 0.25371
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.25129,
+          "min_view": 0.24896,
+          "max_view": 0.25282
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0720",
+      "ref": "TX-2001",
+      "fornecedor": "Wiler",
+      "colecao": "Texture II",
+      "card": "imagens/wiler/texture-ii/thumbnails/TX-2001.jpg",
+      "views_top1": [
+        "Textura",
+        "Liso",
+        "Liso"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00203,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.2809,
+          "min_view": 0.27101,
+          "max_view": 0.2879
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.27887,
+          "min_view": 0.27314,
+          "max_view": 0.2832
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.27702,
+          "min_view": 0.27479,
+          "max_view": 0.27913
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.25696,
+          "min_view": 0.25173,
+          "max_view": 0.25991
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.24771,
+          "min_view": 0.24604,
+          "max_view": 0.24988
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0730",
+      "ref": "TX-2011",
+      "fornecedor": "Wiler",
+      "colecao": "Texture II",
+      "card": "imagens/wiler/texture-ii/thumbnails/TX-2011.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02348,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.30406,
+          "min_view": 0.30362,
+          "max_view": 0.30469
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.28058,
+          "min_view": 0.27433,
+          "max_view": 0.28762
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.27408,
+          "min_view": 0.27325,
+          "max_view": 0.27453
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26929,
+          "min_view": 0.26652,
+          "max_view": 0.27314
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.25639,
+          "min_view": 0.2539,
+          "max_view": 0.25886
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0740",
+      "ref": "TX-2021",
+      "fornecedor": "Wiler",
+      "colecao": "Texture II",
+      "card": "imagens/wiler/texture-ii/thumbnails/TX-2021.jpg",
+      "views_top1": [
+        "Liso",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00164,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.2893,
+          "min_view": 0.28608,
+          "max_view": 0.2943
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.28766,
+          "min_view": 0.27315,
+          "max_view": 0.30108
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.2596,
+          "min_view": 0.2512,
+          "max_view": 0.26418
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25827,
+          "min_view": 0.25249,
+          "max_view": 0.26188
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.25596,
+          "min_view": 0.24629,
+          "max_view": 0.26244
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0751",
+      "ref": "TX-2032",
+      "fornecedor": "Wiler",
+      "colecao": "Texture II",
+      "card": "imagens/wiler/texture-ii/thumbnails/TX-2032.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.00407,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.27553,
+          "min_view": 0.27397,
+          "max_view": 0.27863
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27147,
+          "min_view": 0.26789,
+          "max_view": 0.27626
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.23893,
+          "min_view": 0.23432,
+          "max_view": 0.24404
+        },
+        {
+          "estilo": "Floral",
+          "score": 0.23115,
+          "min_view": 0.22469,
+          "max_view": 0.24211
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.23078,
+          "min_view": 0.2256,
+          "max_view": 0.23808
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0761",
+      "ref": "TX-2042",
+      "fornecedor": "Wiler",
+      "colecao": "Texture II",
+      "card": "imagens/wiler/texture-ii/thumbnails/TX-2042.jpg",
+      "views_top1": [
+        "Liso",
+        "Liso",
+        "Liso"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01123,
+      "candidato_forte": "Liso",
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.2809,
+          "min_view": 0.27146,
+          "max_view": 0.29585
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.26967,
+          "min_view": 0.26282,
+          "max_view": 0.28327
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26112,
+          "min_view": 0.25267,
+          "max_view": 0.27327
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25254,
+          "min_view": 0.24413,
+          "max_view": 0.26562
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.24666,
+          "min_view": 0.23709,
+          "max_view": 0.25758
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0770A",
+      "ref": "TX-2052",
+      "fornecedor": "Wiler",
+      "colecao": "Texture II",
+      "card": "imagens/wiler/texture-ii/thumbnails/TX-2052.jpg",
+      "views_top1": [
+        "Liso",
+        "Liso",
+        "Liso"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01919,
+      "candidato_forte": "Liso",
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.26935,
+          "min_view": 0.26245,
+          "max_view": 0.27467
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25015,
+          "min_view": 0.24723,
+          "max_view": 0.25381
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.24944,
+          "min_view": 0.24632,
+          "max_view": 0.25378
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.24484,
+          "min_view": 0.24224,
+          "max_view": 0.24799
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.23768,
+          "min_view": 0.23286,
+          "max_view": 0.24024
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0924",
+      "ref": "TX-3001",
+      "fornecedor": "Wiler",
+      "colecao": "Texture III",
+      "card": "imagens/wiler/texture-iii/thumbnails/TX-3001.jpg",
+      "views_top1": [
+        "Liso",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00592,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.29487,
+          "min_view": 0.28557,
+          "max_view": 0.30795
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.28894,
+          "min_view": 0.28395,
+          "max_view": 0.29406
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.26904,
+          "min_view": 0.26581,
+          "max_view": 0.27108
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.25776,
+          "min_view": 0.25235,
+          "max_view": 0.26397
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.24646,
+          "min_view": 0.24038,
+          "max_view": 0.25324
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0935",
+      "ref": "TX-3013",
+      "fornecedor": "Wiler",
+      "colecao": "Texture III",
+      "card": "imagens/wiler/texture-iii/thumbnails/TX-3013.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01744,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28736,
+          "min_view": 0.28429,
+          "max_view": 0.29102
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26993,
+          "min_view": 0.26188,
+          "max_view": 0.28125
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.25267,
+          "min_view": 0.24725,
+          "max_view": 0.25665
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25089,
+          "min_view": 0.24667,
+          "max_view": 0.25598
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.24826,
+          "min_view": 0.24593,
+          "max_view": 0.25218
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0946",
+      "ref": "TX-3025",
+      "fornecedor": "Wiler",
+      "colecao": "Texture III",
+      "card": "imagens/wiler/texture-iii/thumbnails/TX-3025.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.03086,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28578,
+          "min_view": 0.28298,
+          "max_view": 0.29076
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.25492,
+          "min_view": 0.25204,
+          "max_view": 0.25939
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.24808,
+          "min_view": 0.24286,
+          "max_view": 0.25226
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.23696,
+          "min_view": 0.23299,
+          "max_view": 0.24194
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.23426,
+          "min_view": 0.22853,
+          "max_view": 0.23843
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0958",
+      "ref": "TX-3038",
+      "fornecedor": "Wiler",
+      "colecao": "Texture III",
+      "card": "imagens/wiler/texture-iii/thumbnails/TX-3038.jpg",
+      "views_top1": [
+        "Liso",
+        "Liso",
+        "Textura"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.00876,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.27574,
+          "min_view": 0.2723,
+          "max_view": 0.27911
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.26698,
+          "min_view": 0.25204,
+          "max_view": 0.2784
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25494,
+          "min_view": 0.24866,
+          "max_view": 0.25961
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.23352,
+          "min_view": 0.22388,
+          "max_view": 0.24068
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.22323,
+          "min_view": 0.21879,
+          "max_view": 0.22669
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0969",
+      "ref": "TX-3049",
+      "fornecedor": "Wiler",
+      "colecao": "Texture III",
+      "card": "imagens/wiler/texture-iii/thumbnails/TX-3049.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.02208,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28644,
+          "min_view": 0.27908,
+          "max_view": 0.2916
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26436,
+          "min_view": 0.2576,
+          "max_view": 0.27462
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25195,
+          "min_view": 0.25068,
+          "max_view": 0.25384
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.24223,
+          "min_view": 0.23898,
+          "max_view": 0.24419
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.23484,
+          "min_view": 0.23213,
+          "max_view": 0.23887
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1211",
+      "ref": "TX-3054",
+      "fornecedor": "Wiler",
+      "colecao": "Texture III",
+      "card": "imagens/wiler/texture-iii/thumbnails/TX-3054.jpg",
+      "views_top1": [
+        "Liso",
+        "Liso",
+        "Textura"
+      ],
+      "estavel_3_de_3": false,
+      "margem_top1_top2": 0.0038,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.27954,
+          "min_view": 0.27253,
+          "max_view": 0.28448
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.27574,
+          "min_view": 0.26638,
+          "max_view": 0.28092
+        },
+        {
+          "estilo": "Clássico",
+          "score": 0.24745,
+          "min_view": 0.24113,
+          "max_view": 0.25342
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.24711,
+          "min_view": 0.24332,
+          "max_view": 0.25313
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.24345,
+          "min_view": 0.24234,
+          "max_view": 0.24504
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0771",
+      "ref": "TR-4001",
+      "fornecedor": "Wiler",
+      "colecao": "Tramas",
+      "card": "imagens/wiler/tramas/thumbnails/TR-4001.jpg",
+      "views_top1": [
+        "Listrado",
+        "Listrado",
+        "Listrado"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.00725,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Listrado",
+          "score": 0.29457,
+          "min_view": 0.29068,
+          "max_view": 0.29801
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.28732,
+          "min_view": 0.28511,
+          "max_view": 0.29035
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.2827,
+          "min_view": 0.27927,
+          "max_view": 0.28517
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26869,
+          "min_view": 0.26777,
+          "max_view": 0.27004
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.25503,
+          "min_view": 0.25131,
+          "max_view": 0.25754
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0783",
+      "ref": "TR-4013",
+      "fornecedor": "Wiler",
+      "colecao": "Tramas",
+      "card": "imagens/wiler/tramas/thumbnails/TR-4013.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01039,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28284,
+          "min_view": 0.27765,
+          "max_view": 0.28854
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27246,
+          "min_view": 0.27108,
+          "max_view": 0.27418
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26612,
+          "min_view": 0.26499,
+          "max_view": 0.26678
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.25829,
+          "min_view": 0.25685,
+          "max_view": 0.25974
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25717,
+          "min_view": 0.25254,
+          "max_view": 0.25966
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0795",
+      "ref": "TR-4025",
+      "fornecedor": "Wiler",
+      "colecao": "Tramas",
+      "card": "imagens/wiler/tramas/thumbnails/TR-4025.jpg",
+      "views_top1": [
+        "Xadrez",
+        "Xadrez",
+        "Xadrez"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.00448,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Xadrez",
+          "score": 0.29657,
+          "min_view": 0.29297,
+          "max_view": 0.30114
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.29209,
+          "min_view": 0.28892,
+          "max_view": 0.29629
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.29092,
+          "min_view": 0.28909,
+          "max_view": 0.29366
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.2908,
+          "min_view": 0.2879,
+          "max_view": 0.2947
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.27967,
+          "min_view": 0.27554,
+          "max_view": 0.28311
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0808",
+      "ref": "TR-4038",
+      "fornecedor": "Wiler",
+      "colecao": "Tramas",
+      "card": "imagens/wiler/tramas/thumbnails/TR-4038.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01219,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.28298,
+          "min_view": 0.27854,
+          "max_view": 0.28625
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.27078,
+          "min_view": 0.25976,
+          "max_view": 0.2791
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26505,
+          "min_view": 0.25881,
+          "max_view": 0.26852
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25793,
+          "min_view": 0.25017,
+          "max_view": 0.2628
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.25215,
+          "min_view": 0.24539,
+          "max_view": 0.25596
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0820",
+      "ref": "TR-4050",
+      "fornecedor": "Wiler",
+      "colecao": "Tramas",
+      "card": "imagens/wiler/tramas/thumbnails/TR-4050.jpg",
+      "views_top1": [
+        "Textura",
+        "Textura",
+        "Textura"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.01992,
+      "candidato_forte": "Textura",
+      "ranking_medio": [
+        {
+          "estilo": "Textura",
+          "score": 0.29703,
+          "min_view": 0.2858,
+          "max_view": 0.30285
+        },
+        {
+          "estilo": "Geométrico",
+          "score": 0.2771,
+          "min_view": 0.27385,
+          "max_view": 0.28356
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.2702,
+          "min_view": 0.24918,
+          "max_view": 0.28471
+        },
+        {
+          "estilo": "Liso",
+          "score": 0.26982,
+          "min_view": 0.24289,
+          "max_view": 0.28641
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.26603,
+          "min_view": 0.25499,
+          "max_view": 0.27291
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0832",
+      "ref": "TR-4062",
+      "fornecedor": "Wiler",
+      "colecao": "Tramas",
+      "card": "imagens/wiler/tramas/thumbnails/TR-4062.jpg",
+      "views_top1": [
+        "Liso",
+        "Liso",
+        "Liso"
+      ],
+      "estavel_3_de_3": true,
+      "margem_top1_top2": 0.00336,
+      "candidato_forte": null,
+      "ranking_medio": [
+        {
+          "estilo": "Liso",
+          "score": 0.27897,
+          "min_view": 0.27468,
+          "max_view": 0.28709
+        },
+        {
+          "estilo": "Textura",
+          "score": 0.2756,
+          "min_view": 0.2705,
+          "max_view": 0.28326
+        },
+        {
+          "estilo": "Xadrez",
+          "score": 0.26104,
+          "min_view": 0.25394,
+          "max_view": 0.26547
+        },
+        {
+          "estilo": "Listrado",
+          "score": 0.25891,
+          "min_view": 0.25638,
+          "max_view": 0.26159
+        },
+        {
+          "estilo": "Abstrato",
+          "score": 0.2517,
+          "min_view": 0.24759,
+          "max_view": 0.25472
+        }
+      ]
+    }
+  ]
+}
