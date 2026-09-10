@@ -32,7 +32,7 @@ jobs:
         shell: bash
         run: |
           python -m pip install --disable-pip-version-check --index-url https://download.pytorch.org/whl/cpu torch
-          python -m pip install --disable-pip-version-check pillow transformers
+          python -m pip install --disable-pip-version-check pillow 'transformers==4.57.1'
 
       - name: Run style calibration sample
         run: python scripts/calibrate_style_classifier.py
