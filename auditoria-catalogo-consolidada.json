@@ -15,13 +15,12 @@
       "colecoes_ausentes_confirmadas": [
         "HF Orient",
         "HF Orient II",
-        "Mundo Encantado"
-      ],
-      "colecoes_em_classificacao": [
+        "Mundo Encantado",
         "Vichy",
         "Bosque",
         "Xadrez"
-      ]
+      ],
+      "colecoes_em_classificacao": []
     },
     "Kantai": {
       "status": "cobertura_parcial",
@@ -65,13 +64,12 @@
         "colecoes_ausentes_confirmadas": [
           "HF Orient",
           "HF Orient II",
-          "Mundo Encantado"
-        ],
-        "colecoes_em_classificacao": [
+          "Mundo Encantado",
           "Vichy",
           "Bosque",
           "Xadrez"
         ],
+        "colecoes_em_classificacao": [],
         "relatorio": "auditoria-homefinish-escopo-oficial.json"
       },
       "fonte": "Snapshot validado de URLs do domínio oficial homefinish.com.br",
