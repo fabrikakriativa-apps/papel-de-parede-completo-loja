@@ -2,7 +2,7 @@
   "status": "bloqueado_pela_origem_http_403",
   "fonte": "Home Finish — páginas oficiais das coleções lidas em navegador real",
   "fornecedor_catalogo": "Home Finish",
-  "colecoes_com_url_configurada": 29,
+  "colecoes_com_url_configurada": 30,
   "colecoes_confirmadas_sem_url_de_colecao": {
     "As Crônicas de Nárnia": {
       "referencias_confirmadas": [
@@ -12,9 +12,9 @@
     }
   },
   "colecoes_confirmadas_sem_url_de_colecao_total": 1,
-  "colecoes_confirmadas_no_escopo_desta_rotina": 30,
+  "colecoes_confirmadas_no_escopo_desta_rotina": 31,
   "colecoes_auditadas_com_sucesso": 0,
-  "colecoes_com_falha_de_coleta": 29,
+  "colecoes_com_falha_de_coleta": 30,
   "auditoria_integral": false,
   "erros_coleta": [
     {
@@ -95,6 +95,11 @@
     {
       "colecao": "Mundo Encantado",
       "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/mundo-encantado/",
+      "erro": "RuntimeError: Página oficial não auditável: HTTP 403, 0 refs, título='Just a moment...'"
+    },
+    {
+      "colecao": "HF Petit",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-petit/",
       "erro": "RuntimeError: Página oficial não auditável: HTTP 403, 0 refs, título='Just a moment...'"
     },
     {
@@ -326,6 +331,16 @@
     {
       "colecao": "Mundo Encantado",
       "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/mundo-encantado/",
+      "oficial": null,
+      "catalogo": 0,
+      "faltantes": null,
+      "extras_no_catalogo": null,
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "HF Petit",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-petit/",
       "oficial": null,
       "catalogo": 0,
       "faltantes": null,
