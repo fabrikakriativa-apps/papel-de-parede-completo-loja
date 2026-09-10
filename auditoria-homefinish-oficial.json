@@ -2,9 +2,19 @@
   "status": "bloqueado_pela_origem_http_403",
   "fonte": "Home Finish — páginas oficiais das coleções lidas em navegador real",
   "fornecedor_catalogo": "Home Finish",
-  "colecoes_configuradas": 19,
+  "colecoes_com_url_configurada": 25,
+  "colecoes_confirmadas_sem_url_de_colecao": {
+    "As Crônicas de Nárnia": {
+      "referencias_confirmadas": [
+        "603664"
+      ],
+      "evidencia": "Metadado COLEÇÃO em página oficial Home Finish"
+    }
+  },
+  "colecoes_confirmadas_sem_url_de_colecao_total": 1,
+  "colecoes_confirmadas_no_escopo_desta_rotina": 26,
   "colecoes_auditadas_com_sucesso": 0,
-  "colecoes_com_falha_de_coleta": 19,
+  "colecoes_com_falha_de_coleta": 25,
   "auditoria_integral": false,
   "erros_coleta": [
     {
@@ -101,6 +111,36 @@
       "colecao": "Xadrez",
       "url_oficial": "https://www.homefinish.com.br/colecoes/dicoracao/xadrez/",
       "erro": "RuntimeError: Página oficial não auditável: HTTP 403, 0 refs, título='Just a moment...'"
+    },
+    {
+      "colecao": "Temáticos",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/dicoracao/tematicos/",
+      "erro": "RuntimeError: Página oficial não auditável: HTTP 403, 0 refs, título='Just a moment...'"
+    },
+    {
+      "colecao": "Floresta Brasileira",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/dicoracao/floresta-brasileira/",
+      "erro": "RuntimeError: Página oficial não auditável: HTTP 403, 0 refs, título='Just a moment...'"
+    },
+    {
+      "colecao": "Clássicos",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/dicoracao/classicos/",
+      "erro": "RuntimeError: Página oficial não auditável: HTTP 403, 0 refs, título='Just a moment...'"
+    },
+    {
+      "colecao": "Fundo do Mar",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/dicoracao/fundo-do-mar/",
+      "erro": "RuntimeError: Página oficial não auditável: HTTP 403, 0 refs, título='Just a moment...'"
+    },
+    {
+      "colecao": "Montanhas",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/dicoracao/montanhas/",
+      "erro": "RuntimeError: Página oficial não auditável: HTTP 403, 0 refs, título='Just a moment...'"
+    },
+    {
+      "colecao": "Safari",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/dicoracao/safari/",
+      "erro": "RuntimeError: Página oficial não auditável: HTTP 403, 0 refs, título='Just a moment...'"
     }
   ],
   "total_oficial_parcial": 0,
@@ -110,6 +150,7 @@
   "faltantes_confirmados_nas_colecoes_coletadas": 0,
   "extras_confirmados_nas_colecoes_coletadas": 0,
   "nao_inferir_zero_em_falha": true,
+  "nao_inferir_rota_de_colecao": true,
   "rotas_colecao_explicitas": true,
   "colecoes": [
     {
@@ -301,7 +342,67 @@
       "extras_no_catalogo": null,
       "paginas": [],
       "status": "erro_coleta"
+    },
+    {
+      "colecao": "Temáticos",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/dicoracao/tematicos/",
+      "oficial": null,
+      "catalogo": 0,
+      "faltantes": null,
+      "extras_no_catalogo": null,
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Floresta Brasileira",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/dicoracao/floresta-brasileira/",
+      "oficial": null,
+      "catalogo": 0,
+      "faltantes": null,
+      "extras_no_catalogo": null,
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Clássicos",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/dicoracao/classicos/",
+      "oficial": null,
+      "catalogo": 0,
+      "faltantes": null,
+      "extras_no_catalogo": null,
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Fundo do Mar",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/dicoracao/fundo-do-mar/",
+      "oficial": null,
+      "catalogo": 0,
+      "faltantes": null,
+      "extras_no_catalogo": null,
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Montanhas",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/dicoracao/montanhas/",
+      "oficial": null,
+      "catalogo": 0,
+      "faltantes": null,
+      "extras_no_catalogo": null,
+      "paginas": [],
+      "status": "erro_coleta"
+    },
+    {
+      "colecao": "Safari",
+      "url_oficial": "https://www.homefinish.com.br/colecoes/dicoracao/safari/",
+      "oficial": null,
+      "catalogo": 0,
+      "faltantes": null,
+      "extras_no_catalogo": null,
+      "paginas": [],
+      "status": "erro_coleta"
     }
   ],
-  "criterio": "Navega pelas URLs oficiais exatas e pela paginação pública da Home Finish em Chromium. As rotas DiCoração são mantidas separadas das rotas de papéis de parede tradicionais. Falhas de acesso nunca são tratadas como zero itens ou zero faltantes. Os totais globais de faltantes/extras só recebem número quando todas as coleções configuradas foram coletadas com sucesso. O script apenas audita; não altera o catálogo."
+  "criterio": "Navega pelas URLs oficiais exatas e pela paginação pública da Home Finish em Chromium. As rotas DiCoração são mantidas separadas das rotas de papéis de parede tradicionais. Coleções confirmadas por metadado oficial, mas ainda sem rota capturada, ficam explicitamente fora da enumeração automática até a URL ser comprovada. Falhas de acesso nunca são tratadas como zero itens ou zero faltantes. Os totais globais de faltantes/extras só recebem número quando todas as coleções confirmadas do escopo estiverem integralmente auditáveis."
 }
