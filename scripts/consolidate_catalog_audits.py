@@ -43,7 +43,7 @@ def build_homefinish(report: dict, inventory_count: int) -> dict:
         "itens_auditados": audited_catalog_total,
         "itens_fonte_validada": source_total,
         "colecoes": report.get("colecoes_catalogo"),
-        "status": (
+        "status_colecoes_cadastradas": (
             "completo_contra_snapshot_validado_oficial"
             if base_ok and current_match
             else "divergente_ou_auditoria_desatualizada"
@@ -58,7 +58,7 @@ def build_homefinish(report: dict, inventory_count: int) -> dict:
     }
 
 
-def build_kantai(report: dict, inventory_count: int) -> dict:
+def build_kantai(report: dict, scope: dict, inventory_count: int) -> dict:
     rows = report.get("collections") or []
     audited: dict[str, object] = {}
     all_rows_ok = True
@@ -75,14 +75,24 @@ def build_kantai(report: dict, inventory_count: int) -> dict:
         "fornecedor": "Kantai",
         "itens_catalogo": inventory_count,
         "itens_auditados": audit_total,
-        "colecoes": len(audited),
-        "status": (
+        "colecoes_cadastradas": len(audited),
+        "status_colecoes_cadastradas": (
             "completo_contra_fonte_oficial"
             if all_rows_ok and current_match
             else "divergente_ou_auditoria_desatualizada"
         ),
         "totais_coincidem": current_match,
         "colecoes_auditadas": audited,
+        "cobertura_portfolio_oficial": {
+            "status": scope.get("status"),
+            "colecoes_oficiais_listadas": scope.get("colecoes_oficiais_listadas"),
+            "colecoes_presentes_no_catalogo": scope.get("colecoes_presentes_no_catalogo"),
+            "colecoes_ausentes_no_catalogo": scope.get("colecoes_ausentes_no_catalogo"),
+            "amostras_declaradas_no_portfolio": scope.get("amostras_declaradas_no_portfolio"),
+            "amostras_presentes_no_catalogo": scope.get("amostras_presentes_no_catalogo"),
+            "amostras_declaradas_em_colecoes_ausentes": scope.get("amostras_declaradas_em_colecoes_ausentes"),
+            "relatorio": "auditoria-kantai-escopo-oficial.json",
+        },
         "fonte": "Site oficial Kantai / API pública das galerias Wix",
         "relatorio": "auditoria-kantai-oficial.json",
     }
@@ -106,8 +116,8 @@ def build_wiler(report: dict, inventory_count: int) -> dict:
         "fornecedor": "Wiler",
         "itens_catalogo": inventory_count,
         "itens_auditados": audit_total,
-        "colecoes": len(audited),
-        "status": (
+        "colecoes_cadastradas": len(audited),
+        "status_colecoes_cadastradas": (
             "completo_nas_cinco_colecoes_auditadas"
             if all_rows_ok and current_match
             else "divergente_ou_auditoria_desatualizada"
@@ -119,10 +129,15 @@ def build_wiler(report: dict, inventory_count: int) -> dict:
     }
 
 
+def provider_registered_ok(row: dict) -> bool:
+    return str(row.get("status_colecoes_cadastradas") or "").startswith("completo")
+
+
 def main() -> None:
     inventory = load("auditoria-catalogo-atual.json")
     homefinish = load("auditoria-homefinish-fonte-validada.json")
     kantai = load("auditoria-kantai-oficial.json")
+    kantai_scope = load("auditoria-kantai-escopo-oficial.json")
     wiler = load("auditoria-wiler-consolidada.json")
 
     suppliers = inventory.get("fornecedores") or {}
@@ -134,16 +149,15 @@ def main() -> None:
 
     provider_rows = [
         build_homefinish(homefinish, int(suppliers.get("Home Finish") or 0)),
-        build_kantai(kantai, int(suppliers.get("Kantai") or 0)),
+        build_kantai(kantai, kantai_scope, int(suppliers.get("Kantai") or 0)),
         build_wiler(wiler, int(suppliers.get("Wiler") or 0)),
     ]
 
-    all_complete = integrity_ok and all(
-        str(row.get("status") or "").startswith("completo") for row in provider_rows
-    )
+    registered_complete = integrity_ok and all(provider_registered_ok(row) for row in provider_rows)
 
     report = {
-        "status": "completo_nas_fontes_auditadas" if all_complete else "revisao_necessaria",
+        "status": "completo_nas_fontes_auditadas" if registered_complete else "revisao_necessaria",
+        "escopo_status": "cobertura_portfolio_em_auditoria",
         "itens_catalogo": inventory.get("itens_catalogo"),
         "fornecedores": inventory.get("total_fornecedores"),
         "colecoes": inventory.get("total_colecoes"),
@@ -152,20 +166,31 @@ def main() -> None:
             "referencias_duplicadas": int(inventory.get("total_refs_duplicadas") or 0),
             "imagens_locais_faltantes": int(inventory.get("imagens_card_locais_faltantes") or 0),
         },
+        "cobertura_portfolio": {
+            "Kantai": {
+                "status": kantai_scope.get("status"),
+                "colecoes_oficiais_listadas": kantai_scope.get("colecoes_oficiais_listadas"),
+                "colecoes_presentes_no_catalogo": kantai_scope.get("colecoes_presentes_no_catalogo"),
+                "colecoes_ausentes_no_catalogo": kantai_scope.get("colecoes_ausentes_no_catalogo"),
+                "amostras_declaradas_em_colecoes_ausentes": kantai_scope.get("amostras_declaradas_em_colecoes_ausentes"),
+            },
+            "Home Finish": {"status": "a_validar_portfolio_completo"},
+            "Wiler": {"status": "a_validar_portfolio_completo"},
+        },
         "fornecedores_auditados": provider_rows,
-        "criterio": "Estado consolidado gerado automaticamente a partir do catálogo publicado e dos relatórios de auditoria. Além do status de cada auditoria, os totais publicados de cada fornecedor precisam coincidir com os totais efetivamente auditados; isso impede que uma auditoria antiga mantenha um falso status de completude após novas inclusões. Não usa versões ZIP/HTML antigas como fonte operacional.",
+        "criterio": "O status principal mede integridade e completude das coleções já cadastradas; não equivale a dizer que todo o portfólio atual de cada fornecedor está no catálogo. A cobertura de portfólio é registrada separadamente. Totais publicados precisam coincidir com os totais efetivamente auditados, evitando falso positivo após novas inclusões. Não usa versões ZIP/HTML antigas como fonte operacional.",
     }
 
     OUT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({
         "status": report["status"],
+        "escopo_status": report["escopo_status"],
         "itens_catalogo": report["itens_catalogo"],
         "fornecedores": report["fornecedores"],
         "colecoes": report["colecoes"],
         "integridade_ok": integrity_ok,
-        "fornecedores_ok": all(
-            str(row.get("status") or "").startswith("completo") for row in provider_rows
-        ),
+        "colecoes_cadastradas_ok": all(provider_registered_ok(row) for row in provider_rows),
+        "kantai_portfolio": kantai_scope.get("status"),
     }, ensure_ascii=False))
 
 
