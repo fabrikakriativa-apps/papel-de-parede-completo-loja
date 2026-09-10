@@ -1,0 +1,60 @@
+name: Repair Flora broken images
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/fix_flora_broken_images.py'
+      - '.github/workflows/fix-flora-broken-images.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: repair-flora-broken-images-main
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout catalog
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Repair only the three reported Flora images
+        run: python scripts/fix_flora_broken_images.py
+
+      - name: Refresh catalog inventory
+        run: python scripts/catalog_inventory.py
+
+      - name: Refresh external asset audit
+        run: python scripts/audit_external_assets.py
+
+      - name: Run catalog smoke test
+        run: python scripts/catalog_smoke_test.py
+
+      - name: Diagnose image rendering
+        run: python scripts/diagnose_image_render.py
+
+      - name: Commit repair and validation reports
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html \
+            auditoria-flora-imagens-corrigidas.json \
+            auditoria-catalogo-atual.json \
+            auditoria-assets-externos.json \
+            auditoria-smoke-test.json \
+            diagnostico-render-imagens.json
+          if git diff --cached --quiet; then
+            echo "Flora repair already applied and reports unchanged"
+          else
+            git commit -m "Fix three Flora images from official Home Finish JPGs"
+            git pull --rebase origin main
+            git push origin main
+          fi
