@@ -1,0 +1,30 @@
+{
+  "status": "ok",
+  "camada_publicada_no_catalogo": false,
+  "itens_catalogo": 1212,
+  "itens_classificacao": 1212,
+  "perfil_infantil": {
+    "itens": 280,
+    "colecoes": {
+      "Bambine": 50,
+      "Bosque da Imaginação": 40,
+      "Era Uma Vez": 51,
+      "Memórias de Infância": 39,
+      "Natureza Lúdica": 40,
+      "Passeio no Campo": 60
+    },
+    "metodo": "regra_colecao",
+    "confianca": 1.0
+  },
+  "cor": {
+    "classificados_por_pixels": 1183,
+    "pendentes_asset_externo": 29,
+    "erros": 0,
+    "metodo": "analise_objetiva_pixels_v1"
+  },
+  "estilo": {
+    "status": "nao_publicado",
+    "motivo": "Aguardando calibração visual; nenhuma tag de estilo é inferida livremente."
+  },
+  "seguranca": "Este processo não altera index.html, filtros, produtos, códigos, imagens ou a URL publicada."
+}
