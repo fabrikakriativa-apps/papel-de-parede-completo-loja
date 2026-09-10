@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/build_catalog_classification.py'
+      - 'scripts/audit_classification_quality.py'
       - '.github/workflows/build-catalog-classification.yml'
       - 'index.html'
   workflow_dispatch:
@@ -32,16 +33,21 @@ jobs:
       - name: Build staging classification
         run: python scripts/build_catalog_classification.py
 
+      - name: Audit color classification coverage
+        run: python scripts/audit_classification_quality.py
+
       - name: Commit staging classification
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add classificacao/catalogo-classificacao.json auditoria-classificacao.json
+          git add classificacao/catalogo-classificacao.json \
+            auditoria-classificacao.json \
+            auditoria-classificacao-qualidade.json
           if git diff --cached --quiet; then
             echo "Classification staging unchanged"
           else
-            git commit -m "Build catalog classification staging"
+            git commit -m "Build and audit catalog classification staging"
             git pull --rebase origin main
             git push origin main
           fi
