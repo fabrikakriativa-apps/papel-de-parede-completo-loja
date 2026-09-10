@@ -41,3 +41,16 @@ jobs:
             git pull --rebase origin main
             git push origin main
           fi
+
+      - name: Fail visibly when catalog needs review
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path('auditoria-catalogo-consolidada.json').read_text(encoding='utf-8'))
+          status = report.get('status')
+          print(f'Consolidated catalog status: {status}')
+          if status != 'completo_nas_fontes_auditadas':
+              raise SystemExit('Catalog review required: see auditoria-catalogo-consolidada.json')
+          PY
