@@ -8,7 +8,7 @@
       "url_oficial": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes",
       "oficial_ativos_total": 39,
       "catalogo_total": 50,
-      "refs_ativas_extraidas": 40,
+      "refs_ativas_extraidas": 42,
       "extracao_ativa_completa": false,
       "faltantes_ativos_confirmados": [],
       "faltantes_observados_na_extracao_incompleta": [],
@@ -31,7 +31,9 @@
         "BA0016",
         "BA0018",
         "BA0019",
+        "BA0021",
         "BA0023",
+        "BA0024",
         "BA0025",
         "BA0026",
         "BA0027",
@@ -77,10 +79,10 @@
           "url_final": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes&page=2",
           "http": 200,
           "seletor_grade": "[class*=\"galleryItem\"] a[href*=\"/p\"]",
-          "links_grade": 12,
-          "refs_na_pagina": 16,
-          "novas_refs": 15,
-          "total_acumulado": 35,
+          "links_grade": 16,
+          "refs_na_pagina": 21,
+          "novas_refs": 18,
+          "total_acumulado": 38,
           "contagens_visiveis": [
             39
           ]
@@ -93,8 +95,8 @@
           "seletor_grade": "[class*=\"galleryItem\"] a[href*=\"/p\"]",
           "links_grade": 7,
           "refs_na_pagina": 11,
-          "novas_refs": 5,
-          "total_acumulado": 40,
+          "novas_refs": 4,
+          "total_acumulado": 42,
           "contagens_visiveis": [
             39
           ]
@@ -108,7 +110,7 @@
           "links_grade": 0,
           "refs_na_pagina": 0,
           "novas_refs": 0,
-          "total_acumulado": 40,
+          "total_acumulado": 42,
           "contagens_visiveis": [
             39
           ]
@@ -461,7 +463,7 @@
   "resumo": {
     "catalogo_total_wiler": 262,
     "ativos_oficiais_somados": 132,
-    "refs_ativas_extraidas": 133,
+    "refs_ativas_extraidas": 135,
     "faltantes_ativos_confirmados": 0,
     "colecoes_extracao_completa": 2,
     "colecoes_nao_validadas": [
