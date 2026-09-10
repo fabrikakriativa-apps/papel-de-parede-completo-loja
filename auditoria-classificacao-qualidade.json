@@ -2,43 +2,45 @@
   "status": "ok",
   "itens": 1212,
   "status_cor": {
-    "validado_consenso": 1125,
-    "revisao_automatica": 58,
+    "validado_consenso": 1122,
+    "revisao_automatica": 61,
     "pendente_asset_externo": 29
   },
   "quantidade_tags_cor_por_item": {
-    "0": 87,
-    "1": 701,
-    "2": 352,
-    "3": 72
+    "0": 90,
+    "1": 587,
+    "2": 425,
+    "3": 110
   },
   "familias_em_qualquer_posicao": {
-    "Branco/Off-white": 589,
-    "Cinza": 366,
-    "Greige": 174,
-    "Bege/Areia": 105,
-    "Marrom": 100,
-    "Terracota/Laranja": 94,
-    "Amarelo/Dourado": 66,
-    "Azul": 54,
-    "Verde": 30,
-    "Vermelho/Vinho": 22,
-    "Preto": 19,
-    "Rosa": 2
+    "Branco/Off-white": 577,
+    "Cinza": 229,
+    "Greige": 167,
+    "Terracota/Laranja": 158,
+    "Verde": 125,
+    "Bege/Areia": 123,
+    "Azul": 123,
+    "Marrom": 103,
+    "Amarelo/Dourado": 69,
+    "Rosa": 54,
+    "Preto": 21,
+    "Vermelho/Vinho": 12,
+    "Roxo/Lilás": 6
   },
   "familias_como_secundaria_ou_terciaria": {
-    "Branco/Off-white": 129,
-    "Cinza": 107,
-    "Greige": 66,
-    "Marrom": 44,
-    "Bege/Areia": 44,
-    "Terracota/Laranja": 28,
-    "Amarelo/Dourado": 27,
-    "Azul": 20,
-    "Vermelho/Vinho": 11,
-    "Verde": 10,
-    "Preto": 8,
-    "Rosa": 2
+    "Branco/Off-white": 140,
+    "Terracota/Laranja": 89,
+    "Greige": 68,
+    "Verde": 63,
+    "Cinza": 56,
+    "Bege/Areia": 54,
+    "Azul": 49,
+    "Marrom": 45,
+    "Amarelo/Dourado": 31,
+    "Rosa": 29,
+    "Preto": 10,
+    "Vermelho/Vinho": 9,
+    "Roxo/Lilás": 2
   },
   "tonalidades": {
     "Claro": 808,
@@ -96,31 +98,23 @@
         "participacao_media": 1.0
       },
       {
-        "codigo": "FK-0915",
-        "ref": "TAC-WKA78703",
-        "fornecedor": "Wiler",
-        "colecao": "Tacto",
-        "posicao": 1,
-        "participacao_media": 0.9989
-      },
-      {
-        "codigo": "FK-0733",
-        "ref": "TX-2014",
+        "codigo": "FK-0753",
+        "ref": "TX-2034",
         "fornecedor": "Wiler",
         "colecao": "Texture II",
         "posicao": 1,
-        "participacao_media": 0.9947
+        "participacao_media": 0.9998
+      },
+      {
+        "codigo": "FK-0739",
+        "ref": "TX-2020",
+        "fornecedor": "Wiler",
+        "colecao": "Texture II",
+        "posicao": 1,
+        "participacao_media": 0.9996
       }
     ],
     "Greige": [
-      {
-        "codigo": "FK-0387",
-        "ref": "84810",
-        "fornecedor": "Home Finish",
-        "colecao": "Flora",
-        "posicao": 1,
-        "participacao_media": 1.0
-      },
       {
         "codigo": "FK-0622",
         "ref": "84360",
@@ -138,10 +132,10 @@
         "participacao_media": 1.0
       },
       {
-        "codigo": "FK-0828",
-        "ref": "TR-4058",
-        "fornecedor": "Wiler",
-        "colecao": "Tramas",
+        "codigo": "FK-0387",
+        "ref": "84810",
+        "fornecedor": "Home Finish",
+        "colecao": "Flora",
         "posicao": 1,
         "participacao_media": 0.9999
       },
@@ -154,14 +148,6 @@
         "participacao_media": 0.9993
       },
       {
-        "codigo": "FK-0802",
-        "ref": "TR-4032",
-        "fornecedor": "Wiler",
-        "colecao": "Tramas",
-        "posicao": 1,
-        "participacao_media": 0.9991
-      },
-      {
         "codigo": "FK-0436",
         "ref": "656025",
         "fornecedor": "Home Finish",
@@ -170,23 +156,31 @@
         "participacao_media": 0.9988
       },
       {
-        "codigo": "FK-0437",
-        "ref": "656081",
+        "codigo": "FK-0433",
+        "ref": "656075",
         "fornecedor": "Home Finish",
         "colecao": "HF Texture III",
         "posicao": 1,
-        "participacao_media": 0.9988
+        "participacao_media": 0.9976
+      },
+      {
+        "codigo": "FK-0422",
+        "ref": "84728",
+        "fornecedor": "Home Finish",
+        "colecao": "Flora",
+        "posicao": 1,
+        "participacao_media": 0.9973
+      },
+      {
+        "codigo": "FK-0925",
+        "ref": "TX-3002",
+        "fornecedor": "Wiler",
+        "colecao": "Texture III",
+        "posicao": 1,
+        "participacao_media": 0.9959
       }
     ],
     "Branco/Off-white": [
-      {
-        "codigo": "FK-0185",
-        "ref": "80577",
-        "fornecedor": "Home Finish",
-        "colecao": "Bosque da Imaginação",
-        "posicao": 1,
-        "participacao_media": 1.0
-      },
       {
         "codigo": "FK-0198",
         "ref": "80706",
@@ -200,22 +194,6 @@
         "ref": "81154",
         "fornecedor": "Home Finish",
         "colecao": "Bosque da Imaginação",
-        "posicao": 1,
-        "participacao_media": 1.0
-      },
-      {
-        "codigo": "FK-0252",
-        "ref": "82397",
-        "fornecedor": "Home Finish",
-        "colecao": "Doce Estilo",
-        "posicao": 1,
-        "participacao_media": 1.0
-      },
-      {
-        "codigo": "FK-0253",
-        "ref": "81796",
-        "fornecedor": "Home Finish",
-        "colecao": "Doce Estilo",
         "posicao": 1,
         "participacao_media": 1.0
       },
@@ -240,6 +218,30 @@
         "ref": "81871",
         "fornecedor": "Home Finish",
         "colecao": "Doce Estilo",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0286",
+        "ref": "82052",
+        "fornecedor": "Home Finish",
+        "colecao": "Doce Estilo",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0287",
+        "ref": "82212",
+        "fornecedor": "Home Finish",
+        "colecao": "Doce Estilo",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0380",
+        "ref": "84858",
+        "fornecedor": "Home Finish",
+        "colecao": "Flora",
         "posicao": 1,
         "participacao_media": 1.0
       }
@@ -294,50 +296,26 @@
         "participacao_media": 0.9998
       },
       {
-        "codigo": "FK-0908",
-        "ref": "TAC-WKA78307",
+        "codigo": "FK-0962",
+        "ref": "TX-3042",
         "fornecedor": "Wiler",
-        "colecao": "Tacto",
+        "colecao": "Texture III",
         "posicao": 1,
-        "participacao_media": 0.9911
+        "participacao_media": 0.9965
       },
       {
-        "codigo": "FK-0724",
-        "ref": "TX-2005",
+        "codigo": "FK-0928",
+        "ref": "TX-3005",
         "fornecedor": "Wiler",
-        "colecao": "Texture II",
+        "colecao": "Texture III",
         "posicao": 1,
-        "participacao_media": 0.9898
+        "participacao_media": 0.9948
       }
     ],
     "Cinza": [
       {
         "codigo": "FK-0389",
         "ref": "84827",
-        "fornecedor": "Home Finish",
-        "colecao": "Flora",
-        "posicao": 1,
-        "participacao_media": 1.0
-      },
-      {
-        "codigo": "FK-0391",
-        "ref": "84803",
-        "fornecedor": "Home Finish",
-        "colecao": "Flora",
-        "posicao": 1,
-        "participacao_media": 1.0
-      },
-      {
-        "codigo": "FK-0392",
-        "ref": "84834",
-        "fornecedor": "Home Finish",
-        "colecao": "Flora",
-        "posicao": 1,
-        "participacao_media": 1.0
-      },
-      {
-        "codigo": "FK-0420",
-        "ref": "84698",
         "fornecedor": "Home Finish",
         "colecao": "Flora",
         "posicao": 1,
@@ -360,20 +338,110 @@
         "participacao_media": 1.0
       },
       {
-        "codigo": "FK-0605",
-        "ref": "85879",
-        "fornecedor": "Home Finish",
-        "colecao": "Provence",
-        "posicao": 1,
-        "participacao_media": 1.0
-      },
-      {
         "codigo": "FK-0621",
         "ref": "86050",
         "fornecedor": "Home Finish",
         "colecao": "Provence",
         "posicao": 1,
         "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0786",
+        "ref": "TR-4016",
+        "fornecedor": "Wiler",
+        "colecao": "Tramas",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0795",
+        "ref": "TR-4025",
+        "fornecedor": "Wiler",
+        "colecao": "Tramas",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0808",
+        "ref": "TR-4038",
+        "fornecedor": "Wiler",
+        "colecao": "Tramas",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0809",
+        "ref": "TR-4039",
+        "fornecedor": "Wiler",
+        "colecao": "Tramas",
+        "posicao": 1,
+        "participacao_media": 1.0
+      }
+    ],
+    "Verde": [
+      {
+        "codigo": "FK-0369",
+        "ref": "84407",
+        "fornecedor": "Home Finish",
+        "colecao": "Flora",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0392",
+        "ref": "84834",
+        "fornecedor": "Home Finish",
+        "colecao": "Flora",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0398",
+        "ref": "84544",
+        "fornecedor": "Home Finish",
+        "colecao": "Flora",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0418",
+        "ref": "84742",
+        "fornecedor": "Home Finish",
+        "colecao": "Flora",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0831",
+        "ref": "TR-4061",
+        "fornecedor": "Wiler",
+        "colecao": "Tramas",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0886",
+        "ref": "TAC-WKA67601",
+        "fornecedor": "Wiler",
+        "colecao": "Tacto",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0921",
+        "ref": "TAC-WKA78710",
+        "fornecedor": "Wiler",
+        "colecao": "Tacto",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0965",
+        "ref": "TX-3045",
+        "fornecedor": "Wiler",
+        "colecao": "Texture III",
+        "posicao": 1,
+        "participacao_media": 0.9992
       }
     ],
     "Amarelo/Dourado": [
@@ -442,6 +510,72 @@
         "participacao_media": 0.9148
       }
     ],
+    "Azul": [
+      {
+        "codigo": "FK-0378",
+        "ref": "84421",
+        "fornecedor": "Home Finish",
+        "colecao": "Flora",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0391",
+        "ref": "84803",
+        "fornecedor": "Home Finish",
+        "colecao": "Flora",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0394",
+        "ref": "84520",
+        "fornecedor": "Home Finish",
+        "colecao": "Flora",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0396",
+        "ref": "84483",
+        "fornecedor": "Home Finish",
+        "colecao": "Flora",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0400",
+        "ref": "84506",
+        "fornecedor": "Home Finish",
+        "colecao": "Flora",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0402",
+        "ref": "84568",
+        "fornecedor": "Home Finish",
+        "colecao": "Flora",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0406",
+        "ref": "84605",
+        "fornecedor": "Home Finish",
+        "colecao": "Flora",
+        "posicao": 1,
+        "participacao_media": 1.0
+      },
+      {
+        "codigo": "FK-0412",
+        "ref": "84674",
+        "fornecedor": "Home Finish",
+        "colecao": "Flora",
+        "posicao": 1,
+        "participacao_media": 1.0
+      }
+    ],
     "Terracota/Laranja": [
       {
         "codigo": "FK-0429",
@@ -508,136 +642,70 @@
         "participacao_media": 1.0
       }
     ],
-    "Azul": [
+    "Rosa": [
       {
-        "codigo": "FK-0378",
-        "ref": "84421",
+        "codigo": "FK-0618",
+        "ref": "85923",
         "fornecedor": "Home Finish",
-        "colecao": "Flora",
+        "colecao": "Provence",
         "posicao": 1,
         "participacao_media": 1.0
       },
       {
-        "codigo": "FK-0394",
-        "ref": "84520",
-        "fornecedor": "Home Finish",
-        "colecao": "Flora",
+        "codigo": "FK-0779",
+        "ref": "TR-4009",
+        "fornecedor": "Wiler",
+        "colecao": "Tramas",
         "posicao": 1,
-        "participacao_media": 1.0
+        "participacao_media": 0.9781
       },
       {
-        "codigo": "FK-0396",
-        "ref": "84483",
-        "fornecedor": "Home Finish",
-        "colecao": "Flora",
-        "posicao": 1,
-        "participacao_media": 1.0
-      },
-      {
-        "codigo": "FK-0400",
-        "ref": "84506",
-        "fornecedor": "Home Finish",
-        "colecao": "Flora",
-        "posicao": 1,
-        "participacao_media": 1.0
-      },
-      {
-        "codigo": "FK-0402",
-        "ref": "84568",
-        "fornecedor": "Home Finish",
-        "colecao": "Flora",
-        "posicao": 1,
-        "participacao_media": 1.0
-      },
-      {
-        "codigo": "FK-0406",
-        "ref": "84605",
-        "fornecedor": "Home Finish",
-        "colecao": "Flora",
-        "posicao": 1,
-        "participacao_media": 1.0
-      },
-      {
-        "codigo": "FK-0412",
-        "ref": "84674",
-        "fornecedor": "Home Finish",
-        "colecao": "Flora",
-        "posicao": 1,
-        "participacao_media": 1.0
-      },
-      {
-        "codigo": "FK-0450",
-        "ref": "656116",
-        "fornecedor": "Home Finish",
-        "colecao": "HF Texture III",
-        "posicao": 1,
-        "participacao_media": 1.0
-      }
-    ],
-    "Verde": [
-      {
-        "codigo": "FK-0369",
-        "ref": "84407",
-        "fornecedor": "Home Finish",
-        "colecao": "Flora",
-        "posicao": 1,
-        "participacao_media": 1.0
-      },
-      {
-        "codigo": "FK-0398",
-        "ref": "84544",
-        "fornecedor": "Home Finish",
-        "colecao": "Flora",
-        "posicao": 1,
-        "participacao_media": 1.0
-      },
-      {
-        "codigo": "FK-0418",
-        "ref": "84742",
-        "fornecedor": "Home Finish",
-        "colecao": "Flora",
-        "posicao": 1,
-        "participacao_media": 1.0
-      },
-      {
-        "codigo": "FK-0698",
-        "ref": "89037",
-        "fornecedor": "Home Finish",
-        "colecao": "Tartan",
-        "posicao": 1,
-        "participacao_media": 0.9817
-      },
-      {
-        "codigo": "FK-0589",
-        "ref": "602704",
-        "fornecedor": "Home Finish",
-        "colecao": "Passeio no Campo",
-        "posicao": 1,
-        "participacao_media": 0.9808
-      },
-      {
-        "codigo": "FK-0142",
-        "ref": "83097",
-        "fornecedor": "Home Finish",
-        "colecao": "Biomas",
-        "posicao": 1,
-        "participacao_media": 0.9119
-      },
-      {
-        "codigo": "FK-0260",
-        "ref": "82427",
+        "codigo": "FK-0248",
+        "ref": "82410",
         "fornecedor": "Home Finish",
         "colecao": "Doce Estilo",
         "posicao": 1,
-        "participacao_media": 0.8862
+        "participacao_media": 0.9155
       },
       {
-        "codigo": "FK-0209",
-        "ref": "80997",
+        "codigo": "FK-0505",
+        "ref": "83714",
+        "fornecedor": "Home Finish",
+        "colecao": "Natureza Lúdica",
+        "posicao": 1,
+        "participacao_media": 0.8577
+      },
+      {
+        "codigo": "FK-0205",
+        "ref": "80683",
         "fornecedor": "Home Finish",
         "colecao": "Bosque da Imaginação",
         "posicao": 1,
-        "participacao_media": 0.8675
+        "participacao_media": 0.7619
+      },
+      {
+        "codigo": "FK-0300",
+        "ref": "81925",
+        "fornecedor": "Home Finish",
+        "colecao": "Doce Estilo",
+        "posicao": 1,
+        "participacao_media": 0.744
+      },
+      {
+        "codigo": "FK-0302",
+        "ref": "82250",
+        "fornecedor": "Home Finish",
+        "colecao": "Doce Estilo",
+        "posicao": 1,
+        "participacao_media": 0.7316
+      },
+      {
+        "codigo": "FK-0515",
+        "ref": "83790",
+        "fornecedor": "Home Finish",
+        "colecao": "Natureza Lúdica",
+        "posicao": 1,
+        "participacao_media": 0.72
       }
     ],
     "Preto": [
@@ -708,166 +776,122 @@
     ],
     "Vermelho/Vinho": [
       {
-        "codigo": "FK-0962",
-        "ref": "TX-3042",
-        "fornecedor": "Wiler",
-        "colecao": "Texture III",
+        "codigo": "FK-0688",
+        "ref": "88931",
+        "fornecedor": "Home Finish",
+        "colecao": "Tartan",
         "posicao": 1,
-        "participacao_media": 0.972
+        "participacao_media": 0.5843
+      },
+      {
+        "codigo": "FK-0805",
+        "ref": "TR-4035",
+        "fornecedor": "Wiler",
+        "colecao": "Tramas",
+        "posicao": 1,
+        "participacao_media": 0.5792
+      },
+      {
+        "codigo": "FK-0668",
+        "ref": "88733",
+        "fornecedor": "Home Finish",
+        "colecao": "Tartan",
+        "posicao": 1,
+        "participacao_media": 0.55
+      },
+      {
+        "codigo": "FK-0189",
+        "ref": "80591",
+        "fornecedor": "Home Finish",
+        "colecao": "Bosque da Imaginação",
+        "posicao": 2,
+        "participacao_media": 0.277
       },
       {
         "codigo": "FK-0294",
         "ref": "81970",
         "fornecedor": "Home Finish",
         "colecao": "Doce Estilo",
-        "posicao": 1,
-        "participacao_media": 0.7493
+        "posicao": 2,
+        "participacao_media": 0.2527
       },
       {
         "codigo": "FK-0296",
         "ref": "82304",
         "fornecedor": "Home Finish",
         "colecao": "Doce Estilo",
-        "posicao": 1,
-        "participacao_media": 0.7431
+        "posicao": 2,
+        "participacao_media": 0.2484
       },
       {
-        "codigo": "FK-0288",
-        "ref": "81888",
+        "codigo": "FK-0348",
+        "ref": "89983",
         "fornecedor": "Home Finish",
-        "colecao": "Doce Estilo",
-        "posicao": 1,
-        "participacao_media": 0.7342
+        "colecao": "Era Uma Vez",
+        "posicao": 2,
+        "participacao_media": 0.2092
       },
       {
-        "codigo": "FK-0295",
-        "ref": "82144",
+        "codigo": "FK-0243",
+        "ref": "81581",
         "fornecedor": "Home Finish",
-        "colecao": "Doce Estilo",
-        "posicao": 1,
-        "participacao_media": 0.7133
-      },
-      {
-        "codigo": "FK-0289",
-        "ref": "82069",
-        "fornecedor": "Home Finish",
-        "colecao": "Doce Estilo",
-        "posicao": 1,
-        "participacao_media": 0.6896
-      },
-      {
-        "codigo": "FK-0290",
-        "ref": "82311",
-        "fornecedor": "Home Finish",
-        "colecao": "Doce Estilo",
-        "posicao": 1,
-        "participacao_media": 0.6585
-      },
-      {
-        "codigo": "FK-0688",
-        "ref": "88931",
-        "fornecedor": "Home Finish",
-        "colecao": "Tartan",
-        "posicao": 1,
-        "participacao_media": 0.625
+        "colecao": "Botânica",
+        "posicao": 2,
+        "participacao_media": 0.0989
       }
     ],
-    "Rosa": [
+    "Roxo/Lilás": [
+      {
+        "codigo": "FK-0258",
+        "ref": "82373",
+        "fornecedor": "Home Finish",
+        "colecao": "Doce Estilo",
+        "posicao": 1,
+        "participacao_media": 0.9109
+      },
+      {
+        "codigo": "FK-0297",
+        "ref": "81901",
+        "fornecedor": "Home Finish",
+        "colecao": "Doce Estilo",
+        "posicao": 1,
+        "participacao_media": 0.7519
+      },
+      {
+        "codigo": "FK-0299",
+        "ref": "82236",
+        "fornecedor": "Home Finish",
+        "colecao": "Doce Estilo",
+        "posicao": 1,
+        "participacao_media": 0.7411
+      },
+      {
+        "codigo": "FK-0298",
+        "ref": "82014",
+        "fornecedor": "Home Finish",
+        "colecao": "Doce Estilo",
+        "posicao": 1,
+        "participacao_media": 0.7142
+      },
+      {
+        "codigo": "FK-0259",
+        "ref": "81765",
+        "fornecedor": "Home Finish",
+        "colecao": "Doce Estilo",
+        "posicao": 2,
+        "participacao_media": 0.5
+      },
       {
         "codigo": "FK-0668",
         "ref": "88733",
         "fornecedor": "Home Finish",
         "colecao": "Tartan",
-        "posicao": 2,
-        "participacao_media": 0.1998
-      },
-      {
-        "codigo": "FK-0853",
-        "ref": "BA0021",
-        "fornecedor": "Wiler",
-        "colecao": "Bambine",
         "posicao": 3,
-        "participacao_media": 0.1547
+        "participacao_media": 0.1885
       }
     ]
   },
   "amostra_revisao_automatica": [
-    {
-      "codigo": "FK-0012",
-      "ref": "AD300706R",
-      "fornecedor": "Kantai",
-      "colecao": "Aditare 3",
-      "pixels": "Branco/Off-white",
-      "paleta": "Greige",
-      "ranking_pixels": [
-        {
-          "nome": "Branco/Off-white",
-          "participacao": 0.4082
-        },
-        {
-          "nome": "Greige",
-          "participacao": 0.3409
-        },
-        {
-          "nome": "Cinza",
-          "participacao": 0.2312
-        },
-        {
-          "nome": "Verde",
-          "participacao": 0.0081
-        }
-      ],
-      "ranking_paleta": [
-        {
-          "nome": "Greige",
-          "participacao": 0.711
-        },
-        {
-          "nome": "Branco/Off-white",
-          "participacao": 0.289
-        }
-      ]
-    },
-    {
-      "codigo": "FK-0015",
-      "ref": "AD300002R",
-      "fornecedor": "Kantai",
-      "colecao": "Aditare 3",
-      "pixels": "Branco/Off-white",
-      "paleta": "Greige",
-      "ranking_pixels": [
-        {
-          "nome": "Branco/Off-white",
-          "participacao": 0.4356
-        },
-        {
-          "nome": "Greige",
-          "participacao": 0.3635
-        },
-        {
-          "nome": "Bege/Areia",
-          "participacao": 0.1499
-        },
-        {
-          "nome": "Cinza",
-          "participacao": 0.0342
-        }
-      ],
-      "ranking_paleta": [
-        {
-          "nome": "Greige",
-          "participacao": 0.5699
-        },
-        {
-          "nome": "Branco/Off-white",
-          "participacao": 0.4077
-        },
-        {
-          "nome": "Bege/Areia",
-          "participacao": 0.0223
-        }
-      ]
-    },
     {
       "codigo": "FK-0986",
       "ref": "AD300109R",
@@ -882,11 +906,11 @@
         },
         {
           "nome": "Cinza",
-          "participacao": 0.4388
+          "participacao": 0.434
         },
         {
           "nome": "Verde",
-          "participacao": 0.0077
+          "participacao": 0.0124
         },
         {
           "nome": "Branco/Off-white",
@@ -905,8 +929,88 @@
       ]
     },
     {
-      "codigo": "FK-1013",
-      "ref": "AD300402R",
+      "codigo": "FK-0996",
+      "ref": "AD300206R",
+      "fornecedor": "Kantai",
+      "colecao": "Aditare 3",
+      "pixels": "Cinza",
+      "paleta": "Verde",
+      "ranking_pixels": [
+        {
+          "nome": "Cinza",
+          "participacao": 0.7844
+        },
+        {
+          "nome": "Verde",
+          "participacao": 0.1257
+        },
+        {
+          "nome": "Greige",
+          "participacao": 0.078
+        },
+        {
+          "nome": "Marrom",
+          "participacao": 0.0075
+        }
+      ],
+      "ranking_paleta": [
+        {
+          "nome": "Verde",
+          "participacao": 0.7395
+        },
+        {
+          "nome": "Cinza",
+          "participacao": 0.2605
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1010",
+      "ref": "AD300308R",
+      "fornecedor": "Kantai",
+      "colecao": "Aditare 3",
+      "pixels": "Azul",
+      "paleta": "Cinza",
+      "ranking_pixels": [
+        {
+          "nome": "Azul",
+          "participacao": 0.4032
+        },
+        {
+          "nome": "Cinza",
+          "participacao": 0.296
+        },
+        {
+          "nome": "Branco/Off-white",
+          "participacao": 0.1905
+        },
+        {
+          "nome": "Verde",
+          "participacao": 0.1018
+        }
+      ],
+      "ranking_paleta": [
+        {
+          "nome": "Cinza",
+          "participacao": 0.42
+        },
+        {
+          "nome": "Azul",
+          "participacao": 0.4148
+        },
+        {
+          "nome": "Branco/Off-white",
+          "participacao": 0.1434
+        },
+        {
+          "nome": "Verde",
+          "participacao": 0.0219
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1012",
+      "ref": "AD300403R",
       "fornecedor": "Kantai",
       "colecao": "Aditare 3",
       "pixels": "Branco/Off-white",
@@ -914,33 +1018,65 @@
       "ranking_pixels": [
         {
           "nome": "Branco/Off-white",
-          "participacao": 0.3764
+          "participacao": 0.4418
         },
         {
           "nome": "Greige",
-          "participacao": 0.3584
-        },
-        {
-          "nome": "Bege/Areia",
-          "participacao": 0.2349
+          "participacao": 0.4327
         },
         {
           "nome": "Cinza",
-          "participacao": 0.013
+          "participacao": 0.0975
+        },
+        {
+          "nome": "Verde",
+          "participacao": 0.018
         }
       ],
       "ranking_paleta": [
         {
           "nome": "Greige",
-          "participacao": 0.4011
+          "participacao": 0.5872
         },
         {
           "nome": "Branco/Off-white",
-          "participacao": 0.3864
+          "participacao": 0.4128
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1029",
+      "ref": "AD300509R",
+      "fornecedor": "Kantai",
+      "colecao": "Aditare 3",
+      "pixels": "Verde",
+      "paleta": "Azul",
+      "ranking_pixels": [
+        {
+          "nome": "Verde",
+          "participacao": 0.5348
         },
         {
-          "nome": "Bege/Areia",
-          "participacao": 0.2125
+          "nome": "Azul",
+          "participacao": 0.4451
+        },
+        {
+          "nome": "Cinza",
+          "participacao": 0.0114
+        },
+        {
+          "nome": "Marrom",
+          "participacao": 0.0073
+        }
+      ],
+      "ranking_paleta": [
+        {
+          "nome": "Azul",
+          "participacao": 0.6775
+        },
+        {
+          "nome": "Verde",
+          "participacao": 0.3225
         }
       ]
     },
@@ -954,15 +1090,15 @@
       "ranking_pixels": [
         {
           "nome": "Cinza",
-          "participacao": 0.4608
+          "participacao": 0.4474
         },
         {
           "nome": "Greige",
-          "participacao": 0.2743
+          "participacao": 0.2735
         },
         {
           "nome": "Marrom",
-          "participacao": 0.1541
+          "participacao": 0.1555
         },
         {
           "nome": "Bege/Areia",
@@ -981,6 +1117,46 @@
       ]
     },
     {
+      "codigo": "FK-0027",
+      "ref": "PT501102",
+      "fornecedor": "Kantai",
+      "colecao": "Poet Chart 5",
+      "pixels": "Cinza",
+      "paleta": "Verde",
+      "ranking_pixels": [
+        {
+          "nome": "Cinza",
+          "participacao": 0.3191
+        },
+        {
+          "nome": "Azul",
+          "participacao": 0.2783
+        },
+        {
+          "nome": "Verde",
+          "participacao": 0.219
+        },
+        {
+          "nome": "Greige",
+          "participacao": 0.0794
+        }
+      ],
+      "ranking_paleta": [
+        {
+          "nome": "Verde",
+          "participacao": 0.6057
+        },
+        {
+          "nome": "Cinza",
+          "participacao": 0.2723
+        },
+        {
+          "nome": "Azul",
+          "participacao": 0.122
+        }
+      ]
+    },
+    {
       "codigo": "FK-0028",
       "ref": "PT501101",
       "fornecedor": "Kantai",
@@ -990,19 +1166,19 @@
       "ranking_pixels": [
         {
           "nome": "Cinza",
-          "participacao": 0.5029
+          "participacao": 0.4977
         },
         {
           "nome": "Branco/Off-white",
-          "participacao": 0.4739
+          "participacao": 0.4744
         },
         {
           "nome": "Verde",
-          "participacao": 0.0081
+          "participacao": 0.0137
         },
         {
           "nome": "Greige",
-          "participacao": 0.0063
+          "participacao": 0.0054
         }
       ],
       "ranking_paleta": [
@@ -1017,6 +1193,86 @@
       ]
     },
     {
+      "codigo": "FK-0029",
+      "ref": "PT501005",
+      "fornecedor": "Kantai",
+      "colecao": "Poet Chart 5",
+      "pixels": "Bege/Areia",
+      "paleta": "Greige",
+      "ranking_pixels": [
+        {
+          "nome": "Bege/Areia",
+          "participacao": 0.3504
+        },
+        {
+          "nome": "Greige",
+          "participacao": 0.3162
+        },
+        {
+          "nome": "Branco/Off-white",
+          "participacao": 0.1932
+        },
+        {
+          "nome": "Verde",
+          "participacao": 0.087
+        }
+      ],
+      "ranking_paleta": [
+        {
+          "nome": "Greige",
+          "participacao": 0.542
+        },
+        {
+          "nome": "Branco/Off-white",
+          "participacao": 0.2827
+        },
+        {
+          "nome": "Bege/Areia",
+          "participacao": 0.1754
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0031",
+      "ref": "PT501003",
+      "fornecedor": "Kantai",
+      "colecao": "Poet Chart 5",
+      "pixels": "Cinza",
+      "paleta": "Verde",
+      "ranking_pixels": [
+        {
+          "nome": "Cinza",
+          "participacao": 0.7851
+        },
+        {
+          "nome": "Verde",
+          "participacao": 0.1854
+        },
+        {
+          "nome": "Marrom",
+          "participacao": 0.016
+        },
+        {
+          "nome": "Preto",
+          "participacao": 0.0103
+        }
+      ],
+      "ranking_paleta": [
+        {
+          "nome": "Verde",
+          "participacao": 0.4848
+        },
+        {
+          "nome": "Cinza",
+          "participacao": 0.3949
+        },
+        {
+          "nome": "Marrom",
+          "participacao": 0.1202
+        }
+      ]
+    },
+    {
       "codigo": "FK-0036",
       "ref": "PT500902",
       "fornecedor": "Kantai",
@@ -1026,19 +1282,19 @@
       "ranking_pixels": [
         {
           "nome": "Marrom",
-          "participacao": 0.3374
+          "participacao": 0.347
         },
         {
-          "nome": "Terracota/Laranja",
-          "participacao": 0.1211
+          "nome": "Bege/Areia",
+          "participacao": 0.1568
         },
         {
           "nome": "Greige",
-          "participacao": 0.1153
+          "participacao": 0.1293
         },
         {
-          "nome": "Amarelo/Dourado",
-          "participacao": 0.1133
+          "nome": "Terracota/Laranja",
+          "participacao": 0.1221
         }
       ],
       "ranking_paleta": [
@@ -1055,8 +1311,52 @@
           "participacao": 0.1553
         },
         {
-          "nome": "Branco/Off-white",
+          "nome": "Bege/Areia",
           "participacao": 0.1307
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0037",
+      "ref": "PT500901",
+      "fornecedor": "Kantai",
+      "colecao": "Poet Chart 5",
+      "pixels": "Cinza",
+      "paleta": "Azul",
+      "ranking_pixels": [
+        {
+          "nome": "Cinza",
+          "participacao": 0.2415
+        },
+        {
+          "nome": "Azul",
+          "participacao": 0.2234
+        },
+        {
+          "nome": "Branco/Off-white",
+          "participacao": 0.2055
+        },
+        {
+          "nome": "Greige",
+          "participacao": 0.0867
+        }
+      ],
+      "ranking_paleta": [
+        {
+          "nome": "Azul",
+          "participacao": 0.3573
+        },
+        {
+          "nome": "Branco/Off-white",
+          "participacao": 0.2844
+        },
+        {
+          "nome": "Cinza",
+          "participacao": 0.2125
+        },
+        {
+          "nome": "Marrom",
+          "participacao": 0.1458
         }
       ]
     },
@@ -1066,29 +1366,33 @@
       "fornecedor": "Kantai",
       "colecao": "Poet Chart 5",
       "pixels": "Greige",
-      "paleta": "Cinza",
+      "paleta": "Verde",
       "ranking_pixels": [
         {
           "nome": "Greige",
-          "participacao": 0.5097
-        },
-        {
-          "nome": "Cinza",
-          "participacao": 0.4617
-        },
-        {
-          "nome": "Marrom",
-          "participacao": 0.0095
+          "participacao": 0.5086
         },
         {
           "nome": "Verde",
-          "participacao": 0.0085
+          "participacao": 0.426
+        },
+        {
+          "nome": "Cinza",
+          "participacao": 0.0446
+        },
+        {
+          "nome": "Marrom",
+          "participacao": 0.0098
         }
       ],
       "ranking_paleta": [
         {
+          "nome": "Verde",
+          "participacao": 0.7238
+        },
+        {
           "nome": "Cinza",
-          "participacao": 0.8626
+          "participacao": 0.1388
         },
         {
           "nome": "Greige",
@@ -1106,19 +1410,19 @@
       "ranking_pixels": [
         {
           "nome": "Cinza",
-          "participacao": 0.4221
+          "participacao": 0.4058
         },
         {
           "nome": "Branco/Off-white",
-          "participacao": 0.3188
+          "participacao": 0.3354
         },
         {
           "nome": "Greige",
-          "participacao": 0.2411
+          "participacao": 0.2241
         },
         {
           "nome": "Verde",
-          "participacao": 0.0081
+          "participacao": 0.0249
         }
       ],
       "ranking_paleta": [
@@ -1137,6 +1441,86 @@
       ]
     },
     {
+      "codigo": "FK-1098",
+      "ref": "PT500605",
+      "fornecedor": "Kantai",
+      "colecao": "Poet Chart 5",
+      "pixels": "Azul",
+      "paleta": "Cinza",
+      "ranking_pixels": [
+        {
+          "nome": "Azul",
+          "participacao": 0.4737
+        },
+        {
+          "nome": "Cinza",
+          "participacao": 0.4536
+        },
+        {
+          "nome": "Verde",
+          "participacao": 0.0606
+        },
+        {
+          "nome": "Marrom",
+          "participacao": 0.0081
+        }
+      ],
+      "ranking_paleta": [
+        {
+          "nome": "Cinza",
+          "participacao": 0.5134
+        },
+        {
+          "nome": "Azul",
+          "participacao": 0.4866
+        }
+      ]
+    },
+    {
+      "codigo": "FK-1104",
+      "ref": "PT500504",
+      "fornecedor": "Kantai",
+      "colecao": "Poet Chart 5",
+      "pixels": "Azul",
+      "paleta": "Cinza",
+      "ranking_pixels": [
+        {
+          "nome": "Azul",
+          "participacao": 0.4943
+        },
+        {
+          "nome": "Cinza",
+          "participacao": 0.2135
+        },
+        {
+          "nome": "Marrom",
+          "participacao": 0.1239
+        },
+        {
+          "nome": "Verde",
+          "participacao": 0.0984
+        }
+      ],
+      "ranking_paleta": [
+        {
+          "nome": "Cinza",
+          "participacao": 0.4987
+        },
+        {
+          "nome": "Azul",
+          "participacao": 0.265
+        },
+        {
+          "nome": "Verde",
+          "participacao": 0.1505
+        },
+        {
+          "nome": "Marrom",
+          "participacao": 0.0858
+        }
+      ]
+    },
+    {
       "codigo": "FK-1134",
       "ref": "PT500107",
       "fornecedor": "Kantai",
@@ -1146,19 +1530,19 @@
       "ranking_pixels": [
         {
           "nome": "Cinza",
-          "participacao": 0.4513
+          "participacao": 0.411
         },
         {
           "nome": "Marrom",
-          "participacao": 0.3405
+          "participacao": 0.3412
         },
         {
           "nome": "Greige",
           "participacao": 0.163
         },
         {
-          "nome": "Amarelo/Dourado",
-          "participacao": 0.0316
+          "nome": "Verde",
+          "participacao": 0.0482
         }
       ],
       "ranking_paleta": [
@@ -1186,15 +1570,15 @@
         },
         {
           "nome": "Greige",
-          "participacao": 0.4465
-        },
-        {
-          "nome": "Cinza",
-          "participacao": 0.0084
+          "participacao": 0.4442
         },
         {
           "nome": "Verde",
-          "participacao": 0.0077
+          "participacao": 0.0119
+        },
+        {
+          "nome": "Terracota/Laranja",
+          "participacao": 0.0078
         }
       ],
       "ranking_paleta": [
@@ -1230,11 +1614,11 @@
         },
         {
           "nome": "Marrom",
-          "participacao": 0.2328
+          "participacao": 0.2331
         },
         {
           "nome": "Cinza",
-          "participacao": 0.0201
+          "participacao": 0.014
         }
       ],
       "ranking_paleta": [
@@ -1253,78 +1637,78 @@
       ]
     },
     {
-      "codigo": "FK-1079",
-      "ref": "CR333776R",
+      "codigo": "FK-1048",
+      "ref": "CR333746R",
       "fornecedor": "Kantai",
       "colecao": "Criativo 3",
-      "pixels": "Cinza",
-      "paleta": "Greige",
+      "pixels": "Greige",
+      "paleta": "Cinza",
       "ranking_pixels": [
         {
-          "nome": "Cinza",
-          "participacao": 0.3636
-        },
-        {
           "nome": "Greige",
-          "participacao": 0.3632
+          "participacao": 0.4882
         },
         {
-          "nome": "Branco/Off-white",
-          "participacao": 0.2556
+          "nome": "Cinza",
+          "participacao": 0.4851
         },
         {
           "nome": "Verde",
-          "participacao": 0.0077
+          "participacao": 0.0165
+        },
+        {
+          "nome": "Marrom",
+          "participacao": 0.0041
         }
       ],
       "ranking_paleta": [
         {
-          "nome": "Greige",
-          "participacao": 0.5964
-        },
-        {
-          "nome": "Branco/Off-white",
-          "participacao": 0.28
-        },
-        {
           "nome": "Cinza",
-          "participacao": 0.1236
+          "participacao": 0.8043
+        },
+        {
+          "nome": "Greige",
+          "participacao": 0.1957
         }
       ]
     },
     {
-      "codigo": "FK-1159",
-      "ref": "9S160707",
+      "codigo": "FK-0078",
+      "ref": "9S160105",
       "fornecedor": "Kantai",
       "colecao": "Space IX",
       "pixels": "Greige",
-      "paleta": "Branco/Off-white",
+      "paleta": "Rosa",
       "ranking_pixels": [
         {
           "nome": "Greige",
-          "participacao": 0.4915
+          "participacao": 0.437
         },
         {
-          "nome": "Branco/Off-white",
-          "participacao": 0.4235
+          "nome": "Rosa",
+          "participacao": 0.2734
         },
         {
           "nome": "Cinza",
-          "participacao": 0.0757
+          "participacao": 0.2655
         },
         {
-          "nome": "Verde",
-          "participacao": 0.0037
+          "nome": "Vermelho/Vinho",
+          "participacao": 0.0114
         }
       ],
       "ranking_paleta": [
         {
-          "nome": "Branco/Off-white",
-          "participacao": 0.6584
+          "nome": "Rosa",
+          "participacao": 0.651
+        },
+        {
+          "nome": "Cinza",
+          "participacao": 0.2553
         },
         {
           "nome": "Greige",
-          "participacao": 0.3416
+          "participacao": 0.0936
         }
       ]
     },
@@ -1338,19 +1722,19 @@
       "ranking_pixels": [
         {
           "nome": "Cinza",
-          "participacao": 0.5031
+          "participacao": 0.5
         },
         {
           "nome": "Branco/Off-white",
-          "participacao": 0.4751
+          "participacao": 0.4755
         },
         {
           "nome": "Greige",
-          "participacao": 0.0131
+          "participacao": 0.0127
         },
         {
           "nome": "Verde",
-          "participacao": 0.0034
+          "participacao": 0.0064
         }
       ],
       "ranking_paleta": [
@@ -1365,6 +1749,42 @@
       ]
     },
     {
+      "codigo": "FK-0111",
+      "ref": "BH101013",
+      "fornecedor": "Home Finish",
+      "colecao": "BIO Habitat",
+      "pixels": "Verde",
+      "paleta": "Amarelo/Dourado",
+      "ranking_pixels": [
+        {
+          "nome": "Verde",
+          "participacao": 0.4727
+        },
+        {
+          "nome": "Amarelo/Dourado",
+          "participacao": 0.4197
+        },
+        {
+          "nome": "Marrom",
+          "participacao": 0.0488
+        },
+        {
+          "nome": "Preto",
+          "participacao": 0.0406
+        }
+      ],
+      "ranking_paleta": [
+        {
+          "nome": "Amarelo/Dourado",
+          "participacao": 0.5069
+        },
+        {
+          "nome": "Verde",
+          "participacao": 0.4931
+        }
+      ]
+    },
+    {
       "codigo": "FK-0131",
       "ref": "BH101037",
       "fornecedor": "Home Finish",
@@ -1374,15 +1794,15 @@
       "ranking_pixels": [
         {
           "nome": "Verde",
-          "participacao": 0.2306
+          "participacao": 0.2706
         },
         {
           "nome": "Marrom",
-          "participacao": 0.2258
+          "participacao": 0.2315
         },
         {
           "nome": "Terracota/Laranja",
-          "participacao": 0.2168
+          "participacao": 0.217
         },
         {
           "nome": "Preto",
@@ -1409,86 +1829,42 @@
       ]
     },
     {
-      "codigo": "FK-0145",
-      "ref": "83103",
+      "codigo": "FK-0159",
+      "ref": "83240",
       "fornecedor": "Home Finish",
       "colecao": "Biomas",
-      "pixels": "Azul",
-      "paleta": "Cinza",
+      "pixels": "Amarelo/Dourado",
+      "paleta": "Verde",
       "ranking_pixels": [
-        {
-          "nome": "Azul",
-          "participacao": 0.4216
-        },
-        {
-          "nome": "Cinza",
-          "participacao": 0.3999
-        },
-        {
-          "nome": "Verde",
-          "participacao": 0.1679
-        },
-        {
-          "nome": "Branco/Off-white",
-          "participacao": 0.0082
-        }
-      ],
-      "ranking_paleta": [
-        {
-          "nome": "Cinza",
-          "participacao": 0.5474
-        },
-        {
-          "nome": "Verde",
-          "participacao": 0.3239
-        },
-        {
-          "nome": "Azul",
-          "participacao": 0.1287
-        }
-      ]
-    },
-    {
-      "codigo": "FK-0168",
-      "ref": "83332",
-      "fornecedor": "Home Finish",
-      "colecao": "Biomas",
-      "pixels": "Cinza",
-      "paleta": "Greige",
-      "ranking_pixels": [
-        {
-          "nome": "Cinza",
-          "participacao": 0.2676
-        },
-        {
-          "nome": "Preto",
-          "participacao": 0.1838
-        },
-        {
-          "nome": "Azul",
-          "participacao": 0.1764
-        },
         {
           "nome": "Amarelo/Dourado",
-          "participacao": 0.0635
-        }
-      ],
-      "ranking_paleta": [
-        {
-          "nome": "Greige",
-          "participacao": 0.245
+          "participacao": 0.4446
         },
         {
-          "nome": "Azul",
-          "participacao": 0.2349
-        },
-        {
-          "nome": "Preto",
-          "participacao": 0.1344
+          "nome": "Verde",
+          "participacao": 0.4441
         },
         {
           "nome": "Bege/Areia",
-          "participacao": 0.1332
+          "participacao": 0.0894
+        },
+        {
+          "nome": "Cinza",
+          "participacao": 0.0147
+        }
+      ],
+      "ranking_paleta": [
+        {
+          "nome": "Verde",
+          "participacao": 0.4773
+        },
+        {
+          "nome": "Amarelo/Dourado",
+          "participacao": 0.3978
+        },
+        {
+          "nome": "Bege/Areia",
+          "participacao": 0.1249
         }
       ]
     },
@@ -1497,16 +1873,16 @@
       "ref": "83356",
       "fornecedor": "Home Finish",
       "colecao": "Biomas",
-      "pixels": "Cinza",
+      "pixels": "Verde",
       "paleta": "Marrom",
       "ranking_pixels": [
         {
-          "nome": "Cinza",
-          "participacao": 0.2309
+          "nome": "Verde",
+          "participacao": 0.213
         },
         {
           "nome": "Marrom",
-          "participacao": 0.1935
+          "participacao": 0.1968
         },
         {
           "nome": "Amarelo/Dourado",
@@ -1514,7 +1890,7 @@
         },
         {
           "nome": "Branco/Off-white",
-          "participacao": 0.1495
+          "participacao": 0.1319
         }
       ],
       "ranking_paleta": [
@@ -1527,7 +1903,7 @@
           "participacao": 0.1788
         },
         {
-          "nome": "Cinza",
+          "nome": "Verde",
           "participacao": 0.1382
         },
         {
@@ -1546,19 +1922,19 @@
       "ranking_pixels": [
         {
           "nome": "Cinza",
-          "participacao": 0.4148
+          "participacao": 0.2652
         },
         {
           "nome": "Marrom",
-          "participacao": 0.2402
+          "participacao": 0.2401
         },
         {
           "nome": "Amarelo/Dourado",
           "participacao": 0.1326
         },
         {
-          "nome": "Greige",
-          "participacao": 0.129
+          "nome": "Verde",
+          "participacao": 0.1319
         }
       ],
       "ranking_paleta": [
@@ -1567,428 +1943,128 @@
           "participacao": 0.63
         },
         {
+          "nome": "Greige",
+          "participacao": 0.1417
+        },
+        {
+          "nome": "Verde",
+          "participacao": 0.1147
+        },
+        {
           "nome": "Cinza",
-          "participacao": 0.2283
+          "participacao": 0.1135
+        }
+      ]
+    },
+    {
+      "codigo": "FK-0178",
+      "ref": "83462",
+      "fornecedor": "Home Finish",
+      "colecao": "Biomas",
+      "pixels": "Branco/Off-white",
+      "paleta": "Verde",
+      "ranking_pixels": [
+        {
+          "nome": "Branco/Off-white",
+          "participacao": 0.3891
+        },
+        {
+          "nome": "Verde",
+          "participacao": 0.3631
+        },
+        {
+          "nome": "Cinza",
+          "participacao": 0.081
         },
         {
           "nome": "Greige",
-          "participacao": 0.1417
-        }
-      ]
-    },
-    {
-      "codigo": "FK-0223",
-      "ref": "81697",
-      "fornecedor": "Home Finish",
-      "colecao": "Botânica",
-      "pixels": "Azul",
-      "paleta": "Marrom",
-      "ranking_pixels": [
-        {
-          "nome": "Azul",
-          "participacao": 0.2653
-        },
-        {
-          "nome": "Cinza",
-          "participacao": 0.191
-        },
-        {
-          "nome": "Marrom",
-          "participacao": 0.1819
-        },
-        {
-          "nome": "Verde",
-          "participacao": 0.1078
+          "participacao": 0.062
         }
       ],
       "ranking_paleta": [
         {
-          "nome": "Marrom",
-          "participacao": 0.4731
-        },
-        {
-          "nome": "Azul",
-          "participacao": 0.3292
-        },
-        {
           "nome": "Verde",
-          "participacao": 0.1977
+          "participacao": 0.6112
+        },
+        {
+          "nome": "Branco/Off-white",
+          "participacao": 0.3888
         }
       ]
     },
     {
-      "codigo": "FK-0225",
-      "ref": "81673",
+      "codigo": "FK-0185",
+      "ref": "80577",
       "fornecedor": "Home Finish",
-      "colecao": "Botânica",
-      "pixels": "Terracota/Laranja",
-      "paleta": "Marrom",
+      "colecao": "Bosque da Imaginação",
+      "pixels": "Branco/Off-white",
+      "paleta": "Rosa",
       "ranking_pixels": [
         {
-          "nome": "Terracota/Laranja",
-          "participacao": 0.1918
+          "nome": "Branco/Off-white",
+          "participacao": 0.4993
         },
         {
-          "nome": "Marrom",
-          "participacao": 0.1848
-        },
-        {
-          "nome": "Cinza",
-          "participacao": 0.1846
-        },
-        {
-          "nome": "Amarelo/Dourado",
-          "participacao": 0.1707
-        }
-      ],
-      "ranking_paleta": [
-        {
-          "nome": "Marrom",
-          "participacao": 0.2753
-        },
-        {
-          "nome": "Terracota/Laranja",
-          "participacao": 0.27
-        },
-        {
-          "nome": "Verde",
-          "participacao": 0.1245
+          "nome": "Rosa",
+          "participacao": 0.4727
         },
         {
           "nome": "Bege/Areia",
-          "participacao": 0.1208
+          "participacao": 0.0177
+        },
+        {
+          "nome": "Greige",
+          "participacao": 0.0102
+        }
+      ],
+      "ranking_paleta": [
+        {
+          "nome": "Rosa",
+          "participacao": 0.5025
+        },
+        {
+          "nome": "Branco/Off-white",
+          "participacao": 0.4975
         }
       ]
     },
     {
-      "codigo": "FK-0230",
-      "ref": "81277",
+      "codigo": "FK-0188",
+      "ref": "80553",
       "fornecedor": "Home Finish",
-      "colecao": "Botânica",
+      "colecao": "Bosque da Imaginação",
       "pixels": "Branco/Off-white",
-      "paleta": "Marrom",
-      "ranking_pixels": [
-        {
-          "nome": "Branco/Off-white",
-          "participacao": 0.3243
-        },
-        {
-          "nome": "Marrom",
-          "participacao": 0.185
-        },
-        {
-          "nome": "Amarelo/Dourado",
-          "participacao": 0.1758
-        },
-        {
-          "nome": "Cinza",
-          "participacao": 0.1006
-        }
-      ],
-      "ranking_paleta": [
-        {
-          "nome": "Marrom",
-          "participacao": 0.3997
-        },
-        {
-          "nome": "Branco/Off-white",
-          "participacao": 0.3653
-        },
-        {
-          "nome": "Amarelo/Dourado",
-          "participacao": 0.235
-        }
-      ]
-    },
-    {
-      "codigo": "FK-0233",
-      "ref": "81321",
-      "fornecedor": "Home Finish",
-      "colecao": "Botânica",
-      "pixels": "Preto",
-      "paleta": "Marrom",
-      "ranking_pixels": [
-        {
-          "nome": "Preto",
-          "participacao": 0.349
-        },
-        {
-          "nome": "Marrom",
-          "participacao": 0.1978
-        },
-        {
-          "nome": "Cinza",
-          "participacao": 0.1512
-        },
-        {
-          "nome": "Amarelo/Dourado",
-          "participacao": 0.1175
-        }
-      ],
-      "ranking_paleta": [
-        {
-          "nome": "Marrom",
-          "participacao": 0.3813
-        },
-        {
-          "nome": "Preto",
-          "participacao": 0.3532
-        },
-        {
-          "nome": "Amarelo/Dourado",
-          "participacao": 0.1417
-        },
-        {
-          "nome": "Verde",
-          "participacao": 0.1238
-        }
-      ]
-    },
-    {
-      "codigo": "FK-0240",
-      "ref": "81505",
-      "fornecedor": "Home Finish",
-      "colecao": "Botânica",
-      "pixels": "Cinza",
-      "paleta": "Greige",
-      "ranking_pixels": [
-        {
-          "nome": "Cinza",
-          "participacao": 0.5475
-        },
-        {
-          "nome": "Greige",
-          "participacao": 0.4238
-        },
-        {
-          "nome": "Marrom",
-          "participacao": 0.0229
-        },
-        {
-          "nome": "Branco/Off-white",
-          "participacao": 0.005
-        }
-      ],
-      "ranking_paleta": [
-        {
-          "nome": "Greige",
-          "participacao": 0.4799
-        },
-        {
-          "nome": "Cinza",
-          "participacao": 0.4245
-        },
-        {
-          "nome": "Marrom",
-          "participacao": 0.0956
-        }
-      ]
-    },
-    {
-      "codigo": "FK-0242",
-      "ref": "81567",
-      "fornecedor": "Home Finish",
-      "colecao": "Botânica",
-      "pixels": "Preto",
-      "paleta": "Vermelho/Vinho",
-      "ranking_pixels": [
-        {
-          "nome": "Preto",
-          "participacao": 0.398
-        },
-        {
-          "nome": "Vermelho/Vinho",
-          "participacao": 0.3184
-        },
-        {
-          "nome": "Marrom",
-          "participacao": 0.1847
-        },
-        {
-          "nome": "Terracota/Laranja",
-          "participacao": 0.0964
-        }
-      ],
-      "ranking_paleta": [
-        {
-          "nome": "Vermelho/Vinho",
-          "participacao": 0.3909
-        },
-        {
-          "nome": "Preto",
-          "participacao": 0.352
-        },
-        {
-          "nome": "Marrom",
-          "participacao": 0.1565
-        },
-        {
-          "nome": "Terracota/Laranja",
-          "participacao": 0.1005
-        }
-      ]
-    },
-    {
-      "codigo": "FK-0243",
-      "ref": "81581",
-      "fornecedor": "Home Finish",
-      "colecao": "Botânica",
-      "pixels": "Cinza",
       "paleta": "Azul",
       "ranking_pixels": [
         {
-          "nome": "Cinza",
-          "participacao": 0.348
+          "nome": "Branco/Off-white",
+          "participacao": 0.3781
         },
         {
           "nome": "Azul",
-          "participacao": 0.2683
+          "participacao": 0.3581
         },
         {
           "nome": "Verde",
-          "participacao": 0.1169
+          "participacao": 0.2637
         },
         {
-          "nome": "Vermelho/Vinho",
-          "participacao": 0.0937
+          "nome": "Cinza",
+          "participacao": 0.0
         }
       ],
       "ranking_paleta": [
         {
           "nome": "Azul",
-          "participacao": 0.5006
-        },
-        {
-          "nome": "Cinza",
-          "participacao": 0.2711
-        },
-        {
-          "nome": "Vermelho/Vinho",
-          "participacao": 0.1166
-        },
-        {
-          "nome": "Marrom",
-          "participacao": 0.1116
-        }
-      ]
-    },
-    {
-      "codigo": "FK-0266",
-      "ref": "81772",
-      "fornecedor": "Home Finish",
-      "colecao": "Doce Estilo",
-      "pixels": "Preto",
-      "paleta": "Branco/Off-white",
-      "ranking_pixels": [
-        {
-          "nome": "Preto",
-          "participacao": 0.4722
+          "participacao": 0.4869
         },
         {
           "nome": "Branco/Off-white",
-          "participacao": 0.4667
-        },
-        {
-          "nome": "Cinza",
-          "participacao": 0.0611
-        }
-      ],
-      "ranking_paleta": [
-        {
-          "nome": "Branco/Off-white",
-          "participacao": 0.4667
-        },
-        {
-          "nome": "Preto",
-          "participacao": 0.4611
-        },
-        {
-          "nome": "Cinza",
-          "participacao": 0.0722
-        }
-      ]
-    },
-    {
-      "codigo": "FK-0314",
-      "ref": "82298",
-      "fornecedor": "Home Finish",
-      "colecao": "Doce Estilo",
-      "pixels": "Greige",
-      "paleta": "Bege/Areia",
-      "ranking_pixels": [
-        {
-          "nome": "Greige",
-          "participacao": 0.2939
-        },
-        {
-          "nome": "Bege/Areia",
-          "participacao": 0.2878
-        },
-        {
-          "nome": "Branco/Off-white",
-          "participacao": 0.256
-        },
-        {
-          "nome": "Amarelo/Dourado",
-          "participacao": 0.1556
-        }
-      ],
-      "ranking_paleta": [
-        {
-          "nome": "Bege/Areia",
-          "participacao": 0.4948
-        },
-        {
-          "nome": "Greige",
-          "participacao": 0.2619
-        },
-        {
-          "nome": "Branco/Off-white",
-          "participacao": 0.2433
-        }
-      ]
-    },
-    {
-      "codigo": "FK-0381",
-      "ref": "84865",
-      "fornecedor": "Home Finish",
-      "colecao": "Flora",
-      "pixels": "Branco/Off-white",
-      "paleta": "Terracota/Laranja",
-      "ranking_pixels": [
-        {
-          "nome": "Branco/Off-white",
-          "participacao": 0.1968
-        },
-        {
-          "nome": "Cinza",
-          "participacao": 0.1742
+          "participacao": 0.3949
         },
         {
           "nome": "Verde",
-          "participacao": 0.1612
-        },
-        {
-          "nome": "Amarelo/Dourado",
-          "participacao": 0.1528
-        }
-      ],
-      "ranking_paleta": [
-        {
-          "nome": "Terracota/Laranja",
-          "participacao": 0.2396
-        },
-        {
-          "nome": "Branco/Off-white",
-          "participacao": 0.1744
-        },
-        {
-          "nome": "Verde",
-          "participacao": 0.1393
-        },
-        {
-          "nome": "Marrom",
-          "participacao": 0.1305
+          "participacao": 0.1183
         }
       ]
     }
