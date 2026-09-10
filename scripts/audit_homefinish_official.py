@@ -9,29 +9,31 @@ from playwright.sync_api import sync_playwright
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 REPORT = ROOT / "auditoria-homefinish-oficial.json"
-BASE = "https://www.homefinish.com.br/colecoes/papeis-de-parede/"
 PAGE_PARAM = "e-page-23ca821"
 
-# Coleções já cadastradas + lacunas de portfólio confirmadas no site oficial.
-# Quando a Home Finish deixar de bloquear o runner, as coleções ausentes serão
-# auditadas automaticamente e aparecerão como faltantes reais, sem inferência.
-COLLECTIONS = {
-    "BIO Habitat": "bio-habitat",
-    "Biomas": "biomas",
-    "Bosque da Imaginação": "bosque-da-imaginacao",
-    "Botânica": "botanica",
-    "Doce Estilo": "doce-estilo",
-    "Era Uma Vez": "era-uma-vez",
-    "Flora": "flora",
-    "HF Texture III": "hf-textures-3",
-    "Memórias de Infância": "memorias-de-infancia",
-    "Natureza Lúdica": "natureza-ludica",
-    "Passeio no Campo": "passeio-no-campo",
-    "Provence": "provence",
-    "Tartan": "tartan",
-    "HF Orient": "hf-orient",
-    "HF Orient II": "hf-orient-ii",
-    "Mundo Encantado": "mundo-encantado",
+# URLs exatas das coleções já cadastradas e das lacunas confirmadas.
+# As coleções DiCoração usam /colecoes/dicoracao/, enquanto as demais usam
+# /colecoes/papeis-de-parede/. Guardar a URL completa evita inferência de rota.
+COLLECTION_URLS = {
+    "BIO Habitat": "https://www.homefinish.com.br/colecoes/papeis-de-parede/bio-habitat/",
+    "Biomas": "https://www.homefinish.com.br/colecoes/papeis-de-parede/biomas/",
+    "Bosque da Imaginação": "https://www.homefinish.com.br/colecoes/papeis-de-parede/bosque-da-imaginacao/",
+    "Botânica": "https://www.homefinish.com.br/colecoes/papeis-de-parede/botanica/",
+    "Doce Estilo": "https://www.homefinish.com.br/colecoes/papeis-de-parede/doce-estilo/",
+    "Era Uma Vez": "https://www.homefinish.com.br/colecoes/papeis-de-parede/era-uma-vez/",
+    "Flora": "https://www.homefinish.com.br/colecoes/papeis-de-parede/flora/",
+    "HF Texture III": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-textures-3/",
+    "Memórias de Infância": "https://www.homefinish.com.br/colecoes/papeis-de-parede/memorias-de-infancia/",
+    "Natureza Lúdica": "https://www.homefinish.com.br/colecoes/papeis-de-parede/natureza-ludica/",
+    "Passeio no Campo": "https://www.homefinish.com.br/colecoes/papeis-de-parede/passeio-no-campo/",
+    "Provence": "https://www.homefinish.com.br/colecoes/papeis-de-parede/provence/",
+    "Tartan": "https://www.homefinish.com.br/colecoes/papeis-de-parede/tartan/",
+    "HF Orient": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-orient/",
+    "HF Orient II": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-orient-ii/",
+    "Mundo Encantado": "https://www.homefinish.com.br/colecoes/papeis-de-parede/mundo-encantado/",
+    "Vichy": "https://www.homefinish.com.br/colecoes/dicoracao/vichy/",
+    "Bosque": "https://www.homefinish.com.br/colecoes/dicoracao/bosque/",
+    "Xadrez": "https://www.homefinish.com.br/colecoes/dicoracao/xadrez/",
 }
 
 REF_TEXT_RE = re.compile(r"^[A-Z]{0,6}(?:-?[A-Z]{0,3})?-?\d{2,9}[A-Z]?$", re.I)
@@ -60,9 +62,9 @@ def extract_ref(text: str, href: str) -> str | None:
     if text and len(text) <= 24 and REF_TEXT_RE.fullmatch(text):
         return text.upper().replace(" ", "")
     path = urllib.parse.urlparse(href or "").path.rstrip("/")
-    slug = path.rsplit("/", 1)[-1]
-    slug = re.sub(r"^papel-de-parede-", "", slug, flags=re.I)
-    m = REF_SLUG_RE.search(slug)
+    product_slug = path.rsplit("/", 1)[-1]
+    product_slug = re.sub(r"^papel-de-parede-", "", product_slug, flags=re.I)
+    m = REF_SLUG_RE.search(product_slug)
     return m.group(1).upper() if m else None
 
 
@@ -71,7 +73,7 @@ def refs_from_page(page) -> set[str]:
         () => {
           const heads = [...document.querySelectorAll('h1,h2,h3,h4')];
           const stop = heads.find(h => /TALVEZ.*GOST/i.test((h.textContent || '').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'')));
-          return [...document.querySelectorAll('a[href*="/papel-de-parede/papel-de-parede-"]')]
+          return [...document.querySelectorAll('a[href*="/papel-de-parede/"]')]
             .filter(a => !stop || (a.compareDocumentPosition(stop) & Node.DOCUMENT_POSITION_FOLLOWING))
             .map(a => ({text:(a.textContent || '').trim(), href:a.href}));
         }
@@ -84,13 +86,18 @@ def refs_from_page(page) -> set[str]:
     return refs
 
 
-def crawl(page, slug: str) -> tuple[set[str], list[dict]]:
+def page_url(base_url: str, number: int) -> str:
+    if number == 1:
+        return base_url
+    separator = "&" if "?" in base_url else "?"
+    return base_url + separator + urllib.parse.urlencode({PAGE_PARAM: number})
+
+
+def crawl(page, base_url: str) -> tuple[set[str], list[dict]]:
     all_refs: set[str] = set()
     pages = []
     for number in range(1, 25):
-        url = BASE + slug + "/"
-        if number > 1:
-            url += "?" + urllib.parse.urlencode({PAGE_PARAM: number})
+        url = page_url(base_url, number)
         response = page.goto(url, wait_until="domcontentloaded", timeout=30000)
         status = response.status if response else None
         title = page.title()
@@ -140,7 +147,7 @@ def main() -> None:
             else route.continue_(),
         )
 
-        for collection, slug in COLLECTIONS.items():
+        for collection, official_url in COLLECTION_URLS.items():
             catalog_raw = {
                 str(x.get("ref") or "").strip()
                 for x in data
@@ -149,17 +156,17 @@ def main() -> None:
                 and str(x.get("ref") or "").strip()
             }
             try:
-                official_refs, pages = crawl(page, slug)
+                official_refs, pages = crawl(page, official_url)
             except Exception as exc:
                 error_text = f"{type(exc).__name__}: {exc}"
                 errors.append({
                     "colecao": collection,
-                    "url_oficial": BASE + slug + "/",
+                    "url_oficial": official_url,
                     "erro": error_text,
                 })
                 results.append({
                     "colecao": collection,
-                    "url_oficial": BASE + slug + "/",
+                    "url_oficial": official_url,
                     "oficial": None,
                     "catalogo": len(catalog_raw),
                     "faltantes": None,
@@ -179,7 +186,7 @@ def main() -> None:
             partial_extras += len(extras)
             results.append({
                 "colecao": collection,
-                "url_oficial": BASE + slug + "/",
+                "url_oficial": official_url,
                 "oficial": len(official_refs),
                 "catalogo": len(catalog_raw),
                 "faltantes": missing,
@@ -219,12 +226,14 @@ def main() -> None:
         "faltantes_confirmados_nas_colecoes_coletadas": partial_missing,
         "extras_confirmados_nas_colecoes_coletadas": partial_extras,
         "nao_inferir_zero_em_falha": True,
+        "rotas_colecao_explicitas": True,
         "colecoes": results,
         "criterio": (
-            "Navega pelas páginas oficiais e paginação pública da Home Finish em Chromium. "
-            "Falhas de acesso nunca são tratadas como zero itens ou zero faltantes. Os totais "
-            "globais de faltantes/extras só recebem número quando todas as coleções configuradas "
-            "foram coletadas com sucesso. O script apenas audita; não altera o catálogo."
+            "Navega pelas URLs oficiais exatas e pela paginação pública da Home Finish em Chromium. "
+            "As rotas DiCoração são mantidas separadas das rotas de papéis de parede tradicionais. "
+            "Falhas de acesso nunca são tratadas como zero itens ou zero faltantes. Os totais globais "
+            "de faltantes/extras só recebem número quando todas as coleções configuradas foram "
+            "coletadas com sucesso. O script apenas audita; não altera o catálogo."
         ),
     }
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
