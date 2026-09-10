@@ -8,6 +8,7 @@ on:
       - 'auditoria-catalogo-atual.json'
       - 'auditoria-homefinish-fonte-validada.json'
       - 'auditoria-kantai-oficial.json'
+      - 'auditoria-kantai-escopo-oficial.json'
       - 'auditoria-wiler-consolidada.json'
       - 'scripts/consolidate_catalog_audits.py'
       - '.github/workflows/consolidate-catalog-audits.yml'
@@ -42,7 +43,7 @@ jobs:
             git push origin main
           fi
 
-      - name: Fail visibly when catalog needs review
+      - name: Fail visibly when registered catalog needs review
         shell: bash
         run: |
           python - <<'PY'
@@ -50,7 +51,8 @@ jobs:
           from pathlib import Path
           report = json.loads(Path('auditoria-catalogo-consolidada.json').read_text(encoding='utf-8'))
           status = report.get('status')
-          print(f'Consolidated catalog status: {status}')
+          print(f'Registered catalog status: {status}')
+          print(f'Portfolio scope status: {report.get("escopo_status")}')
           if status != 'completo_nas_fontes_auditadas':
-              raise SystemExit('Catalog review required: see auditoria-catalogo-consolidada.json')
+              raise SystemExit('Registered catalog review required: see auditoria-catalogo-consolidada.json')
           PY
