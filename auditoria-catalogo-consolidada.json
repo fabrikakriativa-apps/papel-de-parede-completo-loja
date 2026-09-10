@@ -1,6 +1,6 @@
 {
   "status": "completo_nas_fontes_auditadas",
-  "escopo_status": "cobertura_portfolio_em_auditoria",
+  "escopo_status": "cobertura_portfolio_parcial_confirmada",
   "itens_catalogo": 1212,
   "fornecedores": 3,
   "colecoes": 22,
@@ -10,6 +10,19 @@
     "imagens_locais_faltantes": 0
   },
   "cobertura_portfolio": {
+    "Home Finish": {
+      "status": "cobertura_parcial_confirmada",
+      "colecoes_ausentes_confirmadas": [
+        "HF Orient",
+        "HF Orient II",
+        "Mundo Encantado"
+      ],
+      "colecoes_em_classificacao": [
+        "Vichy",
+        "Bosque",
+        "Xadrez"
+      ]
+    },
     "Kantai": {
       "status": "cobertura_parcial",
       "colecoes_oficiais_listadas": 33,
@@ -17,11 +30,22 @@
       "colecoes_ausentes_no_catalogo": 29,
       "amostras_declaradas_em_colecoes_ausentes": 2030
     },
-    "Home Finish": {
-      "status": "a_validar_portfolio_completo"
-    },
     "Wiler": {
-      "status": "a_validar_portfolio_completo"
+      "status": "cobertura_parcial_confirmada",
+      "produtos_papel_de_parede_marca_wiler_k_na_vitrine_atual": 211,
+      "colecoes_ativas_ausentes_confirmadas": [
+        "Texture",
+        "Unique",
+        "Avalon 01",
+        "Avalon 02",
+        "Colorkey",
+        "Essencial",
+        "Fofura Baby",
+        "Reno",
+        "Bavária",
+        "Le Jardin",
+        "Vip"
+      ]
     }
   },
   "fornecedores_auditados": [
@@ -30,12 +54,26 @@
       "itens_catalogo": 619,
       "itens_auditados": 619,
       "itens_fonte_validada": 619,
-      "colecoes": 13,
+      "colecoes_cadastradas": 13,
       "status_colecoes_cadastradas": "completo_contra_snapshot_validado_oficial",
       "faltando": 0,
       "extras": 0,
       "duplicidades": 0,
       "totais_coincidem": true,
+      "cobertura_portfolio_oficial": {
+        "status": "cobertura_parcial_confirmada",
+        "colecoes_ausentes_confirmadas": [
+          "HF Orient",
+          "HF Orient II",
+          "Mundo Encantado"
+        ],
+        "colecoes_em_classificacao": [
+          "Vichy",
+          "Bosque",
+          "Xadrez"
+        ],
+        "relatorio": "auditoria-homefinish-escopo-oficial.json"
+      },
       "fonte": "Snapshot validado de URLs do domínio oficial homefinish.com.br",
       "relatorio": "auditoria-homefinish-fonte-validada.json",
       "observacao": "Os prefixos comerciais BH e MI são preservados no catálogo e normalizados apenas durante a comparação."
@@ -80,9 +118,32 @@
         "Texture III": 57,
         "Tramas": 62
       },
+      "cobertura_portfolio_oficial": {
+        "status": "cobertura_parcial_confirmada",
+        "produtos_papel_de_parede_marca_wiler_k_na_vitrine_atual": 211,
+        "colecoes_ativas_ausentes_confirmadas": [
+          "Texture",
+          "Unique",
+          "Avalon 01",
+          "Avalon 02",
+          "Colorkey",
+          "Essencial",
+          "Fofura Baby",
+          "Reno",
+          "Bavária",
+          "Le Jardin",
+          "Vip"
+        ],
+        "relatorio": "auditoria-wiler-escopo-oficial.json"
+      },
       "fonte": "Fontes da cadeia de fornecimento e snapshot histórico do book de origem para Tacto",
       "relatorio": "auditoria-wiler-consolidada.json"
     }
   ],
-  "criterio": "O status principal mede integridade e completude das coleções já cadastradas; não equivale a dizer que todo o portfólio atual de cada fornecedor está no catálogo. A cobertura de portfólio é registrada separadamente. Totais publicados precisam coincidir com os totais efetivamente auditados, evitando falso positivo após novas inclusões. Não usa versões ZIP/HTML antigas como fonte operacional."
+  "criterio": "O status principal mede integridade e completude das coleções já cadastradas; não equivale a dizer que todo o portfólio atual de cada fornecedor está no catálogo. A cobertura de portfólio é registrada separadamente e, nesta data, é parcial nos três fornecedores. Coleções encontradas fora da biblioteca-fonte original são tratadas como expansão de escopo, não como erro de publicação. Totais publicados precisam coincidir com os totais efetivamente auditados. Não usa versões ZIP/HTML antigas como fonte operacional.",
+  "portfolio_statuses": {
+    "Home Finish": "cobertura_parcial_confirmada",
+    "Kantai": "cobertura_parcial",
+    "Wiler": "cobertura_parcial_confirmada"
+  }
 }
