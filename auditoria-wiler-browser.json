@@ -6,20 +6,17 @@
     {
       "colecao": "Bambine",
       "url_oficial": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes",
-      "oficial_ativos_total": 39,
+      "oficial_ativos_total": null,
       "catalogo_total": 50,
-      "refs_ativas_extraidas": 42,
+      "refs_ativas_extraidas": 27,
       "extracao_ativa_completa": false,
       "faltantes_ativos_confirmados": [],
       "faltantes_observados_na_extracao_incompleta": [],
       "catalogo_nao_encontrado_na_vitrine_ativa": [],
       "observacao_catalogo_nao_ativo": "Itens não encontrados na vitrine ativa NÃO são candidatos automáticos a remoção; podem ser referências históricas/válidas do book.",
       "refs_ativas": [
-        "BA0001",
         "BA0002",
-        "BA0003",
         "BA0004",
-        "BA0006",
         "BA0007",
         "BA0009",
         "BA0010",
@@ -32,31 +29,19 @@
         "BA0018",
         "BA0019",
         "BA0021",
-        "BA0023",
         "BA0024",
         "BA0025",
-        "BA0026",
-        "BA0027",
-        "BA0028",
         "BA0029",
         "BA0030",
         "BA0031",
-        "BA0032",
         "BA0033",
         "BA0034",
         "BA0035",
-        "BA0036",
         "BA0037",
         "BA0038",
         "BA0039",
-        "BA0040",
         "BA0041",
-        "BA0042",
-        "BA0043",
-        "BA0044",
-        "BA0045",
-        "BA0046",
-        "BA0047"
+        "BA0044"
       ],
       "paginas": [
         {
@@ -64,14 +49,12 @@
           "url": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes",
           "url_final": "https://www.wiler.com.br/papel-de-parede/bambine?map=category-1%2Ccolecoes",
           "http": 200,
-          "seletor_grade": "[class*=\"galleryItem\"] a[href*=\"/p\"]",
-          "links_grade": 16,
-          "refs_na_pagina": 20,
-          "novas_refs": 20,
-          "total_acumulado": 20,
-          "contagens_visiveis": [
-            39
-          ]
+          "seletor_grade": null,
+          "links_grade": 0,
+          "refs_na_pagina": 0,
+          "novas_refs": 0,
+          "total_acumulado": 0,
+          "contagens_visiveis": []
         },
         {
           "pagina": 2,
@@ -81,8 +64,8 @@
           "seletor_grade": "[class*=\"galleryItem\"] a[href*=\"/p\"]",
           "links_grade": 16,
           "refs_na_pagina": 21,
-          "novas_refs": 18,
-          "total_acumulado": 38,
+          "novas_refs": 21,
+          "total_acumulado": 21,
           "contagens_visiveis": [
             39
           ]
@@ -95,8 +78,8 @@
           "seletor_grade": "[class*=\"galleryItem\"] a[href*=\"/p\"]",
           "links_grade": 7,
           "refs_na_pagina": 11,
-          "novas_refs": 4,
-          "total_acumulado": 42,
+          "novas_refs": 6,
+          "total_acumulado": 27,
           "contagens_visiveis": [
             39
           ]
@@ -110,14 +93,14 @@
           "links_grade": 0,
           "refs_na_pagina": 0,
           "novas_refs": 0,
-          "total_acumulado": 42,
+          "total_acumulado": 27,
           "contagens_visiveis": [
             39
           ]
         }
       ],
       "erro": null,
-      "status": "inconsistente_contagem"
+      "status": "parcial"
     },
     {
       "colecao": "Tacto",
@@ -462,8 +445,8 @@
   ],
   "resumo": {
     "catalogo_total_wiler": 262,
-    "ativos_oficiais_somados": 132,
-    "refs_ativas_extraidas": 135,
+    "ativos_oficiais_somados": 93,
+    "refs_ativas_extraidas": 120,
     "faltantes_ativos_confirmados": 0,
     "colecoes_extracao_completa": 2,
     "colecoes_nao_validadas": [
