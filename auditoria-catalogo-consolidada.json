@@ -18,7 +18,14 @@
         "Mundo Encantado",
         "Vichy",
         "Bosque",
-        "Xadrez"
+        "Xadrez",
+        "Temáticos",
+        "Floresta Brasileira",
+        "Clássicos",
+        "Fundo do Mar",
+        "Montanhas",
+        "Safari",
+        "As Crônicas de Nárnia"
       ],
       "colecoes_em_classificacao": []
     },
@@ -67,7 +74,14 @@
           "Mundo Encantado",
           "Vichy",
           "Bosque",
-          "Xadrez"
+          "Xadrez",
+          "Temáticos",
+          "Floresta Brasileira",
+          "Clássicos",
+          "Fundo do Mar",
+          "Montanhas",
+          "Safari",
+          "As Crônicas de Nárnia"
         ],
         "colecoes_em_classificacao": [],
         "relatorio": "auditoria-homefinish-escopo-oficial.json"
