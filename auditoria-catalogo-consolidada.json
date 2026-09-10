@@ -51,5 +51,5 @@
       "relatorio": "auditoria-wiler-consolidada.json"
     }
   ],
-  "criterio": "Estado consolidado do catálogo publicado no repositório fabrikakriativa-apps/papel-de-parede-completo-loja. Não usa versões ZIP/HTML antigas como fonte operacional. Alterações futuras devem partir da main atual e das fontes de cadeia de fornecimento/oficiais correspondentes."
+  "criterio": "Estado consolidado gerado automaticamente a partir do catálogo publicado e dos relatórios de auditoria. Não usa versões ZIP/HTML antigas como fonte operacional. Alterações futuras devem partir da main atual e das fontes de cadeia de fornecimento/oficiais correspondentes."
 }
