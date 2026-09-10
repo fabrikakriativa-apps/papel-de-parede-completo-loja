@@ -1,0 +1,51 @@
+name: Catalog smoke test
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'auditoria-catalogo-atual.json'
+      - 'auditoria-catalogo-consolidada.json'
+      - 'scripts/catalog_smoke_test.py'
+      - '.github/workflows/catalog-smoke-test.yml'
+  workflow_run:
+    workflows:
+      - 'Catalog health'
+      - 'Consolidate catalog audits'
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  smoke:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout catalog
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run catalog smoke test
+        run: python scripts/catalog_smoke_test.py
+
+      - name: Commit smoke report
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -f auditoria-smoke-test.json ]; then
+            git add auditoria-smoke-test.json
+          fi
+          if git diff --cached --quiet; then
+            echo "Smoke report already current"
+          else
+            git commit -m "Refresh catalog smoke test"
+            git pull --rebase origin main
+            git push origin main
+          fi
