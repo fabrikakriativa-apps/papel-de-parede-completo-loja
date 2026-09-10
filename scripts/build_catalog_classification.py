@@ -3,7 +3,7 @@ from __future__ import annotations
 import colorsys
 import json
 import unicodedata
-from collections import Counter, defaultdict
+from collections import Counter
 from pathlib import Path
 
 from PIL import Image, ImageOps
@@ -23,24 +23,13 @@ INFANT_COLLECTIONS = {
 }
 
 COLOR_ORDER = [
-    "Branco/Off-white",
-    "Bege/Areia",
-    "Greige",
-    "Cinza",
-    "Preto",
-    "Marrom",
-    "Verde",
-    "Azul",
-    "Rosa",
-    "Roxo/Lilás",
-    "Terracota/Laranja",
-    "Amarelo/Dourado",
-    "Vermelho/Vinho",
+    "Branco/Off-white", "Bege/Areia", "Greige", "Cinza", "Preto", "Marrom",
+    "Verde", "Azul", "Rosa", "Roxo/Lilás", "Terracota/Laranja",
+    "Amarelo/Dourado", "Vermelho/Vinho",
 ]
-
 CHROMATIC = {
     "Verde", "Azul", "Rosa", "Roxo/Lilás", "Terracota/Laranja",
-    "Amarelo/Dourado", "Vermelho/Vinho"
+    "Amarelo/Dourado", "Vermelho/Vinho",
 }
 
 
@@ -82,12 +71,24 @@ def rgb_family(r: int, g: int, b: int) -> str:
     if sat < 0.055:
         return "Branco/Off-white" if lum >= 0.86 else "Cinza"
 
-    # Neutros quentes ficam separados de cinza e dos cromáticos.
-    warm = 5 <= hue <= 70
+    # Pastéis cromáticos precisam ser identificados antes dos neutros. Na versão
+    # anterior, rosa/azul/verde muito claros podiam cair em cinza ou greige.
     if sat < 0.18:
-        if lum >= 0.90:
+        if lum >= 0.93 and sat < 0.08:
             return "Branco/Off-white"
-        if warm:
+        if 305 <= hue < 360 or 0 <= hue < 8:
+            return "Rosa" if lum >= 0.52 else "Vermelho/Vinho"
+        if 255 <= hue < 305:
+            return "Roxo/Lilás"
+        if 170 <= hue < 255:
+            return "Azul"
+        if 72 <= hue < 170:
+            return "Verde"
+
+        # Neutros quentes ficam separados de cinza.
+        if 8 <= hue <= 70:
+            if lum >= 0.88 and sat < 0.10:
+                return "Branco/Off-white"
             if lum >= 0.70:
                 return "Greige" if sat < 0.11 else "Bege/Areia"
             if lum >= 0.42:
@@ -95,7 +96,7 @@ def rgb_family(r: int, g: int, b: int) -> str:
             return "Marrom"
         return "Cinza"
 
-    if 15 <= hue < 45:
+    if 8 <= hue < 45:
         if lum < 0.48 and sat < 0.65:
             return "Marrom"
         return "Terracota/Laranja"
@@ -109,6 +110,9 @@ def rgb_family(r: int, g: int, b: int) -> str:
         return "Roxo/Lilás"
     if 305 <= hue < 345:
         return "Rosa"
+    if hue >= 345 or hue < 8:
+        # Vermelhos muito claros e suaves funcionam comercialmente como rosa.
+        return "Rosa" if lum >= 0.62 and sat < 0.65 else "Vermelho/Vinho"
     return "Vermelho/Vinho"
 
 
@@ -126,7 +130,6 @@ def prepare_image(path: Path) -> Image.Image:
     with Image.open(path) as raw:
         image = ImageOps.exif_transpose(raw).convert("RGB")
     width, height = image.size
-    # Miolo da imagem: reduz bordas e margens de exportação sem apagar papéis claros.
     left = int(width * 0.08)
     top = int(height * 0.08)
     right = max(left + 1, int(width * 0.92))
@@ -146,8 +149,6 @@ def pixel_method(image: Image.Image) -> tuple[Counter[str], list[float]]:
 
 
 def palette_method(image: Image.Image) -> Counter[str]:
-    # Uma segunda leitura independente: reduz a imagem a 8 centros cromáticos e
-    # depois agrega cada centro às mesmas famílias de cor.
     quant = image.quantize(colors=8, method=Image.Quantize.MEDIANCUT)
     palette = quant.getpalette()
     if palette is None:
@@ -181,8 +182,15 @@ def analyze_colors(path: Path) -> dict:
         for name in COLOR_ORDER:
             p1 = pixel_map.get(name, 0.0)
             p2 = palette_map.get(name, 0.0)
-            # Cor secundária só entra quando ambos os métodos a enxergam de forma relevante.
-            if (name == primary_pixel) or (p1 >= 0.12 and p2 >= 0.10):
+            if name == primary_pixel:
+                relevant = True
+            elif name in CHROMATIC:
+                # Cor de destaque é útil ao arquiteto mesmo ocupando área menor;
+                # ainda exige confirmação independente nos dois métodos.
+                relevant = p1 >= 0.06 and p2 >= 0.05
+            else:
+                relevant = p1 >= 0.12 and p2 >= 0.10
+            if relevant:
                 candidates.append((name, (p1 + p2) / 2.0, p1, p2))
         candidates.sort(key=lambda x: (-x[1], COLOR_ORDER.index(x[0])))
         for name, avg, p1, p2 in candidates[:3]:
@@ -191,7 +199,8 @@ def analyze_colors(path: Path) -> dict:
                 "participacao_media": round(avg, 4),
                 "participacao_pixels": round(p1, 4),
                 "participacao_paleta": round(p2, 4),
-                "metodo": "consenso_pixels_paleta_v2",
+                "papel": "principal" if name == primary_pixel else "destaque",
+                "metodo": "consenso_pixels_paleta_v3",
             })
 
     luminances.sort()
@@ -205,12 +214,7 @@ def analyze_colors(path: Path) -> dict:
 
     if primary_agreement and accepted:
         primary_share = accepted[0]["participacao_media"]
-        if primary_share >= 0.45:
-            confidence = 0.98
-        elif primary_share >= 0.30:
-            confidence = 0.95
-        else:
-            confidence = 0.92
+        confidence = 0.98 if primary_share >= 0.45 else 0.95 if primary_share >= 0.30 else 0.92
         status = "validado_consenso"
     else:
         confidence = None
@@ -218,7 +222,7 @@ def analyze_colors(path: Path) -> dict:
 
     chromatic_relevant = [
         row for row in accepted
-        if row["nome"] in CHROMATIC and row["participacao_media"] >= 0.12
+        if row["nome"] in CHROMATIC and row["participacao_media"] >= 0.055
     ]
 
     return {
@@ -235,7 +239,7 @@ def analyze_colors(path: Path) -> dict:
             "ranking_pixels": [{"nome": n, "participacao": round(v, 4)} for n, v in pixel_rank[:4]],
             "ranking_paleta": [{"nome": n, "participacao": round(v, 4)} for n, v in palette_rank[:4]],
         },
-        "metodo": "consenso_objetivo_cor_v2",
+        "metodo": "consenso_objetivo_cor_v3",
     }
 
 
@@ -343,13 +347,13 @@ def main() -> None:
         raise RuntimeError(f"Falha ao analisar {colors_error} imagens locais; amostra: {color_errors[:5]}")
 
     payload = {
-        "schema_version": 2,
+        "schema_version": 3,
         "status": "staging_nao_publicado",
         "itens_catalogo": len(data),
         "regras": {
             "perfil_infantil_colecoes": sorted(INFANT_COLLECTIONS),
             "perfil_infantil_confianca": 1.0,
-            "cor": "Só aceita cor quando leitura pixel-a-pixel e paleta quantizada concordam na família principal; secundárias exigem presença relevante nos dois métodos.",
+            "cor": "Cor principal exige consenso entre pixels e paleta quantizada. Pastéis cromáticos são preservados antes dos neutros; cores cromáticas de destaque exigem presença em ambos os métodos.",
             "estilo": "Não publicado até calibração de classificador visual com taxonomia fechada.",
         },
         "itens": rows,
@@ -378,7 +382,7 @@ def main() -> None:
             "cores_primarias_validadas": dict(primary_counts.most_common()),
             "tonalidades": dict(tone_counts.most_common()),
             "revisoes_por_colecao": dict(review_by_collection.most_common()),
-            "metodo": "consenso_objetivo_cor_v2",
+            "metodo": "consenso_objetivo_cor_v3",
         },
         "estilo": {
             "status": "nao_publicado",
