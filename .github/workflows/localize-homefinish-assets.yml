@@ -1,0 +1,103 @@
+name: Localize Home Finish external assets
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/localize_homefinish_external_assets.py'
+      - '.github/workflows/localize-homefinish-assets.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: localize-homefinish-assets
+  cancel-in-progress: false
+
+jobs:
+  localize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout catalog
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install image validation dependency
+        run: python -m pip install --quiet pillow
+
+      - name: Localize the 28 official BIO Habitat images
+        run: python scripts/localize_homefinish_external_assets.py
+
+      - name: Validate localization result before commit
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('.')
+          report = json.loads((root / 'auditoria-localizacao-homefinish.json').read_text(encoding='utf-8'))
+          if report.get('status') != 'ok':
+              raise SystemExit(f"Localization report is not ok: {report.get('status')}")
+          if int(report.get('itens_catalogo_preservados') or 0) != 1212:
+              raise SystemExit('Catalog item count changed during localization')
+          if int(report.get('itens_externalizados_antes') or 0) != 28:
+              raise SystemExit('Unexpected number of external items before localization')
+          if int(report.get('imagens_localizadas') or 0) != 28:
+              raise SystemExit('Not all 28 BIO Habitat images were localized')
+          if int(report.get('itens_externalizados_depois') or -1) != 0:
+              raise SystemExit('External assets remain after localization')
+
+          html = (root / 'index.html').read_text(encoding='utf-8')
+          marker = 'let DATA='
+          start = html.index(marker) + len(marker)
+          data, _ = json.JSONDecoder().raw_decode(html[start:])
+          if len(data) != 1212:
+              raise SystemExit(f'Expected 1212 catalog items, found {len(data)}')
+
+          external = []
+          missing = []
+          for item in data:
+              for field in ('card', 'zoom'):
+                  value = str(item.get(field) or '').strip()
+                  if value.startswith(('http://', 'https://')):
+                      external.append((item.get('ref'), field, value))
+                  elif value:
+                      path = root / value.split('?', 1)[0].split('#', 1)[0]
+                      if not path.is_file():
+                          missing.append((item.get('ref'), field, value))
+          if external:
+              raise SystemExit(f'External image references remain: {external[:5]}')
+          if missing:
+              raise SystemExit(f'Local image paths are missing: {missing[:10]}')
+
+          print(json.dumps({
+              'catalog_items': len(data),
+              'localized_images': 28,
+              'external_items_after': 0,
+              'missing_local_assets': 0,
+          }, ensure_ascii=False))
+          PY
+          git diff --check
+
+      - name: Commit localized Home Finish assets
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html auditoria-localizacao-homefinish.json imagens/home-finish/bio-habitat/thumbnails
+          if git diff --cached --quiet; then
+            echo "BIO Habitat assets are already local"
+          else
+            git commit -m "Localize Home Finish BIO Habitat images"
+            git pull --rebase origin main
+            git push origin main
+          fi
