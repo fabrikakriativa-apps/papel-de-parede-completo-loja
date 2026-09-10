@@ -3,7 +3,7 @@ from __future__ import annotations
 import colorsys
 import json
 import unicodedata
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 from PIL import Image, ImageOps
@@ -37,6 +37,11 @@ COLOR_ORDER = [
     "Amarelo/Dourado",
     "Vermelho/Vinho",
 ]
+
+CHROMATIC = {
+    "Verde", "Azul", "Rosa", "Roxo/Lilás", "Terracota/Laranja",
+    "Amarelo/Dourado", "Vermelho/Vinho"
+}
 
 
 def parse_data() -> list[dict]:
@@ -72,15 +77,13 @@ def rgb_family(r: int, g: int, b: int) -> str:
     sat = 0.0 if mx == 0 else delta / mx
     hue = colorsys.rgb_to_hsv(rf, gf, bf)[0] * 360.0 if delta > 1e-9 else 0.0
 
-    # Neutros primeiro. Isso impede que pequenas variações de RGB transformem
-    # cinzas, off-whites e greiges em cores cromáticas artificiais.
     if lum < 0.18:
         return "Preto"
     if sat < 0.055:
         return "Branco/Off-white" if lum >= 0.86 else "Cinza"
 
-    # Neutros quentes: off-white, greige, bege e marrom.
-    warm = (hue >= 15 or hue <= 5) and hue <= 70
+    # Neutros quentes ficam separados de cinza e dos cromáticos.
+    warm = 5 <= hue <= 70
     if sat < 0.18:
         if lum >= 0.90:
             return "Branco/Off-white"
@@ -109,47 +112,87 @@ def rgb_family(r: int, g: int, b: int) -> str:
     return "Vermelho/Vinho"
 
 
-def analyze_colors(path: Path) -> dict:
+def rank_family_counts(counts: Counter[str]) -> list[tuple[str, float]]:
+    total = sum(counts.values())
+    if total <= 0:
+        return []
+    return sorted(
+        ((name, amount / total) for name, amount in counts.items()),
+        key=lambda x: (-x[1], COLOR_ORDER.index(x[0])),
+    )
+
+
+def prepare_image(path: Path) -> Image.Image:
     with Image.open(path) as raw:
         image = ImageOps.exif_transpose(raw).convert("RGB")
-
     width, height = image.size
-    # O miolo reduz influência de bordas, margens e fundos de exportação.
+    # Miolo da imagem: reduz bordas e margens de exportação sem apagar papéis claros.
     left = int(width * 0.08)
     top = int(height * 0.08)
     right = max(left + 1, int(width * 0.92))
     bottom = max(top + 1, int(height * 0.92))
     image = image.crop((left, top, right, bottom))
     image.thumbnail((180, 180), Image.Resampling.LANCZOS)
+    return image
 
+
+def pixel_method(image: Image.Image) -> tuple[Counter[str], list[float]]:
     counts: Counter[str] = Counter()
     luminances: list[float] = []
     for r, g, b in image.getdata():
         counts[rgb_family(r, g, b)] += 1
         luminances.append((0.2126 * r + 0.7152 * g + 0.0722 * b) / 255.0)
+    return counts, luminances
 
-    total = sum(counts.values())
-    if total == 0:
+
+def palette_method(image: Image.Image) -> Counter[str]:
+    # Uma segunda leitura independente: reduz a imagem a 8 centros cromáticos e
+    # depois agrega cada centro às mesmas famílias de cor.
+    quant = image.quantize(colors=8, method=Image.Quantize.MEDIANCUT)
+    palette = quant.getpalette()
+    if palette is None:
+        raise RuntimeError("Paleta quantizada ausente")
+    counts: Counter[str] = Counter()
+    for amount, palette_index in quant.getcolors(maxcolors=256) or []:
+        offset = palette_index * 3
+        r, g, b = palette[offset:offset + 3]
+        counts[rgb_family(r, g, b)] += amount
+    return counts
+
+
+def analyze_colors(path: Path) -> dict:
+    image = prepare_image(path)
+    pixel_counts, luminances = pixel_method(image)
+    palette_counts = palette_method(image)
+    pixel_rank = rank_family_counts(pixel_counts)
+    palette_rank = rank_family_counts(palette_counts)
+    if not pixel_rank or not palette_rank:
         raise RuntimeError(f"Imagem sem pixels analisáveis: {path}")
 
-    ranked = sorted(counts.items(), key=lambda x: (-x[1], COLOR_ORDER.index(x[0])))
-    selected = []
-    for name, amount in ranked:
-        share = amount / total
-        # Não publicamos ruído cromático. A principal sempre entra; as demais
-        # precisam representar ao menos 12% da área analisada.
-        if not selected or share >= 0.12:
-            selected.append({
-                "nome": name,
-                "participacao": round(share, 4),
-                "metodo": "pixel_rule_v1",
-            })
-        if len(selected) == 3:
-            break
+    pixel_map = dict(pixel_rank)
+    palette_map = dict(palette_rank)
+    primary_pixel = pixel_rank[0][0]
+    primary_palette = palette_rank[0][0]
+    primary_agreement = primary_pixel == primary_palette
 
-    chromatic = {"Verde", "Azul", "Rosa", "Roxo/Lilás", "Terracota/Laranja", "Amarelo/Dourado", "Vermelho/Vinho"}
-    chromatic_relevant = [row for row in selected if row["nome"] in chromatic and row["participacao"] >= 0.15]
-    multicolor = len(chromatic_relevant) >= 3
+    accepted = []
+    if primary_agreement:
+        candidates = []
+        for name in COLOR_ORDER:
+            p1 = pixel_map.get(name, 0.0)
+            p2 = palette_map.get(name, 0.0)
+            # Cor secundária só entra quando ambos os métodos a enxergam de forma relevante.
+            if (name == primary_pixel) or (p1 >= 0.12 and p2 >= 0.10):
+                candidates.append((name, (p1 + p2) / 2.0, p1, p2))
+        candidates.sort(key=lambda x: (-x[1], COLOR_ORDER.index(x[0])))
+        for name, avg, p1, p2 in candidates[:3]:
+            accepted.append({
+                "nome": name,
+                "participacao_media": round(avg, 4),
+                "participacao_pixels": round(p1, 4),
+                "participacao_paleta": round(p2, 4),
+                "metodo": "consenso_pixels_paleta_v2",
+            })
 
     luminances.sort()
     median_lum = luminances[len(luminances) // 2]
@@ -160,13 +203,39 @@ def analyze_colors(path: Path) -> dict:
     else:
         tone = "Escuro"
 
+    if primary_agreement and accepted:
+        primary_share = accepted[0]["participacao_media"]
+        if primary_share >= 0.45:
+            confidence = 0.98
+        elif primary_share >= 0.30:
+            confidence = 0.95
+        else:
+            confidence = 0.92
+        status = "validado_consenso"
+    else:
+        confidence = None
+        status = "revisao_automatica"
+
+    chromatic_relevant = [
+        row for row in accepted
+        if row["nome"] in CHROMATIC and row["participacao_media"] >= 0.12
+    ]
+
     return {
-        "status": "classificado",
-        "cores": selected,
-        "multicolorido": multicolor,
+        "status": status,
+        "cores": accepted,
+        "confianca": confidence,
+        "multicolorido": len(chromatic_relevant) >= 3 if accepted else None,
         "tonalidade": tone,
         "luminancia_mediana": round(median_lum, 4),
-        "metodo": "analise_objetiva_pixels_v1",
+        "consenso": {
+            "cor_principal_pixels": primary_pixel,
+            "cor_principal_paleta": primary_palette,
+            "acordo_principal": primary_agreement,
+            "ranking_pixels": [{"nome": n, "participacao": round(v, 4)} for n, v in pixel_rank[:4]],
+            "ranking_paleta": [{"nome": n, "participacao": round(v, 4)} for n, v in palette_rank[:4]],
+        },
+        "metodo": "consenso_objetivo_cor_v2",
     }
 
 
@@ -176,11 +245,15 @@ def main() -> None:
 
     rows = []
     infant_count = 0
-    colors_ok = 0
+    colors_consensus = 0
+    colors_review = 0
     colors_external = 0
     colors_error = 0
     color_errors = []
     collection_profile_counts: Counter[str] = Counter()
+    primary_counts: Counter[str] = Counter()
+    tone_counts: Counter[str] = Counter()
+    review_by_collection: Counter[str] = Counter()
 
     for item in data:
         codigo = norm(item.get("codigo"))
@@ -212,6 +285,7 @@ def main() -> None:
             color = {
                 "status": "pendente_asset_externo",
                 "cores": [],
+                "confianca": None,
                 "multicolorido": None,
                 "tonalidade": None,
                 "metodo": "nao_classificado",
@@ -222,13 +296,20 @@ def main() -> None:
                 if not local.is_file():
                     raise FileNotFoundError(local)
                 color = analyze_colors(local)
-                colors_ok += 1
+                tone_counts[color["tonalidade"]] += 1
+                if color["status"] == "validado_consenso":
+                    colors_consensus += 1
+                    primary_counts[color["cores"][0]["nome"]] += 1
+                else:
+                    colors_review += 1
+                    review_by_collection[collection] += 1
             except Exception as exc:
                 colors_error += 1
                 color_errors.append({"codigo": codigo, "ref": ref, "card": card, "erro": str(exc)})
                 color = {
                     "status": "erro",
                     "cores": [],
+                    "confianca": None,
                     "multicolorido": None,
                     "tonalidade": None,
                     "metodo": "nao_classificado",
@@ -262,19 +343,20 @@ def main() -> None:
         raise RuntimeError(f"Falha ao analisar {colors_error} imagens locais; amostra: {color_errors[:5]}")
 
     payload = {
-        "schema_version": 1,
+        "schema_version": 2,
         "status": "staging_nao_publicado",
         "itens_catalogo": len(data),
         "regras": {
             "perfil_infantil_colecoes": sorted(INFANT_COLLECTIONS),
             "perfil_infantil_confianca": 1.0,
-            "cor": "Famílias calculadas por pixels do miolo da imagem; até 3 cores, secundárias apenas com >=12% de participação.",
+            "cor": "Só aceita cor quando leitura pixel-a-pixel e paleta quantizada concordam na família principal; secundárias exigem presença relevante nos dois métodos.",
             "estilo": "Não publicado até calibração de classificador visual com taxonomia fechada.",
         },
         "itens": rows,
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
+    local_total = colors_consensus + colors_review
     report = {
         "status": "ok",
         "camada_publicada_no_catalogo": False,
@@ -287,10 +369,16 @@ def main() -> None:
             "confianca": 1.0,
         },
         "cor": {
-            "classificados_por_pixels": colors_ok,
+            "assets_locais_analisados": local_total,
+            "validados_por_consenso": colors_consensus,
+            "revisao_automatica": colors_review,
+            "taxa_consenso": round(colors_consensus / local_total, 4) if local_total else 0.0,
             "pendentes_asset_externo": colors_external,
             "erros": colors_error,
-            "metodo": "analise_objetiva_pixels_v1",
+            "cores_primarias_validadas": dict(primary_counts.most_common()),
+            "tonalidades": dict(tone_counts.most_common()),
+            "revisoes_por_colecao": dict(review_by_collection.most_common()),
+            "metodo": "consenso_objetivo_cor_v2",
         },
         "estilo": {
             "status": "nao_publicado",
