@@ -6,7 +6,7 @@
   "regra": "Somente referências confirmadas em páginas oficiais Home Finish são contabilizadas. Coleções parciais não são importadas. Imagens só serão incorporadas após correspondência exata com a referência oficial; sem proxy, screenshot ou imagem aproximada.",
   "escopo_atual": {
     "relatorio": "auditoria-homefinish-escopo-oficial.json",
-    "colecoes_ausentes_confirmadas": "mínimo 18",
+    "colecoes_ausentes_confirmadas": "mínimo 19",
     "observacao": "A descoberta de portfólio continua aberta; este arquivo acompanha principalmente o fechamento de referências e imagens das coleções em preparação para importação."
   },
   "colecoes": [
@@ -16,11 +16,7 @@
       "pronta_para_importacao_de_referencias": true,
       "pronta_para_importacao_visual": false,
       "total_referencias": 25,
-      "paginas_oficiais": [
-        "https://homefinish.com.br/colecoes/papeis-de-parede/mundo-encantado/",
-        "https://homefinish.com.br/colecoes/papeis-de-parede/mundo-encantado/?e-page-23ca821=2",
-        "https://homefinish.com.br/colecoes/papeis-de-parede/mundo-encantado/?e-page-23ca821=3"
-      ],
+      "paginas_oficiais": ["https://homefinish.com.br/colecoes/papeis-de-parede/mundo-encantado/","https://homefinish.com.br/colecoes/papeis-de-parede/mundo-encantado/?e-page-23ca821=2","https://homefinish.com.br/colecoes/papeis-de-parede/mundo-encantado/?e-page-23ca821=3"],
       "referencias": ["600120","600113","600151","600137","600144","600168","600175","600205","600182","600199","600212","600335","600229","600342","600236","600243","600267","600250","600274","600281","600298","600304","600328","600311","600359"],
       "validacao_visual": {
         "status": "parcial_5_de_25",
@@ -47,7 +43,18 @@
       "pagina_2_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-petit/?e-page-23ca821=2",
       "referencias_confirmadas": ["31307","31311","33307","33309","33311","36801","36804","45701","45710","51507","51601","51603","51910","58103","58104","61819","82809","96814","99303"],
       "evidencia": "Doze referências aparecem na primeira página oficial da coleção. Outras sete têm página oficial de produto identificando explicitamente COLEÇÃO HF Petit. O link PRÓXIMA confirma paginação adicional, mas a segunda página ainda não foi enumerada integralmente.",
-      "observacao": "Não inferir o total da coleção a partir das 19 referências já confirmadas. Só marcar como completa quando a paginação oficial estiver fechada sem lacunas."
+      "observacao": "Não inferir o total da coleção a partir das 19 referências já confirmadas."
+    },
+    {
+      "colecao": "Lille",
+      "status_referencias": "parcial_21_confirmadas",
+      "pronta_para_importacao_de_referencias": false,
+      "pronta_para_importacao_visual": false,
+      "pagina_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/lille/",
+      "pagina_2_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/lille/?e-page-23ca821=2",
+      "referencias_confirmadas": ["41900","41901","41907","41909","52401","52403","52404","52500","52504","52507","52509","52701","55102","55103","55114","55129","55194","55195","56707","57310","58003"],
+      "evidencia": "Doze referências aparecem na primeira página oficial da coleção. Outras nove têm páginas oficiais de produto identificando explicitamente COLEÇÃO Lille. O link PRÓXIMA confirma paginação adicional, mas a segunda página ainda não foi enumerada integralmente.",
+      "observacao": "Não inferir o total da coleção a partir das 21 referências já confirmadas."
     },
     {
       "colecao": "HF Orient",
@@ -56,7 +63,7 @@
       "pronta_para_importacao_visual": false,
       "pagina_oficial": "https://homefinish.com.br/colecoes/papeis-de-parede/hf-orient/",
       "referencias_confirmadas": ["121021","121022","121023","121024","121025","121027","121031","121032","121033","121036","121051","121052","221222","221224","221261","654092","654096"],
-      "observacao": "A página oficial possui paginação adicional ainda não capturada integralmente. Referências fora da primeira página só entram nesta lista quando a própria página oficial de produto identifica a coleção HF Orient."
+      "observacao": "A página oficial possui paginação adicional ainda não capturada integralmente."
     },
     {
       "colecao": "HF Orient II",
@@ -65,7 +72,7 @@
       "pronta_para_importacao_visual": false,
       "pagina_oficial": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-orient-ii/",
       "referencias_confirmadas": ["26022","26023","26027","26031","26033","26034","26035","26051","26052","26061","26063","26065","26067","26094","422802","422903","422922"],
-      "observacao": "A página oficial possui paginação adicional ainda não capturada integralmente. Referências fora da primeira página só entram nesta lista quando a própria página oficial de produto identifica a coleção HF Orient II."
+      "observacao": "A página oficial possui paginação adicional ainda não capturada integralmente."
     }
   ],
   "biblioteca_historica": {
@@ -74,5 +81,5 @@
     "referencia_600465_encontrada": false,
     "conclusao": "Não há base histórica DiCoração segura para restaurar; a expansão deve continuar pelas fontes oficiais atuais."
   },
-  "proximo_passo": "Fechar a paginação oficial de HF Petit, validar os 20 JPGs oficiais restantes de Mundo Encantado e fechar HF Orient/HF Orient II antes de qualquer importação no catálogo publicado."
+  "proximo_passo": "Fechar a paginação oficial de HF Petit e Lille, validar os 20 JPGs oficiais restantes de Mundo Encantado e fechar HF Orient/HF Orient II antes de qualquer importação no catálogo publicado."
 }
