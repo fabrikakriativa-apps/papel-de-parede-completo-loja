@@ -17,10 +17,51 @@
     "confianca": 1.0
   },
   "cor": {
-    "classificados_por_pixels": 1183,
+    "assets_locais_analisados": 1183,
+    "validados_por_consenso": 1125,
+    "revisao_automatica": 58,
+    "taxa_consenso": 0.951,
     "pendentes_asset_externo": 29,
     "erros": 0,
-    "metodo": "analise_objetiva_pixels_v1"
+    "cores_primarias_validadas": {
+      "Branco/Off-white": 460,
+      "Cinza": 259,
+      "Greige": 108,
+      "Terracota/Laranja": 66,
+      "Bege/Areia": 61,
+      "Marrom": 56,
+      "Amarelo/Dourado": 39,
+      "Azul": 34,
+      "Verde": 20,
+      "Preto": 11,
+      "Vermelho/Vinho": 11
+    },
+    "tonalidades": {
+      "Claro": 808,
+      "Médio": 276,
+      "Escuro": 99
+    },
+    "revisoes_por_colecao": {
+      "Flora": 8,
+      "Botânica": 7,
+      "Poet Chart 5": 6,
+      "Natureza Lúdica": 5,
+      "Aditare 3": 4,
+      "Biomas": 4,
+      "Tramas": 4,
+      "Criativo 3": 3,
+      "Passeio no Campo": 3,
+      "Tartan": 3,
+      "Space IX": 2,
+      "Doce Estilo": 2,
+      "Bambine": 2,
+      "BIO Habitat": 1,
+      "Memórias de Infância": 1,
+      "Texture II": 1,
+      "Tacto": 1,
+      "Texture III": 1
+    },
+    "metodo": "consenso_objetivo_cor_v2"
   },
   "estilo": {
     "status": "nao_publicado",
