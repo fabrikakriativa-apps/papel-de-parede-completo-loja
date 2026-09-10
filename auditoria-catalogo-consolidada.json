@@ -1,0 +1,55 @@
+{
+  "status": "completo_nas_fontes_auditadas",
+  "itens_catalogo": 1212,
+  "fornecedores": 3,
+  "colecoes": 22,
+  "integridade_publicacao": {
+    "codigos_duplicados": 0,
+    "referencias_duplicadas": 0,
+    "imagens_locais_faltantes": 0
+  },
+  "fornecedores_auditados": [
+    {
+      "fornecedor": "Home Finish",
+      "itens_catalogo": 619,
+      "colecoes": 13,
+      "status": "completo_contra_snapshot_validado_oficial",
+      "faltando": 0,
+      "extras": 0,
+      "duplicidades": 0,
+      "fonte": "Snapshot validado de URLs do domínio oficial homefinish.com.br",
+      "relatorio": "auditoria-homefinish-fonte-validada.json",
+      "observacao": "Os prefixos comerciais BH e MI são preservados no catálogo e normalizados apenas durante a comparação."
+    },
+    {
+      "fornecedor": "Kantai",
+      "itens_catalogo": 331,
+      "colecoes": 4,
+      "status": "completo_contra_fonte_oficial",
+      "colecoes_auditadas": {
+        "Aditare 3": 81,
+        "Criativo 3": 89,
+        "Poet Chart 5": 78,
+        "Space IX": 83
+      },
+      "fonte": "Site oficial Kantai / API pública das galerias Wix",
+      "relatorio": "auditoria-kantai-oficial.json"
+    },
+    {
+      "fornecedor": "Wiler",
+      "itens_catalogo": 262,
+      "colecoes": 5,
+      "status": "completo_nas_cinco_colecoes_auditadas",
+      "colecoes_auditadas": {
+        "Bambine": 50,
+        "Tacto": 41,
+        "Texture II": 52,
+        "Texture III": 57,
+        "Tramas": 62
+      },
+      "fonte": "Fontes da cadeia de fornecimento e snapshot histórico do book de origem para Tacto",
+      "relatorio": "auditoria-wiler-consolidada.json"
+    }
+  ],
+  "criterio": "Estado consolidado do catálogo publicado no repositório fabrikakriativa-apps/papel-de-parede-completo-loja. Não usa versões ZIP/HTML antigas como fonte operacional. Alterações futuras devem partir da main atual e das fontes de cadeia de fornecimento/oficiais correspondentes."
+}
