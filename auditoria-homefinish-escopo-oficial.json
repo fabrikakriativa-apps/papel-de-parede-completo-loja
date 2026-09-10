@@ -1,0 +1,47 @@
+{
+  "fornecedor": "Home Finish",
+  "fonte_principal": "https://homefinish.com.br/colecoes/",
+  "fonte_tipo": "Site oficial",
+  "data_verificacao": "2026-09-10",
+  "status": "cobertura_parcial_confirmada",
+  "colecoes_cadastradas_no_catalogo": 13,
+  "colecoes_ausentes_confirmadas": [
+    {
+      "nome": "HF Orient",
+      "url": "https://homefinish.com.br/colecoes/papeis-de-parede/hf-orient/",
+      "evidencia": "Página oficial de coleção ativa com referências próprias e paginação."
+    },
+    {
+      "nome": "HF Orient II",
+      "url": "https://www.homefinish.com.br/colecoes/papeis-de-parede/hf-orient-ii/",
+      "evidencia": "Página oficial de coleção ativa com referências próprias e paginação."
+    },
+    {
+      "nome": "Mundo Encantado",
+      "url": "https://homefinish.com.br/colecoes/papeis-de-parede/mundo-encantado/",
+      "evidencia": "Página oficial de coleção ativa ligada pelo Home Finish Studio; 25 referências visíveis em três páginas na verificação."
+    }
+  ],
+  "colecoes_encontradas_em_produtos_a_classificar": [
+    {
+      "nome": "Vichy",
+      "evidencia": "Produtos no domínio oficial identificam a coleção Vichy, mas a relação de fornecedor/book precisa ser classificada antes de incorporar ao escopo Home Finish."
+    },
+    {
+      "nome": "Bosque",
+      "evidencia": "Produto no domínio oficial identifica a coleção Bosque, mas a relação de fornecedor/book precisa ser classificada antes de incorporar ao escopo Home Finish."
+    },
+    {
+      "nome": "Xadrez",
+      "evidencia": "Produtos no domínio oficial identificam a coleção Xadrez, mas a relação de fornecedor/book precisa ser classificada antes de incorporar ao escopo Home Finish."
+    }
+  ],
+  "nao_contabilizados": [
+    {
+      "nome": "Green Park",
+      "motivo": "Há conteúdo histórico e URL de coleção, mas a página de coleção encontrada está vazia/legada; não foi contada como coleção ativa."
+    }
+  ],
+  "observacao": "O domínio Home Finish também exibe produtos de coleções que podem pertencer a outros fornecedores/books. Por isso, a auditoria de cobertura não considera automaticamente toda coleção citada em um produto como coleção própria Home Finish. A cobertura parcial é comprovada pelas três páginas oficiais de coleção ativas acima.",
+  "criterio": "Somente páginas oficiais de coleção ativas e inequivocamente vinculadas ao portfólio Home Finish são usadas para confirmar lacunas. Produtos isolados ficam em classificação pendente quando a origem do book não está clara."
+}
