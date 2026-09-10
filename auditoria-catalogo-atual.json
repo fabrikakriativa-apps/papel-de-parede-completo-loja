@@ -1,13 +1,13 @@
 {
-  "itens_catalogo": 1206,
+  "itens_catalogo": 1212,
   "fornecedores": {
     "Home Finish": 619,
     "Kantai": 331,
-    "Wiler": 256
+    "Wiler": 262
   },
   "total_fornecedores": 3,
   "total_colecoes": 22,
-  "imagens_card_locais": 1178,
+  "imagens_card_locais": 1184,
   "imagens_card_externas": 28,
   "imagens_card_locais_faltantes": 0,
   "cards_locais_faltantes": [],
@@ -178,8 +178,8 @@
     {
       "fornecedor": "Wiler",
       "colecao": "Texture III",
-      "itens": 51,
-      "referencias_unicas": 51,
+      "itens": 57,
+      "referencias_unicas": 57,
       "referencias_vazias": 0,
       "refs_duplicadas": []
     },
