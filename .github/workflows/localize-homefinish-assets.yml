@@ -13,12 +13,12 @@ permissions:
 
 concurrency:
   group: localize-homefinish-assets
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   localize:
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
+    runs-on: macos-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout catalog
         uses: actions/checkout@v4
@@ -33,7 +33,7 @@ jobs:
       - name: Install image and browser dependencies
         run: |
           python -m pip install --quiet pillow playwright
-          python -m playwright install chromium --with-deps
+          python -m playwright install chromium
 
       - name: Localize the 28 official BIO Habitat images
         run: python scripts/localize_homefinish_external_assets.py
