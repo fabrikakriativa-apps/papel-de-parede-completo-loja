@@ -4,6 +4,11 @@
   "status": "expansao_em_validacao",
   "fonte_tipo": "Site oficial Home Finish",
   "regra": "Somente referências confirmadas em páginas oficiais Home Finish são contabilizadas. Coleções parciais não são importadas. Imagens só serão incorporadas após correspondência exata com a referência oficial; sem proxy, screenshot ou imagem aproximada.",
+  "escopo_atual": {
+    "relatorio": "auditoria-homefinish-escopo-oficial.json",
+    "colecoes_ausentes_confirmadas": "mínimo 13",
+    "observacao": "A descoberta de portfólio continua aberta; este arquivo acompanha principalmente o fechamento de referências e imagens das coleções em preparação para importação."
+  },
   "colecoes": [
     {
       "colecao": "Mundo Encantado",
@@ -43,6 +48,31 @@
         "600311",
         "600359"
       ],
+      "validacao_visual": {
+        "status": "parcial_4_de_25",
+        "total_jpgs_oficiais_confirmados": 4,
+        "criterio": "A página oficial do produto confirma COLEÇÃO e REFERÊNCIA; o próprio botão BAIXAR JPG resolve para wp-content/uploads no domínio oficial Home Finish.",
+        "jpgs_oficiais_confirmados": [
+          {
+            "ref": "600236",
+            "url": "https://www.homefinish.com.br/wp-content/uploads/2025/10/600236-painel-parede-mundo-encantado-home-finish-floresta-brasileira-outono.jpg"
+          },
+          {
+            "ref": "600250",
+            "url": "https://www.homefinish.com.br/wp-content/uploads/2025/10/600250-painel-parede-mundo-encantado-home-finish-fundo-do-mar-sereia.jpg"
+          },
+          {
+            "ref": "600267",
+            "url": "https://www.homefinish.com.br/wp-content/uploads/2025/10/600267-painel-parede-mundo-encantado-home-finish-fundo-do-mar.jpg"
+          },
+          {
+            "ref": "600281",
+            "url": "https://www.homefinish.com.br/wp-content/uploads/2025/10/600281-painel-parede-mundo-encantado-home-finish-mapa-mundi.jpg"
+          }
+        ],
+        "faltam_validar": 21,
+        "observacao": "URLs foram obtidas pelo link oficial BAIXAR JPG, não inferidas pelo nome do arquivo. A coleção permanece impedida de importação visual até 25/25."
+      },
       "observacao": "A terceira página contém apenas 600359 e não apresenta link de próxima página, fechando a coleção em 25 referências."
     },
     {
@@ -100,5 +130,11 @@
       "observacao": "A página oficial possui paginação adicional ainda não capturada integralmente. Referências fora da primeira página só entram nesta lista quando a própria página oficial de produto identifica a coleção HF Orient II."
     }
   ],
-  "proximo_passo": "Fechar a paginação oficial de HF Orient e HF Orient II e validar os JPGs oficiais de Mundo Encantado por referência antes de alterar o catálogo publicado."
+  "biblioteca_historica": {
+    "repositorio": "fabrikakriativa-apps/catalogos-papel-de-parede",
+    "dicoracao_encontrado": false,
+    "referencia_600465_encontrada": false,
+    "conclusao": "Não há base histórica DiCoração segura para restaurar; a expansão deve continuar pelas fontes oficiais atuais."
+  },
+  "proximo_passo": "Validar os 21 JPGs oficiais restantes de Mundo Encantado e fechar a paginação oficial de HF Orient e HF Orient II antes de qualquer importação no catálogo publicado."
 }
