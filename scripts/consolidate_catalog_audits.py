@@ -17,19 +17,41 @@ def load(name: str) -> dict:
     return data
 
 
+def audited_total(values: dict[str, object]) -> int:
+    total = 0
+    for value in values.values():
+        try:
+            total += int(value or 0)
+        except (TypeError, ValueError):
+            pass
+    return total
+
+
 def build_homefinish(report: dict, inventory_count: int) -> dict:
+    audited_catalog_total = int(report.get("total_catalogo_home_finish") or 0)
+    source_total = int(report.get("total_fonte_validada") or 0)
+    current_match = inventory_count == audited_catalog_total == source_total
+    base_ok = (
+        report.get("status") == "ok"
+        and int(report.get("total_faltando_no_catalogo") or 0) == 0
+        and int(report.get("total_extras_no_catalogo") or 0) == 0
+        and len(report.get("duplicatas_catalogo") or []) == 0
+    )
     return {
         "fornecedor": "Home Finish",
         "itens_catalogo": inventory_count,
+        "itens_auditados": audited_catalog_total,
+        "itens_fonte_validada": source_total,
         "colecoes": report.get("colecoes_catalogo"),
         "status": (
             "completo_contra_snapshot_validado_oficial"
-            if report.get("status") == "ok"
-            else "divergente"
+            if base_ok and current_match
+            else "divergente_ou_auditoria_desatualizada"
         ),
-        "faltando": report.get("total_faltando_no_catalogo", 0),
-        "extras": report.get("total_extras_no_catalogo", 0),
+        "faltando": int(report.get("total_faltando_no_catalogo") or 0),
+        "extras": int(report.get("total_extras_no_catalogo") or 0),
         "duplicidades": len(report.get("duplicatas_catalogo") or []),
+        "totais_coincidem": current_match,
         "fonte": "Snapshot validado de URLs do domínio oficial homefinish.com.br",
         "relatorio": "auditoria-homefinish-fonte-validada.json",
         "observacao": "Os prefixos comerciais BH e MI são preservados no catálogo e normalizados apenas durante a comparação.",
@@ -38,23 +60,28 @@ def build_homefinish(report: dict, inventory_count: int) -> dict:
 
 def build_kantai(report: dict, inventory_count: int) -> dict:
     rows = report.get("collections") or []
-    audited = {}
-    all_ok = True
+    audited: dict[str, object] = {}
+    all_rows_ok = True
     for row in rows:
         name = row.get("name")
         if not name:
             continue
-        count = row.get("unique_references")
-        audited[name] = count
+        audited[name] = row.get("unique_references")
         if row.get("status") != "ok":
-            all_ok = False
-    if not rows:
-        all_ok = False
+            all_rows_ok = False
+    audit_total = audited_total(audited)
+    current_match = audit_total == inventory_count and bool(audited)
     return {
         "fornecedor": "Kantai",
         "itens_catalogo": inventory_count,
+        "itens_auditados": audit_total,
         "colecoes": len(audited),
-        "status": "completo_contra_fonte_oficial" if all_ok else "divergente",
+        "status": (
+            "completo_contra_fonte_oficial"
+            if all_rows_ok and current_match
+            else "divergente_ou_auditoria_desatualizada"
+        ),
+        "totais_coincidem": current_match,
         "colecoes_auditadas": audited,
         "fonte": "Site oficial Kantai / API pública das galerias Wix",
         "relatorio": "auditoria-kantai-oficial.json",
@@ -63,8 +90,8 @@ def build_kantai(report: dict, inventory_count: int) -> dict:
 
 def build_wiler(report: dict, inventory_count: int) -> dict:
     rows = report.get("colecoes") or []
-    audited = {}
-    all_ok = True
+    audited: dict[str, object] = {}
+    all_rows_ok = True
     for row in rows:
         name = row.get("colecao")
         if not name:
@@ -72,14 +99,20 @@ def build_wiler(report: dict, inventory_count: int) -> dict:
         audited[name] = row.get("confirmado", row.get("catalogo"))
         status = str(row.get("status") or "")
         if not status.startswith("completo"):
-            all_ok = False
-    if not rows:
-        all_ok = False
+            all_rows_ok = False
+    audit_total = audited_total(audited)
+    current_match = audit_total == inventory_count and bool(audited)
     return {
         "fornecedor": "Wiler",
         "itens_catalogo": inventory_count,
+        "itens_auditados": audit_total,
         "colecoes": len(audited),
-        "status": "completo_nas_cinco_colecoes_auditadas" if all_ok else "divergente",
+        "status": (
+            "completo_nas_cinco_colecoes_auditadas"
+            if all_rows_ok and current_match
+            else "divergente_ou_auditoria_desatualizada"
+        ),
+        "totais_coincidem": current_match,
         "colecoes_auditadas": audited,
         "fonte": "Fontes da cadeia de fornecimento e snapshot histórico do book de origem para Tacto",
         "relatorio": "auditoria-wiler-consolidada.json",
@@ -120,7 +153,7 @@ def main() -> None:
             "imagens_locais_faltantes": int(inventory.get("imagens_card_locais_faltantes") or 0),
         },
         "fornecedores_auditados": provider_rows,
-        "criterio": "Estado consolidado gerado automaticamente a partir do catálogo publicado e dos relatórios de auditoria. Não usa versões ZIP/HTML antigas como fonte operacional. Alterações futuras devem partir da main atual e das fontes de cadeia de fornecimento/oficiais correspondentes.",
+        "criterio": "Estado consolidado gerado automaticamente a partir do catálogo publicado e dos relatórios de auditoria. Além do status de cada auditoria, os totais publicados de cada fornecedor precisam coincidir com os totais efetivamente auditados; isso impede que uma auditoria antiga mantenha um falso status de completude após novas inclusões. Não usa versões ZIP/HTML antigas como fonte operacional.",
     }
 
     OUT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -129,6 +162,10 @@ def main() -> None:
         "itens_catalogo": report["itens_catalogo"],
         "fornecedores": report["fornecedores"],
         "colecoes": report["colecoes"],
+        "integridade_ok": integrity_ok,
+        "fornecedores_ok": all(
+            str(row.get("status") or "").startswith("completo") for row in provider_rows
+        ),
     }, ensure_ascii=False))
 
 
