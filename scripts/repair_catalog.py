@@ -14,6 +14,9 @@ IMAGES = ROOT / "imagens"
 REPORT = ROOT / "auditoria-imagens.json"
 VALID_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
 OFFICIAL_EXTERNAL_HOSTS = {"homefinish.com.br", "www.homefinish.com.br"}
+MASTER_EXPECTED_ITEMS = 1212
+PUBLISHED_EXPECTED_ITEMS = 1207
+PUBLISHED_EXCLUDED_REFS = frozenset({"84360", "BA0047", "BA0048", "BA0049", "BA0050"})
 
 
 def slug(value: str) -> str:
@@ -25,6 +28,69 @@ def slug(value: str) -> str:
 
 def norm_token(value: str) -> str:
     return re.sub(r"[^a-z0-9]", "", slug(value))
+
+
+def norm_ref(value: object) -> str:
+    return str(value or "").strip().upper()
+
+
+def apply_publication_filter(data: list[dict]) -> list[dict]:
+    """Keep the 1,212-item master intact elsewhere and publish exactly 1,207 items.
+
+    The repair script works on the DATA embedded in index.html. The first run may
+    receive the full 1,212-item DATA; later runs receive the already-filtered
+    1,207-item DATA, so the check is intentionally idempotent.
+    """
+    before = len(data)
+    refs = [norm_ref(item.get("ref")) for item in data]
+    present_exclusions = PUBLISHED_EXCLUDED_REFS.intersection(refs)
+
+    if before == MASTER_EXPECTED_ITEMS:
+        missing_exclusions = PUBLISHED_EXCLUDED_REFS - present_exclusions
+        if missing_exclusions:
+            raise RuntimeError(
+                "Publication filter safety check failed; master is missing exclusions: "
+                + ", ".join(sorted(missing_exclusions))
+            )
+        filtered = [
+            item for item in data
+            if norm_ref(item.get("ref")) not in PUBLISHED_EXCLUDED_REFS
+        ]
+    elif before == PUBLISHED_EXPECTED_ITEMS:
+        if present_exclusions:
+            raise RuntimeError(
+                "Publication filter safety check failed; excluded refs are present in the "
+                "already-filtered catalog: " + ", ".join(sorted(present_exclusions))
+            )
+        filtered = data
+    else:
+        raise RuntimeError(
+            f"Publication filter count mismatch before filtering: {before}. "
+            f"Expected {MASTER_EXPECTED_ITEMS} (master) or {PUBLISHED_EXPECTED_ITEMS} (published)."
+        )
+
+    if len(filtered) != PUBLISHED_EXPECTED_ITEMS:
+        raise RuntimeError(
+            f"Publication filter count mismatch after filtering: {len(filtered)}. "
+            f"Expected {PUBLISHED_EXPECTED_ITEMS}."
+        )
+
+    remaining_exclusions = {
+        norm_ref(item.get("ref")) for item in filtered
+        if norm_ref(item.get("ref")) in PUBLISHED_EXCLUDED_REFS
+    }
+    if remaining_exclusions:
+        raise RuntimeError(
+            "Publication filter failed; excluded refs remain: "
+            + ", ".join(sorted(remaining_exclusions))
+        )
+
+    print(
+        "[publish] "
+        f"before={before} after={len(filtered)} "
+        f"excluded={','.join(sorted(PUBLISHED_EXCLUDED_REFS))}"
+    )
+    return filtered
 
 
 def posix(path: Path) -> str:
@@ -194,6 +260,8 @@ def main():
     decoder = json.JSONDecoder()
     data, consumed = decoder.raw_decode(html[start:])
     end = start + consumed
+
+    data = apply_publication_filter(data)
 
     corrections = []
     unresolved = []
