@@ -1,11 +1,28 @@
 {
-  "itens_catalogo": 1206,
-  "referencias_imagem": 2412,
-  "correcoes_aplicadas": 0,
+  "itens_catalogo": 1207,
+  "referencias_imagem": 2414,
+  "correcoes_aplicadas": 2,
   "faltantes_locais_apos_correcao": 0,
   "externas_apos_correcao": 56,
   "falhas_download_oficial": 28,
-  "correcoes": [],
+  "correcoes": [
+    {
+      "codigo": "FK-0408",
+      "ref": "84360",
+      "campo": "card",
+      "de": "https://homefinish.com.br/wp-content/uploads/2025/06/84360-papel-parede-home-finish-flora.jpg",
+      "para": "imagens/home-finish/flora/thumbnails/84360.jpg",
+      "criterio": "download_oficial:existente"
+    },
+    {
+      "codigo": "FK-0408",
+      "ref": "84360",
+      "campo": "zoom",
+      "de": "https://homefinish.com.br/wp-content/uploads/2025/06/84360-papel-parede-home-finish-flora.jpg",
+      "para": "imagens/home-finish/flora/thumbnails/84360.jpg",
+      "criterio": "download_oficial_cache:existente"
+    }
+  ],
   "falhas_download": [
     {
       "codigo": "FK-0102",
