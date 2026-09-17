@@ -15,6 +15,13 @@ REPORT = ROOT / "auditoria-classificacoes-971.json"
 EXPECTED_CATALOG_ITEMS = 1207
 EXPECTED_CURATED = 971
 
+# Correções explícitas de código interno confirmadas pela usuária.
+# A referência do fornecedor é a chave estável; FK-0050A foi um alias artificial
+# criado durante uma etapa anterior de encaixe e não deve existir.
+CANONICAL_CODE_OVERRIDES = {
+    "PT500701": "FK-1095",
+}
+
 
 def load_classifications() -> list[dict]:
     encoded = PAYLOAD.read_text(encoding="utf-8").strip()
@@ -94,6 +101,11 @@ def refresh_color_options(html: str, data: list[dict]) -> str:
     return updated
 
 
+def canonical_code(row: dict) -> str:
+    ref = norm(row.get("ref"))
+    return CANONICAL_CODE_OVERRIDES.get(ref, norm(row.get("codigo")))
+
+
 def main() -> None:
     html = INDEX.read_text(encoding="utf-8")
     catalog, start, end = parse_catalog(html)
@@ -109,7 +121,7 @@ def main() -> None:
         )
 
     map_refs = [norm(row.get("ref")) for row in curated]
-    map_codes = [norm(row.get("codigo")) for row in curated]
+    map_codes = [canonical_code(row) for row in curated]
     dup_map_refs = sorted(ref for ref, n in Counter(map_refs).items() if ref and n > 1)
     dup_map_codes = sorted(code for code, n in Counter(map_codes).items() if code and n > 1)
     if dup_map_refs or dup_map_codes:
@@ -135,24 +147,20 @@ def main() -> None:
 
     for row in curated:
         ref = norm(row.get("ref"))
-        code = norm(row.get("codigo"))
+        code = canonical_code(row)
         item = catalog_by_ref.get(ref)
         if item is None:
             missing_refs.append({"codigo": code, "ref": ref})
             continue
-
-        catalog_code = norm(item.get("codigo"))
-        if catalog_code != code:
-            # A supplier reference is the stable product identity. Keep the
-            # current published FK code, record the historical code difference,
-            # and apply the curated classification to the unique matching ref.
+        if norm(item.get("codigo")) != code:
             code_mismatches.append(
                 {
                     "ref": ref,
                     "codigo_curado": code,
-                    "codigo_catalogo": catalog_code,
+                    "codigo_catalogo": norm(item.get("codigo")),
                 }
             )
+            continue
 
         colors = unique_clean(row.get("cores") or [])
         styles = unique_clean(row.get("estilos") or [])
@@ -167,7 +175,7 @@ def main() -> None:
         item["search"] = rebuild_search(item)
         updated_refs.add(ref)
 
-    if missing_refs or blank_colors or blank_styles:
+    if missing_refs or code_mismatches or blank_colors or blank_styles:
         REPORT.write_text(
             json.dumps(
                 {
@@ -186,8 +194,8 @@ def main() -> None:
         )
         raise RuntimeError(
             "Curated classification overlay failed: "
-            f"missing={len(missing_refs)} blank_colors={len(blank_colors)} "
-            f"blank_styles={len(blank_styles)}"
+            f"missing={len(missing_refs)} mismatches={len(code_mismatches)} "
+            f"blank_colors={len(blank_colors)} blank_styles={len(blank_styles)}"
         )
 
     preserved = len(catalog) - len(updated_refs)
@@ -205,14 +213,18 @@ def main() -> None:
     INDEX.write_text(new_html, encoding="utf-8")
 
     report = {
-        "status": "ok" if not code_mismatches else "ok_com_divergencia_de_codigo_historico",
+        "status": "ok",
         "fonte_classificacao": "classificacao_completa_971_v15_AJUSTES_FINAIS.csv",
         "itens_catalogo": len(catalog),
         "mapeamentos_curados": len(curated),
         "itens_atualizados": len(updated_refs),
         "itens_restaurados_preservados_sem_sobreposicao": preserved,
         "refs_ausentes": [],
-        "codigos_divergentes": code_mismatches,
+        "codigos_divergentes": [],
+        "correcoes_explicitas_codigo": [
+            {"ref": ref, "codigo": code}
+            for ref, code in CANONICAL_CODE_OVERRIDES.items()
+        ],
         "sem_cor_no_overlay": 0,
         "sem_estilo_no_overlay": 0,
         "perfil_infantil_no_overlay": sum(
@@ -249,7 +261,6 @@ def main() -> None:
                 "itens_preservados": report[
                     "itens_restaurados_preservados_sem_sobreposicao"
                 ],
-                "divergencias_codigo_historico": len(code_mismatches),
                 "sem_cor": 0,
                 "sem_estilo": 0,
             },
