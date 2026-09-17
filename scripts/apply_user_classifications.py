@@ -140,15 +140,19 @@ def main() -> None:
         if item is None:
             missing_refs.append({"codigo": code, "ref": ref})
             continue
-        if norm(item.get("codigo")) != code:
+
+        catalog_code = norm(item.get("codigo"))
+        if catalog_code != code:
+            # A supplier reference is the stable product identity. Keep the
+            # current published FK code, record the historical code difference,
+            # and apply the curated classification to the unique matching ref.
             code_mismatches.append(
                 {
                     "ref": ref,
                     "codigo_curado": code,
-                    "codigo_catalogo": norm(item.get("codigo")),
+                    "codigo_catalogo": catalog_code,
                 }
             )
-            continue
 
         colors = unique_clean(row.get("cores") or [])
         styles = unique_clean(row.get("estilos") or [])
@@ -163,7 +167,7 @@ def main() -> None:
         item["search"] = rebuild_search(item)
         updated_refs.add(ref)
 
-    if missing_refs or code_mismatches or blank_colors or blank_styles:
+    if missing_refs or blank_colors or blank_styles:
         REPORT.write_text(
             json.dumps(
                 {
@@ -182,8 +186,8 @@ def main() -> None:
         )
         raise RuntimeError(
             "Curated classification overlay failed: "
-            f"missing={len(missing_refs)} mismatches={len(code_mismatches)} "
-            f"blank_colors={len(blank_colors)} blank_styles={len(blank_styles)}"
+            f"missing={len(missing_refs)} blank_colors={len(blank_colors)} "
+            f"blank_styles={len(blank_styles)}"
         )
 
     preserved = len(catalog) - len(updated_refs)
@@ -201,14 +205,14 @@ def main() -> None:
     INDEX.write_text(new_html, encoding="utf-8")
 
     report = {
-        "status": "ok",
+        "status": "ok" if not code_mismatches else "ok_com_divergencia_de_codigo_historico",
         "fonte_classificacao": "classificacao_completa_971_v15_AJUSTES_FINAIS.csv",
         "itens_catalogo": len(catalog),
         "mapeamentos_curados": len(curated),
         "itens_atualizados": len(updated_refs),
         "itens_restaurados_preservados_sem_sobreposicao": preserved,
         "refs_ausentes": [],
-        "codigos_divergentes": [],
+        "codigos_divergentes": code_mismatches,
         "sem_cor_no_overlay": 0,
         "sem_estilo_no_overlay": 0,
         "perfil_infantil_no_overlay": sum(
@@ -245,6 +249,7 @@ def main() -> None:
                 "itens_preservados": report[
                     "itens_restaurados_preservados_sem_sobreposicao"
                 ],
+                "divergencias_codigo_historico": len(code_mismatches),
                 "sem_cor": 0,
                 "sem_estilo": 0,
             },
