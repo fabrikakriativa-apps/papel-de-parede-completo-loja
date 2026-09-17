@@ -1,16 +1,16 @@
 {
-  "status": "ok_com_divergencia_de_codigo_historico",
+  "status": "ok",
   "fonte_classificacao": "classificacao_completa_971_v15_AJUSTES_FINAIS.csv",
   "itens_catalogo": 1207,
   "mapeamentos_curados": 971,
   "itens_atualizados": 971,
   "itens_restaurados_preservados_sem_sobreposicao": 236,
   "refs_ausentes": [],
-  "codigos_divergentes": [
+  "codigos_divergentes": [],
+  "correcoes_explicitas_codigo": [
     {
       "ref": "PT500701",
-      "codigo_curado": "FK-0050A",
-      "codigo_catalogo": "FK-1095"
+      "codigo": "FK-1095"
     }
   ],
   "sem_cor_no_overlay": 0,
