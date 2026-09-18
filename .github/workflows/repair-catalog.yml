@@ -1,87 +1,17 @@
-name: Repair catalog images
+name: Legacy repair disabled
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/repair-catalog.yml'
-      - 'scripts/repair_catalog.py'
-      - 'scripts/apply_user_classifications.py'
-      - 'data/classificacoes_971_v15.b85'
-      - 'scripts/harden_external_images.py'
-      - 'scripts/audit_catalog_completeness.py'
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  repair:
+  disabled:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
     steps:
-      - name: Checkout published catalog
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Checkout image library
-        uses: actions/checkout@v4
-        with:
-          repository: fabrikakriativa-apps/catalogos-papel-de-parede
-          ref: main
-          path: _image_source
-          persist-credentials: false
-
-      - name: Sync safe catalog thumbnails
-        shell: bash
+      - name: Legacy repair is intentionally disabled
         run: |
-          python - <<'PY'
-          from pathlib import Path
-          import shutil
-
-          src = Path('_image_source/imagens')
-          dst_root = Path('imagens')
-          copied = 0
-          updated = 0
-
-          for source in src.rglob('*'):
-              if not source.is_file() or 'thumbnails' not in source.parts:
-                  continue
-              rel = source.relative_to(src)
-              target = dst_root / rel
-              target.parent.mkdir(parents=True, exist_ok=True)
-              if not target.exists():
-                  shutil.copy2(source, target)
-                  copied += 1
-              elif source.read_bytes() != target.read_bytes():
-                  shutil.copy2(source, target)
-                  updated += 1
-
-          print(f'thumbnails novos: {copied}; atualizados: {updated}')
-          PY
-
-      - name: Repair catalog references and audit images
-        run: python scripts/repair_catalog.py
-
-      - name: Apply curated 971 classifications
-        run: python scripts/apply_user_classifications.py
-
-      - name: Audit collection completeness
-        run: python scripts/audit_catalog_completeness.py
-
-      - name: Protect official external images from hotlink blocking
-        run: python scripts/harden_external_images.py
-
-      - name: Commit repaired catalog
-        shell: bash
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A imagens index.html auditoria-imagens.json auditoria-completude.json auditoria-classificacoes-971.json
-          if git diff --cached --quiet; then
-            echo "No catalog repairs needed"
-          else
-            git commit -m "Repair catalog and apply curated classifications"
-            git push
-          fi
+          echo "The historical 1,207-item repair pipeline is disabled."
+          echo "Use the versioned Revision 07 publication workflow instead."
+          echo "This guard prevents older repair logic from overwriting the current catalog."
