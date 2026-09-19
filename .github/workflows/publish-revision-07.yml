@@ -1,0 +1,282 @@
+name: Publish catalog revision 07
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-revision-07.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download revision package
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/rev07-parts /tmp/rev07-extract
+          urls=(
+          "https://1drv.ms/u/c/e7e1af955acbce10/IQBJIMcplpEJSoLXJQmpR2sTAYKXA1ifFhnC7lOSuxHNeQo"
+          "https://1drv.ms/u/c/e7e1af955acbce10/IQDwn7Zey3lVR50g085Cx40uAQCv8vZj5E0Q92Rv6WXr9Og"
+          "https://1drv.ms/u/c/e7e1af955acbce10/IQBWUH437aJKT6yS6PTvheC4AQxmIMxnu1jZMCULBv678nI"
+          "https://1drv.ms/u/c/e7e1af955acbce10/IQDmCsjPKucBQoxrgcTBHdzOAeul4mdVBY6lkLlci1O-DuM"
+          "https://1drv.ms/u/c/e7e1af955acbce10/IQBQjfB5Y3aWQ4UGCtZAldykAWlrOpqYy64BrWn1nuxBFJ8"
+          "https://1drv.ms/u/c/e7e1af955acbce10/IQCDJXaEvPb5QpXNruk4OOgSAa9wXeLQoxajcTJ0x2fHtnw"
+          "https://1drv.ms/u/c/e7e1af955acbce10/IQBsjHbC_TVWTbam9ZazTCnWAR_rpbrJQ8Rw30pm3WqVdAA"
+          "https://1drv.ms/u/c/e7e1af955acbce10/IQCDUG_C0CNZQ5Xieh0zjW99Aap2NGvGoujYrk1aKju7Uko"
+          "https://1drv.ms/u/c/e7e1af955acbce10/IQC_hXJHZpkATLMant1XGI7kAVuRjH0JUAtP4Rofp7MNTs4"
+          )
+          i=0
+          for url in "${urls[@]}"; do
+            printf -v n "%02d" "$i"
+            out="/tmp/rev07-parts/rev07.part$n"
+            echo "Downloading part $n"
+            if ! curl -fL --retry 3 --retry-delay 2 "${url}?download=1" -o "$out"; then
+              share_id=$(python - "$url" <<'PY'
+import base64, sys
+u=sys.argv[1].encode()
+print("u!"+base64.urlsafe_b64encode(u).decode().rstrip("="))
+PY
+)
+              curl -fL --retry 3 --retry-delay 2 "https://api.onedrive.com/v1.0/shares/${share_id}/root/content" -o "$out"
+            fi
+            test -s "$out"
+            i=$((i+1))
+          done
+          cat /tmp/rev07-parts/rev07.part* > /tmp/rev07.zip
+          unzip -t /tmp/rev07.zip >/dev/null
+          unzip -q /tmp/rev07.zip -d /tmp/rev07-extract
+          test -f /tmp/rev07-extract/index.html
+
+      - name: Publish revision files
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp -a /tmp/rev07-extract/. .
+          python - <<'PY'
+from pathlib import Path
+import json, re
+
+p=Path("index.html")
+s=p.read_text(encoding="utf-8")
+m=re.search(r'let DATA=(\[.*?\]);\s*const q=', s, re.S)
+if not m:
+    raise SystemExit("DATA not found")
+data=json.loads(m.group(1))
+if len(data) != 1266:
+    raise SystemExit(f"Expected 1266 items, found {len(data)}")
+refs={str(x.get("ref","")).strip().upper() for x in data}
+expected={f"BDM-{i:02d}" for i in range(1,60)}
+missing=sorted(expected-refs)
+if missing:
+    raise SystemExit(f"Missing Brisa refs: {missing}")
+Path("data").mkdir(exist_ok=True)
+Path("data/catalogo-curado-1266.json").write_text(
+    json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
+)
+print("Snapshot saved:", len(data))
+PY
+
+      - name: Protect the 1266-item curated catalog
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+from pathlib import Path
+
+p=Path("scripts/repair_catalog.py")
+s=p.read_text(encoding="utf-8")
+needle='    if before == MASTER_EXPECTED_ITEMS:\n'
+if 'if before == 1266:' not in s:
+    insert='''    if before == 1266:
+        refs = {norm_ref(item.get("ref")) for item in data}
+        expected_brisa = {f"BDM-{i:02d}" for i in range(1, 60)}
+        missing_brisa = sorted(expected_brisa - refs)
+        if missing_brisa:
+            raise RuntimeError(f"1266 catalog missing Brisa refs: {missing_brisa}")
+        if refs & DISCONTINUED_BAMBINE_REFS:
+            raise RuntimeError("1266 catalog contains discontinued Bambine refs")
+        if any(is_invalid_provence_84360(item) for item in data):
+            raise RuntimeError("1266 catalog contains invalid Provence 84360")
+        print("[publish] curated 1266-item catalog preserved")
+        return data
+
+'''
+    if needle not in s:
+        raise SystemExit("Could not patch repair_catalog.py")
+    s=s.replace(needle, insert+needle, 1)
+    p.write_text(s, encoding="utf-8")
+PY
+
+          cat > scripts/apply_user_classifications.py <<'PY'
+from __future__ import annotations
+
+import html as html_lib
+import json
+import re
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+INDEX = ROOT / "index.html"
+SNAPSHOT = ROOT / "data" / "catalogo-curado-1266.json"
+REPORT = ROOT / "auditoria-classificacoes-1266.json"
+EXPECTED = 1266
+
+def clean(values):
+    out=[]
+    seen=set()
+    for value in values or []:
+        value=str(value or "").strip()
+        if value and value not in seen:
+            seen.add(value)
+            out.append(value)
+    return out
+
+def norm(value):
+    return str(value or "").strip().upper()
+
+def parse_catalog(text):
+    marker="let DATA="
+    start=text.index(marker)+len(marker)
+    decoder=json.JSONDecoder()
+    data, consumed=decoder.raw_decode(text[start:])
+    return data, start, start+consumed
+
+def rebuild_search(item):
+    parts=[
+        item.get("codigo",""), item.get("ref",""), item.get("fornecedor",""),
+        item.get("colecao",""), item.get("tipo",""), item.get("medida",""),
+        *(item.get("cor") or []), *(item.get("estilo") or []), item.get("perfil","")
+    ]
+    return " ".join(str(x).strip() for x in parts if str(x or "").strip()).casefold()
+
+def refresh_select(text, select_id, values, default_label):
+    opts=f'<option value="">{html_lib.escape(default_label)}</option>'+''.join(
+        f'<option>{html_lib.escape(v)}</option>' for v in values
+    )
+    pattern=re.compile(rf'(<select id="{re.escape(select_id)}">).*?(</select>)', re.S)
+    updated,n=pattern.subn(lambda m:m.group(1)+opts+m.group(2), text, count=1)
+    if n != 1:
+        raise RuntimeError(f"Could not refresh #{select_id}")
+    return updated
+
+def main():
+    text=INDEX.read_text(encoding="utf-8")
+    catalog,start,end=parse_catalog(text)
+    snapshot=json.loads(SNAPSHOT.read_text(encoding="utf-8"))
+    if len(catalog) != EXPECTED or len(snapshot) != EXPECTED:
+        raise RuntimeError(f"Expected {EXPECTED}; catalog={len(catalog)} snapshot={len(snapshot)}")
+
+    source={norm(x.get("ref")):x for x in snapshot}
+    current={norm(x.get("ref")):x for x in catalog}
+    if set(source) != set(current):
+        raise RuntimeError("Catalog refs differ from curated 1266 snapshot")
+
+    for ref,item in current.items():
+        src=source[ref]
+        item["cor"]=clean(src.get("cor"))
+        item["estilo"]=clean(src.get("estilo"))
+        item["perfil"]=str(src.get("perfil") or "").strip()
+        item["card"]=src.get("card", item.get("card"))
+        item["zoom"]=src.get("zoom", item.get("zoom"))
+        item["search"]=rebuild_search(item)
+
+    data=[current[norm(x.get("ref"))] for x in catalog]
+    compact=json.dumps(data, ensure_ascii=False, separators=(",",":"))
+    text=text[:start]+compact+text[end:]
+
+    colors=sorted({v for x in data for v in clean(x.get("cor"))}, key=str.casefold)
+    styles=sorted({v for x in data for v in clean(x.get("estilo"))}, key=str.casefold)
+    profiles=sorted({str(x.get("perfil") or "").strip() for x in data if str(x.get("perfil") or "").strip()}, key=str.casefold)
+
+    text=refresh_select(text,"color",colors,"Todas as cores")
+    if 'id="style"' in text:
+        text=refresh_select(text,"style",styles,"Todos os estilos")
+    if 'id="profile"' in text:
+        text=refresh_select(text,"profile",profiles,"Todos os perfis")
+    INDEX.write_text(text, encoding="utf-8")
+
+    REPORT.write_text(json.dumps({
+        "status":"ok",
+        "itens":len(data),
+        "cores":colors,
+        "estilos":styles,
+        "perfis":profiles,
+        "fonte":"data/catalogo-curado-1266.json"
+    }, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(json.dumps({"itens":len(data),"cores":len(colors),"estilos":len(styles),"perfis":profiles},ensure_ascii=False))
+
+if __name__ == "__main__":
+    main()
+PY
+
+          python - <<'PY'
+from pathlib import Path
+p=Path(".github/workflows/repair-catalog.yml")
+s=p.read_text(encoding="utf-8")
+start=s.index("on:")
+perm=s.index("\npermissions:")
+s=s[:start]+"on:\n  workflow_dispatch:\n"+s[perm:]
+s=s.replace(
+'''              elif source.read_bytes() != target.read_bytes():
+                  shutil.copy2(source, target)
+                  updated += 1
+''',
+'''              elif source.read_bytes() != target.read_bytes():
+                  # Preserve the published/curated local asset. A supplier-library
+                  # sync must never overwrite a manually corrected image.
+                  updated += 0
+'''
+)
+s=s.replace("Apply curated 971 classifications","Apply curated 1266 classifications")
+p.write_text(s, encoding="utf-8")
+PY
+
+      - name: Validate curated catalog
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/apply_user_classifications.py
+          python - <<'PY'
+from pathlib import Path
+import json, re
+s=Path("index.html").read_text(encoding="utf-8")
+data=json.loads(re.search(r'let DATA=(\[.*?\]);\s*const q=',s,re.S).group(1))
+by={x["ref"]:x for x in data}
+checks={
+ "BH101010":{"cor":["Azul","Multicolorido"]},
+ "BH101011":{"cor":["Multicolorido"]},
+ "84384":{"cor":["Verde"],"estilo":["Floral"]},
+ "AD300111R":{"cor":["Cinza"]},
+}
+for ref,expected in checks.items():
+    for field,value in expected.items():
+        if by[ref].get(field) != value:
+            raise SystemExit(f"{ref} {field}: {by[ref].get(field)} != {value}")
+if sum(1 for x in data if x.get("perfil")=="Geral") != 990:
+    raise SystemExit("Unexpected Geral profile count")
+if sum(1 for x in data if x.get("perfil")=="Infantil") != 276:
+    raise SystemExit("Unexpected Infantil profile count")
+print("Validation OK")
+PY
+
+      - name: Commit published revision
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm --ignore-unmatch .github/workflows/publish-revision-07.yml
+          git add -A
+          git commit -m "Publish catalog revision 07 with 1266 curated items"
+          git push
