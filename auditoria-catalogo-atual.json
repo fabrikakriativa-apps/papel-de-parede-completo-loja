@@ -1,14 +1,14 @@
 {
-  "itens_catalogo": 1212,
+  "itens_catalogo": 1266,
   "fornecedores": {
-    "Home Finish": 619,
+    "Home Finish": 677,
     "Kantai": 331,
-    "Wiler": 262
+    "Wiler": 258
   },
   "total_fornecedores": 3,
-  "total_colecoes": 22,
-  "imagens_card_locais": 1183,
-  "imagens_card_externas": 29,
+  "total_colecoes": 23,
+  "imagens_card_locais": 1240,
+  "imagens_card_externas": 26,
   "imagens_card_locais_faltantes": 0,
   "cards_locais_faltantes": [],
   "codigos_duplicados": [],
@@ -44,6 +44,14 @@
       "colecao": "Botânica",
       "itens": 24,
       "referencias_unicas": 24,
+      "referencias_vazias": 0,
+      "refs_duplicadas": []
+    },
+    {
+      "fornecedor": "Home Finish",
+      "colecao": "Brisa do Mar",
+      "itens": 59,
+      "referencias_unicas": 59,
       "referencias_vazias": 0,
       "refs_duplicadas": []
     },
@@ -106,8 +114,8 @@
     {
       "fornecedor": "Home Finish",
       "colecao": "Provence",
-      "itens": 64,
-      "referencias_unicas": 64,
+      "itens": 63,
+      "referencias_unicas": 63,
       "referencias_vazias": 0,
       "refs_duplicadas": []
     },
@@ -154,8 +162,8 @@
     {
       "fornecedor": "Wiler",
       "colecao": "Bambine",
-      "itens": 50,
-      "referencias_unicas": 50,
+      "itens": 46,
+      "referencias_unicas": 46,
       "referencias_vazias": 0,
       "refs_duplicadas": []
     },
