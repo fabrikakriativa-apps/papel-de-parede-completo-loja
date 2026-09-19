@@ -2,13 +2,17 @@
   "status": "falha",
   "itens_data": 1266,
   "itens_inventario": 1266,
-  "itens_consolidado": 1212,
+  "itens_consolidado": 1266,
   "fornecedores_data": {
     "Home Finish": 677,
     "Kantai": 331,
     "Wiler": 258
   },
-  "ui_markers_ausentes": [],
+  "ui_markers_ausentes": [
+    "q.oninput=render",
+    "vf.onchange",
+    "cf.onchange=render"
+  ],
   "referencias_criticas": [
     {
       "fornecedor": "Home Finish",
@@ -56,7 +60,7 @@
     "zoom": 26
   },
   "falhas": [
-    "DATA=1266 difere do consolidado=1212"
+    "Marcadores essenciais de UI ausentes: ['q.oninput=render', 'vf.onchange', 'cf.onchange=render']"
   ],
   "avisos": [],
   "criterio": "Smoke test do catálogo publicado: estrutura DATA, consistência com relatórios, controles de busca/filtro, referências críticas reparadas e existência dos assets locais de card/zoom. Não altera produtos nem imagens."
