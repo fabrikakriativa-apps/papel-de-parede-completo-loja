@@ -1,12 +1,12 @@
 {
-  "status": "ok",
-  "itens_data": 1212,
+  "status": "falha",
+  "itens_data": 1266,
   "itens_inventario": 1212,
   "itens_consolidado": 1212,
   "fornecedores_data": {
-    "Home Finish": 619,
+    "Home Finish": 677,
     "Kantai": 331,
-    "Wiler": 262
+    "Wiler": 258
   },
   "ui_markers_ausentes": [],
   "referencias_criticas": [
@@ -52,10 +52,14 @@
   "assets_locais_faltantes": 0,
   "assets_locais_faltantes_amostra": [],
   "assets_externos": {
-    "card": 29,
-    "zoom": 29
+    "card": 26,
+    "zoom": 26
   },
-  "falhas": [],
+  "falhas": [
+    "DATA=1266 difere do inventário=1212",
+    "DATA=1266 difere do consolidado=1212",
+    "Totais por fornecedor divergentes: DATA={'Kantai': 331, 'Home Finish': 677, 'Wiler': 258} inventário={'Home Finish': 619, 'Kantai': 331, 'Wiler': 262}"
+  ],
   "avisos": [],
   "criterio": "Smoke test do catálogo publicado: estrutura DATA, consistência com relatórios, controles de busca/filtro, referências críticas reparadas e existência dos assets locais de card/zoom. Não altera produtos nem imagens."
 }
