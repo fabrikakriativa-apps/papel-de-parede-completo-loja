@@ -1,7 +1,7 @@
 {
   "status": "falha",
   "itens_data": 1266,
-  "itens_inventario": 1212,
+  "itens_inventario": 1266,
   "itens_consolidado": 1212,
   "fornecedores_data": {
     "Home Finish": 677,
@@ -56,9 +56,7 @@
     "zoom": 26
   },
   "falhas": [
-    "DATA=1266 difere do inventário=1212",
-    "DATA=1266 difere do consolidado=1212",
-    "Totais por fornecedor divergentes: DATA={'Kantai': 331, 'Home Finish': 677, 'Wiler': 258} inventário={'Home Finish': 619, 'Kantai': 331, 'Wiler': 262}"
+    "DATA=1266 difere do consolidado=1212"
   ],
   "avisos": [],
   "criterio": "Smoke test do catálogo publicado: estrutura DATA, consistência com relatórios, controles de busca/filtro, referências críticas reparadas e existência dos assets locais de card/zoom. Não altera produtos nem imagens."
