@@ -1,14 +1,14 @@
 {
-  "status": "completo_nas_fontes_auditadas",
+  "status": "revisao_necessaria",
   "metodo": "auditoria_consolidada_por_fontes_validadas",
   "autoridade_atual": "auditoria-catalogo-consolidada.json",
   "comparacao_biblioteca_fisica": "descontinuada",
   "motivo_descontinuacao": "A antiga auditoria inferia completude pela presença de thumbnails em _image_source/imagens. Essa estrutura não representa mais as fontes de verdade atuais e podia reportar biblioteca 0 e marcar todo o catálogo como extra.",
-  "itens_catalogo": 1212,
+  "itens_catalogo": 1266,
   "fornecedores_catalogo": 3,
-  "colecoes_catalogo": 22,
+  "colecoes_catalogo": 23,
   "colecoes_auditadas_registradas": 22,
-  "fornecedores_com_divergencia": 0,
+  "fornecedores_com_divergencia": 2,
   "integridade_publicacao": {
     "codigos_duplicados": 0,
     "referencias_duplicadas": 0,
@@ -23,11 +23,11 @@
   "fornecedores": [
     {
       "fornecedor": "Home Finish",
-      "itens_catalogo": 619,
+      "itens_catalogo": 677,
       "itens_auditados": 619,
       "colecoes_cadastradas": 13,
-      "status_colecoes_cadastradas": "completo_contra_snapshot_validado_oficial",
-      "totais_coincidem": true,
+      "status_colecoes_cadastradas": "divergente_ou_auditoria_desatualizada",
+      "totais_coincidem": false,
       "cobertura_portfolio_status": "cobertura_parcial_confirmada",
       "relatorio_fonte": "auditoria-homefinish-fonte-validada.json"
     },
@@ -43,11 +43,11 @@
     },
     {
       "fornecedor": "Wiler",
-      "itens_catalogo": 262,
+      "itens_catalogo": 258,
       "itens_auditados": 262,
       "colecoes_cadastradas": 5,
-      "status_colecoes_cadastradas": "completo_nas_cinco_colecoes_auditadas",
-      "totais_coincidem": true,
+      "status_colecoes_cadastradas": "divergente_ou_auditoria_desatualizada",
+      "totais_coincidem": false,
       "cobertura_portfolio_status": "cobertura_parcial_confirmada",
       "relatorio_fonte": "auditoria-wiler-consolidada.json"
     }

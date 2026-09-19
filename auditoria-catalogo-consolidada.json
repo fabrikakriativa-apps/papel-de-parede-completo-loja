@@ -1,9 +1,9 @@
 {
-  "status": "completo_nas_fontes_auditadas",
+  "status": "revisao_necessaria",
   "escopo_status": "cobertura_portfolio_parcial_confirmada",
-  "itens_catalogo": 1212,
+  "itens_catalogo": 1266,
   "fornecedores": 3,
-  "colecoes": 22,
+  "colecoes": 23,
   "integridade_publicacao": {
     "codigos_duplicados": 0,
     "referencias_duplicadas": 0,
@@ -63,15 +63,15 @@
   "fornecedores_auditados": [
     {
       "fornecedor": "Home Finish",
-      "itens_catalogo": 619,
+      "itens_catalogo": 677,
       "itens_auditados": 619,
       "itens_fonte_validada": 619,
       "colecoes_cadastradas": 13,
-      "status_colecoes_cadastradas": "completo_contra_snapshot_validado_oficial",
+      "status_colecoes_cadastradas": "divergente_ou_auditoria_desatualizada",
       "faltando": 0,
       "extras": 0,
       "duplicidades": 0,
-      "totais_coincidem": true,
+      "totais_coincidem": false,
       "cobertura_portfolio_oficial": {
         "status": "cobertura_parcial_confirmada",
         "colecoes_ausentes_confirmadas": [
@@ -130,11 +130,11 @@
     },
     {
       "fornecedor": "Wiler",
-      "itens_catalogo": 262,
+      "itens_catalogo": 258,
       "itens_auditados": 262,
       "colecoes_cadastradas": 5,
-      "status_colecoes_cadastradas": "completo_nas_cinco_colecoes_auditadas",
-      "totais_coincidem": true,
+      "status_colecoes_cadastradas": "divergente_ou_auditoria_desatualizada",
+      "totais_coincidem": false,
       "colecoes_auditadas": {
         "Bambine": 50,
         "Tacto": 41,
