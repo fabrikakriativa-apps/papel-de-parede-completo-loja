@@ -1,13 +1,13 @@
 {
   "status": "dependencias_externas_encontradas",
-  "itens_catalogo": 1212,
-  "itens_com_asset_externo": 29,
-  "urls_externas": 58,
+  "itens_catalogo": 1266,
+  "itens_com_asset_externo": 26,
+  "urls_externas": 52,
   "hosts": {
-    "homefinish.com.br": 58
+    "homefinish.com.br": 52
   },
-  "itens_com_candidato_local": 1,
-  "itens_sem_candidato_local": 28,
+  "itens_com_candidato_local": 26,
+  "itens_sem_candidato_local": 0,
   "itens": [
     {
       "codigo": "FK-0102",
@@ -19,8 +19,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101041.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0103",
@@ -32,8 +34,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101042.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0104",
@@ -45,8 +49,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101043.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0105",
@@ -58,8 +64,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101044.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0106",
@@ -71,8 +79,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101036.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0107",
@@ -84,8 +94,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101016.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0112",
@@ -97,8 +109,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101014.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0113",
@@ -110,8 +124,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101022.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0114",
@@ -123,8 +139,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101019.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0115",
@@ -136,34 +154,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
-    },
-    {
-      "codigo": "FK-0116",
-      "fornecedor": "Home Finish",
-      "colecao": "BIO Habitat",
-      "ref": "BH101011",
-      "card": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101011.jpg",
-      "zoom": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101011.jpg",
-      "hosts": [
-        "homefinish.com.br"
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101020.jpg"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
-    },
-    {
-      "codigo": "FK-0117",
-      "fornecedor": "Home Finish",
-      "colecao": "BIO Habitat",
-      "ref": "BH101010",
-      "card": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101010.jpg",
-      "zoom": "https://homefinish.com.br/wp-content/uploads/2023/08/papel-parede-nacional-home-finish-bio-habitat-101010.jpg",
-      "hosts": [
-        "homefinish.com.br"
-      ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0118",
@@ -175,8 +169,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101038.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0119",
@@ -188,8 +184,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101032.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0120",
@@ -201,8 +199,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101033.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0121",
@@ -214,8 +214,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101034.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0122",
@@ -227,8 +229,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101035.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0123",
@@ -240,8 +244,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101029.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0125",
@@ -253,8 +259,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101030.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0126",
@@ -266,8 +274,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101028.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0127",
@@ -279,8 +289,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101027.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0128",
@@ -292,8 +304,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101026.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0129",
@@ -305,8 +319,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101025.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0130",
@@ -318,8 +334,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101018.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0132",
@@ -331,8 +349,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101040.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0133",
@@ -344,8 +364,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101039.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0134",
@@ -357,8 +379,10 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
+      "candidatos_locais_por_ref": [
+        "imagens/home-finish/bio-habitat/thumbnails/101045.jpg"
+      ],
+      "tem_candidato_local": true
     },
     {
       "codigo": "FK-0135",
@@ -370,22 +394,8 @@
       "hosts": [
         "homefinish.com.br"
       ],
-      "candidatos_locais_por_ref": [],
-      "tem_candidato_local": false
-    },
-    {
-      "codigo": "FK-0408",
-      "fornecedor": "Home Finish",
-      "colecao": "Flora",
-      "ref": "84360",
-      "card": "https://homefinish.com.br/wp-content/uploads/2025/06/84360-papel-parede-home-finish-flora.jpg",
-      "zoom": "https://homefinish.com.br/wp-content/uploads/2025/06/84360-papel-parede-home-finish-flora.jpg",
-      "hosts": [
-        "homefinish.com.br"
-      ],
       "candidatos_locais_por_ref": [
-        "imagens/home-finish/flora/thumbnails/84360.jpg",
-        "imagens/home-finish/provence/thumbnails/84360.jpg"
+        "imagens/home-finish/bio-habitat/thumbnails/101046.jpg"
       ],
       "tem_candidato_local": true
     }
