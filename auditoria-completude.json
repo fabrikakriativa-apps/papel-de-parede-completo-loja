@@ -7,7 +7,7 @@
   "itens_catalogo": 1266,
   "fornecedores_catalogo": 3,
   "colecoes_catalogo": 23,
-  "colecoes_auditadas_registradas": 22,
+  "colecoes_auditadas_registradas": 23,
   "fornecedores_com_divergencia": 2,
   "integridade_publicacao": {
     "codigos_duplicados": 0,
@@ -24,8 +24,8 @@
     {
       "fornecedor": "Home Finish",
       "itens_catalogo": 677,
-      "itens_auditados": 619,
-      "colecoes_cadastradas": 13,
+      "itens_auditados": 677,
+      "colecoes_cadastradas": 14,
       "status_colecoes_cadastradas": "divergente_ou_auditoria_desatualizada",
       "totais_coincidem": false,
       "cobertura_portfolio_status": "cobertura_parcial_confirmada",

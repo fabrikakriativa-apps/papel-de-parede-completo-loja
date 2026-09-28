@@ -64,12 +64,12 @@
     {
       "fornecedor": "Home Finish",
       "itens_catalogo": 677,
-      "itens_auditados": 619,
+      "itens_auditados": 677,
       "itens_fonte_validada": 619,
-      "colecoes_cadastradas": 13,
+      "colecoes_cadastradas": 14,
       "status_colecoes_cadastradas": "divergente_ou_auditoria_desatualizada",
-      "faltando": 0,
-      "extras": 0,
+      "faltando": 1,
+      "extras": 59,
       "duplicidades": 0,
       "totais_coincidem": false,
       "cobertura_portfolio_oficial": {
