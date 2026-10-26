@@ -182,19 +182,34 @@ function fill(select,values,label){
   [...new Set(values.filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),'pt-BR',{sensitivity:'base'}))
     .forEach(v=>select.add(new Option(v,v)));
 }
-function refreshCollections(){
-  const keep=cf.value;
-  const values=DATA.filter(x=>!vf.value||x.fornecedor===vf.value).map(x=>x.colecao);
-  fill(cf,values,'Todas as coleções');
-  if([...cf.options].some(o=>o.value===keep))cf.value=keep;
+const FILTERS=[
+  {select:vf,key:'fornecedor',label:'Todos os fornecedores'},
+  {select:cf,key:'colecao',label:'Todas as coleções'},
+  {select:tf,key:'tipo',label:'Todos os tipos'},
+  {select:cof,key:'cor',label:'Todas as cores',multi:true},
+  {select:sf,key:'estilo',label:'Todos os estilos',multi:true},
+  {select:pf,key:'perfil',label:'Todos os perfis'}
+];
+function matchesFacet(x,filter,value){
+  if(!value)return true;
+  return filter.multi?arr(x[filter.key]).includes(value):x[filter.key]===value;
+}
+function matchesOtherFilters(x,current){
+  return FILTERS.every(filter=>filter===current||matchesFacet(x,filter,filter.select.value));
+}
+function refreshFilterOptions(){
+  let changed=false;
+  FILTERS.forEach(filter=>{
+    const keep=filter.select.value;
+    const values=DATA.filter(x=>matchesOtherFilters(x,filter)).flatMap(x=>filter.multi?arr(x[filter.key]):[x[filter.key]]);
+    fill(filter.select,values,filter.label);
+    if([...filter.select.options].some(option=>option.value===keep))filter.select.value=keep;
+    else if(keep)changed=true;
+  });
+  if(changed)refreshFilterOptions();
 }
 function passesFilters(x){
-  return(!vf.value||x.fornecedor===vf.value)
-    &&(!cf.value||x.colecao===cf.value)
-    &&(!tf.value||x.tipo===tf.value)
-    &&(!cof.value||arr(x.cor).includes(cof.value))
-    &&(!sf.value||arr(x.estilo).includes(sf.value))
-    &&(!pf.value||x.perfil===pf.value);
+  return FILTERS.every(filter=>matchesFacet(x,filter,filter.select.value));
 }
 function card(x){
   const tags=[...arr(x.cor).slice(0,2),...arr(x.estilo).slice(0,1)];
@@ -248,23 +263,12 @@ function render(){
   clearBtn.disabled=!(clean(q.value)||vf.value||cf.value||tf.value||cof.value||sf.value||pf.value);
 }
 function clearAll(){
-  q.value='';vf.value='';refreshCollections();cf.value='';tf.value='';cof.value='';sf.value='';pf.value='';
+  q.value='';FILTERS.forEach(filter=>filter.select.value='');refreshFilterOptions();
   render();q.focus();
 }
 
-fill(vf,DATA.map(x=>x.fornecedor),'Todos os fornecedores');
-refreshCollections();
-fill(tf,DATA.map(x=>x.tipo),'Todos os tipos');
-fill(cof,DATA.flatMap(x=>arr(x.cor)),'Todas as cores');
-fill(sf,DATA.flatMap(x=>arr(x.estilo)),'Todos os estilos');
-fill(pf,DATA.map(x=>x.perfil),'Todos os perfis');
-
-vf.addEventListener('change',()=>{refreshCollections();render()});
-cf.addEventListener('change',render);
-tf.addEventListener('change',render);
-cof.addEventListener('change',render);
-sf.addEventListener('change',render);
-pf.addEventListener('change',render);
+refreshFilterOptions();
+FILTERS.forEach(filter=>filter.select.addEventListener('change',()=>{refreshFilterOptions();render()}));
 q.addEventListener('input',render);
 clearBtn.addEventListener('click',clearAll);
 modal.addEventListener('click',ev=>{
