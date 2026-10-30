@@ -305,7 +305,7 @@ render();
     form.addEventListener('submit',async event=>{
       event.preventDefault();message.textContent='';submit.disabled=true;
       const label=submit.querySelector('span');label.textContent='Abrindo o Google…';
-      const {error}=await client.auth.signInWithOAuth({provider:'google',options:{redirectTo:location.origin+location.pathname}});
+      const {error}=await client.auth.signInWithOAuth({provider:'google',options:{redirectTo:'https://papeldeparedefk-clientes.fabrikakriativa.com.br/gerenciar.html?return=loja'}});
       if(error){submit.disabled=false;label.textContent='Continuar com Google';message.textContent='Não foi possível abrir o acesso Google. Tente novamente.';}
     });
     return;
