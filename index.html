@@ -104,10 +104,27 @@ input:focus,select:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(20
   .store-filters .clear-btn{grid-column:3;grid-row:2 / span 3;height:146px}
 }
 
+.auth-gate{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:24px;background:rgba(18,16,14,.78);backdrop-filter:blur(8px)}
+.auth-gate.hidden{display:none}.auth-card{width:min(420px,100%);background:#fff;border:1px solid #e7dfd5;border-radius:20px;padding:28px;box-shadow:0 24px 70px rgba(0,0,0,.28)}
+.auth-logo{display:flex;align-items:center;gap:12px;margin-bottom:20px}.auth-logo-mark{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;background:#17130f;color:#c98b45;font-weight:900;font-size:18px}.auth-logo strong{display:block;font-size:16px;letter-spacing:.04em}.auth-logo span{display:block;color:#776f67;font-size:12px;margin-top:2px}
+.auth-card h2{margin:0 0 6px;font-size:24px}.auth-copy{margin:0 0 20px;color:#6c645d;font-size:14px;line-height:1.45}.auth-field{display:grid;gap:7px;margin-top:14px}.auth-field label{font-size:13px;font-weight:750;color:#403a35}.auth-field input{width:100%;box-sizing:border-box;border:1px solid #cec5bc;border-radius:11px;padding:12px 13px;font:inherit;background:#fff}.auth-field input:focus{outline:3px solid rgba(190,125,58,.18);border-color:#b97937}
+.auth-submit{width:100%;margin-top:20px;border:0;border-radius:11px;padding:13px;background:#17130f;color:#fff;font:inherit;font-weight:800;cursor:pointer}.auth-submit:disabled{opacity:.58;cursor:wait}.auth-message{min-height:20px;margin:12px 0 0;color:#a72c24;font-size:13px;text-align:center}.auth-note{margin:10px 0 0;color:#857c74;font-size:11px;text-align:center}
 </style>
 <meta name="fk-client-version" content="2.0">
 </head>
 <body>
+<div id="authGate" class="auth-gate hidden" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+  <form id="authForm" class="auth-card">
+    <div class="auth-logo"><div class="auth-logo-mark">FK</div><div><strong>FÁBRIKA KRIATIVA</strong><span>Catálogo interno da loja</span></div></div>
+    <h2 id="authTitle">Acesso à equipe</h2>
+    <p class="auth-copy">Entre com sua conta autorizada para consultar o catálogo completo e os valores internos.</p>
+    <div class="auth-field"><label for="authEmail">E-mail</label><input id="authEmail" name="email" type="email" autocomplete="username" required></div>
+    <div class="auth-field"><label for="authPassword">Senha</label><input id="authPassword" name="password" type="password" autocomplete="current-password" required></div>
+    <button id="authSubmit" class="auth-submit" type="submit">Entrar no catálogo</button>
+    <p id="authMessage" class="auth-message" aria-live="polite"></p>
+    <p class="auth-note">Sua sessão fica salva neste navegador.</p>
+  </form>
+</div>
 <header class="brand-hero">
   <div class="brand-inner">
     <img class="brand-mark" alt="FK" src="data:image/png;base64,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">
@@ -283,14 +300,18 @@ render();
 (async function loadSecureCatalog(){
   const {createClient}=await import("https://esm.sh/@supabase/supabase-js@2.57.4");
   const client=createClient("https://dpowbyexrcdcwwqysgzp.supabase.co","sb_publishable_5R2zVzcZQVAGGd72zXayFQ_zCp_tJkU");
+  const gate=document.getElementById('authGate'),form=document.getElementById('authForm'),message=document.getElementById('authMessage'),submit=document.getElementById('authSubmit');
   let {data:{session}}=await client.auth.getSession();
   if(!session){
-    const email=prompt("E-mail de acesso ao catálogo interno:");
-    const password=email?prompt("Senha:"):null;
-    if(!email||!password){grid.innerHTML='<div class="empty"><strong>Acesso necessário.</strong>Entre com uma conta autorizada.</div>';return;}
-    const login=await client.auth.signInWithPassword({email,password});
-    if(login.error){grid.innerHTML='<div class="empty"><strong>Acesso negado.</strong>Confira o e-mail e a senha.</div>';return;}
-    session=login.data.session;
+    gate.classList.remove('hidden');
+    session=await new Promise(resolve=>form.addEventListener('submit',async event=>{
+      event.preventDefault();message.textContent='';submit.disabled=true;submit.textContent='Entrando…';
+      const login=await client.auth.signInWithPassword({email:form.email.value.trim(),password:form.password.value});
+      submit.disabled=false;submit.textContent='Entrar no catálogo';
+      if(login.error){message.textContent='E-mail ou senha inválidos. Confira os dados e tente novamente.';form.password.select();return;}
+      resolve(login.data.session);
+    }));
+    gate.classList.add('hidden');
   }
   const response=await fetch("https://dpowbyexrcdcwwqysgzp.supabase.co/functions/v1/catalog-share?action=catalog",{headers:{Authorization:"Bearer "+session.access_token,apikey:"sb_publishable_5R2zVzcZQVAGGd72zXayFQ_zCp_tJkU"}});
   const answer=await response.json();
